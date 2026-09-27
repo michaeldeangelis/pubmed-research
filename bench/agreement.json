@@ -1,0 +1,14 @@
+{
+  "n": 65,
+  "kappa": 0.8148148148148148,
+  "agreement": 0.9384615384615385,
+  "a": {
+    "support": 13,
+    "unresolved": 52
+  },
+  "b": {
+    "support": 13,
+    "unresolved": 51,
+    "mixed": 1
+  }
+}

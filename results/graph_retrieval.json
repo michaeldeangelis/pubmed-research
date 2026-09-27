@@ -1,0 +1,57 @@
+{
+  "use": "subsequent_evidence",
+  "temporal_note": "Neighbors are for assessing evidence after the claim. They are not valid inputs for a forecast at the source date.",
+  "budget": 20,
+  "horizon_years": 8,
+  "n_claims": 65,
+  "n_labeled_eval": 20,
+  "methods": [
+    "same_gene",
+    "text_similarity",
+    "citation",
+    "experimental",
+    "combination"
+  ],
+  "per_method": {
+    "same_gene": {
+      "mean_candidates": 16.492,
+      "mean_already_in_packet": 0.415,
+      "mean_absent_from_packet": 16.077,
+      "claims_with_a_paper_outside_the_packet": 61
+    },
+    "text_similarity": {
+      "mean_candidates": 19.692,
+      "mean_already_in_packet": 0.292,
+      "mean_absent_from_packet": 19.4,
+      "claims_with_a_paper_outside_the_packet": 65
+    },
+    "citation": {
+      "mean_candidates": 19.815,
+      "mean_already_in_packet": 0.385,
+      "mean_absent_from_packet": 19.431,
+      "claims_with_a_paper_outside_the_packet": 65
+    },
+    "experimental": {
+      "mean_candidates": 17.708,
+      "mean_already_in_packet": 0.062,
+      "mean_absent_from_packet": 17.646,
+      "claims_with_a_paper_outside_the_packet": 65
+    },
+    "combination": {
+      "mean_candidates": 20.0,
+      "mean_already_in_packet": 0.554,
+      "mean_absent_from_packet": 19.446,
+      "claims_with_a_paper_outside_the_packet": 65
+    },
+    "shared_references": {
+      "mean_candidates": 3.508,
+      "mean_already_in_packet": 0.2,
+      "mean_absent_from_packet": 3.308,
+      "claims_with_a_paper_outside_the_packet": 61
+    }
+  },
+  "direct_test_yield": null,
+  "direct_test_note": "Yield is empty until independent direct tests are judged. Overlap with the packet is not that yield.",
+  "errors": [],
+  "encoder": "pritamdeka/S-PubMedBert-MS-MARCO"
+}

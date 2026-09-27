@@ -1,0 +1,1936 @@
+{
+  "annotator": "B4",
+  "claims": [
+    {
+      "claim_id": "C033",
+      "followups": [
+        {
+          "candidate_id": "C033-G01",
+          "pmid": "27438512",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In 110 resected synchronous lung tumors, only one lesion had both an EGFR L858R mutation and an EML4-ALK fusion."
+        },
+        {
+          "candidate_id": "C033-G02",
+          "pmid": "26301689",
+          "relation": "partial",
+          "independent": true,
+          "note": "This preclinical study of already EML4-ALK-positive lung adenocarcinoma models tests RAS-MAPK dependence and drug resistance, not co-occurrence with EGFR, KRAS, or ERBB2."
+        },
+        {
+          "candidate_id": "C033-G03",
+          "pmid": "25760072",
+          "relation": "unclear_reporting",
+          "independent": true,
+          "note": "This resected lung-adenocarcinoma cohort reports separate EGFR, ALK, KRAS, and ERBB2 frequencies but not whether the alterations co-occurred."
+        },
+        {
+          "candidate_id": "C033-G04",
+          "pmid": "22086516",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This survival study of never-smoker non-small-cell lung cancer does not genotype EML4-ALK, EGFR, KRAS, or ERBB2."
+        },
+        {
+          "candidate_id": "C033-G05",
+          "pmid": "27803402",
+          "relation": "unclear_reporting",
+          "independent": true,
+          "note": "This non-small-cell lung cancer series tested EGFR, KRAS, and ALK but reports only separate detection rates, not overlap."
+        },
+        {
+          "candidate_id": "C033-G06",
+          "pmid": "26767032",
+          "relation": "direct_mixed",
+          "independent": true,
+          "note": "Patients were partitioned into largely separate EGFR, ALK, and KRAS groups, yet two tumors had both an ALK rearrangement and an EGFR mutation."
+        },
+        {
+          "candidate_id": "C033-G07",
+          "pmid": "29535536",
+          "relation": "partial",
+          "independent": true,
+          "note": "This single EML4-ALK case report concerns an atypical fusion and crizotinib response, with EGFR and KRAS noted only as negative in that selected tumor."
+        },
+        {
+          "candidate_id": "C033-G08",
+          "pmid": "20206017",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This mouse imaging study of K-ras lung tumors does not measure EML4-ALK or its overlap with EGFR or ERBB2."
+        },
+        {
+          "candidate_id": "C033-G09",
+          "pmid": "22605530",
+          "relation": "unclear_reporting",
+          "independent": true,
+          "note": "This lung-adenocarcinoma cohort was tested for EGFR, KRAS, and ALK, but the abstract does not report co-occurrence."
+        },
+        {
+          "candidate_id": "C033-G10",
+          "pmid": "25788996",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This case report states as background that EML4-ALK tumors lack EGFR or KRAS mutations and then describes one patient's drug response."
+        },
+        {
+          "candidate_id": "C033-G11",
+          "pmid": "26711128",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Among 256 resected stage I lung adenocarcinomas genotyped for EGFR, KRAS, EML4-ALK, and BRAF, only two tumors had a double mutation."
+        },
+        {
+          "candidate_id": "C033-G12",
+          "pmid": "23729361",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In 1683 non-small-cell lung cancers, functional ALK rearrangements were mutually exclusive with EGFR and KRAS mutations."
+        },
+        {
+          "candidate_id": "C033-G13",
+          "pmid": "25706305",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This meta-analysis pools published clinicopathologic series rather than reporting a new patient cohort measurement."
+        },
+        {
+          "candidate_id": "C033-G14",
+          "pmid": "20233444",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This study profiles hotspot mutations in colon cancer, not EML4-ALK in lung cancer."
+        },
+        {
+          "candidate_id": "C033-G15",
+          "pmid": "25985019",
+          "relation": "unclear_reporting",
+          "independent": true,
+          "note": "Never-smoker lung adenocarcinomas were tested for EGFR, KRAS, ERBB2, and ALK, but overlap is not reported."
+        },
+        {
+          "candidate_id": "C033-G16",
+          "pmid": "20720444",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This study compares KRAS mutations in pancreatic cancer and cholangiocarcinoma."
+        },
+        {
+          "candidate_id": "C033-G17",
+          "pmid": "29507487",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is an expert statement on biomarker testing standards, not a new genotyping cohort."
+        },
+        {
+          "candidate_id": "C033-G18",
+          "pmid": "23372947",
+          "relation": "unclear_reporting",
+          "independent": true,
+          "note": "Young lung adenocarcinomas were tested for EGFR, EML4-ALK, and KRAS, but co-occurrence is not reported."
+        },
+        {
+          "candidate_id": "C033-G19",
+          "pmid": "28765579",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This cell-line study examines AKT1 and metastasis in KRAS- or EGFR-mutant lung cancer cells, not ALK fusion exclusivity."
+        },
+        {
+          "candidate_id": "C033-G20",
+          "pmid": "20234366",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This study of cetuximab response in metastatic colorectal cancer does not test EML4-ALK."
+        },
+        {
+          "candidate_id": "C033-G21",
+          "pmid": "28415793",
+          "relation": "partial",
+          "independent": true,
+          "note": "This non-small-cell lung cancer sequencing series reports actionable-alteration rates, not ALK overlap with EGFR, KRAS, or ERBB2."
+        },
+        {
+          "candidate_id": "C033-G22",
+          "pmid": "23951022",
+          "relation": "unclear_reporting",
+          "independent": true,
+          "note": "EGFR and KRAS were analyzed alongside ALK detection in 312 lung cancers, but co-occurrence is not reported."
+        },
+        {
+          "candidate_id": "C033-G23",
+          "pmid": "29517858",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In younger patients with lung adenocarcinoma, EML4-ALK fusions were mutually exclusive with EGFR and KRAS mutations."
+        },
+        {
+          "candidate_id": "C033-G24",
+          "pmid": "22768234",
+          "relation": "unclear_reporting",
+          "independent": true,
+          "note": "Driver-gene frequencies, including EML4-ALK, EGFR, and KRAS, are given by smoking and histology without an overlap result."
+        },
+        {
+          "candidate_id": "C033-G25",
+          "pmid": "20604919",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This study of breast-cancer brain metastases does not test lung-cancer fusion exclusivity."
+        },
+        {
+          "candidate_id": "C033-G26",
+          "pmid": "22363766",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review that defines molecular subtypes of lung cancer without a new co-occurrence measurement."
+        },
+        {
+          "candidate_id": "C033-G27",
+          "pmid": "23196793",
+          "relation": "unclear_reporting",
+          "independent": true,
+          "note": "Large-cell carcinomas were genotyped for EGFR, KRAS, and ALK, but the abstract does not say whether those alterations overlapped."
+        },
+        {
+          "candidate_id": "C033-G28",
+          "pmid": "20200425",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This colorectal-cancer study of PTGER2 does not test EML4-ALK."
+        },
+        {
+          "candidate_id": "C033-G29",
+          "pmid": "27086595",
+          "relation": "partial",
+          "independent": true,
+          "note": "The analysis is limited to patients already selected for concomitant mutations and describes their histology and targeted-therapy response."
+        },
+        {
+          "candidate_id": "C033-G30",
+          "pmid": "22954507",
+          "relation": "partial",
+          "independent": true,
+          "note": "This phase 1 trial studies crizotinib activity in patients already selected for ALK-positive lung cancer."
+        },
+        {
+          "candidate_id": "C033-G31",
+          "pmid": "23552377",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a molecular-testing guideline, not a new measurement of fusion and mutation overlap."
+        },
+        {
+          "candidate_id": "C033-G32",
+          "pmid": "22228640",
+          "relation": "partial",
+          "independent": true,
+          "note": "Resected squamous carcinomas were tested for EGFR, KRAS, and ERBB2 mutations, but not for EML4-ALK co-occurrence."
+        },
+        {
+          "candidate_id": "C033-G33",
+          "pmid": "20234004",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This cell study of Chlamydia and RAS-ERK signaling is unrelated to lung-cancer driver exclusivity."
+        },
+        {
+          "candidate_id": "C033-G34",
+          "pmid": "29636358",
+          "relation": "partial",
+          "independent": true,
+          "note": "Patients were already selected for ALK- or ROS1-positive lung cancer, and EGFR or KRAS changes were recorded as resistance events."
+        },
+        {
+          "candidate_id": "C033-G35",
+          "pmid": "20298593",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This mouse intestinal-tumor study does not test EML4-ALK in lung cancer."
+        },
+        {
+          "candidate_id": "C033-G36",
+          "pmid": "28103968",
+          "relation": "unclear_reporting",
+          "independent": true,
+          "note": "EGFR, EML4-ALK, ROS1, and KRAS were assayed in non-small-cell lung cancer and concomitant status was analyzed, but the abstract does not report the overlap result."
+        },
+        {
+          "candidate_id": "C033-G37",
+          "pmid": "23936355",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In surgically resected lung cancers, the ALK-rearranged adenocarcinomas in the test set were negative for EGFR and KRAS mutations."
+        },
+        {
+          "candidate_id": "C033-G38",
+          "pmid": "23341890",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "No EGFR or KRAS mutations were detected among the EML4-ALK-positive patients in this 208-patient non-small-cell lung cancer series."
+        },
+        {
+          "candidate_id": "C033-G39",
+          "pmid": "28507204",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This colorectal-cancer case report is about an ALK fusion in a different disease."
+        },
+        {
+          "candidate_id": "C033-G40",
+          "pmid": "22966286",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This pancreatic-cancer cell and xenograft study does not test EML4-ALK."
+        },
+        {
+          "candidate_id": "C033-G41",
+          "pmid": "20203229",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This pancreatic carcinosarcoma case report does not test lung-cancer fusion exclusivity."
+        },
+        {
+          "candidate_id": "C033-G42",
+          "pmid": "23074403",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This health-technology assessment concerns KRAS testing in colorectal cancer."
+        },
+        {
+          "candidate_id": "C033-G43",
+          "pmid": "23074401",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This health-technology assessment concerns a breast-cancer gene-expression assay."
+        },
+        {
+          "candidate_id": "C033-G44",
+          "pmid": "21414214",
+          "relation": "partial",
+          "independent": true,
+          "note": "Primary lung tumors and lymph-node metastases were compared for EGFR and KRAS concordance, without an ALK exclusivity measurement."
+        },
+        {
+          "candidate_id": "C033-G45",
+          "pmid": "23074402",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This health-technology assessment reviews EGFR mutation testing for tyrosine-kinase inhibitor response."
+        },
+        {
+          "candidate_id": "C033-G46",
+          "pmid": "20233436",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This colorectal-cancer study reports mutual exclusivity of BRAF and KRAS, not EML4-ALK in lung cancer."
+        },
+        {
+          "candidate_id": "C033-G47",
+          "pmid": "26712101",
+          "relation": "direct_contradict",
+          "independent": true,
+          "note": "In 380 non-small-cell lung cancers, concomitant EGFR plus EML4-ALK, EGFR plus KRAS, and EML4-ALK plus KRAS alterations were each found in 1 to 2.5 percent of patients."
+        },
+        {
+          "candidate_id": "C033-G48",
+          "pmid": "21949883",
+          "relation": "partial",
+          "independent": true,
+          "note": "Endobronchial samples were tested for EGFR and KRAS only, not for ALK fusion overlap."
+        },
+        {
+          "candidate_id": "C033-G49",
+          "pmid": "29997924",
+          "relation": "partial",
+          "independent": true,
+          "note": "The comparison is concordance of pleural-effusion and biopsy genotyping, not whether ALK and EGFR or KRAS co-occur."
+        },
+        {
+          "candidate_id": "C033-G50",
+          "pmid": "20952506",
+          "relation": "partial",
+          "independent": true,
+          "note": "This is a mouse model of EML4-ALK lung adenocarcinoma used to compare drug treatments, not a patient co-occurrence study."
+        },
+        {
+          "candidate_id": "C033-G51",
+          "pmid": "20197397",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This transgenic K-ras lung-adenocarcinoma mouse study tests a cyclin-dependent kinase inhibitor."
+        },
+        {
+          "candidate_id": "C033-G52",
+          "pmid": "27626312",
+          "relation": "partial",
+          "independent": true,
+          "note": "The study measures NRG1 fusions in invasive mucinous adenocarcinoma, including occasional overlap with KRAS or EML4-ALK, rather than EML4-ALK exclusivity with EGFR, KRAS, and ERBB2."
+        },
+        {
+          "candidate_id": "C033-G53",
+          "pmid": "20376303",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of mouse models of colorectal cancer."
+        },
+        {
+          "candidate_id": "C033-G54",
+          "pmid": "21933749",
+          "relation": "partial",
+          "independent": true,
+          "note": "Survival is compared among patients already selected as ALK-positive, EGFR-mutant, or wild-type, without a co-occurrence measurement."
+        },
+        {
+          "candidate_id": "C033-G55",
+          "pmid": "22134072",
+          "relation": "partial",
+          "independent": true,
+          "note": "ALK status in never-smoker lung adenocarcinoma is related to survival and metastases, not to EGFR, KRAS, or ERBB2 overlap."
+        },
+        {
+          "candidate_id": "C033-G56",
+          "pmid": "20929542",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This study of IL-6 and Stat3 in Ras-transformed mammary cells is unrelated to EML4-ALK."
+        },
+        {
+          "candidate_id": "C033-G57",
+          "pmid": "27073482",
+          "relation": "unclear_reporting",
+          "independent": true,
+          "note": "Never-smoker non-small-cell lung cancers were screened for EGFR, ALK, KRAS, RET, and BRAF, but co-occurrence is not reported."
+        },
+        {
+          "candidate_id": "C033-G58",
+          "pmid": "20686305",
+          "relation": "not_test",
+          "independent": true,
+          "note": "These two anal-adenocarcinoma cases concern SFRP2 methylation and KRAS mutation."
+        },
+        {
+          "candidate_id": "C033-G59",
+          "pmid": "20350353",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This cultured-melanocyte study looks for RAS and BRAF mutations during in vitro growth."
+        },
+        {
+          "candidate_id": "C033-G60",
+          "pmid": "21197450",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This methods comparison of KRAS detection across several tumor types does not test ALK fusion exclusivity."
+        },
+        {
+          "candidate_id": "C033-G61",
+          "pmid": "23551194",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a molecular-testing practice guideline, not a new co-occurrence cohort."
+        },
+        {
+          "candidate_id": "C033-G62",
+          "pmid": "21785539",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This review discusses EGFR and KRAS mutations as treatment biomarkers and does not measure EML4-ALK overlap."
+        },
+        {
+          "candidate_id": "C033-G63",
+          "pmid": "26412935",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of crizotinib pharmacology and early clinical experience."
+        },
+        {
+          "candidate_id": "C033-G64",
+          "pmid": "26918901",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This methods study optimizes circulating-tumor DNA recovery for KRAS detection in lung cancer."
+        },
+        {
+          "candidate_id": "C033-G65",
+          "pmid": "30233859",
+          "relation": "direct_contradict",
+          "independent": true,
+          "note": "In an EGFR-wild-type non-small-cell lung cancer series, four tumors had both a KRAS mutation and an EML4-ALK translocation."
+        },
+        {
+          "candidate_id": "C033-G66",
+          "pmid": "26268359",
+          "relation": "partial",
+          "independent": true,
+          "note": "The new measurement is co-occurrence of KIF5B-RET with EGFR or KRAS, while EML4-ALK exclusivity is only background."
+        },
+        {
+          "candidate_id": "C033-G67",
+          "pmid": "25360721",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This meta-analysis summarizes published clinicopathologic associations rather than a new patient measurement."
+        }
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "followups": [
+        {
+          "candidate_id": "C035-G01",
+          "pmid": "21949787",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This angiomyolipoma sequencing study does not test Langerhans cell histiocytosis."
+        },
+        {
+          "candidate_id": "C035-G02",
+          "pmid": "26980021",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "BRAF V600E was detected in 8 of 50 Langerhans cell histiocytosis cases."
+        },
+        {
+          "candidate_id": "C035-G03",
+          "pmid": "28444728",
+          "relation": "partial",
+          "independent": true,
+          "note": "Children were enrolled only after their Langerhans cell histiocytosis was already known to carry BRAF V600E, and the assay was circulating mutant DNA."
+        },
+        {
+          "candidate_id": "C035-G04",
+          "pmid": "24648950",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "BRAF V600E was present in 56 percent of this Chinese Langerhans cell histiocytosis cohort."
+        },
+        {
+          "candidate_id": "C035-G05",
+          "pmid": "23109216",
+          "relation": "not_test",
+          "independent": true,
+          "note": "These are diagnosis and treatment guidelines for childhood Langerhans cell histiocytosis, not a mutation survey."
+        },
+        {
+          "candidate_id": "C035-G06",
+          "pmid": "30009773",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Immunohistochemistry for BRAF V600E was evaluated in colorectal and papillary thyroid carcinomas."
+        },
+        {
+          "candidate_id": "C035-G07",
+          "pmid": "29312770",
+          "relation": "partial",
+          "independent": true,
+          "note": "A single pulmonary Langerhans cell histiocytosis lesion in a lung-cancer case report was negative for BRAF V600E."
+        },
+        {
+          "candidate_id": "C035-G08",
+          "pmid": "28084334",
+          "relation": "direct_contradict",
+          "independent": true,
+          "note": "All seven lymphoma-associated Langerhans cell histiocytosis lesions were negative for BRAF V600E and MAP2K1 mutations."
+        },
+        {
+          "candidate_id": "C035-G09",
+          "pmid": "22977135",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This mutation screen is of primary uveal melanoma."
+        },
+        {
+          "candidate_id": "C035-G10",
+          "pmid": "20955560",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This study measures anti-BRAF autoantibodies in rheumatoid arthritis."
+        },
+        {
+          "candidate_id": "C035-G11",
+          "pmid": "28043156",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Pheochromocytomas and paragangliomas were screened and lacked BRAF V600E."
+        },
+        {
+          "candidate_id": "C035-G12",
+          "pmid": "28455460",
+          "relation": "partial",
+          "independent": true,
+          "note": "This Erdheim-Chester disease case carries a novel complex BRAF mutation, not a BRAF V600E measurement in Langerhans cell histiocytosis."
+        },
+        {
+          "candidate_id": "C035-G13",
+          "pmid": "20530683",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This cell-line study correlates PI3K-inhibitor efficacy with pathway status."
+        },
+        {
+          "candidate_id": "C035-G14",
+          "pmid": "22729324",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This case report diagnoses vulval Langerhans cell histiocytosis and does not test BRAF."
+        },
+        {
+          "candidate_id": "C035-G15",
+          "pmid": "22949932",
+          "relation": "partial",
+          "independent": true,
+          "note": "Five osteolytic Langerhans cell histiocytosis cases were profiled for TGF-beta pathway proteins, not for BRAF V600E."
+        },
+        {
+          "candidate_id": "C035-G16",
+          "pmid": "20587665",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A MEK inhibitor was tested in papillary thyroid carcinoma cells."
+        },
+        {
+          "candidate_id": "C035-G17",
+          "pmid": "30220118",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E was measured in epilepsy-associated glioneuronal brain tumors."
+        },
+        {
+          "candidate_id": "C035-G18",
+          "pmid": "29926184",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Targeted sequencing was compared with BRAF V600E testing in metastatic melanoma."
+        },
+        {
+          "candidate_id": "C035-G19",
+          "pmid": "23518796",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This cell study tests a quassinoid against ERK-pathway tumors, including BRAF-mutant melanoma and hairy-cell leukemia."
+        },
+        {
+          "candidate_id": "C035-G20",
+          "pmid": "21714648",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Somatic mutations were surveyed in myelodysplastic syndromes."
+        },
+        {
+          "candidate_id": "C035-G21",
+          "pmid": "30014527",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A BRAF kinase-domain deletion was found in central-nervous-system Rosai-Dorfman disease, with Langerhans cell histiocytosis mentioned only as background."
+        },
+        {
+          "candidate_id": "C035-G22",
+          "pmid": "29930009",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF V600E was studied in Erdheim-Chester disease and its association with aortic infiltration, not in Langerhans cell histiocytosis."
+        },
+        {
+          "candidate_id": "C035-G23",
+          "pmid": "30219154",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E was associated with bilateral papillary thyroid cancer."
+        },
+        {
+          "candidate_id": "C035-G24",
+          "pmid": "29934244",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a medicinal-chemistry study of pyrazole BRAF V600E inhibitors."
+        },
+        {
+          "candidate_id": "C035-G25",
+          "pmid": "20591883",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PLCE1 mutations were analyzed in steroid-resistant nephrotic syndrome."
+        },
+        {
+          "candidate_id": "C035-G26",
+          "pmid": "29902580",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E was measured in desmoplastic infantile and non-infantile astrocytoma and ganglioglioma."
+        },
+        {
+          "candidate_id": "C035-G27",
+          "pmid": "20570909",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Family cancer history was compared by BRAF status of colorectal cancers."
+        },
+        {
+          "candidate_id": "C035-G28",
+          "pmid": "29624648",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Brain biopsies from Langerhans cell histiocytosis-associated neurodegeneration contained BRAF V600E-positive infiltrating myeloid cells."
+        },
+        {
+          "candidate_id": "C035-G29",
+          "pmid": "27076591",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "BRAF V600E was found in 50 percent of pulmonary and 38 percent of nonpulmonary Langerhans cell histiocytosis lesions."
+        },
+        {
+          "candidate_id": "C035-G30",
+          "pmid": "26782803",
+          "relation": "partial",
+          "independent": true,
+          "note": "A single thyroid lesion diagnosed as Langerhans cell histiocytosis carried BRAF V600E, which is not a cohort test of occurrence."
+        },
+        {
+          "candidate_id": "C035-G31",
+          "pmid": "21037799",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Metabolic effects of HSP90 inhibition were measured in melanoma cell lines."
+        },
+        {
+          "candidate_id": "C035-G32",
+          "pmid": "30120661",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Drug activity was compared in BRAF-mutant and wild-type pleomorphic xanthoastrocytoma xenografts."
+        },
+        {
+          "candidate_id": "C035-G33",
+          "pmid": "21663470",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E was found in every hairy-cell leukemia patient tested, a different disease."
+        },
+        {
+          "candidate_id": "C035-G34",
+          "pmid": "21347194",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This colorectal-cancer case series concerns cetuximab plus FOLFOX and mentions BRAF only as a resistance marker."
+        },
+        {
+          "candidate_id": "C035-G35",
+          "pmid": "30187175",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E-mutant papillary craniopharyngiomas were reviewed surgically."
+        },
+        {
+          "candidate_id": "C035-G36",
+          "pmid": "20530704",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A genomic classifier for an IGF1R inhibitor was developed in colorectal-cancer cell lines and xenografts."
+        },
+        {
+          "candidate_id": "C035-G37",
+          "pmid": "30463788",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Non-V600E BRAF mutations were characterized in metastatic colorectal cancer."
+        },
+        {
+          "candidate_id": "C035-G38",
+          "pmid": "20526349",
+          "relation": "not_test",
+          "independent": true,
+          "note": "RAF-pathway gene fusions were screened in prostate cancer, gastric cancer, and melanoma."
+        },
+        {
+          "candidate_id": "C035-G39",
+          "pmid": "22727996",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E was found in most metanephric adenomas of the kidney."
+        },
+        {
+          "candidate_id": "C035-G40",
+          "pmid": "29271794",
+          "relation": "partial",
+          "independent": true,
+          "note": "Sequencing and mutation-specific immunohistochemistry were compared across several tumor types that included Langerhans cell histiocytosis, without a new occurrence rate."
+        },
+        {
+          "candidate_id": "C035-G41",
+          "pmid": "22575864",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF and RAS mutations were surveyed in thyroid lymphomas."
+        },
+        {
+          "candidate_id": "C035-G42",
+          "pmid": "24367234",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This pituitary Langerhans cell histiocytosis case mentions the mutation only as background and does not test the lesion."
+        },
+        {
+          "candidate_id": "C035-G43",
+          "pmid": "23813854",
+          "relation": "partial",
+          "independent": true,
+          "note": "Childhood Langerhans cell histiocytosis with mediastinal involvement was described clinically, without a BRAF measurement."
+        },
+        {
+          "candidate_id": "C035-G44",
+          "pmid": "20616015",
+          "relation": "not_test",
+          "independent": true,
+          "note": "EGFR-directed BiTE antibodies were tested against KRAS- and BRAF-mutant colorectal-cancer cells."
+        },
+        {
+          "candidate_id": "C035-G45",
+          "pmid": "20591910",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KRAS and BRAF were sequenced in endometrial adenocarcinomas with a MELF invasion pattern."
+        },
+        {
+          "candidate_id": "C035-G46",
+          "pmid": "30126001",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A microRNA was studied in BRAF-mutant papillary thyroid cancer cell lines."
+        },
+        {
+          "candidate_id": "C035-G47",
+          "pmid": "22966370",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Hormone-refractory prostate cancers were sequenced and lacked activating BRAF mutations."
+        },
+        {
+          "candidate_id": "C035-G48",
+          "pmid": "29697386",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Circulating BRAF V600E DNA was measured in melanoma patients."
+        },
+        {
+          "candidate_id": "C035-G49",
+          "pmid": "23153539",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This cell study examines feedback relief after RAF inhibition in BRAF V600E melanoma."
+        },
+        {
+          "candidate_id": "C035-G50",
+          "pmid": "23299772",
+          "relation": "partial",
+          "independent": true,
+          "note": "Coexistence of Langerhans cell histiocytosis and Erdheim-Chester disease is described clinically, without a BRAF result."
+        },
+        {
+          "candidate_id": "C035-G51",
+          "pmid": "30240866",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E, TERT, and IDH2 were sequenced in pleomorphic xanthoastrocytoma."
+        },
+        {
+          "candidate_id": "C035-G52",
+          "pmid": "20569675",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PIK3CA and BRAF mutations were rare in diffusely infiltrating astrocytomas."
+        },
+        {
+          "candidate_id": "C035-G53",
+          "pmid": "20552011",
+          "relation": "not_test",
+          "independent": true,
+          "note": "DMSO and betaine were used to amplify a synthetic GC-rich BRAF construct."
+        },
+        {
+          "candidate_id": "C035-G54",
+          "pmid": "29708356",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "BRAF V600E was detected in 2 of 8 adults with Langerhans cell histiocytosis."
+        },
+        {
+          "candidate_id": "C035-G55",
+          "pmid": "29920740",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E was common in sessile serrated adenomas and polyps."
+        },
+        {
+          "candidate_id": "C035-G56",
+          "pmid": "29736852",
+          "relation": "partial",
+          "independent": true,
+          "note": "Thoracic imaging findings were associated with BRAF V600E in Erdheim-Chester disease, a different histiocytosis."
+        },
+        {
+          "candidate_id": "C035-G57",
+          "pmid": "20571072",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Sorafenib was combined with chemotherapy in melanoma cell lines and a mouse model."
+        },
+        {
+          "candidate_id": "C035-G58",
+          "pmid": "29406329",
+          "relation": "not_test",
+          "independent": true,
+          "note": "None of 28 periocular pyogenic granulomas had a BRAF V600E mutation."
+        },
+        {
+          "candidate_id": "C035-G59",
+          "pmid": "20663135",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Gene expression was profiled after activation of a fish melanoma receptor tyrosine kinase."
+        },
+        {
+          "candidate_id": "C035-G60",
+          "pmid": "28711990",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Droplet digital PCR detected BRAF V600E in 18 of 41 pulmonary Langerhans cell histiocytosis tissue samples."
+        },
+        {
+          "candidate_id": "C035-G61",
+          "pmid": "20551065",
+          "relation": "not_test",
+          "independent": true,
+          "note": "The BRAF V600E inhibitor RG7204 was tested in preclinical melanoma models."
+        },
+        {
+          "candidate_id": "C035-G62",
+          "pmid": "30341513",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This meta-analysis relates BRAF V600E to lymph-node metastasis in papillary thyroid cancer."
+        },
+        {
+          "candidate_id": "C035-G63",
+          "pmid": "20587792",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Cigarette smoking was associated with BRAF-mutant colorectal-cancer subtypes."
+        },
+        {
+          "candidate_id": "C035-G64",
+          "pmid": "28504206",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF V600E was found in three pediatric intracranial or cranial juvenile xanthogranulomas, not in Langerhans cell histiocytosis."
+        },
+        {
+          "candidate_id": "C035-G65",
+          "pmid": "22997201",
+          "relation": "not_test",
+          "independent": true,
+          "note": "An oncogene panel in pediatric rhabdoid tumors found essentially no canonical pathway mutations beyond SMARCB1."
+        },
+        {
+          "candidate_id": "C035-G66",
+          "pmid": "27898473",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In two patients with Erdheim-Chester and Langerhans cell histiocytosis overlap, the Langerhans cell histiocytosis lesions carried BRAF V600E."
+        },
+        {
+          "candidate_id": "C035-G67",
+          "pmid": "30270103",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E testing was evaluated for diagnosing metastatic papillary thyroid carcinoma in lymph nodes."
+        },
+        {
+          "candidate_id": "C035-G68",
+          "pmid": "29085441",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Sequencing detected BRAF V600E in 38 percent of 29 adults with Langerhans cell histiocytosis."
+        },
+        {
+          "candidate_id": "C035-G69",
+          "pmid": "22934889",
+          "relation": "partial",
+          "independent": true,
+          "note": "A human anti-CD1A antibody was developed for possible Langerhans cell histiocytosis targeting, without a BRAF measurement."
+        },
+        {
+          "candidate_id": "C035-G70",
+          "pmid": "24147236",
+          "relation": "partial",
+          "independent": true,
+          "note": "This is a single neonatal case of multisite Langerhans cell histiocytosis that was positive for BRAF V600E."
+        },
+        {
+          "candidate_id": "C035-G71",
+          "pmid": "20529342",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Methylthioadenosine was tested against melanoma cell lines and a xenograft."
+        },
+        {
+          "candidate_id": "C035-G72",
+          "pmid": "28220299",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "BRAF V600E was detected in a substantial fraction of pulmonary Langerhans cell histiocytosis nodules from nine patients."
+        },
+        {
+          "candidate_id": "C035-G73",
+          "pmid": "21048359",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Growing histologically benign thyroid nodules were tested for RET rearrangement and were BRAF V600E negative."
+        },
+        {
+          "candidate_id": "C035-G74",
+          "pmid": "30325235",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Triazine compounds were evaluated as dual PI3K and BRAF V600E inhibitors."
+        },
+        {
+          "candidate_id": "C035-G75",
+          "pmid": "26454140",
+          "relation": "partial",
+          "independent": true,
+          "note": "This single-patient report found BRAF V600E in cutaneous Langerhans cell histiocytosis together with Erdheim-Chester disease and thyroid cancer."
+        },
+        {
+          "candidate_id": "C035-G76",
+          "pmid": "22506009",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Pyrosequencing found the BRAF V600E mutation in granuloma samples from 9 of 16 patients with Langerhans cell histiocytosis."
+        },
+        {
+          "candidate_id": "C035-G77",
+          "pmid": "20806365",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A MEK inhibitor was tested in a pediatric preclinical tumor panel, including a BRAF-mutant pilocytic astrocytoma xenograft."
+        },
+        {
+          "candidate_id": "C035-G78",
+          "pmid": "22210875",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Classic hairy-cell leukemia often had BRAF V600E, whereas variant and IGHV4-34 cases did not."
+        },
+        {
+          "candidate_id": "C035-G79",
+          "pmid": "20571495",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Metastatic thymic carcinomas treated with sunitinib had no EGFR, KIT, KRAS, or BRAF mutations."
+        },
+        {
+          "candidate_id": "C035-G80",
+          "pmid": "29649018",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "BRAF V600E was detected in 41 of the Langerhans cell histiocytosis cases sequenced at Stanford."
+        },
+        {
+          "candidate_id": "C035-G81",
+          "pmid": "29768711",
+          "relation": "partial",
+          "independent": true,
+          "note": "One treatment-refractory Langerhans cell histiocytosis patient was studied for a novel MAP2K1 deletion, and the usual BRAF frequency is only background."
+        }
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "followups": [
+        {
+          "candidate_id": "C041-G01",
+          "pmid": "22675430",
+          "relation": "unclear_reporting",
+          "independent": true,
+          "note": "Patients with metastatic colorectal cancer were treated on early-phase pathway-inhibitor trials and genotyped for PIK3CA, but the abstract does not report response by PIK3CA status."
+        },
+        {
+          "candidate_id": "C041-G02",
+          "pmid": "23236232",
+          "relation": "partial",
+          "independent": true,
+          "note": "Surgically treated gastric cancers were profiled for HER2, PIK3CA, and phospho-Akt and for prognosis, not for response to PI3K-pathway inhibitors."
+        },
+        {
+          "candidate_id": "C041-G03",
+          "pmid": "21726664",
+          "relation": "partial",
+          "independent": true,
+          "note": "A registry genotyped several carcinomas for druggable mutations, including PIK3CA, without reporting inhibitor response."
+        },
+        {
+          "candidate_id": "C041-G04",
+          "pmid": "22271473",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Patients with PIK3CA-mutant breast or gynecologic cancers treated with PI3K/AKT/mTOR inhibitors had a higher response rate than wild-type patients on the same protocols."
+        },
+        {
+          "candidate_id": "C041-G05",
+          "pmid": "22235101",
+          "relation": "partial",
+          "independent": true,
+          "note": "PI3K/Akt pathway activation was associated with incomplete metabolic response after chemoradiation in cervical cancer, not with PI3K-inhibitor response."
+        },
+        {
+          "candidate_id": "C041-G06",
+          "pmid": "21966435",
+          "relation": "partial",
+          "independent": true,
+          "note": "The dual PI3K/mTOR inhibitor was tested in colorectal cell lines and a PIK3CA-wild-type mouse model, not in patients."
+        },
+        {
+          "candidate_id": "C041-G07",
+          "pmid": "22252099",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Metformin plus paclitaxel was tested in endometrial cancer cell lines."
+        },
+        {
+          "candidate_id": "C041-G08",
+          "pmid": "22135231",
+          "relation": "partial",
+          "independent": true,
+          "note": "PIK3CA mutations in lung adenocarcinoma usually coexisted with other drivers, and their effect on targeted therapy was not measured."
+        },
+        {
+          "candidate_id": "C041-G09",
+          "pmid": "30796030",
+          "relation": "partial",
+          "independent": true,
+          "note": "GDC-0084 was more active in PIK3CA-mutant than wild-type breast-cancer brain-metastasis cell and mouse models."
+        },
+        {
+          "candidate_id": "C041-G10",
+          "pmid": "31624127",
+          "relation": "partial",
+          "independent": true,
+          "note": "PIK3CA-mutant cervical-cancer cell lines and xenografts showed only limited, transient responses to a PIK3CA inhibitor."
+        },
+        {
+          "candidate_id": "C041-G11",
+          "pmid": "24092809",
+          "relation": "direct_contradict",
+          "independent": true,
+          "note": "Heavily pretreated PIK3CA-mutant colorectal cancers had no objective responses on PI3K/AKT/mTOR inhibitor protocols, similar to wild-type patients."
+        },
+        {
+          "candidate_id": "C041-G12",
+          "pmid": "31516747",
+          "relation": "partial",
+          "independent": true,
+          "note": "PIK3CA mutation was linked to palbociclib resistance in oral squamous cell lines, and a PI3K/mTOR inhibitor was used only in that preclinical combination."
+        },
+        {
+          "candidate_id": "C041-G13",
+          "pmid": "21430269",
+          "relation": "partial",
+          "independent": true,
+          "note": "PIK3CA mutations appeared in some lung cancers acquiring resistance to EGFR inhibitors, a different drug class."
+        },
+        {
+          "candidate_id": "C041-G14",
+          "pmid": "21303542",
+          "relation": "partial",
+          "independent": true,
+          "note": "Activating PIK3CA mutations were found in gallbladder carcinoma, with PI3K inhibitors mentioned only as a possible future use."
+        },
+        {
+          "candidate_id": "C041-G15",
+          "pmid": "21310826",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Phospho-STAT3 expression was associated with mortality in colorectal cancer."
+        },
+        {
+          "candidate_id": "C041-G16",
+          "pmid": "21305025",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This bioinformatics note maps protein interactions in insulin signaling."
+        },
+        {
+          "candidate_id": "C041-G17",
+          "pmid": "21949851",
+          "relation": "not_test",
+          "independent": true,
+          "note": "TGFBR2 and BAX mutations were tested as prognostic markers in colorectal cancer."
+        },
+        {
+          "candidate_id": "C041-G18",
+          "pmid": "22421194",
+          "relation": "partial",
+          "independent": true,
+          "note": "PIK3CA mutations were detected in circulating DNA from metastatic breast cancer, without a PI3K-inhibitor response comparison."
+        },
+        {
+          "candidate_id": "C041-G19",
+          "pmid": "22301702",
+          "relation": "partial",
+          "independent": true,
+          "note": "PTEN immunohistochemistry was compared with sequencing in endometrial carcinoma, without inhibitor treatment."
+        },
+        {
+          "candidate_id": "C041-G20",
+          "pmid": "31391067",
+          "relation": "partial",
+          "independent": true,
+          "note": "In an adjuvant tamoxifen trial, PIK3CA-mutant ER-positive breast cancers had more CD8 cells, which is not a PI3K-inhibitor response test."
+        },
+        {
+          "candidate_id": "C041-G21",
+          "pmid": "21890452",
+          "relation": "partial",
+          "independent": true,
+          "note": "On a phase I temsirolimus combination, clinical benefit was reported for combined PIK3CA mutation or PTEN loss rather than for PIK3CA mutation versus wild type."
+        },
+        {
+          "candidate_id": "C041-G22",
+          "pmid": "21527065",
+          "relation": "partial",
+          "independent": true,
+          "note": "PIK3CA status did not associate with benefit from lapatinib plus capecitabine, which is not a PI3K/AKT/mTOR inhibitor regimen."
+        },
+        {
+          "candidate_id": "C041-G23",
+          "pmid": "23942080",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In a phase I study of the PI3K inhibitor PX-866 plus docetaxel, PIK3CA-mutant KRAS-wild-type tumors had longer progression-free survival than PIK3CA-wild-type tumors."
+        },
+        {
+          "candidate_id": "C041-G24",
+          "pmid": "21439039",
+          "relation": "partial",
+          "independent": true,
+          "note": "PIK3CA mutation marked nonresponse to cetuximab plus irinotecan in colorectal cancer, a different drug class."
+        },
+        {
+          "candidate_id": "C041-G25",
+          "pmid": "23078675",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Copy-number alterations were compared across ovarian-cancer histotypes."
+        },
+        {
+          "candidate_id": "C041-G26",
+          "pmid": "31277699",
+          "relation": "partial",
+          "independent": true,
+          "note": "Patients were already selected for PIK3CA, AKT1, or PTEN alterations, so the low response to AKT-inhibitor monotherapy has no wild-type comparator."
+        },
+        {
+          "candidate_id": "C041-G27",
+          "pmid": "21931712",
+          "relation": "partial",
+          "independent": true,
+          "note": "High-grade serous ovarian cancers were genotyped for oncogenes including PIK3CA, without inhibitor treatment."
+        },
+        {
+          "candidate_id": "C041-G28",
+          "pmid": "31290289",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A germline PIK3CA variant caused overgrowth and macrocephaly in one child."
+        },
+        {
+          "candidate_id": "C041-G29",
+          "pmid": "21264207",
+          "relation": "not_test",
+          "independent": true,
+          "note": "High-resolution melting was evaluated as a mutation-scanning method across several tumor types."
+        },
+        {
+          "candidate_id": "C041-G30",
+          "pmid": "22487539",
+          "relation": "unclear_reporting",
+          "independent": true,
+          "note": "A phase I AKT-inhibitor plus docetaxel study mentions one PIK3CA-mutant patient with stable disease but does not compare response by PIK3CA status."
+        },
+        {
+          "candidate_id": "C041-G31",
+          "pmid": "21124076",
+          "relation": "partial",
+          "independent": true,
+          "note": "Lithium sensitivity was compared in engineered breast epithelial cell lines, including PIK3CA-mutant lines."
+        },
+        {
+          "candidate_id": "C041-G32",
+          "pmid": "22888282",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This review summarizes genomic alterations by endometrial-cancer histotype."
+        },
+        {
+          "candidate_id": "C041-G33",
+          "pmid": "30944457",
+          "relation": "partial",
+          "independent": true,
+          "note": "MEK-inhibitor resistance in PIK3CA-mutant colon-cancer cells and xenografts was bypassed by WNT-pathway inhibition."
+        },
+        {
+          "candidate_id": "C041-G34",
+          "pmid": "21961653",
+          "relation": "partial",
+          "independent": true,
+          "note": "Gefitinib plus an mTOR inhibitor was tested in HER2-positive breast-cancer models without a PIK3CA comparison."
+        },
+        {
+          "candidate_id": "C041-G35",
+          "pmid": "31699932",
+          "relation": "partial",
+          "independent": true,
+          "note": "Double PIK3CA mutations increased biochemical PI3K activity and predicted greater sensitivity to PI3K-alpha inhibitors in experimental models, not in a treated patient cohort."
+        },
+        {
+          "candidate_id": "C041-G36",
+          "pmid": "21829508",
+          "relation": "partial",
+          "independent": true,
+          "note": "PIK3CA mutations often coexisted with RAS or BRAF mutations in advanced cancers, without a PI3K-inhibitor response comparison."
+        },
+        {
+          "candidate_id": "C041-G37",
+          "pmid": "21266528",
+          "relation": "partial",
+          "independent": true,
+          "note": "Primary endometrial carcinomas were sequenced for PIK3CA and suggested as candidates for future PI3K-pathway trials."
+        },
+        {
+          "candidate_id": "C041-G38",
+          "pmid": "21299849",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Imatinib-resistant BCR-ABL1-positive leukemia cell lines included one PIK3CA-mutant line."
+        },
+        {
+          "candidate_id": "C041-G39",
+          "pmid": "21408138",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Allele-specific PCR for KRAS, EGFR, BRAF, and PIK3CA was compared between lung-cancer aspirates and histology."
+        },
+        {
+          "candidate_id": "C041-G40",
+          "pmid": "22994622",
+          "relation": "partial",
+          "independent": true,
+          "note": "PIK3CA copy-number gain was associated with relapse in head and neck cancer, not with response to a PI3K-pathway inhibitor."
+        },
+        {
+          "candidate_id": "C041-G41",
+          "pmid": "31552290",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In ER-positive metastatic breast cancer treated with the PI3K inhibitor buparlisib plus letrozole, activating PIK3CA mutations marked clinical benefit of at least six months."
+        },
+        {
+          "candidate_id": "C041-G42",
+          "pmid": "21738740",
+          "relation": "partial",
+          "independent": true,
+          "note": "PIK3CA mutation limited apoptosis from a BRAF inhibitor in colon-cancer cell lines."
+        },
+        {
+          "candidate_id": "C041-G43",
+          "pmid": "22423251",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This meeting report discusses companion diagnostics in general."
+        },
+        {
+          "candidate_id": "C041-G44",
+          "pmid": "21310649",
+          "relation": "partial",
+          "independent": true,
+          "note": "PIK3CA and PAK1 were co-expressed in oral carcinomas, and knockdown reduced oncogenic potential in culture."
+        },
+        {
+          "candidate_id": "C041-G45",
+          "pmid": "21263251",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Sessile serrated adenomas with early neoplasia were sequenced and had no PIK3CA exon 9 or 20 mutations."
+        },
+        {
+          "candidate_id": "C041-G46",
+          "pmid": "31173106",
+          "relation": "partial",
+          "independent": true,
+          "note": "The Akt inhibitor GDC-0068 inhibited PIK3CA-mutant breast-cancer brain-metastasis models more than wild-type models in mice and cell lines."
+        },
+        {
+          "candidate_id": "C041-G47",
+          "pmid": "23576709",
+          "relation": "partial",
+          "independent": true,
+          "note": "Matched phase I therapy improved melanoma outcomes mainly for BRAF-directed treatment, not as a PIK3CA versus wild-type comparison on PI3K-pathway inhibitors."
+        },
+        {
+          "candidate_id": "C041-G48",
+          "pmid": "21283802",
+          "relation": "partial",
+          "independent": true,
+          "note": "KRAS, BRAF, and PIK3CA were assessed as biomarkers of cetuximab salvage therapy in colorectal cancer, which is not PI3K/AKT/mTOR inhibition."
+        },
+        {
+          "candidate_id": "C041-G49",
+          "pmid": "20937558",
+          "relation": "partial",
+          "independent": true,
+          "note": "Oncogenic mutations including PIK3CA were frequent in microsatellite-unstable gastric cancer, without inhibitor response data."
+        },
+        {
+          "candidate_id": "C041-G50",
+          "pmid": "22123723",
+          "relation": "partial",
+          "independent": true,
+          "note": "PTEN immunohistochemistry scoring was reproducible in endometrial carcinoma and was discussed as a possible selector for PI3K-pathway trials."
+        },
+        {
+          "candidate_id": "C041-G51",
+          "pmid": "31410178",
+          "relation": "partial",
+          "independent": true,
+          "note": "In cervical-carcinoma cell lines, PIK3CA mutation was not associated with sensitivity to PI3K/AKT/mTOR inhibitors."
+        },
+        {
+          "candidate_id": "C041-G52",
+          "pmid": "31769426",
+          "relation": "partial",
+          "independent": true,
+          "note": "PIK3CA-driven Akt activation caused primary and acquired MEK-inhibitor resistance in colorectal-cancer cells."
+        },
+        {
+          "candidate_id": "C041-G53",
+          "pmid": "21362200",
+          "relation": "partial",
+          "independent": true,
+          "note": "PI3K-pathway inhibitors plus endocrine therapy were modeled in estrogen-receptor-positive breast-cancer cell lines, and PIK3CA prevalence was described in relapsed disease."
+        },
+        {
+          "candidate_id": "C041-G54",
+          "pmid": "21332555",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KRAS, BRAF, and PIK3CA mutations were catalogued in laterally spreading colorectal tumors."
+        },
+        {
+          "candidate_id": "C041-G55",
+          "pmid": "22556379",
+          "relation": "partial",
+          "independent": true,
+          "note": "In ascites-derived ovarian-cancer cells, phosphorylated p70S6K tracked subsequent chemotherapy response, while PIK3CA mutation did not explain pathway output."
+        },
+        {
+          "candidate_id": "C041-G56",
+          "pmid": "22540890",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Metformin reduced cutaneous squamous-cell carcinoma xenograft growth through NF-kB and mTOR signaling."
+        },
+        {
+          "candidate_id": "C041-G57",
+          "pmid": "30962959",
+          "relation": "direct_mixed",
+          "independent": true,
+          "note": "In phase I gynecologic-cancer trials, PI3K-pathway inhibitor matching to PIK3CA or PTEN did not improve benefit overall, whereas matching in clonal PIK3CA cases was associated with longer time to progression."
+        },
+        {
+          "candidate_id": "C041-G58",
+          "pmid": "22991509",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This commentary discusses heterogeneity among colorectal cancers."
+        }
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "followups": [
+        {
+          "candidate_id": "C042-G01",
+          "pmid": "21909432",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Gene-set analysis of colorectal cancer found reduced phospholipase C expression."
+        },
+        {
+          "candidate_id": "C042-G02",
+          "pmid": "21738581",
+          "relation": "partial",
+          "independent": true,
+          "note": "MicroRNA changes were profiled during Kras-driven mouse pancreatic cancer progression, without a Stat3 test."
+        },
+        {
+          "candidate_id": "C042-G03",
+          "pmid": "21949886",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Mast-cell infiltration was studied in a KRas-Akt mouse glioma model."
+        },
+        {
+          "candidate_id": "C042-G04",
+          "pmid": "22427681",
+          "relation": "partial",
+          "independent": true,
+          "note": "IL-6 and prolonged STAT3 activation delayed recovery from pancreatitis in obese mice that were not a Kras-driven pancreatic-cancer model."
+        },
+        {
+          "candidate_id": "C042-G05",
+          "pmid": "22163003",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Chromosome 3 alterations were mapped in benign and low-grade serous ovarian tumors."
+        },
+        {
+          "candidate_id": "C042-G06",
+          "pmid": "31174057",
+          "relation": "partial",
+          "independent": true,
+          "note": "Spontaneous cell models from a Kras-driven pancreatic-cancer mouse were used to study ISX under hypoxia, not Stat3 in precursor formation."
+        },
+        {
+          "candidate_id": "C042-G07",
+          "pmid": "24312338",
+          "relation": "not_test",
+          "independent": true,
+          "note": "RhoE promoted gastric-cancer invasion through CXCR4."
+        },
+        {
+          "candidate_id": "C042-G08",
+          "pmid": "22022614",
+          "relation": "not_test",
+          "independent": true,
+          "note": "MMP-10 was required for Kras-driven expansion of lung bronchioalveolar stem cells."
+        },
+        {
+          "candidate_id": "C042-G09",
+          "pmid": "30952657",
+          "relation": "partial",
+          "independent": true,
+          "note": "KRAS A146T and G12D were compared across mouse tissues, including pancreas, without testing Stat3."
+        },
+        {
+          "candidate_id": "C042-G10",
+          "pmid": "22158044",
+          "relation": "partial",
+          "independent": true,
+          "note": "N-cadherin haploinsufficiency prolonged survival in a Kras and p53 mouse model of pancreatic cancer."
+        },
+        {
+          "candidate_id": "C042-G11",
+          "pmid": "21931712",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Somatic mutations were surveyed in high-grade serous ovarian cancer."
+        },
+        {
+          "candidate_id": "C042-G12",
+          "pmid": "23284900",
+          "relation": "partial",
+          "independent": true,
+          "note": "Notch1 deletion did not block Kras-driven acinar-to-ductal metaplasia in the mouse pancreas."
+        },
+        {
+          "candidate_id": "C042-G13",
+          "pmid": "22291919",
+          "relation": "partial",
+          "independent": true,
+          "note": "Palladin overexpression activated fibroblasts in a pancreatic-cancer model after co-culture with K-ras-expressing epithelial cells."
+        },
+        {
+          "candidate_id": "C042-G14",
+          "pmid": "21912547",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PAI-1 mediated butyrate-induced arrest of ras-transformed renal epithelial cells."
+        },
+        {
+          "candidate_id": "C042-G15",
+          "pmid": "31799082",
+          "relation": "not_test",
+          "independent": true,
+          "note": "One human intraductal papillary mucinous neoplasm-derived carcinoma was negative for GNAS and KRAS hotspot mutations."
+        },
+        {
+          "candidate_id": "C042-G16",
+          "pmid": "22091388",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Kinase-pathway activation and inhibitor sensitivity were profiled in lung-cancer cell lines and tissues."
+        },
+        {
+          "candidate_id": "C042-G17",
+          "pmid": "31296870",
+          "relation": "partial",
+          "independent": true,
+          "note": "LIF blockade slowed Kras-driven mouse pancreatic cancer, and the authors report that LIF does not act through STAT signaling."
+        },
+        {
+          "candidate_id": "C042-G18",
+          "pmid": "22199994",
+          "relation": "not_test",
+          "independent": true,
+          "note": "EGFR, Src, and HER2 variants were tested for colorectal adenoma and cancer risk."
+        },
+        {
+          "candidate_id": "C042-G19",
+          "pmid": "31407334",
+          "relation": "partial",
+          "independent": true,
+          "note": "JAK1/2 inhibition slowed K-RAS-driven lung adenocarcinoma in mice, which is a different organ from pancreas."
+        },
+        {
+          "candidate_id": "C042-G20",
+          "pmid": "30975481",
+          "relation": "partial",
+          "independent": true,
+          "note": "Combined EGFR and c-RAF ablation regressed Kras and Trp53 mutant mouse pancreatic tumors."
+        },
+        {
+          "candidate_id": "C042-G21",
+          "pmid": "21839870",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This review discusses chromatin maintenance in senescent cells."
+        },
+        {
+          "candidate_id": "C042-G22",
+          "pmid": "31330317",
+          "relation": "partial",
+          "independent": true,
+          "note": "Pyk2 deletion suppressed Kras- and pancreatitis-driven acinar-to-ductal metaplasia, with Stat3 named only inside a regulatory axis."
+        },
+        {
+          "candidate_id": "C042-G23",
+          "pmid": "21949883",
+          "relation": "not_test",
+          "independent": true,
+          "note": "COLD-PCR was used to detect EGFR and KRAS mutations in lung-cancer needle aspirates."
+        },
+        {
+          "candidate_id": "C042-G24",
+          "pmid": "22624714",
+          "relation": "partial",
+          "independent": true,
+          "note": "S1PR1-STAT3 signaling in myeloid cells promoted premetastatic niches, not Kras-driven pancreatic precursor lesions."
+        },
+        {
+          "candidate_id": "C042-G25",
+          "pmid": "28374746",
+          "relation": "partial",
+          "independent": true,
+          "note": "Pancreatic HMGB1 loss accelerated Kras-driven precursor lesions, a different gene from Stat3."
+        },
+        {
+          "candidate_id": "C042-G26",
+          "pmid": "29308316",
+          "relation": "partial",
+          "independent": true,
+          "note": "IL-6 maintained STAT3 phosphorylation in mesenchymal human pancreatic-cancer cells and xenografts, not in a Kras mouse precursor model."
+        },
+        {
+          "candidate_id": "C042-G27",
+          "pmid": "22322442",
+          "relation": "partial",
+          "independent": true,
+          "note": "Plumbagin inhibited EGFR, Stat3, and NF-kB in human pancreatic-cancer cell lines and xenografts."
+        },
+        {
+          "candidate_id": "C042-G28",
+          "pmid": "31048544",
+          "relation": "partial",
+          "independent": true,
+          "note": "ATDC deletion blocked Kras-driven acinar-to-ductal metaplasia and pancreatic intraepithelial neoplasia."
+        },
+        {
+          "candidate_id": "C042-G29",
+          "pmid": "22216189",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This paper reports Italian guidelines and quality assessment for KRAS testing in colorectal cancer."
+        },
+        {
+          "candidate_id": "C042-G30",
+          "pmid": "29414775",
+          "relation": "partial",
+          "independent": true,
+          "note": "MAZ promoted invasion of pancreatic-cancer cells through CRAF-ERK signaling in human samples and a genetically engineered mouse model."
+        },
+        {
+          "candidate_id": "C042-G31",
+          "pmid": "22509024",
+          "relation": "partial",
+          "independent": true,
+          "note": "RAGE deletion in a Kras mouse pancreas delayed neoplasia and reduced mitochondrial STAT3 activity, but Stat3 itself was not the intervention."
+        },
+        {
+          "candidate_id": "C042-G32",
+          "pmid": "22232209",
+          "relation": "partial",
+          "independent": true,
+          "note": "Oncogenic Kras was required to initiate and maintain mouse pancreatic lesions and their inflammatory stroma, without a Stat3 intervention."
+        },
+        {
+          "candidate_id": "C042-G33",
+          "pmid": "23226501",
+          "relation": "partial",
+          "independent": true,
+          "note": "Primary and metastatic Kras-driven mouse pancreatic tumors regressed when oncogenic Kras was turned off."
+        },
+        {
+          "candidate_id": "C042-G34",
+          "pmid": "21586612",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Conditional STAT3 inactivation in KRAS-driven mouse pancreas prevented acinar-to-ductal metaplasia and pancreatic intraepithelial neoplasia."
+        },
+        {
+          "candidate_id": "C042-G35",
+          "pmid": "31528855",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This review discusses whether ductal or acinar cells originate pancreatic ductal adenocarcinoma."
+        },
+        {
+          "candidate_id": "C042-G36",
+          "pmid": "22238358",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Fer kinase regulated laminin-binding glycans through STAT3 in breast and prostate cancer cells."
+        },
+        {
+          "candidate_id": "C042-G37",
+          "pmid": "29721383",
+          "relation": "partial",
+          "independent": true,
+          "note": "In a Kras mouse model, macrophage IL-6 induced JAK2-STAT3 in ductal cells, while the intervention that blocked lesions was extracellular HSP90 or myeloid depletion."
+        },
+        {
+          "candidate_id": "C042-G38",
+          "pmid": "31739488",
+          "relation": "partial",
+          "independent": true,
+          "note": "CRISPR knockout of Kras G12D in pancreatic-cancer cell lines, including a KPC line, left Stat3 signaling similar to wild type."
+        },
+        {
+          "candidate_id": "C042-G39",
+          "pmid": "21741923",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PTK6 loss reduced STAT3 activation and azoxymethane-induced colon tumors."
+        },
+        {
+          "candidate_id": "C042-G40",
+          "pmid": "22698406",
+          "relation": "partial",
+          "independent": true,
+          "note": "Tumor-derived GM-CSF drove immunosuppressive myeloid cells in a mouse pancreatic-cancer model."
+        },
+        {
+          "candidate_id": "C042-G41",
+          "pmid": "22140463",
+          "relation": "partial",
+          "independent": true,
+          "note": "Caerulein pancreatitis accelerated PanIN and pancreatic cancer in mice expressing oncogenic Kras in a nestin lineage, without testing Stat3."
+        },
+        {
+          "candidate_id": "C042-G42",
+          "pmid": "31521603",
+          "relation": "partial",
+          "independent": true,
+          "note": "Proteomes of mouse tissues expressing mutant Kras, including pancreas, were compared by tissue context."
+        },
+        {
+          "candidate_id": "C042-G43",
+          "pmid": "22698407",
+          "relation": "partial",
+          "independent": true,
+          "note": "Kras-dependent GM-CSF was required for myeloid recruitment and growth of pancreatic ductal epithelial cells in mice."
+        },
+        {
+          "candidate_id": "C042-G44",
+          "pmid": "30571927",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Neratinib plus entinostat killed uveal melanoma cells by degrading Gq, G11, and RAS."
+        },
+        {
+          "candidate_id": "C042-G45",
+          "pmid": "27333990",
+          "relation": "partial",
+          "independent": true,
+          "note": "A triterpenoid inhibited K-Ras G12D activity and STAT3 in a human pancreatic-carcinoma cell line."
+        },
+        {
+          "candidate_id": "C042-G46",
+          "pmid": "22159814",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A PI3K inhibitor plus a STAT3 inhibitor was synergistic in KRAS-mutant gastric-cancer cells."
+        },
+        {
+          "candidate_id": "C042-G47",
+          "pmid": "23170143",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This review discusses JAK/STAT signaling in pancreatitis and pancreatic cancer."
+        },
+        {
+          "candidate_id": "C042-G48",
+          "pmid": "29153842",
+          "relation": "partial",
+          "independent": true,
+          "note": "p62 accumulation in stressed Kras G12D acinar cells promoted progression toward pancreatic cancer through NRF2 and MDM2."
+        },
+        {
+          "candidate_id": "C042-G49",
+          "pmid": "22609312",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Bmi1 was required for exocrine-pancreas regeneration after cerulein injury in mice without oncogenic Kras."
+        },
+        {
+          "candidate_id": "C042-G50",
+          "pmid": "27381829",
+          "relation": "partial",
+          "independent": true,
+          "note": "Coactivation of COX-2 and Kras G12D accelerated cystic papillary pancreatic lesions through Notch1."
+        },
+        {
+          "candidate_id": "C042-G51",
+          "pmid": "22272089",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A biochip assay detected KRAS mutations in non-small-cell lung cancer tissue."
+        },
+        {
+          "candidate_id": "C042-G52",
+          "pmid": "22347323",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Cytokine-induced killer cells pulsed with dendritic cells and a K-ras peptide killed pancreatic-cancer cell lines."
+        },
+        {
+          "candidate_id": "C042-G53",
+          "pmid": "21949851",
+          "relation": "not_test",
+          "independent": true,
+          "note": "TGFBR2 and BAX mutations were not prognostic beyond microsatellite instability in colorectal cancer."
+        },
+        {
+          "candidate_id": "C042-G54",
+          "pmid": "29126425",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Hdac7 promoted K-Ras lung tumors by deacetylating and inhibiting Stat3, which is a lung model."
+        },
+        {
+          "candidate_id": "C042-G55",
+          "pmid": "22461511",
+          "relation": "not_test",
+          "independent": true,
+          "note": "IL-17 receptor deficiency reduced prostate adenocarcinoma formation in PTEN-mutant mice."
+        },
+        {
+          "candidate_id": "C042-G56",
+          "pmid": "21997479",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KRAS mutation in endoscopic aspirates helped distinguish autoimmune pancreatitis from pancreatic cancer."
+        },
+        {
+          "candidate_id": "C042-G57",
+          "pmid": "22102901",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Galectin-3 stabilized K-Ras and repressed let-7c in mouse embryonic fibroblasts."
+        },
+        {
+          "candidate_id": "C042-G58",
+          "pmid": "23023703",
+          "relation": "partial",
+          "independent": true,
+          "note": "TLR7 ligation accelerated mouse pancreatic carcinogenesis and induced STAT3, while the tested intervention was TLR7."
+        },
+        {
+          "candidate_id": "C042-G59",
+          "pmid": "22355676",
+          "relation": "partial",
+          "independent": true,
+          "note": "Whole-exome sequencing found frequent GNAS mutations in human intraductal papillary mucinous neoplasms."
+        },
+        {
+          "candidate_id": "C042-G60",
+          "pmid": "25961376",
+          "relation": "partial",
+          "independent": true,
+          "note": "STAT3 activation followed MEK inhibition in K-Ras-mutant pancreatic-cancer cell lines, and combined STAT3 and MEK inhibition reduced tumor-cell growth."
+        },
+        {
+          "candidate_id": "C042-G61",
+          "pmid": "22140546",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Oncogenic drivers were surveyed in resected lung adenocarcinomas from East Asian never smokers."
+        },
+        {
+          "candidate_id": "C042-G62",
+          "pmid": "22174819",
+          "relation": "not_test",
+          "independent": true,
+          "note": "An oncrasin analogue killed a subset of human cancer cell lines in part by inhibiting JAK2/STAT3."
+        },
+        {
+          "candidate_id": "C042-G63",
+          "pmid": "22975375",
+          "relation": "partial",
+          "independent": true,
+          "note": "EGFR was required for K-Ras-driven mouse pancreatic adenocarcinoma, and STAT3 inhibition was tested only on proliferation of p53-deficient explants."
+        },
+        {
+          "candidate_id": "C042-G64",
+          "pmid": "30389925",
+          "relation": "partial",
+          "independent": true,
+          "note": "Epithelial Stat3 deletion changed K-ras-mutant lung adenocarcinoma burden in a sex-specific way, which is not the pancreatic model."
+        },
+        {
+          "candidate_id": "C042-G65",
+          "pmid": "22066019",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Boswellic acid suppressed orthotopic human pancreatic xenografts through NF-kB-regulated genes."
+        },
+        {
+          "candidate_id": "C042-G66",
+          "pmid": "22319590",
+          "relation": "partial",
+          "independent": true,
+          "note": "STAT3 was constitutively active in non-small-cell lung cancer independent of KRAS, and JAK inhibition affected soft-agar and xenograft growth."
+        },
+        {
+          "candidate_id": "C042-G67",
+          "pmid": "29248441",
+          "relation": "partial",
+          "independent": true,
+          "note": "KLF5 loss reduced acinar-to-ductal metaplasia and PanIN in Kras G12D mice and lowered STAT3 phosphorylation, but KLF5 was the gene tested."
+        }
+      ]
+    }
+  ]
+}

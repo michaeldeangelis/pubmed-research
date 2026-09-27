@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claim evidence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,520;0,9..144,640;1,9..144,520&family=Outfit:wght@380;520;640&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f3efe6;
+    --paper-2: #e7e1d4;
+    --ink: #1c1915;
+    --muted: #5e584e;
+    --rule: #d5cec1;
+    --cite: #8d3428;
+    --experiment: #1d4a3e;
+    --similar: #2c3d6b;
+    --gene: #6a5432;
+    --shared: #4a3d55;
+    --review: #6d675e;
+    --packet: #8a5a12;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background:
+      linear-gradient(90deg, rgba(28, 25, 21, 0.03) 1px, transparent 1px) 0 0 / 22px 22px,
+      var(--paper);
+    color: var(--ink);
+    font-family: Outfit, "Avenir Next", "Segoe UI", sans-serif;
+    font-weight: 380;
+  }
+  .app {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    min-height: 100%;
+  }
+  aside {
+    border-right: 1px solid var(--rule);
+    padding: 22px 16px 40px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: auto;
+    background: rgba(243, 239, 230, 0.92);
+  }
+  .mark {
+    font-family: Fraunces, Palatino, Georgia, serif;
+    font-weight: 640;
+    font-size: 22px;
+    letter-spacing: -0.03em;
+    margin: 0 0 4px;
+  }
+  .mark span { color: var(--cite); }
+  aside p.note, .banner, .meta, .why, .empty {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.45;
+  }
+  .claim-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    border: 0;
+    border-top: 1px solid var(--rule);
+    background: transparent;
+    color: inherit;
+    padding: 10px 4px;
+    cursor: pointer;
+    font: inherit;
+  }
+  .claim-btn strong {
+    display: block;
+    font-weight: 520;
+    font-size: 13px;
+  }
+  .claim-btn em {
+    font-style: normal;
+    color: var(--muted);
+    font-size: 12px;
+  }
+  .claim-btn.active { background: var(--paper-2); }
+  main { padding: 36px 48px 80px; max-width: 920px; }
+  .banner {
+    border-left: 3px solid var(--cite);
+    padding: 0 0 0 12px;
+    margin-bottom: 22px;
+  }
+  .kicker {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 8px;
+  }
+  h1 {
+    font-family: Fraunces, Palatino, Georgia, serif;
+    font-weight: 520;
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    margin: 0 0 14px;
+  }
+  .quote {
+    font-family: Fraunces, Palatino, Georgia, serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0 0 18px;
+  }
+  .spec {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 6px 12px;
+    margin: 0 0 22px;
+    font-size: 14px;
+  }
+  .spec dt { color: var(--muted); }
+  .spec dd { margin: 0; }
+  .filters { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 18px; }
+  .filters button {
+    border: 1px solid var(--rule);
+    background: transparent;
+    color: var(--ink);
+    border-radius: 999px;
+    padding: 5px 10px;
+    font: inherit;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .filters button.on { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  article.card {
+    border-top: 1px solid var(--rule);
+    padding: 16px 0 18px;
+  }
+  .card-head { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; }
+  .pmid { font-variant-numeric: tabular-nums; font-size: 12px; letter-spacing: 0.04em; color: var(--muted); }
+  h2 { font-size: 18px; font-weight: 520; line-height: 1.35; margin: 4px 0 8px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+  .chip {
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 999px;
+    color: white;
+  }
+  .chip.citation { background: var(--cite); }
+  .chip.experimental { background: var(--experiment); }
+  .chip.text_similarity { background: var(--similar); }
+  .chip.same_gene { background: var(--gene); }
+  .chip.shared_references { background: var(--shared); }
+  .chip.review { background: var(--review); }
+  .chip.packet { background: var(--packet); }
+  .chip.adjudicated { background: var(--ink); }
+  .passage {
+    margin: 8px 0;
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.45);
+    border-left: 2px solid var(--ink);
+    font-family: Fraunces, Palatino, Georgia, serif;
+    font-size: 16px;
+    line-height: 1.45;
+  }
+  .passage mark { background: #ead9a2; color: inherit; }
+  details { margin-top: 6px; }
+  details summary { cursor: pointer; color: var(--muted); font-size: 13px; }
+  details p { font-size: 14px; line-height: 1.5; }
+  @media (max-width: 800px) {
+    .app { grid-template-columns: 1fr; }
+    aside { position: relative; height: auto; border-right: 0; border-bottom: 1px solid var(--rule); }
+    main { padding: 24px 18px 60px; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <aside>
+    <p class="mark">Claim <span>evidence</span></p>
+    <p class="note">Neighbors of a frozen RAS/MAPK claim, grouped by why they were retrieved. Twenty papers per route.</p>
+    <div id="index"></div>
+  </aside>
+  <main id="reading"></main>
+</div>
+<script>
+/*__GRAPH__*/
+const LABELS = {
+  all: "All links",
+  citation: "Citation query",
+  shared_references: "Shared-reference query",
+  experimental: "Experimental-query match",
+  text_similarity: "Text similarity",
+  same_gene: "Same gene, by date",
+  combination: "Combined 20",
+  outside: "Outside the packet",
+  review: "Reviews"
+};
+const CHIP = {
+  citation: "Citation query",
+  shared_references: "Shared references",
+  experimental: "Experimental-query match",
+  text_similarity: "Text similarity",
+  same_gene: "Same gene",
+  review: "Review"
+};
+
+let filter = "all";
+let current = 0;
+
+function esc(value) {
+  return String(value ?? "").replace(/[&<>"']/g, (ch) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  }[ch]));
+}
+
+function highlight(text, terms) {
+  let html = esc(text);
+  (terms || []).forEach((term) => {
+    const bare = String(term).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    if (!bare) return;
+    html = html.replace(new RegExp(bare, "ig"), (match) => `<mark>${match}</mark>`);
+  });
+  return html;
+}
+
+function papersFor(claim) {
+  if (filter === "review") return claim.reviews || [];
+  return (claim.neighbors || []).filter((paper) => {
+    const types = paper.relationships.map((rel) => rel.type);
+    if (filter === "all") return true;
+    if (filter === "outside") return !paper.in_packet;
+    if (filter === "combination") return (paper.in_budget || []).includes("combination");
+    return types.includes(filter);
+  });
+}
+
+function renderIndex() {
+  const host = document.getElementById("index");
+  host.innerHTML = GRAPH.claims.map((claim, index) => `
+    <button class="claim-btn${index === current ? " active" : ""}" data-index="${index}">
+      <strong>${esc(claim.claim_id)} · ${esc(claim.spec.gene)} · ${esc(claim.year)}</strong>
+      <em>${esc(claim.spec.outcome).slice(0, 110)}</em>
+    </button>
+  `).join("");
+  host.querySelectorAll("button").forEach((button) => {
+    button.addEventListener("click", () => {
+      current = Number(button.dataset.index);
+      render();
+    });
+  });
+}
+
+function render() {
+  renderIndex();
+  const claim = GRAPH.claims[current];
+  const papers = papersFor(claim);
+  const counts = Object.keys(LABELS).map((key) => {
+    const saved = filter;
+    filter = key;
+    const n = papersFor(claim).length;
+    filter = saved;
+    return `<button class="${filter === key ? "on" : ""}" data-filter="${key}">${LABELS[key]} ${n}</button>`;
+  }).join("");
+    const yearNote = " Date rule: a paper in a later year is subsequent. In the source year, order is subsequent only when both dates have a real day and the paper is after the cutoff. A January 1 placeholder, or the same calendar day, is order-uncertain and stays in the list flagged.";
+  const cards = papers.map((paper) => {
+    const rels = filter === "all" || filter === "outside" || filter === "combination"
+      ? paper.relationships
+      : paper.relationships.filter((rel) => rel.type === filter);
+        const chips = paper.relationships.map((rel) => `<span class="chip ${rel.type}">${CHIP[rel.type] || rel.type}</span>`).join("");
+        const packet = paper.in_packet ? `<span class="chip packet">In the old packet</span>` : "";
+        const uncertain = paper.order_uncertain ? `<span class="chip packet">Order uncertain</span>` : "";
+        const duplicate = paper.duplicate_of ? `<span class="chip review">Same report as ${esc(paper.duplicate_of)}</span>` : "";
+        const adjudicated = paper.adjudication === "support" || paper.adjudication === "contradict" || paper.adjudication === "mixed"
+          ? `<span class="chip adjudicated">Audited direct test: ${esc(paper.adjudication)}</span>`
+          : paper.adjudication === "uncertain"
+          ? `<span class="chip packet">Audited test, order uncertain</span>`
+          : paper.adjudication === "disputed"
+          ? `<span class="chip packet">Disputed, pending cohort review</span>`
+          : "";
+    const blocks = rels.map((rel) => `
+      <p class="why">${esc(rel.why)}</p>
+      <p class="why">Retrieval passage. This sentence shows why the paper was retrieved. It is not a verified test of the claim.</p>
+      <div class="passage">${highlight(rel.passage, rel.matched_terms)}</div>
+    `).join("");
+    return `
+      <article class="card">
+        <div class="card-head">
+          <span class="pmid">PMID ${esc(paper.pmid)}</span>
+          <span class="pmid">${esc(paper.year)}</span>
+        </div>
+        <h2>${esc(paper.title)}</h2>
+        <div class="chips">${chips}${packet}${uncertain}${duplicate}${adjudicated}</div>
+        ${blocks}
+        <details>
+          <summary>Abstract</summary>
+          <p>${esc(paper.abstract)}</p>
+        </details>
+      </article>
+    `;
+  }).join("");
+  document.getElementById("reading").innerHTML = `
+    <p class="banner">These neighbors are for reading the evidence that followed the claim. They are not inputs for a forecast made on ${esc(claim.cutoff)}.</p>
+    <p class="kicker">${esc(claim.claim_id)} · ${esc(claim.spec.gene)} · ${esc(claim.year)}</p>
+    <h1>${esc(claim.judged_proposition || claim.spec.outcome)}</h1>
+    <p class="quote">${esc(claim.spec.quote)}</p>
+    <dl class="spec">
+      <dt>Intervention</dt><dd>${esc(claim.spec.intervention)}</dd>
+      <dt>Setting</dt><dd>${esc(claim.spec.setting)}</dd>
+      <dt>Outcome</dt><dd>${esc(claim.spec.outcome)}</dd>
+      <dt>Direction</dt><dd>${esc(claim.spec.direction)}</dd>
+      <dt>Source</dt><dd>PMID ${esc(claim.pmid)} · cutoff ${esc(claim.cutoff)} · horizon ${8} years</dd>
+    </dl>
+    <p class="meta">These chips record how the paper was retrieved. They are not verified scientific relationships. A citation query can return a paper about something else. An experimental-query match can be a real follow-up or a loose neighbor. A review can repeat the conclusion without a new experiment. Whether a paper tests the claim is a separate judgment.${yearNote}</p>
+    <div class="filters">${counts}</div>
+    ${cards || `<p class="empty">No papers in this group.</p>`}
+  `;
+  document.querySelectorAll(".filters button").forEach((button) => {
+    button.addEventListener("click", () => {
+      filter = button.dataset.filter;
+      render();
+    });
+  });
+}
+
+render();
+</script>
+</body>
+</html>

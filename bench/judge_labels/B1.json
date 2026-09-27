@@ -1,0 +1,1831 @@
+{
+  "annotator": "B1",
+  "claims": [
+    {
+      "claim_id": "C001",
+      "followups": [
+        {
+          "candidate_id": "C001-G01",
+          "pmid": "24259709",
+          "relation": "partial",
+          "independent": true,
+          "note": "Quantifies HRAS p.G12 mutations in sperm and blood, not in patients with Costello syndrome."
+        },
+        {
+          "candidate_id": "C001-G02",
+          "pmid": "23791108",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Identifies RIT1 mutations in Noonan syndrome; HRAS is mentioned only as background."
+        },
+        {
+          "candidate_id": "C001-G03",
+          "pmid": "17601930",
+          "relation": "direct_mixed",
+          "independent": true,
+          "note": "Of two sisters initially diagnosed with Costello syndrome, one had germline HRAS G12A and the other had KRAS F156L."
+        },
+        {
+          "candidate_id": "C001-G04",
+          "pmid": "22495892",
+          "relation": "partial",
+          "independent": true,
+          "note": "Describes the clinical course of four patients ascertained because testing found HRAS p.Gly12Val."
+        },
+        {
+          "candidate_id": "C001-G05",
+          "pmid": "16402937",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Genotypes RAS and BRAF in thyroid tumors, not in Costello syndrome."
+        },
+        {
+          "candidate_id": "C001-G06",
+          "pmid": "16575466",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Tests fluvastatin on cancer and endothelial cells, including an H-ras-driven line."
+        },
+        {
+          "candidate_id": "C001-G07",
+          "pmid": "16329078",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In 40 patients with Costello syndrome, 33 had HRAS missense mutations, all affecting codon 12 or 13."
+        },
+        {
+          "candidate_id": "C001-G08",
+          "pmid": "18823404",
+          "relation": "partial",
+          "independent": true,
+          "note": "Studies neurological phenotypes of mice carrying H-Ras(G12V), not of patients."
+        },
+        {
+          "candidate_id": "C001-G09",
+          "pmid": "16757341",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Methods review of Ras regulation of COX-2 in cancer."
+        },
+        {
+          "candidate_id": "C001-G10",
+          "pmid": "21068439",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Mouse SHP-2 deletion as a model of Noonan or LEOPARD skeletal disease."
+        },
+        {
+          "candidate_id": "C001-G11",
+          "pmid": "15965904",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Measures H-Ras mutations in laryngeal carcinoma, a different disease."
+        },
+        {
+          "candidate_id": "C001-G12",
+          "pmid": "23751039",
+          "relation": "partial",
+          "independent": true,
+          "note": "Images teeth in four Costello patients; heterozygous HRAS mutation is stated as the cause, not measured."
+        },
+        {
+          "candidate_id": "C001-G13",
+          "pmid": "22926243",
+          "relation": "partial",
+          "independent": true,
+          "note": "Reports the lethal course of two patients already identified as carrying HRAS p.G12C and p.G12D."
+        },
+        {
+          "candidate_id": "C001-G14",
+          "pmid": "23429430",
+          "relation": "partial",
+          "independent": true,
+          "note": "Scores phenotypic severity among Costello patients grouped by known HRAS mutation."
+        },
+        {
+          "candidate_id": "C001-G15",
+          "pmid": "16458120",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Finds an H-ras codon 61 mutation in rats treated with aristolochic acid."
+        },
+        {
+          "candidate_id": "C001-G16",
+          "pmid": "18483625",
+          "relation": "partial",
+          "independent": true,
+          "note": "Generates a mouse H-RasG12V model of Costello syndrome cardiovascular disease."
+        },
+        {
+          "candidate_id": "C001-G17",
+          "pmid": "21834037",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Identifies heterozygous HRAS p.G12S in siblings with Costello syndrome."
+        },
+        {
+          "candidate_id": "C001-G18",
+          "pmid": "16428512",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Studies a farnesyltransferase inhibitor in head and neck cancer, independent of H-Ras."
+        },
+        {
+          "candidate_id": "C001-G19",
+          "pmid": "22821884",
+          "relation": "partial",
+          "independent": true,
+          "note": "Reports a heterozygous HRAS p.S89C change, outside codons 12 and 13, in a developmental phenotype."
+        },
+        {
+          "candidate_id": "C001-G20",
+          "pmid": "20949621",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Biochemical classification of germline KRAS mutants; Costello syndrome is mentioned among related disorders."
+        },
+        {
+          "candidate_id": "C001-G21",
+          "pmid": "24382691",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Examines TP53 germline mutations in anaplastic rhabdomyosarcoma."
+        },
+        {
+          "candidate_id": "C001-G22",
+          "pmid": "23933734",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Tests ERK1 loss in a lamin A/C mouse cardiomyopathy model."
+        },
+        {
+          "candidate_id": "C001-G23",
+          "pmid": "23813656",
+          "relation": "partial",
+          "independent": true,
+          "note": "Surveys orthopedic findings in Costello syndrome; HRAS mutation is the stated cause, not the outcome."
+        },
+        {
+          "candidate_id": "C001-G24",
+          "pmid": "24464785",
+          "relation": "not_test",
+          "independent": true,
+          "note": "RasGRP1 knockout and mouse skin tumorigenesis."
+        },
+        {
+          "candidate_id": "C001-G25",
+          "pmid": "17060457",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Mouse model of dormant Wnt-driven mammary cancer with somatic H-Ras mutations."
+        },
+        {
+          "candidate_id": "C001-G26",
+          "pmid": "16449633",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Cell study of pRB requirement for Ras-driven transformation."
+        },
+        {
+          "candidate_id": "C001-G27",
+          "pmid": "16757336",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Methods review of the RIN family of Ras effectors."
+        },
+        {
+          "candidate_id": "C001-G28",
+          "pmid": "19132118",
+          "relation": "partial",
+          "independent": true,
+          "note": "Zebrafish expressing oncogenic H-RAS are used as a Costello syndrome model."
+        },
+        {
+          "candidate_id": "C001-G29",
+          "pmid": "16488996",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Cell biology of rasosomes carrying H-Ras or H-Ras(G12V)."
+        },
+        {
+          "candidate_id": "C001-G30",
+          "pmid": "16757335",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Methods chapter on the RAIN/RasIP1 Ras effector."
+        },
+        {
+          "candidate_id": "C001-G31",
+          "pmid": "19206169",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Screens BRAF in Noonan, LEOPARD, and cardiofaciocutaneous syndromes."
+        },
+        {
+          "candidate_id": "C001-G32",
+          "pmid": "21779495",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Review of functional differences among Ras isoforms."
+        },
+        {
+          "candidate_id": "C001-G33",
+          "pmid": "17085783",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PC12-cell study in which H-Ras(12V) affects MPP+ toxicity."
+        },
+        {
+          "candidate_id": "C001-G34",
+          "pmid": "17056636",
+          "relation": "partial",
+          "independent": true,
+          "note": "KRAS sequencing of a developmental-disorder cohort includes two patients meeting Costello criteria, without measuring HRAS codons 12 and 13."
+        },
+        {
+          "candidate_id": "C001-G35",
+          "pmid": "17162533",
+          "relation": "not_test",
+          "independent": true,
+          "note": "H-ras codon 61 mutations in chemically induced mouse mammary carcinomas."
+        },
+        {
+          "candidate_id": "C001-G36",
+          "pmid": "16572589",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Endothelial-cell microarray after stannin knockdown; an HRas-like suppressor is one transcript."
+        },
+        {
+          "candidate_id": "C001-G37",
+          "pmid": "23079662",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Mouse model of hedgehog-driven embryonal rhabdomyosarcoma."
+        },
+        {
+          "candidate_id": "C001-G38",
+          "pmid": "16364763",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Cytogenetics of a pediatric pancreatic neoplasm with HRAS loss of heterozygosity."
+        },
+        {
+          "candidate_id": "C001-G39",
+          "pmid": "16757360",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Methods for transforming ovarian surface epithelial cells with oncogenic H-ras."
+        },
+        {
+          "candidate_id": "C001-G40",
+          "pmid": "24668879",
+          "relation": "partial",
+          "independent": true,
+          "note": "Describes craniofacial and dental findings in 41 Costello patients; HRAS mutation is the stated cause."
+        },
+        {
+          "candidate_id": "C001-G41",
+          "pmid": "25387514",
+          "relation": "partial",
+          "independent": true,
+          "note": "Clinical case of Costello syndrome focused on skin changes, with no mutation result reported."
+        },
+        {
+          "candidate_id": "C001-G42",
+          "pmid": "24224811",
+          "relation": "partial",
+          "independent": true,
+          "note": "Biochemical kinetics of Costello-associated HRas mutants, not a measurement in patients."
+        },
+        {
+          "candidate_id": "C001-G43",
+          "pmid": "22317973",
+          "relation": "partial",
+          "independent": true,
+          "note": "Studies chondroitin sulfation in Costello fibroblasts that already carry oncogenic HRAS."
+        },
+        {
+          "candidate_id": "C001-G44",
+          "pmid": "21686750",
+          "relation": "direct_mixed",
+          "independent": true,
+          "note": "Of two sisters initially diagnosed with Costello syndrome, one had germline HRAS G12A and the other had KRAS F156L."
+        },
+        {
+          "candidate_id": "C001-G45",
+          "pmid": "25133308",
+          "relation": "partial",
+          "independent": true,
+          "note": "Autopsy of pulmonary vascular disease in one Costello patient already attributed to HRAS p.G12E."
+        },
+        {
+          "candidate_id": "C001-G46",
+          "pmid": "19206176",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "A child with typical Costello syndrome was found to carry a germline HRAS G12S mutation."
+        },
+        {
+          "candidate_id": "C001-G47",
+          "pmid": "20979192",
+          "relation": "partial",
+          "independent": true,
+          "note": "Describes severe skin laxity in a boy with somatic mosaic HRAS G12S rather than testing heterozygous mutations in a Costello cohort."
+        },
+        {
+          "candidate_id": "C001-G48",
+          "pmid": "24057668",
+          "relation": "partial",
+          "independent": true,
+          "note": "Enamel defects in Costello syndrome and a mouse model; the HRAS mutation is the known cause."
+        },
+        {
+          "candidate_id": "C001-G49",
+          "pmid": "16505104",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Vitamin E analog effects on Ras-transformed fibroblasts and cancer cell lines."
+        },
+        {
+          "candidate_id": "C001-G50",
+          "pmid": "16443854",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "HRAS sequencing in 43 clinically diagnosed Costello patients found missense mutations in 37, including codon 12 substitutions."
+        },
+        {
+          "candidate_id": "C001-G51",
+          "pmid": "21850009",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Identifies HRAS p.G12S, p.G12A, p.G12C, and p.G12D in 21 patients with Costello syndrome."
+        },
+        {
+          "candidate_id": "C001-G52",
+          "pmid": "17979197",
+          "relation": "partial",
+          "independent": true,
+          "note": "Typical Costello syndrome is reported with HRAS p.Lys117Arg, outside codons 12 and 13."
+        },
+        {
+          "candidate_id": "C001-G53",
+          "pmid": "19416908",
+          "relation": "partial",
+          "independent": true,
+          "note": "Mice with germline Hras(G12V) develop developmental defects and tumors."
+        },
+        {
+          "candidate_id": "C001-G54",
+          "pmid": "22098123",
+          "relation": "partial",
+          "independent": true,
+          "note": "Skin findings in 46 Costello patients already confirmed to carry HRAS mutations."
+        },
+        {
+          "candidate_id": "C001-G55",
+          "pmid": "16392807",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Platinum complexes tested in H-ras-transformed keratinocytes."
+        },
+        {
+          "candidate_id": "C001-G56",
+          "pmid": "21438134",
+          "relation": "partial",
+          "independent": true,
+          "note": "Compares phenotype between Costello patients already selected for HRAS p.G13C versus p.G12S."
+        },
+        {
+          "candidate_id": "C001-G57",
+          "pmid": "23335589",
+          "relation": "partial",
+          "independent": true,
+          "note": "A milder Costello phenotype is reported with an HRAS switch-II duplication, not a codon 12 or 13 missense mutation."
+        },
+        {
+          "candidate_id": "C001-G58",
+          "pmid": "16354683",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Cell study of RasV12 targeted to different membrane compartments."
+        },
+        {
+          "candidate_id": "C001-G59",
+          "pmid": "16434901",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Apoptosis markers in neuroblastoma, with nonspecific H-Ras staining in necrotic areas."
+        },
+        {
+          "candidate_id": "C001-G60",
+          "pmid": "21779504",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Review of Ras mutations in cancer and developmental syndromes."
+        },
+        {
+          "candidate_id": "C001-G61",
+          "pmid": "22488832",
+          "relation": "partial",
+          "independent": true,
+          "note": "Transmitted HRAS p.T58I with an attenuated phenotype, not a codon 12 or 13 mutation."
+        },
+        {
+          "candidate_id": "C001-G62",
+          "pmid": "21078999",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Somatic oncogene mutations, including HRAS, in seborrheic keratoses."
+        }
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "followups": [
+        {
+          "candidate_id": "C007-G01",
+          "pmid": "18500333",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Cooperating p53 loss and Ras activation in colon cells, not HRAS(G12V) in primary human melanocytes."
+        },
+        {
+          "candidate_id": "C007-G02",
+          "pmid": "17079462",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Oncogene combinations, including H-Ras, transform primary esophageal epithelial cells."
+        },
+        {
+          "candidate_id": "C007-G03",
+          "pmid": "17004132",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Methyl-cycle effects of L-NAME in V12-H-Ras pheochromocytoma cells."
+        },
+        {
+          "candidate_id": "C007-G04",
+          "pmid": "21779504",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Review of Ras mutations in cancer and developmental disease."
+        },
+        {
+          "candidate_id": "C007-G05",
+          "pmid": "17637831",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PERK signaling during mammary acinar morphogenesis, without HRAS(G12V) or melanocytes."
+        },
+        {
+          "candidate_id": "C007-G06",
+          "pmid": "23284910",
+          "relation": "partial",
+          "independent": true,
+          "note": "H-RasV12 causes premature senescence in human fibroblasts, not in primary human melanocytes."
+        },
+        {
+          "candidate_id": "C007-G07",
+          "pmid": "25360634",
+          "relation": "not_test",
+          "independent": true,
+          "note": "HRAS mutations in vemurafenib-associated skin tumors, not introduced into primary melanocytes."
+        },
+        {
+          "candidate_id": "C007-G08",
+          "pmid": "18679422",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF(V600E) or NRAS(Q61R), not HRAS(G12V), induces senescence in human melanocytes."
+        },
+        {
+          "candidate_id": "C007-G09",
+          "pmid": "18684108",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Apoptotic sensitivity of murine IAP-deficient cells."
+        },
+        {
+          "candidate_id": "C007-G10",
+          "pmid": "17215959",
+          "relation": "not_test",
+          "independent": true,
+          "note": "p53\u2013NF-kappaB chemotherapy signaling in neuroblastoma cells, with H-Ras as an intermediate."
+        },
+        {
+          "candidate_id": "C007-G11",
+          "pmid": "24240680",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Mouse skin papillomas driven by an Hras(G12V) knock-in allele."
+        },
+        {
+          "candidate_id": "C007-G12",
+          "pmid": "20824047",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KIT, KRAS, and BRAF mutations in salivary adenoid cystic carcinoma."
+        },
+        {
+          "candidate_id": "C007-G13",
+          "pmid": "24817989",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A frameshift HRAS insertion in multiple tumors of one patient with multiple sclerosis."
+        },
+        {
+          "candidate_id": "C007-G14",
+          "pmid": "16980621",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Raft clustering and H-Ras diffusion in the plasma membrane."
+        },
+        {
+          "candidate_id": "C007-G15",
+          "pmid": "17013754",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Zinc activates H-Ras and ERK-dependent death in embryonic fibroblasts."
+        },
+        {
+          "candidate_id": "C007-G16",
+          "pmid": "17121913",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Isoginkgetin and H-Ras-dependent MMP-9 in fibrosarcoma cells."
+        },
+        {
+          "candidate_id": "C007-G17",
+          "pmid": "25120700",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Hotspot sequencing in hepatocellular carcinoma found no HRAS mutations."
+        },
+        {
+          "candidate_id": "C007-G18",
+          "pmid": "24971065",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Carbon nanotubes up-regulate H-Ras during transformation of mesothelial cells."
+        },
+        {
+          "candidate_id": "C007-G19",
+          "pmid": "24121492",
+          "relation": "not_test",
+          "independent": true,
+          "note": "RAF-inhibitor resistance in melanoma, including an HRAS mutation in resistant tumors."
+        },
+        {
+          "candidate_id": "C007-G20",
+          "pmid": "17172849",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Perspective on Ras ubiquitination and membrane trafficking."
+        },
+        {
+          "candidate_id": "C007-G21",
+          "pmid": "16721810",
+          "relation": "not_test",
+          "independent": true,
+          "note": "H-Ras promotes invasion of rat liver epithelial cells through MMP-9 and COX-2."
+        },
+        {
+          "candidate_id": "C007-G22",
+          "pmid": "18843795",
+          "relation": "not_test",
+          "independent": true,
+          "note": "p16INK4a induces arrest and vacuolization in a melanoma cell model."
+        },
+        {
+          "candidate_id": "C007-G23",
+          "pmid": "18593938",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Protein-disulfide-isomerase inhibitors increase ER-stress apoptosis in melanoma cells."
+        },
+        {
+          "candidate_id": "C007-G24",
+          "pmid": "20703083",
+          "relation": "partial",
+          "independent": true,
+          "note": "Mouse melanocytes expressing HRAS(G12V) develop nevi and melanomas, not the human melanocyte arrest phenotype."
+        },
+        {
+          "candidate_id": "C007-G25",
+          "pmid": "17121879",
+          "relation": "not_test",
+          "independent": true,
+          "note": "RASGEF1A exchange activity toward Ras in cholangiocarcinoma."
+        },
+        {
+          "candidate_id": "C007-G26",
+          "pmid": "22589270",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Survey of Ras codon mutation spectra across cancers."
+        },
+        {
+          "candidate_id": "C007-G27",
+          "pmid": "22800643",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Proteomic effects of HRAS(V12) in Caco2 colorectal cells."
+        },
+        {
+          "candidate_id": "C007-G28",
+          "pmid": "20157537",
+          "relation": "partial",
+          "independent": true,
+          "note": "Oncogenic N-RAS, not HRAS(G12V), induces senescence in human melanocytes."
+        },
+        {
+          "candidate_id": "C007-G29",
+          "pmid": "22065586",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Oncogenic H-Ras12V induces death receptor 5 in cancer cells."
+        },
+        {
+          "candidate_id": "C007-G30",
+          "pmid": "17102594",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A dominant-negative H-RAS mutant suppresses growth of human cancer cell lines."
+        },
+        {
+          "candidate_id": "C007-G31",
+          "pmid": "18802460",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KSHV K7 retains a viral GPCR in the endoplasmic reticulum."
+        },
+        {
+          "candidate_id": "C007-G32",
+          "pmid": "17045205",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Akt deletion suppresses v-H-Ras tumorigenesis in mice."
+        },
+        {
+          "candidate_id": "C007-G33",
+          "pmid": "17643369",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Wnt repression and senescence-associated heterochromatin in primary human cells."
+        },
+        {
+          "candidate_id": "C007-G34",
+          "pmid": "19001088",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Hsp72 suppresses Ras-associated senescence pathways in cancer cells."
+        },
+        {
+          "candidate_id": "C007-G35",
+          "pmid": "17022653",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Proteomics of NIH3T3 cells transformed by H-RasV12."
+        },
+        {
+          "candidate_id": "C007-G36",
+          "pmid": "19087308",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KRAS G12V versus G12D expression profiles in a BRAF-mutant colorectal cell line."
+        },
+        {
+          "candidate_id": "C007-G37",
+          "pmid": "17916908",
+          "relation": "not_test",
+          "independent": true,
+          "note": "p53 and Rb repress survivin in normal human melanocytes."
+        },
+        {
+          "candidate_id": "C007-G38",
+          "pmid": "17132229",
+          "relation": "not_test",
+          "independent": true,
+          "note": "p53\u2013NF-kappaB chemotherapy signaling in neuroblastoma, with H-Ras as an intermediate."
+        },
+        {
+          "candidate_id": "C007-G39",
+          "pmid": "22758774",
+          "relation": "not_test",
+          "independent": true,
+          "note": "GNAQ, GNA11, and N-RAS mutations in primary melanocytic tumors of the central nervous system."
+        },
+        {
+          "candidate_id": "C007-G40",
+          "pmid": "17088437",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Mutation survey of 24 cancer genes, including HRAS, in the NCI-60 cell lines."
+        },
+        {
+          "candidate_id": "C007-G41",
+          "pmid": "16969121",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A prenyltransferase inhibitor radiosensitizes RAS-mutant cancer cell lines."
+        },
+        {
+          "candidate_id": "C007-G42",
+          "pmid": "25212220",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KLF6 impairs H-Ras(G12V) transformation of NIH3T3 cells."
+        },
+        {
+          "candidate_id": "C007-G43",
+          "pmid": "24487406",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Stochastic H-RAS expression causes hyperpigmentation and tumors in zebrafish."
+        },
+        {
+          "candidate_id": "C007-G44",
+          "pmid": "17176109",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Hydrophilic prenyl analogues inhibit H-Ras function in Xenopus oocytes."
+        },
+        {
+          "candidate_id": "C007-G45",
+          "pmid": "24525237",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Wild-type H-Ras modulates DNA-damage signaling in mutant K-Ras cancer cells."
+        },
+        {
+          "candidate_id": "C007-G46",
+          "pmid": "17906696",
+          "relation": "not_test",
+          "independent": true,
+          "note": "c-Myc depletion inhibits proliferation of human tumor cells."
+        },
+        {
+          "candidate_id": "C007-G47",
+          "pmid": "19228725",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Fenretinide plus bortezomib increases ER-stress apoptosis in melanoma cells."
+        },
+        {
+          "candidate_id": "C007-G48",
+          "pmid": "23868059",
+          "relation": "not_test",
+          "independent": true,
+          "note": "GFP-H-Ras transfers from B cells to T cells along tunneling nanotubes."
+        },
+        {
+          "candidate_id": "C007-G49",
+          "pmid": "17079470",
+          "relation": "not_test",
+          "independent": true,
+          "note": "H-Ras induces MMP-2 in MCF10A breast epithelial cells through p38."
+        },
+        {
+          "candidate_id": "C007-G50",
+          "pmid": "24586816",
+          "relation": "partial",
+          "independent": true,
+          "note": "H-RasV12 causes proliferative arrest and raises lysosomal enzyme activity in human fibroblasts."
+        },
+        {
+          "candidate_id": "C007-G51",
+          "pmid": "18451152",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PERK activation arrests growth of carcinoma cell lines."
+        },
+        {
+          "candidate_id": "C007-G52",
+          "pmid": "16969868",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Mosaic HRAS G12S in a patient with Costello syndrome."
+        },
+        {
+          "candidate_id": "C007-G53",
+          "pmid": "18716061",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Skp2 depletion causes a p53-dependent G2/M arrest in melanoma cells."
+        },
+        {
+          "candidate_id": "C007-G54",
+          "pmid": "23223138",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Ptch1 overexpression cooperates with chemically induced Hras mutations in mouse skin."
+        },
+        {
+          "candidate_id": "C007-G55",
+          "pmid": "19269363",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Review of oncogene and non-oncogene addiction in cancer therapy."
+        },
+        {
+          "candidate_id": "C007-G56",
+          "pmid": "16676365",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Array-CGH of oral squamous carcinomas, with HRAS among regions of gain."
+        },
+        {
+          "candidate_id": "C007-G57",
+          "pmid": "19412428",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Melanoma cells under ER stress resist microtubule-targeting drugs."
+        },
+        {
+          "candidate_id": "C007-G58",
+          "pmid": "17201180",
+          "relation": "not_test",
+          "independent": true,
+          "note": "TCDD alters LFA-1 adhesion and H-Ras expression patterns in splenocytes."
+        },
+        {
+          "candidate_id": "C007-G59",
+          "pmid": "25026275",
+          "relation": "not_test",
+          "independent": true,
+          "note": "H-Ras expression correlates with TRAIL resistance across the NCI-60 lines."
+        },
+        {
+          "candidate_id": "C007-G60",
+          "pmid": "18953432",
+          "relation": "not_test",
+          "independent": true,
+          "note": "p16 expression and absence of activated B-RAF predict melanoma chemosensitivity."
+        },
+        {
+          "candidate_id": "C007-G61",
+          "pmid": "17210246",
+          "relation": "partial",
+          "independent": true,
+          "note": "Activated H-Ras(G12V) causes cytoplasmic vacuolation in glioblastoma cells, not in primary human melanocytes."
+        },
+        {
+          "candidate_id": "C007-G62",
+          "pmid": "25189269",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Silencing H-Ras V12 in hepatocellular carcinoma cells increases cisplatin sensitivity."
+        }
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "followups": [
+        {
+          "candidate_id": "C013-G01",
+          "pmid": "24838814",
+          "relation": "direct_mixed",
+          "independent": true,
+          "note": "BRAF mutation was not associated with persistence or recurrence in the full papillary carcinoma cohort, but it was associated in tumors larger than 10 mm."
+        },
+        {
+          "candidate_id": "C013-G02",
+          "pmid": "23543667",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Genomic profiles of Hurthle cell tumors, including a BRAF hotspot screen, distinguish them from papillary carcinoma."
+        },
+        {
+          "candidate_id": "C013-G03",
+          "pmid": "26223933",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In papillary thyroid microcarcinoma, BRAF mutation was associated with extrathyroidal extension, nodal metastasis, advanced stage, and other adverse features."
+        },
+        {
+          "candidate_id": "C013-G04",
+          "pmid": "26231782",
+          "relation": "partial",
+          "independent": true,
+          "note": "Case report of a rare BRAF codon-600 deletion in one papillary carcinoma, without a mutation-versus-wild-type prognosis comparison."
+        },
+        {
+          "candidate_id": "C013-G05",
+          "pmid": "26080065",
+          "relation": "partial",
+          "independent": true,
+          "note": "Tests BRAF immunocytochemistry on smears for diagnostic concordance, not for prognosis."
+        },
+        {
+          "candidate_id": "C013-G06",
+          "pmid": "17699848",
+          "relation": "not_test",
+          "independent": true,
+          "note": "FGFR2-IIIb regulation of MAGE-A3/6 in a thyroid cancer cell line."
+        },
+        {
+          "candidate_id": "C013-G07",
+          "pmid": "25588542",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF and other markers in anaplastic thyroid cancer, not papillary carcinoma prognosis."
+        },
+        {
+          "candidate_id": "C013-G08",
+          "pmid": "31627522",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Familial versus sporadic thyroid cancer, with BRAF mentioned only as having been investigated in six familial papillary cases."
+        },
+        {
+          "candidate_id": "C013-G09",
+          "pmid": "25244593",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Meta-analysis found papillary thyroid cancer with BRAF mutation had higher risk of events and of death."
+        },
+        {
+          "candidate_id": "C013-G10",
+          "pmid": "26187369",
+          "relation": "partial",
+          "independent": true,
+          "note": "Cytomorphologic features are used to predict which suspicious nodules carry BRAF V600E."
+        },
+        {
+          "candidate_id": "C013-G11",
+          "pmid": "26362194",
+          "relation": "partial",
+          "independent": true,
+          "note": "Three ovarian struma papillary carcinomas, with novel BRAF or KRAS mutations and no recurrence on short follow-up."
+        },
+        {
+          "candidate_id": "C013-G12",
+          "pmid": "24955024",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Review of molecular markers, including BRAF, for preoperative diagnosis of thyroid nodules."
+        },
+        {
+          "candidate_id": "C013-G13",
+          "pmid": "17663506",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KLF6, K-ras, and B-raf mutations in nonpolypoid colorectal carcinoma."
+        },
+        {
+          "candidate_id": "C013-G14",
+          "pmid": "17710160",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Beta-catenin, CIMP, and BRAF mutation in colorectal cancer."
+        },
+        {
+          "candidate_id": "C013-G15",
+          "pmid": "24992171",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF was mutated in the well-differentiated component of a few thyroid cancers with a minor poorly differentiated component; prognosis was not compared by BRAF status."
+        },
+        {
+          "candidate_id": "C013-G16",
+          "pmid": "24679337",
+          "relation": "direct_mixed",
+          "independent": true,
+          "note": "BRAF V600E was associated with advanced stage but was not related to incomplete response during follow-up."
+        },
+        {
+          "candidate_id": "C013-G17",
+          "pmid": "23946802",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Review of BRAF mutation prevalence in preoperative thyroid FNA for diagnosis."
+        },
+        {
+          "candidate_id": "C013-G18",
+          "pmid": "26214416",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "BRAF V600E independently predicted central lymph-node metastasis in papillary thyroid carcinoma."
+        },
+        {
+          "candidate_id": "C013-G19",
+          "pmid": "26355276",
+          "relation": "partial",
+          "independent": true,
+          "note": "Single aggressive micropapillary carcinoma carrying BRAF V600E plus three other mutations."
+        },
+        {
+          "candidate_id": "C013-G20",
+          "pmid": "17699719",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Mutant B-Raf signaling in melanoma and colorectal carcinoma cell lines."
+        },
+        {
+          "candidate_id": "C013-G21",
+          "pmid": "17699718",
+          "relation": "not_test",
+          "independent": true,
+          "note": "MEK inhibitor AZD6244 in BRAF- or RAS-mutant xenografts."
+        },
+        {
+          "candidate_id": "C013-G22",
+          "pmid": "17709622",
+          "relation": "partial",
+          "independent": true,
+          "note": "MEK inhibitors slow growth of a BRAF-mutant papillary thyroid carcinoma cell line."
+        },
+        {
+          "candidate_id": "C013-G23",
+          "pmid": "23109980",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "BRAF V600E in papillary carcinoma was associated with extrathyroidal invasion, lymph-node metastasis, and multiple tumors."
+        },
+        {
+          "candidate_id": "C013-G24",
+          "pmid": "25262966",
+          "relation": "partial",
+          "independent": true,
+          "note": "HO-1 expression tracks tumor aggressiveness and co-occurs with BRAF V600E; BRAF itself is not tested against prognosis."
+        },
+        {
+          "candidate_id": "C013-G25",
+          "pmid": "26152656",
+          "relation": "direct_contradict",
+          "independent": true,
+          "note": "BRAF p.V600E showed no correlation with clinicopathologic parameters other than older age."
+        },
+        {
+          "candidate_id": "C013-G26",
+          "pmid": "19808899",
+          "relation": "not_test",
+          "independent": true,
+          "note": "HIF-1 alpha expression in thyroid carcinomas and cell lines, some of which carry B-RAF mutations."
+        },
+        {
+          "candidate_id": "C013-G27",
+          "pmid": "23687957",
+          "relation": "direct_mixed",
+          "independent": true,
+          "note": "Univariate associations of BRAF V600E with larger size and extrathyroidal extension were lost on multivariate analysis, and the mutation was not an independent prognostic factor."
+        },
+        {
+          "candidate_id": "C013-G28",
+          "pmid": "17962726",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Review of microsatellite-instability testing in colorectal cancer, mentioning BRAF V600E."
+        },
+        {
+          "candidate_id": "C013-G29",
+          "pmid": "17591929",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Methylation-marker evaluation for CIMP in colorectal cancer, using BRAF mutation frequency as a cutoff aid."
+        },
+        {
+          "candidate_id": "C013-G30",
+          "pmid": "25482468",
+          "relation": "direct_contradict",
+          "independent": true,
+          "note": "BRAF V600E was not associated with aggressive clinicopathologic features or with decreased survival in papillary carcinoma."
+        },
+        {
+          "candidate_id": "C013-G31",
+          "pmid": "17661820",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Germline Ras-MAPK gene sequencing in Korean patients with Noonan syndrome."
+        },
+        {
+          "candidate_id": "C013-G32",
+          "pmid": "17667549",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Filiform serrated adenomas of the colorectum, including BRAF mutation status."
+        },
+        {
+          "candidate_id": "C013-G33",
+          "pmid": "17693984",
+          "relation": "direct_contradict",
+          "independent": true,
+          "note": "No correlation was found between BRAF mutation and clinical stage or outcome in Polish papillary carcinomas."
+        },
+        {
+          "candidate_id": "C013-G34",
+          "pmid": "17725429",
+          "relation": "partial",
+          "independent": true,
+          "note": "Mutation profiles of thyroid carcinoma cell lines, including BRAF."
+        },
+        {
+          "candidate_id": "C013-G35",
+          "pmid": "25285888",
+          "relation": "partial",
+          "independent": true,
+          "note": "Dabrafenib responses in patients already selected for metastatic BRAF-mutant thyroid carcinoma."
+        },
+        {
+          "candidate_id": "C013-G36",
+          "pmid": "17592266",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Clonal analysis of ovarian serous tumors; BRAF was wild type in the cases tested."
+        },
+        {
+          "candidate_id": "C013-G37",
+          "pmid": "22507190",
+          "relation": "not_test",
+          "independent": true,
+          "note": "IRF5 promotes proliferation of thyroid cancer cells and can induce endogenous B-Raf."
+        },
+        {
+          "candidate_id": "C013-G38",
+          "pmid": "22681706",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "BRAF V600E was associated with extrathyroidal extension and lymph-node metastasis in papillary carcinoma."
+        },
+        {
+          "candidate_id": "C013-G39",
+          "pmid": "22730516",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Scientific statement on health disparities in endocrine disorders."
+        },
+        {
+          "candidate_id": "C013-G40",
+          "pmid": "22925390",
+          "relation": "unclear_reporting",
+          "independent": true,
+          "note": "BRAF exon 15 was sequenced across thyroid lesions to assess clinicopathologic value, but the abstract does not report whether mutation status tracked aggressive features."
+        },
+        {
+          "candidate_id": "C013-G41",
+          "pmid": "17551339",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KRAS mutation in a baby with cardio-facio-cutaneous syndrome and an ulcerating hemangioma."
+        },
+        {
+          "candidate_id": "C013-G42",
+          "pmid": "26521469",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF V600E on preoperative aspirates is used as a diagnostic marker of papillary carcinoma."
+        },
+        {
+          "candidate_id": "C013-G43",
+          "pmid": "25922907",
+          "relation": "partial",
+          "independent": true,
+          "note": "Compares RNA expression profiles of BRAF-mutant and wild-type papillary carcinomas."
+        },
+        {
+          "candidate_id": "C013-G44",
+          "pmid": "17696956",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Rare BRAF deletion in a colorectal serrated adenoma from a patient with familial adenomatous polyposis."
+        },
+        {
+          "candidate_id": "C013-G45",
+          "pmid": "26823846",
+          "relation": "direct_contradict",
+          "independent": true,
+          "note": "BRAF V600E was common in this papillary carcinoma cohort but was not associated with clinicopathologic aggressiveness."
+        },
+        {
+          "candidate_id": "C013-G46",
+          "pmid": "25109485",
+          "relation": "not_test",
+          "independent": true,
+          "note": "RAS mutations in BRAF-negative indeterminate thyroid nodules predict follicular-variant papillary carcinoma."
+        },
+        {
+          "candidate_id": "C013-G47",
+          "pmid": "25012490",
+          "relation": "partial",
+          "independent": true,
+          "note": "MUC1 expression correlates with both BRAF V600E and nodal metastasis; BRAF is not the prognostic comparison."
+        },
+        {
+          "candidate_id": "C013-G48",
+          "pmid": "22973979",
+          "relation": "partial",
+          "independent": true,
+          "note": "Germline BRAF SNPs and papillary carcinoma risk, not somatic BRAF mutation versus prognosis."
+        },
+        {
+          "candidate_id": "C013-G49",
+          "pmid": "17372901",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KIT L576P in anal melanomas; BRAF mutations were not found."
+        },
+        {
+          "candidate_id": "C013-G50",
+          "pmid": "23062653",
+          "relation": "direct_contradict",
+          "independent": true,
+          "note": "BRAF mutation was not significantly associated with lymph-node metastasis in papillary carcinoma."
+        },
+        {
+          "candidate_id": "C013-G51",
+          "pmid": "25444226",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Cost-utility model that assumes BRAF-mutant papillary carcinoma has a poorer prognosis."
+        },
+        {
+          "candidate_id": "C013-G52",
+          "pmid": "26271724",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "BRAF V600E microcarcinomas showed infiltrative growth, extrathyroidal extension, and higher recurrence-risk group."
+        },
+        {
+          "candidate_id": "C013-G53",
+          "pmid": "25312294",
+          "relation": "partial",
+          "independent": true,
+          "note": "Hashimoto thyroiditis in papillary carcinoma is linked to fewer BRAF mutations and less aggressive features; BRAF versus prognosis is not the reported comparison."
+        },
+        {
+          "candidate_id": "C013-G54",
+          "pmid": "17606714",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Microsatellite instability and metastases in colorectal cancer, with BRAF among covariates."
+        },
+        {
+          "candidate_id": "C013-G55",
+          "pmid": "24367375",
+          "relation": "partial",
+          "independent": true,
+          "note": "Promoter methylation in papillary carcinoma co-occurs with BRAF or RAS mutation, without a prognosis comparison."
+        },
+        {
+          "candidate_id": "C013-G56",
+          "pmid": "25337709",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "BRAF V600E was associated with larger size, extrathyroidal extension, nodal metastasis, and advanced stage."
+        },
+        {
+          "candidate_id": "C013-G57",
+          "pmid": "22654562",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Review of kinase-inhibitor trials in advanced thyroid cancer."
+        },
+        {
+          "candidate_id": "C013-G58",
+          "pmid": "25870252",
+          "relation": "direct_contradict",
+          "independent": true,
+          "note": "In tall-cell-enriched papillary carcinomas, BRAF mutation did not influence patient outcome."
+        },
+        {
+          "candidate_id": "C013-G59",
+          "pmid": "25325273",
+          "relation": "direct_mixed",
+          "independent": true,
+          "note": "BRAF V600E-positive papillary carcinomas had more aggressive clinicopathologic features, but 10-year recurrence rates did not differ by mutation status."
+        },
+        {
+          "candidate_id": "C013-G60",
+          "pmid": "21880806",
+          "relation": "partial",
+          "independent": true,
+          "note": "A mutation panel including BRAF improves cancer risk estimates in cytologically indeterminate thyroid nodules."
+        },
+        {
+          "candidate_id": "C013-G61",
+          "pmid": "22998776",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF silencing plus TSH increases iodine uptake in a BRAF-mutant thyroid cancer cell line."
+        },
+        {
+          "candidate_id": "C013-G62",
+          "pmid": "26120069",
+          "relation": "direct_contradict",
+          "independent": true,
+          "note": "BRAF mutation was not an independent indicator of nodal metastasis or locoregional recurrence in conventional papillary carcinoma."
+        },
+        {
+          "candidate_id": "C013-G63",
+          "pmid": "26230187",
+          "relation": "partial",
+          "independent": true,
+          "note": "Uncommon BRAF mutations in follicular-variant papillary carcinoma are described as less aggressive than the usual V600E pattern."
+        },
+        {
+          "candidate_id": "C013-G64",
+          "pmid": "26403329",
+          "relation": "partial",
+          "independent": true,
+          "note": "ERK and AKT are active in BRAF V600E thyroid carcinoma cell lines."
+        },
+        {
+          "candidate_id": "C013-G65",
+          "pmid": "17567882",
+          "relation": "not_test",
+          "independent": true,
+          "note": "MEK1 mutation in cardio-facio-cutaneous syndrome with hepatoblastoma after heart transplantation."
+        },
+        {
+          "candidate_id": "C013-G66",
+          "pmid": "23055546",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Meta-analysis associated BRAF V600E with nodal metastasis, advanced stage, extrathyroidal extension, and larger tumor size in papillary thyroid cancer."
+        },
+        {
+          "candidate_id": "C013-G67",
+          "pmid": "17551924",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Germline BRAF and MEK1 mutations distinguishing cardio-facio-cutaneous syndrome from Costello syndrome."
+        },
+        {
+          "candidate_id": "C013-G68",
+          "pmid": "23158172",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Adding BRAF V600E status improved prediction of papillary carcinoma recurrence beyond standard risk algorithms."
+        },
+        {
+          "candidate_id": "C013-G69",
+          "pmid": "22994622",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PIK3CA copy-number gain and prognosis in head and neck squamous carcinoma."
+        },
+        {
+          "candidate_id": "C013-G70",
+          "pmid": "25888143",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E and histologic prognostic markers in cutaneous melanoma."
+        },
+        {
+          "candidate_id": "C013-G71",
+          "pmid": "26177218",
+          "relation": "direct_contradict",
+          "independent": true,
+          "note": "Relapse of papillary thyroid cancer was related to nodal metastasis and extrathyroidal invasion, with no demonstrated impact of BRAF V600E."
+        },
+        {
+          "candidate_id": "C013-G72",
+          "pmid": "26338373",
+          "relation": "direct_mixed",
+          "independent": true,
+          "note": "BRAF V600E tracked aggressiveness and recurrence risk in papillary carcinomas up to 20 mm, but that correlation was absent across microcarcinomas as a whole."
+        }
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "followups": [
+        {
+          "candidate_id": "C014-G01",
+          "pmid": "19509418",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PTPN11 mutants and Stat3 in Noonan syndrome and juvenile myelomonocytic leukemia."
+        },
+        {
+          "candidate_id": "C014-G02",
+          "pmid": "17909043",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Zoledronic acid inhibits c-Raf signaling in neuroblastoma bone metastasis."
+        },
+        {
+          "candidate_id": "C014-G03",
+          "pmid": "19077116",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Cognitive scores by PTPN11 and SOS1 genotype in Noonan syndrome; RAF1 was not tested."
+        },
+        {
+          "candidate_id": "C014-G04",
+          "pmid": "19020799",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Korean patients with Noonan syndrome and RAF1 mutations, including the CR2-site change S259T, all had hypertrophic cardiomyopathy."
+        },
+        {
+          "candidate_id": "C014-G05",
+          "pmid": "17616647",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Tyrosine-phosphorylation pathways in airway mucin secretion, using a RAF1 kinase inhibitor."
+        },
+        {
+          "candidate_id": "C014-G06",
+          "pmid": "18925961",
+          "relation": "not_test",
+          "independent": true,
+          "note": "RAS and RUNX1 alterations in chronic myelomonocytic leukemia."
+        },
+        {
+          "candidate_id": "C014-G07",
+          "pmid": "17666399",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Beta-arrestin ubiquitination and c-Raf binding in receptor endocytosis."
+        },
+        {
+          "candidate_id": "C014-G08",
+          "pmid": "17724030",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Equol inhibits MEK1 and neoplastic transformation; Raf1 kinase activity was not inhibited."
+        },
+        {
+          "candidate_id": "C014-G09",
+          "pmid": "17889669",
+          "relation": "not_test",
+          "independent": true,
+          "note": "RASSF1A disrupts the Raf1\u2013MST2 complex to promote apoptosis."
+        },
+        {
+          "candidate_id": "C014-G10",
+          "pmid": "18000499",
+          "relation": "not_test",
+          "independent": true,
+          "note": "HDAC inhibitor R306465 and c-raf protein levels in cancer cells."
+        },
+        {
+          "candidate_id": "C014-G11",
+          "pmid": "24259500",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Cardiomyocyte-specific KRAS(G12D) does not cause cardiomyopathy in mice."
+        },
+        {
+          "candidate_id": "C014-G12",
+          "pmid": "17613527",
+          "relation": "not_test",
+          "independent": true,
+          "note": "N-region residues that set basal activity of A-RAF versus C-RAF."
+        },
+        {
+          "candidate_id": "C014-G13",
+          "pmid": "18205709",
+          "relation": "not_test",
+          "independent": true,
+          "note": "B-Raf and C-Raf roles in mouse embryonic endothelial progenitor cells."
+        },
+        {
+          "candidate_id": "C014-G14",
+          "pmid": "17554210",
+          "relation": "not_test",
+          "independent": true,
+          "note": "c-raf.1 expression during chemical hepatocarcinogenesis in rats."
+        },
+        {
+          "candidate_id": "C014-G15",
+          "pmid": "19156172",
+          "relation": "not_test",
+          "independent": true,
+          "note": "MEK1 and MEK2 mutations in cardio-facio-cutaneous syndrome, absent in a Noonan comparison group."
+        },
+        {
+          "candidate_id": "C014-G16",
+          "pmid": "26467173",
+          "relation": "partial",
+          "independent": true,
+          "note": "A fetus with Noonan features carried RAF1 S650F, outside the CR2 domain, with hydrops and a possible cardiac defect."
+        },
+        {
+          "candidate_id": "C014-G17",
+          "pmid": "19760651",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PTPN11 duplication is an uncommon cause of Noonan syndrome; RAF1 sequencing was normal."
+        },
+        {
+          "candidate_id": "C014-G18",
+          "pmid": "24569458",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Oncogenic ARAF mutations in lung adenocarcinoma, with a nearby RAF1 residue noted in other tumors."
+        },
+        {
+          "candidate_id": "C014-G19",
+          "pmid": "18055485",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Calcitonin suppresses ERK via c-Raf phosphorylation in breast cancer cells."
+        },
+        {
+          "candidate_id": "C014-G20",
+          "pmid": "20052757",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "RAF1 mutations in Noonan syndrome clustered in the CR2 domain, and hypertrophic cardiomyopathy was more frequent in patients with RAF1 mutations."
+        },
+        {
+          "candidate_id": "C014-G21",
+          "pmid": "24775816",
+          "relation": "partial",
+          "independent": true,
+          "note": "LEOPARD syndrome cohort with frequent hypertrophic cardiomyopathy; two patients had a RAF mutation that is not assigned to the CR2 domain."
+        },
+        {
+          "candidate_id": "C014-G22",
+          "pmid": "17569628",
+          "relation": "not_test",
+          "independent": true,
+          "note": "EGCG inhibits Ras, Raf-1, and ERK and induces apoptosis in pancreatic cancer cells."
+        },
+        {
+          "candidate_id": "C014-G23",
+          "pmid": "23885229",
+          "relation": "unclear_reporting",
+          "independent": true,
+          "note": "Three patients with Noonan syndrome had RAF1 mutations, but the abstract does not report domain or hypertrophic cardiomyopathy."
+        },
+        {
+          "candidate_id": "C014-G24",
+          "pmid": "17699868",
+          "relation": "not_test",
+          "independent": true,
+          "note": "HDAC inhibitors deplete estrogen receptor and c-Raf in breast cancer cells."
+        },
+        {
+          "candidate_id": "C014-G25",
+          "pmid": "22389993",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Two children with LEOPARD syndrome and CR2-site RAF1 changes Ser257Leu and Ser259Leu both had obstructive hypertrophic cardiomyopathy."
+        },
+        {
+          "candidate_id": "C014-G26",
+          "pmid": "18483625",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Mouse H-RasG12V model of Costello syndrome cardiomyopathy."
+        },
+        {
+          "candidate_id": "C014-G27",
+          "pmid": "19251646",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PTPN11 knock-in mice model Noonan syndrome valve defects; RAF1 is mentioned as another cause."
+        },
+        {
+          "candidate_id": "C014-G28",
+          "pmid": "25423878",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A MAP2K1 mutation in Noonan syndrome with multiple lentigines, without hypertrophic cardiomyopathy."
+        },
+        {
+          "candidate_id": "C014-G29",
+          "pmid": "18784923",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Ras-GTP levels in leukemias and lymphomas."
+        },
+        {
+          "candidate_id": "C014-G30",
+          "pmid": "26380542",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Review of cardiomyopathies across the RASopathies, including RAF1."
+        },
+        {
+          "candidate_id": "C014-G31",
+          "pmid": "25706034",
+          "relation": "partial",
+          "independent": true,
+          "note": "Two infants with Noonan syndrome and the CR2-site RAF1 change Ser257Leu developed fatal pulmonary arterial hypertension."
+        },
+        {
+          "candidate_id": "C014-G32",
+          "pmid": "22855653",
+          "relation": "not_test",
+          "independent": true,
+          "note": "NRAS mutations in Noonan syndrome patients already negative for RAF1."
+        },
+        {
+          "candidate_id": "C014-G33",
+          "pmid": "17692806",
+          "relation": "not_test",
+          "independent": true,
+          "note": "E-cadherin loss in a C-RAF-driven mouse lung cancer model."
+        },
+        {
+          "candidate_id": "C014-G34",
+          "pmid": "19352411",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PTPN11 and SOS1 mutations in Noonan syndrome with multiple giant-cell lesions."
+        },
+        {
+          "candidate_id": "C014-G35",
+          "pmid": "26286251",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PTPN11 Thr73Ile Noonan syndrome with hypertrophic cardiomyopathy; RAF1 sequencing found no mutation."
+        },
+        {
+          "candidate_id": "C014-G36",
+          "pmid": "17603483",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "RAF1 mutations flanking the CR2 residue Ser259 were present in Noonan and LEOPARD syndromes, and 18 of 19 hotspot-mutation subjects had hypertrophic cardiomyopathy."
+        },
+        {
+          "candidate_id": "C014-G37",
+          "pmid": "18398503",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF duplication or mutation in low-grade astrocytomas."
+        },
+        {
+          "candidate_id": "C014-G38",
+          "pmid": "22781091",
+          "relation": "partial",
+          "independent": true,
+          "note": "Atrioventricular canal defect in RASopathies includes one RAF1-mutation subject, without a CR2-versus-hypertrophic-cardiomyopathy comparison."
+        },
+        {
+          "candidate_id": "C014-G39",
+          "pmid": "24777450",
+          "relation": "partial",
+          "independent": true,
+          "note": "Rare RAF1 mutations in childhood-onset dilated cardiomyopathy, not CR2 mutations in Noonan syndrome with hypertrophic cardiomyopathy."
+        },
+        {
+          "candidate_id": "C014-G40",
+          "pmid": "18952847",
+          "relation": "not_test",
+          "independent": true,
+          "note": "ERK2 haploinsufficiency and neural-crest defects in distal 22q11.2 deletion."
+        },
+        {
+          "candidate_id": "C014-G41",
+          "pmid": "25914166",
+          "relation": "not_test",
+          "independent": true,
+          "note": "An attenuated HRAS Gly60Asp Costello phenotype with increased RAF1 binding."
+        },
+        {
+          "candidate_id": "C014-G42",
+          "pmid": "17922836",
+          "relation": "not_test",
+          "independent": true,
+          "note": "CK2 phosphorylation of Cdc37 in Hsp90\u2013Raf1 kinase complexes."
+        },
+        {
+          "candidate_id": "C014-G43",
+          "pmid": "19667065",
+          "relation": "not_test",
+          "independent": true,
+          "note": "RAF kinases phosphorylate BAD and suppress BAD-induced apoptosis."
+        },
+        {
+          "candidate_id": "C014-G44",
+          "pmid": "19597493",
+          "relation": "not_test",
+          "independent": true,
+          "note": "De novo copy-number variants in sporadic tetralogy of Fallot."
+        },
+        {
+          "candidate_id": "C014-G45",
+          "pmid": "17635919",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Binding differences of full-length B-RAF and C-RAF to H-Ras."
+        },
+        {
+          "candidate_id": "C014-G46",
+          "pmid": "20358587",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A transmitted MEK2 mutation in cardio-facio-cutaneous syndrome."
+        },
+        {
+          "candidate_id": "C014-G47",
+          "pmid": "25194980",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF and MAP2K1 mutations in cardiofaciocutaneous syndrome compared with Noonan syndrome."
+        },
+        {
+          "candidate_id": "C014-G48",
+          "pmid": "18159945",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Zebrafish Shp2 knockdown models Noonan and LEOPARD gastrulation and cardiac defects."
+        },
+        {
+          "candidate_id": "C014-G49",
+          "pmid": "26266034",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "A preterm infant with Noonan syndrome, RAF1 p.Pro261Arg adjacent to the CR2 residue Ser259, and hypertrophic cardiomyopathy."
+        },
+        {
+          "candidate_id": "C014-G50",
+          "pmid": "17976640",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PKC isoforms regulate mTOR through c-Raf in adult feline cardiomyocytes."
+        },
+        {
+          "candidate_id": "C014-G51",
+          "pmid": "20186801",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Adaptive behavior in cardiofaciocutaneous and Noonan syndromes by Ras/MAPK gene."
+        },
+        {
+          "candidate_id": "C014-G52",
+          "pmid": "22465605",
+          "relation": "partial",
+          "independent": true,
+          "note": "Spanish Noonan-spectrum genotyping includes nine RAF1-positive families, without reporting CR2 domain against hypertrophic cardiomyopathy."
+        },
+        {
+          "candidate_id": "C014-G53",
+          "pmid": "18371930",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Protein-interaction method for prioritizing candidate disease genes."
+        },
+        {
+          "candidate_id": "C014-G54",
+          "pmid": "23926366",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Late-onset lymphedema and protein-losing enteropathy in a boy with Noonan syndrome."
+        },
+        {
+          "candidate_id": "C014-G55",
+          "pmid": "24782337",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "A de novo RAF1 deletion in the 14-3-3 binding site, the CR2 regulatory motif, was found in an infant with Noonan syndrome and biventricular hypertrophy."
+        },
+        {
+          "candidate_id": "C014-G56",
+          "pmid": "17902193",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Serum proteomics of c-raf-driven mouse lung adenocarcinomas."
+        },
+        {
+          "candidate_id": "C014-G57",
+          "pmid": "18954903",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Symposium report on juvenile myelomonocytic leukemia and Ras."
+        },
+        {
+          "candidate_id": "C014-G58",
+          "pmid": "18046719",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Gab1 mediates hepatocyte-growth-factor synergy with a vitamin K analog through Raf\u2013MEK\u2013ERK."
+        },
+        {
+          "candidate_id": "C014-G59",
+          "pmid": "21440552",
+          "relation": "partial",
+          "independent": true,
+          "note": "Neonatal rat cardiomyocytes expressing Noonan-associated RAF1 mutants, including CR2-site S257L, develop hypertrophy."
+        },
+        {
+          "candidate_id": "C014-G60",
+          "pmid": "19206169",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Germline BRAF mutations in Noonan, LEOPARD, and cardiofaciocutaneous syndromes after excluding RAF1."
+        },
+        {
+          "candidate_id": "C014-G61",
+          "pmid": "20602484",
+          "relation": "partial",
+          "independent": true,
+          "note": "Facial phenotype of Noonan syndrome, including 11 individuals with RAF1 mutations, is not a test of CR2 domain versus hypertrophic cardiomyopathy."
+        },
+        {
+          "candidate_id": "C014-G62",
+          "pmid": "18854871",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Multiple giant-cell lesions in Noonan and cardio-facio-cutaneous syndromes with SOS1, BRAF, or MEK1 mutations."
+        }
+      ]
+    }
+  ]
+}

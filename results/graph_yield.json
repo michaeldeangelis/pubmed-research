@@ -1,0 +1,2173 @@
+{
+  "agreement": {
+    "n_papers": 1336,
+    "relation_agreement": 0.8825,
+    "direct_test_agreement": 0.9798,
+    "papers_both_call_direct": 98,
+    "direction_disagreements": 8,
+    "one_reader_only": 27,
+    "rule": "Count a paper only when both readers call it an independent direct test and agree on support, contradiction, or mixed.",
+    "annotator_note": "Both readers are model agents. This is inter-agent agreement, not an expert audit."
+  },
+  "audit": {
+    "summary": {
+      "drops": 13,
+      "direction_changes": 2,
+      "additions": 11,
+      "not_a_test": 23,
+      "reject_sample_kept_rejected": 20,
+      "disputed": [
+        "C001:21850009"
+      ],
+      "reader_agreement": {
+        "n_papers": 1336,
+        "relation_agreement": 0.8825,
+        "direct_test_agreement": 0.9798,
+        "papers_both_call_direct": 98,
+        "direction_disagreements": 8,
+        "one_reader_only": 27,
+        "rule": "Count a paper only when both readers call it an independent direct test and agree on support, contradiction, or mixed.",
+        "annotator_note": "Both readers are model agents. This is inter-agent agreement, not an expert audit."
+      }
+    },
+    "notes": [
+      {
+        "claim_id": "C001",
+        "pmid": "21850009",
+        "action": "drop",
+        "was": "support",
+        "reason": "Disputed. The abstract reports four HRAS mutations in 21 patients and then functional senescence assays. Whether the patients were selected by clinical diagnosis, and whether the cohort overlaps earlier reports, is not settled by the abstract."
+      },
+      {
+        "claim_id": "C013",
+        "pmid": "26223933",
+        "action": "drop",
+        "was": "support",
+        "reason": "Meta-analysis. A pooled reanalysis is not a new experiment."
+      },
+      {
+        "claim_id": "C013",
+        "pmid": "25244593",
+        "action": "drop",
+        "was": "support",
+        "reason": "Meta-analysis. A pooled reanalysis is not a new experiment."
+      },
+      {
+        "claim_id": "C013",
+        "pmid": "23055546",
+        "action": "drop",
+        "was": "support",
+        "reason": "Meta-analysis. A pooled reanalysis is not a new experiment."
+      },
+      {
+        "claim_id": "C014",
+        "pmid": "19020799",
+        "action": "drop",
+        "was": "support",
+        "reason": "RAF1 mutations co-occurred with cardiomyopathy, but the abstract does not separate CR2-domain from CR3-domain mutations."
+      },
+      {
+        "claim_id": "C014",
+        "pmid": "24782337",
+        "action": "drop",
+        "was": "support",
+        "reason": "Single-infant case. Not a comparison of CR2 and CR3 mutations."
+      },
+      {
+        "claim_id": "C017",
+        "pmid": "27736842",
+        "action": "drop",
+        "was": "support",
+        "reason": "Extended RAS analysis of a phase III panitumumab versus best-supportive-care trial, the same design as the source claim, rather than a new cohort."
+      },
+      {
+        "claim_id": "C026",
+        "pmid": "20591136",
+        "action": "drop",
+        "was": "support",
+        "reason": "The new measurement is CD56 infiltrate. KRAS is background."
+      },
+      {
+        "claim_id": "C033",
+        "pmid": "23936355",
+        "action": "drop",
+        "was": "support",
+        "reason": "Diagnostic-algorithm paper. It does not measure driver exclusivity."
+      },
+      {
+        "claim_id": "C035",
+        "pmid": "27898473",
+        "action": "drop",
+        "was": "support",
+        "reason": "Two overlap-syndrome cases, not a prevalence series of Langerhans cell histiocytosis."
+      },
+      {
+        "claim_id": "C035",
+        "pmid": "29649018",
+        "action": "drop",
+        "was": "support",
+        "reason": "Cases were already selected for a BRAF mutation, so prevalence is not tested."
+      },
+      {
+        "claim_id": "C057",
+        "pmid": "23285177",
+        "action": "drop",
+        "was": "support",
+        "reason": "Assay-platform paper. It does not measure the acquired-resistance phenotype."
+      },
+      {
+        "claim_id": "C063",
+        "pmid": "33202284",
+        "action": "drop",
+        "was": "support",
+        "reason": "Tests whether Notch protects BRAF-mutant lines from cobimetinib, not whether cobimetinib has superior efficacy in those models."
+      },
+      {
+        "claim_id": "C013",
+        "pmid": "26120069",
+        "action": "direction",
+        "was": "contradict",
+        "now": "mixed",
+        "reason": "BRAF predicted bilaterality and did not independently predict nodal metastasis or recurrence."
+      },
+      {
+        "claim_id": "C024",
+        "pmid": "19501586",
+        "action": "direction",
+        "was": "support",
+        "now": "mixed",
+        "reason": "Acinar Kras induced pancreatic intraepithelial neoplasia, and higher Ras activity also produced invasive carcinoma."
+      },
+      {
+        "claim_id": "C016",
+        "pmid": "26823860",
+        "action": "add",
+        "now": "mixed",
+        "reason": "Extrathyroidal extension was associated with BRAF; other listed clinicopathologic features were not."
+      },
+      {
+        "claim_id": "C016",
+        "pmid": "26120069",
+        "action": "add",
+        "now": "mixed",
+        "reason": "BRAF predicted bilaterality and did not independently predict nodal metastasis or recurrence."
+      },
+      {
+        "claim_id": "C016",
+        "pmid": "25489262",
+        "action": "add",
+        "now": "mixed",
+        "reason": "BRAF independently predicted recurrence and was not associated with invasion or nodal metastasis."
+      },
+      {
+        "claim_id": "C016",
+        "pmid": "23687957",
+        "action": "add",
+        "now": "mixed",
+        "reason": "Univariate associations with size and extension were not retained in the multivariate model."
+      },
+      {
+        "claim_id": "C033",
+        "pmid": "27438512",
+        "action": "add",
+        "now": "mixed",
+        "reason": "EML4-ALK and EGFR or KRAS were mostly separate, with one lesion carrying both L858R and EML4-ALK."
+      },
+      {
+        "claim_id": "C057",
+        "pmid": "32912923",
+        "action": "add",
+        "now": "mixed",
+        "reason": "One vemurafenib-resistant line reactivated MEK/ERK and the paired line activated AKT."
+      },
+      {
+        "claim_id": "C015",
+        "pmid": "17685465",
+        "action": "add",
+        "now": "support",
+        "reason": "In papillary carcinomas 1 cm or smaller, BRAF V600E tracked with nodal progression."
+      },
+      {
+        "claim_id": "C015",
+        "pmid": "24354346",
+        "action": "add",
+        "now": "contradict",
+        "reason": "In papillary microcarcinoma, BRAF was not correlated with aggressive or recurrent disease."
+      },
+      {
+        "claim_id": "C026",
+        "pmid": "19738388",
+        "action": "add",
+        "now": "support",
+        "reason": "In irinotecan-refractory Korean colorectal cancers, KRAS predicted response and survival on cetuximab plus irinotecan."
+      },
+      {
+        "claim_id": "C033",
+        "pmid": "25706305",
+        "action": "add",
+        "now": "support",
+        "reason": "EML4-ALK was exclusive of EGFR and KRAS mutations in the resected series."
+      },
+      {
+        "claim_id": "C033",
+        "pmid": "27086595",
+        "action": "add",
+        "now": "contradict",
+        "reason": "The series includes tumors carrying both an EGFR mutation and an ALK rearrangement."
+      },
+      {
+        "claim_id": "C001",
+        "pmid": "17601930",
+        "action": "not_a_test",
+        "reason": "Two sisters, one HRAS and one KRAS, after a Costello diagnosis that the paper revises. Same report as PMID 21686750."
+      },
+      {
+        "claim_id": "C001",
+        "pmid": "21686750",
+        "action": "not_a_test",
+        "reason": "Second write-up of PMID 17601930."
+      },
+      {
+        "claim_id": "C001",
+        "pmid": "20979192",
+        "action": "not_a_test",
+        "reason": "One mosaic HRAS case. Not a cohort test of the Costello association."
+      },
+      {
+        "claim_id": "C014",
+        "pmid": "22389993",
+        "action": "not_a_test",
+        "reason": "Two LEOPARD-syndrome cases, a different diagnosis from Noonan syndrome."
+      },
+      {
+        "claim_id": "C014",
+        "pmid": "26266034",
+        "action": "not_a_test",
+        "reason": "One preterm infant. The authors draw no genotype-phenotype conclusion."
+      },
+      {
+        "claim_id": "C016",
+        "pmid": "23690767",
+        "action": "not_a_test",
+        "reason": "miRNA profile paper. BRAF is context, not the measured association."
+      },
+      {
+        "claim_id": "C017",
+        "pmid": "26508446",
+        "action": "not_a_test",
+        "reason": "Methods comparison of sequencing panels, not a new efficacy result."
+      },
+      {
+        "claim_id": "C026",
+        "pmid": "27555788",
+        "action": "not_a_test",
+        "reason": "Argues for broader sequencing. Does not report a new KRAS efficacy result."
+      },
+      {
+        "claim_id": "C033",
+        "pmid": "26711128",
+        "action": "not_a_test",
+        "reason": "Stage I prognosis by driver. Does not test mutual exclusivity."
+      },
+      {
+        "claim_id": "C033",
+        "pmid": "25360721",
+        "action": "not_a_test",
+        "reason": "Meta-analysis of clinical correlates, not a new exclusivity experiment."
+      },
+      {
+        "claim_id": "C035",
+        "pmid": "28084334",
+        "action": "not_a_test",
+        "reason": "The authors argue the lesions are hyperplasia rather than Langerhans cell histiocytosis."
+      },
+      {
+        "claim_id": "C035",
+        "pmid": "26782803",
+        "action": "not_a_test",
+        "reason": "Thyroid fine-needle aspiration pitfall. Not an LCH prevalence series."
+      },
+      {
+        "claim_id": "C035",
+        "pmid": "24147236",
+        "action": "not_a_test",
+        "reason": "One neonate. Not a prevalence series."
+      },
+      {
+        "claim_id": "C035",
+        "pmid": "26454140",
+        "action": "not_a_test",
+        "reason": "One overlap case. Not a prevalence series."
+      },
+      {
+        "claim_id": "C041",
+        "pmid": "23942080",
+        "action": "not_a_test",
+        "reason": "The PIK3CA association with progression-free survival was not significant."
+      },
+      {
+        "claim_id": "C057",
+        "pmid": "25844720",
+        "action": "not_a_test",
+        "reason": "Studies interferon-induced PD-L1, not the acquired BRAF-inhibitor resistance phenotype."
+      },
+      {
+        "claim_id": "C063",
+        "pmid": "33904516",
+        "action": "not_a_test",
+        "reason": "An Hsp90-inhibitor combination, not a test of cobimetinib superiority."
+      },
+      {
+        "claim_id": "C063",
+        "pmid": "33560788",
+        "action": "not_a_test",
+        "reason": "One non-V600 melanoma case."
+      },
+      {
+        "claim_id": "C063",
+        "pmid": "31171876",
+        "action": "not_a_test",
+        "reason": "A triple-combination response rate, not cobimetinib superiority."
+      },
+      {
+        "claim_id": "C063",
+        "pmid": "34853302",
+        "action": "not_a_test",
+        "reason": "Intermittent versus continuous dosing, not cobimetinib superiority."
+      },
+      {
+        "claim_id": "C063",
+        "pmid": "34667063",
+        "action": "not_a_test",
+        "reason": "One pancreatic-cancer case report."
+      },
+      {
+        "claim_id": "C063",
+        "pmid": "31985841",
+        "action": "not_a_test",
+        "reason": "One ganglioglioma case."
+      },
+      {
+        "claim_id": "C063",
+        "pmid": "32534646",
+        "action": "not_a_test",
+        "reason": "Atezolizumab added to vemurafenib plus cobimetinib. The comparison is immunotherapy, not cobimetinib superiority."
+      }
+    ]
+  },
+  "pre_audit_direct_tests": {
+    "same_gene": 3,
+    "text_similarity": 50,
+    "citation": 26,
+    "experimental": 30,
+    "combination": 39,
+    "shared_references": 4
+  },
+  "pre_audit_claims_with_a_test": {
+    "same_gene": 3,
+    "text_similarity": 14,
+    "citation": 10,
+    "experimental": 10,
+    "combination": 14,
+    "shared_references": 3
+  },
+  "comparison": {
+    "budget": 20,
+    "horizon_years": 8,
+    "date_rule": "day-level-if-both-dates-resolve-otherwise-uncertain",
+    "n_claims": 20,
+    "methods": {
+      "same_gene": {
+        "slots_filled": 355,
+        "slots_available": 400,
+        "direct_tests": 2,
+        "claims_with_a_direct_test": 2,
+        "direct_tests_beyond_same_gene": 0,
+        "uncertain_order_not_counted": 4,
+        "duplicate_reports_not_counted": 0,
+        "claims_judged": 20,
+        "mean_slots_filled": 17.75
+      },
+      "text_similarity": {
+        "slots_filled": 396,
+        "slots_available": 400,
+        "direct_tests": 47,
+        "claims_with_a_direct_test": 12,
+        "direct_tests_beyond_same_gene": 45,
+        "uncertain_order_not_counted": 4,
+        "duplicate_reports_not_counted": 1,
+        "claims_judged": 20,
+        "mean_slots_filled": 19.8
+      },
+      "citation": {
+        "slots_filled": 398,
+        "slots_available": 400,
+        "direct_tests": 25,
+        "claims_with_a_direct_test": 10,
+        "direct_tests_beyond_same_gene": 25,
+        "uncertain_order_not_counted": 0,
+        "duplicate_reports_not_counted": 1,
+        "claims_judged": 20,
+        "mean_slots_filled": 19.9
+      },
+      "experimental": {
+        "slots_filled": 339,
+        "slots_available": 400,
+        "direct_tests": 29,
+        "claims_with_a_direct_test": 8,
+        "direct_tests_beyond_same_gene": 29,
+        "uncertain_order_not_counted": 2,
+        "duplicate_reports_not_counted": 1,
+        "claims_judged": 20,
+        "mean_slots_filled": 16.95
+      },
+      "combination": {
+        "slots_filled": 400,
+        "slots_available": 400,
+        "direct_tests": 33,
+        "claims_with_a_direct_test": 12,
+        "direct_tests_beyond_same_gene": 31,
+        "uncertain_order_not_counted": 6,
+        "duplicate_reports_not_counted": 1,
+        "claims_judged": 20,
+        "mean_slots_filled": 20.0
+      },
+      "shared_references": {
+        "slots_filled": 70,
+        "slots_available": 400,
+        "direct_tests": 3,
+        "claims_with_a_direct_test": 2,
+        "direct_tests_beyond_same_gene": 3,
+        "uncertain_order_not_counted": 2,
+        "duplicate_reports_not_counted": 0,
+        "claims_judged": 20,
+        "mean_slots_filled": 3.5
+      }
+    },
+    "claims": [
+      {
+        "claim_id": "C001",
+        "same_gene": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "text_similarity": {
+          "direct_tests": 1,
+          "slots_filled": 20,
+          "beyond_same_gene": 1,
+          "test_pmids": [
+            "21834037"
+          ]
+        },
+        "citation": {
+          "direct_tests": 1,
+          "slots_filled": 18,
+          "beyond_same_gene": 1,
+          "test_pmids": [
+            "19206176"
+          ]
+        },
+        "experimental": {
+          "direct_tests": 0,
+          "slots_filled": 13,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "combination": {
+          "direct_tests": 2,
+          "slots_filled": 20,
+          "beyond_same_gene": 2,
+          "test_pmids": [
+            "19206176",
+            "21834037"
+          ]
+        },
+        "shared_references": {
+          "direct_tests": 0,
+          "slots_filled": 2,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        }
+      },
+      {
+        "claim_id": "C007",
+        "same_gene": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "text_similarity": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "citation": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "experimental": {
+          "direct_tests": 0,
+          "slots_filled": 13,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "combination": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "shared_references": {
+          "direct_tests": 0,
+          "slots_filled": 1,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        }
+      },
+      {
+        "claim_id": "C013",
+        "same_gene": {
+          "direct_tests": 1,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": [
+            "17693984"
+          ]
+        },
+        "text_similarity": {
+          "direct_tests": 10,
+          "slots_filled": 20,
+          "beyond_same_gene": 9,
+          "test_pmids": [
+            "17693984",
+            "24679337",
+            "24838814",
+            "25482468",
+            "25870252",
+            "26120069",
+            "26152656",
+            "26214416",
+            "26271724",
+            "26338373"
+          ]
+        },
+        "citation": {
+          "direct_tests": 9,
+          "slots_filled": 20,
+          "beyond_same_gene": 9,
+          "test_pmids": [
+            "22681706",
+            "23062653",
+            "23109980",
+            "23158172",
+            "23687957",
+            "25325273",
+            "25337709",
+            "26177218",
+            "26823846"
+          ]
+        },
+        "experimental": {
+          "direct_tests": 7,
+          "slots_filled": 20,
+          "beyond_same_gene": 7,
+          "test_pmids": [
+            "24838814",
+            "25482468",
+            "25870252",
+            "26120069",
+            "26152656",
+            "26271724",
+            "26338373"
+          ]
+        },
+        "combination": {
+          "direct_tests": 9,
+          "slots_filled": 20,
+          "beyond_same_gene": 8,
+          "test_pmids": [
+            "17693984",
+            "24679337",
+            "24838814",
+            "25482468",
+            "25870252",
+            "26120069",
+            "26152656",
+            "26271724",
+            "26338373"
+          ]
+        },
+        "shared_references": {
+          "direct_tests": 0,
+          "slots_filled": 5,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        }
+      },
+      {
+        "claim_id": "C014",
+        "same_gene": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "text_similarity": {
+          "direct_tests": 1,
+          "slots_filled": 20,
+          "beyond_same_gene": 1,
+          "test_pmids": [
+            "20052757"
+          ]
+        },
+        "citation": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "experimental": {
+          "direct_tests": 1,
+          "slots_filled": 20,
+          "beyond_same_gene": 1,
+          "test_pmids": [
+            "20052757"
+          ]
+        },
+        "combination": {
+          "direct_tests": 1,
+          "slots_filled": 20,
+          "beyond_same_gene": 1,
+          "test_pmids": [
+            "20052757"
+          ]
+        },
+        "shared_references": {
+          "direct_tests": 0,
+          "slots_filled": 4,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        }
+      },
+      {
+        "claim_id": "C015",
+        "same_gene": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "text_similarity": {
+          "direct_tests": 8,
+          "slots_filled": 20,
+          "beyond_same_gene": 8,
+          "test_pmids": [
+            "24354346",
+            "24604709",
+            "24787545",
+            "25468810",
+            "25482468",
+            "26258321",
+            "26271724",
+            "26338373"
+          ]
+        },
+        "citation": {
+          "direct_tests": 3,
+          "slots_filled": 20,
+          "beyond_same_gene": 3,
+          "test_pmids": [
+            "19414674",
+            "23062653",
+            "23132792"
+          ]
+        },
+        "experimental": {
+          "direct_tests": 6,
+          "slots_filled": 20,
+          "beyond_same_gene": 6,
+          "test_pmids": [
+            "24354346",
+            "24787545",
+            "26214416",
+            "26271724",
+            "26338373",
+            "27101676"
+          ]
+        },
+        "combination": {
+          "direct_tests": 4,
+          "slots_filled": 20,
+          "beyond_same_gene": 4,
+          "test_pmids": [
+            "24354346",
+            "24787545",
+            "26271724",
+            "26338373"
+          ]
+        },
+        "shared_references": {
+          "direct_tests": 0,
+          "slots_filled": 4,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        }
+      },
+      {
+        "claim_id": "C016",
+        "same_gene": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "text_similarity": {
+          "direct_tests": 9,
+          "slots_filled": 20,
+          "beyond_same_gene": 9,
+          "test_pmids": [
+            "24052184",
+            "25623974",
+            "25975689",
+            "26120069",
+            "26214416",
+            "26271724",
+            "26338373",
+            "26823846",
+            "26823860"
+          ]
+        },
+        "citation": {
+          "direct_tests": 4,
+          "slots_filled": 20,
+          "beyond_same_gene": 4,
+          "test_pmids": [
+            "23687957",
+            "24124924",
+            "25337709",
+            "25489262"
+          ]
+        },
+        "experimental": {
+          "direct_tests": 5,
+          "slots_filled": 20,
+          "beyond_same_gene": 5,
+          "test_pmids": [
+            "25623974",
+            "26214416",
+            "26271724",
+            "26338373",
+            "27101676"
+          ]
+        },
+        "combination": {
+          "direct_tests": 4,
+          "slots_filled": 20,
+          "beyond_same_gene": 4,
+          "test_pmids": [
+            "25623974",
+            "26214416",
+            "26271724",
+            "26338373"
+          ]
+        },
+        "shared_references": {
+          "direct_tests": 0,
+          "slots_filled": 3,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        }
+      },
+      {
+        "claim_id": "C017",
+        "same_gene": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "text_similarity": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "citation": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "experimental": {
+          "direct_tests": 0,
+          "slots_filled": 13,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "combination": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "shared_references": {
+          "direct_tests": 0,
+          "slots_filled": 2,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        }
+      },
+      {
+        "claim_id": "C021",
+        "same_gene": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "text_similarity": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "citation": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "experimental": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "combination": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "shared_references": {
+          "direct_tests": 0,
+          "slots_filled": 1,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        }
+      },
+      {
+        "claim_id": "C024",
+        "same_gene": {
+          "direct_tests": 0,
+          "slots_filled": 0,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "text_similarity": {
+          "direct_tests": 2,
+          "slots_filled": 16,
+          "beyond_same_gene": 2,
+          "test_pmids": [
+            "19501586",
+            "23284900"
+          ]
+        },
+        "citation": {
+          "direct_tests": 1,
+          "slots_filled": 20,
+          "beyond_same_gene": 1,
+          "test_pmids": [
+            "19501586"
+          ]
+        },
+        "experimental": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "combination": {
+          "direct_tests": 2,
+          "slots_filled": 20,
+          "beyond_same_gene": 2,
+          "test_pmids": [
+            "19501586",
+            "23284900"
+          ]
+        },
+        "shared_references": {
+          "direct_tests": 0,
+          "slots_filled": 4,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        }
+      },
+      {
+        "claim_id": "C026",
+        "same_gene": {
+          "direct_tests": 1,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": [
+            "19738388"
+          ]
+        },
+        "text_similarity": {
+          "direct_tests": 2,
+          "slots_filled": 20,
+          "beyond_same_gene": 1,
+          "test_pmids": [
+            "19738388",
+            "25950441"
+          ]
+        },
+        "citation": {
+          "direct_tests": 1,
+          "slots_filled": 20,
+          "beyond_same_gene": 1,
+          "test_pmids": [
+            "20550522"
+          ]
+        },
+        "experimental": {
+          "direct_tests": 1,
+          "slots_filled": 19,
+          "beyond_same_gene": 1,
+          "test_pmids": [
+            "25950441"
+          ]
+        },
+        "combination": {
+          "direct_tests": 2,
+          "slots_filled": 20,
+          "beyond_same_gene": 1,
+          "test_pmids": [
+            "19738388",
+            "25950441"
+          ]
+        },
+        "shared_references": {
+          "direct_tests": 0,
+          "slots_filled": 2,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        }
+      },
+      {
+        "claim_id": "C028",
+        "same_gene": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "text_similarity": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "citation": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "experimental": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "combination": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "shared_references": {
+          "direct_tests": 0,
+          "slots_filled": 3,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        }
+      },
+      {
+        "claim_id": "C030",
+        "same_gene": {
+          "direct_tests": 0,
+          "slots_filled": 1,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "text_similarity": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "citation": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "experimental": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "combination": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "shared_references": {
+          "direct_tests": 0,
+          "slots_filled": 1,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        }
+      },
+      {
+        "claim_id": "C033",
+        "same_gene": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "text_similarity": {
+          "direct_tests": 2,
+          "slots_filled": 20,
+          "beyond_same_gene": 2,
+          "test_pmids": [
+            "27438512",
+            "29517858"
+          ]
+        },
+        "citation": {
+          "direct_tests": 2,
+          "slots_filled": 20,
+          "beyond_same_gene": 2,
+          "test_pmids": [
+            "23341890",
+            "23729361"
+          ]
+        },
+        "experimental": {
+          "direct_tests": 6,
+          "slots_filled": 13,
+          "beyond_same_gene": 6,
+          "test_pmids": [
+            "25706305",
+            "26712101",
+            "26767032",
+            "27086595",
+            "29517858",
+            "30233859"
+          ]
+        },
+        "combination": {
+          "direct_tests": 2,
+          "slots_filled": 20,
+          "beyond_same_gene": 2,
+          "test_pmids": [
+            "29517858",
+            "30233859"
+          ]
+        },
+        "shared_references": {
+          "direct_tests": 0,
+          "slots_filled": 4,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        }
+      },
+      {
+        "claim_id": "C035",
+        "same_gene": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "text_similarity": {
+          "direct_tests": 7,
+          "slots_filled": 20,
+          "beyond_same_gene": 7,
+          "test_pmids": [
+            "26980021",
+            "27076591",
+            "28220299",
+            "28711990",
+            "29085441",
+            "29624648",
+            "29708356"
+          ]
+        },
+        "citation": {
+          "direct_tests": 2,
+          "slots_filled": 20,
+          "beyond_same_gene": 2,
+          "test_pmids": [
+            "22506009",
+            "24648950"
+          ]
+        },
+        "experimental": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "combination": {
+          "direct_tests": 3,
+          "slots_filled": 20,
+          "beyond_same_gene": 3,
+          "test_pmids": [
+            "22506009",
+            "26980021",
+            "29085441"
+          ]
+        },
+        "shared_references": {
+          "direct_tests": 0,
+          "slots_filled": 2,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        }
+      },
+      {
+        "claim_id": "C041",
+        "same_gene": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "text_similarity": {
+          "direct_tests": 2,
+          "slots_filled": 20,
+          "beyond_same_gene": 2,
+          "test_pmids": [
+            "30962959",
+            "31552290"
+          ]
+        },
+        "citation": {
+          "direct_tests": 1,
+          "slots_filled": 20,
+          "beyond_same_gene": 1,
+          "test_pmids": [
+            "22271473"
+          ]
+        },
+        "experimental": {
+          "direct_tests": 1,
+          "slots_filled": 6,
+          "beyond_same_gene": 1,
+          "test_pmids": [
+            "30962959"
+          ]
+        },
+        "combination": {
+          "direct_tests": 2,
+          "slots_filled": 20,
+          "beyond_same_gene": 2,
+          "test_pmids": [
+            "22271473",
+            "30962959"
+          ]
+        },
+        "shared_references": {
+          "direct_tests": 2,
+          "slots_filled": 9,
+          "beyond_same_gene": 2,
+          "test_pmids": [
+            "22271473",
+            "24092809"
+          ]
+        }
+      },
+      {
+        "claim_id": "C042",
+        "same_gene": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "text_similarity": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "citation": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "experimental": {
+          "direct_tests": 0,
+          "slots_filled": 12,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "combination": {
+          "direct_tests": 1,
+          "slots_filled": 20,
+          "beyond_same_gene": 1,
+          "test_pmids": [
+            "21586612"
+          ]
+        },
+        "shared_references": {
+          "direct_tests": 1,
+          "slots_filled": 6,
+          "beyond_same_gene": 1,
+          "test_pmids": [
+            "21586612"
+          ]
+        }
+      },
+      {
+        "claim_id": "C047",
+        "same_gene": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "text_similarity": {
+          "direct_tests": 1,
+          "slots_filled": 20,
+          "beyond_same_gene": 1,
+          "test_pmids": [
+            "30952821"
+          ]
+        },
+        "citation": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "experimental": {
+          "direct_tests": 0,
+          "slots_filled": 12,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "combination": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "shared_references": {
+          "direct_tests": 0,
+          "slots_filled": 1,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        }
+      },
+      {
+        "claim_id": "C057",
+        "same_gene": {
+          "direct_tests": 0,
+          "slots_filled": 14,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "text_similarity": {
+          "direct_tests": 2,
+          "slots_filled": 20,
+          "beyond_same_gene": 2,
+          "test_pmids": [
+            "32532957",
+            "32912923"
+          ]
+        },
+        "citation": {
+          "direct_tests": 1,
+          "slots_filled": 20,
+          "beyond_same_gene": 1,
+          "test_pmids": [
+            "24812408"
+          ]
+        },
+        "experimental": {
+          "direct_tests": 2,
+          "slots_filled": 19,
+          "beyond_same_gene": 2,
+          "test_pmids": [
+            "31514305",
+            "32912923"
+          ]
+        },
+        "combination": {
+          "direct_tests": 1,
+          "slots_filled": 20,
+          "beyond_same_gene": 1,
+          "test_pmids": [
+            "32912923"
+          ]
+        },
+        "shared_references": {
+          "direct_tests": 0,
+          "slots_filled": 2,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        }
+      },
+      {
+        "claim_id": "C063",
+        "same_gene": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "text_similarity": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "citation": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "experimental": {
+          "direct_tests": 0,
+          "slots_filled": 19,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "combination": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "shared_references": {
+          "direct_tests": 0,
+          "slots_filled": 10,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        }
+      },
+      {
+        "claim_id": "C068",
+        "same_gene": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "text_similarity": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "citation": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "experimental": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "combination": {
+          "direct_tests": 0,
+          "slots_filled": 20,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        },
+        "shared_references": {
+          "direct_tests": 0,
+          "slots_filled": 4,
+          "beyond_same_gene": 0,
+          "test_pmids": []
+        }
+      }
+    ],
+    "annotator_note": "If annotators are model agents, this agreement is inter-agent agreement."
+  },
+  "ranker_development": {
+    "role": "development_evidence",
+    "note": "The twenty evaluation claims already influenced the audit and the ranking rule. These paired differences are development evidence, not a held-out test.",
+    "rule": "Equal-weight mean of population, intervention, outcome word overlap, and a new-result flag. No fitted weights.",
+    "budget": 20,
+    "n_claims": 20,
+    "ranker_direct_tests": 50,
+    "text_direct_tests": 47,
+    "paired_difference": 3,
+    "ranker_claims_with_a_test": 12,
+    "text_claims_with_a_test": 12,
+    "reconciliation": {
+      "alk_gain": 3,
+      "c016_loss": -3,
+      "c035_loss": -3,
+      "highlighted_net": -3,
+      "other_claims_net": 6,
+      "other_claims": {
+        "C001": 1,
+        "C013": 1,
+        "C026": 1,
+        "C041": 1,
+        "C042": 1,
+        "C047": -1,
+        "C057": 2
+      },
+      "total": 3
+    },
+    "claims": [
+      {
+        "claim_id": "C001",
+        "ranker_tests": 2,
+        "text_tests": 1,
+        "paired_difference": 1,
+        "ranker_pmids": [
+          "19206176",
+          "21834037"
+        ],
+        "text_pmids": [
+          "21834037"
+        ]
+      },
+      {
+        "claim_id": "C007",
+        "ranker_tests": 0,
+        "text_tests": 0,
+        "paired_difference": 0,
+        "ranker_pmids": [],
+        "text_pmids": []
+      },
+      {
+        "claim_id": "C013",
+        "ranker_tests": 11,
+        "text_tests": 10,
+        "paired_difference": 1,
+        "ranker_pmids": [
+          "22681706",
+          "23687957",
+          "24679337",
+          "24838814",
+          "25337709",
+          "25482468",
+          "25870252",
+          "26120069",
+          "26214416",
+          "26338373",
+          "26823846"
+        ],
+        "text_pmids": [
+          "17693984",
+          "24679337",
+          "24838814",
+          "25482468",
+          "25870252",
+          "26120069",
+          "26152656",
+          "26214416",
+          "26271724",
+          "26338373"
+        ]
+      },
+      {
+        "claim_id": "C014",
+        "ranker_tests": 1,
+        "text_tests": 1,
+        "paired_difference": 0,
+        "ranker_pmids": [
+          "20052757"
+        ],
+        "text_pmids": [
+          "20052757"
+        ]
+      },
+      {
+        "claim_id": "C015",
+        "ranker_tests": 8,
+        "text_tests": 8,
+        "paired_difference": 0,
+        "ranker_pmids": [
+          "24354346",
+          "24604709",
+          "24787545",
+          "25468810",
+          "25482468",
+          "26214416",
+          "26271724",
+          "26338373"
+        ],
+        "text_pmids": [
+          "24354346",
+          "24604709",
+          "24787545",
+          "25468810",
+          "25482468",
+          "26258321",
+          "26271724",
+          "26338373"
+        ]
+      },
+      {
+        "claim_id": "C016",
+        "ranker_tests": 6,
+        "text_tests": 9,
+        "paired_difference": -3,
+        "ranker_pmids": [
+          "23687957",
+          "25337709",
+          "25623974",
+          "26120069",
+          "26214416",
+          "26823846"
+        ],
+        "text_pmids": [
+          "24052184",
+          "25623974",
+          "25975689",
+          "26120069",
+          "26214416",
+          "26271724",
+          "26338373",
+          "26823846",
+          "26823860"
+        ]
+      },
+      {
+        "claim_id": "C017",
+        "ranker_tests": 0,
+        "text_tests": 0,
+        "paired_difference": 0,
+        "ranker_pmids": [],
+        "text_pmids": []
+      },
+      {
+        "claim_id": "C021",
+        "ranker_tests": 0,
+        "text_tests": 0,
+        "paired_difference": 0,
+        "ranker_pmids": [],
+        "text_pmids": []
+      },
+      {
+        "claim_id": "C024",
+        "ranker_tests": 2,
+        "text_tests": 2,
+        "paired_difference": 0,
+        "ranker_pmids": [
+          "19501586",
+          "23284900"
+        ],
+        "text_pmids": [
+          "19501586",
+          "23284900"
+        ]
+      },
+      {
+        "claim_id": "C026",
+        "ranker_tests": 3,
+        "text_tests": 2,
+        "paired_difference": 1,
+        "ranker_pmids": [
+          "19738388",
+          "20550522",
+          "25950441"
+        ],
+        "text_pmids": [
+          "19738388",
+          "25950441"
+        ]
+      },
+      {
+        "claim_id": "C028",
+        "ranker_tests": 0,
+        "text_tests": 0,
+        "paired_difference": 0,
+        "ranker_pmids": [],
+        "text_pmids": []
+      },
+      {
+        "claim_id": "C030",
+        "ranker_tests": 0,
+        "text_tests": 0,
+        "paired_difference": 0,
+        "ranker_pmids": [],
+        "text_pmids": []
+      },
+      {
+        "claim_id": "C033",
+        "ranker_tests": 5,
+        "text_tests": 2,
+        "paired_difference": 3,
+        "ranker_pmids": [
+          "25706305",
+          "26712101",
+          "26767032",
+          "27438512",
+          "29517858"
+        ],
+        "text_pmids": [
+          "27438512",
+          "29517858"
+        ]
+      },
+      {
+        "claim_id": "C035",
+        "ranker_tests": 4,
+        "text_tests": 7,
+        "paired_difference": -3,
+        "ranker_pmids": [
+          "24648950",
+          "26980021",
+          "27076591",
+          "29085441"
+        ],
+        "text_pmids": [
+          "26980021",
+          "27076591",
+          "28220299",
+          "28711990",
+          "29085441",
+          "29624648",
+          "29708356"
+        ]
+      },
+      {
+        "claim_id": "C041",
+        "ranker_tests": 3,
+        "text_tests": 2,
+        "paired_difference": 1,
+        "ranker_pmids": [
+          "22271473",
+          "24092809",
+          "30962959"
+        ],
+        "text_pmids": [
+          "30962959",
+          "31552290"
+        ]
+      },
+      {
+        "claim_id": "C042",
+        "ranker_tests": 1,
+        "text_tests": 0,
+        "paired_difference": 1,
+        "ranker_pmids": [
+          "21586612"
+        ],
+        "text_pmids": []
+      },
+      {
+        "claim_id": "C047",
+        "ranker_tests": 0,
+        "text_tests": 1,
+        "paired_difference": -1,
+        "ranker_pmids": [],
+        "text_pmids": [
+          "30952821"
+        ]
+      },
+      {
+        "claim_id": "C057",
+        "ranker_tests": 4,
+        "text_tests": 2,
+        "paired_difference": 2,
+        "ranker_pmids": [
+          "24812408",
+          "31514305",
+          "32532957",
+          "32912923"
+        ],
+        "text_pmids": [
+          "32532957",
+          "32912923"
+        ]
+      },
+      {
+        "claim_id": "C063",
+        "ranker_tests": 0,
+        "text_tests": 0,
+        "paired_difference": 0,
+        "ranker_pmids": [],
+        "text_pmids": []
+      },
+      {
+        "claim_id": "C068",
+        "ranker_tests": 0,
+        "text_tests": 0,
+        "paired_difference": 0,
+        "ranker_pmids": [],
+        "text_pmids": []
+      }
+    ]
+  },
+  "qualifications": {
+    "date_rule": "Uncertain-order papers stay in the frozen lists and stay out of the subsequent-test count.",
+    "pmid_21850009": "Disputed pending methods and cohort review. Counted in neither the direct-test tally nor as a settled false positive.",
+    "reject_sample": "One both-rejected paper per claim, seed 20260929. None were promoted.",
+    "ranker": "The twenty evaluation claims already influenced the audit and the ranking rule. These paired differences are development evidence, not a held-out test."
+  },
+  "provenance_selection": {
+    "role": "development_evidence",
+    "rules_frozen": true,
+    "same_cohort_discount": 0.25,
+    "note": "Compatibility weights are unchanged. A paper is discounted only with positive evidence of repeated evidence. Missing provenance is not counted as independence. The twenty claims remain development evidence. C013, C015, and C016 are held out together.",
+    "all_claims": {
+      "n_claims": 20,
+      "text_tests": 47,
+      "ranker_tests": 50,
+      "provenance_tests": 50,
+      "text_units": 47,
+      "ranker_units": 50,
+      "provenance_units": 50,
+      "text_claims": 12,
+      "ranker_claims": 12,
+      "provenance_claims": 12,
+      "provenance_minus_text": 3,
+      "provenance_minus_ranker": 0
+    },
+    "without_braf_cluster": {
+      "n_claims": 17,
+      "text_tests": 20,
+      "ranker_tests": 25,
+      "provenance_tests": 25,
+      "text_units": 20,
+      "ranker_units": 25,
+      "provenance_units": 25,
+      "text_claims": 9,
+      "ranker_claims": 9,
+      "provenance_claims": 9,
+      "provenance_minus_text": 5,
+      "provenance_minus_ranker": 0
+    },
+    "claims": [
+      {
+        "claim_id": "C001",
+        "text_tests": 1,
+        "ranker_tests": 2,
+        "provenance_tests": 2,
+        "provenance_minus_text": 1,
+        "provenance_minus_ranker": 0,
+        "ranker_minus_text": 1,
+        "text_units": 1,
+        "ranker_units": 2,
+        "provenance_units": 2,
+        "text_collapsed_repeats": 0,
+        "ranker_collapsed_repeats": 0,
+        "provenance_collapsed_repeats": 0
+      },
+      {
+        "claim_id": "C007",
+        "text_tests": 0,
+        "ranker_tests": 0,
+        "provenance_tests": 0,
+        "provenance_minus_text": 0,
+        "provenance_minus_ranker": 0,
+        "ranker_minus_text": 0,
+        "text_units": 0,
+        "ranker_units": 0,
+        "provenance_units": 0,
+        "text_collapsed_repeats": 0,
+        "ranker_collapsed_repeats": 0,
+        "provenance_collapsed_repeats": 0
+      },
+      {
+        "claim_id": "C013",
+        "text_tests": 10,
+        "ranker_tests": 11,
+        "provenance_tests": 11,
+        "provenance_minus_text": 1,
+        "provenance_minus_ranker": 0,
+        "ranker_minus_text": 1,
+        "text_units": 10,
+        "ranker_units": 11,
+        "provenance_units": 11,
+        "text_collapsed_repeats": 0,
+        "ranker_collapsed_repeats": 0,
+        "provenance_collapsed_repeats": 0
+      },
+      {
+        "claim_id": "C014",
+        "text_tests": 1,
+        "ranker_tests": 1,
+        "provenance_tests": 1,
+        "provenance_minus_text": 0,
+        "provenance_minus_ranker": 0,
+        "ranker_minus_text": 0,
+        "text_units": 1,
+        "ranker_units": 1,
+        "provenance_units": 1,
+        "text_collapsed_repeats": 0,
+        "ranker_collapsed_repeats": 0,
+        "provenance_collapsed_repeats": 0
+      },
+      {
+        "claim_id": "C015",
+        "text_tests": 8,
+        "ranker_tests": 8,
+        "provenance_tests": 8,
+        "provenance_minus_text": 0,
+        "provenance_minus_ranker": 0,
+        "ranker_minus_text": 0,
+        "text_units": 8,
+        "ranker_units": 8,
+        "provenance_units": 8,
+        "text_collapsed_repeats": 0,
+        "ranker_collapsed_repeats": 0,
+        "provenance_collapsed_repeats": 0
+      },
+      {
+        "claim_id": "C016",
+        "text_tests": 9,
+        "ranker_tests": 6,
+        "provenance_tests": 6,
+        "provenance_minus_text": -3,
+        "provenance_minus_ranker": 0,
+        "ranker_minus_text": -3,
+        "text_units": 9,
+        "ranker_units": 6,
+        "provenance_units": 6,
+        "text_collapsed_repeats": 0,
+        "ranker_collapsed_repeats": 0,
+        "provenance_collapsed_repeats": 0
+      },
+      {
+        "claim_id": "C017",
+        "text_tests": 0,
+        "ranker_tests": 0,
+        "provenance_tests": 0,
+        "provenance_minus_text": 0,
+        "provenance_minus_ranker": 0,
+        "ranker_minus_text": 0,
+        "text_units": 0,
+        "ranker_units": 0,
+        "provenance_units": 0,
+        "text_collapsed_repeats": 0,
+        "ranker_collapsed_repeats": 0,
+        "provenance_collapsed_repeats": 0
+      },
+      {
+        "claim_id": "C021",
+        "text_tests": 0,
+        "ranker_tests": 0,
+        "provenance_tests": 0,
+        "provenance_minus_text": 0,
+        "provenance_minus_ranker": 0,
+        "ranker_minus_text": 0,
+        "text_units": 0,
+        "ranker_units": 0,
+        "provenance_units": 0,
+        "text_collapsed_repeats": 0,
+        "ranker_collapsed_repeats": 0,
+        "provenance_collapsed_repeats": 0
+      },
+      {
+        "claim_id": "C024",
+        "text_tests": 2,
+        "ranker_tests": 2,
+        "provenance_tests": 2,
+        "provenance_minus_text": 0,
+        "provenance_minus_ranker": 0,
+        "ranker_minus_text": 0,
+        "text_units": 2,
+        "ranker_units": 2,
+        "provenance_units": 2,
+        "text_collapsed_repeats": 0,
+        "ranker_collapsed_repeats": 0,
+        "provenance_collapsed_repeats": 0
+      },
+      {
+        "claim_id": "C026",
+        "text_tests": 2,
+        "ranker_tests": 3,
+        "provenance_tests": 3,
+        "provenance_minus_text": 1,
+        "provenance_minus_ranker": 0,
+        "ranker_minus_text": 1,
+        "text_units": 2,
+        "ranker_units": 3,
+        "provenance_units": 3,
+        "text_collapsed_repeats": 0,
+        "ranker_collapsed_repeats": 0,
+        "provenance_collapsed_repeats": 0
+      },
+      {
+        "claim_id": "C028",
+        "text_tests": 0,
+        "ranker_tests": 0,
+        "provenance_tests": 0,
+        "provenance_minus_text": 0,
+        "provenance_minus_ranker": 0,
+        "ranker_minus_text": 0,
+        "text_units": 0,
+        "ranker_units": 0,
+        "provenance_units": 0,
+        "text_collapsed_repeats": 0,
+        "ranker_collapsed_repeats": 0,
+        "provenance_collapsed_repeats": 0
+      },
+      {
+        "claim_id": "C030",
+        "text_tests": 0,
+        "ranker_tests": 0,
+        "provenance_tests": 0,
+        "provenance_minus_text": 0,
+        "provenance_minus_ranker": 0,
+        "ranker_minus_text": 0,
+        "text_units": 0,
+        "ranker_units": 0,
+        "provenance_units": 0,
+        "text_collapsed_repeats": 0,
+        "ranker_collapsed_repeats": 0,
+        "provenance_collapsed_repeats": 0
+      },
+      {
+        "claim_id": "C033",
+        "text_tests": 2,
+        "ranker_tests": 5,
+        "provenance_tests": 5,
+        "provenance_minus_text": 3,
+        "provenance_minus_ranker": 0,
+        "ranker_minus_text": 3,
+        "text_units": 2,
+        "ranker_units": 5,
+        "provenance_units": 5,
+        "text_collapsed_repeats": 0,
+        "ranker_collapsed_repeats": 0,
+        "provenance_collapsed_repeats": 0
+      },
+      {
+        "claim_id": "C035",
+        "text_tests": 7,
+        "ranker_tests": 4,
+        "provenance_tests": 4,
+        "provenance_minus_text": -3,
+        "provenance_minus_ranker": 0,
+        "ranker_minus_text": -3,
+        "text_units": 7,
+        "ranker_units": 4,
+        "provenance_units": 4,
+        "text_collapsed_repeats": 0,
+        "ranker_collapsed_repeats": 0,
+        "provenance_collapsed_repeats": 0
+      },
+      {
+        "claim_id": "C041",
+        "text_tests": 2,
+        "ranker_tests": 3,
+        "provenance_tests": 3,
+        "provenance_minus_text": 1,
+        "provenance_minus_ranker": 0,
+        "ranker_minus_text": 1,
+        "text_units": 2,
+        "ranker_units": 3,
+        "provenance_units": 3,
+        "text_collapsed_repeats": 0,
+        "ranker_collapsed_repeats": 0,
+        "provenance_collapsed_repeats": 0
+      },
+      {
+        "claim_id": "C042",
+        "text_tests": 0,
+        "ranker_tests": 1,
+        "provenance_tests": 1,
+        "provenance_minus_text": 1,
+        "provenance_minus_ranker": 0,
+        "ranker_minus_text": 1,
+        "text_units": 0,
+        "ranker_units": 1,
+        "provenance_units": 1,
+        "text_collapsed_repeats": 0,
+        "ranker_collapsed_repeats": 0,
+        "provenance_collapsed_repeats": 0
+      },
+      {
+        "claim_id": "C047",
+        "text_tests": 1,
+        "ranker_tests": 0,
+        "provenance_tests": 0,
+        "provenance_minus_text": -1,
+        "provenance_minus_ranker": 0,
+        "ranker_minus_text": -1,
+        "text_units": 1,
+        "ranker_units": 0,
+        "provenance_units": 0,
+        "text_collapsed_repeats": 0,
+        "ranker_collapsed_repeats": 0,
+        "provenance_collapsed_repeats": 0
+      },
+      {
+        "claim_id": "C057",
+        "text_tests": 2,
+        "ranker_tests": 4,
+        "provenance_tests": 4,
+        "provenance_minus_text": 2,
+        "provenance_minus_ranker": 0,
+        "ranker_minus_text": 2,
+        "text_units": 2,
+        "ranker_units": 4,
+        "provenance_units": 4,
+        "text_collapsed_repeats": 0,
+        "ranker_collapsed_repeats": 0,
+        "provenance_collapsed_repeats": 0
+      },
+      {
+        "claim_id": "C063",
+        "text_tests": 0,
+        "ranker_tests": 0,
+        "provenance_tests": 0,
+        "provenance_minus_text": 0,
+        "provenance_minus_ranker": 0,
+        "ranker_minus_text": 0,
+        "text_units": 0,
+        "ranker_units": 0,
+        "provenance_units": 0,
+        "text_collapsed_repeats": 0,
+        "ranker_collapsed_repeats": 0,
+        "provenance_collapsed_repeats": 0
+      },
+      {
+        "claim_id": "C068",
+        "text_tests": 0,
+        "ranker_tests": 0,
+        "provenance_tests": 0,
+        "provenance_minus_text": 0,
+        "provenance_minus_ranker": 0,
+        "ranker_minus_text": 0,
+        "text_units": 0,
+        "ranker_units": 0,
+        "provenance_units": 0,
+        "text_collapsed_repeats": 0,
+        "ranker_collapsed_repeats": 0,
+        "provenance_collapsed_repeats": 0
+      }
+    ]
+  },
+  "uncovered_claims": {
+    "method": "Full pooled titles for each of the seven claims, abstracts of the nearest candidates, and one eight-hit Europe PMC query per claim inside the eight-year horizon. Frozen lists were not changed.",
+    "claims": [
+      {
+        "claim_id": "C007",
+        "verdict": "no eligible test found under the specified search and horizon",
+        "nearest_in_pool": "17210246",
+        "reason": "The nearest paper reports H-Ras vacuolation in glioblastoma, and K-Ras does it too. It is not the primary-melanocyte contrast with BRAF(V600E). The horizon query did not surface a replication of that experiment."
+      },
+      {
+        "claim_id": "C017",
+        "verdict": "no eligible test found under the specified search and horizon",
+        "nearest_in_pool": "27736842",
+        "reason": "The pool contains an extended RAS analysis of a phase III panitumumab versus best-supportive-care trial of the same design as the source. The audit does not count that as a new cohort. Other candidates are wild-type-only series or different regimens, so they do not test the mutant contrast."
+      },
+      {
+        "claim_id": "C021",
+        "verdict": "no eligible test found under the specified search and horizon",
+        "nearest_in_pool": "24934810",
+        "reason": "MYC suppresses BRAF(V600E) senescence in mouse lung. That is a different species and tissue, and it does not compare NRAS(Q61R) in normal human melanocytes. A melanocyte-restricted query did not return another direct test."
+      },
+      {
+        "claim_id": "C028",
+        "verdict": "no eligible test found under the specified search and horizon",
+        "nearest_in_pool": "20298593",
+        "reason": "The nearest paper confirms Apc plus KRAS cooperation on mouse intestinal tumor counts. It does not test whether nuclear beta-catenin accumulation after APC loss requires KRAS in zebrafish or human intestinal cells."
+      },
+      {
+        "claim_id": "C030",
+        "verdict": "no eligible test found under the specified search and horizon",
+        "nearest_in_pool": "22105174",
+        "outside_pool_neighbor": "27401113",
+        "reason": "Pool papers restore iodide with MAPK inhibitors or measure TGFbeta expression. They do not block TGFbeta/Smad and measure the sodium iodide symporter. PMID 27401113, outside the pool, studies NOX4 as a mediator of symporter loss, which is a different intervention."
+      },
+      {
+        "claim_id": "C063",
+        "verdict": "no eligible test found under the specified search and horizon",
+        "nearest_in_pool": "34158360",
+        "reason": "The pool is combination trials, dosing, and toxicity for cobimetinib. None test whether cobimetinib itself has superior efficacy in BRAF-mutant models. The horizon query returned pharmacokinetics and combination studies."
+      },
+      {
+        "claim_id": "C068",
+        "verdict": "ranked_below_the_retrieval_cap",
+        "nearest_in_pool": "24875857",
+        "missed_pmid": "36156071",
+        "reason": "PMID 36156071 is inside the eight-year horizon and not in the frozen pool. It knocks down Atg5 in KrasG12D;p53 lung tumors: systemic loss reduced established tumor growth and extended survival, while tumor-cell loss did not. The pool's nearest papers delete Atg7 instead.",
+        "diagnosis": {
+          "citation": "absent from search results; the paper does not cite PMID 24445999",
+          "experimental": "query matches, 4174 hits, not in the first 40",
+          "text_similarity": "query matches, 65887 hits, not in the first 40",
+          "same_gene": "query matches, 68015 hits; date order fills 20 slots before 2022",
+          "screen": "would be kept"
+        },
+        "regression": {
+          "repair": "AND the named perturbation symbol from the exposure. Do not add paralogs.",
+          "recovered_pmid": "36156071",
+          "screened_rank": 1,
+          "role": "development regression, not a measure of general improvement"
+        }
+      }
+    ]
+  },
+  "mechanism_fresh": {
+    "role": "fresh claim families, held together",
+    "budget": 20,
+    "primary_outcome": "claims with an eligible direct test",
+    "families": {
+      "pancreatic_kras": {
+        "claims": [
+          "C025",
+          "C037",
+          "C045",
+          "C065",
+          "C069",
+          "C071"
+        ],
+        "text_claims_with_a_test": 1,
+        "mechanism_claims_with_a_test": 0,
+        "text_tests": 1,
+        "mechanism_tests": 0,
+        "text_test": {
+          "claim_id": "C045",
+          "pmid": "22355676",
+          "note": "GNAS mutations in 48 of 118 IPMNs, subsequent to the source."
+        }
+      },
+      "colorectal_kras": {
+        "claims": [
+          "C036",
+          "C053",
+          "C062",
+          "C064",
+          "C070"
+        ],
+        "text_claims_with_a_test": 0,
+        "mechanism_claims_with_a_test": 0,
+        "text_tests": 0,
+        "mechanism_tests": 0
+      }
+    },
+    "additional_claims_versus_text": 0,
+    "note": "On 10 of 11 claims the exposure names no extra symbol, so the revised query is the existing experimental query. C036 adds K117 and A146 and still has no eligible test in its twenty."
+  }
+}

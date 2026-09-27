@@ -1,0 +1,3740 @@
+{
+  "annotator": "A",
+  "claims": [
+    {
+      "claim_id": "C001",
+      "followups": [
+        {
+          "pmid": "16329078",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "16443854",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "16474404",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16507365",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16969076",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16964246",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17088437",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17251932",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16825433",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "17089795",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "18470943",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C002",
+      "followups": [
+        {
+          "pmid": "16601293",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16772349",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16918957",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16858683",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17054470",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17131411",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "17317825",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17317846",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16557281",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "16946009",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "16946010",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C003",
+      "followups": [
+        {
+          "pmid": "16801397",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16809487",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16827748",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16845322",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16880785",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16880792",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16888631",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16908931",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17208430",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "17443002",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "17295241",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C004",
+      "followups": [
+        {
+          "pmid": "17056636",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "17143285",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17143282",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17517660",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17603482",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17603483",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17704260",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "19206169",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16825433",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "16987887",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "17222357",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C005",
+      "followups": [
+        {
+          "pmid": "16845322",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16880785",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16880792",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16888631",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16908931",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16964246",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17018604",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17050671",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17208430",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "17443002",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "17295241",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C006",
+      "followups": [
+        {
+          "pmid": "16827748",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16845322",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16880785",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16888631",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16908931",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "16964246",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17018604",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17050671",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17208430",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "17443002",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "17295241",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C007",
+      "followups": [
+        {
+          "pmid": "22133722",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22067401",
+          "relation": "not_direct",
+          "independent": true
+        }
+      ]
+    },
+    {
+      "claim_id": "C008",
+      "followups": [
+        {
+          "pmid": "17060486",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17317677",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "19447865",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19671843",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20038723",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21597390",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22281684",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23178117",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17888036",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "19349489",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "19680293",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C009",
+      "followups": [
+        {
+          "pmid": "17317825",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17381488",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17488796",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17520704",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "17717450",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17785355",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17989125",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18000091",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17940185",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "18088233",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "18437172",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C010",
+      "followups": [
+        {
+          "pmid": "17332249",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17363583",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17436253",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17377585",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17507627",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17517660",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17576930",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17372901",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17295241",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "18042149",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "19383313",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C012",
+      "followups": [
+        {
+          "pmid": "18594528",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18632602",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18757405",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19010912",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19584155",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19826477",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20855837",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21483012",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25823918",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C013",
+      "followups": [
+        {
+          "pmid": "17717450",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "17785355",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "17989125",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18000091",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "18310287",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "18390968",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18458053",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18492751",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17940185",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "18088233",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "18437172",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C014",
+      "followups": [
+        {
+          "pmid": "17603483",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "19206169",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21396583",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C015",
+      "followups": [
+        {
+          "pmid": "17785355",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "17989125",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18000091",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "18310287",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "18390968",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18458053",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18492751",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18682506",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "17940185",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "18088233",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "18437172",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "followups": [
+        {
+          "pmid": "17989125",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18000091",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "18310287",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "18390968",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18458053",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18492751",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18682506",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "18757433",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "17940185",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "18088233",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "18437172",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "followups": [
+        {
+          "pmid": "18372904",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18224685",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18516290",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18577988",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18669866",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18628094",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18922929",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18832519",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18802721",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "19188670",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "19536109",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C020",
+      "followups": [
+        {
+          "pmid": "20141835",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20149136",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20526349",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22448344",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22395615",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25600339",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21577205",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "followups": [
+        {
+          "pmid": "18790768",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18615679",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18829533",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18980976",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19088048",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19078957",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19282848",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19345328",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18846109",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "19118027",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "20630094",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C022",
+      "followups": [
+        {
+          "pmid": "19826477",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20855837",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22071650",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22975805",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23723294",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "25738220",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "26655088",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "26777916",
+          "relation": "not_direct",
+          "independent": true
+        }
+      ]
+    },
+    {
+      "claim_id": "C023",
+      "followups": [
+        {
+          "pmid": "18669866",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18832519",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18955444",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19001320",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19002263",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19033568",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19088039",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19223544",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "18846109",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "19738166",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "20100961",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C024",
+      "followups": [
+        {
+          "pmid": "19028876",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "19136624",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19147554",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19292977",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19362090",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19826477",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19931263",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20018721",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20418756",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "20814421",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23622131",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C025",
+      "followups": [
+        {
+          "pmid": "19136624",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19292977",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19362090",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19826477",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19931263",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20018721",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20071774",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20495549",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20418756",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "20814421",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23622131",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "followups": [
+        {
+          "pmid": "19196673",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19223544",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19237633",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19339720",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19366826",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19398573",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19597023",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "19603018",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "19188670",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "19536109",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "19636327",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "followups": [
+        {
+          "pmid": "19490892",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19490893",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19447865",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19451690",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19373855",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19487299",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19525976",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19571318",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19464787",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "19536109",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "19636327",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C029",
+      "followups": [
+        {
+          "pmid": "19667264",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19671843",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19826477",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19847165",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20009909",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "20022659",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "20038723",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20183914",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19680293",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "20921461",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23814043",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "followups": [
+        {
+          "pmid": "20130073",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20526288",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21274720",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21638088",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21880806",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21882184",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "22105174",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22608338",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "19895341",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "20578891",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "21142662",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C031",
+      "followups": [
+        {
+          "pmid": "19884549",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20008640",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20028768",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20103678",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20494973",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20501503",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20587792",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20619739",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20100961",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "21036793",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "20927778",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C032",
+      "followups": [
+        {
+          "pmid": "20526349",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20959481",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21383288",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22197931",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22395615",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22773810",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23248257",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23414587",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22554099",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C033",
+      "followups": [
+        {
+          "pmid": "20624322",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20855837",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "21107427",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21062932",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21427705",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21471965",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21483012",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22586319",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20921461",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23814043",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "29191596",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C034",
+      "followups": [
+        {
+          "pmid": "20431034",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20505728",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20494973",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20495549",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20501503",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20512147",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20541700",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20577206",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20418756",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "20617134",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "20670278",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C035",
+      "followups": [
+        {
+          "pmid": "20526288",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20526349",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20551059",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20551065",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20587792",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20619739",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20668238",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20818844",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20578891",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "20630094",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "20714900",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C036",
+      "followups": [
+        {
+          "pmid": "20619739",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20978259",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20921462",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20921465",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21216929",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21228335",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21285991",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21305640",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20921461",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "21036793",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "20927778",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C037",
+      "followups": [
+        {
+          "pmid": "21159816",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21304978",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21481787",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21481788",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21586612",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21775669",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21734707",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21926469",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "20814421",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23622131",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "24388967",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C038",
+      "followups": [
+        {
+          "pmid": "21483012",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21597390",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21768463",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21825258",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21900593",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21969500",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22071650",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22080568",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23814043",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "29191596",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "29068003",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C039",
+      "followups": [
+        {
+          "pmid": "21062932",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21159816",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21216929",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21228335",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21304978",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21285991",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21305640",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21364579",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21036793",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "20927778",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "21163703",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C040",
+      "followups": [
+        {
+          "pmid": "21779497",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "21798893",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21798897",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21810686",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21880806",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22133722",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22067401",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22179043",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22004085",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "26276366",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "26985062",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C041",
+      "followups": [
+        {
+          "pmid": "21798893",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21798897",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22586653",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22067401",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22071650",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22180306",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22188813",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22271473",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "21277552",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "21683865",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "21826083",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C042",
+      "followups": [
+        {
+          "pmid": "21481788",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "21586612",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "21775669",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21734707",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21926469",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22025163",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22056382",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22355676",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23622131",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "24388967",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "24755884",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C043",
+      "followups": [
+        {
+          "pmid": "21659424",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21768463",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21825258",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21828135",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21880806",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21900593",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22586653",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21926469",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21826083",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "22004085",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "22574233",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C044",
+      "followups": [
+        {
+          "pmid": "21659424",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21900593",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22586653",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22180306",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22448344",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22261800",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22281684",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22427238",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21826083",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23365119",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23339363",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C045",
+      "followups": [
+        {
+          "pmid": "21734707",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21926469",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22025163",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22056382",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22355676",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22180306",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22264792",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22226782",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23622131",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "24388967",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "24755884",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C047",
+      "followups": [
+        {
+          "pmid": "22586653",
+          "relation": "support",
+          "independent": true
+        },
+        {
+          "pmid": "22810696",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "26030179",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "26416732",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "27108243",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25293556",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "30690295",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C048",
+      "followups": [
+        {
+          "pmid": "22180178",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22180306",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22148876",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22256804",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22237106",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22271473",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22389253",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22460905",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24136165",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "25115304",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "25293556",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C049",
+      "followups": [
+        {
+          "pmid": "21768580",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21900593",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22586653",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22180306",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22448344",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22261800",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22281684",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22427238",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "21826083",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23365119",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23339363",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C050",
+      "followups": [
+        {
+          "pmid": "22067401",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22180178",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22197931",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22256804",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22448344",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22261800",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22281684",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22356324",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22661227",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "22554099",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23060265",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C051",
+      "followups": [
+        {
+          "pmid": "22356324",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22395615",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22427238",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22446022",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "22473155",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22608338",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22722843",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22763439",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22554099",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23060265",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23290787",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C052",
+      "followups": [
+        {
+          "pmid": "22327624",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22343534",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22427238",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22425996",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22446022",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "22474202",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22541435",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22473155",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22464348",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23069990",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23082003",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C053",
+      "followups": [
+        {
+          "pmid": "22613842",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22722830",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22722843",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22810696",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23017669",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23094721",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23161513",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23471846",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23339363",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "25115304",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "25293556",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C054",
+      "followups": [
+        {
+          "pmid": "22735384",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22763439",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22763448",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22817889",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22773810",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22805292",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22842228",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23020132",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22554099",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23060265",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23290787",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C055",
+      "followups": [
+        {
+          "pmid": "22805292",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22842228",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22879539",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22981675",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22975805",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23020132",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23094721",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23051966",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "22554099",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23060265",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23290787",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C056",
+      "followups": [
+        {
+          "pmid": "22842228",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23020132",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23051966",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23095323",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23123854",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23153539",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23204132",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23242808",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23060265",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23290787",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23365119",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "followups": [
+        {
+          "pmid": "23123854",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23153539",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23204132",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23242808",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23248257",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23258922",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23887589",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23288408",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23290787",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23365119",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "24054424",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C058",
+      "followups": [
+        {
+          "pmid": "23242438",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23352126",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23453624",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23610105",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23723294",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "23729361",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23833300",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24875857",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23814043",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "29191596",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "30060526",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C059",
+      "followups": [
+        {
+          "pmid": "24336571",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "26091043",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "26214590",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "27089179",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "27671167",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "28467829",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "28783719",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "31320640",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "28637487",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "34571969",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C061",
+      "followups": [
+        {
+          "pmid": "23833040",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23918947",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23934108",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24075834",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24185007",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24265153",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24265154",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24265155",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24054424",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "24089443",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "24202393",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C062",
+      "followups": [
+        {
+          "pmid": "23729478",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23836465",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23878352",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "23938455",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24024839",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24042735",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24018645",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24385213",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25115304",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "25293556",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "26216840",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C063",
+      "followups": [
+        {
+          "pmid": "24075834",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24185007",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24265153",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24265154",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24265155",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24445538",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24429876",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24463458",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24054424",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "24089443",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "24202393",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C064",
+      "followups": [
+        {
+          "pmid": "24024839",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24042735",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24018645",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24385213",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24553385",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24122810",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24621249",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24645800",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25115304",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "25293556",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "26216840",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C065",
+      "followups": [
+        {
+          "pmid": "24553385",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24747441",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24823639",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24803537",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24859528",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24875860",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24915778",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24954535",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24755884",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "26830752",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "27158978",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C067",
+      "followups": [
+        {
+          "pmid": "24429876",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24463458",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24508103",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24569374",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24670642",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24717435",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24771846",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25265492",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24948110",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "24957944",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "25354245",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C068",
+      "followups": [
+        {
+          "pmid": "24434212",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24385213",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24398677",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24429876",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24436047",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24553385",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24499815",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24122810",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24388967",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "24755884",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "25057302",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C069",
+      "followups": [
+        {
+          "pmid": "24998913",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "24997986",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25024225",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25056374",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25065853",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25088940",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25119024",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25164765",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25115304",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "25293556",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "25435214",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C070",
+      "followups": [
+        {
+          "pmid": "25164765",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25280443",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25605843",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25673644",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25706875",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25797243",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25877855",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25924068",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25115304",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "25293556",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "26216840",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C071",
+      "followups": [
+        {
+          "pmid": "25644265",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25797243",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25855536",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "26097885",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "26106858",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "26253305",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "26501191",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "26527777",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "26830752",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "27158978",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "28452926",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    },
+    {
+      "claim_id": "C072",
+      "followups": [
+        {
+          "pmid": "25265494",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25399551",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25399552",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25452114",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25502142",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25589619",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25600339",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25673644",
+          "relation": "not_direct",
+          "independent": true
+        },
+        {
+          "pmid": "25354245",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "25435214",
+          "relation": "not_direct",
+          "independent": false
+        },
+        {
+          "pmid": "25823918",
+          "relation": "not_direct",
+          "independent": false
+        }
+      ]
+    }
+  ]
+}

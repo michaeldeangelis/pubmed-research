@@ -1,0 +1,374 @@
+{
+  "question": "On held-out years, does gene-timeline history predict the next paper beyond the latest abstract, publication volume, and calendar year?",
+  "split": {
+    "train_target_year_max": 2018,
+    "test_target_year_min": 2021,
+    "n_train": 2454,
+    "n_test": 586,
+    "n_training_windows": 209,
+    "max_training_paper_year": 2018
+  },
+  "leakage": {
+    "training_tokens": "Training windows contain only papers with year <= 2018.",
+    "citation_selection": "The corpus is Europe PMC sorted by present-day citation count, at most 80 papers per year. That selection was not knowable at the historical cutoff."
+  },
+  "test_clinical_base_rate": 0.5358361601829529,
+  "models": {
+    "year_volume": {
+      "clinical_auroc": {
+        "point": 0.5767609591607343,
+        "lo": 0.4357841167805009,
+        "hi": 0.6043414909117982,
+        "n_boot": 1000
+      },
+      "clinical_bce": 1.1362450122833252,
+      "gene_micro_auroc": {
+        "point": 0.7795891012444498,
+        "lo": 0.7368370150341718,
+        "hi": 0.8308760004610709,
+        "n_boot": 1000
+      },
+      "drug_micro_auroc": {
+        "point": 0.5584630445594838,
+        "lo": 0.4940302853814793,
+        "hi": 0.6108571087227228,
+        "n_boot": 1000
+      }
+    },
+    "current": {
+      "clinical_auroc": {
+        "point": 0.4962357156238292,
+        "lo": 0.41243289877300615,
+        "hi": 0.5564657382091592,
+        "n_boot": 1000
+      },
+      "clinical_bce": 1.182080626487732,
+      "gene_micro_auroc": {
+        "point": 0.7906655728972789,
+        "lo": 0.7486041191569157,
+        "hi": 0.8117748602005532,
+        "n_boot": 1000
+      },
+      "drug_micro_auroc": {
+        "point": 0.5276083514882349,
+        "lo": 0.46776321481925026,
+        "hi": 0.5845062630018147,
+        "n_boot": 1000
+      }
+    },
+    "current_volume": {
+      "clinical_auroc": {
+        "point": 0.4954688085425253,
+        "lo": 0.41117831541218636,
+        "hi": 0.556869300911854,
+        "n_boot": 1000
+      },
+      "clinical_bce": 1.186038851737976,
+      "gene_micro_auroc": {
+        "point": 0.7964753444293855,
+        "lo": 0.7475763528307788,
+        "hi": 0.8155684592649705,
+        "n_boot": 1000
+      },
+      "drug_micro_auroc": {
+        "point": 0.5253765244863505,
+        "lo": 0.46401424588720674,
+        "hi": 0.5836068583340366,
+        "n_boot": 1000
+      }
+    },
+    "mean_history": {
+      "clinical_auroc": {
+        "point": 0.48474381790932936,
+        "lo": 0.32360312546071063,
+        "hi": 0.5184251916631669,
+        "n_boot": 1000
+      },
+      "clinical_bce": 3.5045573711395264,
+      "gene_micro_auroc": {
+        "point": 0.7558752828684385,
+        "lo": 0.7091742144802148,
+        "hi": 0.7824945776893579,
+        "n_boot": 1000
+      },
+      "drug_micro_auroc": {
+        "point": 0.56074916113847,
+        "lo": 0.5210878474711051,
+        "hi": 0.5804334663057416,
+        "n_boot": 1000
+      }
+    },
+    "recency_history": {
+      "clinical_auroc": {
+        "point": 0.4615726863994005,
+        "lo": 0.34652920962199313,
+        "hi": 0.4927537993920973,
+        "n_boot": 1000
+      },
+      "clinical_bce": 3.073500394821167,
+      "gene_micro_auroc": {
+        "point": 0.7604375111827723,
+        "lo": 0.7071068967623798,
+        "hi": 0.7898090195920453,
+        "n_boot": 1000
+      },
+      "drug_micro_auroc": {
+        "point": 0.5733492466007719,
+        "lo": 0.5251935896150762,
+        "hi": 0.5955499376552008,
+        "n_boot": 1000
+      }
+    },
+    "mean_unrelated": {
+      "clinical_auroc": {
+        "point": 0.47254355563881606,
+        "lo": 0.4326923076923077,
+        "hi": 0.524330150908531,
+        "n_boot": 1000
+      },
+      "clinical_bce": 3.471385955810547
+    },
+    "transformer": {
+      "clinical_auroc": {
+        "point": 0.6168742974896965,
+        "lo": 0.5481770833333334,
+        "hi": 0.7092303807058526,
+        "n_boot": 1000
+      },
+      "clinical_bce": 0.6831626296043396,
+      "gene_micro_auroc": {
+        "point": 0.8285171146973677,
+        "lo": 0.7654512325678674,
+        "hi": 0.8589006095026612,
+        "n_boot": 1000
+      },
+      "drug_micro_auroc": {
+        "point": 0.4677509404355775,
+        "lo": 0.38002846089361547,
+        "hi": 0.5506802270159025,
+        "n_boot": 1000
+      }
+    },
+    "transformer_shuffled": {
+      "clinical_auroc": {
+        "point": 0.6150243536905208,
+        "lo": 0.5473790322580645,
+        "hi": 0.7054911176267679,
+        "n_boot": 1000
+      },
+      "clinical_bce": 0.68385249376297
+    },
+    "transformer_unrelated": {
+      "clinical_auroc": {
+        "point": 0.5774517609591607,
+        "lo": 0.5335873139917293,
+        "hi": 0.6867238703001035,
+        "n_boot": 1000
+      },
+      "clinical_bce": 0.7014331221580505
+    },
+    "prevalence": {
+      "clinical_auroc": {
+        "point": 0.5,
+        "lo": null,
+        "hi": null,
+        "n_boot": 0
+      },
+      "clinical_bce": 0.7429565787315369
+    }
+  },
+  "deltas_clinical_auroc": {
+    "mean_history_minus_current_volume": {
+      "point": -0.01072499063319593,
+      "lo": -0.13548185231539428,
+      "hi": 0.03455718736092567,
+      "n_boot": 1000
+    },
+    "recency_history_minus_current_volume": {
+      "point": -0.03389612214312476,
+      "lo": -0.14313517338995047,
+      "hi": 0.012007197192382413,
+      "n_boot": 1000
+    },
+    "transformer_minus_current_volume": {
+      "point": 0.12140548894717118,
+      "lo": 0.07032028833618775,
+      "hi": 0.20226308345120225,
+      "n_boot": 1000
+    },
+    "transformer_minus_mean_history": {
+      "point": 0.1321304795803671,
+      "lo": 0.06285071311667056,
+      "hi": 0.32156656129258865,
+      "n_boot": 1000
+    },
+    "transformer_minus_shuffled": {
+      "point": 0.0018499437991756906,
+      "lo": -0.0011555364720146066,
+      "hi": 0.009469696969696906,
+      "n_boot": 1000
+    },
+    "transformer_minus_unrelated": {
+      "point": 0.039422536530535734,
+      "lo": -0.012292358803986714,
+      "hi": 0.05626679310889837,
+      "n_boot": 1000
+    },
+    "mean_history_minus_unrelated": {
+      "point": 0.012200262270513296,
+      "lo": -0.15993328391401035,
+      "hi": 0.05325161729656108,
+      "n_boot": 1000
+    }
+  },
+  "deltas_gene_micro_auroc": {
+    "transformer_minus_current_volume": {
+      "point": 0.03204177026798216,
+      "lo": -0.013480387199598765,
+      "hi": 0.06117472594156537,
+      "n_boot": 1000
+    },
+    "mean_history_minus_current_volume": {
+      "point": -0.040600061560946976,
+      "lo": -0.05327264956058775,
+      "hi": -0.023387780643425726,
+      "n_boot": 1000
+    }
+  },
+  "per_gene": [
+    {
+      "gene": "KRAS",
+      "n": 254,
+      "clinical_base_rate": 0.4330708682537079,
+      "current_volume": 0.4976010101010101,
+      "mean_history": 0.46672979797979797,
+      "transformer": 0.5335227272727273
+    },
+    {
+      "gene": "NRAS",
+      "n": 27,
+      "clinical_base_rate": 0.7037037014961243,
+      "current_volume": 0.4934210526315789,
+      "mean_history": 0.5986842105263158,
+      "transformer": 0.6381578947368421
+    },
+    {
+      "gene": "HRAS",
+      "n": 15,
+      "clinical_base_rate": 0.7333333492279053,
+      "current_volume": 0.4318181818181818,
+      "mean_history": 0.6136363636363636,
+      "transformer": 0.4772727272727273
+    },
+    {
+      "gene": "BRAF",
+      "n": 121,
+      "clinical_base_rate": 0.6611570119857788,
+      "current_volume": 0.6109756097560975,
+      "mean_history": 0.5280487804878049,
+      "transformer": 0.7411585365853659
+    },
+    {
+      "gene": "MAP2K1",
+      "n": 10,
+      "clinical_base_rate": 0.30000001192092896,
+      "current_volume": 0.3333333333333333,
+      "mean_history": 0.5238095238095238,
+      "transformer": 0.6190476190476191
+    },
+    {
+      "gene": "MAPK1",
+      "n": 9,
+      "clinical_base_rate": 0.1111111119389534,
+      "current_volume": 1.0,
+      "mean_history": 1.0,
+      "transformer": 1.0
+    },
+    {
+      "gene": "EGFR",
+      "n": 57,
+      "clinical_base_rate": 0.5263158082962036,
+      "current_volume": 0.3851851851851852,
+      "mean_history": 0.408641975308642,
+      "transformer": 0.5814814814814815
+    },
+    {
+      "gene": "ERBB2",
+      "n": 18,
+      "clinical_base_rate": 0.6666666865348816,
+      "current_volume": 0.16666666666666666,
+      "mean_history": 0.20833333333333334,
+      "transformer": 0.2638888888888889
+    },
+    {
+      "gene": "MET",
+      "n": 31,
+      "clinical_base_rate": 0.8064516186714172,
+      "current_volume": 0.3933333333333333,
+      "mean_history": 0.58,
+      "transformer": 0.52
+    },
+    {
+      "gene": "STK11",
+      "n": 17,
+      "clinical_base_rate": 0.7647058963775635,
+      "current_volume": 0.6923076923076923,
+      "mean_history": 0.6923076923076923,
+      "transformer": 0.6730769230769231
+    }
+  ],
+  "initialization_check": {
+    "this_file_seed": 0,
+    "note": "Seed 0 is an outlier. Seeds 1 and 2 have clinical AUROC 0.496 and 0.495, and both clinical deltas versus the latest-paper baseline cover zero. The paired gene-micro interval covers zero on all three seeds. The closed comparison is the one that does not depend on a single initialization: history does not add a stable clinical prediction.",
+    "seeds": [
+      {
+        "seed": 0,
+        "transformer_clinical_auroc": 0.6168742974896965,
+        "delta_clinical": {
+          "point": 0.12140548894717118,
+          "lo": 0.07032028833618775,
+          "hi": 0.20226308345120225,
+          "n_boot": 1000
+        },
+        "delta_gene": {
+          "point": 0.03204177026798216,
+          "lo": -0.013480387199598765,
+          "hi": 0.06117472594156537,
+          "n_boot": 1000
+        }
+      },
+      {
+        "seed": 1,
+        "transformer_clinical_auroc": 0.4956561446234545,
+        "delta_clinical": {
+          "point": 0.00018733608092919019,
+          "lo": -0.0867416001933769,
+          "hi": 0.1052810324333503,
+          "n_boot": 1000
+        },
+        "delta_gene": {
+          "point": 0.03716425118785893,
+          "lo": -0.007805864836815224,
+          "hi": 0.06635636771222708,
+          "n_boot": 1000
+        }
+      },
+      {
+        "seed": 2,
+        "transformer_clinical_auroc": 0.4952463469464219,
+        "delta_clinical": {
+          "point": -0.000222461596103396,
+          "lo": -0.07693157952912566,
+          "hi": 0.04743083003952575,
+          "n_boot": 1000
+        },
+        "delta_gene": {
+          "point": 0.033168959434900724,
+          "lo": -0.00902583299656623,
+          "hi": 0.06356564519174857,
+          "n_boot": 1000
+        }
+      }
+    ]
+  }
+}

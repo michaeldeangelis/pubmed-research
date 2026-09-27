@@ -1,0 +1,1803 @@
+{
+  "annotator": "B3",
+  "claims": [
+    {
+      "claim_id": "C024",
+      "followups": [
+        {
+          "candidate_id": "C024-G01",
+          "pmid": "20160967",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of cell-line models of pancreatic cancer and does not measure Kras-driven PanIN formation in adult mouse acinar cells."
+        },
+        {
+          "candidate_id": "C024-G02",
+          "pmid": "25963558",
+          "relation": "partial",
+          "independent": true,
+          "note": "The experiments use human pancreatic duct cells transfected with K-ras(G12V) and measure ROS and capsaicin toxicity, not PanIN induction in adult mouse acinar cells."
+        },
+        {
+          "candidate_id": "C024-G03",
+          "pmid": "20959488",
+          "relation": "partial",
+          "independent": true,
+          "note": "Mutant K-ras is expressed in K19-positive gastric epithelial cells and the reported outcome is gastric dysplasia, not pancreatic mPanIN."
+        },
+        {
+          "candidate_id": "C024-G04",
+          "pmid": "21673986",
+          "relation": "partial",
+          "independent": true,
+          "note": "The study examines Notch and NF-kB signaling in compound K-ras(G12D) and Ink4a/Arf-deficient mice that develop PDAC, rather than testing adult acinar-restricted Kras alone."
+        },
+        {
+          "candidate_id": "C024-G05",
+          "pmid": "19654306",
+          "relation": "not_test",
+          "independent": true,
+          "note": "The paper studies Sin3B and oncogene-induced senescence in fibroblasts and does not test pancreatic acinar Kras."
+        },
+        {
+          "candidate_id": "C024-G06",
+          "pmid": "19878870",
+          "relation": "partial",
+          "independent": true,
+          "note": "Oncogenic K-Ras is tested in adult Pdx1-expressing and insulin-expressing pancreatic cells, not in Elastase- or Mist1-positive mature acinar cells."
+        },
+        {
+          "candidate_id": "C024-G07",
+          "pmid": "19208745",
+          "relation": "partial",
+          "independent": true,
+          "note": "This is a human tissue survey of KRAS mutations in acinar cells, ADM, and PanIN, not an experimental activation of Kras in adult mouse acinar cells."
+        },
+        {
+          "candidate_id": "C024-G08",
+          "pmid": "20071774",
+          "relation": "partial",
+          "independent": true,
+          "note": "Mutant Kras in the mouse exocrine pancreas is studied with pancreatitis and beta-catenin, and the abstract does not report adult Elastase- or Mist1-restricted activation."
+        },
+        {
+          "candidate_id": "C024-G09",
+          "pmid": "26677984",
+          "relation": "partial",
+          "independent": true,
+          "note": "Mist1-driven Kras(G12D) is activated in gastric chief cells and produces gastric metaplasia, not pancreatic mPanIN."
+        },
+        {
+          "candidate_id": "C024-G10",
+          "pmid": "19028876",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Conditional Kras activation in mature mouse acinar cells induced PanIN lesions comparable to those from ubiquitous Kras activation."
+        },
+        {
+          "candidate_id": "C024-G11",
+          "pmid": "27585860",
+          "relation": "partial",
+          "independent": true,
+          "note": "The experiment traces p53-null clones inside already Kras-initiated pancreatic and lung tumors rather than testing adult acinar Kras as the cause of PanIN."
+        },
+        {
+          "candidate_id": "C024-G12",
+          "pmid": "27764699",
+          "relation": "partial",
+          "independent": true,
+          "note": "P48-Cre activates KrasG12D from pancreatic progenitors together with Fbxw7 deletion, which is not adult acinar-restricted Elastase or Mist1 targeting."
+        },
+        {
+          "candidate_id": "C024-G13",
+          "pmid": "20816838",
+          "relation": "not_test",
+          "independent": true,
+          "note": "The study is about XBP1 and Mist1 in gastric zymogenic-cell maturation and does not activate pancreatic Kras."
+        },
+        {
+          "candidate_id": "C024-G14",
+          "pmid": "19292977",
+          "relation": "partial",
+          "independent": true,
+          "note": "Oncogenic Kras is activated in all pancreatic cell types, and the new comparison is the effect of acute pancreatitis on progression."
+        },
+        {
+          "candidate_id": "C024-G15",
+          "pmid": "26848526",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Oncogenic K-ras is linked to SAHA resistance in fibroblasts, colon tumors, and lung cancer cells, not to pancreatic acinar PanIN."
+        },
+        {
+          "candidate_id": "C024-G16",
+          "pmid": "20624967",
+          "relation": "partial",
+          "independent": true,
+          "note": "Notch2 is deleted in a KrasG12D-driven pancreatic cancer model to study PanIN progression, not whether adult acinar Kras initiates mPanIN."
+        },
+        {
+          "candidate_id": "C024-G17",
+          "pmid": "19372370",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Bmi1 lineage tracing describes self-renewing acinar cells and does not introduce oncogenic Kras or score PanIN."
+        },
+        {
+          "candidate_id": "C024-G18",
+          "pmid": "27381829",
+          "relation": "partial",
+          "independent": true,
+          "note": "Combined COX-2 and K-Ras(G12D) activation accelerates cystic pancreatic lesions in compound mice, without an adult acinar-only Kras test."
+        },
+        {
+          "candidate_id": "C024-G19",
+          "pmid": "27340125",
+          "relation": "partial",
+          "independent": true,
+          "note": "Kras(G12D) mouse pancreata that already form PanINs are used to map pericyte and islet remodeling, not to test adult acinar initiation."
+        },
+        {
+          "candidate_id": "C024-G20",
+          "pmid": "20026066",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Pancreatic duct glands and Shh-driven mucinous metaplasia are described without a Kras activation experiment in acinar cells."
+        },
+        {
+          "candidate_id": "C024-G21",
+          "pmid": "19440048",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This commentary summarizes prior results on Notch and Kras rather than reporting a new acinar Kras cohort."
+        },
+        {
+          "candidate_id": "C024-G22",
+          "pmid": "19501586",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Endogenous mutant K-Ras expressed in differentiated mouse acinar cells produced sparse mPanINs that did not advance to PDAC unless p53 was also deleted."
+        },
+        {
+          "candidate_id": "C024-G23",
+          "pmid": "25127677",
+          "relation": "partial",
+          "independent": true,
+          "note": "Nicotine is tested as a modifier in Ela-KRAS and KPC mice that already express oncogenic KRAS, so the comparison is smoking exposure rather than Kras initiation."
+        },
+        {
+          "candidate_id": "C024-G24",
+          "pmid": "25823825",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Circulating K-ras mutations are measured in patients with pancreatic cancer and are not a mouse acinar PanIN experiment."
+        },
+        {
+          "candidate_id": "C024-G25",
+          "pmid": "23284900",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Oncogenic K-ras activated in acinar cells was sufficient to drive acinar-to-ductal metaplasia and produced PanIN lesions in vivo."
+        },
+        {
+          "candidate_id": "C024-G26",
+          "pmid": "21416058",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Retrograde taurocholate infusion is used to model acute pancreatitis and does not involve oncogenic Kras."
+        },
+        {
+          "candidate_id": "C024-G27",
+          "pmid": "25133424",
+          "relation": "partial",
+          "independent": true,
+          "note": "K-RAS is shown to suppress proliferation in pancreatic endocrine cells, a different compartment and outcome from acinar mPanIN."
+        },
+        {
+          "candidate_id": "C024-G28",
+          "pmid": "26452271",
+          "relation": "partial",
+          "independent": true,
+          "note": "Loss of wild-type Hras is tested inside an already oncogenic-Kras pancreatic adenocarcinoma model."
+        },
+        {
+          "candidate_id": "C024-G29",
+          "pmid": "26477318",
+          "relation": "partial",
+          "independent": true,
+          "note": "N-cadherin is deleted together with pancreatic K-ras(G12D), and the comparison is cadherin loss rather than acinar-restricted Kras initiation."
+        },
+        {
+          "candidate_id": "C024-G30",
+          "pmid": "28033353",
+          "relation": "not_test",
+          "independent": true,
+          "note": "The study measures ERK signaling after 2-deoxyglucose in lung cancer cells."
+        },
+        {
+          "candidate_id": "C024-G31",
+          "pmid": "20871595",
+          "relation": "partial",
+          "independent": true,
+          "note": "Telomere length is compared in human ADM and PanIN lesions, not after experimental Kras activation in adult mouse acini."
+        },
+        {
+          "candidate_id": "C024-G32",
+          "pmid": "27244456",
+          "relation": "partial",
+          "independent": true,
+          "note": "Proteasome activity is studied in Pdx1-Cre;LSL-Kras(G12D) mice, a progenitor-wide model rather than adult Elastase or Mist1 acinar activation."
+        },
+        {
+          "candidate_id": "C024-G33",
+          "pmid": "26020803",
+          "relation": "partial",
+          "independent": true,
+          "note": "miR-155 and ROS are measured after K-Ras activation in a doxycycline-inducible cell system, not in adult mouse acini."
+        },
+        {
+          "candidate_id": "C024-G34",
+          "pmid": "26416424",
+          "relation": "partial",
+          "independent": true,
+          "note": "p27 loss is studied after K-Ras activation in the pancreas, with metaplasia and Sox9 as the new endpoints."
+        },
+        {
+          "candidate_id": "C024-G35",
+          "pmid": "27889647",
+          "relation": "partial",
+          "independent": true,
+          "note": "WNT activation is added to a Ptf1a-cre;LSL-KrasG12D model and scored for faster PanIN and PDAC progression."
+        },
+        {
+          "candidate_id": "C024-G36",
+          "pmid": "26477488",
+          "relation": "partial",
+          "independent": true,
+          "note": "MUC4 induction is measured in Pdx1-Cre;KrasG12D PanINs, which are not adult acinar-restricted lesions."
+        },
+        {
+          "candidate_id": "C024-G37",
+          "pmid": "27780929",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Zoledronic acid is tested in KRAS-mutant and wild-type non-small cell lung cancer cells."
+        },
+        {
+          "candidate_id": "C024-G38",
+          "pmid": "23237571",
+          "relation": "partial",
+          "independent": true,
+          "note": "A JNK inhibitor is given to Ptf1a-Cre;Kras;Tgfbr2 mice to slow established pancreatic cancer."
+        },
+        {
+          "candidate_id": "C024-G39",
+          "pmid": "19147554",
+          "relation": "partial",
+          "independent": true,
+          "note": "Primary cilia are scored in human and mouse PanINs from existing oncogenic-Kras models, which does not test adult acinar initiation."
+        },
+        {
+          "candidate_id": "C024-G40",
+          "pmid": "27895743",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Next-generation sequencing is used to detect KRAS and other mutations in pancreatic fine-needle aspirates."
+        },
+        {
+          "candidate_id": "C024-G41",
+          "pmid": "27667193",
+          "relation": "partial",
+          "independent": true,
+          "note": "Satellite RNA is expressed in mouse PanIN-derived cells and changes genomic instability, downstream of an established PanIN model."
+        },
+        {
+          "candidate_id": "C024-G42",
+          "pmid": "19208345",
+          "relation": "partial",
+          "independent": true,
+          "note": "A gamma-secretase inhibitor is tested for tumor suppression in Kras p53 pancreatic cancer cell lines and mice."
+        },
+        {
+          "candidate_id": "C024-G43",
+          "pmid": "21311774",
+          "relation": "partial",
+          "independent": true,
+          "note": "Adult K19-Cre Kras(G12D) produces rare duct-associated mucinous metaplasias, a different epithelial compartment from Elastase or Mist1 acinar cells."
+        },
+        {
+          "candidate_id": "C024-G44",
+          "pmid": "22359542",
+          "relation": "partial",
+          "independent": true,
+          "note": "K-ras(G12D) induces acinar-to-ductal metaplasia in explant culture, and the in vivo work concerns PKC\u03b9 rather than adult-mouse mPanIN grades."
+        },
+        {
+          "candidate_id": "C024-G45",
+          "pmid": "23308056",
+          "relation": "partial",
+          "independent": true,
+          "note": "Dietary omega-3 fatty acids are tested in p48-Cre;LSL-Kras(G12D) mice, an embryonic pancreatic Cre model."
+        },
+        {
+          "candidate_id": "C024-G46",
+          "pmid": "27333990",
+          "relation": "partial",
+          "independent": true,
+          "note": "Aphanin is tested for growth inhibition in a KRAS G12D human pancreatic cancer cell line."
+        },
+        {
+          "candidate_id": "C024-G47",
+          "pmid": "26151762",
+          "relation": "partial",
+          "independent": true,
+          "note": "Ptf1a loss is shown to sensitize mature acinar cells to oncogenic KRAS, with the acinar origin of PanIN cited as a prior finding."
+        },
+        {
+          "candidate_id": "C024-G48",
+          "pmid": "24909166",
+          "relation": "partial",
+          "independent": true,
+          "note": "Cigarette smoke accelerates PanIN in Pdx1-Cre;K-ras(G12D) mice rather than testing adult acinar-restricted Kras."
+        },
+        {
+          "candidate_id": "C024-G49",
+          "pmid": "22140463",
+          "relation": "partial",
+          "independent": true,
+          "note": "Oncogenic Kras targeted through the nestin lineage, including embryonic progenitors, yields low-grade PanIN, and the new experiment is caerulein pancreatitis."
+        },
+        {
+          "candidate_id": "C024-G50",
+          "pmid": "26262587",
+          "relation": "partial",
+          "independent": true,
+          "note": "EGFR-to-ERK signaling is mapped in mutant K-ras pancreatic cancer cell lines."
+        },
+        {
+          "candidate_id": "C024-G51",
+          "pmid": "20854822",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Mist1 lineage tracing shows gastric chief cells can form spasmolytic polypeptide-expressing metaplasia without a pancreatic Kras experiment."
+        },
+        {
+          "candidate_id": "C024-G52",
+          "pmid": "19917056",
+          "relation": "partial",
+          "independent": true,
+          "note": "Adult rats given acinar-specific Kras(G12V) or Hras(G12V) did not form neoplastic lesions, which is a different species and allele from mouse Kras(G12D)."
+        },
+        {
+          "candidate_id": "C024-G53",
+          "pmid": "27215660",
+          "relation": "partial",
+          "independent": true,
+          "note": "Adult elastase-CreERT2 KrasG12D acinar cells increased pancreatitis-induced acinar-to-ductal metaplasia, and the reported endpoint is that metaplasia rather than spontaneous mPanIN."
+        }
+      ]
+    },
+    {
+      "claim_id": "C026",
+      "followups": [
+        {
+          "candidate_id": "C026-G01",
+          "pmid": "19172191",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Activated PIK3CA is studied in mouse ovarian surface epithelium and is unrelated to cetuximab in colorectal cancer."
+        },
+        {
+          "candidate_id": "C026-G02",
+          "pmid": "19208745",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KRAS mutations are mapped in human pancreatic acinar-ductal lesions, not in cetuximab-treated colorectal cancer."
+        },
+        {
+          "candidate_id": "C026-G03",
+          "pmid": "25216999",
+          "relation": "partial",
+          "independent": true,
+          "note": "Survival by K-ras status was compared in a general colorectal cancer series, and only five patients received cetuximab, which the authors say makes that analysis misleading."
+        },
+        {
+          "candidate_id": "C026-G04",
+          "pmid": "26848526",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Oncogenic K-ras is linked to SAHA resistance in fibroblasts and lung cancer cells."
+        },
+        {
+          "candidate_id": "C026-G05",
+          "pmid": "27081524",
+          "relation": "partial",
+          "independent": true,
+          "note": "A pathway-activation score is tested as a cetuximab-response predictor in colorectal models and patients, while K-ras wild-type nonresponse is only background."
+        },
+        {
+          "candidate_id": "C026-G06",
+          "pmid": "20603437",
+          "relation": "partial",
+          "independent": true,
+          "note": "The cohort is restricted to KRAS wild-type metastatic colorectal cancer treated with cetuximab monotherapy, and the measured variable is a KRAS 3'UTR polymorphism."
+        },
+        {
+          "candidate_id": "C026-G07",
+          "pmid": "19330036",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Foxp3-positive T cells are studied in K-Ras-driven mouse lung tumors."
+        },
+        {
+          "candidate_id": "C026-G08",
+          "pmid": "28928870",
+          "relation": "partial",
+          "independent": true,
+          "note": "Cetuximab-treated metastatic colorectal cancer is analyzed for microsatellite instability and tumor side, including a wild-type KRAS subgroup, without a KRAS-mutant versus wild-type outcome comparison."
+        },
+        {
+          "candidate_id": "C026-G09",
+          "pmid": "28544128",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Cetuximab plus irinotecan is tested in pediatric pontine glioma and high-grade astrocytoma, and no K-ras mutations were found."
+        },
+        {
+          "candidate_id": "C026-G10",
+          "pmid": "19561589",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a methods protocol for activating oncogenic K-ras in mouse lung."
+        },
+        {
+          "candidate_id": "C026-G11",
+          "pmid": "20194898",
+          "relation": "not_test",
+          "independent": true,
+          "note": "The paper engineers an anti-CD20 antibody and does not study colorectal KRAS or cetuximab."
+        },
+        {
+          "candidate_id": "C026-G12",
+          "pmid": "19712476",
+          "relation": "partial",
+          "independent": true,
+          "note": "EGFR copy number is tested only in K-RAS wild-type colorectal cancers already selected for irinotecan-cetuximab after irinotecan failure."
+        },
+        {
+          "candidate_id": "C026-G13",
+          "pmid": "22117530",
+          "relation": "partial",
+          "independent": true,
+          "note": "Germline polymorphisms are tested in cetuximab-irinotecan salvage therapy, with analyses focused on wild-type KRas tumors rather than the KRAS-mutation effect."
+        },
+        {
+          "candidate_id": "C026-G14",
+          "pmid": "26980146",
+          "relation": "partial",
+          "independent": true,
+          "note": "Tetrac and cetuximab are combined in K-ras wild-type and mutant colorectal cell lines, not in patients."
+        },
+        {
+          "candidate_id": "C026-G15",
+          "pmid": "25950441",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In metastatic colorectal cancer treated with cetuximab plus chemotherapy, K-ras mutation was associated with a lower objective response rate, lower disease control rate, and shorter overall survival."
+        },
+        {
+          "candidate_id": "C026-G16",
+          "pmid": "27555788",
+          "relation": "partial",
+          "independent": true,
+          "note": "Paired primary and metastatic samples from a small cetuximab-treated series are sequenced for resistance genes, and the new result emphasized is FBXW7 rather than a KRAS-mutant versus wild-type cohort comparison."
+        },
+        {
+          "candidate_id": "C026-G17",
+          "pmid": "19439077",
+          "relation": "partial",
+          "independent": true,
+          "note": "A gene-expression predictor is applied only to KRAS wild-type metastatic colorectal cancers treated with cetuximab, using previously published microarray data."
+        },
+        {
+          "candidate_id": "C026-G18",
+          "pmid": "21857165",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This workshop report discusses antibody infusion reactions, including cetuximab anaphylaxis, and does not measure KRAS and treatment outcome."
+        },
+        {
+          "candidate_id": "C026-G19",
+          "pmid": "22129105",
+          "relation": "not_test",
+          "independent": true,
+          "note": "An Fc-engineered anti-HER2 antibody is tested in breast cancer models."
+        },
+        {
+          "candidate_id": "C026-G20",
+          "pmid": "19923868",
+          "relation": "partial",
+          "independent": true,
+          "note": "Cetuximab responses are described in metastatic anal cancer, a different disease, where the two KRAS-mutant tumors progressed."
+        },
+        {
+          "candidate_id": "C026-G21",
+          "pmid": "27012422",
+          "relation": "partial",
+          "independent": true,
+          "note": "L-ascorbic acid is tested with cetuximab in mutant-KRAS colon cancer cell lines and xenografts."
+        },
+        {
+          "candidate_id": "C026-G22",
+          "pmid": "19547661",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF and KRAS are genotyped in salivary gland carcinomas, with colorectal EGFR therapy mentioned only as background."
+        },
+        {
+          "candidate_id": "C026-G23",
+          "pmid": "26439033",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Two chemotherapy doublets without cetuximab are compared in advanced colorectal cancer, and K-ras is not reported as a measured predictor."
+        },
+        {
+          "candidate_id": "C026-G24",
+          "pmid": "22754766",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Humanized anti-GD2 antibodies are characterized in neuroblastoma models."
+        },
+        {
+          "candidate_id": "C026-G25",
+          "pmid": "19183832",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A biliary double-cancer case is genotyped for K-ras and p53."
+        },
+        {
+          "candidate_id": "C026-G26",
+          "pmid": "19238210",
+          "relation": "partial",
+          "independent": true,
+          "note": "KRAS mutations are related to gefitinib and erlotinib sensitivity in non-small cell lung cancer cell lines, a different disease and drug class."
+        },
+        {
+          "candidate_id": "C026-G27",
+          "pmid": "19593564",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Calcium microdomains are studied during neutrophil antibody-dependent killing of tumor cells."
+        },
+        {
+          "candidate_id": "C026-G28",
+          "pmid": "26175928",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This meta-analysis summarizes K-ras as a predictor of EGFR tyrosine-kinase inhibitor outcome in lung cancer."
+        },
+        {
+          "candidate_id": "C026-G29",
+          "pmid": "25300933",
+          "relation": "partial",
+          "independent": true,
+          "note": "In women with lung adenocarcinoma given salvage erlotinib, K-Ras-mutant tumors had no objective responses, which is a different disease and a tyrosine-kinase inhibitor."
+        },
+        {
+          "candidate_id": "C026-G30",
+          "pmid": "23171437",
+          "relation": "partial",
+          "independent": true,
+          "note": "Fc-gamma receptor polymorphisms are associated with anti-EGFR response inside KRAS wild-type metastatic colorectal cancer."
+        },
+        {
+          "candidate_id": "C026-G31",
+          "pmid": "28881837",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This meta-analysis evaluates primary-tumor side in cetuximab-treated metastatic colorectal cancer rather than reporting a new KRAS-mutant versus wild-type test."
+        },
+        {
+          "candidate_id": "C026-G32",
+          "pmid": "28218784",
+          "relation": "partial",
+          "independent": true,
+          "note": "K-ras mutation is associated with shorter relapse-free and overall survival in colorectal cancer, without treatment specified as cetuximab plus irinotecan."
+        },
+        {
+          "candidate_id": "C026-G33",
+          "pmid": "22486600",
+          "relation": "partial",
+          "independent": true,
+          "note": "Pharmacogenetic variants are tested in cetuximab, irinotecan, and UFT therapy, and the abstract does not report a KRAS-mutation outcome comparison."
+        },
+        {
+          "candidate_id": "C026-G34",
+          "pmid": "21187939",
+          "relation": "not_test",
+          "independent": true,
+          "note": "FCGR3A alleles are studied as risk factors for HIV infection."
+        },
+        {
+          "candidate_id": "C026-G35",
+          "pmid": "28404754",
+          "relation": "partial",
+          "independent": true,
+          "note": "A single metastatic colon cancer with the uncommon KRAS A59T variant responded to panitumumab plus FOLFIRI, which is a different antibody and not a cohort comparison."
+        },
+        {
+          "candidate_id": "C026-G36",
+          "pmid": "23074403",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is an evidence review and economic analysis of KRAS testing for anti-EGFR therapy, not a new patient cohort."
+        },
+        {
+          "candidate_id": "C026-G37",
+          "pmid": "27924059",
+          "relation": "not_test",
+          "independent": true,
+          "note": "First-line erlotinib is tested in lung cancers with high EGFR copy number."
+        },
+        {
+          "candidate_id": "C026-G38",
+          "pmid": "22504044",
+          "relation": "not_test",
+          "independent": true,
+          "note": "FCGR genotypes are tested in trastuzumab-treated breast cancer."
+        },
+        {
+          "candidate_id": "C026-G39",
+          "pmid": "21686750",
+          "relation": "not_test",
+          "independent": true,
+          "note": "De novo germline HRAS and KRAS mutations are described in two siblings with a rasopathy phenotype."
+        },
+        {
+          "candidate_id": "C026-G40",
+          "pmid": "19281127",
+          "relation": "not_test",
+          "independent": true,
+          "note": "K-ras mutations are assessed as predictors of platinum chemotherapy response in advanced lung cancer."
+        },
+        {
+          "candidate_id": "C026-G41",
+          "pmid": "25943333",
+          "relation": "partial",
+          "independent": true,
+          "note": "Patients already selected as K-RAS wild type and treated with second- or third-line irinotecan plus cetuximab are stratified by a multi-marker profile."
+        },
+        {
+          "candidate_id": "C026-G42",
+          "pmid": "20550522",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In refractory metastatic colorectal cancer treated with anti-EGFR antibodies, KRAS mutation was associated with a lower response rate and a shorter progression-free survival."
+        },
+        {
+          "candidate_id": "C026-G43",
+          "pmid": "25333735",
+          "relation": "not_test",
+          "independent": true,
+          "note": "The study reports the frequency of K-RAS exon 2 mutations in Mexican metastatic colorectal cancers and does not compare treatment outcomes."
+        },
+        {
+          "candidate_id": "C026-G44",
+          "pmid": "23032993",
+          "relation": "not_test",
+          "independent": true,
+          "note": "FCGR2C genotypes are mapped in a population sample and linked to other Fc-receptor polymorphisms."
+        },
+        {
+          "candidate_id": "C026-G45",
+          "pmid": "19412570",
+          "relation": "not_test",
+          "independent": true,
+          "note": "K-ras mutations are counted in benign versus malignant pancreatic intraductal papillary mucinous neoplasms."
+        },
+        {
+          "candidate_id": "C026-G46",
+          "pmid": "23885463",
+          "relation": "not_test",
+          "independent": true,
+          "note": "K-ras mutation is compared with amphiregulin and epiregulin staining in colon tissue, without a cetuximab response endpoint."
+        },
+        {
+          "candidate_id": "C026-G47",
+          "pmid": "26384309",
+          "relation": "partial",
+          "independent": true,
+          "note": "K-Ras mutant-allele fraction is prognostic in metastatic colorectal cancer treated with first-line chemotherapy plus bevacizumab, and no patient received anti-EGFR therapy."
+        },
+        {
+          "candidate_id": "C026-G48",
+          "pmid": "23737793",
+          "relation": "not_test",
+          "independent": true,
+          "note": "K-RAS codon 12 mutations are surveyed in head and neck cancers treated with chemoradiation."
+        },
+        {
+          "candidate_id": "C026-G49",
+          "pmid": "20877448",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a short statement that KRAS testing is used to select cetuximab or panitumumab, not a new outcome study."
+        },
+        {
+          "candidate_id": "C026-G50",
+          "pmid": "19440353",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A mutant-p53 mouse lung model is surveyed for spontaneous K-Ras mutations."
+        },
+        {
+          "candidate_id": "C026-G51",
+          "pmid": "22804917",
+          "relation": "partial",
+          "independent": true,
+          "note": "KRAS copy number and microRNAs are measured in metastatic colorectal cancers selected for good or poor outcome on cetuximab, capecitabine, oxaliplatin, and bevacizumab, with KRAS mutation treated as known background."
+        },
+        {
+          "candidate_id": "C026-G52",
+          "pmid": "19223734",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This review discusses histologic subtypes of epithelial ovarian cancer."
+        },
+        {
+          "candidate_id": "C026-G53",
+          "pmid": "27489542",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A single K-RAS wild-type colon cancer case is described after cetuximab progression and later liver resection."
+        },
+        {
+          "candidate_id": "C026-G54",
+          "pmid": "19262748",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Glutamine deprivation is studied in K-ras-transformed fibroblasts."
+        },
+        {
+          "candidate_id": "C026-G55",
+          "pmid": "19174523",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Igf1r is tested in a Kras-driven mouse model of basal-like breast cancer."
+        },
+        {
+          "candidate_id": "C026-G56",
+          "pmid": "20591136",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In metastatic colorectal cancer treated with first-line cetuximab-based chemotherapy, K-ras wild-type status independently predicted better response and progression-free survival."
+        },
+        {
+          "candidate_id": "C026-G57",
+          "pmid": "19738388",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In irinotecan-refractory Korean metastatic colorectal cancer treated with cetuximab plus irinotecan, KRAS mutation was associated with a lower response rate and shorter progression-free and overall survival."
+        },
+        {
+          "candidate_id": "C026-G58",
+          "pmid": "26807232",
+          "relation": "not_test",
+          "independent": true,
+          "note": "K-Ras exon 2 mutations are surveyed in hepatocellular carcinoma."
+        },
+        {
+          "candidate_id": "C026-G59",
+          "pmid": "23213241",
+          "relation": "partial",
+          "independent": true,
+          "note": "In a colorectal cancer cell-line panel, direct cetuximab sensitivity was associated with wild-type KRAS, BRAF, and PIK3CA, which is not a patient cohort."
+        },
+        {
+          "candidate_id": "C026-G60",
+          "pmid": "27144068",
+          "relation": "partial",
+          "independent": true,
+          "note": "Second-line panitumumab is given only to wild-type KRAS exon 2 metastatic colorectal cancer, so the mutation effect is not compared."
+        },
+        {
+          "candidate_id": "C026-G61",
+          "pmid": "19679400",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KRAS codon 12 and 13 mutation types are tallied in metastatic colorectal cancer without a treatment-outcome comparison."
+        },
+        {
+          "candidate_id": "C026-G62",
+          "pmid": "19421407",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Atm is tested in K-Ras-driven mouse lung adenomas and fibroblast senescence."
+        },
+        {
+          "candidate_id": "C026-G63",
+          "pmid": "25038824",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This dose-escalation study of first-line cetuximab plus FOLFOXIRI reports toxicity and does not compare KRAS-mutant and wild-type outcomes."
+        },
+        {
+          "candidate_id": "C026-G64",
+          "pmid": "21147868",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This review discusses treatment of advanced cutaneous squamous cell carcinoma."
+        },
+        {
+          "candidate_id": "C026-G65",
+          "pmid": "25333734",
+          "relation": "partial",
+          "independent": true,
+          "note": "In refractory metastatic colorectal cancer treated with reduced-intensity FOLFOXIRI and not cetuximab, wild-type K-RAS was associated with longer overall survival."
+        },
+        {
+          "candidate_id": "C026-G66",
+          "pmid": "20680105",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This review summarizes cetuximab and panitumumab efficacy and repeats the known wild-type KRAS restriction without a new cohort."
+        },
+        {
+          "candidate_id": "C026-G67",
+          "pmid": "25926024",
+          "relation": "partial",
+          "independent": true,
+          "note": "KRAS status is used to assign cetuximab or bevacizumab with mFOLFOX6, so mutation and drug regimen are confounded and the KRAS effect within cetuximab is not measured."
+        },
+        {
+          "candidate_id": "C026-G68",
+          "pmid": "27540971",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KRAS and BRAF mutations are correlated with promoter methylation in colorectal tumors, without anti-EGFR treatment outcomes."
+        },
+        {
+          "candidate_id": "C026-G69",
+          "pmid": "19404390",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A metastatic gene signature is derived from a K-ras;p53 mouse lung adenocarcinoma model."
+        },
+        {
+          "candidate_id": "C026-G70",
+          "pmid": "27358590",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This meta-analysis relates smoking to k-RAS mutation frequency in lung cancers treated with tyrosine-kinase inhibitors."
+        },
+        {
+          "candidate_id": "C026-G71",
+          "pmid": "28559118",
+          "relation": "partial",
+          "independent": true,
+          "note": "K-RAS mutation and c-MET are examined in resected colorectal liver metastases in relation to chemotherapy regression and survival, not cetuximab."
+        },
+        {
+          "candidate_id": "C026-G72",
+          "pmid": "19208825",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Oncrasin-1 is shown to kill K-Ras-mutant cells by disrupting RNA processing."
+        },
+        {
+          "candidate_id": "C026-G73",
+          "pmid": "28843257",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Trastuzumab sensitivity is compared across breast cancer cell lines with KRAS, BRAF, or PIK3CA mutations."
+        }
+      ]
+    },
+    {
+      "claim_id": "C028",
+      "followups": [
+        {
+          "candidate_id": "C028-G01",
+          "pmid": "20930544",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A CtBP inhibitor is tested in colon cancer xenografts and does not measure KRAS after APC loss."
+        },
+        {
+          "candidate_id": "C028-G02",
+          "pmid": "20383323",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Wnt3a transcriptional dynamics are profiled in HEK293 cells and colon tumors."
+        },
+        {
+          "candidate_id": "C028-G03",
+          "pmid": "19492075",
+          "relation": "not_test",
+          "independent": true,
+          "note": "RAF, MEK, and PI3K knockdowns are tested in KRAS-mutant colon and NRAS-mutant melanoma cells."
+        },
+        {
+          "candidate_id": "C028-G04",
+          "pmid": "19490893",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A genome-wide RNAi screen looks for synthetic-lethal partners of oncogenic KRAS."
+        },
+        {
+          "candidate_id": "C028-G05",
+          "pmid": "28661467",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KRAS and HRAS induction by reactive oxygen species is measured in primary astrocytes."
+        },
+        {
+          "candidate_id": "C028-G06",
+          "pmid": "19547661",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF and KRAS genotypes are surveyed in salivary gland carcinomas."
+        },
+        {
+          "candidate_id": "C028-G07",
+          "pmid": "20056841",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Secreted frizzled-related protein 4 is tested as a Wnt antagonist in endothelial cells."
+        },
+        {
+          "candidate_id": "C028-G08",
+          "pmid": "28218784",
+          "relation": "not_test",
+          "independent": true,
+          "note": "K-ras mutation frequency and survival are described in Saudi Arabian colorectal cancers."
+        },
+        {
+          "candidate_id": "C028-G09",
+          "pmid": "28849118",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Aspirin is shown to inhibit K-Ras\u2013p110\u03b1 signaling in uterine leiomyoma cells."
+        },
+        {
+          "candidate_id": "C028-G10",
+          "pmid": "26477318",
+          "relation": "not_test",
+          "independent": true,
+          "note": "N-cadherin loss is studied in K-ras-driven pancreatic neoplasia, with beta-catenin redistribution in that tissue."
+        },
+        {
+          "candidate_id": "C028-G11",
+          "pmid": "19439077",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A gene-expression model is applied to KRAS wild-type colorectal cancers treated with cetuximab."
+        },
+        {
+          "candidate_id": "C028-G12",
+          "pmid": "20850014",
+          "relation": "partial",
+          "independent": true,
+          "note": "Zebrafish intestinal cells after APC loss are kept undifferentiated by a DNA demethylase pathway, and KRAS is not measured."
+        },
+        {
+          "candidate_id": "C028-G13",
+          "pmid": "19738388",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KRAS mutations are tested as predictors of cetuximab plus irinotecan in metastatic colorectal cancer patients."
+        },
+        {
+          "candidate_id": "C028-G14",
+          "pmid": "19447869",
+          "relation": "not_test",
+          "independent": true,
+          "note": "ErbB receptors and KRAS are examined in pulmonary carcinoid tumors."
+        },
+        {
+          "candidate_id": "C028-G15",
+          "pmid": "19561589",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This protocol activates oncogenic K-ras in mouse lung with viral Cre."
+        },
+        {
+          "candidate_id": "C028-G16",
+          "pmid": "20844082",
+          "relation": "not_test",
+          "independent": true,
+          "note": "APC and HIF-1\u03b1 are shown to antagonize each other, without a KRAS experiment in intestinal cells."
+        },
+        {
+          "candidate_id": "C028-G17",
+          "pmid": "28193718",
+          "relation": "not_test",
+          "independent": true,
+          "note": "H-Ras and K-Ras knockouts are compared in pressure-overload cardiac hypertrophy."
+        },
+        {
+          "candidate_id": "C028-G18",
+          "pmid": "20663899",
+          "relation": "partial",
+          "independent": true,
+          "note": "Dvl2 deletion reduces intestinal tumors in ApcMin mice, a different species, and KRAS is not tested."
+        },
+        {
+          "candidate_id": "C028-G19",
+          "pmid": "27793187",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Combined PLK1 and ROCK inhibition is proposed for KRAS-mutant lung cancer."
+        },
+        {
+          "candidate_id": "C028-G20",
+          "pmid": "27835580",
+          "relation": "partial",
+          "independent": true,
+          "note": "A compound that destabilizes beta-catenin and Ras is tested in APCMin;K-RasG12D mice, not in zebrafish or human intestinal cells."
+        },
+        {
+          "candidate_id": "C028-G21",
+          "pmid": "19421407",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Murine Atm is tested in oncogenic-Ras senescence and K-Ras lung adenomas."
+        },
+        {
+          "candidate_id": "C028-G22",
+          "pmid": "27007150",
+          "relation": "partial",
+          "independent": true,
+          "note": "DDX3 is shown to increase oncogenic KRAS and nuclear beta-catenin-driven invasion in colon cancer cells, without testing whether KRAS is required after APC loss."
+        },
+        {
+          "candidate_id": "C028-G23",
+          "pmid": "19924227",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Grb2 is identified as a modifier of beta-catenin-dependent Wnt reporter activity."
+        },
+        {
+          "candidate_id": "C028-G24",
+          "pmid": "20488884",
+          "relation": "partial",
+          "independent": true,
+          "note": "Vitamin D analogues are tested in ApcMin intestines and change beta-catenin localization, without a KRAS comparison."
+        },
+        {
+          "candidate_id": "C028-G25",
+          "pmid": "28621541",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Electrophilic warheads are screened for covalent labeling of K-Ras proteins."
+        },
+        {
+          "candidate_id": "C028-G26",
+          "pmid": "28374746",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Intracellular HMGB1 is tested as a suppressor of K-Ras-driven pancreatic neoplasia."
+        },
+        {
+          "candidate_id": "C028-G27",
+          "pmid": "28647697",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Proximity biotinylation is used to catalogue K-Ras protein neighbors."
+        },
+        {
+          "candidate_id": "C028-G28",
+          "pmid": "19879273",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Mesalamine is shown to reduce epithelial beta-catenin activation in ulcerative colitis."
+        },
+        {
+          "candidate_id": "C028-G29",
+          "pmid": "28368426",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PKC\u03b4 dependence is compared across KRAS-mutant lung cancer cell lines."
+        },
+        {
+          "candidate_id": "C028-G30",
+          "pmid": "21282377",
+          "relation": "partial",
+          "independent": true,
+          "note": "Fbxw7 deletion accelerates tumorigenesis in ApcMin intestine and alters beta-catenin at late stages, without a KRAS test."
+        },
+        {
+          "candidate_id": "C028-G31",
+          "pmid": "19447865",
+          "relation": "not_test",
+          "independent": true,
+          "note": "VEGF and EGFR inhibitors are tested in lung cancer xenografts that include K-RAS-mutant models."
+        },
+        {
+          "candidate_id": "C028-G32",
+          "pmid": "19923868",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Cetuximab responses are described in seven patients with metastatic anal cancer."
+        },
+        {
+          "candidate_id": "C028-G33",
+          "pmid": "28032649",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KrasG12D plus p53 loss is shown to induce ovarian carcinosarcoma in mice."
+        },
+        {
+          "candidate_id": "C028-G34",
+          "pmid": "21071513",
+          "relation": "not_test",
+          "independent": true,
+          "note": "D-dopachrome tautomerase is shown to promote COX-2 expression through beta-catenin in colorectal cell lines."
+        },
+        {
+          "candidate_id": "C028-G35",
+          "pmid": "19671328",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This systematic evaluation reviews cetuximab trials in metastatic colorectal cancer."
+        },
+        {
+          "candidate_id": "C028-G36",
+          "pmid": "19490892",
+          "relation": "not_test",
+          "independent": true,
+          "note": "STK33 is identified as a synthetic-lethal dependency of KRAS-mutant cancer cells."
+        },
+        {
+          "candidate_id": "C028-G37",
+          "pmid": "20419129",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Phospho-forms of beta-catenin are mapped in SW480 colon cancer cells without a KRAS intervention."
+        },
+        {
+          "candidate_id": "C028-G38",
+          "pmid": "20080688",
+          "relation": "partial",
+          "independent": true,
+          "note": "A mouse model compares Apc-only and Apc plus KrasG12D colon tumors for rapamycin response, which is a different species and endpoint."
+        },
+        {
+          "candidate_id": "C028-G39",
+          "pmid": "21167805",
+          "relation": "not_test",
+          "independent": true,
+          "note": "EGFR, Ras, and MAPK signaling are shown to maintain adult Drosophila midgut stem cells."
+        },
+        {
+          "candidate_id": "C028-G40",
+          "pmid": "29262834",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Statins and isoprenoids are tested for effects on K-Ras localization in pancreatic cancer cells."
+        },
+        {
+          "candidate_id": "C028-G41",
+          "pmid": "20298593",
+          "relation": "partial",
+          "independent": true,
+          "note": "ApcMin/KRASV12 mice developed more intestinal tumors than ApcMin mice, but this is a mouse tumor-count result rather than a zebrafish or human intestinal-cell test of the stated cellular phenotypes."
+        },
+        {
+          "candidate_id": "C028-G42",
+          "pmid": "29134654",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PTEN loss, K-RAS, and beta-catenin are combined in a mouse prostate cancer model."
+        },
+        {
+          "candidate_id": "C028-G43",
+          "pmid": "20724530",
+          "relation": "partial",
+          "independent": true,
+          "note": "LPA receptor 2 loss reduces adenoma formation in ApcMin intestine without testing KRAS."
+        },
+        {
+          "candidate_id": "C028-G44",
+          "pmid": "21951542",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This methods chapter describes fluorescent imaging of tumors in zebrafish."
+        },
+        {
+          "candidate_id": "C028-G45",
+          "pmid": "21858154",
+          "relation": "partial",
+          "independent": true,
+          "note": "Vitamin D receptor loss increases nuclear beta-catenin and tumor burden in ApcMin mice, without a KRAS comparison."
+        },
+        {
+          "candidate_id": "C028-G46",
+          "pmid": "28844705",
+          "relation": "not_test",
+          "independent": true,
+          "note": "K-ras mutations are assayed in histologically negative venous margins of pancreatic cancer resections."
+        },
+        {
+          "candidate_id": "C028-G47",
+          "pmid": "27981621",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Mutant K-Ras and beta-catenin cooperate to form hepatocellular carcinoma in mice."
+        },
+        {
+          "candidate_id": "C028-G48",
+          "pmid": "25934441",
+          "relation": "not_test",
+          "independent": true,
+          "note": "K-RAS plus beta-catenin activation produces mouse kidney tumors resembling Wilms tumor."
+        },
+        {
+          "candidate_id": "C028-G49",
+          "pmid": "28969083",
+          "relation": "not_test",
+          "independent": true,
+          "note": "K-ras mutation testing and plectin-1 staining are added to endoscopic aspiration of pancreatic masses."
+        },
+        {
+          "candidate_id": "C028-G50",
+          "pmid": "28153726",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Inhibitory peptides selective for K-Ras(G12D) are selected by phage display."
+        },
+        {
+          "candidate_id": "C028-G51",
+          "pmid": "20071774",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Beta-catenin is shown to block Kras-driven reprogramming of pancreatic acini in mice."
+        },
+        {
+          "candidate_id": "C028-G52",
+          "pmid": "19548527",
+          "relation": "not_test",
+          "independent": true,
+          "note": "K-ras, BRCA, and CHEK2 mutations are surveyed in sporadic pancreatic adenocarcinomas."
+        },
+        {
+          "candidate_id": "C028-G53",
+          "pmid": "29104470",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Ki-67, p53, and K-ras expression are measured in colorectal polyps."
+        },
+        {
+          "candidate_id": "C028-G54",
+          "pmid": "19412570",
+          "relation": "not_test",
+          "independent": true,
+          "note": "K-ras mutations and S100A4 and MUC2 staining are compared in pancreatic intraductal papillary mucinous tumors."
+        },
+        {
+          "candidate_id": "C028-G55",
+          "pmid": "19679400",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KRAS codon 12 and 13 mutation frequencies are reported for metastatic colorectal cancer."
+        },
+        {
+          "candidate_id": "C028-G56",
+          "pmid": "20847229",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Nur77 expression and beta-catenin signaling are studied in colon cancer cells."
+        },
+        {
+          "candidate_id": "C028-G57",
+          "pmid": "19440353",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A lung-specific mutant p53 transgene shifts the age of spontaneous lung tumors, with K-Ras mutations recorded as a covariate."
+        },
+        {
+          "candidate_id": "C028-G58",
+          "pmid": "19642458",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This review covers cetuximab, panitumumab, and bevacizumab in colorectal cancer."
+        },
+        {
+          "candidate_id": "C028-G59",
+          "pmid": "19443408",
+          "relation": "not_test",
+          "independent": true,
+          "note": "K-ras, p53, and allelic losses are tested as prognostic markers in advanced pancreatic cancer."
+        },
+        {
+          "candidate_id": "C028-G60",
+          "pmid": "19435821",
+          "relation": "not_test",
+          "independent": true,
+          "note": "GFAP-Cre activation of oncogenic K-ras expands the subventricular zone and produces glioma."
+        },
+        {
+          "candidate_id": "C028-G61",
+          "pmid": "20964627",
+          "relation": "not_test",
+          "independent": true,
+          "note": "CtBP isoform expression is surveyed in breast cancer."
+        },
+        {
+          "candidate_id": "C028-G62",
+          "pmid": "28122482",
+          "relation": "not_test",
+          "independent": true,
+          "note": "K-Ras transcript variants are quantified in uterine leiomyomas."
+        },
+        {
+          "candidate_id": "C028-G63",
+          "pmid": "27974679",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KRAS mutation testing of EUS-FNA wash fluid is evaluated for diagnosing pancreatic adenocarcinoma."
+        },
+        {
+          "candidate_id": "C028-G64",
+          "pmid": "28700943",
+          "relation": "not_test",
+          "independent": true,
+          "note": "CRISPR and shRNA screens link mitochondrial translation to viability of K-Ras mutant cells."
+        },
+        {
+          "candidate_id": "C028-G65",
+          "pmid": "28743497",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Binding between K-Ras and H-REV107 is modeled biochemically."
+        },
+        {
+          "candidate_id": "C028-G66",
+          "pmid": "28827765",
+          "relation": "not_test",
+          "independent": true,
+          "note": "mTORC1 feedback through SREBP1 is shown to affect H-ras and K-ras4B differently."
+        },
+        {
+          "candidate_id": "C028-G67",
+          "pmid": "19435901",
+          "relation": "not_test",
+          "independent": true,
+          "note": "An inducible oral K-ras and p53 mouse model is used to test rapamycin."
+        },
+        {
+          "candidate_id": "C028-G68",
+          "pmid": "29199977",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Crystal structures describe the switch I rearrangement in G12A K-Ras."
+        }
+      ]
+    },
+    {
+      "claim_id": "C030",
+      "followups": [
+        {
+          "candidate_id": "C030-G01",
+          "pmid": "28892804",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAFV600E and TGF-\u03b2 expression are combined with age and tumor size to predict clinical stage in papillary thyroid cancer patients, not NIS rescue in cells."
+        },
+        {
+          "candidate_id": "C030-G02",
+          "pmid": "28753606",
+          "relation": "not_test",
+          "independent": true,
+          "note": "RhoJ-BAD signaling is studied in BRAF-mutant melanoma."
+        },
+        {
+          "candidate_id": "C030-G03",
+          "pmid": "28772138",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Flame-retardant exposure is associated with papillary thyroid cancer occurrence, without a TGF-\u03b2 or NIS experiment."
+        },
+        {
+          "candidate_id": "C030-G04",
+          "pmid": "24400871",
+          "relation": "partial",
+          "independent": true,
+          "note": "Apigenin plus Akt inhibition increases radioiodide uptake in BRAF(V600E) thyroid cells, which is a different intervention from TGF\u03b2/Smad blockade."
+        },
+        {
+          "candidate_id": "C030-G05",
+          "pmid": "28745322",
+          "relation": "not_test",
+          "independent": true,
+          "note": "p53 loss is tested in a BrafV600E mouse lung senescence model."
+        },
+        {
+          "candidate_id": "C030-G06",
+          "pmid": "28368422",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Abl kinase regulation by BRAF/ERK is studied in melanoma."
+        },
+        {
+          "candidate_id": "C030-G07",
+          "pmid": "28067893",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Vemurafenib and trametinib reduce CTGF and IL-8 in BRAF V600E melanoma cells."
+        },
+        {
+          "candidate_id": "C030-G08",
+          "pmid": "22271876",
+          "relation": "not_test",
+          "independent": true,
+          "note": "The Src inhibitor SKI-606 is tested in a TR\u03b2PV/Pten mouse thyroid cancer model that is not described as BRAF-mutant."
+        },
+        {
+          "candidate_id": "C030-G09",
+          "pmid": "29094776",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF, RAS, and TERT testing is evaluated on indeterminate thyroid fine-needle aspirates."
+        },
+        {
+          "candidate_id": "C030-G10",
+          "pmid": "29037127",
+          "relation": "not_test",
+          "independent": true,
+          "note": "TERT promoter and BRAF mutations are assessed as predictors of distant metastasis in papillary thyroid carcinoma."
+        },
+        {
+          "candidate_id": "C030-G11",
+          "pmid": "27034005",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Phosphoproteomics of B-Raf protein complexes is reported without a thyroid NIS experiment."
+        },
+        {
+          "candidate_id": "C030-G12",
+          "pmid": "27906130",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF is shown to activate PAX3 during forelimb muscle development."
+        },
+        {
+          "candidate_id": "C030-G13",
+          "pmid": "23591524",
+          "relation": "partial",
+          "independent": true,
+          "note": "A Smad4 C324Y mutation increases TGF-\u03b2 signaling and TSH-independent proliferation in FRTL-5 thyroid cells, without BRAF or NIS measurements."
+        },
+        {
+          "candidate_id": "C030-G14",
+          "pmid": "27786591",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Mitochondria-targeted compounds are tested against B-RafV600E melanoma cell survival."
+        },
+        {
+          "candidate_id": "C030-G15",
+          "pmid": "29048639",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Dabrafenib-resistant melanoma cells are phenotyped, including TGF-related changes, outside the thyroid."
+        },
+        {
+          "candidate_id": "C030-G16",
+          "pmid": "26904701",
+          "relation": "partial",
+          "independent": true,
+          "note": "A patient with BRAF-positive metastatic papillary thyroid cancer received vemurafenib before surgery and radioiodine, which does not test TGF\u03b2/Smad blockade in cells."
+        },
+        {
+          "candidate_id": "C030-G17",
+          "pmid": "28576831",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Vemurafenib is shown to shift NK-receptor ligands on BRAFV600E melanoma lines."
+        },
+        {
+          "candidate_id": "C030-G18",
+          "pmid": "25378232",
+          "relation": "partial",
+          "independent": true,
+          "note": "B-RafV600E represses sodium-iodide symporter expression in thyrocytes through DNMT1 and promoter methylation, not through a TGF\u03b2/Smad blockade experiment."
+        },
+        {
+          "candidate_id": "C030-G19",
+          "pmid": "24069422",
+          "relation": "partial",
+          "independent": true,
+          "note": "Cadherin 6 is identified as a TGF-\u03b2 and RUNX2 target during EMT in thyroid tumor cells, and NIS is not measured."
+        },
+        {
+          "candidate_id": "C030-G20",
+          "pmid": "29099711",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF antibody staining is compared across types of thyroid nodules."
+        },
+        {
+          "candidate_id": "C030-G21",
+          "pmid": "26273300",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Clinicopathologic features of BRAF-mutated papillary thyroid cancers are described in Chinese patients."
+        },
+        {
+          "candidate_id": "C030-G22",
+          "pmid": "26657898",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Activation-loop phosphorylation of B-Raf is studied in transformation assays."
+        },
+        {
+          "candidate_id": "C030-G23",
+          "pmid": "28947418",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KIT is shown to suppress BRAFV600E melanoma by attenuating RAS/MAPK signaling."
+        },
+        {
+          "candidate_id": "C030-G24",
+          "pmid": "28910894",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF(V600E) testing and cytology are evaluated in TIRADS 4 and 5 thyroid nodules."
+        },
+        {
+          "candidate_id": "C030-G25",
+          "pmid": "28943919",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAFV600E is examined as a correlate of central lymph-node metastasis in papillary thyroid cancer subtypes."
+        },
+        {
+          "candidate_id": "C030-G26",
+          "pmid": "28718951",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Response to therapy is compared in papillary thyroid cancers of known BRAF status."
+        },
+        {
+          "candidate_id": "C030-G27",
+          "pmid": "24345274",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF mutation is associated with histologic features of pleomorphic xanthoastrocytoma."
+        },
+        {
+          "candidate_id": "C030-G28",
+          "pmid": "28656062",
+          "relation": "not_test",
+          "independent": true,
+          "note": "c-Myc is required for BRAFV600E-driven H3K27me3 silencing in cell lines and a mouse thyroid cancer model, and the abstract does not report NIS or TGF\u03b2 blockade."
+        },
+        {
+          "candidate_id": "C030-G29",
+          "pmid": "22998776",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF silencing plus TSH increases NIS expression and radioiodide uptake in BRAF(V600E) thyroid cancer cells, which blocks BRAF rather than TGF\u03b2/Smad."
+        },
+        {
+          "candidate_id": "C030-G30",
+          "pmid": "27911099",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Nuclear morphometry of indeterminate cytology is explored as a clue to BRAF mutation in papillary thyroid carcinoma."
+        },
+        {
+          "candidate_id": "C030-G31",
+          "pmid": "28176151",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E and TERT promoter mutations are surveyed in pediatric papillary thyroid carcinoma."
+        },
+        {
+          "candidate_id": "C030-G32",
+          "pmid": "28720543",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BIK is implicated in BRAF/MEK-inhibitor apoptosis in melanoma cell lines."
+        },
+        {
+          "candidate_id": "C030-G33",
+          "pmid": "28147313",
+          "relation": "not_test",
+          "independent": true,
+          "note": "MAPK inhibition raises MET and GAB1 in BRAF-mutant melanoma."
+        },
+        {
+          "candidate_id": "C030-G34",
+          "pmid": "28521635",
+          "relation": "not_test",
+          "independent": true,
+          "note": "The natural history of BRAFV600E pediatric papillary thyroid carcinoma is described."
+        },
+        {
+          "candidate_id": "C030-G35",
+          "pmid": "28181854",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This meta-analysis relates coexistent BRAF and TERT promoter mutations to poor outcomes in papillary thyroid cancer."
+        },
+        {
+          "candidate_id": "C030-G36",
+          "pmid": "28092671",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PDE4D is shown to promote invasion in BRAF-mutated melanoma."
+        },
+        {
+          "candidate_id": "C030-G37",
+          "pmid": "27000992",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A gamma-secretase inhibitor is combined with a BRAF inhibitor in melanoma cells."
+        },
+        {
+          "candidate_id": "C030-G38",
+          "pmid": "26657877",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Real-time PCR and pyrosequencing are compared for BRAF V600E detection in thyroid aspirates."
+        },
+        {
+          "candidate_id": "C030-G39",
+          "pmid": "19878585",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF knockdown and sorafenib reduce proliferation in BRAF-mutant thyroid cancer cells, and the measured outcomes are cell cycle and apoptosis rather than NIS."
+        },
+        {
+          "candidate_id": "C030-G40",
+          "pmid": "21383698",
+          "relation": "partial",
+          "independent": true,
+          "note": "Oncogenic BRAF makes mouse thyroid cells susceptible to TGF\u03b2/Smad-driven epithelial-mesenchymal transition, and NIS rescue by pathway blockade is not reported."
+        },
+        {
+          "candidate_id": "C030-G41",
+          "pmid": "28877096",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Clinical parameters are proposed for choosing BRAF testing in indeterminate thyroid nodules."
+        },
+        {
+          "candidate_id": "C030-G42",
+          "pmid": "28646474",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E is correlated with clinicopathologic features of pediatric papillary thyroid carcinoma."
+        },
+        {
+          "candidate_id": "C030-G43",
+          "pmid": "25228413",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF is shown to bind and activate PAK to regulate motility, including in thyroid cancer cells."
+        },
+        {
+          "candidate_id": "C030-G44",
+          "pmid": "25927212",
+          "relation": "partial",
+          "independent": true,
+          "note": "TGF-\u03b21 mRNA is higher in papillary thyroid cancers than in benign nodules, without a BRAF-mutant cell intervention or NIS endpoint."
+        },
+        {
+          "candidate_id": "C030-G45",
+          "pmid": "27911794",
+          "relation": "not_test",
+          "independent": true,
+          "note": "RAS-ERK activation of the mutant TERT promoter is studied in BRAF-mutant melanoma."
+        },
+        {
+          "candidate_id": "C030-G46",
+          "pmid": "28342873",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF mutation and HMGB1 are related to papillary thyroid carcinoma features."
+        },
+        {
+          "candidate_id": "C030-G47",
+          "pmid": "26397139",
+          "relation": "partial",
+          "independent": true,
+          "note": "In BRAFV600E thyroid cells, TGF-\u03b2 lowered radioiodide uptake through NIS reduction and apigenin reversed that reduction, but the abstract does not test TGF\u03b2/Smad blockade itself."
+        },
+        {
+          "candidate_id": "C030-G48",
+          "pmid": "24673746",
+          "relation": "partial",
+          "independent": true,
+          "note": "The BRAF inhibitor PLX4032 selectively slows proliferation of BRAFV600E papillary thyroid cancer cells, which is a different intervention and endpoint."
+        },
+        {
+          "candidate_id": "C030-G49",
+          "pmid": "21364949",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Activated leukocyte cell adhesion molecule expression is surveyed in thyroid tumors."
+        },
+        {
+          "candidate_id": "C030-G50",
+          "pmid": "22202162",
+          "relation": "partial",
+          "independent": true,
+          "note": "Late PLX4720 treatment regresses orthotopic BRAFV600E anaplastic thyroid xenografts, without a TGF\u03b2/Smad or NIS measurement."
+        },
+        {
+          "candidate_id": "C030-G51",
+          "pmid": "27652325",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Mitochondrial biogenesis is linked to chemoresistance in BRAF-mutant melanoma."
+        },
+        {
+          "candidate_id": "C030-G52",
+          "pmid": "22899291",
+          "relation": "not_test",
+          "independent": true,
+          "note": "SNAI2 and TWIST1 expression is surveyed across thyroid carcinoma types as markers of epithelial-mesenchymal transition."
+        },
+        {
+          "candidate_id": "C030-G53",
+          "pmid": "28585075",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Disease progression is described in papillary thyroid cancers with a biochemical incomplete response."
+        },
+        {
+          "candidate_id": "C030-G54",
+          "pmid": "28329426",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E status is compared with PET/CT findings in papillary thyroid carcinoma."
+        },
+        {
+          "candidate_id": "C030-G55",
+          "pmid": "28112041",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A BRAF K601E mutation is reported in one follicular thyroid adenoma."
+        },
+        {
+          "candidate_id": "C030-G56",
+          "pmid": "28936920",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A chromatin modifier is tested in BRAFV600E-inhibitor-resistant melanoma."
+        },
+        {
+          "candidate_id": "C030-G57",
+          "pmid": "28293988",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Molecular profiles of Korean papillary thyroid carcinomas with frequent BRAFV600E are described."
+        },
+        {
+          "candidate_id": "C030-G58",
+          "pmid": "22654562",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This review summarizes kinase-inhibitor trials in advanced thyroid cancer."
+        },
+        {
+          "candidate_id": "C030-G59",
+          "pmid": "26107686",
+          "relation": "not_test",
+          "independent": true,
+          "note": "GLI1 and GLI2 expression is associated with extrathyroidal extension and nodal metastasis in papillary thyroid cancer."
+        },
+        {
+          "candidate_id": "C030-G60",
+          "pmid": "22105174",
+          "relation": "partial",
+          "independent": true,
+          "note": "MEK or BRAF inhibitors partially restore thyroid gene expression and radioiodine uptake in mice with conditional thyroid BRAF activation, which is a different species and intervention from TGF\u03b2/Smad blockade in cells."
+        }
+      ]
+    }
+  ]
+}

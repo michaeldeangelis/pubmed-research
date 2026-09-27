@@ -1,0 +1,1936 @@
+{
+  "annotator": "A5",
+  "claims": [
+    {
+      "claim_id": "C047",
+      "followups": [
+        {
+          "candidate_id": "C047-G01",
+          "pmid": "31281492",
+          "relation": "partial",
+          "independent": true,
+          "note": "Patient-derived xenografts of colorectal liver metastases mention HER2 as a drug target, but they do not measure ERBB2 amplification or circulating heregulin against cetuximab resistance in patients."
+        },
+        {
+          "candidate_id": "C047-G02",
+          "pmid": "22970367",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of EGFR tyrosine-kinase inhibitor resistance in non-small cell lung cancer."
+        },
+        {
+          "candidate_id": "C047-G03",
+          "pmid": "22115051",
+          "relation": "not_test",
+          "independent": true,
+          "note": "The experiments are tamoxifen-resistant breast cancer cell lines, a different disease and drug than cetuximab-treated colorectal cancer."
+        },
+        {
+          "candidate_id": "C047-G04",
+          "pmid": "22190871",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This mouse mammary cell line studies ErbB2-dependent polarity, not colorectal cancer or cetuximab."
+        },
+        {
+          "candidate_id": "C047-G05",
+          "pmid": "23904849",
+          "relation": "partial",
+          "independent": true,
+          "note": "The case describes cetuximab and panitumumab responses in metastatic rectal cancer without measuring ERBB2 amplification or circulating heregulin."
+        },
+        {
+          "candidate_id": "C047-G06",
+          "pmid": "30952821",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In metastatic colorectal cancer patients, HER2-positive tumors had a lower objective response rate and shorter progression-free survival after anti-EGFR therapy than HER2-negative tumors."
+        },
+        {
+          "candidate_id": "C047-G07",
+          "pmid": "22174899",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a computational screen for natural-product HER2 inhibitors, with no patient measurement of cetuximab resistance."
+        },
+        {
+          "candidate_id": "C047-G08",
+          "pmid": "22722843",
+          "relation": "partial",
+          "independent": true,
+          "note": "Circulating KRAS mutations were measured in colorectal cancer patients on panitumumab, which is a different resistance mechanism than ERBB2 amplification or circulating heregulin."
+        },
+        {
+          "candidate_id": "C047-G09",
+          "pmid": "30691487",
+          "relation": "partial",
+          "independent": true,
+          "note": "Acquired resistance to cetuximab plus a MEK inhibitor was studied in KRAS-mutant colorectal cell lines, with HER2 activation as an escape pathway, not in patients."
+        },
+        {
+          "candidate_id": "C047-G10",
+          "pmid": "22104159",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This case reports trastuzumab response in HER2-amplified metastatic gastric cancer."
+        },
+        {
+          "candidate_id": "C047-G11",
+          "pmid": "22956644",
+          "relation": "partial",
+          "independent": true,
+          "note": "HER2 amplification was enriched in EGFR-mutant lung cancers with acquired resistance to EGFR tyrosine-kinase inhibitors, which is a different disease and drug class."
+        },
+        {
+          "candidate_id": "C047-G12",
+          "pmid": "28040715",
+          "relation": "partial",
+          "independent": true,
+          "note": "The report treats an already HER2-amplified metastatic colorectal cancer with trastuzumab-DM1 after prior cetuximab, so the new measurement is HER2-directed response rather than the resistance association."
+        },
+        {
+          "candidate_id": "C047-G13",
+          "pmid": "22169037",
+          "relation": "not_test",
+          "independent": true,
+          "note": "The study maps copy-number changes in HER2-amplified breast cancers."
+        },
+        {
+          "candidate_id": "C047-G14",
+          "pmid": "23198146",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of HER3 biology and HER3-targeted drugs."
+        },
+        {
+          "candidate_id": "C047-G15",
+          "pmid": "22129105",
+          "relation": "not_test",
+          "independent": true,
+          "note": "The experiments test an Fc-engineered anti-HER2 antibody in breast cancer models and monkeys."
+        },
+        {
+          "candidate_id": "C047-G16",
+          "pmid": "23637683",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a perspective on oncogene addiction and EGFR-targeted therapy."
+        },
+        {
+          "candidate_id": "C047-G17",
+          "pmid": "22110952",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Proteomic classifiers were built in HER2-positive and triple-negative breast cancers."
+        },
+        {
+          "candidate_id": "C047-G18",
+          "pmid": "31164152",
+          "relation": "partial",
+          "independent": true,
+          "note": "HER2-amplified colorectal cell lines and xenografts were used to test MEK plus PI3K inhibition, not the prevalence of ERBB2 or heregulin in cetuximab-resistant patients."
+        },
+        {
+          "candidate_id": "C047-G19",
+          "pmid": "29338072",
+          "relation": "partial",
+          "independent": true,
+          "note": "A large colorectal cancer sequencing cohort reports the frequency of ERBB2 and ERBB3 alterations without measuring cetuximab response or circulating heregulin."
+        },
+        {
+          "candidate_id": "C047-G20",
+          "pmid": "31453370",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This case describes dual HER2 blockade in ERBB2-amplified cholangiocarcinoma."
+        },
+        {
+          "candidate_id": "C047-G21",
+          "pmid": "31635022",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A bladder-cancer cell model shows that a HER2 extracellular-domain mutant can be inhibited by cetuximab."
+        },
+        {
+          "candidate_id": "C047-G22",
+          "pmid": "23250506",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This validates a prognostic score for irinotecan-based second-line chemotherapy in metastatic colorectal cancer."
+        },
+        {
+          "candidate_id": "C047-G23",
+          "pmid": "24025416",
+          "relation": "partial",
+          "independent": true,
+          "note": "The EGFR S492R mutation was absent in untreated colorectal cancers, addressing a different resistance lesion than ERBB2 amplification or circulating heregulin."
+        },
+        {
+          "candidate_id": "C047-G24",
+          "pmid": "22199994",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Germline variants in EGFR, SRC, and HER2 were tested for colorectal adenoma and cancer risk."
+        },
+        {
+          "candidate_id": "C047-G25",
+          "pmid": "22135766",
+          "relation": "not_test",
+          "independent": true,
+          "note": "AgNOR counts were correlated with HER2 immunohistochemistry in breast carcinoma."
+        },
+        {
+          "candidate_id": "C047-G26",
+          "pmid": "30549033",
+          "relation": "partial",
+          "independent": true,
+          "note": "Cetuximab-resistant metastatic colorectal cancers carried an ERBB2 exon-20 substitution, which is a different alteration than ERBB2 amplification or circulating heregulin."
+        },
+        {
+          "candidate_id": "C047-G27",
+          "pmid": "22132754",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PI3K-pathway markers were scored in breast cancer brain metastases."
+        },
+        {
+          "candidate_id": "C047-G28",
+          "pmid": "22649280",
+          "relation": "not_test",
+          "independent": true,
+          "note": "CD44 knockdown plus doxorubicin was tested in a breast cancer mouse model."
+        },
+        {
+          "candidate_id": "C047-G29",
+          "pmid": "31688591",
+          "relation": "not_test",
+          "independent": true,
+          "note": "The paper establishes pancreatic cancer cell lines, including one with HER2 amplification."
+        },
+        {
+          "candidate_id": "C047-G30",
+          "pmid": "22276069",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a long clinical history of endocrine-responsive breast cancer that later showed HER2 amplification."
+        },
+        {
+          "candidate_id": "C047-G31",
+          "pmid": "31106632",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Trastuzumab plus lapatinib produced a response in HER2-amplified gallbladder carcinoma."
+        },
+        {
+          "candidate_id": "C047-G32",
+          "pmid": "27332557",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of targeted therapy in metastatic colorectal cancer that mentions HER2 amplification as background."
+        },
+        {
+          "candidate_id": "C047-G33",
+          "pmid": "22143936",
+          "relation": "not_test",
+          "independent": true,
+          "note": "HER2 positivity was assessed as a prognostic marker after resection of gastric cancer."
+        },
+        {
+          "candidate_id": "C047-G34",
+          "pmid": "31130830",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of molecular subtypes and treatment options in metastatic colorectal cancer."
+        },
+        {
+          "candidate_id": "C047-G35",
+          "pmid": "23722824",
+          "relation": "partial",
+          "independent": true,
+          "note": "HER2 overexpression in colorectal tumor tissue was associated with shorter survival, not with cetuximab resistance or circulating heregulin."
+        },
+        {
+          "candidate_id": "C047-G36",
+          "pmid": "22131825",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Anti-HER2 nanoshells were tested as photothermal therapy in oral squamous cell cultures."
+        },
+        {
+          "candidate_id": "C047-G37",
+          "pmid": "22177475",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A fatty-acid synthase inhibitor was tested in HER2-positive breast cancer xenografts and anti-HER2-resistant breast lines."
+        },
+        {
+          "candidate_id": "C047-G38",
+          "pmid": "22192147",
+          "relation": "not_test",
+          "independent": true,
+          "note": "EGFR kinase-domain mutations were sought in European triple-negative breast cancers."
+        },
+        {
+          "candidate_id": "C047-G39",
+          "pmid": "31375513",
+          "relation": "partial",
+          "independent": true,
+          "note": "Colorectal xenograft-derived cell lines were annotated for biomarkers of EGFR and HER2 blockade, which is a preclinical system rather than a patient cohort."
+        },
+        {
+          "candidate_id": "C047-G40",
+          "pmid": "22745588",
+          "relation": "partial",
+          "independent": true,
+          "note": "Glioblastoma stem-like cells activated ERBB2 and ERBB3 after cetuximab, a different disease and system."
+        },
+        {
+          "candidate_id": "C047-G41",
+          "pmid": "30694565",
+          "relation": "partial",
+          "independent": true,
+          "note": "MET activation, not ERBB2 amplification or circulating heregulin, explained acquired cetuximab resistance in a head and neck cancer."
+        },
+        {
+          "candidate_id": "C047-G42",
+          "pmid": "23172311",
+          "relation": "partial",
+          "independent": true,
+          "note": "A dual EGFR/HER3 antibody was tested in cetuximab-resistant cancer cells and xenografts without a colorectal patient measurement of ERBB2 or heregulin."
+        },
+        {
+          "candidate_id": "C047-G43",
+          "pmid": "31019892",
+          "relation": "partial",
+          "independent": true,
+          "note": "Cell-free DNA detected ERBB2 amplification in several cancers, including colorectal cancer, but response to cetuximab was not measured."
+        },
+        {
+          "candidate_id": "C047-G44",
+          "pmid": "23420529",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Cytohesin function in EGF signaling was studied in colorectal cancer cell lines."
+        },
+        {
+          "candidate_id": "C047-G45",
+          "pmid": "29387480",
+          "relation": "partial",
+          "independent": true,
+          "note": "Sequential HER2 blockade was given to a patient already selected for HER2-amplified metastatic colorectal cancer; cetuximab resistance is cited as background."
+        },
+        {
+          "candidate_id": "C047-G46",
+          "pmid": "23348520",
+          "relation": "unclear_reporting",
+          "independent": true,
+          "note": "HER2 copy number was measured in KRAS wild-type metastatic colorectal cancers treated with cetuximab or panitumumab and was correlated with response, but the abstract does not state the direction."
+        },
+        {
+          "candidate_id": "C047-G47",
+          "pmid": "31653970",
+          "relation": "partial",
+          "independent": true,
+          "note": "Genomic profiling of cetuximab-treated colorectal cancers reported NRG1 amplification in intrinsically resistant tumors and ERBB2 amplification among sensitive tumors, which is not a measurement of circulating heregulin or of ERBB2 enrichment in resistance."
+        },
+        {
+          "candidate_id": "C047-G48",
+          "pmid": "30307354",
+          "relation": "partial",
+          "independent": true,
+          "note": "A cetuximab-pretreated metastatic colorectal cancer with HER2 amplification was treated with afatinib, so the reported result is afatinib benefit rather than the resistance association."
+        },
+        {
+          "candidate_id": "C047-G49",
+          "pmid": "22126395",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Adjuvant chemotherapy and E-cadherin/Ki67 were studied in triple-negative breast cancer."
+        },
+        {
+          "candidate_id": "C047-G50",
+          "pmid": "22722830",
+          "relation": "partial",
+          "independent": true,
+          "note": "Acquired cetuximab resistance in colorectal cancer was linked to KRAS mutations, a different mechanism than ERBB2 amplification or circulating heregulin."
+        },
+        {
+          "candidate_id": "C047-G51",
+          "pmid": "22131990",
+          "relation": "not_test",
+          "independent": true,
+          "note": "HER2 status was related to recurrence after resection of gastric cancer."
+        },
+        {
+          "candidate_id": "C047-G52",
+          "pmid": "23479511",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Anti-HER3 antibodies were tested in epidermoid, pancreatic, and breast cancer xenografts."
+        },
+        {
+          "candidate_id": "C047-G53",
+          "pmid": "23928993",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A HER3-locking antibody was tested against HER2- or neuregulin-driven tumor cells, not cetuximab-resistant colorectal cancer patients."
+        },
+        {
+          "candidate_id": "C047-G54",
+          "pmid": "23729478",
+          "relation": "partial",
+          "independent": true,
+          "note": "MET amplification, rather than ERBB2 amplification or circulating heregulin, was associated with resistance to EGFR antibodies in colorectal cancer."
+        },
+        {
+          "candidate_id": "C047-G55",
+          "pmid": "22140546",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Driver mutations including HER2 were surveyed in lung adenocarcinomas from never smokers."
+        },
+        {
+          "candidate_id": "C047-G56",
+          "pmid": "29438965",
+          "relation": "partial",
+          "independent": true,
+          "note": "Two colorectal cancers already selected for ERBB2 amplification were profiled, and effects on EGFR-therapy sensitivity were discussed rather than newly measured."
+        },
+        {
+          "candidate_id": "C047-G57",
+          "pmid": "31139561",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This summarizes meeting abstracts on circulating tumor DNA in gastrointestinal cancers."
+        },
+        {
+          "candidate_id": "C047-G58",
+          "pmid": "23226389",
+          "relation": "partial",
+          "independent": true,
+          "note": "ERBB2 amplification was assayed in rectal cancers, but the reported outcome was PI3K signaling and metastasis-free survival, not cetuximab resistance."
+        },
+        {
+          "candidate_id": "C047-G59",
+          "pmid": "24303404",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Salivary and tissue HER2 were measured in head and neck squamous cell carcinoma."
+        },
+        {
+          "candidate_id": "C047-G60",
+          "pmid": "22147002",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Receptor subtypes including HER2 were compared for outcome in inflammatory breast cancer."
+        },
+        {
+          "candidate_id": "C047-G61",
+          "pmid": "22123186",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Resistance to trastuzumab and lapatinib was modeled in HER2-positive breast cancer cell lines."
+        },
+        {
+          "candidate_id": "C047-G62",
+          "pmid": "22778735",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of EGFR inhibitors in squamous cell carcinoma of the head and neck."
+        }
+      ]
+    },
+    {
+      "claim_id": "C057",
+      "followups": [
+        {
+          "candidate_id": "C057-G01",
+          "pmid": "31527213",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This case reports safe use of encorafenib plus binimetinib in a patient with organ failure, without measuring MAPK or PD-L1 in resistant melanoma cells."
+        },
+        {
+          "candidate_id": "C057-G02",
+          "pmid": "23095503",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF mutation frequency was surveyed in desmoplastic melanoma."
+        },
+        {
+          "candidate_id": "C057-G03",
+          "pmid": "32291316",
+          "relation": "partial",
+          "independent": true,
+          "note": "MAPK-inhibitor-resistant melanoma cells upregulated p63, which is a different resistance mechanism than increased MAPK signaling or PD-L1."
+        },
+        {
+          "candidate_id": "C057-G04",
+          "pmid": "23285177",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "BRAF-inhibitor-resistant melanoma lines kept MAPK pathway activity under a BRAF inhibitor, and live melanoma samples included a MAPK-reactivation profile that tracked with clinical BRAF-inhibitor response."
+        },
+        {
+          "candidate_id": "C057-G05",
+          "pmid": "30741840",
+          "relation": "partial",
+          "independent": true,
+          "note": "Vemurafenib-resistant melanoma lines showed copy-number and protein changes, but the abstract does not report MAPK reactivation or PD-L1."
+        },
+        {
+          "candidate_id": "C057-G06",
+          "pmid": "32820016",
+          "relation": "partial",
+          "independent": true,
+          "note": "MT1-MMP and matrix remodeling were measured as the resistance mechanism in BRAF-inhibitor-resistant melanoma, not MAPK output or PD-L1."
+        },
+        {
+          "candidate_id": "C057-G07",
+          "pmid": "33321086",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This commentary compares continuous versus intermittent BRAF/MEK dosing and does not report MAPK or PD-L1 measurements."
+        },
+        {
+          "candidate_id": "C057-G08",
+          "pmid": "23209617",
+          "relation": "not_test",
+          "independent": true,
+          "note": "MicroRNA expression was profiled across the NCI-60 cell-line panel."
+        },
+        {
+          "candidate_id": "C057-G09",
+          "pmid": "32319656",
+          "relation": "partial",
+          "independent": true,
+          "note": "A natural compound was tested in BRAF-inhibitor-resistant melanoma through ROS, MITF, and c-Met, without a MAPK or PD-L1 result."
+        },
+        {
+          "candidate_id": "C057-G10",
+          "pmid": "32236593",
+          "relation": "partial",
+          "independent": true,
+          "note": "Cells that persisted during long BRAF inhibition remained drug-sensitive and senescent, so they are not an acquired-resistance measurement of MAPK or PD-L1."
+        },
+        {
+          "candidate_id": "C057-G11",
+          "pmid": "25422890",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A dual RAF/MEK inhibitor was tested for growth suppression in BRAF- or NRAS-mutant lines, not in cells with acquired BRAF-inhibitor resistance."
+        },
+        {
+          "candidate_id": "C057-G12",
+          "pmid": "32679231",
+          "relation": "partial",
+          "independent": true,
+          "note": "Dnmt1 rose again at resistance to BRAF and MEK inhibition in melanoma, which is a different marker than MAPK signaling or PD-L1."
+        },
+        {
+          "candidate_id": "C057-G13",
+          "pmid": "31912791",
+          "relation": "partial",
+          "independent": true,
+          "note": "Baseline PD-L1 and CD8 infiltrate were related to disease-free survival on adjuvant vemurafenib, not to MAPK or PD-L1 in resistant melanoma cells."
+        },
+        {
+          "candidate_id": "C057-G14",
+          "pmid": "26359984",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Melanoma cell-intrinsic PD-1 signaling was studied without BRAF-inhibitor resistance."
+        },
+        {
+          "candidate_id": "C057-G15",
+          "pmid": "31171876",
+          "relation": "partial",
+          "independent": true,
+          "note": "A phase Ib trial of atezolizumab with vemurafenib and cobimetinib reports T-cell changes and response rate, not MAPK or PD-L1 in resistant melanoma cells."
+        },
+        {
+          "candidate_id": "C057-G16",
+          "pmid": "33327495",
+          "relation": "partial",
+          "independent": true,
+          "note": "Adaptive vemurafenib resistance in melanoma cells was attributed to HER3-STAT3 signaling rather than increased MAPK activity or PD-L1."
+        },
+        {
+          "candidate_id": "C057-G17",
+          "pmid": "23226389",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PI3K-related kinase activity was linked to metastasis in rectal cancer."
+        },
+        {
+          "candidate_id": "C057-G18",
+          "pmid": "25610732",
+          "relation": "not_test",
+          "independent": true,
+          "note": "The abstract discusses immune effects of dabrafenib and trametinib on isolated immune cells and does not report a melanoma-cell result."
+        },
+        {
+          "candidate_id": "C057-G19",
+          "pmid": "32912923",
+          "relation": "direct_mixed",
+          "independent": true,
+          "note": "One vemurafenib-resistant melanoma line reactivated p-MEK/p-ERK, while the paired resistant line activated p-AKT instead."
+        },
+        {
+          "candidate_id": "C057-G20",
+          "pmid": "31933021",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a mathematical model of immune-cell dynamics during BRAF-inhibitor treatment."
+        },
+        {
+          "candidate_id": "C057-G21",
+          "pmid": "25844720",
+          "relation": "direct_contradict",
+          "independent": true,
+          "note": "In vemurafenib-resistant melanoma cells, inducible PD-L1 depended on NF-\u03baB, and the BRAF/MEK pathway was not a major regulator of PD-L1."
+        },
+        {
+          "candidate_id": "C057-G22",
+          "pmid": "29250602",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of immune effects of RAF-inhibitor therapy."
+        },
+        {
+          "candidate_id": "C057-G23",
+          "pmid": "27843633",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PD-L1 staining was scored in pulmonary adenocarcinoma."
+        },
+        {
+          "candidate_id": "C057-G24",
+          "pmid": "32571131",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This case describes radiotherapy plus nivolumab for leptomeningeal melanoma after targeted therapy."
+        },
+        {
+          "candidate_id": "C057-G25",
+          "pmid": "32463489",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Outcomes after progression on anti-PD-1 therapy were described for advanced melanoma."
+        },
+        {
+          "candidate_id": "C057-G26",
+          "pmid": "32125175",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a trial protocol for vorinostat in resistant BRAF-mutant melanoma and reports no results."
+        },
+        {
+          "candidate_id": "C057-G27",
+          "pmid": "23106433",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Plant compounds were tested for cytotoxicity against a melanoma cell line."
+        },
+        {
+          "candidate_id": "C057-G28",
+          "pmid": "32330348",
+          "relation": "partial",
+          "independent": true,
+          "note": "Vemurafenib lowered interferon-inducible PD-L1 in melanoma cells under drug exposure, which is not a measurement in cells that have acquired resistance."
+        },
+        {
+          "candidate_id": "C057-G29",
+          "pmid": "32179513",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF-mutant melanoma adapted to MAPK-pathway inhibition through YAP/MRTF matrix remodeling, without reporting increased MAPK output or PD-L1 in resistant cells."
+        },
+        {
+          "candidate_id": "C057-G30",
+          "pmid": "23162534",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is an overview of thyroid cancer cell lines."
+        },
+        {
+          "candidate_id": "C057-G31",
+          "pmid": "25339196",
+          "relation": "partial",
+          "independent": true,
+          "note": "Acute vemurafenib treatment decreased ERK phosphorylation in a BRAF-mutant melanoma line, which is on-treatment pathway suppression rather than the resistant-cell phenotype."
+        },
+        {
+          "candidate_id": "C057-G32",
+          "pmid": "23300683",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Mismatch-repair-deficient colorectal cancer cell lines were established."
+        },
+        {
+          "candidate_id": "C057-G33",
+          "pmid": "25787767",
+          "relation": "partial",
+          "independent": true,
+          "note": "PD-L1 rose in a mouse BRAF-mutant melanoma model during dabrafenib and trametinib plus adoptive T-cell therapy, a different species than the cell-resistance claim."
+        },
+        {
+          "candidate_id": "C057-G34",
+          "pmid": "33142243",
+          "relation": "partial",
+          "independent": true,
+          "note": "miR-524-5p lowered MAPK/ERK signaling in BRAF-inhibitor-resistant melanoma, but the abstract does not compare MAPK or PD-L1 between resistant and sensitive cells."
+        },
+        {
+          "candidate_id": "C057-G35",
+          "pmid": "31639786",
+          "relation": "partial",
+          "independent": true,
+          "note": "PD-L1-high A375 cells were less sensitive to vemurafenib, and NBDHEX did not change PD-L1, which does not test acquired resistance."
+        },
+        {
+          "candidate_id": "C057-G36",
+          "pmid": "25370533",
+          "relation": "partial",
+          "independent": true,
+          "note": "PD-L1 expression in melanocytic lesions did not correlate with BRAF V600E mutation status, a different exposure than acquired BRAF-inhibitor resistance."
+        },
+        {
+          "candidate_id": "C057-G37",
+          "pmid": "32562785",
+          "relation": "partial",
+          "independent": true,
+          "note": "Vemurafenib remodeled mitochondria in BRAF-mutant melanoma, and the abstract does not report resistant-cell MAPK reactivation or PD-L1."
+        },
+        {
+          "candidate_id": "C057-G38",
+          "pmid": "24416731",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A RAF inhibitor paradoxically increased ERK signaling in T cells, not in BRAF-inhibitor-resistant melanoma cells."
+        },
+        {
+          "candidate_id": "C057-G39",
+          "pmid": "23226618",
+          "relation": "partial",
+          "independent": true,
+          "note": "RAF/MEK inhibition downregulated Noxa in mutant BRAF melanoma cells, a different outcome than resistant-cell MAPK or PD-L1."
+        },
+        {
+          "candidate_id": "C057-G40",
+          "pmid": "24994118",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Combined BRAF and SRC inhibition was tested in anaplastic thyroid cancer."
+        },
+        {
+          "candidate_id": "C057-G41",
+          "pmid": "23204132",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF inhibition increased T-cell infiltration and lowered VEGF in melanoma, without measuring MAPK or PD-L1 in resistant cells."
+        },
+        {
+          "candidate_id": "C057-G42",
+          "pmid": "23284662",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A microfluidic mutation panel was validated on cell lines and clinical samples."
+        },
+        {
+          "candidate_id": "C057-G43",
+          "pmid": "23227266",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Combined Wnt and KRAS inhibition was tested in colorectal cancer cells."
+        },
+        {
+          "candidate_id": "C057-G44",
+          "pmid": "32562975",
+          "relation": "partial",
+          "independent": true,
+          "note": "Calcium handling differed between vemurafenib-responsive and non-responsive melanoma cells, which is a different outcome."
+        },
+        {
+          "candidate_id": "C057-G45",
+          "pmid": "33020648",
+          "relation": "partial",
+          "independent": true,
+          "note": "On-treatment PD-L1 was a planned biomarker in previously untreated patients receiving spartalizumab, dabrafenib, and trametinib, not a test of acquired BRAF-inhibitor resistance."
+        },
+        {
+          "candidate_id": "C057-G46",
+          "pmid": "32799717",
+          "relation": "partial",
+          "independent": true,
+          "note": "Melanoma exosomes suppressed T cells through PD-L1 and IL-10 independently of BRAF mutation, without acquired BRAF-inhibitor resistance."
+        },
+        {
+          "candidate_id": "C057-G47",
+          "pmid": "23335937",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A DPYD splice mutation was genotyped after lethal fluorouracil toxicity."
+        },
+        {
+          "candidate_id": "C057-G48",
+          "pmid": "23236259",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Two thyroid follicular adenomas with extracellular mucin were reported."
+        },
+        {
+          "candidate_id": "C057-G49",
+          "pmid": "31514305",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Post-vemurafenib melanoma cells with high EGFR were less drug-sensitive and had higher ERK activation and higher PD-L1 than lower-EGFR cells."
+        },
+        {
+          "candidate_id": "C057-G50",
+          "pmid": "24736544",
+          "relation": "partial",
+          "independent": true,
+          "note": "PLX4720 changed the immune microenvironment of a mouse BRAF-mutant melanoma, without reporting tumor-cell MAPK reactivation or PD-L1."
+        },
+        {
+          "candidate_id": "C057-G51",
+          "pmid": "25070848",
+          "relation": "not_test",
+          "independent": true,
+          "note": "TLR4 increased PD-L1 on colonic stromal cells."
+        },
+        {
+          "candidate_id": "C057-G52",
+          "pmid": "32861208",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This article proposes definitions of retreatment and rechallenge in melanoma."
+        },
+        {
+          "candidate_id": "C057-G53",
+          "pmid": "31980175",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF V600E induced Skp2 in melanoma cells, and the abstract does not measure MAPK or PD-L1 in acquired resistance."
+        },
+        {
+          "candidate_id": "C057-G54",
+          "pmid": "32629178",
+          "relation": "partial",
+          "independent": true,
+          "note": "Melanoma cells that survived prolonged BRAF inhibition were p-ERK low, so the reported state is continued pathway suppression rather than resistant-cell MAPK reactivation or PD-L1."
+        },
+        {
+          "candidate_id": "C057-G55",
+          "pmid": "32532957",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "POU4F1 drove acquired vemurafenib resistance in melanoma cells by reactivating MEK/ERK signaling."
+        },
+        {
+          "candidate_id": "C057-G56",
+          "pmid": "23913827",
+          "relation": "not_test",
+          "independent": true,
+          "note": "SOX10 knockdown arrested the cell cycle in melanoma cells."
+        },
+        {
+          "candidate_id": "C057-G57",
+          "pmid": "32967672",
+          "relation": "partial",
+          "independent": true,
+          "note": "Loss of miR-146a-5p and COX2/NF-\u03baB activity accompanied kinase-inhibitor resistance in melanoma, without a MAPK or PD-L1 result."
+        },
+        {
+          "candidate_id": "C057-G58",
+          "pmid": "25597412",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A miR-197/STAT3/PD-L1 circuit was studied in chemoresistant lung cancer."
+        },
+        {
+          "candidate_id": "C057-G59",
+          "pmid": "31818130",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Two primary brain tumors with BRAF V600E were treated with dabrafenib and trametinib."
+        },
+        {
+          "candidate_id": "C057-G60",
+          "pmid": "23209607",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Cell-free DNA markers were evaluated for melanoma diagnosis."
+        },
+        {
+          "candidate_id": "C057-G61",
+          "pmid": "32377702",
+          "relation": "partial",
+          "independent": true,
+          "note": "Juglone increased apoptosis in BRAF-inhibitor-resistant melanoma lines through ROS and p38-p53, not through MAPK or PD-L1."
+        },
+        {
+          "candidate_id": "C057-G62",
+          "pmid": "30120967",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF, NRAS, TERT, and PD-L1 concordance was compared between primary and metastatic melanoma."
+        },
+        {
+          "candidate_id": "C057-G63",
+          "pmid": "23894707",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a brief commentary on host CCR2 and BRAF-inhibitor responses in mice."
+        },
+        {
+          "candidate_id": "C057-G64",
+          "pmid": "24812408",
+          "relation": "direct_mixed",
+          "independent": true,
+          "note": "In melanoma lines, PD-L1 rose when vemurafenib resistance used alternative pathways, did not change when resistance reactivated MAPK, and BRAF, MEK, or PI3K inhibitors both reduced and induced PD-L1."
+        },
+        {
+          "candidate_id": "C057-G65",
+          "pmid": "27846317",
+          "relation": "not_test",
+          "independent": true,
+          "note": "MAPK signaling was required for PD-L1 expression in KRAS-mutant lung cancer cells."
+        },
+        {
+          "candidate_id": "C057-G66",
+          "pmid": "31517642",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PD-L1 and mutations were profiled in cancers metastatic to the breast, including melanomas."
+        },
+        {
+          "candidate_id": "C057-G67",
+          "pmid": "27698894",
+          "relation": "not_test",
+          "independent": true,
+          "note": "AKT-STAT3 regulated PD-L1 downstream of EGFR in lung cancer cells."
+        },
+        {
+          "candidate_id": "C057-G68",
+          "pmid": "23144797",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Circulating plasma DNA was evaluated for mutation profiling in phase I trial patients."
+        }
+      ]
+    },
+    {
+      "claim_id": "C063",
+      "followups": [
+        {
+          "candidate_id": "C063-G01",
+          "pmid": "28233937",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PIK3CA-mutant melanoma cells were shown to depend on mTORC1/2, without a cobimetinib efficacy measurement."
+        },
+        {
+          "candidate_id": "C063-G02",
+          "pmid": "26245900",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Mutant KRAS upregulated BCL-XL in an apoptosis-resistance model."
+        },
+        {
+          "candidate_id": "C063-G03",
+          "pmid": "24367375",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Methylated genes were associated with BRAF/RAS status in papillary thyroid cancer."
+        },
+        {
+          "candidate_id": "C063-G04",
+          "pmid": "24446311",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF kinase-domain mutations were surveyed in chronic myelomonocytic leukemia."
+        },
+        {
+          "candidate_id": "C063-G05",
+          "pmid": "34227206",
+          "relation": "partial",
+          "independent": true,
+          "note": "Vemurafenib plus cobimetinib was followed by encephalitis in a BRAF-mutant melanoma patient, which is a toxicity outcome rather than antitumor efficacy."
+        },
+        {
+          "candidate_id": "C063-G06",
+          "pmid": "24175297",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Xanthones were tested for apoptosis in a melanoma cell line."
+        },
+        {
+          "candidate_id": "C063-G07",
+          "pmid": "33904516",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In BRAF-mutant melanoma cells, cobimetinib combined with an HSP90 inhibitor synergized to reduce migration and resistance-pathway proteins."
+        },
+        {
+          "candidate_id": "C063-G08",
+          "pmid": "24267957",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E testing was evaluated as a diagnostic in thyroid nodules."
+        },
+        {
+          "candidate_id": "C063-G09",
+          "pmid": "30357465",
+          "relation": "partial",
+          "independent": true,
+          "note": "Cobimetinib plus vemurafenib caused reversible serous retinopathy in BRAF-mutant melanoma, a toxicity outcome rather than antitumor efficacy."
+        },
+        {
+          "candidate_id": "C063-G10",
+          "pmid": "34232935",
+          "relation": "partial",
+          "independent": true,
+          "note": "Cobimetinib was assessed for kidney injury and renal-cell cytotoxicity, not for efficacy in BRAF-mutant tumors."
+        },
+        {
+          "candidate_id": "C063-G11",
+          "pmid": "25411474",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Lipophilic bisphosphonates plus rapamycin were tested in KRAS-driven lung adenocarcinoma."
+        },
+        {
+          "candidate_id": "C063-G12",
+          "pmid": "25154680",
+          "relation": "not_test",
+          "independent": true,
+          "note": "MAPK-pathway inhibition was linked to HLA class I expression, without a cobimetinib test in BRAF-mutant tumors."
+        },
+        {
+          "candidate_id": "C063-G13",
+          "pmid": "24381794",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This case describes synchronous gliosarcoma and meningioma."
+        },
+        {
+          "candidate_id": "C063-G14",
+          "pmid": "25821557",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF kinase-domain activity promoted gliomas in mice, without cobimetinib treatment."
+        },
+        {
+          "candidate_id": "C063-G15",
+          "pmid": "33202284",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Cobimetinib inhibited ERK and, with Notch blockade, was synergistic in BRAF V600E melanoma cell lines."
+        },
+        {
+          "candidate_id": "C063-G16",
+          "pmid": "24409384",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Single-molecule force measurements compared two BRAF mutants."
+        },
+        {
+          "candidate_id": "C063-G17",
+          "pmid": "24348046",
+          "relation": "partial",
+          "independent": true,
+          "note": "An unnamed MEK inhibitor controlled murine BRAF-mutant melanoma, so the agent is not cobimetinib."
+        },
+        {
+          "candidate_id": "C063-G18",
+          "pmid": "24746704",
+          "relation": "partial",
+          "independent": true,
+          "note": "MEK inhibitors suppressed ERK more strongly in BRAF V600E than KRAS-mutant tumors, but the abstract does not identify cobimetinib."
+        },
+        {
+          "candidate_id": "C063-G19",
+          "pmid": "25195011",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A slow-binding ERK1/2 inhibitor site was characterized."
+        },
+        {
+          "candidate_id": "C063-G20",
+          "pmid": "26439693",
+          "relation": "partial",
+          "independent": true,
+          "note": "The MEK inhibitor TAK-733, not cobimetinib, regressed BRAF- or RAS-mutant colorectal xenografts."
+        },
+        {
+          "candidate_id": "C063-G21",
+          "pmid": "31173962",
+          "relation": "partial",
+          "independent": false,
+          "note": "This reanalyzes the same BRIM and coBRIM patients for acid-reducing drugs and vemurafenib dose, and survival did not differ by those factors."
+        },
+        {
+          "candidate_id": "C063-G22",
+          "pmid": "33560788",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Metastatic melanoma with a BRAF L597K mutation achieved a partial response on vemurafenib plus cobimetinib."
+        },
+        {
+          "candidate_id": "C063-G23",
+          "pmid": "24019382",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PIK3CA H1047R cooperated with BRAF V600E in a mouse lung-cancer model."
+        },
+        {
+          "candidate_id": "C063-G24",
+          "pmid": "34762112",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a cost-effectiveness model of atezolizumab plus cobimetinib and vemurafenib, not a tumor-efficacy experiment."
+        },
+        {
+          "candidate_id": "C063-G25",
+          "pmid": "34691254",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Sorafenib was tested in metastatic melanoma with a c-KIT aberration."
+        },
+        {
+          "candidate_id": "C063-G26",
+          "pmid": "24367234",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This case links pituitary Langerhans-cell histiocytosis with papillary thyroid carcinoma."
+        },
+        {
+          "candidate_id": "C063-G27",
+          "pmid": "24066160",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF mutation frequency was compared across ancestral groups in colorectal cancer."
+        },
+        {
+          "candidate_id": "C063-G28",
+          "pmid": "26497930",
+          "relation": "partial",
+          "independent": true,
+          "note": "Liposomal cobimetinib was cytotoxic to colon carcinoma cells in vitro, and the abstract does not establish a BRAF-mutant tumor model."
+        },
+        {
+          "candidate_id": "C063-G29",
+          "pmid": "25303301",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of pathways downstream of KRAS in lung adenocarcinoma."
+        },
+        {
+          "candidate_id": "C063-G30",
+          "pmid": "34088874",
+          "relation": "partial",
+          "independent": true,
+          "note": "RAF/MEK inhibitor regimens that included vemurafenib plus cobimetinib produced responses in BRAF V600 glial tumors, but outcomes are pooled across drugs."
+        },
+        {
+          "candidate_id": "C063-G31",
+          "pmid": "24130965",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Loss of Cdx2 was tied to mismatch-repair deficiency in colorectal cancer."
+        },
+        {
+          "candidate_id": "C063-G32",
+          "pmid": "31171876",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Atezolizumab plus cobimetinib and vemurafenib produced a confirmed objective response rate of 71.8% in BRAF V600-mutant metastatic melanoma."
+        },
+        {
+          "candidate_id": "C063-G33",
+          "pmid": "34853302",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Continuous vemurafenib plus cobimetinib retained antitumor activity in advanced BRAF-mutant melanoma, and an intermittent schedule was not superior."
+        },
+        {
+          "candidate_id": "C063-G34",
+          "pmid": "24356563",
+          "relation": "not_test",
+          "independent": true,
+          "note": "RAS, BRAF, and TP53 mutations were genotyped in Taiwanese colorectal cancers."
+        },
+        {
+          "candidate_id": "C063-G35",
+          "pmid": "26725216",
+          "relation": "partial",
+          "independent": true,
+          "note": "Long-term ERK inhibition suppressed KRAS-mutant pancreatic cancer, a different genotype than BRAF-mutant tumors and not cobimetinib."
+        },
+        {
+          "candidate_id": "C063-G36",
+          "pmid": "24568222",
+          "relation": "not_test",
+          "independent": true,
+          "note": "The prohibitin-CRAF interaction was targeted in RAS-driven pancreatic cancer."
+        },
+        {
+          "candidate_id": "C063-G37",
+          "pmid": "24367680",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E testing patterns were described in metastatic colorectal cancer practice."
+        },
+        {
+          "candidate_id": "C063-G38",
+          "pmid": "25472943",
+          "relation": "partial",
+          "independent": true,
+          "note": "PI3K blockade delayed resistance to a MEK1/2 inhibitor in BRAF-mutant melanoma models, and the MEK inhibitor is not identified as cobimetinib."
+        },
+        {
+          "candidate_id": "C063-G39",
+          "pmid": "31750971",
+          "relation": "partial",
+          "independent": true,
+          "note": "Vemurafenib plus cobimetinib caused toxic epidermal necrolysis in BRAF-mutant melanoma, a toxicity outcome rather than antitumor efficacy."
+        },
+        {
+          "candidate_id": "C063-G40",
+          "pmid": "33877098",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review comparing safety profiles of approved BRAF plus MEK inhibitor combinations."
+        },
+        {
+          "candidate_id": "C063-G41",
+          "pmid": "26858988",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This commentary asks whether ERK inhibition can treat RAS-mutant cancers."
+        },
+        {
+          "candidate_id": "C063-G42",
+          "pmid": "31425480",
+          "relation": "partial",
+          "independent": false,
+          "note": "Prognostic groups were validated in the same coBRIM and BRIM-3 patients already treated with vemurafenib plus cobimetinib or vemurafenib, rather than a new efficacy test."
+        },
+        {
+          "candidate_id": "C063-G43",
+          "pmid": "31835364",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E protein levels were associated with outcome in metastatic melanoma."
+        },
+        {
+          "candidate_id": "C063-G44",
+          "pmid": "24589553",
+          "relation": "not_test",
+          "independent": true,
+          "note": "WNT/\u03b2-catenin/MYC signaling limited progression of BRAF V600E-driven mouse lung tumors."
+        },
+        {
+          "candidate_id": "C063-G45",
+          "pmid": "33309774",
+          "relation": "partial",
+          "independent": true,
+          "note": "Cobimetinib plus atezolizumab failed to improve progression-free survival versus pembrolizumab in BRAF V600 wild-type melanoma, which is a different genotype than BRAF-mutant tumors."
+        },
+        {
+          "candidate_id": "C063-G46",
+          "pmid": "34470822",
+          "relation": "partial",
+          "independent": true,
+          "note": "Allosteric MEK inhibitors were shown biochemically to block MEK activation on BRAF/MEK complexes, without a cobimetinib efficacy result in tumor models."
+        },
+        {
+          "candidate_id": "C063-G47",
+          "pmid": "34667063",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "A KRAS wild-type, BRAF V600E pancreatic cancer had a complete response after cobimetinib was added to chemotherapy."
+        },
+        {
+          "candidate_id": "C063-G48",
+          "pmid": "24339949",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KRAS, BRAF, PIK3CA, and NRAS mutations were profiled in colorectal cancer."
+        },
+        {
+          "candidate_id": "C063-G49",
+          "pmid": "31985841",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Vemurafenib plus cobimetinib produced a partial radiological and clinical response in an unresectable BRAF V600E ganglioglioma."
+        },
+        {
+          "candidate_id": "C063-G50",
+          "pmid": "25329694",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF-inhibitor-associated ERK activation was linked to chronic lymphocytic leukemia in a preclinical model."
+        },
+        {
+          "candidate_id": "C063-G51",
+          "pmid": "32534646",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In BRAF V600-mutant melanoma, vemurafenib plus cobimetinib produced a median progression-free survival of 10.6 months, and adding atezolizumab extended it to 15.1 months."
+        },
+        {
+          "candidate_id": "C063-G52",
+          "pmid": "34616874",
+          "relation": "not_test",
+          "independent": true,
+          "note": "The abstract concerns AMBRA1 and FAK1 crosstalk in melanoma targeted therapy, not cobimetinib efficacy."
+        },
+        {
+          "candidate_id": "C063-G53",
+          "pmid": "24023633",
+          "relation": "partial",
+          "independent": true,
+          "note": "Ex vivo kinase activity after vemurafenib was compared in BRAF V600E and BRAF wild-type melanoma, which tests a BRAF inhibitor rather than cobimetinib."
+        },
+        {
+          "candidate_id": "C063-G54",
+          "pmid": "24634165",
+          "relation": "partial",
+          "independent": true,
+          "note": "An unnamed MEK inhibitor was combined with AAG8 antagonism in melanoma cells."
+        },
+        {
+          "candidate_id": "C063-G55",
+          "pmid": "24244575",
+          "relation": "not_test",
+          "independent": true,
+          "note": "MEIS1 methylation was associated with BRAF V600E colon tumors."
+        },
+        {
+          "candidate_id": "C063-G56",
+          "pmid": "26220863",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Pharmacogenomic profiling of ERK-pathway agents was discussed as a route to therapy."
+        },
+        {
+          "candidate_id": "C063-G57",
+          "pmid": "32898388",
+          "relation": "partial",
+          "independent": true,
+          "note": "Vemurafenib plus cobimetinib reduced skeletal muscle area in BRAF-mutant melanoma, which is a body-composition outcome rather than antitumor efficacy."
+        },
+        {
+          "candidate_id": "C063-G58",
+          "pmid": "25695333",
+          "relation": "partial",
+          "independent": true,
+          "note": "ERK-pathway inhibitors reduced proliferation of melanoma cells with mutant BRAF, and the compounds are not cobimetinib."
+        },
+        {
+          "candidate_id": "C063-G59",
+          "pmid": "24833420",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Phosphorylation sites near drug-binding pockets were surveyed in the Protein Data Bank."
+        },
+        {
+          "candidate_id": "C063-G60",
+          "pmid": "24651269",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Approved kinase inhibitors were compared for biochemical selectivity."
+        },
+        {
+          "candidate_id": "C063-G61",
+          "pmid": "24348463",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Thrombospondin-1 silencing altered integrins in BRAF V600E thyroid cancer cells."
+        },
+        {
+          "candidate_id": "C063-G62",
+          "pmid": "24803676",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Sorafenib was tested in children with recurrent low-grade astrocytoma."
+        },
+        {
+          "candidate_id": "C063-G63",
+          "pmid": "34158360",
+          "relation": "direct_support",
+          "independent": false,
+          "note": "Longer follow-up of the same coBRIM patients showed longer progression-free and overall survival with cobimetinib plus vemurafenib than with vemurafenib alone in BRAF V600 melanoma."
+        },
+        {
+          "candidate_id": "C063-G64",
+          "pmid": "24938562",
+          "relation": "partial",
+          "independent": true,
+          "note": "Selumetinib lengthened progression-free survival in metastatic uveal melanoma, a different MEK inhibitor and a GNAQ/GNA11-driven disease."
+        },
+        {
+          "candidate_id": "C063-G65",
+          "pmid": "24149137",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Molecular alterations and targeted therapy were described in appendiceal adenocarcinomas."
+        },
+        {
+          "candidate_id": "C063-G66",
+          "pmid": "24576830",
+          "relation": "partial",
+          "independent": true,
+          "note": "Trametinib, not cobimetinib, suppressed ERK in NF1-loss and BRAF-mutant melanoma lines."
+        },
+        {
+          "candidate_id": "C063-G67",
+          "pmid": "24205362",
+          "relation": "not_test",
+          "independent": true,
+          "note": "EGFR copy number and KRAS mutations were surveyed in triple-negative breast cancer."
+        },
+        {
+          "candidate_id": "C063-G68",
+          "pmid": "26745854",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Novobiocin analogues that inhibit MAPK signaling were described."
+        },
+        {
+          "candidate_id": "C063-G69",
+          "pmid": "24236184",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A multigene panel was used to type lung adenocarcinoma cytology samples."
+        },
+        {
+          "candidate_id": "C063-G70",
+          "pmid": "24130815",
+          "relation": "not_test",
+          "independent": true,
+          "note": "HBx and src drove liver tumors in p53-mutant zebrafish."
+        },
+        {
+          "candidate_id": "C063-G71",
+          "pmid": "24386625",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A BRAF inhibitor was used in a parotid cystadenocarcinoma case."
+        },
+        {
+          "candidate_id": "C063-G72",
+          "pmid": "34859235",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of targeted therapy for melanoma brain metastases."
+        }
+      ]
+    },
+    {
+      "claim_id": "C068",
+      "followups": [
+        {
+          "candidate_id": "C068-G01",
+          "pmid": "33652552",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A KRAS peptide mimotope was tested for immune responses in mice."
+        },
+        {
+          "candidate_id": "C068-G02",
+          "pmid": "33672789",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Nrf2 activation sensitized KRAS-mutant pancreatic cancer cells to glutaminase inhibition."
+        },
+        {
+          "candidate_id": "C068-G03",
+          "pmid": "36386200",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Inhibition of KRAS G13D was studied in colon cancer cells."
+        },
+        {
+          "candidate_id": "C068-G04",
+          "pmid": "25804753",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a methods review on measuring autophagic flux, including the Atg5-Atg12 conjugate as a marker."
+        },
+        {
+          "candidate_id": "C068-G05",
+          "pmid": "33009500",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Kras mutation rate was varied in a pancreatic neoplasia model."
+        },
+        {
+          "candidate_id": "C068-G06",
+          "pmid": "26496833",
+          "relation": "partial",
+          "independent": true,
+          "note": "Tissue-specific Atg5 deletion shrank colon tumors in mice, which is a different organ than KRAS G12D lung cancer."
+        },
+        {
+          "candidate_id": "C068-G07",
+          "pmid": "34625747",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A structural model of a Ras-Raf signalosome is presented."
+        },
+        {
+          "candidate_id": "C068-G08",
+          "pmid": "25175026",
+          "relation": "partial",
+          "independent": true,
+          "note": "Autophagy remodeled the proteome of Ras-driven cancer cells, without Atg5 inactivation in KRAS G12D lung-tumor mice."
+        },
+        {
+          "candidate_id": "C068-G09",
+          "pmid": "28326248",
+          "relation": "not_test",
+          "independent": true,
+          "note": "EGFR, KRAS, and BRAF mutations were evaluated in renal cell carcinoma."
+        },
+        {
+          "candidate_id": "C068-G10",
+          "pmid": "35472201",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Peptide and small-molecule strategies for inhibiting KRAS are reviewed."
+        },
+        {
+          "candidate_id": "C068-G11",
+          "pmid": "27358853",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This case reports a cutaneous metastasis as the presentation of KRAS-mutant lung adenocarcinoma."
+        },
+        {
+          "candidate_id": "C068-G12",
+          "pmid": "25362242",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Autophagy dysregulation in follicular lymphoma was found to be independent of BCL2."
+        },
+        {
+          "candidate_id": "C068-G13",
+          "pmid": "25646081",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Gap-junction signaling was studied during oncogene-driven tumorigenesis in frog embryos."
+        },
+        {
+          "candidate_id": "C068-G14",
+          "pmid": "26310906",
+          "relation": "not_test",
+          "independent": true,
+          "note": "mTORC1 and protein phosphatase 2A were shown to regulate autophagy."
+        },
+        {
+          "candidate_id": "C068-G15",
+          "pmid": "25936644",
+          "relation": "not_test",
+          "independent": true,
+          "note": "LKB1 loss altered redox state and plasticity in non-small cell lung cancer."
+        },
+        {
+          "candidate_id": "C068-G16",
+          "pmid": "35894141",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Cryptotanshinone was tested in KRAS-activated pancreatic and tumor models."
+        },
+        {
+          "candidate_id": "C068-G17",
+          "pmid": "26568842",
+          "relation": "partial",
+          "independent": true,
+          "note": "Atg5 loss worsened an MLL-ENL leukemia model, a different disease than KRAS G12D lung cancer."
+        },
+        {
+          "candidate_id": "C068-G18",
+          "pmid": "25617802",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of autophagy in lung diseases."
+        },
+        {
+          "candidate_id": "C068-G19",
+          "pmid": "34437645",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Ras function in intestinal epithelial homeostasis is discussed."
+        },
+        {
+          "candidate_id": "C068-G20",
+          "pmid": "35247012",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PP6 deficiency accelerated KRAS-mutant pancreatic cancer in mice."
+        },
+        {
+          "candidate_id": "C068-G21",
+          "pmid": "32990679",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Kras P34R and T58I mutations caused RASopathy phenotypes in mice."
+        },
+        {
+          "candidate_id": "C068-G22",
+          "pmid": "26677873",
+          "relation": "partial",
+          "independent": true,
+          "note": "ATG7 deletion, not Atg5, failed to slow proliferation of KRAS-mutant tumor lines, and the system is not KRAS G12D lung-cancer mice."
+        },
+        {
+          "candidate_id": "C068-G23",
+          "pmid": "35409002",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Angiotensin-(1-7) prevented oral papillomas in K-ras transgenic mice."
+        },
+        {
+          "candidate_id": "C068-G24",
+          "pmid": "25842399",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of serrated colorectal lesions."
+        },
+        {
+          "candidate_id": "C068-G25",
+          "pmid": "27516533",
+          "relation": "partial",
+          "independent": true,
+          "note": "Atg7-deficient Kras-driven lung tumor cells, not Atg5-null tumors, were starvation-sensitive because autophagy supplied metabolic substrates."
+        },
+        {
+          "candidate_id": "C068-G26",
+          "pmid": "25484061",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A CEA/CD3 bispecific antibody killed tumor cells independent of common mutations."
+        },
+        {
+          "candidate_id": "C068-G27",
+          "pmid": "34913280",
+          "relation": "partial",
+          "independent": true,
+          "note": "ABT-737 plus radiation regressed tumors in Kras G12D lung-cancer mice, which is a different intervention than Atg5 inactivation."
+        },
+        {
+          "candidate_id": "C068-G28",
+          "pmid": "36447529",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Loss of connexin 43 sensitized KRAS-mutant cells to cisplatin."
+        },
+        {
+          "candidate_id": "C068-G29",
+          "pmid": "25303301",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of therapeutic targets downstream of KRAS in lung adenocarcinoma."
+        },
+        {
+          "candidate_id": "C068-G30",
+          "pmid": "35752351",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Vav1 accelerated Ras-driven lung cancer in mice."
+        },
+        {
+          "candidate_id": "C068-G31",
+          "pmid": "24875860",
+          "relation": "partial",
+          "independent": true,
+          "note": "Genetic autophagy ablation impaired progression of Kras-driven pancreatic cancer in mice, a different tissue than lung and not an Atg5 measurement."
+        },
+        {
+          "candidate_id": "C068-G32",
+          "pmid": "35174853",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A K-Ras and p53 mouse model of rhabdomyosarcoma is described."
+        },
+        {
+          "candidate_id": "C068-G33",
+          "pmid": "32972751",
+          "relation": "not_test",
+          "independent": true,
+          "note": "K-Ras was required for metabolic regulation of EGFR signaling in pancreatic cancer cells."
+        },
+        {
+          "candidate_id": "C068-G34",
+          "pmid": "26341400",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Regulatory T cells in tertiary lymphoid structures suppressed antitumor T-cell responses."
+        },
+        {
+          "candidate_id": "C068-G35",
+          "pmid": "26506894",
+          "relation": "not_test",
+          "independent": true,
+          "note": "LC3B and HMGB1 were evaluated as relapse markers in breast cancer."
+        },
+        {
+          "candidate_id": "C068-G36",
+          "pmid": "25520871",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Patient-derived colorectal cancer xenografts were established."
+        },
+        {
+          "candidate_id": "C068-G37",
+          "pmid": "24875857",
+          "relation": "partial",
+          "independent": true,
+          "note": "Acute Atg7 deletion, not Atg5 inactivation, blocked growth of established Kras G12D lung tumors in mice."
+        },
+        {
+          "candidate_id": "C068-G38",
+          "pmid": "25479544",
+          "relation": "not_test",
+          "independent": true,
+          "note": "The EGFR pathway regulated BCRP in non-small cell lung cancer cells."
+        },
+        {
+          "candidate_id": "C068-G39",
+          "pmid": "25474307",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Sequence-dependent effects of gefitinib and docetaxel were studied in lung cancer cells."
+        },
+        {
+          "candidate_id": "C068-G40",
+          "pmid": "25673642",
+          "relation": "partial",
+          "independent": true,
+          "note": "Atg7 deletion blocked Braf V600E-driven melanoma in mice, a different gene, tissue, and genotype than Atg5 in KRAS G12D lung cancer."
+        },
+        {
+          "candidate_id": "C068-G41",
+          "pmid": "25520867",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Integrin-ERBB2 signaling was activated in undifferentiated thyroid cancer."
+        },
+        {
+          "candidate_id": "C068-G42",
+          "pmid": "25593974",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Immunohistochemistry was compared in peritoneal metastases of appendiceal or colorectal origin."
+        },
+        {
+          "candidate_id": "C068-G43",
+          "pmid": "25502773",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Possible anticancer properties of propofol are profiled."
+        },
+        {
+          "candidate_id": "C068-G44",
+          "pmid": "26208877",
+          "relation": "partial",
+          "independent": true,
+          "note": "Autophagy-gene mutations and expression were surveyed in human tumors, including lung cancer, without testing Atg5 loss in KRAS G12D lung mice."
+        },
+        {
+          "candidate_id": "C068-G45",
+          "pmid": "25658205",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Erk2 phosphorylation of Drp1 promoted mitochondrial fission and tumor growth."
+        },
+        {
+          "candidate_id": "C068-G46",
+          "pmid": "36233022",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PLA2G2A was studied in pancreatic cancer cells with a K-ras mutation."
+        },
+        {
+          "candidate_id": "C068-G47",
+          "pmid": "25772235",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A screen identified a glycolytic enzyme as an autophagy regulator."
+        },
+        {
+          "candidate_id": "C068-G48",
+          "pmid": "35184157",
+          "relation": "not_test",
+          "independent": true,
+          "note": "TSPAN6 suppressed Ras-driven cancer."
+        },
+        {
+          "candidate_id": "C068-G49",
+          "pmid": "36001446",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A small-molecule electrophile modified K-Ras G12R."
+        },
+        {
+          "candidate_id": "C068-G50",
+          "pmid": "25605184",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Phenolic alkaloids were tested against gastric cancer in vivo."
+        },
+        {
+          "candidate_id": "C068-G51",
+          "pmid": "25174403",
+          "relation": "partial",
+          "independent": true,
+          "note": "Decreased autophagy suppressed Ras-driven tissue overgrowth in Drosophila, a different species and not Atg5 in mouse lung cancer."
+        },
+        {
+          "candidate_id": "C068-G52",
+          "pmid": "25621297",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Selumetinib induced apoptosis in breast cancer bone metastases in mice."
+        },
+        {
+          "candidate_id": "C068-G53",
+          "pmid": "35581303",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A K-Ras G12D peptide suppressed mouse colorectal tumors."
+        },
+        {
+          "candidate_id": "C068-G54",
+          "pmid": "36099883",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A covalent K-Ras G12C inhibitor created haptenated neoepitopes."
+        },
+        {
+          "candidate_id": "C068-G55",
+          "pmid": "35864332",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Chemical acylation suppressed signaling by K-Ras G12S."
+        },
+        {
+          "candidate_id": "C068-G56",
+          "pmid": "36396111",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PD-L1 suppression altered stemness markers in K-Ras-mutant lung cancer cells."
+        },
+        {
+          "candidate_id": "C068-G57",
+          "pmid": "25605154",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A PCR melting assay was developed to detect KRAS codon 12 and 13 mutations."
+        },
+        {
+          "candidate_id": "C068-G58",
+          "pmid": "34439225",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Loss of the aryl hydrocarbon receptor favored K-Ras G12D lung cancer."
+        },
+        {
+          "candidate_id": "C068-G59",
+          "pmid": "25536104",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Mutation profiles in cholangiocarcinoma are reviewed for prognosis and therapy."
+        },
+        {
+          "candidate_id": "C068-G60",
+          "pmid": "25516710",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Nanoparticle delivery of an AKT/PDK1 inhibitor was tested in pancreatic cancer."
+        },
+        {
+          "candidate_id": "C068-G61",
+          "pmid": "25538889",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Transcriptional networks were compared in isogenic mutant-KRAS lung cancer models."
+        },
+        {
+          "candidate_id": "C068-G62",
+          "pmid": "36306264",
+          "relation": "not_test",
+          "independent": true,
+          "note": "RAS signal strength changed matrisome expression in mouse keratinocytes."
+        },
+        {
+          "candidate_id": "C068-G63",
+          "pmid": "35595057",
+          "relation": "partial",
+          "independent": true,
+          "note": "Blocking macroautophagy slowed proliferation of K-Ras G12V mouse embryonic fibroblasts, which are not Atg5-deficient KRAS G12D lung tumors."
+        },
+        {
+          "candidate_id": "C068-G64",
+          "pmid": "27563251",
+          "relation": "partial",
+          "independent": true,
+          "note": "ATG7 protein was overexpressed in human lung cancers but was not associated with survival, a different gene and system than Atg5 knockout in mice."
+        },
+        {
+          "candidate_id": "C068-G65",
+          "pmid": "25550847",
+          "relation": "not_test",
+          "independent": true,
+          "note": "miR-24 expression was associated with acute myeloid leukemia with t(8;21)."
+        },
+        {
+          "candidate_id": "C068-G66",
+          "pmid": "25813352",
+          "relation": "not_test",
+          "independent": true,
+          "note": "The p53 target SIVA was required for non-small cell lung cancer development."
+        },
+        {
+          "candidate_id": "C068-G67",
+          "pmid": "36230807",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Peptide inhibitors of K-Ras G12V were designed in silico."
+        },
+        {
+          "candidate_id": "C068-G68",
+          "pmid": "25484066",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A VEGF-neutralizing aerosol was tested in K-ras-mutant mouse lung adenocarcinoma."
+        },
+        {
+          "candidate_id": "C068-G69",
+          "pmid": "26609545",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Metabolic vulnerabilities of KRAS-driven cancer cells are discussed."
+        },
+        {
+          "candidate_id": "C068-G70",
+          "pmid": "35202574",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Autophosphorylation was studied as a regulator of GTPase function."
+        },
+        {
+          "candidate_id": "C068-G71",
+          "pmid": "34294846",
+          "relation": "not_test",
+          "independent": true,
+          "note": "USP16 promoted K-RAS-driven lung tumorigenesis."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1971 @@
+{
+  "annotator": "A2",
+  "claims": [
+    {
+      "claim_id": "C015",
+      "followups": [
+        {
+          "candidate_id": "C015-G01",
+          "pmid": "25937618",
+          "relation": "partial",
+          "independent": true,
+          "note": "The study compares BRAF assays in thyroid FNA and reports mutation prevalence in PTC, without comparing aggressive phenotype or recurrence between BRAF-positive and BRAF-negative tumors."
+        },
+        {
+          "candidate_id": "C015-G02",
+          "pmid": "22006248",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This miRNA diagnostic study of thyroid neoplasms does not measure BRAF V600E or its association with aggressive or recurrent conventional PTC."
+        },
+        {
+          "candidate_id": "C015-G03",
+          "pmid": "17685465",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In patients with PTC 1 cm or smaller, BRAF V600E differed by lymph-node status and BRAF-positive nodal metastases were more extensive."
+        },
+        {
+          "candidate_id": "C015-G04",
+          "pmid": "26384551",
+          "relation": "partial",
+          "independent": true,
+          "note": "Drug effects were measured in BRAF-mutant thyroid cancer cell lines in culture, not in patients with conventional PTC."
+        },
+        {
+          "candidate_id": "C015-G05",
+          "pmid": "24787545",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In classical PTC, BRAF V600E was associated with nodal metastasis, advanced stage, and a higher univariate risk of persistent disease."
+        },
+        {
+          "candidate_id": "C015-G06",
+          "pmid": "26125673",
+          "relation": "not_test",
+          "independent": true,
+          "note": "The study tests BRAF V600E in papillary tumors of the pineal region and only mentions thyroid cancer as background."
+        },
+        {
+          "candidate_id": "C015-G07",
+          "pmid": "23236259",
+          "relation": "not_test",
+          "independent": true,
+          "note": "These two follicular-adenoma case reports do not compare BRAF status with aggressive or recurrent papillary thyroid cancer."
+        },
+        {
+          "candidate_id": "C015-G08",
+          "pmid": "19578508",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of thyroid-cancer biomarkers and does not report a new patient cohort testing BRAF and outcome."
+        },
+        {
+          "candidate_id": "C015-G09",
+          "pmid": "17972530",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In PTC, BRAF V600E was associated with extrathyroidal extension, nodal metastasis, advanced stage, and a higher rate in recurrent tumors."
+        },
+        {
+          "candidate_id": "C015-G10",
+          "pmid": "17909054",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Sorafenib and radiation were studied in cell lines and a colon-cancer xenograft, not in patients with papillary thyroid cancer."
+        },
+        {
+          "candidate_id": "C015-G11",
+          "pmid": "26214416",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In surgical PTC, BRAF V600E independently predicted central nodal metastasis and, for tumors larger than 10 mm, nodal metastasis was more common when BRAF was mutant."
+        },
+        {
+          "candidate_id": "C015-G12",
+          "pmid": "22925390",
+          "relation": "unclear_reporting",
+          "independent": true,
+          "note": "BRAF was sequenced in PTC and clinicopathologic features were discussed, but the abstract does not report whether BRAF V600E associated with aggressive phenotype or recurrence."
+        },
+        {
+          "candidate_id": "C015-G13",
+          "pmid": "17721188",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF mutations were found in ovarian malignant struma with PTC histology, and the abstract states that prognostic significance in that setting was not determined."
+        },
+        {
+          "candidate_id": "C015-G14",
+          "pmid": "26187369",
+          "relation": "partial",
+          "independent": true,
+          "note": "Cytologic features were tested as predictors of BRAF mutation in suspicious nodules, which is a different outcome from clinical aggressiveness or recurrence."
+        },
+        {
+          "candidate_id": "C015-G15",
+          "pmid": "26438153",
+          "relation": "not_test",
+          "independent": true,
+          "note": "The experiment is BRAF immunohistochemistry in colorectal carcinoma, with thyroid cancer used only as an assay-concordance control."
+        },
+        {
+          "candidate_id": "C015-G16",
+          "pmid": "25066317",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E was studied in pilocytic astrocytoma, not in papillary thyroid cancer."
+        },
+        {
+          "candidate_id": "C015-G17",
+          "pmid": "17824790",
+          "relation": "partial",
+          "independent": true,
+          "note": "A melting-curve assay detected BRAF V600E in a small set of PTC samples but did not compare clinical aggressiveness or recurrence."
+        },
+        {
+          "candidate_id": "C015-G18",
+          "pmid": "17914558",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This study maps BRAF mutations in inflammatory-bowel-disease colorectal lesions."
+        },
+        {
+          "candidate_id": "C015-G19",
+          "pmid": "26154146",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF testing of thyroid FNA cell blocks was evaluated for detection accuracy against later histology, not for prognosis."
+        },
+        {
+          "candidate_id": "C015-G20",
+          "pmid": "20824721",
+          "relation": "partial",
+          "independent": true,
+          "note": "PTC outcomes were compared by age, and the abstract reports mutation frequency by age rather than BRAF versus aggressive phenotype or recurrence."
+        },
+        {
+          "candidate_id": "C015-G21",
+          "pmid": "18003927",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Genetic and epigenetic subclasses were defined in colon cancer."
+        },
+        {
+          "candidate_id": "C015-G22",
+          "pmid": "17878476",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Microsatellite instability and BRAF were studied in inflammatory-bowel-disease colorectal neoplasia."
+        },
+        {
+          "candidate_id": "C015-G23",
+          "pmid": "26125698",
+          "relation": "partial",
+          "independent": true,
+          "note": "Extrathyroidal extension was linked to BRAF protein overexpression, while the mutation itself was associated with overexpression rather than with recurrence or aggressive stage."
+        },
+        {
+          "candidate_id": "C015-G24",
+          "pmid": "17514646",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Gene expression was compared in mouse liver tumors with Ha-ras or B-raf mutations."
+        },
+        {
+          "candidate_id": "C015-G25",
+          "pmid": "26354077",
+          "relation": "partial",
+          "independent": true,
+          "note": "Aggressive features and persistent disease were associated with TERT promoter mutations, which co-occurred with BRAF, rather than with BRAF status itself."
+        },
+        {
+          "candidate_id": "C015-G26",
+          "pmid": "22471242",
+          "relation": "partial",
+          "independent": true,
+          "note": "The cohort was restricted to node-positive PTC, and the reported prognostic result was the combination of BRAF with extranodal extension rather than BRAF alone in unselected conventional PTC."
+        },
+        {
+          "candidate_id": "C015-G27",
+          "pmid": "21873938",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Ephrin-receptor staining in thyroid lesions does not measure BRAF mutation or its clinical association."
+        },
+        {
+          "candidate_id": "C015-G28",
+          "pmid": "18056475",
+          "relation": "not_test",
+          "independent": true,
+          "note": "FLT-PET response to MEK inhibition was measured in melanoma xenografts."
+        },
+        {
+          "candidate_id": "C015-G29",
+          "pmid": "21829508",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PIK3CA, RAS, and BRAF co-mutation rates were surveyed across advanced cancers, not in conventional PTC outcomes."
+        },
+        {
+          "candidate_id": "C015-G30",
+          "pmid": "26230187",
+          "relation": "partial",
+          "independent": true,
+          "note": "Uncommon non-V600E BRAF mutations in follicular-variant PTC were linked to less aggressive behavior, which is a different mutation class from V600E."
+        },
+        {
+          "candidate_id": "C015-G31",
+          "pmid": "22524468",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF-positive PTC was associated with suspicious ultrasound features, not with recurrence or histopathologic aggressiveness."
+        },
+        {
+          "candidate_id": "C015-G32",
+          "pmid": "23062653",
+          "relation": "direct_contradict",
+          "independent": true,
+          "note": "In PTC patients who had routine central-neck dissection, BRAF mutation was not significantly associated with lymph-node metastasis."
+        },
+        {
+          "candidate_id": "C015-G33",
+          "pmid": "26258321",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In a large surgical thyroid-cancer series, BRAF V600E-positive PTC more often showed extrathyroidal extension, nodal metastasis, advanced stage, distant metastasis, and early recurrence than RAS-positive tumors."
+        },
+        {
+          "candidate_id": "C015-G34",
+          "pmid": "18059232",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF was studied in serrated polyps of the appendix."
+        },
+        {
+          "candidate_id": "C015-G35",
+          "pmid": "26341689",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Rac1b and BRAF-induced senescence were studied in colon epithelial cells."
+        },
+        {
+          "candidate_id": "C015-G36",
+          "pmid": "22870129",
+          "relation": "partial",
+          "independent": true,
+          "note": "Lymph-node metastasis was associated with BRAF protein overexpression, which the abstract states varied independently of the V600E mutation."
+        },
+        {
+          "candidate_id": "C015-G37",
+          "pmid": "18615679",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E was surveyed in gastrointestinal stromal tumors."
+        },
+        {
+          "candidate_id": "C015-G38",
+          "pmid": "17923875",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KRAS and BRAF alterations were studied in colorectal adenomas."
+        },
+        {
+          "candidate_id": "C015-G39",
+          "pmid": "17722141",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a proteomic comparison of chemically induced mouse liver tumors."
+        },
+        {
+          "candidate_id": "C015-G40",
+          "pmid": "22457234",
+          "relation": "partial",
+          "independent": true,
+          "note": "Post-Chernobyl PTC was genotyped for BRAF, and the reported clinicopathologic association was with thyroiditis rather than with aggressive phenotype or recurrence."
+        },
+        {
+          "candidate_id": "C015-G41",
+          "pmid": "18398503",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF duplication and mutation were studied in low-grade astrocytomas."
+        },
+        {
+          "candidate_id": "C015-G42",
+          "pmid": "17908962",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KRAS, BRAF, and APC were profiled in mismatch-repair-proficient colorectal cancers."
+        },
+        {
+          "candidate_id": "C015-G43",
+          "pmid": "23393170",
+          "relation": "not_test",
+          "independent": true,
+          "note": "RTN4IP1 expression in thyroid cancer was not tied to a BRAF V600E outcome comparison."
+        },
+        {
+          "candidate_id": "C015-G44",
+          "pmid": "26338373",
+          "relation": "direct_mixed",
+          "independent": true,
+          "note": "BRAF V600E correlated with aggressive histology and recurrence risk in PTC up to 20 mm and in the 7\u201310 mm subset, but that correlation was not found when microcarcinomas were analyzed as a whole."
+        },
+        {
+          "candidate_id": "C015-G45",
+          "pmid": "21412762",
+          "relation": "partial",
+          "independent": true,
+          "note": "The study tracks a rising BRAF prevalence in conventional PTC over time and does not compare outcomes between BRAF-positive and BRAF-negative patients."
+        },
+        {
+          "candidate_id": "C015-G46",
+          "pmid": "24354346",
+          "relation": "direct_contradict",
+          "independent": true,
+          "note": "In low-risk papillary microcarcinoma, BRAF V600E showed no correlation with aggressive behavior or recurrent disease, and no persistence or recurrence occurred in the cohort."
+        },
+        {
+          "candidate_id": "C015-G47",
+          "pmid": "26403329",
+          "relation": "partial",
+          "independent": true,
+          "note": "ERK and AKT signaling were measured in BRAF-mutant thyroid carcinoma cell lines."
+        },
+        {
+          "candidate_id": "C015-G48",
+          "pmid": "26521469",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF V600E on preoperative aspirates was used as a diagnostic marker of papillary carcinoma, without an aggressiveness or recurrence comparison."
+        },
+        {
+          "candidate_id": "C015-G49",
+          "pmid": "18676857",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Geldanamycin and reactive oxygen species were studied in colon-cancer cells with mutant BRAF."
+        },
+        {
+          "candidate_id": "C015-G50",
+          "pmid": "17786355",
+          "relation": "partial",
+          "independent": true,
+          "note": "Aneuploid PTCs were profiled for BRAF, but death and distant metastasis were linked to DDR2 expression rather than to BRAF status."
+        },
+        {
+          "candidate_id": "C015-G51",
+          "pmid": "24604709",
+          "relation": "direct_contradict",
+          "independent": true,
+          "note": "In pediatric PTC, BRAF V600E was not associated with nodal or pulmonary metastasis, tumor size, lymphovascular invasion, or extrathyroidal extension."
+        },
+        {
+          "candidate_id": "C015-G52",
+          "pmid": "25482468",
+          "relation": "direct_contradict",
+          "independent": true,
+          "note": "In PTC larger than 1 cm, BRAF V600E was not associated with extrathyroidal extension, nodal metastasis, higher T category, clinical risk scores, or worse survival."
+        },
+        {
+          "candidate_id": "C015-G53",
+          "pmid": "25888143",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E and histologic prognostic markers were compared in cutaneous melanoma."
+        },
+        {
+          "candidate_id": "C015-G54",
+          "pmid": "25468810",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In a large PTC resection series, BRAF V600E was significantly associated with lymph-node metastasis."
+        },
+        {
+          "candidate_id": "C015-G55",
+          "pmid": "17962726",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of microsatellite-instability testing in colorectal cancer, with BRAF mentioned only as background."
+        },
+        {
+          "candidate_id": "C015-G56",
+          "pmid": "19147753",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF prevalence was measured only in already recurrent PTC and compared with historical primary-tumor rates, without a concurrent untreated comparison of recurrence risk."
+        },
+        {
+          "candidate_id": "C015-G57",
+          "pmid": "25837167",
+          "relation": "partial",
+          "independent": true,
+          "note": "Circulating BRAF V600E, not tumor mutation versus wild type, was associated with lung metastasis in a few PTC patients."
+        },
+        {
+          "candidate_id": "C015-G58",
+          "pmid": "26461266",
+          "relation": "partial",
+          "independent": true,
+          "note": "The cohort was limited to already persistent or recurrent PTC, so the reported lack of a BRAF association with survival does not test whether BRAF predicts developing recurrence."
+        },
+        {
+          "candidate_id": "C015-G59",
+          "pmid": "18006687",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Beta-catenin and N-Ras were studied in mouse melanocytes and a mouse melanoma model."
+        },
+        {
+          "candidate_id": "C015-G60",
+          "pmid": "25894433",
+          "relation": "partial",
+          "independent": true,
+          "note": "VE1 immunohistochemistry was validated for detecting BRAF V600E across thyroid-carcinoma subtypes, without a new aggressiveness or recurrence comparison."
+        },
+        {
+          "candidate_id": "C015-G61",
+          "pmid": "19414674",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Preoperative BRAF mutation in PTC predicted extrathyroidal extension, capsular invasion, nodal metastasis, and persistence or recurrence."
+        },
+        {
+          "candidate_id": "C015-G62",
+          "pmid": "17898258",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Promoter methylation was studied in uveal melanoma, with BRAF mentioned only as known to be absent."
+        },
+        {
+          "candidate_id": "C015-G63",
+          "pmid": "25978151",
+          "relation": "partial",
+          "independent": true,
+          "note": "Adding BRAF testing to core biopsy was evaluated for diagnostic yield in AUS or FLUS nodules, not for prognosis."
+        },
+        {
+          "candidate_id": "C015-G64",
+          "pmid": "23132792",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In PTC, BRAF mutation strongly predicted central nodal metastasis and was associated with disease recurrence or persistence."
+        },
+        {
+          "candidate_id": "C015-G65",
+          "pmid": "18205709",
+          "relation": "not_test",
+          "independent": true,
+          "note": "B-Raf and C-Raf functions were studied in mouse embryonic endothelial progenitor cells."
+        },
+        {
+          "candidate_id": "C015-G66",
+          "pmid": "17962436",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF mutation was associated with recurrence in iris melanoma, not thyroid cancer."
+        },
+        {
+          "candidate_id": "C015-G67",
+          "pmid": "22241789",
+          "relation": "partial",
+          "independent": true,
+          "note": "Selumetinib activity was compared by BRAF status in already iodine-refractory advanced PTC, which is a drug-response outcome in a preselected aggressive population."
+        },
+        {
+          "candidate_id": "C015-G68",
+          "pmid": "21134567",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a meeting summary on molecular markers in thyroid cancer and reports no new cohort result."
+        },
+        {
+          "candidate_id": "C015-G69",
+          "pmid": "26271724",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In papillary microcarcinoma, BRAF V600E was associated with infiltrative growth, extrathyroidal extension, intraglandular spread, and a higher recurrence-risk group."
+        },
+        {
+          "candidate_id": "C015-G70",
+          "pmid": "18006922",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Mismatch repair and BRAF were studied in colorectal cancer among Alaska Native people."
+        },
+        {
+          "candidate_id": "C015-G71",
+          "pmid": "27101676",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In clinically node-negative small PTC, BRAF V600E was a risk factor for occult central nodal metastasis."
+        },
+        {
+          "candidate_id": "C015-G72",
+          "pmid": "25862786",
+          "relation": "partial",
+          "independent": true,
+          "note": "Estrogen- and progesterone-receptor expression was the study outcome, and BRAF was noted only as more common in larger tumors and in stronger receptor staining."
+        }
+      ]
+    },
+    {
+      "claim_id": "C016",
+      "followups": [
+        {
+          "candidate_id": "C016-G01",
+          "pmid": "17900235",
+          "relation": "partial",
+          "independent": true,
+          "note": "RET, RAS, and ERK proteins were compared in Hashimoto thyroiditis and PTC, and BRAF mutations were sought in oxyphil cells rather than tested against high-risk PTC."
+        },
+        {
+          "candidate_id": "C016-G02",
+          "pmid": "25120313",
+          "relation": "partial",
+          "independent": true,
+          "note": "The clinicopathologic analysis concerns rare non-V600E BRAF mutations, which were less aggressive, rather than V600E versus high-risk PTC."
+        },
+        {
+          "candidate_id": "C016-G03",
+          "pmid": "19147753",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF was measured only in already recurrent PTC and compared with historical primary-tumor rates, without a concurrent high-risk comparison in unselected surgical PTC."
+        },
+        {
+          "candidate_id": "C016-G04",
+          "pmid": "18003927",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Colon cancers were subclassified by genetic and epigenetic profiles including BRAF."
+        },
+        {
+          "candidate_id": "C016-G05",
+          "pmid": "17885757",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of molecular heterogeneity in melanoma."
+        },
+        {
+          "candidate_id": "C016-G06",
+          "pmid": "27101676",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In small clinically node-negative PTC treated with prophylactic central dissection, BRAF mutation predicted occult central nodal metastasis."
+        },
+        {
+          "candidate_id": "C016-G07",
+          "pmid": "26384551",
+          "relation": "partial",
+          "independent": true,
+          "note": "RAF and MEK inhibitors were tested in BRAF-mutant thyroid cancer cell lines, not in surgical PTC patients."
+        },
+        {
+          "candidate_id": "C016-G08",
+          "pmid": "26338373",
+          "relation": "direct_mixed",
+          "independent": true,
+          "note": "BRAF V600E correlated with aggressive histology and recurrence risk in PTC up to 20 mm and in the 7\u201310 mm subset, but that correlation was absent when microcarcinomas were analyzed together."
+        },
+        {
+          "candidate_id": "C016-G09",
+          "pmid": "26823860",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In surgical PTC, BRAF V600E was significantly associated with extrathyroidal extension."
+        },
+        {
+          "candidate_id": "C016-G10",
+          "pmid": "22654559",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of diagnostic and prognostic markers in differentiated thyroid cancer."
+        },
+        {
+          "candidate_id": "C016-G11",
+          "pmid": "17909054",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Sorafenib plus radiation was studied in cell lines and a colon-cancer xenograft."
+        },
+        {
+          "candidate_id": "C016-G12",
+          "pmid": "17962436",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF mutation was associated with recurrence in iris melanoma."
+        },
+        {
+          "candidate_id": "C016-G13",
+          "pmid": "26823846",
+          "relation": "direct_contradict",
+          "independent": true,
+          "note": "In a large primary PTC cohort, BRAF V600E correlated with older age and conventional histology but was not associated with clinicopathologic aggressiveness."
+        },
+        {
+          "candidate_id": "C016-G14",
+          "pmid": "25337709",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In conventional PTC, BRAF V600E was associated with larger size, extrathyroidal extension, central and lateral nodal metastasis, and advanced stage."
+        },
+        {
+          "candidate_id": "C016-G15",
+          "pmid": "17908962",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Somatic mutations including BRAF were profiled in mismatch-repair-proficient colorectal cancer."
+        },
+        {
+          "candidate_id": "C016-G16",
+          "pmid": "18006922",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Mismatch repair and BRAF were studied in colorectal cancer among Alaska Native people."
+        },
+        {
+          "candidate_id": "C016-G17",
+          "pmid": "17876297",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a proteomic inventory of Hodgkin lymphoma Reed-Sternberg cells."
+        },
+        {
+          "candidate_id": "C016-G18",
+          "pmid": "18059232",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF mutations were studied in serrated polyps of the appendix."
+        },
+        {
+          "candidate_id": "C016-G19",
+          "pmid": "18205709",
+          "relation": "not_test",
+          "independent": true,
+          "note": "B-Raf and C-Raf were studied in mouse embryonic endothelial progenitor cells."
+        },
+        {
+          "candidate_id": "C016-G20",
+          "pmid": "17727338",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF V600E on FNA was evaluated as a diagnostic marker of PTC, without a high-risk clinicopathologic comparison."
+        },
+        {
+          "candidate_id": "C016-G21",
+          "pmid": "26625260",
+          "relation": "partial",
+          "independent": true,
+          "note": "A transgenic mouse model was used to derive a BRAF-dependent gene signature of early PTC, not a patient test of high-risk disease."
+        },
+        {
+          "candidate_id": "C016-G22",
+          "pmid": "18006687",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Beta-catenin and N-Ras cooperation was studied in mouse melanocytes."
+        },
+        {
+          "candidate_id": "C016-G23",
+          "pmid": "23414134",
+          "relation": "partial",
+          "independent": true,
+          "note": "Low MLH1 expression was associated with BRAF V600E in thyroid carcinoma, which is a different outcome from high-risk invasive growth."
+        },
+        {
+          "candidate_id": "C016-G24",
+          "pmid": "26403329",
+          "relation": "partial",
+          "independent": true,
+          "note": "ERK and AKT activity were measured in BRAF-mutant thyroid carcinoma cell lines."
+        },
+        {
+          "candidate_id": "C016-G25",
+          "pmid": "26187369",
+          "relation": "partial",
+          "independent": true,
+          "note": "Cytomorphology was tested as a predictor of BRAF mutation, not as a measure of high-risk clinical behavior."
+        },
+        {
+          "candidate_id": "C016-G26",
+          "pmid": "17696195",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Gene expression was compared in melanocytic nevi with and without BRAF V600E."
+        },
+        {
+          "candidate_id": "C016-G27",
+          "pmid": "19500021",
+          "relation": "partial",
+          "independent": true,
+          "note": "MEK-inhibitor sensitivity was compared across thyroid cancer cell lines with different MAPK mutations."
+        },
+        {
+          "candidate_id": "C016-G28",
+          "pmid": "18353179",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A single case of solid-variant PTC carried a BRAF VK600-1E deletion, not a cohort test of V600E and high-risk disease."
+        },
+        {
+          "candidate_id": "C016-G29",
+          "pmid": "25837167",
+          "relation": "partial",
+          "independent": true,
+          "note": "Plasma BRAF detection, not tumor V600E versus wild type, was linked to lung metastasis."
+        },
+        {
+          "candidate_id": "C016-G30",
+          "pmid": "17786355",
+          "relation": "partial",
+          "independent": true,
+          "note": "Aneuploid PTCs were genotyped, but death and distant metastasis were attributed to DDR2 expression rather than to BRAF."
+        },
+        {
+          "candidate_id": "C016-G31",
+          "pmid": "17962726",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of microsatellite-instability testing in colorectal cancer."
+        },
+        {
+          "candidate_id": "C016-G32",
+          "pmid": "24124924",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In conventional PTC, BRAF V600E was significantly associated with cancer recurrence."
+        },
+        {
+          "candidate_id": "C016-G33",
+          "pmid": "17923875",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KRAS and BRAF alterations were studied in colorectal adenomas."
+        },
+        {
+          "candidate_id": "C016-G34",
+          "pmid": "18554553",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a methods review of microsatellite-instability testing in colorectal cancer."
+        },
+        {
+          "candidate_id": "C016-G35",
+          "pmid": "19578508",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of thyroid-cancer biomarkers without a new BRAF outcome cohort."
+        },
+        {
+          "candidate_id": "C016-G36",
+          "pmid": "25937618",
+          "relation": "partial",
+          "independent": true,
+          "note": "A BRAF detection assay was compared in FNA samples and prevalence was reported without a high-risk comparison."
+        },
+        {
+          "candidate_id": "C016-G37",
+          "pmid": "17898258",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Promoter methylation was studied in uveal melanoma."
+        },
+        {
+          "candidate_id": "C016-G38",
+          "pmid": "25894433",
+          "relation": "partial",
+          "independent": true,
+          "note": "VE1 staining was validated as a BRAF V600E detection method across thyroid-carcinoma subtypes, without a high-risk outcome comparison."
+        },
+        {
+          "candidate_id": "C016-G39",
+          "pmid": "25978151",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF testing added to core biopsy was judged for diagnostic conclusiveness in indeterminate nodules, not for high-risk pathology."
+        },
+        {
+          "candidate_id": "C016-G40",
+          "pmid": "26231782",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A single PTC case with a BRAF VK600-1E deletion is described, without a V600E high-risk comparison."
+        },
+        {
+          "candidate_id": "C016-G41",
+          "pmid": "26230187",
+          "relation": "partial",
+          "independent": true,
+          "note": "Uncommon non-V600E BRAF mutations in follicular-variant PTC were linked to less aggressive behavior, which does not test V600E-associated invasive growth."
+        },
+        {
+          "candidate_id": "C016-G42",
+          "pmid": "25623974",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In primary surgical PTC, BRAF V600E correlated with larger tumors, extrathyroidal extension, classic or tall-cell histology, and advanced stage."
+        },
+        {
+          "candidate_id": "C016-G43",
+          "pmid": "25012490",
+          "relation": "partial",
+          "independent": true,
+          "note": "MUC1 expression was associated both with BRAF V600E and with aggressive histology, but BRAF itself was not reported as the exposure for those high-risk features."
+        },
+        {
+          "candidate_id": "C016-G44",
+          "pmid": "26120069",
+          "relation": "direct_contradict",
+          "independent": true,
+          "note": "In conventional PTC, BRAF mutation was not an independent indicator of central or lateral nodal metastasis or of loco-regional recurrence."
+        },
+        {
+          "candidate_id": "C016-G45",
+          "pmid": "26438153",
+          "relation": "not_test",
+          "independent": true,
+          "note": "VE1 immunohistochemistry was assessed in colorectal carcinoma, with PTC used only as a methods control."
+        },
+        {
+          "candidate_id": "C016-G46",
+          "pmid": "24783006",
+          "relation": "partial",
+          "independent": true,
+          "note": "SPAG9 transcript and BRAF status were compared for FNA diagnosis, not for high-risk PTC behavior."
+        },
+        {
+          "candidate_id": "C016-G47",
+          "pmid": "26271724",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In papillary microcarcinoma, BRAF V600E was associated with infiltrative growth, extrathyroidal extension, and a higher recurrence-risk group."
+        },
+        {
+          "candidate_id": "C016-G48",
+          "pmid": "17914558",
+          "relation": "not_test",
+          "independent": true,
+          "note": "The serrated pathway and BRAF were studied in inflammatory-bowel-disease colorectal lesions."
+        },
+        {
+          "candidate_id": "C016-G49",
+          "pmid": "21134567",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a symposium summary on molecular markers and reports no new patient measurement."
+        },
+        {
+          "candidate_id": "C016-G50",
+          "pmid": "25616949",
+          "relation": "partial",
+          "independent": true,
+          "note": "Nodules with benign cytology but BRAF V600E were followed for malignancy on resection, which tests diagnosis rather than high-risk behavior of PTC."
+        },
+        {
+          "candidate_id": "C016-G51",
+          "pmid": "26080065",
+          "relation": "partial",
+          "independent": true,
+          "note": "VE1 immunocytochemistry on FNA smears was tested for concordance with surgical BRAF status, not for prognosis."
+        },
+        {
+          "candidate_id": "C016-G52",
+          "pmid": "23555633",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A pyrosequencing assay for BRAF was validated on cutaneous melanoma metastases."
+        },
+        {
+          "candidate_id": "C016-G53",
+          "pmid": "26521469",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF V600E on aspirates was evaluated as a preoperative diagnostic marker of papillary carcinoma in 26 patients."
+        },
+        {
+          "candidate_id": "C016-G54",
+          "pmid": "23489023",
+          "relation": "partial",
+          "independent": true,
+          "note": "Three patients already selected for metastatic BRAF V600E PTC were treated with vemurafenib, so the study does not compare high-risk features by mutation status."
+        },
+        {
+          "candidate_id": "C016-G55",
+          "pmid": "26154146",
+          "relation": "partial",
+          "independent": true,
+          "note": "BRAF detection in FNA cell blocks was a feasibility and accuracy study against subsequent histology."
+        },
+        {
+          "candidate_id": "C016-G56",
+          "pmid": "26125698",
+          "relation": "partial",
+          "independent": true,
+          "note": "Extrathyroidal extension was associated with BRAF protein overexpression, whereas the V600E mutation was associated with overexpression."
+        },
+        {
+          "candidate_id": "C016-G57",
+          "pmid": "25489262",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In surgical PTC, BRAF V600E was not tied to capsule invasion or nodal metastasis but was an independent predictor of recurrent disease."
+        },
+        {
+          "candidate_id": "C016-G58",
+          "pmid": "26214416",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In surgical PTC, BRAF mutation independently predicted central lymph-node metastasis, particularly when the tumor was larger than 10 mm."
+        },
+        {
+          "candidate_id": "C016-G59",
+          "pmid": "26125673",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Papillary tumors of the pineal region were negative for BRAF V600E, with thyroid cancer mentioned only as background."
+        },
+        {
+          "candidate_id": "C016-G60",
+          "pmid": "26341689",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Rac1b reversal of BRAF-induced senescence was studied in colon cells."
+        },
+        {
+          "candidate_id": "C016-G61",
+          "pmid": "22925390",
+          "relation": "unclear_reporting",
+          "independent": true,
+          "note": "BRAF exon 15 was sequenced across thyroid lesions to assess clinicopathologic value, but the abstract does not report a BRAF V600E association with invasive or high-risk PTC."
+        },
+        {
+          "candidate_id": "C016-G62",
+          "pmid": "24052184",
+          "relation": "direct_mixed",
+          "independent": true,
+          "note": "BRAF had no effect on nodal or distant recurrence in the overall PTC series, but cause-specific survival was worse for BRAF-positive patients who were already clinically high risk."
+        },
+        {
+          "candidate_id": "C016-G63",
+          "pmid": "25241863",
+          "relation": "unclear_reporting",
+          "independent": true,
+          "note": "Relations of BRAF with nodal metastasis, multifocality, and stage were planned, but the abstract reports only diagnostic accuracy and does not give those association results."
+        },
+        {
+          "candidate_id": "C016-G64",
+          "pmid": "24713734",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A pyrosequencing lookup table was demonstrated on BRAF variants, including a melanoma mutation."
+        },
+        {
+          "candidate_id": "C016-G65",
+          "pmid": "25975689",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In surgical PTC, BRAF V600E was an independent predictor of central lymph-node metastasis."
+        },
+        {
+          "candidate_id": "C016-G66",
+          "pmid": "23687957",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In consecutive surgical PTC, larger tumor size and extrathyroidal extension were associated with BRAF V600E on univariate analysis."
+        },
+        {
+          "candidate_id": "C016-G67",
+          "pmid": "18089807",
+          "relation": "partial",
+          "independent": true,
+          "note": "A PLA2 pathway was studied in RET/PTC-transformed rat thyroid cells and distinguished from BRAF, not tested in patients."
+        },
+        {
+          "candidate_id": "C016-G68",
+          "pmid": "25349760",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This case report describes Langerhans-cell histiocytosis with metastatic PTC and does not test BRAF."
+        },
+        {
+          "candidate_id": "C016-G69",
+          "pmid": "23690767",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In PTC, BRAF mutation was more frequent in advanced TNM stage."
+        },
+        {
+          "candidate_id": "C016-G70",
+          "pmid": "24153240",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Second-line targeted therapy outcomes in advanced thyroid cancer were not stratified by BRAF V600E."
+        }
+      ]
+    },
+    {
+      "claim_id": "C017",
+      "followups": [
+        {
+          "candidate_id": "C017-G01",
+          "pmid": "18349132",
+          "relation": "not_test",
+          "independent": true,
+          "note": "MSX2 and Twist were studied in pancreatic cancer cells, not panitumumab efficacy in metastatic colorectal cancer."
+        },
+        {
+          "candidate_id": "C017-G02",
+          "pmid": "19309745",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This Markov cost model of metastatic colorectal regimens does not measure panitumumab benefit by KRAS status."
+        },
+        {
+          "candidate_id": "C017-G03",
+          "pmid": "18449496",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Gingerol cytotoxicity in tumor cell lines is unrelated to panitumumab in metastatic colorectal cancer."
+        },
+        {
+          "candidate_id": "C017-G04",
+          "pmid": "19384694",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a discussion of biomarker trial designs and reports no new panitumumab efficacy result."
+        },
+        {
+          "candidate_id": "C017-G05",
+          "pmid": "18413732",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Ribonucleotide-reductase overexpression was studied in a mouse lung-tumor model."
+        },
+        {
+          "candidate_id": "C017-G06",
+          "pmid": "25129084",
+          "relation": "partial",
+          "independent": true,
+          "note": "Panitumumab activity was described only in patients already selected for wild-type KRAS, with no mutant comparison."
+        },
+        {
+          "candidate_id": "C017-G07",
+          "pmid": "18632722",
+          "relation": "partial",
+          "independent": true,
+          "note": "EGFR expression and KRAS mutation were compared in colorectal tumors without any anti-EGFR treatment outcome."
+        },
+        {
+          "candidate_id": "C017-G08",
+          "pmid": "19213871",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A high-resolution melting assay for BRAF V600E was validated in colorectal tumors."
+        },
+        {
+          "candidate_id": "C017-G09",
+          "pmid": "19020799",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Germline RAS-pathway mutations were genotyped in Noonan syndrome."
+        },
+        {
+          "candidate_id": "C017-G10",
+          "pmid": "18394382",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a Noonan-syndrome case report of an SOS1 mutation."
+        },
+        {
+          "candidate_id": "C017-G11",
+          "pmid": "18448562",
+          "relation": "not_test",
+          "independent": true,
+          "note": "EGFR and KRAS were sequenced in synovial sarcoma and malignant peripheral nerve sheath tumors."
+        },
+        {
+          "candidate_id": "C017-G12",
+          "pmid": "27540971",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KRAS and BRAF mutation frequencies and methylation were surveyed in colorectal cancer without anti-EGFR treatment outcomes."
+        },
+        {
+          "candidate_id": "C017-G13",
+          "pmid": "18379349",
+          "relation": "not_test",
+          "independent": true,
+          "note": "MET copy number and KRAS were studied in non-small-cell lung cancer."
+        },
+        {
+          "candidate_id": "C017-G14",
+          "pmid": "20046576",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This commentary on improving antibody therapy does not report a KRAS-stratified panitumumab result."
+        },
+        {
+          "candidate_id": "C017-G15",
+          "pmid": "22802884",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of cetuximab trials by KRAS status and does not present a new patient measurement."
+        },
+        {
+          "candidate_id": "C017-G16",
+          "pmid": "18344688",
+          "relation": "not_test",
+          "independent": true,
+          "note": "let-7 was tested in KRAS-mutant mouse lung cancer."
+        },
+        {
+          "candidate_id": "C017-G17",
+          "pmid": "18946221",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF and KRAS were examined in hereditary pancreatitis tissue."
+        },
+        {
+          "candidate_id": "C017-G18",
+          "pmid": "19912113",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This commentary discusses KRAS as a biomarker and does not report a new efficacy cohort."
+        },
+        {
+          "candidate_id": "C017-G19",
+          "pmid": "19564929",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A metastatic score for hepatic versus peritoneal colorectal spread does not test panitumumab or KRAS."
+        },
+        {
+          "candidate_id": "C017-G20",
+          "pmid": "19461916",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a perspective on future colorectal-cancer treatment without a new KRAS efficacy analysis."
+        },
+        {
+          "candidate_id": "C017-G21",
+          "pmid": "19002263",
+          "relation": "not_test",
+          "independent": true,
+          "note": "CpG-island methylator phenotype was associated with BRAF and KRAS patterns in colorectal cancer, not with drug efficacy."
+        },
+        {
+          "candidate_id": "C017-G22",
+          "pmid": "18356293",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Myc and mutant Kras cooperation was studied in mouse mammary tumors."
+        },
+        {
+          "candidate_id": "C017-G23",
+          "pmid": "29443616",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a short commentary on adapting oncology practice and contains no efficacy data."
+        },
+        {
+          "candidate_id": "C017-G24",
+          "pmid": "26508446",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "In colorectal cancers treated with cetuximab or panitumumab, KRAS-pathway mutations predicted resistance and separated responders from nonresponders."
+        },
+        {
+          "candidate_id": "C017-G25",
+          "pmid": "18418018",
+          "relation": "not_test",
+          "independent": true,
+          "note": "EGFR and KRAS mutations were related to gefitinib response in Chinese non-small-cell lung cancer."
+        },
+        {
+          "candidate_id": "C017-G26",
+          "pmid": "26075314",
+          "relation": "partial",
+          "independent": true,
+          "note": "Panitumumab responses by KRAS status were measured by Raman imaging in cell lines, not in patients."
+        },
+        {
+          "candidate_id": "C017-G27",
+          "pmid": "27429047",
+          "relation": "partial",
+          "independent": true,
+          "note": "Panitumumab and trametinib were tested in biliary-tract carcinoma cell and xenograft models, a different disease from metastatic colorectal cancer."
+        },
+        {
+          "candidate_id": "C017-G28",
+          "pmid": "19384696",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This commentary on phase II oncology designs reports no panitumumab result."
+        },
+        {
+          "candidate_id": "C017-G29",
+          "pmid": "22461093",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This pharmacogenetics review mentions KRAS testing for anti-EGFR antibodies but presents no new cohort."
+        },
+        {
+          "candidate_id": "C017-G30",
+          "pmid": "19162309",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Single-agent cetuximab was tested in recurrent ovarian or peritoneal carcinoma."
+        },
+        {
+          "candidate_id": "C017-G31",
+          "pmid": "27085587",
+          "relation": "partial",
+          "independent": true,
+          "note": "Costs of panitumumab versus cetuximab were compared only in chemotherapy-resistant wild-type KRAS metastatic colorectal cancer, without a mutant arm."
+        },
+        {
+          "candidate_id": "C017-G32",
+          "pmid": "27555788",
+          "relation": "partial",
+          "independent": true,
+          "note": "Cetuximab-based therapy failure was linked to KRAS mutations in a small paired-sample series, but the regimen is combination therapy rather than panitumumab monotherapy."
+        },
+        {
+          "candidate_id": "C017-G33",
+          "pmid": "19343149",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This review covers adjuvant chemotherapy for nonmetastatic colorectal cancer."
+        },
+        {
+          "candidate_id": "C017-G34",
+          "pmid": "18651097",
+          "relation": "not_test",
+          "independent": true,
+          "note": "SOS1 mutations were mapped across Noonan and cardio-facio-cutaneous syndromes."
+        },
+        {
+          "candidate_id": "C017-G35",
+          "pmid": "18832458",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a commentary introducing KRAS as a negative predictive biomarker, without a new trial result."
+        },
+        {
+          "candidate_id": "C017-G36",
+          "pmid": "18413752",
+          "relation": "partial",
+          "independent": true,
+          "note": "EGFR-inhibitor sensitivity was tested in pancreatic-cancer xenografts, and EGFR, KRAS, and PIK3CA mutations did not explain response."
+        },
+        {
+          "candidate_id": "C017-G37",
+          "pmid": "19366444",
+          "relation": "partial",
+          "independent": true,
+          "note": "Cetuximab plus FOLFIRI was active in metastatic colorectal cancer, but KRAS status was not reported."
+        },
+        {
+          "candidate_id": "C017-G38",
+          "pmid": "18413814",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Gefitinib effects on aberrant crypt foci were studied in a rat colon-carcinogenesis model."
+        },
+        {
+          "candidate_id": "C017-G39",
+          "pmid": "22461092",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of pharmacogenetics in drug development."
+        },
+        {
+          "candidate_id": "C017-G40",
+          "pmid": "18379350",
+          "relation": "not_test",
+          "independent": true,
+          "note": "EGFR and KRAS changes were timed during pathogenesis of small lung adenocarcinomas."
+        },
+        {
+          "candidate_id": "C017-G41",
+          "pmid": "18413809",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A c-Met inhibitor was tested in KRAS-mutant mouse lung premalignancy."
+        },
+        {
+          "candidate_id": "C017-G42",
+          "pmid": "26379353",
+          "relation": "partial",
+          "independent": true,
+          "note": "KRAS codon 12 and 13 mutation frequency was measured in colorectal cancers that excluded recurrent and metastatic cases, with no treatment outcome."
+        },
+        {
+          "candidate_id": "C017-G43",
+          "pmid": "19351759",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Gene-expression matching suggested PI3K-pathway drugs for microsatellite-unstable colorectal cancer cell lines."
+        },
+        {
+          "candidate_id": "C017-G44",
+          "pmid": "19802373",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This review covers lung-cancer biomarkers."
+        },
+        {
+          "candidate_id": "C017-G45",
+          "pmid": "18600204",
+          "relation": "not_test",
+          "independent": true,
+          "note": "WNT2 and TSG101 expression were studied in colorectal carcinoma, with KRAS only as background."
+        },
+        {
+          "candidate_id": "C017-G46",
+          "pmid": "23064074",
+          "relation": "partial",
+          "independent": true,
+          "note": "Two wild-type KRAS metastatic colorectal cancers responded to panitumumab, with no mutant comparison."
+        },
+        {
+          "candidate_id": "C017-G47",
+          "pmid": "26566372",
+          "relation": "partial",
+          "independent": true,
+          "note": "Panitumumab monotherapy produced disease control in heavily pretreated patients already selected for KRAS exon 2 wild type."
+        },
+        {
+          "candidate_id": "C017-G48",
+          "pmid": "19229368",
+          "relation": "not_test",
+          "independent": true,
+          "note": "These are recommendations for managing EGFR-inhibitor skin rash, not an efficacy comparison by KRAS."
+        },
+        {
+          "candidate_id": "C017-G49",
+          "pmid": "27144068",
+          "relation": "partial",
+          "independent": true,
+          "note": "Second-line panitumumab monotherapy was given only to wild-type KRAS exon 2 metastatic colorectal cancer, so confinement of benefit to wild type was not tested."
+        },
+        {
+          "candidate_id": "C017-G50",
+          "pmid": "19240792",
+          "relation": "not_test",
+          "independent": true,
+          "note": "An allele-specific PCR method for mutation detection is described without a treatment cohort."
+        },
+        {
+          "candidate_id": "C017-G51",
+          "pmid": "23885463",
+          "relation": "partial",
+          "independent": true,
+          "note": "KRAS mutation was compared with amphiregulin and epiregulin staining in colon cancer tissue, not with panitumumab efficacy."
+        },
+        {
+          "candidate_id": "C017-G52",
+          "pmid": "20856723",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This ASCO provisional opinion summarizes existing trials and does not report a new patient measurement."
+        },
+        {
+          "candidate_id": "C017-G53",
+          "pmid": "18334834",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Gefitinib and EGFR knockdown were studied in lung adenocarcinoma."
+        },
+        {
+          "candidate_id": "C017-G54",
+          "pmid": "26807232",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KRAS mutation prevalence was measured in hepatocellular carcinoma, with cetuximab mentioned only as a speculation."
+        },
+        {
+          "candidate_id": "C017-G55",
+          "pmid": "23091721",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of anti-EGFR antibodies in colorectal cancer and does not add a new efficacy cohort."
+        },
+        {
+          "candidate_id": "C017-G56",
+          "pmid": "18392710",
+          "relation": "not_test",
+          "independent": true,
+          "note": "KRAS mutations in pancreatic juice were related to mucin hypersecretion in intraductal papillary mucinous neoplasms."
+        },
+        {
+          "candidate_id": "C017-G57",
+          "pmid": "25800101",
+          "relation": "not_test",
+          "independent": true,
+          "note": "These are laboratory guidelines for RAS testing before anti-EGFR therapy, not a new efficacy study."
+        },
+        {
+          "candidate_id": "C017-G58",
+          "pmid": "27736842",
+          "relation": "direct_support",
+          "independent": true,
+          "note": "Panitumumab plus best supportive care improved survival versus best supportive care in wild-type KRAS metastatic colorectal cancer, and patients with RAS mutations did not benefit."
+        },
+        {
+          "candidate_id": "C017-G59",
+          "pmid": "18544172",
+          "relation": "partial",
+          "independent": true,
+          "note": "Cetuximab was given with irinotecan rather than as panitumumab monotherapy, and objective benefit was still seen in some KRAS-mutant tumors."
+        },
+        {
+          "candidate_id": "C017-G60",
+          "pmid": "27081524",
+          "relation": "partial",
+          "independent": true,
+          "note": "A transcriptomic pathway score was used to predict cetuximab response, which is a different selector from KRAS wild-type versus mutant efficacy."
+        }
+      ]
+    },
+    {
+      "claim_id": "C021",
+      "followups": [
+        {
+          "candidate_id": "C021-G01",
+          "pmid": "18787396",
+          "relation": "not_test",
+          "independent": true,
+          "note": "B-Raf knockdown affected mitotic spindles in human somatic cells, not C-MYC suppression of BRAF-induced melanocyte senescence."
+        },
+        {
+          "candidate_id": "C021-G02",
+          "pmid": "23855428",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF and NRAS mutations were related to survival in metastatic melanoma, without a melanocyte senescence experiment."
+        },
+        {
+          "candidate_id": "C021-G03",
+          "pmid": "21646373",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A PARP-1 and NF-\u03baB secretome was described in senescent melanoma cells."
+        },
+        {
+          "candidate_id": "C021-G04",
+          "pmid": "18753363",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Copy-number changes and BRAF were studied in anaplastic thyroid carcinoma."
+        },
+        {
+          "candidate_id": "C021-G05",
+          "pmid": "18946221",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF and KRAS mutations were examined in hereditary pancreatitis."
+        },
+        {
+          "candidate_id": "C021-G06",
+          "pmid": "22253648",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of omics applications in melanoma research."
+        },
+        {
+          "candidate_id": "C021-G07",
+          "pmid": "18782444",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF, KRAS, and PIK3CA mutations were timed in colorectal polyps and cancers."
+        },
+        {
+          "candidate_id": "C021-G08",
+          "pmid": "19050761",
+          "relation": "not_test",
+          "independent": true,
+          "note": "IQGAP1 and b-Raf signaling were studied in endothelial angiogenesis."
+        },
+        {
+          "candidate_id": "C021-G09",
+          "pmid": "19946210",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A pseudo-DNA-damage response was described in senescent cells without BRAF or C-MYC in melanocytes."
+        },
+        {
+          "candidate_id": "C021-G10",
+          "pmid": "26028035",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Coexpression of BRAF V600E and KRAS G12D increased senescence in mouse lung and fibroblasts, without testing C-MYC."
+        },
+        {
+          "candidate_id": "C021-G11",
+          "pmid": "24934810",
+          "relation": "partial",
+          "independent": true,
+          "note": "MYC suppressed BRAF V600E-associated senescence in a mouse lung-adenoma model, which is a different species and tissue from normal human melanocytes."
+        },
+        {
+          "candidate_id": "C021-G12",
+          "pmid": "27634195",
+          "relation": "not_test",
+          "independent": true,
+          "note": "New small molecules were screened as BRAF V600E kinase inhibitors in melanoma cell lines."
+        },
+        {
+          "candidate_id": "C021-G13",
+          "pmid": "20606252",
+          "relation": "not_test",
+          "independent": true,
+          "note": "mTOR status chose between p53-driven senescence and quiescence, without BRAF or melanocyte C-MYC overexpression."
+        },
+        {
+          "candidate_id": "C021-G14",
+          "pmid": "18790768",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Cyclin D1 amplification was linked to BRAF-inhibitor resistance in melanoma cell lines."
+        },
+        {
+          "candidate_id": "C021-G15",
+          "pmid": "26787892",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A BRAF V600E\u2013MAFG pathway was shown to silence genes in colorectal cancer and melanoma."
+        },
+        {
+          "candidate_id": "C021-G16",
+          "pmid": "21037952",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This review discusses MYC inactivation and tumor regression across cancer types."
+        },
+        {
+          "candidate_id": "C021-G17",
+          "pmid": "19156217",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Bmi1 was required for growth of RAF-driven mouse lung cancer."
+        },
+        {
+          "candidate_id": "C021-G18",
+          "pmid": "18757433",
+          "relation": "not_test",
+          "independent": true,
+          "note": "RET/PTC versus BRAF was compared in atomic-bomb-associated papillary thyroid cancer."
+        },
+        {
+          "candidate_id": "C021-G19",
+          "pmid": "26456083",
+          "relation": "not_test",
+          "independent": true,
+          "note": "c-Met feedback was studied as resistance to BRAF inhibition in thyroid cancer cells."
+        },
+        {
+          "candidate_id": "C021-G20",
+          "pmid": "27135738",
+          "relation": "partial",
+          "independent": true,
+          "note": "Mutant Ezh2 accelerated mouse melanocyte tumors when combined with mutant Braf, which is a mouse melanoma-initiation experiment rather than C-MYC senescence suppression in normal human melanocytes."
+        },
+        {
+          "candidate_id": "C021-G21",
+          "pmid": "26710785",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Driver-mutation spectra were compared across melanoma subtypes."
+        },
+        {
+          "candidate_id": "C021-G22",
+          "pmid": "18765826",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Genetic variants including MYC and BRAF were associated with carboplatin cytotoxicity in HapMap cell lines."
+        },
+        {
+      "candidate_id": "C021-G23",
+      "pmid": "21822300",
+      "relation": "partial",
+      "independent": true,
+      "note": "PP2A-B56\u03b1 depletion in normal human melanocytes raised C-MYC and suppressed BRAF(V600E) senescence more than NRAS(Q61R) senescence, but C-MYC overexpression was not the intervention."
+        },
+        {
+          "candidate_id": "C021-G24",
+          "pmid": "18670349",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Wnt-pathway and KRAS or BRAF mutations were profiled in duodenal adenomas."
+        },
+        {
+          "candidate_id": "C021-G25",
+          "pmid": "26892809",
+          "relation": "not_test",
+          "independent": true,
+          "note": "CAS exportin and BRAF V600E were studied in thyroid carcinoma growth."
+        },
+        {
+          "candidate_id": "C021-G26",
+          "pmid": "27179656",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF knockdown slowed but did not arrest proliferation of BRAF-mutant thyroid carcinoma cell lines."
+        },
+        {
+          "candidate_id": "C021-G27",
+          "pmid": "18636014",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Histology of BRAF V600E lung adenocarcinoma is unrelated to melanocyte senescence."
+        },
+        {
+          "candidate_id": "C021-G28",
+          "pmid": "21998308",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Metabolic flux was compared between melanocytes and melanoma cell lines."
+        },
+        {
+          "candidate_id": "C021-G29",
+          "pmid": "18757405",
+          "relation": "not_test",
+          "independent": true,
+          "note": "PIK3CA mutations and copy number were studied in lung cancer."
+        },
+        {
+          "candidate_id": "C021-G30",
+          "pmid": "20454512",
+          "relation": "not_test",
+          "independent": true,
+          "note": "TCEAL7 inhibition of c-Myc was studied in alternative lengthening of telomeres, not in BRAF-mutant melanocytes."
+        },
+        {
+          "candidate_id": "C021-G31",
+          "pmid": "24885690",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Dabrafenib sensitivity was compared in BRAF-targeted colorectal cancer cell clones."
+        },
+        {
+          "candidate_id": "C021-G32",
+          "pmid": "18794153",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Nanoliposomal siRNA against BRAF V600E and Akt3 reduced melanocytic lesions, without a C-MYC senescence test."
+        },
+        {
+          "candidate_id": "C021-G33",
+          "pmid": "26695089",
+          "relation": "not_test",
+          "independent": true,
+          "note": "VE1 immunohistochemistry was compared with BRAF genotyping in melanoma."
+        },
+        {
+          "candidate_id": "C021-G34",
+          "pmid": "27354627",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Resveratrol was tested against vemurafenib-resistant BRAF-mutant melanoma cells."
+        },
+        {
+          "candidate_id": "C021-G35",
+          "pmid": "20157537",
+          "relation": "partial",
+          "independent": true,
+          "note": "Oncogene-induced senescence was dissected in human melanocytes after N-RAS activation, without testing C-MYC overexpression against BRAF V600E."
+        },
+        {
+          "candidate_id": "C021-G36",
+          "pmid": "25835050",
+          "relation": "partial",
+          "independent": true,
+          "note": "c-Myc protein changes were tied to drug sensitivity in melanoma cell lines, not to senescence escape in normal melanocytes."
+        },
+        {
+          "candidate_id": "C021-G37",
+          "pmid": "26504080",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E increased tissue factor and melanoma transmigration across endothelium."
+        },
+        {
+          "candidate_id": "C021-G38",
+          "pmid": "27247367",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Melanocyte density and BRAF staining were used to assess anorectal melanoma margins."
+        },
+        {
+          "candidate_id": "C021-G39",
+          "pmid": "26790143",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A p53 activator was combined with vemurafenib in BRAF-mutant melanoma."
+        },
+        {
+          "candidate_id": "C021-G40",
+          "pmid": "20647308",
+          "relation": "not_test",
+          "independent": true,
+          "note": "MYC addiction was studied in ovarian cancer cell lines."
+        },
+        {
+          "candidate_id": "C021-G41",
+          "pmid": "26959890",
+          "relation": "not_test",
+          "independent": true,
+          "note": "MAPK hyperactivation caused growth arrest in BRAF V600E cancer cells."
+        },
+        {
+          "candidate_id": "C021-G42",
+          "pmid": "27009410",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF mutations were characterized in conjunctival melanoma."
+        },
+        {
+          "candidate_id": "C021-G43",
+          "pmid": "27791198",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Coexisting BRAF and NRAS mutations were studied in resistant melanoma."
+        },
+        {
+          "candidate_id": "C021-G44",
+          "pmid": "27490749",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A cantilever assay detected BRAF V600E in melanoma biopsy RNA."
+        },
+        {
+          "candidate_id": "C021-G45",
+          "pmid": "27488963",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This case report describes a primary noncutaneous breast melanoma with BRAF V600E."
+        },
+        {
+          "candidate_id": "C021-G46",
+          "pmid": "19805545",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A noncatalytic ERK function was implicated in Raf/MEK growth arrest in tumor cell lines."
+        },
+        {
+          "candidate_id": "C021-G47",
+          "pmid": "19805117",
+          "relation": "partial",
+          "independent": true,
+          "note": "TYRO3, not C-MYC, bypassed BRAF V600E-induced senescence in primary melanocytes."
+        },
+        {
+          "candidate_id": "C021-G48",
+          "pmid": "19403560",
+          "relation": "partial",
+          "independent": true,
+          "note": "Forced c-Myc helped primary cells escape FGFR2-mutant senescence, which is a different oncogene and cell context from BRAF V600E in normal human melanocytes."
+        },
+        {
+          "candidate_id": "C021-G49",
+          "pmid": "26630683",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600 concordance between primary and metastatic melanoma was compared by pyrosequencing and immunohistochemistry."
+        },
+        {
+          "candidate_id": "C021-G50",
+          "pmid": "27906130",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF phosphorylation of PAX3 was studied in mouse limb-muscle precursors."
+        },
+        {
+          "candidate_id": "C021-G51",
+          "pmid": "21555587",
+          "relation": "partial",
+          "independent": true,
+          "note": "MYC allowed mammary epithelial cells to keep proliferating after oncogenic RAS, not after BRAF V600E in melanocytes."
+        },
+        {
+          "candidate_id": "C021-G52",
+          "pmid": "27488807",
+          "relation": "not_test",
+          "independent": true,
+          "note": "VE1 immunohistochemistry was compared with sequencing for BRAF V600E in Taiwanese melanoma."
+        },
+        {
+          "candidate_id": "C021-G53",
+          "pmid": "27855847",
+          "relation": "not_test",
+          "independent": true,
+          "note": "p15 staining was compared between nevi and melanomas as a senescence marker, without a C-MYC intervention."
+        },
+        {
+          "candidate_id": "C021-G54",
+          "pmid": "26341689",
+          "relation": "partial",
+          "independent": true,
+          "note": "Rac1b, not C-MYC, reversed BRAF V600E-induced senescence in colon epithelial cells."
+        },
+        {
+          "candidate_id": "C021-G55",
+          "pmid": "27073540",
+          "relation": "not_test",
+          "independent": true,
+          "note": "This is a review of BRAF mutations in thyroid carcinoma."
+        },
+        {
+          "candidate_id": "C021-G56",
+          "pmid": "18563700",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Signaling for ephrin-A5 growth-cone collapse was studied in hippocampal neurons."
+        },
+        {
+          "candidate_id": "C021-G57",
+          "pmid": "27151331",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Antibodies detecting BRAF V600E and NRAS Q61 variants were validated in metastatic melanoma."
+        },
+        {
+          "candidate_id": "C021-G58",
+          "pmid": "21479466",
+          "relation": "not_test",
+          "independent": true,
+          "note": "AKT1 and AKT2 mutations were sequenced in Japanese lung cancer."
+        },
+        {
+          "candidate_id": "C021-G59",
+          "pmid": "22544318",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BIN1 downregulation was studied in SNF5-deficient rhabdoid tumors."
+        },
+        {
+          "candidate_id": "C021-G60",
+          "pmid": "19079609",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E initiated mouse prostate adenocarcinoma but was not required to maintain it."
+        },
+        {
+          "candidate_id": "C021-G61",
+          "pmid": "27503890",
+          "relation": "partial",
+          "independent": true,
+          "note": "Escape from H-Ras and B-Raf oncogene-induced senescence involved c-Myc-dependent hTERT, but the cells were not normal human melanocytes and NRAS was not compared."
+        },
+        {
+          "candidate_id": "C021-G62",
+          "pmid": "25074438",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Aurora-kinase inhibition was combined with BRAF and MEK inhibitors in a melanoma cell line."
+        },
+        {
+          "candidate_id": "C021-G63",
+          "pmid": "18716556",
+          "relation": "not_test",
+          "independent": true,
+          "note": "Chromosome 7q34 gain involving BRAF was found in pilocytic astrocytoma."
+        },
+        {
+          "candidate_id": "C021-G64",
+          "pmid": "19845874",
+          "relation": "not_test",
+          "independent": true,
+          "note": "SKI knockdown restored TGF-beta suppression of c-MYC in melanoma xenografts, not BRAF-induced senescence in normal melanocytes."
+        },
+        {
+          "candidate_id": "C021-G65",
+          "pmid": "19966300",
+          "relation": "partial",
+          "independent": true,
+          "note": "Myc phosphorylation by Cdk2 was required to repress Ras-induced senescence in rodent cotransformation, not BRAF V600E senescence in normal human melanocytes."
+        },
+        {
+          "candidate_id": "C021-G66",
+          "pmid": "26451873",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A BRAF-peptide dendritic-cell vaccine was tested in BRAF-mutant mouse melanoma."
+        },
+        {
+          "candidate_id": "C021-G67",
+          "pmid": "19679545",
+          "relation": "not_test",
+          "independent": true,
+          "note": "DEK knockdown caused senescence and chemosensitivity in melanoma cells."
+        },
+        {
+          "candidate_id": "C021-G68",
+          "pmid": "18718023",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF V600E and MLH1 were related to microsatellite-unstable colorectal cancer across populations."
+        },
+        {
+          "candidate_id": "C021-G69",
+          "pmid": "18794094",
+          "relation": "not_test",
+          "independent": true,
+          "note": "BRAF and KRAS polymorphisms were associated with ovarian-cancer survival."
+        },
+        {
+          "candidate_id": "C021-G70",
+          "pmid": "18790789",
+          "relation": "not_test",
+          "independent": true,
+          "note": "FLT-PET imaged proliferation after MEK inhibition in melanoma and colon xenografts."
+        },
+        {
+          "candidate_id": "C021-G71",
+          "pmid": "26782803",
+          "relation": "not_test",
+          "independent": true,
+          "note": "A BRAF-positive thyroid aspirate proved to be Langerhans-cell histiocytosis rather than papillary carcinoma."
+        },
+        {
+          "candidate_id": "C021-G72",
+          "pmid": "27793752",
+          "relation": "not_test",
+          "independent": true,
+          "note": "CPT1A knockdown altered metabolism in BRAF V600E melanoma cells."
+        },
+        {
+          "candidate_id": "C021-G73",
+          "pmid": "26065894",
+          "relation": "not_test",
+          "independent": true,
+          "note": "MIG-6 feedback from BRAF V600E toward EGFR was studied in transformation assays and thyroid cancers."
+        },
+        {
+          "candidate_id": "C021-G74",
+          "pmid": "27041702",
+          "relation": "not_test",
+          "independent": true,
+          "note": "CastPCR quantified BRAF V600E circulating DNA in melanoma patients."
+        },
+        {
+          "candidate_id": "C021-G75",
+          "pmid": "19002263",
+          "relation": "not_test",
+          "independent": true,
+          "note": "CpG-island methylator phenotype was profiled in colorectal cancer."
+        },
+        {
+          "candidate_id": "C021-G76",
+          "pmid": "21423768",
+          "relation": "not_test",
+          "independent": true,
+          "note": "EBV Rta-induced cell-cycle arrest and viral reactivation were studied in 293 cells."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1555 @@
+{
+  "seed": 20260927,
+  "per_year": 8,
+  "source_years": [
+    2006,
+    2014
+  ],
+  "outcomes_consulted": false,
+  "n": 72,
+  "papers": [
+    {
+      "pmid": "16372351",
+      "year": 2006,
+      "date": "2006-01-01",
+      "title": "HRAS mutations in Costello syndrome: detection of constitutional activating mutations in codon 12 and 13 and loss of wild-type allele in malignancy.",
+      "abstract": "Costello syndrome (CS) is a complex developmental disorder involving characteristic craniofacial features, failure to thrive, developmental delay, cardiac and skeletal anomalies, and a predisposition to develop neoplasia. Based on similarities with other cancer syndromes, we previously hypothesized that CS is likely due to activation of signal transduction through the Ras/MAPK pathway [Tartaglia et al., 2003]. In this study, the HRAS coding region was sequenced for mutations in a large, well-characterized cohort of 36 CS patients. Heterogeneous missense point mutations predicting an amino acid substitution were identified in 33/36 (92%) patients. The majority (91%) had a 34G --> A transition in codon 12. Less frequent mutations included 35G --> C (codon 12) and 37G --> T (codon 13). Parental samples did not have an HRAS mutation supporting the hypothesis of de novo heterogeneous mutations. There is phenotypic variability among patients with a 34G --> A transition. The most consistent features included characteristic facies and skin, failure to thrive, developmental delay, musculoskeletal abnormalities, visual impairment, cardiac abnormalities, and generalized hyperpigmentation. The two patients with 35G --> C had cardiac arrhythmias whereas one patient with a 37G --> T transversion had an enlarged aortic root. Of the patients with a clinical diagnosis of CS, neoplasia was the most consistent phenotypic feature for predicating an HRAS mutation. To gain an understanding of the relationship between constitutional HRAS mutations and malignancy, HRAS was sequenced in an advanced biphasic rhabdomyosarcoma/fibrosarcoma from an individual with a 34G --> A mutation. Loss of the wild-type HRAS allele was observed, suggesting tumorigenesis in CS patients is accompanied by additional somatic changes affecting HRAS. Finally, due to phenotypic overlap between CS and cardio-facio-cutaneous (CFC) syndromes, the HRAS coding region was sequenced in a well-characterized CFC cohort. No mutations were found which support a distinct genetic etiology between CS and CFC syndromes.",
+      "genes": [
+        "HRAS"
+      ],
+      "drugs": [],
+      "diseases": [],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "American journal of medical genetics. Part A"
+    },
+    {
+      "pmid": "16533790",
+      "year": 2006,
+      "date": "2006-03-01",
+      "title": "BRAF is a therapeutic target in aggressive thyroid carcinoma.",
+      "abstract": "PurposeOncogenic conversion of BRAF occurs in approximately 44% of papillary thyroid carcinomas and 24% of anaplastic thyroid carcinomas. In papillary thyroid carcinomas, this mutation is associated with an unfavorable clinicopathologic outcome. Our aim was to exploit BRAF as a potential therapeutic target for thyroid carcinoma.Experimental designWe used RNA interference to evaluate the effect of BRAF knockdown in the human anaplastic thyroid carcinoma cell lines FRO and ARO carrying the BRAF V600E (V600EBRAF) mutation. We also exploited the effect of BAY 43-9006 [N-(3-trifluoromethyl-4-chlorophenyl)-N'-(4-(2-methylcarbamoyl pyridin-4-yl)oxyphenyl)urea], a multikinase inhibitor able to inhibit RAF family kinases in a panel of six (V600E)BRAF-positive thyroid carcinoma cell lines and in nude mice bearing ARO cell xenografts. Statistical tests were two sided.ResultsKnockdown of BRAF by small inhibitory duplex RNA, but not control small inhibitory duplex RNA, inhibited the mitogen-activated protein kinase signaling cascade and the growth of ARO and FRO cells (P ConclusionsBRAF provides signals crucial for proliferation of thyroid carcinoma cells spontaneously harboring the (V600E)BRAF mutation and, therefore, BRAF suppression might have therapeutic potential in (V600E)BRAF-positive thyroid cancer.",
+      "genes": [
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "thyroid cancer"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article"
+      ],
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research"
+    },
+    {
+      "pmid": "16731745",
+      "year": 2006,
+      "date": "2006-05-01",
+      "title": "Multiple signaling pathways must be targeted to overcome drug resistance in cell lines derived from melanoma metastases.",
+      "abstract": "Although >66% of melanomas harbor activating mutations in BRAF and exhibit constitutive activity in the mitogen-activated protein kinase/extracellular signal-regulated kinase kinase (MEK)/extracellular signal-regulated kinase signaling pathway, it is unclear how effective MEK inhibition will be as a sole therapeutic strategy for melanoma. We investigated the anticancer activity of MEK inhibition in a panel of cell lines derived from radial growth phase (WM35) and vertical growth phase (WM793) of primary melanomas and metastatic melanomas (1205Lu, 451Lu, WM164, and C8161) in a three-dimensional spheroid model and found that the metastatic lines were completely resistant to MEK inhibition (U0126 and PD98059) but the earlier stage cell lines were not. Similarly, these same metastatic melanoma lines were also resistant to inhibitors of the phosphatidylinositol 3-kinase/Akt pathway (LY294002 and wortmannin). Under adherent culture conditions, the MEK inhibitors blocked growth through the induction of cell cycle arrest and up-regulation of p27, but this was readily reversible following inhibitor washout. However, when the phosphatidylinositol 3-kinase and MEK inhibitors were combined, the growth and invasion of the metastatic melanoma three-dimensional spheroids were blocked. Taken together, these results suggest that the most aggressive melanomas are resistant to strategies targeting one signaling pathway and that multiple signaling pathways may need to be targeted for maximal therapeutic efficacy. It is further suggested that BRAF mutational status is not predictive of response to MEK inhibition under three-dimensional culture conditions.",
+      "genes": [
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "melanoma"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Molecular cancer therapeutics"
+    },
+    {
+      "pmid": "16773572",
+      "year": 2006,
+      "date": "2006-05-01",
+      "title": "Germline missense mutations affecting KRAS Isoform B are associated with a severe Noonan syndrome phenotype.",
+      "abstract": "Noonan syndrome (NS) is a developmental disorder characterized by short stature, facial dysmorphia, congenital heart disease, and multiple skeletal and hematologic defects. NS is an autosomal dominant trait and is genetically heterogeneous. Gain of function of SHP-2, a protein tyrosine phosphatase that positively modulates RAS signaling, is observed in nearly 50% of affected individuals. Here, we report the identification of heterozygous KRAS gene mutations in two subjects exhibiting a severe NS phenotype with features overlapping those of cardiofaciocutaneous and Costello syndromes. Both mutations were de novo and affected exon 6, which encodes the C-terminal portion of KRAS isoform B but does not contribute to KRAS isoform A. Structural analysis indicated that both substitutions (Val152Gly and Asp153Val) perturb the conformation of the guanine ring-binding pocket of the protein, predicting an increase in the guanine diphosphate/guanine triphosphate (GTP) dissociation rate that would favor GTP binding to the KRASB isoform and bypass the requirement for a guanine nucleotide exchange factor.",
+      "genes": [
+        "KRAS"
+      ],
+      "drugs": [],
+      "diseases": [
+        "Noonan syndrome"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article",
+        "case-report"
+      ],
+      "journal": "American journal of human genetics"
+    },
+    {
+      "pmid": "16827748",
+      "year": 2006,
+      "date": "2006-08-01",
+      "title": "Metastatic potential of melanomas defined by specific gene expression profiles with no BRAF signature.",
+      "abstract": "The molecular biology of metastatic potential in melanoma has been studied many times previously and changes in the expression of many genes have been linked to metastatic behaviour. What is lacking is a systematic characterization of the regulatory relationships between genes whose expression is related to metastatic potential. Such a characterization would produce a molecular taxonomy for melanoma which could feasibly be used to identify epigenetic mechanisms behind changes in metastatic behaviour. To achieve this we carried out three separate DNA microarray analyses on a total of 86 cultures of melanoma. Significantly, multiple testing correction revealed that previous reports describing correlations of gene expression with activating mutations in BRAF or NRAS were incorrect and that no gene expression patterns correlate with the mutation status of these MAPK pathway components. Instead, we identified three different sample cohorts (A, B and C) and found that these cohorts represent melanoma groups of differing metastatic potential. Cohorts A and B were susceptible to transforming growth factor-beta (TGFbeta)-mediated inhibition of proliferation and had low motility. Cohort C was resistant to TGFbeta and demonstrated high motility. Meta-analysis of the data against previous studies linking gene expression and phenotype confirmed that cohorts A and C represent transcription signatures of weakly and strongly metastatic melanomas, respectively. Gene expression co-regulation suggested that signalling via TGFbeta-type and Wnt/beta-catenin pathways underwent considerable change between cohorts. These results suggest a model for the transition from weakly to strongly metastatic melanomas in which TGFbeta-type signalling upregulates genes expressing vasculogenic/extracellular matrix remodelling factors and Wnt signal inhibitors, coinciding with a downregulation of genes downstream of Wnt signalling.",
+      "genes": [
+        "NRAS",
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "melanoma"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Pigment cell research"
+    },
+    {
+      "pmid": "16880792",
+      "year": 2006,
+      "date": "2006-08-01",
+      "title": "Cellular senescence in naevi and immortalisation in melanoma: a role for p16?",
+      "abstract": "Cellular senescence, the irreversible proliferative arrest seen in somatic cells after a limited number of divisions, is considered a crucial barrier to cancer, but direct evidence for this in vivo was lacking until recently. The best-known form of human cell senescence is attributed to telomere shortening and a DNA-damage response through p53 and p21. There is also a more rapid form of senescence, dependent on the p16-retinoblastoma pathway. p16 (CDKN2A) is a known melanoma susceptibility gene. Here, we use retrovirally mediated gene transfer to confirm that the normal form of senescence in cultured human melanocytes involves p16, since disruption of the p16/retinoblastoma pathway is required as well as telomerase activation for immortalisation. Expression (immunostaining) patterns of senescence mediators and markers in melanocytic lesions provide strong evidence that cell senescence occurs in benign melanocytic naevi (moles) in vivo and does not involve p53 or p21 upregulation, although p16 is widely expressed. In comparison, dysplastic naevi and early (radial growth-phase, RGP) melanomas show less p16 and some p53 and p21 immunostaining. All RGP melanomas expressed p21, suggesting areas of p53-mediated senescence, while most areas of advanced (vertical growth-phase) melanomas lacked both p16 and p21, implying escape from both forms of senescence (immortalisation). Moreover, nuclear p16 but not p21 expression can be induced in human melanocytes by oncogenic BRAF, as found in around 80% of naevi. We conclude that cell senescence can form a barrier to melanoma development. This also provides a potential explanation of why p16 is a melanoma suppressor gene.",
+      "genes": [
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "melanoma"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "journal": "British journal of cancer"
+    },
+    {
+      "pmid": "16964246",
+      "year": 2006,
+      "date": "2006-09-10",
+      "title": "Anti-oncogenic role of the endoplasmic reticulum differentially activated by mutations in the MAPK pathway.",
+      "abstract": "Dysfunction of the endoplasmic reticulum (ER) has been reported in a variety of human pathologies, including cancer. However, the contribution of the ER to the early stages of normal cell transformation is largely unknown. Using primary human melanocytes and biopsies of human naevi (moles), we show that the extent of ER stress induced by cellular oncogenes may define the mechanism of activation of premature senescence. Specifically, we found that oncogenic forms of HRAS (HRAS(G12V)) but not its downstream target BRAF (BRAF(V600E)), engaged a rapid cell-cycle arrest that was associated with massive vacuolization and expansion of the ER. However, neither p53, p16(INK4a) nor classical senescence markers--such as foci of heterochromatin or DNA damage--were able to account for the specific response of melanocytes to HRAS(G12V). Instead, HRAS(G12V)-driven senescence was mediated by the ER-associated unfolded protein response (UPR). The impact of HRAS on the UPR was selective, as it was poorly induced by activated NRAS (more frequently mutated in melanoma than HRAS). These results argue against premature senescence as a converging mechanism of response to activating oncogenes and support a direct role of the ER as a gatekeeper of tumour control.",
+      "genes": [
+        "NRAS",
+        "HRAS",
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "melanoma"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Nature cell biology"
+    },
+    {
+      "pmid": "17075123",
+      "year": 2006,
+      "date": "2006-11-01",
+      "title": "Molecular predictors of outcome with gefitinib in a phase III placebo-controlled study in advanced non-small-cell lung cancer.",
+      "abstract": "PurposeThe phase III Iressa Survival Evaluation in Lung Cancer (ISEL) trial compared gefitinib with placebo in 1,692 patients with refractory advanced non-small-cell lung cancer. We analyzed ISEL tumor biopsy samples to examine relationships between biomarkers and clinical outcome after gefitinib treatment in a placebo-controlled setting.MethodsBiomarkers included epidermal growth factor receptor (EGFR) gene copy number by fluorescence in situ hybridization (n = 370); EGFR (n = 379) and phosphorylated Akt (p-Akt) protein expression (n = 382) by immunohistochemistry; and mutations in EGFR (n = 215), KRAS (n = 152), and BRAF (n = 118).ResultsHigh EGFR gene copy number was a predictor of a gefitinib-related effect on survival (hazard ratio [HR], 0.61 for high copy number and HR, 1.16 for low copy number; comparison of high v low copy number HR, P = .045). EGFR protein expression was also related to clinical outcome (HR for positive, 0.77; HR for negative, 1.57; comparison of high v low protein expression HR, P = .049). Patients with EGFR mutations had higher response rates than patients without EGFR mutations (37.5% v 2.6%); there were insufficient data for survival analysis. No relationship was observed between p-Akt protein expression and survival outcome, and the limited amount of data collected for KRAS and BRAF mutations prevented any meaningful evaluation of clinical outcomes in relation to these mutations.ConclusionEGFR gene copy number was a predictor of clinical benefit from gefitinib in ISEL. Additional studies are warranted to assess these biomarkers fully for the identification of patients most likely to benefit from gefitinib treatment.",
+      "genes": [
+        "KRAS",
+        "BRAF",
+        "EGFR"
+      ],
+      "drugs": [
+        "gefitinib"
+      ],
+      "diseases": [],
+      "pub_types": [
+        "Clinical Trial, Phase III",
+        "Controlled Clinical Trial",
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology"
+    },
+    {
+      "pmid": "17317846",
+      "year": 2007,
+      "date": "2007-02-01",
+      "title": "Suppression of BRAF/MEK/MAP kinase pathway restores expression of iodide-metabolizing genes in thyroid cells expressing the V600E BRAF mutant.",
+      "abstract": "PurposeThe V600E BRAF mutant plays an important role in the pathogenesis of papillary thyroid cancer (PTC) and is associated with loss of expression of thyroid iodide-metabolizing genes. This study was done to investigate the restorability of expression of these genes by suppressing the BRAF/extracellular signal-regulated kinase kinase (MEK)/mitogen-activated protein (MAP) kinase pathway in V600E BRAF-harboring thyroid cells and to explore the mechanisms involved.Experimental designWe used inducible expression of V600E BRAF, small interfering RNA transfection, and MEK-specific inhibitor to alter the MAP kinase pathway activities and subsequently examined the changes in expression, promoter activities, and methylation status of thyroid genes.ResultsMEK inhibitor U0126 or cessation of V600E BRAF expression in PCCL3 cells restored expression of thyroid genes silenced by induced expression of V600E BRAF. U0126 also restored the expression of these genes in V600E BRAF-harboring PTC-derived NPA cells. Knockdown of BRAF by specific small interfering RNA restored expression of some of these genes in NPA cells. Luciferase reporter assay using thyroid-stimulating hormone receptor gene as a model showed that the promoter activity was modulated by the MAP kinase pathway. Promoter methylation in association with DNA methyltransferase expression played a role in gene silencing by MAP kinase pathway in NPA cells.ConclusionsWe showed the restorability of expression of thyroid iodide-metabolizing genes silenced by V600E BRAF, and linked this process to gene methylation in PTC cells. The results provide clinical implications that therapeutic targeting at the BRAF/MEK/MAP kinase pathway may be a good approach in restoring thyroid gene expression for effective radioiodine therapy for BRAF mutation-harboring PTC.",
+      "genes": [
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "thyroid cancer"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research"
+    },
+    {
+      "pmid": "17322877",
+      "year": 2007,
+      "date": "2007-02-25",
+      "title": "An RNA G-quadruplex in the 5' UTR of the NRAS proto-oncogene modulates translation.",
+      "abstract": "Guanine-rich nucleic acid sequences can adopt noncanonical four-stranded secondary structures called guanine (G)-quadruplexes. Bioinformatics analysis suggests that G-quadruplex motifs are prevalent in genomes, which raises the need to elucidate their function. There is now evidence for the existence of DNA G-quadruplexes at telomeres with associated biological function. A recent hypothesis supports the notion that gene promoter elements contain DNA G-quadruplex motifs that control gene expression at the transcriptional level. We discovered a highly conserved, thermodynamically stable RNA G-quadruplex in the 5' untranslated region (UTR) of the gene transcript of the human NRAS proto-oncogene. Using a cell-free translation system coupled to a reporter gene assay, we have demonstrated that this NRAS RNA G-quadruplex modulates translation. This is the first example of translational repression by an RNA G-quadruplex. Bioinformatics analysis has revealed 2,922 other 5' UTR RNA G-quadruplex elements in the human genome. We propose that RNA G-quadruplexes in the 5' UTR modulate gene expression at the translational level.",
+      "genes": [
+        "NRAS"
+      ],
+      "drugs": [],
+      "diseases": [],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "journal": "Nature chemical biology"
+    },
+    {
+      "pmid": "17363583",
+      "year": 2007,
+      "date": "2007-03-01",
+      "title": "Genome-wide loss of heterozygosity and copy number analysis in melanoma using high-density single-nucleotide polymorphism arrays.",
+      "abstract": "Although a number of genes related to melanoma development have been identified through candidate gene screening approaches, few studies have attempted to conduct such analyses on a genome-wide scale. Here we use Illumina 317K whole-genome single-nucleotide polymorphism arrays to define a comprehensive allelotype of melanoma based on loss of heterozygosity (LOH) and copy number changes in a panel of 76 melanoma cell lines. In keeping with previous reports, we found frequent LOH on chromosome arms 9p (72%), 10p (55%), 10q (55%), 9q (49%), 6q (43%), 11q (43%), and 17p (41%). Tumor suppressor genes (TSGs) can be identified through homozygous deletion (HD). We detected 174 HDs, the most common of which targeted CDKN2A (n = 33). The second highest frequency of HD occurred in PTEN (n = 8), another well known melanoma TSG. HDs were also common for PTPRD (n = 7) and HDAC4 (n = 3), TSGs recently found to be mutated or deleted in other cancer types. Analysis of other HDs and regions of LOH that we have identified might lead to the characterization of further melanoma TSGs. We noted 197 regional amplifications, including some centered on the melanoma oncogenes MITF (n = 9), NRAS (n = 3), BRAF (n = 3), and CCND1 (n = 3). Other amplifications potentially target novel oncogenes important in the development of a subset of melanomas. The numerous focal amplifications and HDs we have documented here are the first step toward identifying a comprehensive catalog of genes involved in melanoma development, some of which may be useful prognostic markers or targets for therapies to treat this disease.",
+      "genes": [
+        "NRAS",
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "melanoma"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article"
+      ],
+      "journal": "Cancer research"
+    },
+    {
+      "pmid": "17510423",
+      "year": 2007,
+      "date": "2007-05-01",
+      "title": "Mutations in BRAF and KRAS converge on activation of the mitogen-activated protein kinase pathway in lung cancer mouse models.",
+      "abstract": "Mutations in the BRAF and KRAS genes occur in approximately 1% to 2% and 20% to 30% of non-small-cell lung cancer patients, respectively, suggesting that the mitogen-activated protein kinase (MAPK) pathway is preferentially activated in lung cancers. Here, we show that lung-specific expression of the BRAF V600E mutant induces the activation of extracellular signal-regulated kinase (ERK)-1/2 (MAPK) pathway and the development of lung adenocarcinoma with bronchioloalveolar carcinoma features in vivo. Deinduction of transgene expression led to dramatic tumor regression, paralleled by dramatic dephosphorylation of ERK1/2, implying a dependency of BRAF-mutant lung tumors on the MAPK pathway. Accordingly, in vivo pharmacologic inhibition of MAPK/ERK kinase (MEK; MAPKK) using a specific MEK inhibitor, CI-1040, induced tumor regression associated with inhibition of cell proliferation and induction of apoptosis in these de novo lung tumors. CI-1040 treatment also led to dramatic tumor shrinkage in murine lung tumors driven by a mutant KRas allele. Thus, somatic mutations in different signaling intermediates of the same pathway induce exquisite dependency on a shared downstream effector. These results unveil a potential common vulnerability of BRAF and KRas mutant lung tumors that potentially affects rational deployment of MEK targeted therapies to non-small-cell lung cancer patients.",
+      "genes": [
+        "KRAS",
+        "BRAF",
+        "MAPK1"
+      ],
+      "drugs": [],
+      "diseases": [
+        "NSCLC"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Cancer research"
+    },
+    {
+      "pmid": "17520704",
+      "year": 2007,
+      "date": "2007-07-01",
+      "title": "Clinicopathologic significance of BRAF V600E mutation in papillary carcinomas of the thyroid: a meta-analysis.",
+      "abstract": "BackgroundNumerous studies have investigated the clinical significance of BRAF mutation in papillary thyroid carcinoma (PTC). However, there have been conflicting data on the usefulness of BRAF mutation as a prognostic marker of PTC. To address this controversy, the frequency of the BRAF mutation and the associations between BRAF mutation and clinicopathologic parameters in PTC were evaluated by meta-analysis.MethodsThe relevant published studies were reviewed according to the defined selection criteria. The effect sizes of outcome parameters were estimated by odds ratio or weighted mean difference.ResultsThe current meta-analysis included 12 studies with a total of 1168 patients. The frequency of the BRAF mutation was 49%. The BRAF mutation was associated with histologic subtype, the presence of extrathyroidal extension, and higher clinical stage, but not with age, sex, race, or tumor size.ConclusionsThe effect of the BRAF mutation on the poor prognosis of PTC patients was evident from the current meta-analysis. The detection of the BRAF mutation may be used as an important prognostic marker of patients with PTC.",
+      "genes": [
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "thyroid cancer"
+      ],
+      "pub_types": [
+        "Meta-Analysis",
+        "Journal Article"
+      ],
+      "journal": "Cancer"
+    },
+    {
+      "pmid": "17603482",
+      "year": 2007,
+      "date": "2007-07-01",
+      "title": "Germline gain-of-function mutations in RAF1 cause Noonan syndrome.",
+      "abstract": "Noonan syndrome is characterized by short stature, facial dysmorphia and a wide spectrum of congenital heart defects. Mutations of PTPN11, KRAS and SOS1 in the RAS-MAPK pathway cause approximately 60% of cases of Noonan syndrome. However, the gene(s) responsible for the remainder are unknown. We have identified five different mutations in RAF1 in ten individuals with Noonan syndrome; those with any of four mutations causing changes in the CR2 domain of RAF1 had hypertrophic cardiomyopathy (HCM), whereas affected individuals with mutations leading to changes in the CR3 domain did not. Cells transfected with constructs containing Noonan syndrome-associated RAF1 mutations showed increased in vitro kinase and ERK activation, and zebrafish embryos with morpholino knockdown of raf1 demonstrated the need for raf1 for the development of normal myocardial structure and function. Thus, our findings implicate RAF1 gain-of-function mutations as a causative agent of a human developmental disorder, representing a new genetic mechanism for the activation of the MAPK pathway.",
+      "genes": [
+        "KRAS",
+        "RAF1",
+        "SOS1",
+        "PTPN11"
+      ],
+      "drugs": [],
+      "diseases": [
+        "Noonan syndrome"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article"
+      ],
+      "journal": "Nature genetics"
+    },
+    {
+      "pmid": "17717450",
+      "year": 2007,
+      "date": "2007-09-01",
+      "title": "The prevalence and prognostic value of BRAF mutation in thyroid cancer.",
+      "abstract": "ObjectiveTo examine the prevalence of BRAF mutation among thyroid cancer histologic subtypes and determine the association of BRAF mutation with indicators of poor prognosis for papillary thyroid cancer and patient outcome.Summary background dataThe appropriate extent of surgical treatment, adjuvant therapy and follow-up monitoring for thyroid cancer remains controversial. Advances in the molecular biology of thyroid cancer have helped to identify candidate markers of disease aggressiveness. A commonly found genetic alternation is a point mutation in the BRAF oncogene (BRAF V600E), which is primarily found in papillary thyroid cancer and is associated with more aggressive disease.MethodsBRAF V600E mutation status was determined in 347 tumor samples from 314 patients with thyroid cancer (245 with conventional papillary thyroid cancer, 73 with follicular thyroid cancer, and 29 with the follicular variant of papillary thyroid cancer). Univariate and multivariate analyses were performed to determine the association of BRAF V600E with clinicopathologic factors and patient outcome.Results: The prevalence of BRAF V600E mutation was higher in conventional papillary thyroid cancer (51.0%) than in follicular variant of papillary thyroid cancer (24.1%) and follicular thyroid cancer (1.4%) (P ConclusionsBRAF V600E mutation is primarily present in conventional papillary thyroid cancer. It is associated with an aggressive tumor phenotype and higher risk of recurrent and persistent disease in patients with conventional papillary thyroid cancer. Testing for this mutation may be useful for selecting initial therapy and for follow-up monitoring.",
+      "genes": [
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "thyroid cancer"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Annals of surgery"
+    },
+    {
+      "pmid": "17785355",
+      "year": 2007,
+      "date": "2007-09-04",
+      "title": "Association of BRAF V600E mutation with poor clinicopathological outcomes in 500 consecutive cases of papillary thyroid carcinoma.",
+      "abstract": "ContextBecause very few studies have examined the correlation between BRAF mutations and clinicopathological features of papillary thyroid carcinoma (PTC), we analyzed here a large and homogeneous cohort of patients with PTC for the presence of the BRAF mutation.ObjectiveWe examined BRAF mutations in a consecutive series of 500 PTC patients who underwent surgery in the Department of Surgery of the University of Pisa, and we correlated the presence of the mutation with clinicopathological parameters of the patients: age, gender, tumor size, presence of tumor capsule, extrathyroidal invasion, multicentricity, presence of node metastases, and tumor class.DesignBRAF (exon 15) mutation was examined by PCR-single strand conformational polymorphism followed by DNA sequencing in laser-capture microdissected tissue samples.ResultsIn this study, BRAF mutation was found in 219 of 500 cases (43.8%). In particular, we found the most common BRAF V600E mutation in 214 cases (42.8%), BRAF K601E mutation in three cases (0.6%), BRAF VK600-1E (0.2%) in one case, whereas in one case we found a new 14-bp deletion with concomitant 2-bp insertion, VKSR600-3del and T599I, respectively. BRAF V600E was associated with extrathyroidal invasion (P ConclusionsOur data suggest that BRAF V600E mutation is associated with high-risk PTC and in particular in follicular variant with invasive tumor growth.",
+      "genes": [
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "thyroid cancer"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article"
+      ],
+      "journal": "The Journal of clinical endocrinology and metabolism"
+    },
+    {
+      "pmid": "18316791",
+      "year": 2008,
+      "date": "2008-03-03",
+      "title": "Wild-type KRAS is required for panitumumab efficacy in patients with metastatic colorectal cancer.",
+      "abstract": "PurposePanitumumab, a fully human antibody against the epidermal growth factor receptor (EGFR), has activity in a subset of patients with metastatic colorectal cancer (mCRC). Although activating mutations in KRAS, a small G-protein downstream of EGFR, correlate with poor response to anti-EGFR antibodies in mCRC, their role as a selection marker has not been established in randomized trials.Patients and methodsKRAS mutations were detected using polymerase chain reaction on DNA from tumor sections collected in a phase III mCRC trial comparing panitumumab monotherapy to best supportive care (BSC). We tested whether the effect of panitumumab on progression-free survival (PFS) differed by KRAS status.ResultsKRAS status was ascertained in 427 (92%) of 463 patients (208 panitumumab, 219 BSC). KRAS mutations were found in 43% of patients. The treatment effect on PFS in the wild-type (WT) KRAS group (hazard ratio [HR], 0.45; 95% CI: 0.34 to 0.59) was significantly greater (P ConclusionPanitumumab monotherapy efficacy in mCRC is confined to patients with WT KRAS tumors. KRAS status should be considered in selecting patients with mCRC as candidates for panitumumab monotherapy.",
+      "genes": [
+        "KRAS",
+        "EGFR"
+      ],
+      "drugs": [
+        "panitumumab"
+      ],
+      "diseases": [
+        "colorectal cancer"
+      ],
+      "pub_types": [
+        "Clinical Trial, Phase III",
+        "Multicenter Study",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology"
+    },
+    {
+      "pmid": "18366060",
+      "year": 2008,
+      "date": "2008-06-01",
+      "title": "LINE-1 hypomethylation is inversely associated with microsatellite instability and CpG island methylator phenotype in colorectal cancer.",
+      "abstract": "The CpG island methylator phenotype (CIMP) with widespread promoter CpG island methylation is a phenotype in colorectal cancer, associated with microsatellite instability (MSI) and BRAF mutation. Genome-wide hypomethylation may also play an important role in genomic instability. However, the relation between global DNA methylation level and methylation in individual CpG islands remains uncertain. Utilizing 869 population-based colorectal cancers, we measured long interspersed nucleotide element-1 (LINE-1) methylation level by Pyrosequencing, which correlates with global DNA methylation level. We quantified DNA methylation in 8 CIMP-specific promoters (CACNA1G, CDKN2A (p16), CRABP1, IGF2, MLH1, NEUROG1, RUNX3 and SOCS1) by real-time PCR (MethyLight technology). LINE-1 methylation levels in tumors were approximately normally distributed (mean, 61.4%; median, 62.3%; standard deviation, 9.6%). Among the 869 tumors, 128 (15%) were classified as CIMP-high (>or=6/8 methylated promoters). The mean LINE-1 methylation level was higher in CIMP-high tumors (65.1%, p < 0.0001) than non-CIMP-high tumors (60.7%), and higher in MSI-high tumors (64.7%, p < 0.0001) than non-MSI-high tumors (60.7%). When tumors were stratified by MSI/CIMP status, compared to non-MSI-high non-CIMP-high tumors (mean LINE-1 methylation level, 60.4%), the mean LINE-1 methylation level was higher in MSI-high CIMP-high (64.8%, p < 0.0001), MSI-high non-CIMP-high (64.6%, p = 0.03) and non-MSI-high CIMP-high tumors (66.1%, p = 0.0003). In addition, 18q loss of heterozygosity in non-MSI-high tumors was correlated with LINE-1 hypomethylation (p = 0.004). In conclusion, both CIMP-high and MSI-high are inversely associated with LINE-1 hypomethylation, suggesting that CIMP/MSI and genomic hypomethylation may represent different pathways to colorectal cancer. Our data also support a possible link between global hypomethylation and chromosomal instability.",
+      "genes": [
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "colorectal cancer"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "International journal of cancer"
+    },
+    {
+      "pmid": "18390968",
+      "year": 2008,
+      "date": "2008-04-07",
+      "title": "Phase I pharmacokinetic and pharmacodynamic study of the oral, small-molecule mitogen-activated protein kinase kinase 1/2 inhibitor AZD6244 (ARRY-142886) in patients with advanced cancers.",
+      "abstract": "PurposeTo assess the tolerability, pharmacokinetics (PKs), and pharmacodynamics (PDs) of the mitogen-activated protein kinase kinase (MEK) 1/2 inhibitor AZD6244 (ARRY-142886) in patients with advanced cancer.Patients and methodsIn part A, patients received escalating doses to determine the maximum-tolerated dose (MTD). In both parts, blood samples were collected to assess PK and PD parameters. In part B, patients were stratified by cancer type (melanoma v other) and randomly assigned to receive the MTD or 50% MTD. Biopsies were collected to determine inhibition of ERK phosphorylation, Ki-67 expression, and BRAF, KRAS, and NRAS mutations.ResultsFifty-seven patients were enrolled. MTD in part A was 200 mg bid, but this dose was discontinued in part B because of toxicity. The 50% MTD (100 mg bid) was well tolerated. Rash was the most frequent and dose-limiting toxicity. Most other adverse events were grade 1 or 2. The PKs were less than dose proportional, with a median half-life of approximately 8 hours and inhibition of ERK phosphorylation in peripheral-blood mononuclear cells at all dose levels. Paired tumor biopsies demonstrated reduced ERK phosphorylation (geometric mean, 79%). Five of 20 patients demonstrated >or= 50% inhibition of Ki-67 expression, and RAF or RAS mutations were detected in 10 of 26 assessable tumor samples. Nine patients had stable disease (SD) for >or= 5 months, including two patients with SD for 19 (thyroid cancer) and 22 (uveal melanoma plus renal cancer) 28-day cycles.ConclusionAZD6244 was well tolerated with target inhibition demonstrated at the recommended phase II dose. PK analyses supported twice-daily dosing. Prolonged SD was seen in a variety of advanced cancers. Phase II studies are ongoing.",
+      "genes": [
+        "KRAS",
+        "NRAS",
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "melanoma",
+        "thyroid cancer"
+      ],
+      "pub_types": [
+        "Comparative Study",
+        "research-article",
+        "Clinical Trial, Phase I",
+        "Randomized Controlled Trial",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology"
+    },
+    {
+      "pmid": "18559533",
+      "year": 2008,
+      "date": "2008-06-01",
+      "title": "Elevated CRAF as a potential mechanism of acquired resistance to BRAF inhibition in melanoma.",
+      "abstract": "Activating BRAF kinase mutations arise in approximately 7% of all human tumors, and preclinical studies have validated the RAF-mitogen-activated protein/extracellular signal-regulated kinase (ERK) kinase-ERK signaling cascade as a potentially important therapeutic target in this setting. Selective RAF kinase inhibitors are currently undergoing clinical development, and based on the experience with other kinase-targeted therapeutics, it is expected that clinical responses to these agents, if observed, will lead to the eventual emergence of drug resistance in most cases. Thus, it is important to establish molecular mechanisms underlying such resistance to develop effective therapeutic strategies to overcome or prevent drug resistance. To anticipate potential mechanisms of acquired resistance to RAF inhibitors during the course of treatment, we established drug-resistant clones from a human melanoma-derived cell line harboring the recurrent V600E activating BRAF mutation, which exhibits exquisite sensitivity to AZ628, a selective RAF kinase inhibitor. We determined that elevated CRAF protein levels account for the acquisition of resistance to AZ628 in these cells, associated with a switch from BRAF to CRAF dependency in tumor cells. We also found that elevated CRAF protein levels may similarly contribute to primary insensitivity to RAF inhibition in a subset of BRAF mutant tumor cells. Interestingly, AZ628-resistant cells demonstrating either primary drug insensitivity or acquired drug resistance exhibit exquisite sensitivity to the HSP90 inhibitor geldanamycin. Geldanamycin effectively promotes the degradation of CRAF, thereby revealing a potential therapeutic strategy to overcome resistance to RAF inhibition in a subset of BRAF mutant tumors.",
+      "genes": [
+        "BRAF",
+        "RAF1"
+      ],
+      "drugs": [],
+      "diseases": [
+        "melanoma"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Cancer research"
+    },
+    {
+      "pmid": "18679422",
+      "year": 2008,
+      "date": "2008-08-04",
+      "title": "C-MYC overexpression is required for continuous suppression of oncogene-induced senescence in melanoma cells.",
+      "abstract": "Malignant melanomas often harbor activating mutations in BRAF (V600E) or, less frequently, in NRAS (Q61R). Intriguingly, the same mutations have been detected at higher incidences in benign nevi, which are largely composed of senescent melanocytes. Overexpression of BRAF(V600E) or NRAS(Q61R) in human melanocytes in vitro has been shown to induce senescence, although via different mechanisms. How oncogene-induced senescence is overcome during melanoma progression remains unclear. Here, we report that in the majority of analysed BRAF(V600E)- or NRAS(Q61R)-expressing melanoma cells, C-MYC depletion induced different yet overlapping sets of senescence phenotypes that are characteristic of normal melanocytes undergoing senescence due to overexpression of BRAF(V600E) or NRAS(Q61R), respectively. These senescence phenotypes were p16(INK4A)- or p53-independent, however, several of them were suppressed by genetic or pharmacological inhibition of BRAF(V600E) or phosphoinositide 3-kinase pathways, including rapamycin-mediated inhibition of mTOR-raptor in NRAS(Q61R)-expressing melanoma cells. Reciprocally, overexpression of C-MYC in normal melanocytes suppressed BRAF(V600E)-induced senescence more efficiently than NRAS(Q61R)-induced senescence, which agrees with the generally higher rates of activating mutations in BRAF than NRAS gene in human cutaneous melanomas. Our data suggest that one of the major functions of C-MYC overexpression in melanoma progression is to continuous suppress BRAF(V600E)- or NRAS(Q61R)-dependent senescence programs.",
+      "genes": [
+        "NRAS",
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "melanoma"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Oncogene"
+    },
+    {
+      "pmid": "18757405",
+      "year": 2008,
+      "date": "2008-09-01",
+      "title": "PIK3CA mutations and copy number gains in human lung cancers.",
+      "abstract": "We investigated the frequency and function of mutations and increased copy number of the PIK3CA gene in lung cancers. PIK3CA mutations are one of the most common gene changes present in human cancers. We analyzed the mutational status of exons 9 and 20 and gene copy number of PIK3CA using 86 non-small cell lung cancer (NSCLC) cell lines, 43 small cell lung cancer (SCLC) cell lines, 3 extrapulmonary small cell cancer (ExPuSC) cell lines, and 691 resected NSCLC tumors and studied the relationship between PIK3CA alterations and mutational status of epidermal growth factor receptor (EGFR) signaling pathway genes (EGFR, KRAS, HER2, and BRAF). We also determined PIK3CA expression and activity and correlated the findings with effects on cell growth. We identified mutations in 4.7% of NSCLC cell lines and 1.6% of tumors of all major histologic types. Mutations in cell lines of small cell origin were limited to two ExPuSC cell lines. PIK3CA copy number gains were more frequent in squamous cell carcinoma (33.1%) than in adenocarcinoma (6.2%) or SCLC lines (4.7%). Mutational status of PIK3CA was not mutually exclusive to EGFR or KRAS. PIK3CA alterations were associated with increased phosphatidylinositol 3-kinase activity and phosphorylated Akt expression. RNA interference-mediated knockdown of PIK3CA inhibited colony formation of cell lines with PIK3CA mutations or gains but was not effective in PIK3CA wild-type cells. PIK3CA mutations or gains are present in a subset of lung cancers and are of functional importance.",
+      "genes": [
+        "KRAS",
+        "BRAF",
+        "EGFR",
+        "ERBB2",
+        "PIK3CA"
+      ],
+      "drugs": [],
+      "diseases": [
+        "NSCLC"
+      ],
+      "pub_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Cancer research"
+    },
+    {
+      "pmid": "18922929",
+      "year": 2008,
+      "date": "2008-10-01",
+      "title": "Hypermethylator phenotype in sporadic colon cancer: study on a population-based series of 582 cases.",
+      "abstract": "The CpG island methylator phenotype (CIMP) is a distinct phenotype in colorectal cancer, associated with specific clinical, pathologic, and molecular features. However, most of the studies stratified methylation according to two subgroups (CIMP-High versus No-CIMP/CIMP-Low). In our study, we defined three different subgroups of methylation (No-CIMP, CIMP-Low, and CIMP-High) and evaluated the prognostic significance of methylation status on a population-based series of sporadic colon cancers. A total of 582 colon adenocarcinomas were evaluated using methylation-specific PCR for 5 markers (hMLH1, P16, MINT1, MINT2, and MINT31). No-CIMP status was defined as no methylated locus, CIMP-Low status as one to three methylated loci, and CIMP-High status as four or five methylated loci. Clinicopathologic and molecular characteristics were correlated to the methylation status. Crude and relative survival was compared according to methylation status. In the microsatellite-stable (MSS) group, CIMP-High was significantly associated with proximal location (P = 0.011) and BRAF mutation (P < 0.001). KRAS mutations were more associated with CIMP-High and CIMP-Low status (P = 0.008). A shorter 5-year survival was observed in MSS cancer patients with CIMP-Low or CIMP-High status. These results remained significant in multivariate analysis adjusted for age, stage, and BRAF and KRAS mutational status [CIMP-Low: hazard ratio (HR), 1.85; 95% confidence interval (95% CI), 1.37-2.51; CIMP-High, HR, 2.90; 95% CI, 1.53-5.49 compared with No-CIMP]. Within the high-level microsatellite instability group, no difference in survival was observed between the different CIMP groups. Our results show the interest of defining three subgroups of patients according to their methylation status (No-CIMP/CIMP-Low/CIMP-High). Methylation is an independent prognostic factor in MSS colon cancer.",
+      "genes": [
+        "KRAS",
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "colorectal cancer"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article"
+      ],
+      "journal": "Cancer research"
+    },
+    {
+      "pmid": "19028870",
+      "year": 2008,
+      "date": "2008-11-21",
+      "title": "Spontaneous induction of murine pancreatic intraepithelial neoplasia (mPanIN) by acinar cell targeting of oncogenic Kras in adult mice.",
+      "abstract": "Pancreatic ductal adenocarcinoma (PDAC) is believed to arise through a multistep model comprised of putative precursor lesions known as pancreatic intraepithelial neoplasia (PanIN). Recent genetically engineered mouse models of PDAC demonstrate a comparable morphologic spectrum of murine PanIN (mPanIN) lesions. The histogenesis of PanIN and PDAC in both mice and men remains controversial. The most faithful genetic models activate an oncogenic Kras(G12D) knockin allele within the pdx1- or ptf1a/p48-expression domain of the entire pancreatic anlage during development, thus obscuring the putative cell(s)-of-origin from which subsequent mPanIN lesions arise. In our study, activation of this knockin Kras(G12D) allele in the Elastase- and Mist1-expressing mature acinar compartment of adult mice resulted in the spontaneous induction of mPanIN lesions of all histological grades, although invasive carcinomas per se were not seen. We observed no requirement for concomitant chronic exocrine injury in the induction of mPanIN lesions from the mature acinar cell compartment. The acinar cell derivation of the mPanINs was established through lineage tracing in reporter mice, and by microdissection of lesional tissue demonstrating Cre-mediated recombination events. In contrast to the uniformly penetrant mPanIN phenotype observed following developmental activation of Kras(G12D) in the Pdx1-expressing progenitor cells, the Pdx1-expressing population in the mature pancreas (predominantly islet beta cells) appears to be relatively resistant to the effects of oncogenic Kras. We conclude that in the appropriate genetic context, the differentiated acinar cell compartment in adult mice retains its susceptibility for spontaneous transformation into mPanIN lesions, a finding with potential relevance vis-\u00e0-vis the origins of PDAC.",
+      "genes": [
+        "KRAS"
+      ],
+      "drugs": [],
+      "diseases": [
+        "pancreatic cancer"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America"
+    },
+    {
+      "pmid": "19147554",
+      "year": 2009,
+      "date": "2009-01-01",
+      "title": "Pancreatic cancer and precursor pancreatic intraepithelial neoplasia lesions are devoid of primary cilia.",
+      "abstract": "Primary cilia have been proposed to participate in the modulation of growth factor signaling pathways. In this study, we determined that ciliogenesis is suppressed in both pancreatic cancer cells and pancreatic intraepithelial neoplasia (PanIN) lesions in human pancreatic ductal adenocarcinoma (PDAC). Primary cilia were absent in these cells even when not actively proliferating. Cilia were also absent from mouse PanIN cells in three different mouse models of PDAC driven by an endogenous oncogenic Kras allele. Inhibition of Kras effector pathways restored ciliogenesis in a mouse pancreatic cancer cell line, raising the possibility that ciliogenesis may be actively repressed by oncogenic Kras. By contrast, normal duct, islet, and centroacinar cells retained primary cilia in both human and mouse pancreata. Thus, arrested ciliogenesis is a cardinal feature of PDAC and its precursor PanIN lesions, does not require ongoing proliferation, and could potentially be targeted pharmacologically.",
+      "genes": [
+        "KRAS"
+      ],
+      "drugs": [],
+      "diseases": [
+        "pancreatic cancer"
+      ],
+      "pub_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Cancer research"
+    },
+    {
+      "pmid": "19164213",
+      "year": 2009,
+      "date": "2009-01-21",
+      "title": "Impact of Fc{gamma}RIIa-Fc{gamma}RIIIa polymorphisms and KRAS mutations on the clinical outcome of patients with metastatic colorectal cancer treated with cetuximab plus irinotecan.",
+      "abstract": "PurposeThe antiepidermal growth factor receptor antibody cetuximab shows activity in irinotecan-refractory metastatic colorectal cancer (mCRC), mainly in wild-type KRAS tumors. Cetuximab may also exert antitumor effects through antibody-dependent cell-mediated cytotoxicity (ADCC) in which antibody Fc portion interacts with Fc receptors (FcgammaRs) expressed by immune cells. ADCC is influenced by FcgammaRIIa-H131R and FcgammaRIIIa-V158F polymorphisms that are clinically relevant in follicular lymphoma and metastatic breast cancer treated with rituximab and trastuzumab, respectively. We investigated the association of FcgammaR polymorphisms and KRAS mutation with the outcome of irinotecan-refractory mCRC patients treated with cetuximab plus irinotecan.Patients and methodsTumor and normal tissues from 69 patients were screened for KRAS mutations using a sensitive multiplex assay and genotyped for FcgammaRIIa and FcgammaRIIIa polymorphisms by direct sequencing and multiplex allele-specific polymerase chain reaction, respectively. The results were correlated with response and progression-free survival (PFS).ResultsKRAS mutations were associated with lower response rate (4% v 27% in nonmutated patients; P = .021) and shorter PFS (3.0 v 5.3 months; P = .021). Patients with FcgammaRIIa-131H/H and/or FcgammaIIIa-158V/V genotypes had longer PFS than 131R and 158F carriers (5.5 v 3.0 months; P = .005). The difference remained significant for mutated-KRAS patients. By multivariate analysis, KRAS mutation and FcgammaR combined status were independent risk factors for PFS.ConclusionCombined FcgammaRIIa/FcgammaRIIIa polymorphisms are prognostic factors for disease progression in mCRC patients treated with cetuximab plus irinotecan. As these polymorphisms are also clinically relevant in mutated-KRAS mCRC, an important role of ADCC in cetuximab efficacy is presumed.",
+      "genes": [
+        "KRAS"
+      ],
+      "drugs": [
+        "cetuximab"
+      ],
+      "diseases": [
+        "colorectal cancer"
+      ],
+      "pub_types": [
+        "Multicenter Study",
+        "Journal Article"
+      ],
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology"
+    },
+    {
+      "pmid": "19412162",
+      "year": 2009,
+      "date": "2009-05-03",
+      "title": "F-box protein FBXO31 mediates cyclin D1 degradation to induce G1 arrest after DNA damage.",
+      "abstract": "In response to DNA damage, eukaryotic cells initiate a complex signalling pathway, termed the DNA damage response (DDR), which coordinates cell cycle arrest with DNA repair. Studies have shown that oncogene-induced senescence, which provides a barrier to tumour development, involves activation of the DDR. Using a genome-wide RNA interference (RNAi) screen, we have identified 17 factors required for oncogenic BRAF to induce senescence in primary fibroblasts and melanocytes. One of these factors is an F-box protein, FBXO31, a candidate tumour suppressor encoded in 16q24.3, a region in which there is loss of heterozygosity in breast, ovarian, hepatocellular and prostate cancers. Here we study the cellular role of FBXO31, identify its target substrate and determine the basis for its growth inhibitory activity. We show that ectopic expression of FBXO31 acts through a proteasome-directed pathway to mediate the degradation of cyclin D1, an important regulator of progression from G1 to S phase, resulting in arrest in G1. Cyclin D1 degradation results from a direct interaction with FBXO31 and is dependent on the F-box motif of FBXO31 and phosphorylation of cyclin D1 at Thr 286, which is known to be required for cyclin D1 proteolysis. The involvement of the DDR in oncogene-induced senescence prompted us to investigate the role of FBXO31 in DNA repair. We find that DNA damage induced by gamma-irradiation results in increased FBXO31 levels, which requires phosphorylation of FBXO31 by the DDR-initiating kinase ATM. RNAi-mediated knockdown of FBXO31 prevents cells from undergoing efficient arrest in G1 after gamma-irradiation and markedly increases sensitivity to DNA damage. Finally, we show that a variety of DNA damaging agents all result in a large increase in FBXO31 levels, indicating that induction of FBXO31 is a general response to genotoxic stress. Our results reveal FBXO31 as a regulator of the G1/S transition that is specifically required for DNA damage-induced growth arrest.",
+      "genes": [
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "journal": "Nature"
+    },
+    {
+      "pmid": "19450512",
+      "year": 2009,
+      "date": "2009-05-01",
+      "title": "A two-step model for colon adenoma initiation and progression caused by APC loss.",
+      "abstract": "Aberrant Wnt/beta-catenin signaling following loss of the tumor suppressor adenomatous polyposis coli (APC) is thought to initiate colon adenoma formation. Using zebrafish and human cells, we show that homozygous loss of APC causes failed intestinal cell differentiation but that this occurs in the absence of nuclear beta-catenin and increased intestinal cell proliferation. Therefore, loss of APC is insufficient for causing beta-catenin nuclear localization. APC mutation-induced intestinal differentiation defects instead depend on the transcriptional corepressor C-terminal binding protein-1 (CtBP1), whereas proliferation defects and nuclear accumulation of beta-catenin require the additional activation of KRAS. These findings suggest that, following APC loss, CtBP1 contributes to adenoma initiation as a first step, whereas KRAS activation and beta-catenin nuclear localization promote adenoma progression to carcinomas as a second step. Consistent with this model, human FAP adenomas showed robust upregulation of CtBP1 in the absence of detectable nuclear beta-catenin, whereas nuclear beta-catenin was detected in carcinomas.",
+      "genes": [
+        "KRAS"
+      ],
+      "drugs": [],
+      "diseases": [],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Cell"
+    },
+    {
+      "pmid": "19584155",
+      "year": 2009,
+      "date": "2009-07-07",
+      "title": "EGFR/KRAS/BRAF mutations in primary lung adenocarcinomas and corresponding locoregional lymph node metastases.",
+      "abstract": "PurposeThe epidermal growth factor receptor (EGFR) and its downstream factors KRAS and BRAF are mutated with different frequencies in non-small cell lung cancer and mutations predict clinical response to EGFR inhibitors. The present study compared the mutational status of EGFR, KRAS, and BRAF in primary tumors with the one in corresponding lymph node metastases.Experimental designDirect bidirectional sequencing of EGFR gene exons 18 to 21, KRAS gene codons 12/13 and 61 to 68, and BRAF exon 15 was done on 96 paired samples of primary lung adenocarcinomas and corresponding locoregional lymph node metastases. In addition, comparative genomic hybridization analyses in two pairs of corresponding primary and metastatic tumor samples with discordant EGFR mutation status were done.ResultsMutations in EGFR, KRAS, and BRAF were observed in 7 (7%), 36 (38%), and 2 (2%) patients, respectively. Interestingly, KRAS mutations were observed in two patients with an EGFR mutation. Mutations in primary tumors and lymph node metastases were identical in 1 of 7 (14%) patients in case of EGFR and 11 of 36 (31%) patients in case of KRAS. One patient harbored different KRAS mutations in primary and corresponding metastatic tumors. Comparative genomic hybridization analysis revealed similar patterns of chromosomal changes, strongly supporting a common clonal origin of primary tumors and metastases.ConclusionsThe possibility of differences in the mutational status of EGFR, KRAS, BRAF between primary tumors and corresponding lymph node metastases should be considered whenever these mutations are used for the selection of patients for EGFR-directed tyrosine kinase inhibitor therapy.",
+      "genes": [
+        "KRAS",
+        "BRAF",
+        "EGFR"
+      ],
+      "drugs": [],
+      "diseases": [
+        "NSCLC"
+      ],
+      "pub_types": [
+        "Journal Article"
+      ],
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research"
+    },
+    {
+      "pmid": "19861538",
+      "year": 2009,
+      "date": "2009-10-27",
+      "title": "The BRAFV600E oncogene induces transforming growth factor beta secretion leading to sodium iodide symporter repression and increased malignancy in thyroid cancer.",
+      "abstract": "The activating mutation BRAF(V600E) is a frequent genetic event in papillary thyroid carcinomas (PTC) that predicts a poor prognosis, leading to loss of sodium/iodide symporter (NIS) expression and subsequent radioiodide-refractory metastatic disease. The molecular basis of such an aggressive behavior induced by BRAF remains unclear. Here, we show a mechanism through which BRAF induces NIS repression and promotes epithelial to mesenchimal transition and invasion based on the operation of an autocrine transforming growth factor (TGF)beta loop. BRAF induces secretion of functional TGFbeta and blocking TGFbeta/Smad signaling at multiple levels rescues BRAF-induced NIS repression. Although this mechanism is MAP/extracellular signal-regulated kinase (ERK) kinase (MEK)-ERK independent, secreted TGFbeta cooperates with MEK-ERK signaling in BRAF-induced cell migration, Matrigel invasion, and EMT. Consistent with this process, TGFbeta and other key components of TGFbeta signaling, such as TbetaRII and pSmad2, are overexpressed in human PTC, suggesting a widespread activation of this pathway by locally released TGFbeta. Moreover, this high TGFbeta/Smad activity is associated with PTC invasion, nodal metastasis, and BRAF status. Interestingly, TGFbeta is overexpressed in the invasive front, whereas NIS is preferentially expressed in the central regions of the tumors, suggesting that this negative correlation between TGFbeta and NIS occurs locally inside the tumor. Our study describes a novel mechanism of NIS repression in thyroid cancer and provides evidence that TGFbeta may play a key role in promoting radioiodide resistance and tumor invasion during PTC progression.",
+      "genes": [
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "thyroid cancer"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Cancer research"
+    },
+    {
+      "pmid": "19884556",
+      "year": 2009,
+      "date": "2009-11-02",
+      "title": "Analysis of PTEN, BRAF, and EGFR status in determining benefit from cetuximab therapy in wild-type KRAS metastatic colon cancer.",
+      "abstract": "PurposeThe occurrence of KRAS mutation is predictive of nonresponse and shorter survival in patients treated by anti-epidermal growth factor receptor (anti-EGFR) antibody for metastatic colorectal cancer (mCRC), leading the European Medicine Agency to limit its use to patients with wild-type KRAS tumors. However, only half of these patients will benefit from treatment, suggesting the need to identify additional biomarkers for cetuximab-based treatment efficacy.Patients and methodsWe retrospectively collected tumors from 173 patients with mCRC. All but one patient received a cetuximab-based regimen as second-line or greater therapy. KRAS and BRAF status were assessed by allelic discrimination. EGFR amplification was assessed by chromogenic in situ hybridization and fluorescent in situ hybridization, and the expression of PTEN was assessed by immunochemistry.ResultsIn patients with KRAS wild-type tumors (n = 116), BRAF mutations (n = 5) were weakly associated with lack of response (P = .063) but were strongly associated with shorter progression-free survival (P ConclusionBRAF status, EGFR amplification, and cytoplasmic expression of PTEN were associated with outcome measures in KRAS wild-type patients treated with a cetuximab-based regimen. Subsequent studies in clinical trial cohorts will be required to confirm the clinical utility of these markers.",
+      "genes": [
+        "KRAS",
+        "BRAF",
+        "EGFR"
+      ],
+      "drugs": [
+        "cetuximab"
+      ],
+      "diseases": [
+        "colorectal cancer"
+      ],
+      "pub_types": [
+        "Multicenter Study",
+        "Journal Article"
+      ],
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology"
+    },
+    {
+      "pmid": "19915144",
+      "year": 2009,
+      "date": "2009-11-13",
+      "title": "MEK1 mutations confer resistance to MEK and B-RAF inhibition.",
+      "abstract": "Genetic alterations that activate the mitogen-activated protein kinase (MAP kinase) pathway occur commonly in cancer. For example, the majority of melanomas harbor mutations in the BRAF oncogene, which are predicted to confer enhanced sensitivity to pharmacologic MAP kinase inhibition (e.g., RAF or MEK inhibitors). We investigated the clinical relevance of MEK dependency in melanoma by massively parallel sequencing of resistant clones generated from a MEK1 random mutagenesis screen in vitro, as well as tumors obtained from relapsed patients following treatment with AZD6244, an allosteric MEK inhibitor. Most mutations conferring resistance to MEK inhibition in vitro populated the allosteric drug binding pocket or alpha-helix C and showed robust ( approximately 100-fold) resistance to allosteric MEK inhibition. Other mutations affected MEK1 codons located within or abutting the N-terminal negative regulatory helix (helix A), which also undergo gain-of-function germline mutations in cardio-facio-cutaneous (CFC) syndrome. One such mutation, MEK1(P124L), was identified in a resistant metastatic focus that emerged in a melanoma patient treated with AZD6244. Both MEK1(P124L) and MEK1(Q56P), which disrupts helix A, conferred cross-resistance to PLX4720, a selective B-RAF inhibitor. However, exposing BRAF-mutant melanoma cells to AZD6244 and PLX4720 in combination prevented emergence of resistant clones. These results affirm the importance of MEK dependency in BRAF-mutant melanoma and suggest novel mechanisms of resistance to MEK and B-RAF inhibitors that may have important clinical implications.",
+      "genes": [
+        "BRAF",
+        "MAP2K1"
+      ],
+      "drugs": [],
+      "diseases": [
+        "melanoma"
+      ],
+      "pub_types": [
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America"
+    },
+    {
+      "pmid": "20183914",
+      "year": 2010,
+      "date": "2010-03-01",
+      "title": "Clinicopathologic features of non-small-cell lung cancer with EML4-ALK fusion gene.",
+      "abstract": "BackgroundA fusion gene between echinoderm microtubule-associated protein-like 4 (EML4) and the anaplastic lymphoma kinase (ALK) has recently been identified in nonsmall-cell lung cancers (NSCLCs). We screened for EML4-ALK fusion genes and examined the clinicopathological and genetic characteristics of fusion-harboring NSCLC tumors.MethodsWe examined 313 NSCLC samples from patients who underwent resection at our hospital between May 2001 and July 2005. We screened for the fusion genes using reverse-transcription polymerase chain reaction (RT-PCR) assay and confirmed the results with direct sequencing. We also examined mutations in the epidermal growth factor receptor (EGFR), KRAS, and ERBB2 genes.ResultsFive EML4-ALK fusion genes were detected (four from 111 female samples and one from 202 male samples; 1.6% overall). All five genes were found in adenocarcinomas and accounted for 2.4% of the 211 adenocarcinoma samples. One EML4-ALK fusion was variant 1, and two were variant 3. In addition, we also found two new fusion variants. Patients with fusion-positive tumors were nonsmokers or light smokers. Among the 211 adenocarcinomas, mutations in EGFR, KRAS, and ERBB2 were detected in 105, 29, and 7 tumors, respectively. Interestingly, all of the fusion-positive NSCLCs had no mutations within these genes.ConclusionsEML4-ALK fusion genes were observed predominantly in adenocarcinomas, in female or nonsmoking populations. Additionally, the EML4-ALK fusions were mutually exclusive with mutations in the EGFR, KRAS, and ERBB2 genes.",
+      "genes": [
+        "KRAS",
+        "EGFR",
+        "ERBB2"
+      ],
+      "drugs": [],
+      "diseases": [
+        "NSCLC"
+      ],
+      "pub_types": [
+        "Journal Article"
+      ],
+      "journal": "Annals of surgical oncology"
+    },
+    {
+      "pmid": "20421486",
+      "year": 2010,
+      "date": "2010-04-26",
+      "title": "Mitochondrial metabolism and ROS generation are essential for Kras-mediated tumorigenicity.",
+      "abstract": "Otto Warburg's theory on the origins of cancer postulates that tumor cells have defects in mitochondrial oxidative phosphorylation and therefore rely on high levels of aerobic glycolysis as the major source of ATP to fuel cellular proliferation (the Warburg effect). This is in contrast to normal cells, which primarily utilize oxidative phosphorylation for growth and survival. Here we report that the major function of glucose metabolism for Kras-induced anchorage-independent growth, a hallmark of transformed cells, is to support the pentose phosphate pathway. The major function of glycolytic ATP is to support growth under hypoxic conditions. Glutamine conversion into the tricarboxylic acid cycle intermediate alpha-ketoglutarate through glutaminase and alanine aminotransferase is essential for Kras-induced anchorage-independent growth. Mitochondrial metabolism allows for the generation of reactive oxygen species (ROS) which are required for Kras-induced anchorage-independent growth through regulation of the ERK MAPK signaling pathway. We show that the major source of ROS generation required for anchorage-independent growth is the Q(o) site of mitochondrial complex III. Furthermore, disruption of mitochondrial function by loss of the mitochondrial transcription factor A (TFAM) gene reduced tumorigenesis in an oncogenic Kras-driven mouse model of lung cancer. These results demonstrate that mitochondrial metabolism and mitochondrial ROS generation are essential for Kras-induced cell proliferation and tumorigenesis.",
+      "genes": [
+        "KRAS"
+      ],
+      "drugs": [],
+      "diseases": [],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America"
+    },
+    {
+      "pmid": "20519626",
+      "year": 2010,
+      "date": "2010-06-02",
+      "title": "Recurrent BRAF mutations in Langerhans cell histiocytosis.",
+      "abstract": "Langerhans cell histiocytosis (LCH) has a broad spectrum of clinical behaviors; some cases are self-limited, whereas others involve multiple organs and cause significant mortality. Although Langerhans cells in LCH are clonal, their benign morphology and their lack (to date) of reported recurrent genomic abnormalities have suggested that LCH may not be a neoplasm. Here, using 2 orthogonal technologies for detecting cancer-associated mutations in formalin-fixed, paraffin-embedded material, we identified the oncogenic BRAF V600E mutation in 35 of 61 archived specimens (57%). TP53 and MET mutations were also observed in one sample each. BRAF V600E tended to appear in younger patients but was not associated with disease site or stage. Langerhans cells stained for phospho-mitogen-activated protein kinase kinase (phospho-MEK) and phospho-extracellular signal-regulated kinase (phospho-ERK) regardless of mutation status. High prevalence, recurrent BRAF mutations in LCH indicate that it is a neoplastic disease that may respond to RAF pathway inhibitors.",
+      "genes": [
+        "BRAF",
+        "MET"
+      ],
+      "drugs": [],
+      "diseases": [],
+      "pub_types": [
+        "brief-report",
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Blood"
+    },
+    {
+      "pmid": "20570890",
+      "year": 2010,
+      "date": "2010-06-22",
+      "title": "Genomic and biological characterization of exon 4 KRAS mutations in human cancer.",
+      "abstract": "Mutations in RAS proteins occur widely in human cancer. Prompted by the confirmation of KRAS mutation as a predictive biomarker of response to epidermal growth factor receptor (EGFR)-targeted therapies, limited clinical testing for RAS pathway mutations has recently been adopted. We performed a multiplatform genomic analysis to characterize, in a nonbiased manner, the biological, biochemical, and prognostic significance of Ras pathway alterations in colorectal tumors and other solid tumor malignancies. Mutations in exon 4 of KRAS were found to occur commonly and to predict for a more favorable clinical outcome in patients with colorectal cancer. Exon 4 KRAS mutations, all of which were identified at amino acid residues K117 and A146, were associated with lower levels of GTP-bound RAS in isogenic models. These same mutations were also often accompanied by conversion to homozygosity and increased gene copy number, in human tumors and tumor cell lines. Models harboring exon 4 KRAS mutations exhibited mitogen-activated protein/extracellular signal-regulated kinase kinase dependence and resistance to EGFR-targeted agents. Our findings suggest that RAS mutation is not a binary variable in tumors, and that the diversity in mutant alleles and variability in gene copy number may also contribute to the heterogeneity of clinical outcomes observed in cancer patients. These results also provide a rationale for broader KRAS testing beyond the most common hotspot alleles in exons 2 and 3.",
+      "genes": [
+        "KRAS",
+        "EGFR"
+      ],
+      "drugs": [],
+      "diseases": [
+        "colorectal cancer"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Cancer research"
+    },
+    {
+      "pmid": "20675343",
+      "year": 2010,
+      "date": "2010-07-30",
+      "title": "The miR-217 microRNA functions as a potential tumor suppressor in pancreatic ductal adenocarcinoma by targeting KRAS.",
+      "abstract": "Aberrantly expressed microRNA (miRNA) is frequently associated with a variety of cancers, including pancreatic ductal adenocarcinoma (PDAC). In this study, we investigated the expression and possible role of miR-217 in PDAC. Data obtained by locked nucleic acid in situ hybridization and real-time quantitative polymerase chain reaction showed that miR-217 was downregulated in 76.2% (16/21) of PDAC tissues and in all tested PDAC cell lines when compared with the corresponding normal pancreatic tissue. Overexpression of miR-217 in PDAC cells inhibited tumor cell growth and anchorage-independent colony formation and miR-217 decreased tumor cell growth in nude mouse xenografts in vivo. Using in silico predictions, KRAS was defined as a potential direct target of miR-217. Data from the dual-luciferase reporter gene assay showed that KRAS was a direct target of miR-217. Upregulation of miR-217 could decrease KRAS protein levels and reduce the constitutive phosphorylation of downstream AKT. Downregulation of miR-217 expression in PDAC cells could increase cell anchorage-independent colony formation and KRAS protein levels. Furthermore, miR-217 expression was observed to be negatively correlated with KRAS protein expression in PDAC cell lines. We conclude that the frequently downregulated miR-217 can regulate KRAS and function as a tumor suppressor in PDAC. Therefore, miR-217 may serve as a useful therapeutic agent for miRNA-based PDAC therapy.",
+      "genes": [
+        "KRAS"
+      ],
+      "drugs": [],
+      "diseases": [
+        "pancreatic cancer"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article"
+      ],
+      "journal": "Carcinogenesis"
+    },
+    {
+      "pmid": "21062932",
+      "year": 2010,
+      "date": "2010-11-09",
+      "title": "Optimizing the detection of lung cancer patients harboring anaplastic lymphoma kinase (ALK) gene rearrangements potentially suitable for ALK inhibitor treatment.",
+      "abstract": "PurposeAnaplastic lymphoma kinase (ALK) rearrangements, associated with sensitivity to an experimental ALK/MET inhibitor, occur in 3% to 5% of non-small cell lung cancers. Intratumoral fluorescence in situ hybridization (FISH) heterogeneity has been reported. We explored the heterogeneity basis, the requirements for accurately determining ALK FISH positivity, and the effect of enriching the tested population using clinical and molecular factors.Experimental designLung cancer patients were screened by ALK and MET FISH and for EGFR and KRAS mutations.ResultsThirteen ALK-positive cases were identified from 73 screened patients. Gene copy number increases occurred together with classic rearrangements. All positive cases were adenocarcinomas, 12 were EGFR/KRAS wild-type, and 1 had a coexistent EGFR exon 20 mutation. No association with MET amplification occurred. ALK positivity was associated with ConclusionsIntratumoral ALK FISH heterogeneity reflects technique, not biology. The clinical activity of ALK/MET inhibitors in ALK-positive patients probably reflects ALK, but not MET, activity. Prescreening by histology, EGFR/KRAS mutations, and smoking status dramatically increases the ALK-positive hit rate compared with unselected series.",
+      "genes": [
+        "KRAS",
+        "EGFR",
+        "MET"
+      ],
+      "drugs": [],
+      "diseases": [
+        "NSCLC"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research"
+    },
+    {
+      "pmid": "21072204",
+      "year": 2010,
+      "date": "2010-11-03",
+      "title": "FGFR3, HRAS, KRAS, NRAS and PIK3CA mutations in bladder cancer and their potential as biomarkers for surveillance and therapy.",
+      "abstract": "BackgroundFifty percent of patients with muscle-invasive bladder cancer (MI-BC) die from their disease and current chemotherapy treatment only marginally increases survival. Novel therapies targeting receptor tyrosine kinases or activated oncogenes may improve outcome. Hence, it is necessary to stratify patients based on mutations in relevant oncogenes. Patients with non-muscle-invasive bladder cancer (NMI-BC) have excellent survival, however two-thirds develop recurrences. Tumor specific mutations can be used to detect recurrences in urine assays, presenting a more patient-friendly diagnostic procedure than cystoscopy.Methodology/principal findingsTo address these issues, we developed a mutation assay for the simultaneous detection of 19 possible mutations in the HRAS, KRAS, and NRAS genes. With this assay and mutation assays for the FGFR3 and PIK3CA oncogenes, we screened primary bladder tumors of 257 patients and 184 recurrences from 54 patients. Additionally, in primary tumors p53 expression was obtained by immunohistochemistry. Of primary tumors 64% were mutant for FGFR3, 11% for RAS, 24% for PIK3CA, and 26% for p53. FGFR3 mutations were mutually exclusive with RAS mutations (p\u200a=\u200a0.001) and co-occurred with PIK3CA mutations (p\u200a=\u200a0.016). P53 overexpression was mutually exclusive with PIK3CA and FGFR3 mutations (p\u22640.029). Mutations in the RAS and PIK3CA genes were not predictors for recurrence-free, progression-free and disease-specific survival. In patients presenting with NMI-BC grade 3 and MI-BC, 33 and 36% of the primary tumors were mutant. In patients with low-grade NMI-BC, 88% of the primary tumors carried a mutation and 88% of the recurrences were mutant.Conclusions/significanceThe mutation assays present a companion diagnostic to define patients for targeted therapies. In addition, the assays are a potential biomarker to detect recurrences during surveillance. We showed that 88% of patients presenting with low-grade NMI-BC are eligible for such a follow-up. This may contribute to a reduction in the number of cystoscopical examinations.",
+      "genes": [
+        "KRAS",
+        "NRAS",
+        "HRAS",
+        "PIK3CA"
+      ],
+      "drugs": [],
+      "diseases": [],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "journal": "PloS one"
+    },
+    {
+      "pmid": "21179501",
+      "year": 2010,
+      "date": "2010-12-14",
+      "title": "Live imaging of innate immune cell sensing of transformed cells in zebrafish larvae: parallels between tumor initiation and wound inflammation.",
+      "abstract": "It has not previously been possible to live image the earliest interactions between the host environment and oncogene-transformed cells as they initiate formation of cancers within an organism. Here we take advantage of the translucency of zebrafish larvae to observe the host innate immune cell response as oncogene-transformed melanoblasts and goblet cells multiply within the larval skin. Our studies indicate activation of leukocytes at very early stages in larvae carrying a transformed cell burden. Locally, we see recruitment of neutrophils and macrophages by 48 h post-fertilization, when transformed cells are still only singletons or doublets, and soon after this we see intimate associations between immune and transformed cells and frequent examples of cytoplasmic tethers linking the two cell types, as well as engulfment of transformed cells by both neutrophils and macrophages. We show that a major component of the signal drawing inflammatory cells to oncogenic HRAS(G12V)-transformed cells is H(2)O(2), which is also a key damage cue responsible for recruiting neutrophils to a wound. Our short-term blocking experiments show that preventing recruitment of immune cells at these early stages results in reduced growth of transformed cell clones and suggests that immune cells may provide a source of trophic support to the transformed cells just as they do at a site of tissue repair. These parallels between the inflammatory responses to transformed cells and to wounds reinforce the suggestion by others that cancers resemble non-healing wounds.",
+      "genes": [
+        "HRAS"
+      ],
+      "drugs": [],
+      "diseases": [],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "journal": "PLoS biology"
+    },
+    {
+      "pmid": "21216929",
+      "year": 2011,
+      "date": "2011-01-07",
+      "title": "PIK3CA mutations in patients with advanced cancers treated with PI3K/AKT/mTOR axis inhibitors.",
+      "abstract": "Preclinical data suggest that PIK3CA mutations predict response to PI3K/AKT/mTOR inhibitors. Concomitant KRAS or BRAF mutations may mediate resistance. Therefore, tumors from patients referred to the phase I program for targeted therapy starting in October 2008 were analyzed for PIK3CA mutations using PCR-based DNA sequencing of exons 9 and 20. Consecutive patients with diverse tumor types and PIK3CA mutation were treated whenever possible with agents targeting the PI3K/AKT/mTOR pathway. Overall, PIK3CA mutations were detected in 25 of 217 patients (11.5%; exon 9, n = 11; exon 20, n = 14). In tumor types with more than 10 patients tested, PIK3CA mutations were most frequent in endometrial (3 of 14, 21%), ovarian (5 of 30, 17%), colorectal (9 of 54, 17%), breast (2 of 14, 14%), cervical (2 of 15, 13%), and squamous cell cancer of the head and neck (1 of 11, 9%). Of the 25 patients with PIK3CA mutations, 17 (68%) were treated on a protocol that included a PI3K/AKT/mTOR pathway inhibitor, and 6 (35%) achieved a partial response. In contrast, only 15 of 241 patients (6%) without documented PIK3CA mutations treated on the same protocols responded (P = 0.001). Of the 17 patients with PIK3CA mutations, 6 (35%) had simultaneous KRAS or BRAF mutations (colorectal, n = 4; ovarian, n = 2). Colorectal cancer patients with PIK3CA and KRAS mutations did not respond to therapy, whereas both ovarian cancer patients with PIK3CA and KRAS or BRAF mutations did. In conclusion, PIK3CA mutations were detected in 11.5% of patients with diverse solid tumors. The response rate was significantly higher for patients with PIK3CA mutations treated with PI3K/AKT/mTOR pathway inhibitors than for those without documented mutations.",
+      "genes": [
+        "KRAS",
+        "BRAF",
+        "PIK3CA"
+      ],
+      "drugs": [],
+      "diseases": [
+        "colorectal cancer"
+      ],
+      "pub_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Molecular cancer therapeutics"
+    },
+    {
+      "pmid": "21481787",
+      "year": 2011,
+      "date": "2011-04-01",
+      "title": "Stat3 and MMP7 contribute to pancreatic ductal adenocarcinoma initiation and progression.",
+      "abstract": "Chronic pancreatitis is a well-known risk factor for pancreatic ductal adenocarcinoma (PDA) development in humans, and inflammation promotes PDA initiation and progression in mouse models of the disease. However, the mechanistic link between inflammatory damage and PDA initiation is unclear. Using a Kras-driven mouse model of PDA, we establish that the inflammatory mediator Stat3 is a critical component of spontaneous and pancreatitis-accelerated PDA precursor formation and supports cell proliferation, metaplasia-associated inflammation, and MMP7 expression during neoplastic development. Furthermore, we show that Stat3 signaling enforces MMP7 expression in PDA cells and that MMP7 deletion limits tumor size and metastasis in mice. Finally, we demonstrate that serum MMP7 level in human patients with PDA correlated with metastatic disease and survival.",
+      "genes": [
+        "KRAS"
+      ],
+      "drugs": [],
+      "diseases": [
+        "pancreatic cancer"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Cancer cell"
+    },
+    {
+      "pmid": "21734707",
+      "year": 2011,
+      "date": "2011-07-06",
+      "title": "Oncogene-induced Nrf2 transcription promotes ROS detoxification and tumorigenesis.",
+      "abstract": "Reactive oxygen species (ROS) are mutagenic and may thereby promote cancer. Normally, ROS levels are tightly controlled by an inducible antioxidant program that responds to cellular stressors and is predominantly regulated by the transcription factor Nrf2 (also known as Nfe2l2) and its repressor protein Keap1 (refs 2-5). In contrast to the acute physiological regulation of Nrf2, in neoplasia there is evidence for increased basal activation of Nrf2. Indeed, somatic mutations that disrupt the Nrf2-Keap1 interaction to stabilize Nrf2 and increase the constitutive transcription of Nrf2 target genes were recently identified, indicating that enhanced ROS detoxification and additional Nrf2 functions may in fact be pro-tumorigenic. Here, we investigated ROS metabolism in primary murine cells following the expression of endogenous oncogenic alleles of Kras, Braf and Myc, and found that ROS are actively suppressed by these oncogenes. K-Ras(G12D), B-Raf(V619E) and Myc(ERT2) each increased the transcription of Nrf2 to stably elevate the basal Nrf2 antioxidant program and thereby lower intracellular ROS and confer a more reduced intracellular environment. Oncogene-directed increased expression of Nrf2 is a new mechanism for the activation of the Nrf2 antioxidant program, and is evident in primary cells and tissues of mice expressing K-Ras(G12D) and B-Raf(V619E), and in human pancreatic cancer. Furthermore, genetic targeting of the Nrf2 pathway impairs K-Ras(G12D)-induced proliferation and tumorigenesis in vivo. Thus, the Nrf2 antioxidant and cellular detoxification program represents a previously unappreciated mediator of oncogenesis.",
+      "genes": [
+        "KRAS",
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "pancreatic cancer"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Nature"
+    },
+    {
+      "pmid": "21768580",
+      "year": 2011,
+      "date": "2011-07-01",
+      "title": "Strategies to identify the Lynch syndrome among patients with colorectal cancer: a cost-effectiveness analysis.",
+      "abstract": "BackgroundTesting has been advocated for all persons with newly diagnosed colorectal cancer to identify families with the Lynch syndrome, an autosomal dominant cancer-predisposition syndrome that is a paradigm for personalized medicine.ObjectiveTo estimate the effectiveness and cost-effectiveness of strategies to identify the Lynch syndrome, with attention to sex, age at screening, and differential effects for probands and relatives.DesignMarkov model that incorporated risk for colorectal, endometrial, and ovarian cancers.Data sourcesPublished literature.Target populationAll persons with newly diagnosed colorectal cancer and their relatives.Time horizonLifetime.PerspectiveThird-party payer.InterventionStrategies based on clinical criteria, prediction algorithms, tumor testing, or up-front germline mutation testing, followed by tailored screening and risk-reducing surgery.Outcome measuresLife-years, cancer cases and deaths, costs, and incremental cost-effectiveness ratios.Results of base-case analysisThe benefit of all strategies accrued primarily to relatives with a mutation associated with the Lynch syndrome, particularly women, whose life expectancy could increase by approximately 4 years with hysterectomy and salpingo-oophorectomy and adherence to colorectal cancer screening recommendations. At current rates of germline testing, screening, and prophylactic surgery, the strategies reduced deaths from colorectal cancer by 7% to 42% and deaths from endometrial and ovarian cancer by 1% to 6%. Among tumor-testing strategies, immunohistochemistry followed by BRAF mutation testing was preferred, with an incremental cost-effectiveness ratio of $36,200 per life-year gained.Results of sensitivity analysisThe number of relatives tested per proband was a critical determinant of both effectiveness and cost-effectiveness, with testing of 3 to 4 relatives required for most strategies to meet a threshold of $50,000 per life-year gained. Immunohistochemistry followed by BRAF mutation testing was preferred in 59% of iterations in probabilistic sensitivity analysis at a threshold of $100,000 per life-year gained. Screening for the Lynch syndrome with immunohistochemistry followed by BRAF mutation testing only up to age 70 years cost $44,000 per incremental life-year gained compared with screening only up to age 60 years, and screening without an upper age limit cost $88,700 per incremental life-year gained compared with screening only up to age 70 years.LimitationOther types of cancer, uncertain family pedigrees, and genetic variants of unknown significance were not considered.ConclusionWidespread colorectal tumor testing to identify families with the Lynch syndrome could yield substantial benefits at acceptable costs, particularly for women with a mutation associated with the Lynch syndrome who begin regular screening and have risk-reducing surgery. The cost-effectiveness of such testing depends on the participation rate among relatives at risk for the Lynch syndrome.Primary funding sourceNational Institutes of Health.",
+      "genes": [
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "colorectal cancer"
+      ],
+      "pub_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Annals of internal medicine"
+    },
+    {
+      "pmid": "21775669",
+      "year": 2011,
+      "date": "2011-07-01",
+      "title": "Recurrent GNAS mutations define an unexpected pathway for pancreatic cyst development.",
+      "abstract": "More than 2% of the adult U.S. population harbors a pancreatic cyst. These often pose a difficult management problem because conventional criteria cannot always distinguish cysts with malignant potential from those that are innocuous. One of the most common cystic neoplasms of the pancreas, and a bona fide precursor to invasive adenocarcinoma, is called intraductal papillary mucinous neoplasm (IPMN). To help reveal the pathogenesis of these lesions, we purified the DNA from IPMN cyst fluids from 19 patients and searched for mutations in 169 genes commonly altered in human cancers. In addition to the expected KRAS mutations, we identified recurrent mutations at codon 201 of GNAS. A larger number (113) of additional IPMNs were then analyzed to determine the prevalence of KRAS and GNAS mutations. In total, we found that GNAS mutations were present in 66% of IPMNs and that either KRAS or GNAS mutations could be identified in 96%. In eight cases, we could investigate invasive adenocarcinomas that developed in association with IPMNs containing GNAS mutations. In seven of these eight cases, the GNAS mutations present in the IPMNs were also found in the invasive lesion. GNAS mutations were not found in other types of cystic neoplasms of the pancreas or in invasive adenocarcinomas not associated with IPMNs. In addition to defining a new pathway for pancreatic neoplasia, these data suggest that GNAS mutations can inform the diagnosis and management of patients with cystic pancreatic lesions.",
+      "genes": [
+        "KRAS"
+      ],
+      "drugs": [],
+      "diseases": [
+        "pancreatic cancer"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Science translational medicine"
+    },
+    {
+      "pmid": "21828135",
+      "year": 2011,
+      "date": "2011-08-09",
+      "title": "Mutational spectrum analysis of chronic myelomonocytic leukemia includes genes associated with epigenetic regulation: UTX, EZH2, and DNMT3A.",
+      "abstract": "Chronic myelomonocytic leukemia (CMML), a myelodysplastic/myeloproliferative neoplasm, is characterized by monocytic proliferation, dysplasia, and progression to acute myeloid leukemia. CMML has been associated with somatic mutations in diverse recently identified genes. We analyzed 72 well-characterized patients with CMML (N = 52) and CMML-derived acute myeloid leukemia (N = 20) for recurrent chromosomal abnormalities with the use of routine cytogenetics and single nucleotide polymorphism arrays along with comprehensive mutational screening. Cytogenetic aberrations were present in 46% of cases, whereas single nucleotide polymorphism array increased the diagnostic yield to 60%. At least 1 mutation was found in 86% of all cases; novel UTX, DNMT3A, and EZH2 mutations were found in 8%, 10%, and 5.5% of patients, respectively. TET2 mutations were present in 49%, ASXL1 in 43%, CBL in 14%, IDH1/2 in 4%, KRAS in 7%, NRAS in 4%, and JAK2 V617F in 1% of patients. Various mutant genotype combinations were observed, indicating molecular heterogeneity in CMML. Our results suggest that molecular defects affecting distinct pathways can lead to similar clinical phenotypes.",
+      "genes": [
+        "KRAS",
+        "NRAS"
+      ],
+      "drugs": [],
+      "diseases": [
+        "leukemia"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Blood"
+    },
+    {
+      "pmid": "21900593",
+      "year": 2011,
+      "date": "2011-09-01",
+      "title": "Activation of ERBB2 signaling causes resistance to the EGFR-directed therapeutic antibody cetuximab.",
+      "abstract": "Cetuximab, an antibody directed against the epidermal growth factor receptor, is an effective clinical therapy for patients with colorectal, head and neck, and non-small cell lung cancer, particularly for those with KRAS and BRAF wild-type cancers. Treatment in all patients is limited eventually by the development of acquired resistance, but little is known about the underlying mechanism. Here, we show that activation of ERBB2 signaling in cell lines, either through ERBB2 amplification or through heregulin up-regulation, leads to persistent extracellular signal-regulated kinase 1/2 signaling and consequently to cetuximab resistance. Inhibition of ERBB2 or disruption of ERBB2/ERBB3 heterodimerization restores cetuximab sensitivity in vitro and in vivo. A subset of colorectal cancer patients who exhibit either de novo or acquired resistance to cetuximab-based therapy has ERBB2 amplification or high levels of circulating heregulin. Collectively, these findings identify two distinct resistance mechanisms, both of which promote aberrant ERBB2 signaling, that mediate cetuximab resistance. Moreover, these results suggest that ERBB2 inhibitors, in combination with cetuximab, represent a rational therapeutic strategy that should be assessed in patients with cetuximab-resistant cancers.",
+      "genes": [
+        "KRAS",
+        "BRAF",
+        "EGFR",
+        "ERBB2"
+      ],
+      "drugs": [
+        "cetuximab"
+      ],
+      "diseases": [
+        "NSCLC",
+        "colorectal cancer"
+      ],
+      "pub_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "journal": "Science translational medicine"
+    },
+    {
+      "pmid": "22080947",
+      "year": 2011,
+      "date": "2011-11-09",
+      "title": "Senescence surveillance of pre-malignant hepatocytes limits liver cancer development.",
+      "abstract": "Upon the aberrant activation of oncogenes, normal cells can enter the cellular senescence program, a state of stable cell-cycle arrest, which represents an important barrier against tumour development in vivo. Senescent cells communicate with their environment by secreting various cytokines and growth factors, and it was reported that this 'secretory phenotype' can have pro- as well as anti-tumorigenic effects. Here we show that oncogene-induced senescence occurs in otherwise normal murine hepatocytes in vivo. Pre-malignant senescent hepatocytes secrete chemo- and cytokines and are subject to immune-mediated clearance (designated as 'senescence surveillance'), which depends on an intact CD4(+) T-cell-mediated adaptive immune response. Impaired immune surveillance of pre-malignant senescent hepatocytes results in the development of murine hepatocellular carcinomas (HCCs), thus showing that senescence surveillance is important for tumour suppression in vivo. In accordance with these observations, ras-specific Th1 lymphocytes could be detected in mice, in which oncogene-induced senescence had been triggered by hepatic expression of Nras(G12V). We also found that CD4(+) T cells require monocytes/macrophages to execute the clearance of senescent hepatocytes. Our study indicates that senescence surveillance represents an important extrinsic component of the senescence anti-tumour barrier, and illustrates how the cellular senescence program is involved in tumour immune surveillance by mounting specific immune responses against antigens expressed in pre-malignant senescent cells.",
+      "genes": [
+        "NRAS"
+      ],
+      "drugs": [],
+      "diseases": [],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article"
+      ],
+      "journal": "Nature"
+    },
+    {
+      "pmid": "21659424",
+      "year": 2012,
+      "date": "2011-06-09",
+      "title": "Genome-scale analysis of aberrant DNA methylation in colorectal cancer.",
+      "abstract": "Colorectal cancer (CRC) is a heterogeneous disease in which unique subtypes are characterized by distinct genetic and epigenetic alterations. Here we performed comprehensive genome-scale DNA methylation profiling of 125 colorectal tumors and 29 adjacent normal tissues. We identified four DNA methylation-based subgroups of CRC using model-based cluster analyses. Each subtype shows characteristic genetic and clinical features, indicating that they represent biologically distinct subgroups. A CIMP-high (CIMP-H) subgroup, which exhibits an exceptionally high frequency of cancer-specific DNA hypermethylation, is strongly associated with MLH1 DNA hypermethylation and the BRAF(V600E) mutation. A CIMP-low (CIMP-L) subgroup is enriched for KRAS mutations and characterized by DNA hypermethylation of a subset of CIMP-H-associated markers rather than a unique group of CpG islands. Non-CIMP tumors are separated into two distinct clusters. One non-CIMP subgroup is distinguished by a significantly higher frequency of TP53 mutations and frequent occurrence in the distal colon, while the tumors that belong to the fourth group exhibit a low frequency of both cancer-specific DNA hypermethylation and gene mutations and are significantly enriched for rectal tumors. Furthermore, we identified 112 genes that were down-regulated more than twofold in CIMP-H tumors together with promoter DNA hypermethylation. These represent \u223c7% of genes that acquired promoter DNA methylation in CIMP-H tumors. Intriguingly, 48/112 genes were also transcriptionally down-regulated in non-CIMP subgroups, but this was not attributable to promoter DNA hypermethylation. Together, we identified four distinct DNA methylation subgroups of CRC and provided novel insight regarding the role of CIMP-specific DNA hypermethylation in gene silencing.",
+      "genes": [
+        "KRAS",
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "colorectal cancer"
+      ],
+      "pub_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Genome research"
+    },
+    {
+      "pmid": "22156613",
+      "year": 2012,
+      "date": "2011-12-12",
+      "title": "Selective BRAF inhibitors induce marked T-cell infiltration into human metastatic melanoma.",
+      "abstract": "PurposeTo evaluate the effects of treatment with the potent mutant BRAF inhibitors GSK2118436 or vemurafenib (PLX4720) on immune responses to metastatic melanoma in tissues taken before and after treatment.Experimental designThirty-seven tumor biopsies were collected from 15 patients with unresectable American Joint Committee on Cancer stage III or IV melanoma immediately before and approximately 7 days after the commencement of BRAF inhibitor treatment and at the time of tumor progression. Immunohistochemical staining was carried out on the biopsies using specific antibodies for CD8, CD4, CD20, CD1a, and Granzyme B.ResultsTumor infiltration by CD4(+) and CD8(+) lymphocytes increased markedly following BRAF inhibitor treatment (both \u03c1 = 0.015). There was a correlation between the degree of tumor infiltration by CD8(+) and Granzyme B-expressing lymphocytes in post-BRAF inhibitor-treated biopsies (r = 0.690 and \u03c1 = 0.013). Increased intratumoral CD8(+) lymphocyte expression was correlated with a reduction in tumor size and an increase in necrosis in posttreatment biopsies (r = -0.793, \u03c1 = 0.011; and r = 0.761, \u03c1 = 0.004, respectively).ConclusionsThe increase in tumor-infiltrating lymphocytes induced by treatment with BRAF inhibitors provides strong support for conducting trials that combine BRAF inhibitors with immunotherapy in the hope of prolonging clinical responses.",
+      "genes": [
+        "BRAF"
+      ],
+      "drugs": [
+        "vemurafenib"
+      ],
+      "diseases": [
+        "melanoma"
+      ],
+      "pub_types": [
+        "Journal Article"
+      ],
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research"
+    },
+    {
+      "pmid": "22281684",
+      "year": 2012,
+      "date": "2012-01-26",
+      "title": "Unresponsiveness of colon cancer to BRAF(V600E) inhibition through feedback activation of EGFR.",
+      "abstract": "Inhibition of the BRAF(V600E) oncoprotein by the small-molecule drug PLX4032 (vemurafenib) is highly effective in the treatment of melanoma. However, colon cancer patients harbouring the same BRAF(V600E) oncogenic lesion have poor prognosis and show only a very limited response to this drug. To investigate the cause of the limited therapeutic effect of PLX4032 in BRAF(V600E) mutant colon tumours, here we performed an RNA-interference-based genetic screen in human cells to search for kinases whose knockdown synergizes with BRAF(V600E) inhibition. We report that blockade of the epidermal growth factor receptor (EGFR) shows strong synergy with BRAF(V600E) inhibition. We find in multiple BRAF(V600E) mutant colon cancers that inhibition of EGFR by the antibody drug cetuximab or the small-molecule drugs gefitinib or erlotinib is strongly synergistic with BRAF(V600E) inhibition, both in vitro and in vivo. Mechanistically, we find that BRAF(V600E) inhibition causes a rapid feedback activation of EGFR, which supports continued proliferation in the presence of BRAF(V600E) inhibition. Melanoma cells express low levels of EGFR and are therefore not subject to this feedback activation. Consistent with this, we find that ectopic expression of EGFR in melanoma cells is sufficient to cause resistance to PLX4032. Our data suggest that BRAF(V600E) mutant colon cancers (approximately 8-10% of all colon cancers), for which there are currently no targeted treatment options available, might benefit from combination therapy consisting of BRAF and EGFR inhibitors.",
+      "genes": [
+        "BRAF",
+        "EGFR"
+      ],
+      "drugs": [
+        "vemurafenib",
+        "cetuximab",
+        "erlotinib",
+        "gefitinib"
+      ],
+      "diseases": [
+        "colorectal cancer",
+        "melanoma"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article"
+      ],
+      "journal": "Nature"
+    },
+    {
+      "pmid": "22315472",
+      "year": 2012,
+      "date": "2012-02-07",
+      "title": "A comprehensive survey of genomic alterations in gastric cancer reveals systematic patterns of molecular exclusivity and co-occurrence among distinct therapeutic targets.",
+      "abstract": "ObjectiveGastric cancer is a major gastrointestinal malignancy for which targeted therapies are emerging as treatment options. This study sought to identify the most prevalent molecular targets in gastric cancer and to elucidate systematic patterns of exclusivity and co-occurrence among these targets, through comprehensive genomic analysis of a large panel of gastric cancers.DesignUsing high-resolution single nucleotide polymorphism arrays, copy number alterations were profiled in a panel of 233 gastric cancers (193 primary tumours, 40 cell lines) and 98 primary matched gastric non-malignant samples. For selected alterations, their impact on gene expression and clinical outcome were evaluated.Results22 recurrent focal alterations (13 amplifications and nine deletions) were identified. These included both known targets (FGFR2, ERBB2) and also novel genes in gastric cancer (KLF5, GATA6). Receptor tyrosine kinase (RTK)/RAS alterations were found to be frequent in gastric cancer. This study also demonstrates, for the first time, that these alterations occur in a mutually exclusive fashion, with KRAS gene amplifications highlighting a clinically relevant but previously underappreciated gastric cancer subgroup. FGFR2-amplified gastric cancers were also shown to be sensitive to dovitinib, an orally bioavailable FGFR/VEGFR targeting agent, potentially representing a subtype-specific therapy for FGFR2-amplified gastric cancers.ConclusionThe study demonstrates the existence of five distinct gastric cancer patient subgroups, defined by the signature genomic alterations FGFR2 (9% of tumours), KRAS (9%), EGFR (8%), ERBB2 (7%) and MET (4%). Collectively, these subgroups suggest that at least 37% of gastric cancer patients may be potentially treatable by RTK/RAS directed therapies.",
+      "genes": [
+        "KRAS",
+        "EGFR",
+        "ERBB2",
+        "MET"
+      ],
+      "drugs": [],
+      "diseases": [],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "journal": "Gut"
+    },
+    {
+      "pmid": "22473155",
+      "year": 2012,
+      "date": "2012-04-02",
+      "title": "Phase III trial of cetuximab with continuous or intermittent fluorouracil, leucovorin, and oxaliplatin (Nordic FLOX) versus FLOX alone in first-line treatment of metastatic colorectal cancer: the NORDIC-VII study.",
+      "abstract": "PurposeThe NORDIC-VII multicenter phase III trial investigated the efficacy of cetuximab when added to bolus fluorouracil/folinic acid and oxaliplatin (Nordic FLOX), administered continuously or intermittently, in previously untreated metastatic colorectal cancer (mCRC). The influence of KRAS mutation status on treatment outcome was also investigated.Patients and methodsPatients were randomly assigned to receive either standard Nordic FLOX (arm A), cetuximab and FLOX (arm B), or cetuximab combined with intermittent FLOX (arm C). Primary end point was progression-free survival (PFS). Overall survival (OS), response rate, R0 resection rate, and safety were secondary end points.ResultsOf the 571 patients randomly assigned, 566 were evaluable in intention-to-treat (ITT) analyses. KRAS and BRAF mutation analyses were obtained in 498 (88%) and 457 patients (81%), respectively. KRAS mutations were present in 39% of the tumors; 12% of tumors had BRAF mutations. The presence of BRAF mutations was a strong negative prognostic factor. In the ITT population, median PFS was 7.9, 8.3, and 7.3 months for the three arms, respectively (not significantly different). OS was almost identical for the three groups (20.4, 19.7, 20.3 months, respectively), and confirmed response rates were 41%, 49%, and 47%, respectively. In patients with KRAS wild-type tumors, cetuximab did not provide any additional benefit compared with FLOX alone. In patients with KRAS mutations, no significant difference was detected, although a trend toward improved PFS was observed in arm B. The regimens were well tolerated.ConclusionCetuximab did not add significant benefit to the Nordic FLOX regimen in first-line treatment of mCRC.",
+      "genes": [
+        "KRAS",
+        "BRAF"
+      ],
+      "drugs": [
+        "cetuximab"
+      ],
+      "diseases": [
+        "colorectal cancer"
+      ],
+      "pub_types": [
+        "Clinical Trial, Phase III",
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "Multicenter Study",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology"
+    },
+    {
+      "pmid": "22663011",
+      "year": 2012,
+      "date": "2012-06-04",
+      "title": "Improved survival with MEK inhibition in BRAF-mutated melanoma.",
+      "abstract": "BackgroundActivating mutations in serine-threonine protein kinase B-RAF (BRAF) are found in 50% of patients with advanced melanoma. Selective BRAF-inhibitor therapy improves survival, as compared with chemotherapy, but responses are often short-lived. In previous trials, MEK inhibition appeared to be promising in this population.MethodsIn this phase 3 open-label trial, we randomly assigned 322 patients who had metastatic melanoma with a V600E or V600K BRAF mutation to receive either trametinib, an oral selective MEK inhibitor, or chemotherapy in a 2:1 ratio. Patients received trametinib (2 mg orally) once daily or intravenous dacarbazine (1000 mg per square meter of body-surface area) or paclitaxel (175 mg per square meter) every 3 weeks. Patients in the chemotherapy group who had disease progression were permitted to cross over to receive trametinib. Progression-free survival was the primary end point, and overall survival was a secondary end point.ResultsMedian progression-free survival was 4.8 months in the trametinib group and 1.5 months in the chemotherapy group (hazard ratio for disease progression or death in the trametinib group, 0.45; 95% confidence interval [CI], 0.33 to 0.63; PConclusionsTrametinib, as compared with chemotherapy, improved rates of progression-free and overall survival among patients who had metastatic melanoma with a BRAF V600E or V600K mutation. (Funded by GlaxoSmithKline; METRIC ClinicalTrials.gov number, NCT01245062.).",
+      "genes": [
+        "BRAF"
+      ],
+      "drugs": [
+        "trametinib"
+      ],
+      "diseases": [
+        "melanoma"
+      ],
+      "pub_types": [
+        "Clinical Trial, Phase III",
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "Multicenter Study",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "journal": "The New England journal of medicine"
+    },
+    {
+      "pmid": "22773810",
+      "year": 2012,
+      "date": "2012-07-06",
+      "title": "Lung cancers with acquired resistance to EGFR inhibitors occasionally harbor BRAF gene mutations but lack mutations in KRAS, NRAS, or MEK1.",
+      "abstract": "Acquired resistance to EGF receptor (EGFR) tyrosine kinase inhibitors (TKIs) is inevitable in metastatic EGFR-mutant lung cancers. Here, we modeled disease progression using EGFR-mutant human tumor cell lines. Although five of six models displayed alterations already found in humans, one harbored an unexpected secondary NRAS Q61K mutation; resistant cells were sensitive to concurrent EGFR and MEK inhibition but to neither alone. Prompted by this finding and because RAS/RAF/MEK mutations are known mediators of acquired resistance in other solid tumors (colon cancers, gastrointestinal stromal tumors, and melanomas) responsive to targeted therapies, we analyzed the frequency of secondary KRAS/NRAS/BRAF/MEK1 gene mutations in the largest collection to date of lung cancers with acquired resistance to EGFR TKIs. No recurrent NRAS, KRAS, or MEK1 mutations were found in 212, 195, or 146 patient samples, respectively, but 2 of 195 (1%) were found to have mutations in BRAF (G469A and V600E). Ectopic expression of mutant NRAS or BRAF in drug-sensitive EGFR-mutant cells conferred resistance to EGFR TKIs that was overcome by addition of a MEK inhibitor. Collectively, these positive and negative results provide deeper insight into mechanisms of acquired resistance to EGFR TKIs in lung cancer and inform ongoing clinical trials designed to overcome resistance. In the context of emerging knowledge about mechanisms of acquired resistance to targeted therapies in various cancers, our data highlight the notion that, even though solid tumors share common signaling cascades, mediators of acquired resistance must be elucidated for each disease separately in the context of treatment.",
+      "genes": [
+        "KRAS",
+        "NRAS",
+        "BRAF",
+        "MAP2K1",
+        "EGFR"
+      ],
+      "drugs": [],
+      "diseases": [],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America"
+    },
+    {
+      "pmid": "22805292",
+      "year": 2012,
+      "date": "2012-07-16",
+      "title": "Activity of the oral MEK inhibitor trametinib in patients with advanced melanoma: a phase 1 dose-escalation trial.",
+      "abstract": "BackgroundMEK is a member of the MAPK signalling cascade that is commonly activated in melanoma. Direct inhibition of MEK blocks cell proliferation and induces apoptosis. We aimed to analyse safety, efficacy, and genotyping data for the oral, small-molecule MEK inhibitor trametinib in patients with melanoma.MethodsWe undertook a multicentre, phase 1 three-part study (dose escalation, cohort expansion, and pharmacodynamic assessment). The main results of this study are reported elsewhere; here we present data relating to patients with melanoma. We obtained tumour samples to assess BRAF mutational status, and available tissues underwent exploratory genotyping analysis. Disease response was measured by Response Evaluation Criteria in Solid Tumors, and adverse events were defined by common toxicity criteria. This study is registered with ClinicalTrials.gov, number NCT00687622.Findings97 patients with melanoma were enrolled, including 81 with cutaneous or unknown primary melanoma (36 BRAF mutant, 39 BRAF wild-type, six BRAF status unknown), and 16 with uveal melanoma. The most common treatment-related adverse events were rash or dermatitis acneiform (n=80; 82%) and diarrhoea (44; 45%), most of which were grade 2 or lower. No cutaneous squamous-cell carcinomas were recorded. Of 36 patients with BRAF mutations, 30 had not received a BRAF inhibitor before; two complete responses (both confirmed) and ten partial responses (eight confirmed) were noted in this subgroup (confirmed response rate, 33%). Median progression-free survival of this subgroup was 5\u00b77 months (95% CI 4\u00b70-7\u00b74). Of the six patients who had received previous BRAF inhibition, one unconfirmed partial response was recorded. Of 39 patients with BRAF wild-type melanoma, four partial responses were confirmed (confirmed response rate, 10%).InterpretationOur data show substantial clinical activity of trametinib in melanoma and suggest that MEK is a valid therapeutic target. Differences in response rates according to mutations indicate the importance of mutational analyses in the future.FundingGlaxoSmithKline.",
+      "genes": [
+        "BRAF"
+      ],
+      "drugs": [
+        "trametinib"
+      ],
+      "diseases": [
+        "melanoma"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Webcast",
+        "Multicenter Study",
+        "Clinical Trial, Phase I",
+        "Journal Article"
+      ],
+      "journal": "The Lancet. Oncology"
+    },
+    {
+      "pmid": "23095323",
+      "year": 2013,
+      "date": "2012-10-24",
+      "title": "The activation of MAPK in melanoma cells resistant to BRAF inhibition promotes PD-L1 expression that is reversible by MEK and PI3K inhibition.",
+      "abstract": "PurposeSelective BRAF inhibition (BRAFi) provides a paradigm shift for melanoma treatment. The duration of benefit is typically limited before resistance develops. Interest remains in combining targeted and immune therapies to overcome resistance and improve durability of clinical benefit. One mechanism of evading immune destruction is programmed death-1-ligand 1 (PD-L1) expression by tumors that results in potent antitumor immune suppression.Experimental designBRAFi-resistant melanoma cells were examined for changes in PD-L1 expression by immunoblot and flow cytometry. Signaling pathways involved in altering PD-L1 expression were examined. Strategies to maximize the effect of the BRAFi therapy were studied including MEKi, MEKi combinations, and additional pathways including phosphoinositide-3 kinase (PI3K).ResultsMelanoma cells resistant to BRAFi exhibit increased MAPK signaling and promotion of PD-L1 expression. PD-L1 expression is transcriptionally modulated by c-Jun and augmented by STAT3. MEK inhibition (MEKi) regains downregulation of MAPK signaling and suppresses the production of PD-L1. MEKi in melanoma cells shows dual therapeutic effects with simultaneous suppression of PD-L1 expression and induction of apoptosis. By combining MEKi with BRAFi, an additive effect on the inhibition of PD-L1 expression results.ConclusionsWe report a novel mechanism that suppresses preexisting immune responses in patients with melanoma receiving BRAFi therapy. BRAFi resistance leads to increased expression of PD-L1 in melanoma cells, mediated by c-Jun and STAT3. MEKi may be feasible to counteract BRAFi resistance of MAPK reactivation and also for the additive effect of PD-L1 suppression. Potential therapeutic benefits of combining targeted inhibitors and immune modulation to improve patient outcomes should be investigated.",
+      "genes": [
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "melanoma"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article"
+      ],
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research"
+    },
+    {
+      "pmid": "23200175",
+      "year": 2013,
+      "date": "2012-11-28",
+      "title": "Selumetinib plus docetaxel for KRAS-mutant advanced non-small-cell lung cancer: a randomised, multicentre, placebo-controlled, phase 2 study.",
+      "abstract": "BackgroundNo targeted therapies are available for KRAS-mutant non-small-cell lung cancer (NSCLC). Selumetinib is an inhibitor of MEK1/MEK2, downstream of KRAS, with preclinical evidence of synergistic activity with docetaxel in KRAS-mutant cancers. We did a prospective, randomised, phase 2 trial to assess selumetinib plus docetaxel in previously treated patients with advanced KRAS-mutant NSCLC.MethodsEligible patients were older than 18 years of age; had histologically or cytologically confirmed stage IIIB-IV KRAS-mutant NSCLC; had failed first-line therapy for advanced NSCLC; had WHO performance status of 0-1; had not received previous therapy with either a MEK inhibitor or docetaxel; and had adequate bone marrow, renal, and liver function. Patients were randomly assigned (in a 1:1 ratio) to either oral selumetinib (75 mg twice daily in a 21 day cycle) or placebo; all patients received intravenous docetaxel (75 mg/m(2) on day 1 of a 21 day cycle). Randomisation was done with an interactive voice response system and investigators, patients, data analysts, and the trial sponsor were masked to treatment assignment. The primary endpoint was overall survival, analysed for all patients with confirmed KRAS mutations. This study is registered with ClinicalTrials.gov, number NCT00890825.FindingsBetween April 20, 2009, and June 30, 2010, we randomly assigned 44 patients to receive selumetinib and docetaxel (selumetinib group) and 43 to receive placebo and docetaxel (placebo group). Of these, one patient in the selumetinib group and three in the placebo group were excluded from efficacy analyses because their tumours were not confirmed to be KRAS-mutation positive. Median overall survival was 9\u00b74 months (6\u00b78-13\u00b76) in the selumetinib group and 5\u00b72 months (95% CI 3\u00b78-non-calculable) in the placebo group (hazard ratio [HR] for death 0\u00b780, 80% CI 0\u00b756-1\u00b714; one-sided p=0\u00b721). Median progression-free survival was 5\u00b73 months (4\u00b76-6\u00b74) in the selumetinib group and 2\u00b71 months (95% CI 1\u00b74-3\u00b77) in the placebo group (HR for progression 0\u00b758, 80% CI 0\u00b742-0\u00b779; one-sided p=0\u00b7014). 16 (37%) patients in the selumetinib group and none in the placebo group had an objective response (pInterpretationSelumetinib plus docetaxel has promising efficacy, albeit with a higher number of adverse events than with docetaxel alone, in previously treated advanced KRAS-mutant NSCLC. These findings warrant further clinical investigation of selumetinib plus docetaxel in KRAS-mutant NSCLC.FundingAstraZeneca.",
+      "genes": [
+        "KRAS",
+        "MAP2K1",
+        "MAP2K2"
+      ],
+      "drugs": [
+        "selumetinib"
+      ],
+      "diseases": [
+        "NSCLC"
+      ],
+      "pub_types": [
+        "Clinical Trial, Phase II",
+        "Research Support, Non-U.S. Gov't",
+        "Multicenter Study",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "journal": "The Lancet. Oncology"
+    },
+    {
+      "pmid": "23288408",
+      "year": 2013,
+      "date": "2013-01-03",
+      "title": "A genome-scale RNA interference screen implicates NF1 loss in resistance to RAF inhibition.",
+      "abstract": "RAF inhibitors such as vemurafenib and dabrafenib block BRAF-mediated cell proliferation and achieve meaningful clinical benefit in the vast majority of patients with BRAF(V600E)-mutant melanoma. However, some patients do not respond to this regimen, and nearly all progress to therapeutic resistance. We used a pooled RNA interference screen targeting more than 16,500 genes to discover loss-of-function events that could drive resistance to RAF inhibition. The highest ranking gene was NF1, which encodes neurofibromin, a tumor suppressor that inhibits RAS activity. NF1 loss mediates resistance to RAF and mitogen-activated protein kinase (MAPK) kinase kinase (MEK) inhibitors through sustained MAPK pathway activation. However, cells lacking NF1 retained sensitivity to the irreversible RAF inhibitor AZ628 and an ERK inhibitor. NF1 mutations were observed in BRAF-mutant tumor cells that are intrinsically resistant to RAF inhibition and in melanoma tumors obtained from patients exhibiting resistance to vemurafenib, thus showing the clinical potential for NF1-driven resistance to RAF/MEK-targeted therapies.",
+      "genes": [
+        "BRAF",
+        "NF1"
+      ],
+      "drugs": [
+        "dabrafenib",
+        "vemurafenib"
+      ],
+      "diseases": [
+        "melanoma"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Cancer discovery"
+    },
+    {
+      "pmid": "23359684",
+      "year": 2013,
+      "date": "2013-01-28",
+      "title": "Landscape of somatic single-nucleotide and copy-number mutations in uterine serous carcinoma.",
+      "abstract": "Uterine serous carcinoma (USC) is a biologically aggressive subtype of endometrial cancer. We analyzed the mutational landscape of USC by whole-exome sequencing of 57 cancers, most of which were matched to normal DNA from the same patients. The distribution of the number of protein-altering somatic mutations revealed that 52 USC tumors had fewer than 100 (median 36), whereas 5 had more than 3,000 somatic mutations. The mutations in these latter tumors showed hallmarks of defects in DNA mismatch repair. Among the remainder, we found a significantly increased burden of mutation in 14 genes. In addition to well-known cancer genes (i.e., TP53, PIK3CA, PPP2R1A, KRAS, FBXW7), there were frequent mutations in CHD4/Mi2b, a member of the NuRD-chromatin-remodeling complex, and TAF1, an element of the core TFIID transcriptional machinery. Additionally, somatic copy-number variation was found to play an important role in USC, with 13 copy-number gains and 12 copy-number losses that occurred more often than expected by chance. In addition to loss of TP53, we found frequent deletion of a small segment of chromosome 19 containing MBD3, also a member of the NuRD-chromatin-modification complex, and frequent amplification of chromosome segments containing PIK3CA, ERBB2 (an upstream activator of PIK3CA), and CCNE1 (a target of FBXW7-mediated ubiquitination). These findings identify frequent mutation of DNA damage, chromatin remodeling, cell cycle, and cell proliferation pathways in USC and suggest potential targets for treatment of this lethal variant of endometrial cancer.",
+      "genes": [
+        "KRAS",
+        "ERBB2",
+        "PIK3CA"
+      ],
+      "drugs": [],
+      "diseases": [],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America"
+    },
+    {
+      "pmid": "23685455",
+      "year": 2013,
+      "date": "2013-05-19",
+      "title": "A key role for mitochondrial gatekeeper pyruvate dehydrogenase in oncogene-induced senescence.",
+      "abstract": "In response to tenacious stress signals, such as the unscheduled activation of oncogenes, cells can mobilize tumour suppressor networks to avert the hazard of malignant transformation. A large body of evidence indicates that oncogene-induced senescence (OIS) acts as such a break, withdrawing cells from the proliferative pool almost irreversibly, thus crafting a vital pathophysiological mechanism that protects against cancer. Despite the widespread contribution of OIS to the cessation of tumorigenic expansion in animal models and humans, we have only just begun to define the underlying mechanism and identify key players. Although deregulation of metabolism is intimately linked to the proliferative capacity of cells, and senescent cells are thought to remain metabolically active, little has been investigated in detail about the role of cellular metabolism in OIS. Here we show, by metabolic profiling and functional perturbations, that the mitochondrial gatekeeper pyruvate dehydrogenase (PDH) is a crucial mediator of senescence induced by BRAF(V600E), an oncogene commonly mutated in melanoma and other cancers. BRAF(V600E)-induced senescence was accompanied by simultaneous suppression of the PDH-inhibitory enzyme pyruvate dehydrogenase kinase 1 (PDK1) and induction of the PDH-activating enzyme pyruvate dehydrogenase phosphatase 2 (PDP2). The resulting combined activation of PDH enhanced the use of pyruvate in the tricarboxylic acid cycle, causing increased respiration and redox stress. Abrogation of OIS, a rate-limiting step towards oncogenic transformation, coincided with reversion of these processes. Further supporting a crucial role of PDH in OIS, enforced normalization of either PDK1 or PDP2 expression levels inhibited PDH and abrogated OIS, thereby licensing BRAF(V600E)-driven melanoma development. Finally, depletion of PDK1 eradicated melanoma subpopulations resistant to targeted BRAF inhibition, and caused regression of established melanomas. These results reveal a mechanistic relationship between OIS and a key metabolic signalling axis, which may be exploited therapeutically.",
+      "genes": [
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "melanoma"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article"
+      ],
+      "journal": "Nature"
+    },
+    {
+      "pmid": "23725851",
+      "year": 2013,
+      "date": "2013-05-29",
+      "title": "Panitumumab and irinotecan versus irinotecan alone for patients with KRAS wild-type, fluorouracil-resistant advanced colorectal cancer (PICCOLO): a prospectively stratified randomised trial.",
+      "abstract": "BackgroundTherapeutic antibodies targeting EGFR have activity in advanced colorectal cancer, but results from clinical trials are inconsistent and the population in which most benefit is derived is uncertain. Our aim was to assess the addition of panitumumab to irinotecan in pretreated advanced colorectal cancer.MethodsIn this open-label, randomised trial, we enrolled patients who had advanced colorectal cancer progressing after fluoropyrimidine treatment with or without oxaliplatin from 60 centres in the UK. From December, 2006 until June, 2008, molecularly unselected patients were recruited to a three-arm design including irinotecan (control), irinotecan plus ciclosporin, and irinotecan plus panitumumab (IrPan) groups. From June 10, 2008, in response to new data, the trial was amended to a prospectively stratified design, restricting panitumumab randomisation to patients with KRAS wild-type tumours; the results of the comparison between the irinotcan and IrPan groups are reported here. We used a computer-generated randomisation sequence (stratified by previous EGFR targeted therapy and then minimised by centre, WHO performance status, previous oxaliplatin, previous bevacizumab, previous dose modifications, and best previous response) to randomly allocate patients to either irinotecan or IrPan. Patients in both groups received 350 mg/m(2) intravenous irinotecan every 3 weeks (300 mg/m(2) if aged \u226570 years or a performance status of 2); patients in the IrPan group also received intravenous panitumumab 9 mg/kg every 3 weeks. The primary endpoint was overall survival in KRAS wild-type patients who had not received previous EGFR targeted therapy, analysed by intention to treat. Tumour DNA was pyrosequenced for KRASc.146, BRAF, NRAS, and PIK3CA mutations, and predefined molecular subgroups were analysed for interaction with the effect of panitumumab. This study is registered, number ISRCTN93248876.ResultsBetween Dec 4, 2006, and Aug 31, 2010, 1198 patients were enrolled, of whom 460 were included in the primary population of patients with KRASc.12-13,61 wild-type tumours and no previous EGFR targeted therapy. 230 patients were randomly allocated to irinotecan and 230 to IrPan. There was no difference in overall survival between groups (HR 1\u00b701, 95% CI 0\u00b783-1\u00b723; p=0\u00b791), but individuals in the IrPan group had longer progression-free survival (0\u00b778, 0\u00b764-0\u00b795; p=0\u00b7015) and a greater number of responses (79 [34%] patients vs 27 [12%]; pInterpretationAdding panitumumab to irinotecan did not improve the overall survival of patients with wild-type KRAS tumours. Further refinement of molecular selection is needed for substantial benefits to be derived from EGFR targeting agents.FundingCancer Research UK, Amgen Inc.",
+      "genes": [
+        "KRAS",
+        "NRAS",
+        "BRAF",
+        "EGFR",
+        "PIK3CA"
+      ],
+      "drugs": [
+        "panitumumab"
+      ],
+      "diseases": [
+        "colorectal cancer"
+      ],
+      "pub_types": [
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Multicenter Study",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "journal": "The Lancet. Oncology"
+    },
+    {
+      "pmid": "23934108",
+      "year": 2013,
+      "date": "2013-08-11",
+      "title": "Mechanism of MEK inhibition determines efficacy in mutant KRAS- versus BRAF-driven cancers.",
+      "abstract": "KRAS and BRAF activating mutations drive tumorigenesis through constitutive activation of the MAPK pathway. As these tumours represent an area of high unmet medical need, multiple allosteric MEK inhibitors, which inhibit MAPK signalling in both genotypes, are being tested in clinical trials. Impressive single-agent activity in BRAF-mutant melanoma has been observed; however, efficacy has been far less robust in KRAS-mutant disease. Here we show that, owing to distinct mechanisms regulating MEK activation in KRAS- versus BRAF-driven tumours, different mechanisms of inhibition are required for optimal antitumour activity in each genotype. Structural and functional analysis illustrates that MEK inhibitors with superior efficacy in KRAS-driven tumours (GDC-0623 and G-573, the former currently in phase I clinical trials) form a strong hydrogen-bond interaction with S212 in MEK that is critical for blocking MEK feedback phosphorylation by wild-type RAF. Conversely, potent inhibition of active, phosphorylated MEK is required for strong inhibition of the MAPK pathway in BRAF-mutant tumours, resulting in superior efficacy in this genotype with GDC-0973 (also known as cobimetinib), a MEK inhibitor currently in phase III clinical trials. Our study highlights that differences in the activation state of MEK in KRAS-mutant tumours versus BRAF-mutant tumours can be exploited through the design of inhibitors that uniquely target these distinct activation states of MEK. These inhibitors are currently being evaluated in clinical trials to determine whether improvements in therapeutic index within KRAS versus BRAF preclinical models translate to improved clinical responses in patients.",
+      "genes": [
+        "KRAS",
+        "BRAF"
+      ],
+      "drugs": [
+        "cobimetinib"
+      ],
+      "diseases": [
+        "melanoma"
+      ],
+      "pub_types": [
+        "Comparative Study",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Nature"
+    },
+    {
+      "pmid": "23938455",
+      "year": 2013,
+      "date": "2013-08-12",
+      "title": "Multiplex picodroplet digital PCR to detect KRAS mutations in circulating DNA from the plasma of colorectal cancer patients.",
+      "abstract": "BackgroundMultiplex digital PCR (dPCR) enables noninvasive and sensitive detection of circulating tumor DNA with performance unachievable by current molecular-detection approaches. Furthermore, picodroplet dPCR facilitates simultaneous screening for multiple mutations from the same sample.MethodsWe investigated the utility of multiplex dPCR to screen for the 7 most common mutations in codons 12 and 13 of the KRAS (Kirsten rat sarcoma viral oncogene homolog) oncogene from plasma samples of patients with metastatic colorectal cancer. Fifty plasma samples were tested from patients for whom the primary tumor biopsy tissue DNA had been characterized by quantitative PCR.ResultsTumor characterization revealed that 19 patient tumors had KRAS mutations. Multiplex dPCR analysis of the plasma DNA prepared from these samples identified 14 samples that matched the mutation identified in the tumor, 1 sample contained a different KRAS mutation, and 4 samples had no detectable mutation. Among the tumor samples that were wild type for KRAS, 2 KRAS mutations were identified in the corresponding plasma samples. Duplex dPCR (i.e., wild-type and single-mutation assay) was also used to analyze plasma samples from patients with KRAS-mutated tumors and 5 samples expected to contain the BRAF (v-raf murine sarcoma viral oncogene homolog B) V600E mutation. The results for the duplex analysis matched those for the multiplex analysis for KRAS-mutated samples and, owing to its higher sensitivity, enabled detection of 2 additional samples with low levels of KRAS-mutated DNA. All 5 samples with BRAF mutations were detected.ConclusionsThis work demonstrates the clinical utility of multiplex dPCR to screen for multiple mutations simultaneously with a sensitivity sufficient to detect mutations in circulating DNA obtained by noninvasive blood collection.",
+      "genes": [
+        "KRAS",
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "colorectal cancer"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article"
+      ],
+      "journal": "Clinical chemistry"
+    },
+    {
+      "pmid": "24398677",
+      "year": 2014,
+      "date": "2014-01-07",
+      "title": "Identification of double-stranded genomic DNA spanning all chromosomes with mutated KRAS and p53 DNA in the serum exosomes of patients with pancreatic cancer.",
+      "abstract": "Exosomes are small vesicles (50-150 nm) of endocytic origin that are released by many different cell types. Exosomes in the tumor microenvironment may play a key role in facilitating cell-cell communication. Exosomes are reported to predominantly contain RNA and proteins. In this study, we investigated whether exosomes from pancreatic cancer cells and serum from patients with pancreatic ductal adenocarcinoma contain genomic DNA. Our results provide evidence that exosomes contain >10-kb fragments of double-stranded genomic DNA. Mutations in KRAS and p53 can be detected using genomic DNA from exosomes derived from pancreatic cancer cell lines and serum from patients with pancreatic cancer. In addition, using whole genome sequencing, we demonstrate that serum exosomes from patients with pancreatic cancer contain genomic DNA spanning all chromosomes. These results indicate that serum-derived exosomes can be used to determine genomic DNA mutations for cancer prediction, treatment, and therapy resistance.",
+      "genes": [
+        "KRAS"
+      ],
+      "drugs": [],
+      "diseases": [
+        "pancreatic cancer"
+      ],
+      "pub_types": [
+        "Clinical Trial",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "The Journal of biological chemistry"
+    },
+    {
+      "pmid": "24436047",
+      "year": 2014,
+      "date": "2014-01-23",
+      "title": "Comprehensive genomic analysis of rhabdomyosarcoma reveals a landscape of alterations affecting a common genetic axis in fusion-positive and fusion-negative tumors.",
+      "abstract": "UnlabelledDespite gains in survival, outcomes for patients with metastatic or recurrent rhabdomyosarcoma remain dismal. In a collaboration between the National Cancer Institute, Children's Oncology Group, and Broad Institute, we performed whole-genome, whole-exome, and transcriptome sequencing to characterize the landscape of somatic alterations in 147 tumor/normal pairs. Two genotypes are evident in rhabdomyosarcoma tumors: those characterized by the PAX3 or PAX7 fusion and those that lack these fusions but harbor mutations in key signaling pathways. The overall burden of somatic mutations in rhabdomyosarcoma is relatively low, especially in tumors that harbor a PAX3/7 gene fusion. In addition to previously reported mutations in NRAS, KRAS, HRAS, FGFR4, PIK3CA, and CTNNB1, we found novel recurrent mutations in FBXW7 and BCOR, providing potential new avenues for therapeutic intervention. Furthermore, alteration of the receptor tyrosine kinase/RAS/PIK3CA axis affects 93% of cases, providing a framework for genomics-directed therapies that might improve outcomes for patients with rhabdomyosarcoma.SignificanceThis is the most comprehensive genomic analysis of rhabdomyosarcoma to date. Despite a relatively low mutation rate, multiple genes were recurrently altered, including NRAS, KRAS, HRAS, FGFR4, PIK3CA, CTNNB1, FBXW7, and BCOR. In addition, a majority of rhabdomyosarcoma tumors alter the receptor tyrosine kinase/RAS/PIK3CA axis, providing an opportunity for genomics-guided intervention.",
+      "genes": [
+        "KRAS",
+        "NRAS",
+        "HRAS",
+        "PIK3CA"
+      ],
+      "drugs": [],
+      "diseases": [],
+      "pub_types": [
+        "Research Support, N.I.H., Intramural",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "journal": "Cancer discovery"
+    },
+    {
+      "pmid": "24445538",
+      "year": 2014,
+      "date": "2014-01-01",
+      "title": "Kinase fusions are frequent in Spitz tumours and spitzoid melanomas.",
+      "abstract": "Spitzoid neoplasms are a group of melanocytic tumours with distinctive histopathological features. They include benign tumours (Spitz naevi), malignant tumours (spitzoid melanomas) and tumours with borderline histopathological features and uncertain clinical outcome (atypical Spitz tumours). Their genetic underpinnings are poorly understood, and alterations in common melanoma-associated oncogenes are typically absent. Here we show that spitzoid neoplasms harbour kinase fusions of ROS1 (17%), NTRK1 (16%), ALK (10%), BRAF (5%) and RET (3%) in a mutually exclusive pattern. The chimeric proteins are constitutively active, stimulate oncogenic signalling pathways, are tumourigenic and are found in the entire biologic spectrum of spitzoid neoplasms, including 55% of Spitz naevi, 56% of atypical Spitz tumours and 39% of spitzoid melanomas. Kinase inhibitors suppress the oncogenic signalling of the fusion proteins in vitro. In summary, kinase fusions account for the majority of oncogenic aberrations in spitzoid neoplasms and may serve as therapeutic targets for metastatic spitzoid melanomas.",
+      "genes": [
+        "BRAF"
+      ],
+      "drugs": [],
+      "diseases": [
+        "melanoma"
+      ],
+      "pub_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Nature communications"
+    },
+    {
+      "pmid": "24445999",
+      "year": 2014,
+      "date": "2014-01-01",
+      "title": "A dual role for autophagy in a murine model of lung cancer.",
+      "abstract": "Autophagy is a mechanism by which starving cells can control their energy requirements and metabolic states, thus facilitating the survival of cells in stressful environments, in particular in the pathogenesis of cancer. Here we report that tissue-specific inactivation of Atg5, essential for the formation of autophagosomes, markedly impairs the progression of KRas(G12D)-driven lung cancer, resulting in a significant survival advantage of tumour-bearing mice. Autophagy-defective lung cancers exhibit impaired mitochondrial energy homoeostasis, oxidative stress and a constitutively active DNA damage response. Genetic deletion of the tumour suppressor p53 reinstates cancer progression of autophagy-deficient tumours. Although there is improved survival, the onset of Atg5-mutant KRas(G12D)-driven lung tumours is markedly accelerated. Mechanistically, increased oncogenesis maps to regulatory T cells. These results demonstrate that, in KRas(G12D)-driven lung cancer, Atg5-regulated autophagy accelerates tumour progression; however, autophagy also represses early oncogenesis, suggesting a link between deregulated autophagy and regulatory T cell controlled anticancer immunity.",
+      "genes": [
+        "KRAS"
+      ],
+      "drugs": [],
+      "diseases": [],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article"
+      ],
+      "journal": "Nature communications"
+    },
+    {
+      "pmid": "25043045",
+      "year": 2014,
+      "date": "2014-07-02",
+      "title": "Mutant IDH inhibits HNF-4\u03b1 to block hepatocyte differentiation and promote biliary cancer.",
+      "abstract": "Mutations in isocitrate dehydrogenase 1 (IDH1) and IDH2 are among the most common genetic alterations in intrahepatic cholangiocarcinoma (IHCC), a deadly liver cancer. Mutant IDH proteins in IHCC and other malignancies acquire an abnormal enzymatic activity allowing them to convert \u03b1-ketoglutarate (\u03b1KG) to 2-hydroxyglutarate (2HG), which inhibits the activity of multiple \u03b1KG-dependent dioxygenases, and results in alterations in cell differentiation, survival, and extracellular matrix maturation. However, the molecular pathways by which IDH mutations lead to tumour formation remain unclear. Here we show that mutant IDH blocks liver progenitor cells from undergoing hepatocyte differentiation through the production of 2HG and suppression of HNF-4\u03b1, a master regulator of hepatocyte identity and quiescence. Correspondingly, genetically engineered mouse models expressing mutant IDH in the adult liver show an aberrant response to hepatic injury, characterized by HNF-4\u03b1 silencing, impaired hepatocyte differentiation, and markedly elevated levels of cell proliferation. Moreover, IDH and Kras mutations, genetic alterations that co-exist in a subset of human IHCCs, cooperate to drive the expansion of liver progenitor cells, development of premalignant biliary lesions, and progression to metastatic IHCC. These studies provide a functional link between IDH mutations, hepatic cell fate, and IHCC pathogenesis, and present a novel genetically engineered mouse model of IDH-driven malignancy.",
+      "genes": [
+        "KRAS"
+      ],
+      "drugs": [],
+      "diseases": [],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Nature"
+    },
+    {
+      "pmid": "25088940",
+      "year": 2014,
+      "date": "2014-07-31",
+      "title": "FOLFIRI plus cetuximab versus FOLFIRI plus bevacizumab as first-line treatment for patients with metastatic colorectal cancer (FIRE-3): a randomised, open-label, phase 3 trial.",
+      "abstract": "BackgroundCetuximab and bevacizumab have both been shown to improve outcomes in patients with metastatic colorectal cancer when added to chemotherapy regimens; however, their comparative effectiveness when partnered with first-line fluorouracil, folinic acid, and irinotecan (FOLFIRI) is unknown. We aimed to compare these agents in patients with KRAS (exon 2) codon 12/13 wild-type metastatic colorectal cancer.MethodsIn this open-label, randomised, phase 3 trial, we recruited patients aged 18-75 years with stage IV, histologically confirmed colorectal cancer, an Eastern Cooperative Oncology Group (ECOG) performance status of 0-2, an estimated life expectancy of greater than 3 months, and adequate organ function, from centres in Germany and Austria. Patients were centrally randomised by fax (1:1) to FOLFIRI plus cetuximab or FOLFIRI plus bevacizumab (using permuted blocks of randomly varying size), stratified according to ECOG performance status, number of metastatic sites, white blood cell count, and alkaline phosphatase concentration. The primary endpoint was objective response analysed by intention to treat. The study has completed recruitment, but follow-up of participants is ongoing. The trial is registered with ClinicalTrials.gov, number NCT00433927.FindingsBetween Jan 23, 2007, and Sept 19, 2012, 592 patients with KRAS exon 2 wild-type tumours were randomly assigned and received treatment (297 in the FOLFIRI plus cetuximab group and 295 in the FOLFIRI plus bevacizumab group). 184 (62\u00b70%, 95% CI 56\u00b72-67\u00b75) patients in the cetuximab group achieved an objective response compared with 171 (58\u00b70%, 52\u00b71-63\u00b77) in the bevacizumab group (odds ratio 1\u00b718, 95% CI 0\u00b785-1\u00b764; p=0\u00b718). Median progression-free survival was 10\u00b70 months (95% CI 8\u00b78-10\u00b78) in the cetuximab group and 10\u00b73 months (9\u00b78-11\u00b73) in the bevacizumab group (hazard ratio [HR] 1\u00b706, 95% CI 0\u00b788-1\u00b726; p=0\u00b755); however, median overall survival was 28\u00b77 months (95% CI 24\u00b70-36\u00b76) in the cetuximab group compared with 25\u00b70 months (22\u00b77-27\u00b76) in the bevacizumab group (HR 0\u00b777, 95% CI 0\u00b762-0\u00b796; p=0\u00b7017). Safety profiles were consistent with the known side-effects of the study drugs. The most common grade 3 or worse adverse events in both treatment groups were haematotoxicity (73 [25%] of 297 patients in the cetuximab group vs 62 [21%] of 295 patients in the bevacizumab group), skin reactions (77 [26%] vs six [2%]), and diarrhoea (34 [11%] vs 40 [14%]).InterpretationAlthough the proportion of patients who achieved an objective response did not significantly differ between the FOLFIRI plus cetuximab and FOLFIRI plus bevacizumab groups, the association with longer overall survival suggests that FOLFIRI plus cetuximab could be the preferred first-line regimen for patients with KRAS exon 2 wild-type metastatic colorectal cancer.FundingMerck KGaA.",
+      "genes": [
+        "KRAS"
+      ],
+      "drugs": [
+        "cetuximab"
+      ],
+      "diseases": [
+        "colorectal cancer"
+      ],
+      "pub_types": [
+        "Clinical Trial, Phase III",
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "Multicenter Study",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "journal": "The Lancet. Oncology"
+    },
+    {
+      "pmid": "25261994",
+      "year": 2014,
+      "date": "2014-09-28",
+      "title": "Elevation of circulating branched-chain amino acids is an early event in human pancreatic adenocarcinoma development.",
+      "abstract": "Most patients with pancreatic ductal adenocarcinoma (PDAC) are diagnosed with advanced disease and survive less than 12 months. PDAC has been linked with obesity and glucose intolerance, but whether changes in circulating metabolites are associated with early cancer progression is unknown. To better understand metabolic derangements associated with early disease, we profiled metabolites in prediagnostic plasma from individuals with pancreatic cancer (cases) and matched controls from four prospective cohort studies. We find that elevated plasma levels of branched-chain amino acids (BCAAs) are associated with a greater than twofold increased risk of future pancreatic cancer diagnosis. This elevated risk was independent of known predisposing factors, with the strongest association observed among subjects with samples collected 2 to 5 years before diagnosis, when occult disease is probably present. We show that plasma BCAAs are also elevated in mice with early-stage pancreatic cancers driven by mutant Kras expression but not in mice with Kras-driven tumors in other tissues, and that breakdown of tissue protein accounts for the increase in plasma BCAAs that accompanies early-stage disease. Together, these findings suggest that increased whole-body protein breakdown is an early event in development of PDAC.",
+      "genes": [
+        "KRAS"
+      ],
+      "drugs": [],
+      "diseases": [
+        "pancreatic cancer"
+      ],
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "journal": "Nature medicine"
+    },
+    {
+      "pmid": "25265492",
+      "year": 2014,
+      "date": "2014-09-29",
+      "title": "Combined BRAF and MEK inhibition versus BRAF inhibition alone in melanoma.",
+      "abstract": "BackgroundCombined BRAF and MEK inhibition, as compared with BRAF inhibition alone, delays the emergence of resistance and reduces toxic effects in patients who have melanoma with BRAF V600E or V600K mutations.MethodsIn this phase 3 trial, we randomly assigned 423 previously untreated patients who had unresectable stage IIIC or stage IV melanoma with a BRAF V600E or V600K mutation to receive a combination of dabrafenib (150 mg orally twice daily) and trametinib (2 mg orally once daily) or dabrafenib and placebo. The primary end point was progression-free survival. Secondary end points included overall survival, response rate, response duration, and safety. A preplanned interim overall survival analysis was conducted.ResultsThe median progression-free survival was 9.3 months in the dabrafenib-trametinib group and 8.8 months in the dabrafenib-only group (hazard ratio for progression or death in the dabrafenib-trametinib group, 0.75; 95% confidence interval [CI], 0.57 to 0.99; P=0.03). The overall response rate was 67% in the dabrafenib-trametinib group and 51% in the dabrafenib-only group (P=0.002). At 6 months, the interim overall survival rate was 93% with dabrafenib-trametinib and 85% with dabrafenib alone (hazard ratio for death, 0.63; 95% CI, 0.42 to 0.94; P=0.02). However, a specified efficacy-stopping boundary (two-sided P=0.00028) was not crossed. Rates of adverse events were similar in the two groups, although more dose modifications occurred in the dabrafenib-trametinib group. The rate of cutaneous squamous-cell carcinoma was lower in the dabrafenib-trametinib group than in the dabrafenib-only group (2% vs. 9%), whereas pyrexia occurred in more patients (51% vs. 28%) and was more often severe (grade 3, 6% vs. 2%) in the dabrafenib-trametinib group.ConclusionsA combination of dabrafenib and trametinib, as compared with dabrafenib alone, improved the rate of progression-free survival in previously untreated patients who had metastatic melanoma with BRAF V600E or V600K mutations. (Funded by GlaxoSmithKline; Clinical Trials.gov number, NCT01584648.).",
+      "genes": [
+        "BRAF"
+      ],
+      "drugs": [
+        "trametinib",
+        "dabrafenib"
+      ],
+      "diseases": [
+        "melanoma"
+      ],
+      "pub_types": [
+        "Clinical Trial, Phase III",
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "Multicenter Study",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "journal": "The New England journal of medicine"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+numpy
+torch
+requests
+pytest
+sentence-transformers

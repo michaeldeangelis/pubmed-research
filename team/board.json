@@ -1,0 +1,43 @@
+{
+  "team": "ras-mapk-v1",
+  "lead": "main-agent",
+  "pattern": "agent-team",
+  "protocol": "Tasks are assigned below. Claim by appending {\"from\",\"type\":\"claim\",\"task\"} to team/comms.jsonl before editing. Do not rewrite this file. Talk to other teammates by appending {\"from\",\"to\",\"type\":\"note\",\"text\"} to team/comms.jsonl. Stay inside your owned paths. The schema in src/schema.py and src/config.py is frozen.",
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "Europe PMC ingest to data/papers.jsonl",
+      "owner": "data",
+      "status": "assigned",
+      "paths": ["src/ingest/"]
+    },
+    {
+      "id": "T2",
+      "title": "Entity and relation enrichment",
+      "owner": "data",
+      "status": "assigned",
+      "paths": ["src/claims/"]
+    },
+    {
+      "id": "T3",
+      "title": "Frozen 768-d encoder",
+      "owner": "data",
+      "status": "assigned",
+      "paths": ["src/encode/"]
+    },
+    {
+      "id": "T4",
+      "title": "Causal top-k paper transformer and trainer",
+      "owner": "model",
+      "status": "assigned",
+      "paths": ["src/model/"]
+    },
+    {
+      "id": "T5",
+      "title": "Held-out probe, head inspection, ablation",
+      "owner": "probe",
+      "status": "assigned",
+      "paths": ["src/probe/"]
+    }
+  ]
+}

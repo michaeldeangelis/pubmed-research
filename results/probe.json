@@ -1,0 +1,23 @@
+{
+  "encoder": "pritamdeka/S-PubMedBert-MS-MARCO",
+  "n_papers": 1882,
+  "n_test_positions": 1158,
+  "prior_genetics_auroc_frozen": 0.5072920920512143,
+  "prior_genetics_auroc_contextual": 0.5178601455715968,
+  "prior_genetics_auroc_lift": 0.010568053520382481,
+  "resistance_auroc_contextual": 0.5307782631158705,
+  "ablation_delta_clinical_bce_genetics_context": 0.002357685938477516,
+  "ablation_delta_clinical_bce_no_genetics_context": 0.0017465128330513835,
+  "selective_ablation": true,
+  "head_genetics_attention": [
+    0.08019220417267398,
+    0.12204225824907758,
+    0.08474548682010263,
+    0.0972319491823813,
+    0.11173770099150059,
+    0.07444032091171221,
+    0.08414326891078985,
+    0.08866367847623682
+  ],
+  "notes": "Split: fit on year <= 2018, evaluate on year > 2020. Genetics was held out of the loss."
+}

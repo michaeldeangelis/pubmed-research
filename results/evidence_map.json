@@ -1,0 +1,928 @@
+{
+  "phase": "experimental evidence map",
+  "selection": "Exploratory. Three audited claims that already have several substantive results and an apparent disagreement. Not a representative benchmark.",
+  "question": "When results differ, which differences are changes in experimental conditions, which are changes in the quantity being estimated, and which are changes in statistical certainty?",
+  "source": "Abstracts of papers already in the audited retrieval lists. No new search.",
+  "claims": [
+    {
+      "claim_id": "C024",
+      "source_pmid": "19028870",
+      "proposition": "Kras(G12D) activated in adult pancreatic acinar cells induces pancreatic intraepithelial neoplasia of all grades and does not produce invasive carcinoma.",
+      "experiments": [
+        {
+          "pmid": "19028876",
+          "conditions": {
+            "population": "Mature mouse pancreatic acinar cells",
+            "intervention": "Activated Kras, alone or with activated Notch",
+            "comparator": "Kras alone versus Notch plus Kras",
+            "timing": "Conditional expression; Notch and Kras together reprogram acinar cells rapidly"
+          },
+          "measurement": {
+            "outcome": "PanIN formation and progression toward adenocarcinoma",
+            "effect": "Kras in mature acinar cells induces PanIN. Notch increases initiation and dysplasia and stops short of invasive adenocarcinoma.",
+            "uncertainty": "The abstract gives no lesion counts or interval."
+          },
+          "provenance": {
+            "cohort": "Mouse genetic experiment. No named colony or dataset.",
+            "known_overlap": "None stated. The source paper is PMID 19028870.",
+            "independence": "Unresolved. The Kras-only result restates the source observation, and the Notch arm is an added perturbation."
+          },
+          "addresses": "Whether adult acinar Kras(G12D) is sufficient for PanIN without invasion.",
+          "audit_relation": "support",
+          "estimand": {
+            "quantity": "Occurrence of PanIN and of invasive adenocarcinoma after acinar Kras activation",
+            "denominator": "Not reported",
+            "estimate": "PanIN develops. The abstract does not report invasive adenocarcinoma.",
+            "uncertainty": "No lesion counts or interval",
+            "adjustment": "None",
+            "variables_kept_separate": [
+              "Kras activation",
+              "Notch coactivation"
+            ]
+          },
+          "reading": "Records the PanIN outcome under activated Kras. Notch is a separate variable in the same paper. This does not isolate Kras as the cause of a difference seen in another paper."
+        },
+        {
+          "pmid": "19501586",
+          "conditions": {
+            "population": "Differentiated mouse pancreatic acinar cells, with Ras activity compared to mouse and human PDAC cells",
+            "intervention": "Mutant K-Ras at endogenous level, at a higher level, or at the endogenous level with p53 deleted",
+            "comparator": "Endogenous versus elevated Ras activity, measured by a Raf pull-down",
+            "timing": "Spontaneous progression after acinar expression. No week count in the abstract."
+          },
+          "measurement": {
+            "outcome": "Ras-GTP level, mPanIN, cystic papillary carcinoma, and metastatic PDAC",
+            "effect": "Endogenous mutant K-Ras gives moderately elevated Ras activity and sparse mPanIN, and does not become PDAC unless p53 is deleted. Higher Ras activity, matched to PDAC cells, produces abundant mPanIN that progresses to invasive and metastatic PDAC.",
+            "uncertainty": "Activity is described as greatly, moderately, or equally elevated. No fold change or confidence interval is given."
+          },
+          "provenance": {
+            "cohort": "Separate mouse experiment that measures Ras activity. No named dataset.",
+            "known_overlap": "None stated with PMID 19028876.",
+            "independence": "Unresolved at the level of the mouse stock. The dose comparison is a different design."
+          },
+          "addresses": "Whether the amount of Ras activity, not only the presence of mutant Kras, decides invasion.",
+          "audit_relation": "mixed",
+          "estimand": {
+            "quantity": "Histologic progression at measured Ras activity, and separately after p53 deletion at endogenous Ras",
+            "denominator": "Not reported as an animal count",
+            "estimate": "Endogenous mutant K-Ras: sparse mPanIN, no spontaneous PDAC unless p53 is deleted. Higher Ras activity, matched to PDAC cells: abundant mPanIN progressing to invasive and metastatic PDAC.",
+            "uncertainty": "No fold change or confidence interval for Ras activity",
+            "adjustment": "None",
+            "variables_kept_separate": [
+              "Ras activity level",
+              "p53 deletion"
+            ]
+          },
+          "reading": "Within this paper, Ras activity and p53 status are different variables with different outcomes. Set beside the other papers, a mechanistic account is plausible. The comparison does not isolate which variable caused the difference, because the experiments are not the same animals with one factor changed."
+        },
+        {
+          "pmid": "23284900",
+          "conditions": {
+            "population": "Mouse acinar cells, in vivo and in explant culture",
+            "intervention": "Oncogenic K-ras activated together with Notch1 deletion",
+            "comparator": "Kras-driven acinar-to-ductal metaplasia with and without Notch1",
+            "timing": "Kras activation and Notch1 deletion are simultaneous"
+          },
+          "measurement": {
+            "outcome": "Acinar-to-ductal metaplasia and PanIN number and severity",
+            "effect": "Kras is sufficient for metaplasia and PanIN. Removing Notch1 does not lessen PanIN severity and increases the number of lesions. Invasion is not reported.",
+            "uncertainty": "No lesion counts in the abstract."
+          },
+          "provenance": {
+            "cohort": "Mouse model and explants. No named dataset.",
+            "known_overlap": "Uses the acinar Kras model. Not described as a reanalysis of PMID 19028876.",
+            "independence": "Unresolved."
+          },
+          "addresses": "Whether Notch1 is required for the Kras acinar PanIN phenotype.",
+          "audit_relation": "support",
+          "estimand": {
+            "quantity": "PanIN number and severity when Notch1 is deleted in acinar cells expressing oncogenic Kras",
+            "denominator": "Not reported",
+            "estimate": "Kras is sufficient for metaplasia and PanIN. Notch1 deletion does not reduce severity and increases lesion number. Invasion is not reported.",
+            "uncertainty": "No lesion counts",
+            "adjustment": "None",
+            "variables_kept_separate": [
+              "Notch1 deletion"
+            ]
+          },
+          "reading": "Notch1 deletion is a separate variable from Ras dose. The paper does not report invasion, so it does not estimate the invasion contrast."
+        }
+      ],
+      "comparison": "Recorded experimental conditions offer a plausible explanation for different outcomes. Ras activity and cooperating alterations, including p53 deletion and Notch, are separate variables. Across-paper differences do not isolate which variable caused the difference."
+    },
+    {
+      "claim_id": "C033",
+      "source_pmid": "20183914",
+      "proposition": "In resected non-small-cell lung cancer, EML4-ALK fusions are mutually exclusive with EGFR, KRAS, and ERBB2 mutations.",
+      "experiments": [
+        {
+          "pmid": "23729361",
+          "conditions": {
+            "population": "1,683 patients with non-small-cell lung cancer, plus 34 biopsies after crizotinib resistance",
+            "intervention": "Clinical genotyping for ALK rearrangement, EGFR mutation, and KRAS mutation, with immunohistochemistry when FISH was abnormal",
+            "comparator": "ALK-positive versus EGFR-mutant or KRAS-mutant tumors in the same screened population",
+            "timing": "Genotyping at diagnosis, and a second biopsy after acquired crizotinib resistance"
+          },
+          "measurement": {
+            "outcome": "Co-occurrence of a functional ALK rearrangement with EGFR or KRAS mutation",
+            "effect": "75 ALK rearrangements, 301 EGFR mutations, and 465 KRAS mutations. EGFR and ALK were mutually exclusive. Four KRAS-mutant tumors had abnormal ALK FISH and were negative for ALK protein where tissue allowed the stain. No EGFR or KRAS mutation appeared in 25 resistance biopsies with enough tissue.",
+            "uncertainty": "Confirmatory immunohistochemistry was available for 3 of the 4 KRAS and abnormal-FISH cases."
+          },
+          "provenance": {
+            "cohort": "One center's clinical genotyping series.",
+            "known_overlap": "None stated with the other lists.",
+            "independence": "A consecutive screen, distinct from series assembled because a double alteration was found."
+          },
+          "addresses": "Whether functional ALK and EGFR or KRAS mutations co-occur in an unselected screened population.",
+          "audit_relation": "support",
+          "estimand": {
+            "quantity": "Co-occurrence of a functional ALK rearrangement with an EGFR or KRAS mutation",
+            "denominator": "75 ALK rearrangements among 1,683 screened patients. This is not the denominator for a rate among all tumors.",
+            "estimate": "EGFR mutation and ALK rearrangement were mutually exclusive in this screen. Four KRAS-mutant tumors had abnormal ALK FISH; immunohistochemistry was negative in the 3 cases with tissue.",
+            "uncertainty": "Immunohistochemistry was missing for 1 of the 4 abnormal-FISH cases. No confidence interval.",
+            "adjustment": "None",
+            "variables_kept_separate": [
+              "functional ALK, defined with immunohistochemistry",
+              "FISH signal alone"
+            ]
+          },
+          "reading": "Zero functional overlaps in 75 ALK-positive tumors. That quantity is not a percentage of all 1,683 patients, and it is not the same quantity as a co-occurrence rate in another series."
+        },
+        {
+          "pmid": "23341890",
+          "conditions": {
+            "population": "208 Chinese patients with non-small-cell lung cancer",
+            "intervention": "EML4-ALK fusion testing plus EGFR and KRAS sequencing",
+            "comparator": "The 7 ALK-positive tumors versus the rest of the series",
+            "timing": "Diagnostic specimens. No follow-up interval for exclusivity."
+          },
+          "measurement": {
+            "outcome": "EGFR or KRAS mutation inside ALK-positive tumors",
+            "effect": "7 of 208 tumors had EML4-ALK. None of those 7 had an EGFR or KRAS mutation.",
+            "uncertainty": "The zero is 0 of 7 ALK-positive tumors."
+          },
+          "provenance": {
+            "cohort": "Single Chinese series of 208.",
+            "known_overlap": "None stated.",
+            "independence": "Unresolved relative to other Chinese adenocarcinoma series. No shared identifier."
+          },
+          "addresses": "Exclusivity inside a few hundred consecutively tested tumors.",
+          "audit_relation": "support",
+          "estimand": {
+            "quantity": "EGFR or KRAS mutation among EML4-ALK-positive tumors",
+            "denominator": "7 ALK-positive tumors out of 208",
+            "estimate": "0 of 7",
+            "uncertainty": "No interval. The zero is among 7 ALK-positive tumors.",
+            "adjustment": "None"
+          },
+          "reading": "A zero among 7 ALK-positive tumors. Compatible with a low rate. Not an estimate of the rate among all 208 tumors."
+        },
+        {
+          "pmid": "29517858",
+          "conditions": {
+            "population": "49 of 85 lung adenocarcinomas from patients aged 50 or younger, treated 1998\u20132009",
+            "intervention": "Multiplex RT-PCR for EML4-ALK, confirmed by sequencing, plus EGFR and KRAS status",
+            "comparator": "Five ALK-positive tumors versus ALK-negative tumors in the same young series",
+            "timing": "Archival treatment specimens. ALK inhibitors were not yet available."
+          },
+          "measurement": {
+            "outcome": "Co-occurrence and five-year survival",
+            "effect": "EML4-ALK in 5 of 49 tumors, mutually exclusive with EGFR and KRAS. Five-year survival was 59.4% without the fusion and was not reached with it.",
+            "uncertainty": "Five ALK-positive patients. Survival without the fusion has no interval in the abstract."
+          },
+          "provenance": {
+            "cohort": "One hospital, patients aged 50 or younger.",
+            "known_overlap": "None stated.",
+            "independence": "A restricted age band, not the unselected resected population in the source claim."
+          },
+          "addresses": "Exclusivity and survival in younger adenocarcinoma.",
+          "audit_relation": "support",
+          "estimand": {
+            "quantity": "EGFR or KRAS mutation among EML4-ALK-positive adenocarcinomas in patients aged 50 or younger",
+            "denominator": "5 ALK-positive tumors out of 49 tested",
+            "estimate": "Reported as mutually exclusive. No co-occurrence count beyond that statement.",
+            "uncertainty": "Five ALK-positive patients. Survival figures are a different quantity.",
+            "adjustment": "None",
+            "variables_kept_separate": [
+              "age restricted to 50 or younger"
+            ]
+          },
+          "reading": "Exclusivity stated inside a young, small ALK-positive group. Population and denominator differ from the unselected screens."
+        },
+        {
+          "pmid": "26767032",
+          "conditions": {
+            "population": "131 Chinese lung adenocarcinomas",
+            "intervention": "EGFR and KRAS PCR plus ALK FISH",
+            "comparator": "Four genotype groups inside one series",
+            "timing": "Diagnostic samples"
+          },
+          "measurement": {
+            "outcome": "Joint occurrence of ALK rearrangement and EGFR mutation",
+            "effect": "ALK in 9 of 131 (6.9%). Two never-smoking women, 2 of 131 (1.5%), had both an ALK rearrangement and an EGFR mutation. Every KRAS mutation was in EGFR-wild-type tumors.",
+            "uncertainty": "The co-occurrence count is 2 of 131."
+          },
+          "provenance": {
+            "cohort": "Chinese adenocarcinoma series of 131.",
+            "known_overlap": "None stated with PMID 23341890.",
+            "independence": "Unresolved."
+          },
+          "addresses": "Whether exclusivity is absolute in a series of about one hundred adenocarcinomas.",
+          "audit_relation": "mixed",
+          "estimand": {
+            "quantity": "Proportion of lung adenocarcinomas in this series with both an ALK rearrangement and an EGFR mutation",
+            "denominator": "131 adenocarcinomas. Separately, 9 of 131 had an ALK rearrangement.",
+            "estimate": "2/131 (1.53%) of all tumors in the series. Among the 9 ALK-positive tumors the corresponding count is 2/9, which is a different quantity.",
+            "uncertainty": "Counts only. No interval.",
+            "adjustment": "None",
+            "variables_kept_separate": [
+              "ALK defined by FISH"
+            ]
+          },
+          "reading": "A verified double alteration in 2 of 131 tumors. This contradicts a universal claim that the alterations never coexist. It does not estimate the same rate as 4/1,000 or 12/6,637."
+        },
+        {
+          "pmid": "27438512",
+          "conditions": {
+            "population": "110 resected lesions from 55 patients with synchronous double primary lung cancer",
+            "intervention": "EGFR, KRAS, BRAF, EML4-ALK, and ROS1 testing on each lesion",
+            "comparator": "Paired lesions in the same patient",
+            "timing": "Resection specimens"
+          },
+          "measurement": {
+            "outcome": "A lesion carrying both L858R and EML4-ALK, and whether the two tumors share a clone",
+            "effect": "One of 110 lesions had both L858R and EML4-ALK. Four of 55 patients had the same clonality and 47 had different clonality.",
+            "uncertainty": "One double-alteration lesion."
+          },
+          "provenance": {
+            "cohort": "Surgical double-primary series.",
+            "known_overlap": "None stated.",
+            "independence": "Selected for two synchronous primaries, not for an unselected resection cohort."
+          },
+          "addresses": "Whether one lesion can carry both an EGFR mutation and EML4-ALK.",
+          "audit_relation": "mixed",
+          "estimand": {
+            "quantity": "Lesions carrying both an EGFR L858R mutation and an EML4-ALK fusion",
+            "denominator": "110 resected lesions from 55 patients with synchronous double primary lung cancer",
+            "estimate": "1 of 110 lesions",
+            "uncertainty": "One lesion. No interval.",
+            "adjustment": "None",
+            "variables_kept_separate": [
+              "synchronous double primary, not an unselected resection series"
+            ]
+          },
+          "reading": "One resected lesion carried both alterations. That contradicts never-coexist in that lesion. The 1/110 rate is for this selected surgical population."
+        },
+        {
+          "pmid": "26712101",
+          "conditions": {
+            "population": "380 non-small-cell lung cancers tested for EGFR and EML4-ALK, 282 of them also for KRAS",
+            "intervention": "Nonsequential multi-gene testing, then tyrosine-kinase treatment in subsets",
+            "comparator": "Single-alteration tumors versus double-alteration tumors",
+            "timing": "First-line EGFR inhibitor, or crizotinib after an ALK rearrangement"
+          },
+          "measurement": {
+            "outcome": "Frequency of double alterations and clinical benefit",
+            "effect": "Double alterations in 1.6% (EGFR and EML4-ALK), 1.1% (EGFR and KRAS), and 2.5% (EML4-ALK and KRAS). Clinical benefit on an EGFR inhibitor was 81.8% with EGFR only and 67% with EGFR plus ALK. Of 12 ALK-positive patients on crizotinib, the responses were in patients with ALK alone; two early progressions had a concomitant KRAS mutation.",
+            "uncertainty": "Treatment subsets are 28 EGFR-inhibitor patients and 12 crizotinib patients. Ranges are given for survival and are wide."
+          },
+          "provenance": {
+            "cohort": "Patients who underwent nonsequential multi-gene testing.",
+            "known_overlap": "None stated.",
+            "independence": "The series is organized around finding double mutations. It is not an unselected exclusivity screen."
+          },
+          "addresses": "How often double alterations occur when testing is arranged to detect them, and whether the second alteration changes drug response.",
+          "audit_relation": "contradict",
+          "estimand": {
+            "quantity": "Prevalence of specified double alterations, and response in the treated subsets",
+            "denominator": "380 patients tested for EGFR and EML4-ALK; KRAS tested in 282 of them",
+            "estimate": "EGFR and EML4-ALK in 1.6%; EGFR and KRAS in 1.1%; EML4-ALK and KRAS in 2.5%. Treatment results are separate quantities on 28 and 12 patients.",
+            "uncertainty": "Percentages without intervals in the abstract. Survival ranges are wide and belong to the treatment question.",
+            "adjustment": "None for the prevalence figures",
+            "variables_kept_separate": [
+              "which pair of alterations",
+              "treatment response"
+            ]
+          },
+          "reading": "Three different pair-rates, with two different testing denominators. Not one 1\u20132% rate, and not the rate among ALK-positive tumors alone."
+        },
+        {
+          "pmid": "30233859",
+          "conditions": {
+            "population": "1,000 consecutive EGFR-wild-type non-small-cell lung cancers",
+            "intervention": "Mass-spectrometry panel plus FISH for EML4-ALK and ROS1",
+            "comparator": "Single alterations versus the eight overlapping genotypes",
+            "timing": "Routine diagnostic genotyping"
+          },
+          "measurement": {
+            "outcome": "Actionable alterations and overlaps in EGFR-wild-type tumors",
+            "effect": "ALK alteration in 39 (4.4%). Eight patients had overlapping mutations, four of them KRAS plus EML4-ALK.",
+            "uncertainty": "Four KRAS and ALK overlaps. The abstract does not give a confidence interval."
+          },
+          "provenance": {
+            "cohort": "Wide Catchment Area of Romagna, 1,000 consecutive EGFR-wild-type tumors.",
+            "known_overlap": "EGFR-mutant tumors were excluded by design, so this is not the source population.",
+            "independence": "A consecutive regional series. No shared identifier with the other lists."
+          },
+          "addresses": "Co-occurrence of KRAS mutation and ALK rearrangement after EGFR-mutant tumors have been removed.",
+          "audit_relation": "contradict",
+          "estimand": {
+            "quantity": "KRAS mutation together with an EML4-ALK translocation among EGFR-wild-type tumors",
+            "denominator": "1,000 consecutive EGFR-wild-type tumors. ALK alteration was found in 39.",
+            "estimate": "4/1,000 = 0.40% of EGFR-wild-type tumors. The abstract does not report 4/39 as its estimate.",
+            "uncertainty": "No interval",
+            "adjustment": "Restricted to EGFR-wild-type tumors, so the population is not all non-small-cell lung cancers",
+            "variables_kept_separate": [
+              "EGFR-wild-type restriction"
+            ]
+          },
+          "reading": "0.40% of an EGFR-wild-type population. That is not the 1.53% figure from 2/131, and it is not a rate among the 75 ALK-positive tumors in the 1,683-patient study."
+        },
+        {
+          "pmid": "27086595",
+          "conditions": {
+            "population": "12 patients selected from 6,637 because a tumor carried two of EGFR, KRAS, and ALK alterations",
+            "intervention": "Review of clinicopathologic features and targeted-therapy response",
+            "comparator": "No unselected ALK-positive control arm inside the abstract",
+            "timing": "EGFR inhibitor response recorded for 7 to 29 months in three EGFR and KRAS patients"
+          },
+          "measurement": {
+            "outcome": "Histology and response among already double-altered tumors",
+            "effect": "All 12 were adenocarcinomas with an EGFR mutation. Six also had a KRAS mutation and six an ALK alteration. Several responded to an EGFR inhibitor.",
+            "uncertainty": "Twelve selected cases. The abstract's count of the second alteration is internally inconsistent and is not used as a rate."
+          },
+          "provenance": {
+            "cohort": "Cases picked from 6,637 because they were concomitant.",
+            "known_overlap": "Conditioned on the event the claim says does not occur.",
+            "independence": "Not an independent test of the rate of exclusivity. It documents that doubles were found."
+          },
+          "addresses": "What double-altered tumors look like and how some of them respond.",
+          "audit_relation": "contradict",
+          "estimand": {
+            "quantity": "Clinicopathologic features of tumors already found to carry two alterations",
+            "denominator": "12 patients selected from 6,637. Using 6,637 as the screened denominator gives 12/6,637, about 0.18%, only if that is the population screened for the same definition.",
+            "estimate": "12 concomitant cases were reviewed. The abstract does not report a rate with an interval, and its split of the 12 is not usable.",
+            "uncertainty": "The screened-denominator assumption is unverified. No interval.",
+            "adjustment": "Conditioned on already having two alterations",
+            "variables_kept_separate": [
+              "selection on the double alteration"
+            ]
+          },
+          "reading": "Documents that double alterations were found. A verified double contradicts never-coexist. The 0.18% figure is not yet an estimate of the same quantity as the other series."
+        },
+        {
+          "pmid": "25706305",
+          "conditions": {
+            "population": "Pooled patients from 27 retrospective studies, 6,950 non-small-cell lung cancers",
+            "intervention": "Meta-analysis of clinicopathologic associations",
+            "comparator": "EML4-ALK positive versus negative across published series",
+            "timing": "Not an experiment with its own follow-up"
+          },
+          "measurement": {
+            "outcome": "Pooled association of EML4-ALK with smoking, histology, stage, ethnicity, and with EGFR or KRAS mutation",
+            "effect": "EML4-ALK in 472 of 6,950 (6.8%). The pooled analysis reports mutual exclusivity with EGFR and KRAS mutations.",
+            "uncertainty": "A pooled estimate. The abstract does not give the exclusivity confidence interval."
+          },
+          "provenance": {
+            "cohort": "Published series, not a new cohort.",
+            "known_overlap": "Likely includes primary series already in this map. The overlap is not itemized.",
+            "independence": "Not independent. A pooled reanalysis is not a new experiment."
+          },
+          "addresses": "The published literature's summary statement of exclusivity, not a new measurement.",
+          "audit_relation": "support",
+          "estimand": {
+            "quantity": "Pooled clinicopathologic associations, including a summary statement of mutual exclusivity",
+            "denominator": "6,950 patients across 27 retrospective studies. EML4-ALK in 472/6,950 (6.8%).",
+            "estimate": "The abstract states mutual exclusivity and does not give a co-occurrence count.",
+            "uncertainty": "No exclusivity interval in the abstract",
+            "adjustment": "Pooled across studies. Adjustment, if any, is inside the meta-analysis and is not an experimental control.",
+            "variables_kept_separate": [
+              "pooled literature versus a new cohort"
+            ]
+          },
+          "reading": "Not a new experiment. Overlap with the primary series in this map is not itemized, so it cannot be used as an independent rate."
+        }
+      ],
+      "comparison": "Sampling, assay definitions, and denominators are not yet aligned, so the reported fractions are not one rate. 2/131 is 1.53% of that adenocarcinoma series; 4/1,000 is 0.40% of an EGFR-wild-type series; 12/6,637 is about 0.18% only if 6,637 is the screened denominator for the same definition. The 1,683-patient study estimates overlap among 75 ALK-positive tumors, which is a different denominator from overlap among all tumors. Zero observed overlaps and rare observed overlaps need not conflict. A verified double alteration contradicts a universal never-coexist claim and remains compatible with usually exclusive."
+    },
+    {
+      "claim_id": "C015",
+      "source_pmid": "17717450",
+      "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+      "experiments": [
+        {
+          "pmid": "19414674",
+          "conditions": {
+            "population": "190 patients with papillary thyroid cancer, preoperative fine-needle aspiration",
+            "intervention": "BRAF T1799A testing of the cytology specimen",
+            "comparator": "BRAF-mutant versus wild-type tumors in the same surgical series",
+            "timing": "Median follow-up 3 years, range 0.6 to 10"
+          },
+          "measurement": {
+            "outcome": "Extrathyroidal extension, capsular invasion, lymph-node metastasis, persistence or recurrence",
+            "effect": "Mutant tumors had more extension (23% versus 11%), capsular invasion (29% versus 16%), node metastasis (38% versus 18%), and persistence or recurrence (36% versus 12%).",
+            "uncertainty": "Persistence or recurrence odds ratio 4.16, 95% interval 1.70 to 10.17."
+          },
+          "provenance": {
+            "cohort": "One preoperative cytology and surgery series.",
+            "known_overlap": "None stated.",
+            "independence": "No shared trial identifier with the other thyroid series."
+          },
+          "addresses": "Preoperative BRAF and postoperative extent and recurrence in papillary thyroid cancer.",
+          "audit_relation": "support",
+          "estimand": {
+            "quantity": "Unadjusted association of preoperative BRAF mutation with extrathyroidal extension, capsular invasion, node metastasis, and persistence or recurrence",
+            "denominator": "190 patients",
+            "estimate": "Extension 23% versus 11%. Capsular invasion 29% versus 16%. Nodes 38% versus 18%. Persistence or recurrence 36% versus 12%, odds ratio 4.16.",
+            "uncertainty": "Persistence or recurrence: 95% interval 1.70 to 10.17. Node contrast P=.002.",
+            "adjustment": "Unadjusted comparison of mutant versus wild-type",
+            "variables_kept_separate": [
+              "unadjusted association"
+            ]
+          },
+          "reading": "A positive unadjusted association. This does not answer the adjusted question."
+        },
+        {
+          "pmid": "17972530",
+          "conditions": {
+            "population": "54 papillary thyroid carcinomas, 40 primary and 14 recurrent",
+            "intervention": "BRAF V600E testing and Ki-67 labeling",
+            "comparator": "BRAF-positive versus BRAF-negative primary tumors",
+            "timing": "The paper date is the source cutoff day, 2007-09-01, so order relative to the source is uncertain."
+          },
+          "measurement": {
+            "outcome": "Age, extension, node metastasis, stage, Ki-67",
+            "effect": "BRAF in 26 of 40 primaries. Positive tumors were older and had more extension (76.9% versus 35.7%) and node metastasis (88.5% versus 57.1%).",
+            "uncertainty": "Extension p=0.026. Node metastasis p=0.044. Forty primary tumors."
+          },
+          "provenance": {
+            "cohort": "Single series of 54.",
+            "known_overlap": "None stated.",
+            "independence": "Order relative to the source is uncertain, so this is a weak subsequent test."
+          },
+          "addresses": "Clinicopathologic aggression in a small primary-tumor series.",
+          "audit_relation": "support",
+          "estimand": {
+            "quantity": "Unadjusted association of BRAF with age, extension, and node metastasis in a 40-patient primary series",
+            "denominator": "40 primary tumors, plus 14 recurrent tumors reported separately",
+            "estimate": "Extension 76.9% versus 35.7%. Node metastasis 88.5% versus 57.1%.",
+            "uncertainty": "Extension P=.026. Nodes P=.044. No odds ratio.",
+            "adjustment": "Unadjusted",
+            "variables_kept_separate": [
+              "order relative to the source is the same calendar day, so subsequent status is uncertain"
+            ]
+          },
+          "reading": "Positive unadjusted associations in a small series. Temporal order relative to the source claim is uncertain."
+        },
+        {
+          "pmid": "17685465",
+          "conditions": {
+            "population": "214 consecutive papillary carcinomas of 1 cm or smaller, with paired node metastases in 42",
+            "intervention": "BRAF V600E and p27 testing in the primary tumor and in nodes",
+            "comparator": "Tumors with and without node metastases",
+            "timing": "Surgical specimens. No recurrence follow-up in the abstract."
+          },
+          "measurement": {
+            "outcome": "Node metastasis, size of the largest nodal deposit, number of nodes, extracapsular nodal extension",
+            "effect": "BRAF in 88 tumors, associated with node metastasis. In 42 node-positive cases, 23 mutant metastases had a larger deposit, more nodes, and more extracapsular extension.",
+            "uncertainty": "The abstract says the association was significant and does not give the interval."
+          },
+          "provenance": {
+            "cohort": "Consecutive microcarcinomas.",
+            "known_overlap": "None stated.",
+            "independence": "Restricted to tumors of 1 cm or smaller, a narrower population than conventional papillary cancer."
+          },
+          "addresses": "BRAF and nodal progression inside papillary carcinoma of at most 1 cm.",
+          "audit_relation": "support",
+          "estimand": {
+            "quantity": "Association of BRAF with node metastasis in papillary carcinoma of at most 1 cm, and with nodal burden among node-positive cases",
+            "denominator": "214 tumors of at most 1 cm; 42 with node metastases",
+            "estimate": "BRAF in 88 tumors, described as associated with node metastasis. Among 42 node-positive cases, 23 mutant metastases had a larger deposit and more extracapsular extension.",
+            "uncertainty": "Called significant. No interval in the abstract.",
+            "adjustment": "Unadjusted",
+            "variables_kept_separate": [
+              "tumor size at most 1 cm"
+            ]
+          },
+          "reading": "A positive association inside microcarcinoma. The size restriction is part of the quantity, not a minor detail."
+        },
+        {
+          "pmid": "24787545",
+          "conditions": {
+            "population": "103 classical papillary thyroid cancers from one institution, thyroidectomy 2005\u20132008, including 42 microcarcinomas",
+            "intervention": "BRAF V600E on archival paraffin, read in 2013",
+            "comparator": "Mutant versus wild-type, univariate and then multivariate",
+            "timing": "Mean follow-up 55 months, standard deviation 13"
+          },
+          "measurement": {
+            "outcome": "Node metastasis, stage III\u2013IV, and persistent disease",
+            "effect": "BRAF in 55.3%. Mutant cancers had more nodes and higher stage, including inside the microcarcinomas. Persistent disease was more common in univariate analysis and was not independently predicted by BRAF. Node involvement was the independent predictor.",
+            "uncertainty": "Persistent disease, univariate odds ratio 3.5 (1.2 to 10.3). Multivariate odds ratio 2.8 (0.7 to 11.8)."
+          },
+          "provenance": {
+            "cohort": "One institution, classical variant.",
+            "known_overlap": "None stated.",
+            "independence": "No shared identifier."
+          },
+          "addresses": "Whether BRAF marks aggression, and whether it remains a predictor after node status is in the model.",
+          "audit_relation": "support",
+          "estimand": {
+            "quantity": "Association of BRAF with node metastasis, stage, and persistent disease, unadjusted and then adjusted",
+            "denominator": "103 classical papillary cancers, including 42 microcarcinomas",
+            "estimate": "Nodes and advanced stage were more common when BRAF-positive, including in the microcarcinomas. Persistent disease: unadjusted odds ratio 3.5; adjusted odds ratio 2.8.",
+            "uncertainty": "Unadjusted interval 1.2 to 10.3. Adjusted interval 0.7 to 11.8, which includes 1. Node involvement as a predictor of persistent disease: odds ratio 30.9, interval 6.0 to 159.0.",
+            "adjustment": "Multivariate model for persistent disease. The abstract names node involvement as the independent predictor and does not list every covariate.",
+            "variables_kept_separate": [
+              "unadjusted association",
+              "adjusted association"
+            ]
+          },
+          "reading": "The unadjusted and adjusted estimates answer different questions. The adjusted interval includes no association. This is not a reversal of the unadjusted result."
+        },
+        {
+          "pmid": "26214416",
+          "conditions": {
+            "population": "126 surgical papillary thyroid carcinomas",
+            "intervention": "BRAF V600E status",
+            "comparator": "Mutant versus wild-type, split at a diameter of 10 mm",
+            "timing": "Two-year surgical records. Recurrence follow-up is not the reported endpoint."
+          },
+          "measurement": {
+            "outcome": "Tumor size and central lymph-node metastasis",
+            "effect": "BRAF in 87 of 126 (69%). Mutation status correlated with size and node metastasis. Above 10 mm, node metastasis was more common in mutant tumors. BRAF independently predicted central node metastasis.",
+            "uncertainty": "The abstract states P less than 0.05 for the node contrast above 10 mm and does not give an odds ratio."
+          },
+          "provenance": {
+            "cohort": "Retrospective surgical records.",
+            "known_overlap": "None stated.",
+            "independence": "Unresolved."
+          },
+          "addresses": "Central node metastasis, with the contrast concentrated in tumors larger than 10 mm.",
+          "audit_relation": "support",
+          "estimand": {
+            "quantity": "Association of BRAF with tumor size and central node metastasis, including an independent-prediction claim",
+            "denominator": "126 surgical patients. BRAF in 87/126.",
+            "estimate": "Mutation status correlated with size and node metastasis. Above 10 mm, node metastasis was more common in mutant tumors. The abstract also says BRAF independently predicted central node metastasis.",
+            "uncertainty": "P less than 0.05 for the node contrast above 10 mm. No odds ratio.",
+            "adjustment": "An independent-prediction statement is made. The covariate list is not in the abstract.",
+            "variables_kept_separate": [
+              "tumors larger than 10 mm",
+              "independent prediction versus univariate association"
+            ]
+          },
+          "reading": "Reports a positive association and an independent-prediction claim without the adjusted estimate. The adjusted quantity is not yet available from this abstract."
+        },
+        {
+          "pmid": "26258321",
+          "conditions": {
+            "population": "1,510 consecutive thyroid cancers with routine genotyping at initial thyroidectomy",
+            "intervention": "BRAF, RAS, RET/PTC, and PAX8/PPARG testing",
+            "comparator": "BRAF or RET/PTC versus RAS or PAX8/PPARG",
+            "timing": "Histologic metastasis or recurrence tracked for at least 6 months"
+          },
+          "measurement": {
+            "outcome": "Histologic variant, extrathyroidal extension, node metastasis, stage, distant metastasis, early recurrence",
+            "effect": "BRAF V600E in 644 of 1,039 altered tumors. BRAF-positive papillary cancer had extension in 51% and node metastasis in 46%, against 4.6% and 5.6% for RAS-positive tumors. BRAF or RET/PTC tumors were more often stage III or IV (40% versus 15%).",
+            "uncertainty": "Stage contrast P value is reported as significant. The abstract's recurrence sentence is cut off."
+          },
+          "provenance": {
+            "cohort": "Consecutive single-practice genotyping of 1,510.",
+            "known_overlap": "None stated.",
+            "independence": "The comparator is RAS-mutant thyroid cancer, not only BRAF-wild-type conventional papillary cancer."
+          },
+          "addresses": "Whether BRAF and RAS papillary cancers are different phenotypes.",
+          "audit_relation": "support",
+          "estimand": {
+            "quantity": "Phenotype of BRAF-positive papillary cancer compared with RAS-positive papillary cancer",
+            "denominator": "1,510 thyroid cancers. BRAF V600E in 644 of 1,039 genetically altered tumors.",
+            "estimate": "Extrathyroidal extension 51% versus 4.6%. Node metastasis 46% versus 5.6%. Stage III or IV, 40% versus 15%, for BRAF or RET/PTC versus RAS or PAX8/PPARG.",
+            "uncertainty": "Stage contrast reported as significant. The recurrence sentence in the abstract is incomplete.",
+            "adjustment": "Comparison is across genotypes, not a regression of BRAF versus wild-type with covariates",
+            "variables_kept_separate": [
+              "comparator is RAS-mutant disease, not BRAF-wild-type conventional papillary cancer"
+            ]
+          },
+          "reading": "A large phenotypic difference against RAS-mutant tumors. That is a different contrast from BRAF versus wild-type inside conventional papillary cancer."
+        },
+        {
+          "pmid": "25468810",
+          "conditions": {
+            "population": "467 resected papillary thyroid carcinomas",
+            "intervention": "BRAF PCR, BRAF V600E immunohistochemistry, and BRAF RNA in situ hybridization on a tissue microarray",
+            "comparator": "Mutation-positive versus negative, and high versus low RNA signal",
+            "timing": "Resection specimens. No recurrence interval in the abstract."
+          },
+          "measurement": {
+            "outcome": "Lymph-node metastasis and agreement among the three BRAF assays",
+            "effect": "PCR, immunohistochemistry, and high RNA signal were positive in 84%, 86%, and 70%. All three were associated with node metastasis. Immunohistochemistry agreed with the mutation assay.",
+            "uncertainty": "The abstract says the node association was significant and does not give the interval."
+          },
+          "provenance": {
+            "cohort": "467 resections.",
+            "known_overlap": "None stated.",
+            "independence": "Unresolved."
+          },
+          "addresses": "Assay agreement and node metastasis in resected papillary cancer.",
+          "audit_relation": "support",
+          "estimand": {
+            "quantity": "Association of a BRAF-positive assay with lymph-node metastasis, and agreement among three BRAF assays",
+            "denominator": "467 resected papillary cancers",
+            "estimate": "PCR, immunohistochemistry, and high RNA signal positive in 84%, 86%, and 70%, each associated with node metastasis.",
+            "uncertainty": "Called significant. No odds ratio or interval for the node contrast.",
+            "adjustment": "Unadjusted",
+            "variables_kept_separate": [
+              "assay method"
+            ]
+          },
+          "reading": "A reported positive association. The effect estimate and interval are not in the abstract, so the strength of the association is not yet recorded."
+        },
+        {
+          "pmid": "23132792",
+          "conditions": {
+            "population": "379 consecutive papillary thyroid cancers, 243 with central neck dissection and 136 without",
+            "intervention": "Extent of central neck dissection and BRAF testing",
+            "comparator": "No dissection, limited dissection, and formal dissection",
+            "timing": "Surgery 2001\u20132010"
+          },
+          "measurement": {
+            "outcome": "Node metastasis found by dissection, and recurrence or persistence",
+            "effect": "Recurrence or persistence rose from 4.7% to 15.7% to 40.5% as dissection became more extensive. Node metastasis rose from 18.0% to 77.3%. BRAF predicted node metastasis and recurrence.",
+            "uncertainty": "The rise across dissection categories has P less than 0.0001. Part of the rise tracks how patients were selected for a larger operation."
+          },
+          "provenance": {
+            "cohort": "One academic hospital, 2001\u20132010.",
+            "known_overlap": "None stated.",
+            "independence": "Dissection extent is chosen from clinical risk, so the recurrence gradient is not a randomized contrast."
+          },
+          "addresses": "BRAF, nodes found at central dissection, and recurrence.",
+          "audit_relation": "support",
+          "estimand": {
+            "quantity": "Node metastasis and recurrence or persistence across extents of central neck dissection, and the association of those outcomes with BRAF",
+            "denominator": "379 patients: 136 without dissection, 243 with dissection",
+            "estimate": "Recurrence or persistence 4.7%, 15.7%, and 40.5% across more extensive dissection. Node metastasis 18.0% to 77.3% from limited to formal dissection. BRAF predicted node metastasis and recurrence.",
+            "uncertainty": "The dissection gradient has P less than 0.0001. No BRAF odds ratio.",
+            "adjustment": "Dissection extent was chosen from clinical risk. That is not a covariate-adjusted effect of BRAF.",
+            "variables_kept_separate": [
+              "how patients were selected for dissection",
+              "BRAF association"
+            ]
+          },
+          "reading": "The recurrence gradient is entangled with who received a larger operation. The BRAF association is stated without an estimate."
+        },
+        {
+          "pmid": "26271724",
+          "conditions": {
+            "population": "298 papillary microcarcinomas from 264 patients at six Italian centers, after exclusions",
+            "intervention": "Central histologic review and BRAF V600E testing",
+            "comparator": "Mutant versus wild-type microcarcinomas, multivariate",
+            "timing": "Retrospective. Clinical follow-up length is not in the abstract."
+          },
+          "measurement": {
+            "outcome": "Variant, infiltrative border, extrathyroidal extension, intraglandular spread",
+            "effect": "BRAF in 145 of 298 (49%), enriched in tall-cell and classic tumors and depleted in follicular-variant tumors. Mutant tumors had infiltrative borders and intraglandular spread.",
+            "uncertainty": "Variant contrasts P less than 0.0001. The abstract cuts off during the multivariate list."
+          },
+          "provenance": {
+            "cohort": "Six institutions, central review.",
+            "known_overlap": "None stated.",
+            "independence": "Microcarcinomas only."
+          },
+          "addresses": "Microscopic invasion pattern in microcarcinoma, not recurrence.",
+          "audit_relation": "support",
+          "estimand": {
+            "quantity": "Association of BRAF with microscopic growth pattern in microcarcinoma",
+            "denominator": "298 microcarcinomas from 264 patients. BRAF in 145/298 (49%).",
+            "estimate": "BRAF enriched in tall-cell (35/37) and classic (72/114) tumors and depleted in follicular-variant tumors (94/129 wild type). Mutant tumors had infiltrative borders and intraglandular spread.",
+            "uncertainty": "Variant contrasts P less than 0.0001. The multivariate list is cut off in the abstract.",
+            "adjustment": "Multivariate analysis is mentioned. The adjusted estimates are not in the available abstract text.",
+            "variables_kept_separate": [
+              "microcarcinoma",
+              "histologic variant"
+            ]
+          },
+          "reading": "A positive association with invasive growth pattern inside microcarcinoma. Recurrence is not the quantity."
+        },
+        {
+          "pmid": "27101676",
+          "conditions": {
+            "population": "72 clinically node-negative papillary cancers of 2 cm or smaller, all given prophylactic central dissection",
+            "intervention": "BRAF V600E by nested PCR on the primary tumor",
+            "comparator": "Occult central metastasis versus none",
+            "timing": "One operation. No later recurrence interval."
+          },
+          "measurement": {
+            "outcome": "Occult central node metastasis",
+            "effect": "BRAF in 34 of 72 (47%). Occult metastasis in 26 of 72 (36%). BRAF was a univariate predictor.",
+            "uncertainty": "BRAF odds ratio 1.647, 95% interval 1.101 to 2.463."
+          },
+          "provenance": {
+            "cohort": "Clinically node-negative small tumors.",
+            "known_overlap": "None stated.",
+            "independence": "Every patient had prophylactic dissection, unlike series that dissect only higher-risk patients."
+          },
+          "addresses": "Occult nodal disease in clinically node-negative tumors of at most 2 cm.",
+          "audit_relation": "support",
+          "estimand": {
+            "quantity": "Occult central node metastasis in clinically node-negative papillary cancer of at most 2 cm",
+            "denominator": "72 patients, all with prophylactic central dissection. BRAF in 34/72. Occult metastasis in 26/72.",
+            "estimate": "BRAF odds ratio 1.647 for occult central metastasis",
+            "uncertainty": "95% interval 1.101 to 2.463",
+            "adjustment": "The displayed odds ratio is from the univariate analysis. The abstract also fits a logistic model and does not give the adjusted BRAF coefficient.",
+            "variables_kept_separate": [
+              "univariate odds ratio",
+              "clinically node-negative tumors of at most 2 cm"
+            ]
+          },
+          "reading": "A positive unadjusted association with occult nodes. The interval is above 1. This is not the recurrence question."
+        },
+        {
+          "pmid": "26338373",
+          "conditions": {
+            "population": "Papillary cancers of at most 20 mm, with a separate look at microcarcinoma and at tumors of 7\u201310 mm",
+            "intervention": "BRAF V600E, NRAS, and RET/PTC, plus iodine-metabolism genes",
+            "comparator": "Size bands within small papillary cancer",
+            "timing": "Not stated in the abstract"
+          },
+          "measurement": {
+            "outcome": "Aggressive histology, recurrence risk, and NIS and TPO expression",
+            "effect": "In tumors of at most 20 mm, BRAF correlated with aggressive histology, recurrence risk, and lower NIS and TPO. That correlation was absent in microcarcinoma as a whole and present in the 7\u201310 mm BRAF-positive tumors.",
+            "uncertainty": "No counts or intervals in the abstract."
+          },
+          "provenance": {
+            "cohort": "Small papillary cancers. Institution count is not stated.",
+            "known_overlap": "None stated.",
+            "independence": "Unresolved."
+          },
+          "addresses": "Whether the BRAF association in small tumors depends on a size band inside the microcarcinoma range.",
+          "audit_relation": "mixed",
+          "estimand": {
+            "quantity": "Association of BRAF with aggressive histology and NIS/TPO expression inside stated size bands",
+            "denominator": "Not reported",
+            "estimate": "Correlation present for tumors of at most 20 mm, absent for microcarcinoma taken as a whole, present again for BRAF-positive tumors of 7\u201310 mm.",
+            "uncertainty": "No counts or intervals",
+            "adjustment": "Not stated",
+            "variables_kept_separate": [
+              "size band"
+            ]
+          },
+          "reading": "The abstract reports that the correlation depends on the size band. Without counts, the bands cannot be checked against each other."
+        },
+        {
+          "pmid": "23062653",
+          "conditions": {
+            "population": "63 papillary thyroid cancers diagnosed on cytology, each undergoing total thyroidectomy and routine central neck dissection",
+            "intervention": "BRAF colorimetric assay on fresh or intraoperative cytology",
+            "comparator": "Mutant versus wild-type, with multivariate logistic regression for node metastasis",
+            "timing": "Perioperative. No long-term recurrence endpoint."
+          },
+          "measurement": {
+            "outcome": "Lymph-node metastasis when every patient has a central dissection",
+            "effect": "BRAF was associated with race and was not associated with node metastasis. Size and vascular invasion were the multivariate associates.",
+            "uncertainty": "Node association P=0.167. Sixty-three patients."
+          },
+          "provenance": {
+            "cohort": "One series with routine central dissection.",
+            "known_overlap": "None stated.",
+            "independence": "Same disease, different surgical policy from series that dissect selectively."
+          },
+          "addresses": "BRAF and node metastasis when node status is measured in every patient.",
+          "audit_relation": "contradict",
+          "estimand": {
+            "quantity": "Association of BRAF mutation with lymph-node metastasis when every patient has a central neck dissection",
+            "denominator": "63 patients",
+            "estimate": "The association was not statistically significant. The abstract does not give an odds ratio or a direction of the point estimate.",
+            "uncertainty": "P=.167. No confidence interval.",
+            "adjustment": "Multivariate analysis. Size and venous or lymphatic invasion were the associations reported as significant. The covariate list for the BRAF term is not given.",
+            "variables_kept_separate": [
+              "routine central dissection",
+              "statistical significance versus effect direction"
+            ]
+          },
+          "reading": "Nonsignificance is not an effect in the opposite direction. The abstract does not establish a reversed association."
+        },
+        {
+          "pmid": "25482468",
+          "conditions": {
+            "population": "116 consecutive papillary thyroid cancers larger than 1 cm at one institution",
+            "intervention": "BRAF exon 15 Sanger sequencing",
+            "comparator": "Mutant versus wild-type, and low versus high MACIS, EORTC, and TNM scores",
+            "timing": "Five-year and ten-year survival"
+          },
+          "measurement": {
+            "outcome": "Extension, nodes, stage, overall survival, disease-specific survival, recurrence-free survival",
+            "effect": "BRAF in 75 of 116 (65%). Low MACIS scores had better ten-year overall survival (95% versus 75%). BRAF was not associated with extension, nodes, higher T category, sex, age, risk scores, or survival.",
+            "uncertainty": "MACIS overall survival P=0.008. The BRAF survival contrast is reported as absent, without an interval."
+          },
+          "provenance": {
+            "cohort": "Consecutive single-institution tumors larger than 1 cm.",
+            "known_overlap": "None stated.",
+            "independence": "Excludes microcarcinoma by design."
+          },
+          "addresses": "BRAF and survival in papillary cancer larger than 1 cm.",
+          "audit_relation": "contradict",
+          "estimand": {
+            "quantity": "Association of BRAF with aggressive clinicopathologic features and with survival, in papillary cancers larger than 1 cm",
+            "denominator": "116 tumors, 75/116 BRAF-positive",
+            "estimate": "The abstract says BRAF was not associated with extension, nodes, higher T category, sex, age, risk scores, or decreased survival. It does not give the BRAF effect estimate.",
+            "uncertainty": "No confidence interval for the BRAF contrasts. A different quantity, low versus high MACIS score, has a ten-year overall-survival contrast of 95% versus 75%, P=.008.",
+            "adjustment": "Not stated for the BRAF contrasts",
+            "variables_kept_separate": [
+              "BRAF association",
+              "MACIS score association"
+            ]
+          },
+          "reading": "A reported absence of association, without an effect estimate. An opposing effect has not been established from the abstract."
+        },
+        {
+          "pmid": "24354346",
+          "conditions": {
+            "population": "113 low-risk papillary microcarcinomas staged pT1a N0-x at diagnosis, one focus",
+            "intervention": "BRAF V600E testing",
+            "comparator": "No recurring subgroup emerged, so mutant and wild-type outcomes were not contrasted",
+            "timing": "January 2001 through December 2012"
+          },
+          "measurement": {
+            "outcome": "Persistence, recurrence, nodes, distant metastasis, and death",
+            "effect": "BRAF in 78 of 113 (69%). Across the whole study group there was no persistence, recurrence, metastasis, or death.",
+            "uncertainty": "Zero events. A difference between mutant and wild-type tumors cannot be estimated."
+          },
+          "provenance": {
+            "cohort": "Low-risk microcarcinoma already staged without nodes.",
+            "known_overlap": "None stated.",
+            "independence": "Selected for the absence of nodal disease at diagnosis."
+          },
+          "addresses": "Whether BRAF predicts later events inside microcarcinomas that have not already declared nodes. This cohort has no events to predict.",
+          "audit_relation": "contradict",
+          "estimand": {
+            "quantity": "Association of BRAF with later recurrence or metastasis in low-risk microcarcinoma staged pT1a N0-x",
+            "denominator": "113 patients. BRAF in 78/113 (69%).",
+            "estimate": "No persistence, locoregional recurrence, node or distant metastasis, or death in the whole group over the study window.",
+            "uncertainty": "Zero events. A mutant-versus-wild-type contrast cannot be estimated.",
+            "adjustment": "None possible",
+            "variables_kept_separate": [
+              "already node-negative at diagnosis",
+              "zero events"
+            ]
+          },
+          "reading": "No outcome events. This result does not estimate an opposing effect."
+        },
+        {
+          "pmid": "24604709",
+          "conditions": {
+            "population": "19 of 27 children aged 0 to 18 with papillary thyroid cancer, surgery 1999\u20132012",
+            "intervention": "BRAF V600E pyrosequencing of microdissected archival tumor",
+            "comparator": "Mutant versus wild-type children",
+            "timing": "Retrospective chart review. Follow-up length is not in the abstract."
+          },
+          "measurement": {
+            "outcome": "Central, lateral, and pulmonary metastases, invasion, and MACIS-type score",
+            "effect": "BRAF in 7 of 19 (36.8%), confined to classic histology. Nodes and pulmonary metastases were common in the group and were not associated with BRAF.",
+            "uncertainty": "Nineteen tumors. The MACIS-type association trended at P=0.087."
+          },
+          "provenance": {
+            "cohort": "One pediatric surgical series.",
+            "known_overlap": "None stated.",
+            "independence": "Children, not the adult conventional papillary cancers in the claim."
+          },
+          "addresses": "BRAF and metastases in pediatric papillary cancer.",
+          "audit_relation": "contradict",
+          "estimand": {
+            "quantity": "Association of BRAF with metastases and invasion in pediatric papillary thyroid cancer",
+            "denominator": "19 archived tumors from patients aged 0 to 18. BRAF in 7/19.",
+            "estimate": "Lymphatic and pulmonary metastases, size, age, invasion, and extrathyroidal extension were not associated with BRAF. Classic histology was associated with BRAF.",
+            "uncertainty": "Nineteen tumors. A MACIS-type score trended lower with BRAF, P=.087. No odds ratio for metastases.",
+            "adjustment": "Not stated",
+            "variables_kept_separate": [
+              "pediatric population"
+            ]
+          },
+          "reading": "A small pediatric series reporting no association. That is a different population, and the abstract does not show a reversed effect."
+        }
+      ],
+      "comparison": "Reported conclusions differ. Opposing effects have not been established from the displayed evidence. PMID 23062653 reports that the node association was not significant, P=.167, and gives no effect estimate in the opposite direction. PMID 25482468 reports no association without a BRAF effect estimate. PMID 24787545 shows an unadjusted odds ratio of 3.5 (1.2 to 10.3) and an adjusted odds ratio of 2.8 (0.7 to 11.8): those answer different questions, and the adjusted interval includes no association. PMID 24354346 has no events, so no contrast exists. Positive significant and positive imprecise estimates can still be compatible."
+    }
+  ],
+  "answer": "Before comparing papers, separate a change in experimental conditions, a change in the quantity being estimated, and a change in statistical certainty. These three cases illustrate those differences. They do not establish that conditions explain two disagreements and leave one unexplained.",
+  "retrieval_phase": "Closed. Text-based selection found substantially more relevant evidence than chronological neighborhoods in the development set. Deeper candidates increased evidence density for one claim, C045, from one test to eleven, without widening coverage when the same held-out families were compared again. The default remains up to twenty papers from the first 40 hits.",
+  "record": [
+    "population or model",
+    "intervention",
+    "comparator",
+    "outcome",
+    "quantity estimated",
+    "denominator",
+    "effect estimate",
+    "uncertainty",
+    "adjustment variables",
+    "experimental provenance"
+  ],
+  "judgment_rule": "An audit label is not the map's judgment. Support or contradiction is read from the estimand. A nonsignificant result is not an effect in the opposite direction. Rates are compared only when population, assay, and denominator refer to the same quantity.",
+  "conclusion": {
+    "C024": "Recorded experimental conditions offer a plausible explanation for different outcomes.",
+    "C033": "Sampling, denominators, and assay definitions must be aligned before judging incompatibility.",
+    "C015": "Reported conclusions differ; opposing effects have not yet been established from the displayed evidence."
+  },
+  "status": "Closed. The 27 result records are a worked specification. No further experiments are appended in this phase.",
+  "unit": "A result tied to a specific scientific question, with its population, comparator, conditions, estimate, and uncertainty. Papers contain those results. Relationships connect them. Support and contradiction are derived, revisable judgments, and the underlying observations stay preserved.",
+  "closing_statement": "Across three exploratory cases, explicit result records exposed distinctions that paper-level agreement labels had obscured. The map separates experimental conditions, quantities being estimated, and statistical uncertainty. It does not yet establish causal explanations, generalization, or predictive value."
+}

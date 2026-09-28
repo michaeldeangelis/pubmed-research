@@ -1,0 +1,289 @@
+{
+  "primary_outcome": "claims with an eligible direct test",
+  "secondary_outcome": "direct-test yield",
+  "families": {
+    "pancreatic_kras": {
+      "40": {
+        "claims": 6,
+        "claims_with_an_eligible_direct_test": 1,
+        "direct_tests": 1,
+        "claim_ids_with_a_test": [
+          "C045"
+        ]
+      },
+      "200": {
+        "claims": 6,
+        "claims_with_an_eligible_direct_test": 1,
+        "direct_tests": 3,
+        "claim_ids_with_a_test": [
+          "C045"
+        ]
+      },
+      "1000": {
+        "claims": 6,
+        "claims_with_an_eligible_direct_test": 1,
+        "direct_tests": 11,
+        "claim_ids_with_a_test": [
+          "C045"
+        ]
+      }
+    },
+    "colorectal_kras": {
+      "40": {
+        "claims": 5,
+        "claims_with_an_eligible_direct_test": 0,
+        "direct_tests": 0,
+        "claim_ids_with_a_test": []
+      },
+      "200": {
+        "claims": 5,
+        "claims_with_an_eligible_direct_test": 0,
+        "direct_tests": 0,
+        "claim_ids_with_a_test": []
+      },
+      "1000": {
+        "claims": 5,
+        "claims_with_an_eligible_direct_test": 0,
+        "direct_tests": 0,
+        "claim_ids_with_a_test": []
+      }
+    }
+  },
+  "overall": {
+    "40": {
+      "claims": 11,
+      "claims_with_an_eligible_direct_test": 1,
+      "direct_tests": 1,
+      "claim_ids_with_a_test": [
+        "C045"
+      ]
+    },
+    "200": {
+      "claims": 11,
+      "claims_with_an_eligible_direct_test": 1,
+      "direct_tests": 3,
+      "claim_ids_with_a_test": [
+        "C045"
+      ]
+    },
+    "1000": {
+      "claims": 11,
+      "claims_with_an_eligible_direct_test": 1,
+      "direct_tests": 11,
+      "claim_ids_with_a_test": [
+        "C045"
+      ]
+    }
+  },
+  "costs": {
+    "40": {
+      "retrieval_seconds": 36.036,
+      "scoring_seconds": 10.988
+    },
+    "200": {
+      "retrieval_seconds": 60.743,
+      "scoring_seconds": 36.173
+    },
+    "1000": {
+      "retrieval_seconds": 275.343,
+      "scoring_seconds": 163.762
+    }
+  },
+  "claims": [
+    {
+      "claim_id": "C025",
+      "tests": {
+        "40": [],
+        "200": [],
+        "1000": []
+      },
+      "eligible_at_depth": {
+        "40": 23,
+        "200": 129,
+        "1000": 539
+      }
+    },
+    {
+      "claim_id": "C037",
+      "tests": {
+        "40": [],
+        "200": [],
+        "1000": []
+      },
+      "eligible_at_depth": {
+        "40": 16,
+        "200": 77,
+        "1000": 420
+      }
+    },
+    {
+      "claim_id": "C045",
+      "tests": {
+        "40": [
+          "31278869"
+        ],
+        "200": [
+          "29658583",
+          "31025231",
+          "28930868"
+        ],
+        "1000": [
+          "25796395",
+          "22355676",
+          "25435574",
+          "29658583",
+          "31025231",
+          "24897499",
+          "25840541",
+          "24604757",
+          "22041919",
+          "24938521",
+          "25423558"
+        ]
+      },
+      "eligible_at_depth": {
+        "40": 12,
+        "200": 72,
+        "1000": 440
+      }
+    },
+    {
+      "claim_id": "C065",
+      "tests": {
+        "40": [],
+        "200": [],
+        "1000": []
+      },
+      "eligible_at_depth": {
+        "40": 17,
+        "200": 75,
+        "1000": 304
+      }
+    },
+    {
+      "claim_id": "C069",
+      "tests": {
+        "40": [],
+        "200": [],
+        "1000": []
+      },
+      "eligible_at_depth": {
+        "40": 21,
+        "200": 84,
+        "1000": 310
+      }
+    },
+    {
+      "claim_id": "C071",
+      "tests": {
+        "40": [],
+        "200": [],
+        "1000": []
+      },
+      "eligible_at_depth": {
+        "40": 17,
+        "200": 63,
+        "1000": 257
+      }
+    },
+    {
+      "claim_id": "C036",
+      "tests": {
+        "40": [],
+        "200": [],
+        "1000": []
+      },
+      "eligible_at_depth": {
+        "40": 25,
+        "200": 129,
+        "1000": 545
+      }
+    },
+    {
+      "claim_id": "C053",
+      "tests": {
+        "40": [],
+        "200": [],
+        "1000": []
+      },
+      "eligible_at_depth": {
+        "40": 19,
+        "200": 91,
+        "1000": 434
+      }
+    },
+    {
+      "claim_id": "C062",
+      "tests": {
+        "40": [],
+        "200": [],
+        "1000": []
+      },
+      "eligible_at_depth": {
+        "40": 8,
+        "200": 52,
+        "1000": 302
+      }
+    },
+    {
+      "claim_id": "C064",
+      "tests": {
+        "40": [],
+        "200": [],
+        "1000": []
+      },
+      "eligible_at_depth": {
+        "40": 21,
+        "200": 113,
+        "1000": 527
+      }
+    },
+    {
+      "claim_id": "C070",
+      "tests": {
+        "40": [],
+        "200": [],
+        "1000": []
+      },
+      "eligible_at_depth": {
+        "40": 5,
+        "200": 40,
+        "1000": 249
+      }
+    }
+  ],
+  "known_miss": {
+    "pmid": "36156071",
+    "raw_index": null,
+    "in_returned_twenty": {
+      "40": false,
+      "200": false,
+      "1000": false
+    },
+    "similarity_rank": {
+      "40": null,
+      "200": null,
+      "1000": null
+    },
+    "hit_count": 65887,
+    "fetched": 1000,
+    "retrieval_seconds": {
+      "40": 3.294,
+      "200": 4.561,
+      "1000": 22.392
+    },
+    "scoring_seconds": {
+      "40": 1.029,
+      "200": 3.154,
+      "1000": 11.735
+    },
+    "eligible_at_depth": {
+      "40": 19,
+      "200": 89,
+      "1000": 333
+    }
+  },
+  "note": "Retrieval seconds are cumulative to that prefix. Scoring seconds are the cosine scorer on each pool. C068 is a recovery check and is outside the eleven-claim totals. All counted tests are on C045.",
+  "selection": "The same eleven held-out families used in the query-repair comparison, reused for the depth comparison. Not a newly untouched test set.",
+  "return_rule": "Up to twenty papers. No fallback fills a pool that has fewer than twenty eligible papers. Mean eligible papers at 40 hits: 17."
+}

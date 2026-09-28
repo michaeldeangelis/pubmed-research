@@ -517,12 +517,14 @@ def judgment_export(claims: list[dict]) -> tuple[dict, dict]:
 
 
 class EuropePmc:
-    def __init__(self, cache_dir: Path = CACHE_DIR):
+    def __init__(self, cache_dir: Path = CACHE_DIR, timeout: int = 90):
         self.cache_dir = cache_dir
         self.cache_dir.mkdir(parents=True, exist_ok=True)
+        self.timeout = timeout
 
     def search(self, params: dict) -> dict:
-        return self._json("search", params, lambda: _http_search(params))
+        timeout = self.timeout
+        return self._json("search", params, lambda: _http_search(params, timeout=timeout))
 
     def references(self, pmid: str) -> list[dict]:
         payload = self._json(
@@ -548,16 +550,16 @@ class EuropePmc:
         return payload
 
 
-def _http_search(params: dict) -> dict:
-    return _http_get(config.EUROPEPMC, params)
+def _http_search(params: dict, timeout: int = 90) -> dict:
+    return _http_get(config.EUROPEPMC, params, timeout=timeout)
 
 
-def _http_get(url: str, params: dict) -> dict:
+def _http_get(url: str, params: dict, timeout: int = 90) -> dict:
     global _made_request
     if _made_request:
         time.sleep(0.2)
     _made_request = True
-    response = requests.get(url, params=params, headers=_HEADERS, timeout=90)
+    response = requests.get(url, params=params, headers=_HEADERS, timeout=timeout)
     response.raise_for_status()
     return response.json()
 

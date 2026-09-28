@@ -2169,5 +2169,113 @@
     },
     "additional_claims_versus_text": 0,
     "note": "On 10 of 11 claims the exposure names no extra symbol, so the revised query is the existing experimental query. C036 adds K117 and A146 and still has no eligible test in its twenty."
+  },
+  "candidate_depth": {
+    "role": "final bounded retrieval experiment",
+    "fixed": "content_query, Europe PMC default order, rank_text cosine, screen_hit, budget 20",
+    "primary_outcome": {
+      "40": {
+        "claims": 11,
+        "claims_with_an_eligible_direct_test": 1,
+        "direct_tests": 1,
+        "claim_ids_with_a_test": [
+          "C045"
+        ]
+      },
+      "200": {
+        "claims": 11,
+        "claims_with_an_eligible_direct_test": 1,
+        "direct_tests": 3,
+        "claim_ids_with_a_test": [
+          "C045"
+        ]
+      },
+      "1000": {
+        "claims": 11,
+        "claims_with_an_eligible_direct_test": 1,
+        "direct_tests": 11,
+        "claim_ids_with_a_test": [
+          "C045"
+        ]
+      }
+    },
+    "families": {
+      "pancreatic_kras": {
+        "40": {
+          "claims": 6,
+          "claims_with_an_eligible_direct_test": 1,
+          "direct_tests": 1,
+          "claim_ids_with_a_test": [
+            "C045"
+          ]
+        },
+        "200": {
+          "claims": 6,
+          "claims_with_an_eligible_direct_test": 1,
+          "direct_tests": 3,
+          "claim_ids_with_a_test": [
+            "C045"
+          ]
+        },
+        "1000": {
+          "claims": 6,
+          "claims_with_an_eligible_direct_test": 1,
+          "direct_tests": 11,
+          "claim_ids_with_a_test": [
+            "C045"
+          ]
+        }
+      },
+      "colorectal_kras": {
+        "40": {
+          "claims": 5,
+          "claims_with_an_eligible_direct_test": 0,
+          "direct_tests": 0,
+          "claim_ids_with_a_test": []
+        },
+        "200": {
+          "claims": 5,
+          "claims_with_an_eligible_direct_test": 0,
+          "direct_tests": 0,
+          "claim_ids_with_a_test": []
+        },
+        "1000": {
+          "claims": 5,
+          "claims_with_an_eligible_direct_test": 0,
+          "direct_tests": 0,
+          "claim_ids_with_a_test": []
+        }
+      }
+    },
+    "costs_seconds": {
+      "40": {
+        "retrieval_seconds": 36.036,
+        "scoring_seconds": 10.988
+      },
+      "200": {
+        "retrieval_seconds": 60.743,
+        "scoring_seconds": 36.173
+      },
+      "1000": {
+        "retrieval_seconds": 275.343,
+        "scoring_seconds": 163.762
+      }
+    },
+    "known_miss": {
+      "claim_id": "C068",
+      "pmid": "36156071",
+      "in_first_1000": false,
+      "in_returned_twenty": {
+        "40": false,
+        "200": false,
+        "1000": false
+      },
+      "hit_count": 65887
+    },
+    "preserved_setup": "Up to twenty papers from the first 40 ordered hits of the text query. Inexpensive default for finding at least one test. Not a claim that forty hits is universally sufficient.",
+    "note": "Retrieval seconds are cumulative to that prefix. Scoring seconds are the cosine scorer on each pool. C068 is a recovery check and is outside the eleven-claim totals. All counted tests are on C045.",
+    "selection": "The same eleven held-out families used in the query-repair comparison, reused for the depth comparison. Not a newly untouched test set.",
+    "return_rule": "Up to twenty papers. No fallback fills a pool that has fewer than twenty eligible papers. Mean eligible papers at 40 hits: 17.",
+    "retrieval_phase": "Closed. Text-based selection found substantially more relevant evidence than chronological neighborhoods in the development set. Deeper candidates increased evidence density for C045, from one test to eleven, without widening coverage in this subsequent comparison."
   }
 }

@@ -210,3 +210,17 @@ Comparison: the lineage's model_system shares at each depth against the
 metascience v1 eligible corpus, restricted to the same publication years.
 Report the share with a Wilson 95% CI. With two cases there is no pass/fail.
 Record: results/case_histories.json
+Milestones, listed before the run. PMIDs are from memory and are checked
+against titles by the builder; corrections are recorded in the result.
+- vemurafenib: Davies 2002 Nature, BRAF mutations in cancer (12068308),
+  discovery; Tsai 2008 PNAS, PLX4720 selective BRAF V600E inhibitor
+  (18287029), first selective tool compound; Bollag 2010 Nature, PLX4032
+  clinical efficacy (20823850), preclinical plus clinical proof; Flaherty
+  2010 NEJM, phase 1 (20818844), first human efficacy; Chapman 2011 NEJM,
+  BRIM-3 (21639808), approval trial.
+- sotorasib: Ostrem 2013 Nature, K-Ras(G12C) allosteric inhibitors
+  (24256730), discovery of the druggable pocket; Patricelli 2016 Cancer
+  Discov, ARS-853 (26739882), cellular proof; Janes 2018 Cell, ARS-1620
+  (29373830), in vivo proof; Canon 2019 Nature, AMG 510 (31666701),
+  preclinical candidate; Hong 2020 NEJM, phase 1 (32955176); Skoulidis 2021
+  NEJM, phase 2 (34096690), approval trial.

@@ -63,3 +63,13 @@ Implementation notes, added 2026-09-29 before any feature was joined to an outco
   with the 50 most frequent journals as indicators. Estimates and CIs only.
 - The permutation control shuffles F1-F3 jointly, keeping each paper's
   three features together, within publication year.
+
+Measurement gate, 2026-09-29, before any outcome was joined. Blind Opus
+extraction of the 300 packets was split across three subagents of 100 each.
+The record is results/meta_measurement_gate.json.
+- model_system: kappa 0.845 (agreement 0.90). Kept.
+- multi_system: kappa 0.732 (agreement 0.90). Kept.
+- human_genetics: kappa 0.415 (agreement 0.89). The rule flagged 40 and the
+  model 20; they agreed on 14. Dropped from the primary analysis as the gate
+  requires. It is not re-tuned on these 300 papers.
+The primary analysis runs with `--drop human_genetics`.

@@ -104,3 +104,17 @@ CD5 is gated behind a login. OpenAlex without a key allows 1,000 requests a
 day, which is too slow for this corpus. On 291 papers scored from both
 sources, Spearman between iCite and OpenAlex is 0.94. RPCB paper 5 is PMID
 21102434, not 21102433 (corrected; see results/meta_rpcb.json).
+
+Second measurement gate, 2026-09-29, before any outcome was joined. The
+sample was 300 fresh eligible papers (rng seed 1), with the extraction again
+split across three blind Opus subagents. The record is
+results/meta_measurement_gate_v2.json.
+- model_system: kappa 0.821 (agreement 0.88). Kept.
+- multi_system: kappa 0.569 (agreement 0.86). The rule flagged 44 papers
+  and the model 79; 39 of the model's positives were rule negatives. The
+  stricter human-sample presence rule under-detects. Dropped, and not
+  re-tuned.
+- human_genetics: kappa 0.482. Dropped, as already decided.
+The primary analysis runs with `--drop human_genetics multi_system`. The only
+tested feature is model_system (human_samples, animal, and other, each
+against cell_only).

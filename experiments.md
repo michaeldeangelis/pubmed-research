@@ -186,3 +186,27 @@ animal term did not pass the preregistered rule. Human genetic evidence and
 multiple model systems were not tested, because their rules failed the
 measurement gate. Not shown: causation, approval-level translation, fields
 beyond RAS/MAPK, or conduct (as opposed to reporting) of any design feature.
+
+## 2026-09-29 breakthrough case histories   (method fixed before the run; descriptive)
+
+Question: On the citation paths to two approvals, vemurafenib (BRAF V600E)
+and sotorasib (KRAS G12C), which model systems carried the evidence, and how
+does that mix compare with the field's base rate?
+Decision it drives: whether the patient-sample signal from metascience v1
+also holds on the path to approval, or whether cell and animal work
+dominate there. The answer shapes the next wider-field study.
+Cases and anchors (PMIDs verified against Europe PMC before the run):
+- vemurafenib: BRIM-3, Chapman et al. 2011 NEJM.
+- sotorasib: CodeBreaK 100 phase 1, Hong et al. 2020 NEJM; phase 2,
+  Skoulidis et al. 2021 NEJM.
+Lineage: depth 1 is the iCite references of the anchors; depth 2 is the
+references of depth 1. Only research articles are kept, restricted to the
+papers published before the anchor. The named milestone papers (discovery
+of the mutation, the first selective inhibitor, preclinical proof) are
+listed by hand, before the run, with the reason for each.
+Classification: the model_system rules from src/meta/features.py, unchanged
+(gate kappa 0.82). Papers without MeSH are reported as unclassified.
+Comparison: the lineage's model_system shares at each depth against the
+metascience v1 eligible corpus, restricted to the same publication years.
+Report the share with a Wilson 95% CI. With two cases there is no pass/fail.
+Record: results/case_histories.json

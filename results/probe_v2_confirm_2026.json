@@ -1,0 +1,41 @@
+{
+  "rule": "docs/specs/2026-09-29-model-v2-design.md, section '2026 confirmation'",
+  "outcome": "not confirmed",
+  "n_new_papers": 80,
+  "encoder_check_min_cosine": 0.9999998807907104,
+  "n_test": 206,
+  "n_test_positive": 108,
+  "n_test_negative": 98,
+  "powered": true,
+  "attention_minus_mean": {
+    "point": 0.04365079365079361,
+    "lo": -0.006519433319741843,
+    "hi": 0.0975926753574956
+  },
+  "auroc": {
+    "frozen_current_text": 0.5775699168556312,
+    "untrained_context_all_earlier_mean_text": 0.6710128495842782,
+    "mean_mixer_seed_avg": 0.5569727891156463,
+    "attention_seed_avg": 0.6006235827664399,
+    "per_seed": {
+      "attention_s0": 0.6240551776266062,
+      "attention_s1": 0.5819160997732427,
+      "attention_s2": 0.5958994708994709,
+      "mean_s0": 0.5890967498110355,
+      "mean_s1": 0.5533824640967498,
+      "mean_s2": 0.5284391534391535
+    }
+  },
+  "secondary": {
+    "attention_minus_frozen": {
+      "point": 0.023053665910808707,
+      "lo": -0.06824816690144074,
+      "hi": 0.11877635335056078
+    },
+    "attention_minus_untrained_all_earlier": {
+      "point": -0.0703892668178383,
+      "lo": -0.17116056821334613,
+      "hi": 0.034331556691347645
+    }
+  }
+}

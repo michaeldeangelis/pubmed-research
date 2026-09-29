@@ -24,8 +24,11 @@ from src.probe.probes import (
 _CHUNK = 16
 
 
-def probe_checkpoint(path, windows) -> dict:
-    """Frozen vs contextual genetics probe on one v2 checkpoint."""
+def probe_checkpoint(path, windows, test_year_min: int | None = None) -> dict:
+    """Frozen vs contextual genetics probe on one v2 checkpoint.
+
+    Test positions are those with year >= test_year_min (default VAL_YEAR_MAX + 1).
+    """
     from src import config_v2 as cfg
     from src.model.dataset_v2 import collate_windows_v2
     from src.model.transformer_v2 import PaperTransformerV2
@@ -38,6 +41,8 @@ def probe_checkpoint(path, windows) -> dict:
     model = PaperTransformerV2(mixer)
     model.load_state_dict(_state_dict(checkpoint))
     model.eval()
+    if test_year_min is None:
+        test_year_min = cfg.VAL_YEAR_MAX + 1
 
     text_rows: list[torch.Tensor] = []
     hidden_rows: list[torch.Tensor] = []
@@ -90,7 +95,7 @@ def probe_checkpoint(path, windows) -> dict:
                         abl_year.append(year)
                         abl_prior.append(1.0 if prior else 0.0)
 
-                    if year > cfg.VAL_YEAR_MAX and prior:
+                    if year >= test_year_min and prior:
                         for layer, (idx, wt) in enumerate(zip(index_layers, weight_layers)):
                             layer_mass[layer] += _genetics_attention(
                                 idx[b, :, i, :], wt[b, :, i, :], genetics, i
@@ -108,7 +113,7 @@ def probe_checkpoint(path, windows) -> dict:
     prior_t = torch.tensor(prior_rows, dtype=torch.float32)
     resist_t = torch.tensor(resistance_rows, dtype=torch.float32)
     train = year_t <= cfg.TRAIN_YEAR_MAX
-    test = year_t > cfg.VAL_YEAR_MAX
+    test = year_t >= test_year_min
 
     _, frozen_scores = _fit_and_scores(features_text, prior_t, train, test)
     hidden_direction, contextual_scores = _fit_and_scores(features_hidden, prior_t, train, test)

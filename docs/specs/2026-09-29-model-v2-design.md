@@ -133,6 +133,32 @@ were fixed after run 1 results had been seen. The decision rule did not change.
 `src/probe/context_check_v2.py` is a post hoc comparison added after the
 run-2 decision. It is not part of the rule.
 
+## 2026 confirmation (fixed before any 2026 paper was fetched)
+
+The post hoc result was that attention's hidden state reads prior genetic
+evidence better than the mean mixer's (+0.048 AUROC on 2021-2025). It is
+tested once on papers no v2 run has seen.
+
+- Data: Europe PMC, publication year 2026, same query, same cap of
+  `PER_YEAR` = 80 cited abstracts, PMIDs already in the corpus skipped. Same
+  enrichment and the same neural encoder. If the encoder falls back to hash
+  vectors, the run stops. Files go to `outputs/v2/confirm_2026/`, and
+  `data/` is not touched.
+- Windows are rebuilt over the corpus plus the 2026 papers, so 2026 papers
+  have earlier papers as context.
+- Models: the six run-2 checkpoints (`attention` and `mean`, seeds 0-2)
+  unchanged. No retraining. Probe directions are fit on positions from 2018
+  or earlier, as before.
+- Test positions: papers whose own year is 2026.
+- **Rule:** confirmed if the seed-averaged attention probe AUROC minus the
+  seed-averaged mean-mixer probe AUROC is above 0, and the 2.5th percentile
+  of 1000 paired bootstrap resamples (rng seed 0) is above 0.
+- If the 2026 test positions have fewer than 30 positives or fewer than 30
+  negatives for prior genetic evidence, the result is recorded as
+  inconclusive, whatever the estimate.
+- Reported but not part of the rule: attention minus frozen text, and
+  attention minus the untrained all-earlier context probe.
+
 ## Tests
 
 Anchor masking, novel-entity targets, next-year split, forbidden keys,

@@ -1,0 +1,758 @@
+[
+ {
+  "pmid": "19028876",
+  "claim_id": "C024",
+  "conditions": {
+   "population": "Mice; conditional expression in the mouse pancreas, including mature (adult) acinar cells; sample sizes not reported",
+   "intervention": "Activated Kras in mature acinar cells (Kras alone), and Kras with activated Notch coactivation",
+   "comparator": "Kras activation in mature acinar cells vs ubiquitous Kras activation (lesions identical); Notch plus Kras vs Kras alone (dramatic synergy)",
+   "timing": "not reported"
+  },
+  "measurement": {
+   "outcome": "Formation of PanIN lesions, dysplastic progression, invasive adenocarcinoma; reprogramming of acinar cells to a duct-like phenotype",
+   "effect": "Kras activation in mature acinar cells induced PanIN lesions identical to those seen upon ubiquitous Kras activation; Notch promoted both initiation and dysplastic progression of acinar-derived PanINs, short of invasive adenocarcinoma. PanIN grades with Kras alone are not stated.",
+   "uncertainty": "None given (qualitative; no numbers, intervals or P values)"
+  },
+  "estimand": {
+   "quantity": "Presence of PanIN lesions and absence of invasive adenocarcinoma after Kras activation in mature acinar cells",
+   "denominator": "not reported (mice with conditional Kras activation in acinar cells; n not reported)",
+   "estimate": "Qualitative: acinar-derived PanINs identical to those with ubiquitous Kras activation; no invasive adenocarcinoma reported (Notch/Kras acinar-derived PanINs progressed short of invasive adenocarcinoma)",
+   "uncertainty": "None given",
+   "adjustment": "not reported"
+  },
+  "structured": {
+   "direction": "supports",
+   "significance": "not_tested",
+   "condition_departure": false,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "19501586",
+  "claim_id": "C024",
+  "conditions": {
+   "population": "Mice with differentiated pancreatic acinar cells expressing mutant K-Ras; Ras activity also measured in PDAC cells from mice and humans; sample sizes not reported",
+   "intervention": "Acinar cell expression of mutant K-Ras at endogenous levels (with and without simultaneous p53 deletion) and at higher, elevated levels",
+   "comparator": "Endogenous-level vs higher-level mutant K-Ras expression; PDAC cells vs nontransformed cells expressing endogenous mutant K-Ras (Ras activity by Raf pull-down assay)",
+   "timing": "not reported"
+  },
+  "measurement": {
+   "outcome": "Ras activity; development of murine PanINs (mPanINs), cystic papillary carcinoma, and metastatic PDAC; acinar senescence, inflammation, fibrosis",
+   "effect": "Endogenous-level mutant K-Ras in acinar cells gave moderately elevated Ras activity and sparse mPanINs that did not spontaneously advance to PDAC unless p53 was deleted. Higher-level mutant K-Ras gave Ras activity equal to PDAC, acinar senescence, chronic-pancreatitis-like inflammation and fibrosis, abundant mPanINs that progressed to cystic papillary carcinoma and metastatic PDAC. PanIN grades not stated.",
+   "uncertainty": "None given (qualitative; no numbers, intervals or P values)"
+  },
+  "estimand": {
+   "quantity": "Development of mPanINs and progression to PDAC/carcinoma in acinar cells expressing mutant K-Ras at endogenous vs higher levels",
+   "denominator": "not reported (mice; n not reported)",
+   "estimate": "Qualitative: endogenous level = sparse mPanINs, no spontaneous advance to PDAC unless p53 deleted; higher level = abundant mPanINs progressing to cystic papillary carcinoma and metastatic PDAC",
+   "uncertainty": "None given",
+   "adjustment": "not reported"
+  },
+  "structured": {
+   "direction": "supports",
+   "significance": "not_tested",
+   "condition_departure": true,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "23284900",
+  "claim_id": "C024",
+  "conditions": {
+   "population": "Mouse model (in vivo) and in vitro pancreatic explant cultures; acinar cells; sample sizes not reported",
+   "intervention": "Oncogenic K-ras allele activated and Notch1 deleted simultaneously in acinar cells",
+   "comparator": "Notch1-deleted vs Notch1-intact acinar cells with activated K-ras, in vivo and in explant culture",
+   "timing": "not reported"
+  },
+  "measurement": {
+   "outcome": "Acinar-to-ductal metaplasia (ADM); severity and number of PanIN lesions",
+   "effect": "Oncogenic K-ras was sufficient to drive ADM in vitro and in vivo; Notch1 loss had a minimal effect on ADM; Notch1 loss did not affect PanIN severity but overall numbers of lesions were greater in Notch1-deleted mice. Invasive carcinoma and PanIN grades not addressed.",
+   "uncertainty": "None given (no numbers, intervals or P values)"
+  },
+  "estimand": {
+   "quantity": "Effect of Notch1 deletion on K-ras-driven ADM and PanIN severity/number in acinar cells",
+   "denominator": "not reported",
+   "estimate": "Qualitative: minimal effect on ADM; unchanged PanIN severity; greater lesion numbers with Notch1 deletion",
+   "uncertainty": "None given",
+   "adjustment": "not reported"
+  },
+  "structured": {
+   "direction": "unclear",
+   "significance": "not_tested",
+   "condition_departure": true,
+   "quantity_matches_claim": false
+  }
+ },
+ {
+  "pmid": "23729361",
+  "claim_id": "C033",
+  "conditions": {
+   "population": "1,683 patients with NSCLC with clinical genotyping data (resection status not reported); plus biopsy specimens from 34 patients with ALK-positive NSCLC after crizotinib resistance",
+   "intervention": "ALK rearrangement (75 ALK-positive) with concomitant EGFR or KRAS mutation status",
+   "comparator": "Co-occurrence of ALK rearrangement with EGFR mutation (301) and KRAS mutation (465) across the cohort",
+   "timing": "Cross-sectional genotyping; repeat biopsies after development of crizotinib resistance"
+  },
+  "measurement": {
+   "outcome": "Overlap of ALK rearrangements with EGFR or KRAS mutations",
+   "effect": "EGFR mutations and ALK rearrangements were mutually exclusive. Four KRAS-mutant patients had abnormal ALK FISH patterns; 3 with tissue were ALK IHC negative. No EGFR or KRAS mutations among 25 crizotinib-resistant ALK-positive patients with sufficient tissue. ERBB2 not assessed.",
+   "uncertainty": "None given (no P values or intervals for exclusivity)"
+  },
+  "estimand": {
+   "quantity": "Co-occurrence (mutual exclusivity) of ALK rearrangement with EGFR and KRAS mutations",
+   "denominator": "1,683 NSCLC patients screened; 75 ALK-positive; 25 crizotinib-resistant ALK-positive patients tested",
+   "estimate": "301 (17.8%) EGFR mutations, 465 (27.6%) KRAS mutations, 75 (4.4%) ALK rearrangements; EGFR and ALK mutually exclusive; 4 KRAS-mutant cases with abnormal ALK FISH but 0 of 3 IHC-confirmed; 0 EGFR/KRAS mutations among 25 resistant ALK-positive patients",
+   "uncertainty": "None given",
+   "adjustment": "unadjusted (descriptive counts)"
+  },
+  "structured": {
+   "direction": "supports",
+   "significance": "not_tested",
+   "condition_departure": false,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "23341890",
+  "claim_id": "C033",
+  "conditions": {
+   "population": "208 Chinese patients with NSCLC (resection status not reported); plus a meta-analysis of unselected NSCLC patients",
+   "intervention": "EML4-ALK fusion gene status with EGFR and KRAS mutation status",
+   "comparator": "Co-occurrence of EML4-ALK with EGFR/KRAS mutations among ALK-positive patients",
+   "timing": "Cross-sectional"
+  },
+  "measurement": {
+   "outcome": "Prevalence of EML4-ALK, EGFR mutation, KRAS mutation; overlap of EML4-ALK with EGFR/KRAS mutations",
+   "effect": "No EGFR/KRAS mutations were detected among the EML4-ALK positive patients. ERBB2 not assessed.",
+   "uncertainty": "None given for the exclusivity observation (P<0.05 reported only for EGFR associations with sex, smoking, histology)"
+  },
+  "estimand": {
+   "quantity": "Co-occurrence of EML4-ALK with EGFR and KRAS mutations",
+   "denominator": "208 NSCLC patients; 7 EML4-ALK positive",
+   "estimate": "EGFR mutations 24.5% (51/208); KRAS mutations 2.88% (6/208); EML4-ALK 3.37% (7/208); 0 of 7 EML4-ALK positive patients had EGFR/KRAS mutations",
+   "uncertainty": "None given",
+   "adjustment": "unadjusted (descriptive counts)"
+  },
+  "structured": {
+   "direction": "supports",
+   "significance": "not_tested",
+   "condition_departure": false,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "29517858",
+  "claim_id": "C033",
+  "conditions": {
+   "population": "49 samples from younger (aged 50 years or less) lung adenocarcinoma patients treated 1998-2009 with surgical resection, chemotherapy, and/or radiotherapy (of 85 patients aged 50 or less); no ALK inhibitors given",
+   "intervention": "EML4-ALK fusion gene (multiplex RT-PCR, confirmed by direct sequencing)",
+   "comparator": "EML4-ALK positive vs negative tumors for EGFR and KRAS mutations; survival with vs without EML4-ALK",
+   "timing": "Patients treated between December 1998 and May 2009; five-year survival"
+  },
+  "measurement": {
+   "outcome": "EML4-ALK detection; overlap with EGFR and KRAS mutations; clinicopathologic features; five-year survival",
+   "effect": "EML4-ALK fusion genes were mutually exclusive to EGFR and KRAS mutations. ERBB2 not assessed.",
+   "uncertainty": "None given"
+  },
+  "estimand": {
+   "quantity": "Co-occurrence (mutual exclusivity) of EML4-ALK with EGFR and KRAS mutations in young lung adenocarcinoma",
+   "denominator": "49 adenocarcinoma samples; 5 EML4-ALK positive",
+   "estimate": "EML4-ALK detected in 5 tumors (10.2%); mutually exclusive to EGFR and KRAS mutations (counts of EGFR/KRAS mutations not given); five-year survival 59.4% without EML4-ALK, not reached with EML4-ALK",
+   "uncertainty": "None given",
+   "adjustment": "unadjusted"
+  },
+  "structured": {
+   "direction": "supports",
+   "significance": "not_tested",
+   "condition_departure": true,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "26767032",
+  "claim_id": "C033",
+  "conditions": {
+   "population": "131 Chinese patients with lung adenocarcinoma (resection status not reported)",
+   "intervention": "EGFR mutations (exons 19-21, real-time PCR), KRAS mutations (codons 12/13), ALK rearrangements (FISH)",
+   "comparator": "Four genotype groups: EGFR mutant, ALK rearranged, KRAS mutant, wild type for all three; co-occurrence assessed",
+   "timing": "Cross-sectional"
+  },
+  "measurement": {
+   "outcome": "Frequency of EGFR, KRAS, ALK alterations and their coexistence",
+   "effect": "Two never-smoking women harbored coexisting ALK rearrangement and EGFR mutation, inconsistent with strict mutual exclusivity; all KRAS mutations occurred in EGFR wild type. ERBB2 not assessed.",
+   "uncertainty": "KRAS mutations all in EGFR wild type P = 0.007; ALK in young patients P = 0.687, non-smokers P = 0.077, no family history P = 1.000; no interval or P value for the coexistence itself"
+  },
+  "estimand": {
+   "quantity": "Frequency of coexisting ALK rearrangement and EGFR mutation among patients with lung adenocarcinoma",
+   "denominator": "131 patients (ALK rearranged n = 9)",
+   "estimate": "EGFR mutations n = 63 (48.1%); ALK rearrangements n = 9 (6.9%); KRAS mutations n = 8 (6.1%); wild type n = 53 (40.5%); ALK plus EGFR coexisting in 2/131 (1.5%)",
+   "uncertainty": "None given for the coexistence frequency",
+   "adjustment": "unadjusted"
+  },
+  "structured": {
+   "direction": "opposes",
+   "significance": "not_tested",
+   "condition_departure": false,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "27438512",
+  "claim_id": "C033",
+  "conditions": {
+   "population": "55 patients with synchronous double primary lung cancer who underwent surgical resection (110 tumor lesions)",
+   "intervention": "Driver mutation profiling: EGFR, KRAS, BRAF, EML4-ALK, ROS1; PD-L1 expression",
+   "comparator": "Not a comparison for this claim; descriptive co-occurrence across 110 lesions",
+   "timing": "Cross-sectional on resected specimens"
+  },
+  "measurement": {
+   "outcome": "Driver mutation frequencies and coexistence of mutations/fusions",
+   "effect": "Only 1 tumor had coexistence of L858R EGFR mutation and EML4-ALK fusion; no BRAF or ROS1 aberrations. ERBB2 not assessed.",
+   "uncertainty": "None given for the coexistence finding"
+  },
+  "estimand": {
+   "quantity": "Coexistence of EGFR mutation and EML4-ALK fusion (and KRAS mutation) among tumor lesions in synchronous double primary lung cancer",
+   "denominator": "110 tumor lesions from 55 patients",
+   "estimate": "EGFR mutations 55 (50%); EML4-ALK fusions 5 (4.55%); KRAS mutations 9 (8.18%); 1 tumor with coexisting L858R and EML4-ALK",
+   "uncertainty": "None given",
+   "adjustment": "unadjusted"
+  },
+  "structured": {
+   "direction": "opposes",
+   "significance": "not_tested",
+   "condition_departure": true,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "26712101",
+  "claim_id": "C033",
+  "conditions": {
+   "population": "380 nonsquamous NSCLC patients tested for EGFR and EML4-ALK (nonsequential testing); KRAS analysis in 282 patients",
+   "intervention": "EGFR mutation, EML4-ALK translocation, and KRAS mutation testing; double mutations and response to targeted therapy",
+   "comparator": "Patients with single vs double alterations (clinical benefit, crizotinib response, survival)",
+   "timing": "Median overall survival reported; other follow-up not reported"
+  },
+  "measurement": {
+   "outcome": "Frequency of double mutations; response to TKI/crizotinib; overall survival",
+   "effect": "Double mutations occurred: EGFR plus EML4-ALK, EGFR plus KRAS, and EML4-ALK plus KRAS; concomitant KRAS mutation and EML4-ALK translocation was the most common double alteration. ERBB2 not assessed.",
+   "uncertainty": "Survival ranges only: median OS 57.1 (range 10.7-not reached) months for EML4-ALK alone and 10.7 (range 4.6-not reached) months for EML4-ALK plus KRAS; no P values or CIs for the double-mutation frequencies"
+  },
+  "estimand": {
+   "quantity": "Proportion of patients with double mutations involving EGFR, EML4-ALK and KRAS",
+   "denominator": "380 nonsquamous NSCLC patients (282 with KRAS analysis)",
+   "estimate": "1.6% EGFR plus EML4-ALK; 1.1% EGFR plus KRAS; 2.5% EML4-ALK plus KRAS; clinical benefit 81.8% with EGFR only vs 67% with EGFR plus EML4-ALK; 12 patients received crizotinib, 7 progressed within 3 months",
+   "uncertainty": "None given for the frequencies",
+   "adjustment": "unadjusted"
+  },
+  "structured": {
+   "direction": "opposes",
+   "significance": "not_tested",
+   "condition_departure": false,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "30233859",
+  "claim_id": "C033",
+  "conditions": {
+   "population": "1,000 consecutive NSCLC patients with EGFR wild-type tumors (Romagna, Italy); 657 with all markers determined",
+   "intervention": "Multiparametric testing: KRAS, BRAF, ERBB2, PIK3CA, NRAS, ALK, MAP2K1, RET, DDR2 mutations (Sequenom MassARRAY); EML4-ALK and ROS1 by FISH; HER4 by sequencing",
+   "comparator": "Descriptive frequency of alterations and overlaps among EGFR wild-type patients",
+   "timing": "Cross-sectional routine molecular diagnostics"
+  },
+  "measurement": {
+   "outcome": "Frequency of actionable alterations and overlapping mutations",
+   "effect": "318/657 (48%) had at least one alteration; eight patients had overlapping alterations including 4 KRAS mutation/EML4-ALK translocation. EGFR mutants were excluded by design so EGFR exclusivity cannot be assessed; no ERBB2/ALK overlap reported.",
+   "uncertainty": "None given"
+  },
+  "estimand": {
+   "quantity": "Frequency of alterations and overlapping alterations in EGFR wild-type NSCLC",
+   "denominator": "1,000 EGFR wild-type NSCLC patients; 657 with all markers determined",
+   "estimate": "KRAS 348 (34.8%); BRAF 31 (3.1%); ALK 39 (4.4%); ROS1 14 (1.8%); NRAS 6 (0.7%); PIK3CA 16 (1.8%); MAPK1/2 5 (0.6%); HER2 9 (0.9%); overlaps: 4 KRAS/EML4-ALK, 1 KRAS/ROS1, 2 KRAS/PIK3CA, 1 BRAF/PIK3CA",
+   "uncertainty": "None given",
+   "adjustment": "unadjusted"
+  },
+  "structured": {
+   "direction": "opposes",
+   "significance": "not_tested",
+   "condition_departure": true,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "27086595",
+  "claim_id": "C033",
+  "conditions": {
+   "population": "12 selected NSCLC patients (all adenocarcinoma, all with EGFR mutation) with concomitant mutations, identified among 6,637 NSCLC patients",
+   "intervention": "Concomitant EGFR plus KRAS (6 patients) or EGFR plus ALK (6 patients) mutations",
+   "comparator": "Descriptive case series (EGFR-KRAS vs EGFR-ALK subgroups); no formal comparator",
+   "timing": "EGFR-TKI partial response for 7-29 months in 3 of 6 EGFR-KRAS patients; other follow-up not reported"
+  },
+  "measurement": {
+   "outcome": "Clinicopathologic features (histologic patterns, cell features), targeted therapy response, disease-free survival",
+   "effect": "Concomitant driver mutations occur: 6 EGFR-KRAS and 6 EGFR-ALK patients among 6,637; EGFR-ALK tumors showed solid or cribriform patterns and 3 had signet ring cells; 4 of 5 treated EGFR-ALK patients had partial response or stable disease. ERBB2 not assessed.",
+   "uncertainty": "None given"
+  },
+  "estimand": {
+   "quantity": "Clinicopathologic features and treatment response of NSCLC with concomitant EGFR, KRAS, ALK mutations (selected case series)",
+   "denominator": "12 selected concomitant-mutation patients from 6,637 NSCLC patients (implied concomitant frequency 12/6,637)",
+   "estimate": "6 EGFR-KRAS and 6 EGFR-ALK concomitant cases; 5/6 EGFR-KRAS with papillary/acinar patterns with hobnail cells; 3/6 received EGFR TKI with partial response of 7-29 months; 5/6 EGFR-ALK received EGFR TKI and/or ALK inhibitor, 4 with partial response or stable disease",
+   "uncertainty": "None given",
+   "adjustment": "unadjusted"
+  },
+  "structured": {
+   "direction": "opposes",
+   "significance": "not_tested",
+   "condition_departure": true,
+   "quantity_matches_claim": false
+  }
+ },
+ {
+  "pmid": "25706305",
+  "claim_id": "C033",
+  "conditions": {
+   "population": "Meta-analysis of 27 retrospective studies including 6950 NSCLC patients (English and Chinese databases; resection status not reported)",
+   "intervention": "EML4-ALK fusion gene positivity",
+   "comparator": "EML4-ALK positive vs negative NSCLC for clinicopathologic characteristics and EGFR/KRAS mutations; pooled relative risk (RR) with fixed or random effects",
+   "timing": "Not applicable (pooled retrospective studies)"
+  },
+  "measurement": {
+   "outcome": "Incidence of EML4-ALK; clinicopathologic correlates; exclusivity with EGFR and KRAS mutations",
+   "effect": "The EML4-ALK fusion gene was mutually exclusive of EGFR and KRAS mutation genes. ERBB2 not assessed.",
+   "uncertainty": "P = 0.00 for exclusivity with EGFR and KRAS mutations (no pooled RR or 95% CI given for this in the abstract)"
+  },
+  "estimand": {
+   "quantity": "Pooled mutual exclusivity of EML4-ALK fusion with EGFR and KRAS mutations across studies",
+   "denominator": "27 studies, 6950 NSCLC patients",
+   "estimate": "EML4-ALK incidence 6.8% (472/6950); exclusive of EGFR and KRAS mutations (P = 0.00)",
+   "uncertainty": "P = 0.00; no confidence interval given for the exclusivity result",
+   "adjustment": "not reported (pooled estimates)"
+  },
+  "structured": {
+   "direction": "supports",
+   "significance": "significant",
+   "condition_departure": false,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "19414674",
+  "claim_id": "C015",
+  "conditions": {
+   "population": "190 patients with papillary thyroid cancer (PTC; all variants, including conventional PTC) with preoperative FNAB specimens before thyroidectomy",
+   "intervention": "BRAF T1799A (V600E) mutation in preoperative FNAB specimens",
+   "comparator": "BRAF mutation positive vs BRAF wild-type or mutation-negative patients",
+   "timing": "Median follow-up 3 years (range 0.6 to 10 years)"
+  },
+  "measurement": {
+   "outcome": "Extrathyroidal extension, thyroid capsular invasion, lymph node metastasis, PTC persistence/recurrence; predictive values",
+   "effect": "BRAF mutation was associated with poorer clinicopathologic outcomes: more extrathyroidal extension, capsular invasion and lymph node metastasis, and more persistence/recurrence (36% vs 12%).",
+   "uncertainty": "Extrathyroidal extension P = .039; capsular invasion P = .045; lymph node metastasis P = .002; persistence/recurrence OR 4.16 (95% CI, 1.70 to 10.17; P = .002)"
+  },
+  "estimand": {
+   "quantity": "Association of preoperative BRAF mutation with aggressive clinicopathologic features and with PTC persistence/recurrence (unadjusted comparison)",
+   "denominator": "190 PTC patients (BRAF mutation-positive vs mutation-negative)",
+   "estimate": "Extrathyroidal extension 23% v 11%; capsular invasion 29% v 16%; lymph node metastasis 38% v 18%; persistence/recurrence 36% v 12%, OR 4.16; PPV/NPV for persistence/recurrence 36%/88% overall PTC and 34%/92% conventional PTC",
+   "uncertainty": "P = .039, .045, .002; OR 4.16 (95% CI 1.70 to 10.17; P = .002)",
+   "adjustment": "unadjusted"
+  },
+  "structured": {
+   "direction": "supports",
+   "significance": "significant",
+   "condition_departure": false,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "17972530",
+  "claim_id": "C015",
+  "conditions": {
+   "population": "54 PTCs (40 primary and 14 recurrent PTCs)",
+   "intervention": "BRAF (V600E) mutation",
+   "comparator": "BRAF-positive vs BRAF-negative (wild-type) patients",
+   "timing": "Cross-sectional; recurrent PTCs examined separately; follow-up not reported"
+  },
+  "measurement": {
+   "outcome": "Age, extrathyroid extension, lymph node metastasis, TNM stage, Ki-67 labeling index; BRAF prevalence in recurrent PTC",
+   "effect": "BRAF mutation was significantly related to older age, extrathyroid extension, lymph node metastasis and higher Ki-67 LI; common in advanced TNM stage (18/20, 90% in stages III and IV); 12/14 recurrent PTCs were BRAF positive; authors conclude BRAF-mutated PTCs are more aggressive.",
+   "uncertainty": "Age p=0.012; extrathyroid extension p=0.026; lymph node metastasis p=0.044; Ki-67 LI p=0.014"
+  },
+  "estimand": {
+   "quantity": "Association of BRAF V600E with clinicopathologic aggressiveness features (unadjusted comparison of BRAF-positive vs BRAF-negative PTC)",
+   "denominator": "54 PTCs (BRAF detected in 26 of 40 primary and 12 of 14 recurrent)",
+   "estimate": "Age 57.4 vs 43.1 years; extrathyroid extension 76.9% vs 35.7%; lymph node metastasis 88.5% vs 57.1%; mean Ki-67 LI 1.01% vs 0.135%; BRAF in 26/40 (65%) primary and 12/14 (85.7%) recurrent PTCs; 18/20 (90%) of TNM stage III-IV",
+   "uncertainty": "p=0.012, 0.026, 0.044, 0.014",
+   "adjustment": "unadjusted"
+  },
+  "structured": {
+   "direction": "supports",
+   "significance": "significant",
+   "condition_departure": false,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "17685465",
+  "claim_id": "C015",
+  "conditions": {
+   "population": "214 consecutive patients with papillary thyroid carcinoma of 1 cm or less who underwent total or near-total thyroidectomy (per title), and 42 paired lymph node metastases",
+   "intervention": "BRAF(V600E) mutation (and p27(kip1) expression)",
+   "comparator": "BRAF(V600E) mutation positive vs negative; groups with vs without lymph node metastases; low vs high p27",
+   "timing": "not reported"
+  },
+  "measurement": {
+   "outcome": "Lymph node metastasis, age, extent of nodal metastasis, extracapsular extension of LN, p27(kip1) expression",
+   "effect": "BRAF(V600E) was detected in 88 tumors, with significant differences between groups with and without lymph node metastases; mean age higher with the mutation. Among 42 cases with LN metastases, 23 had the mutation in the metastasis and showed wider largest metastatic area, more involved LNs, and more ECE-LN.",
+   "uncertainty": "Reported as significant but no P values, intervals, or effect sizes given in the abstract"
+  },
+  "estimand": {
+   "quantity": "Association of BRAF(V600E) with lymph node metastasis and nodal disease burden in PTC of 1 cm or less",
+   "denominator": "214 patients (88 BRAF-positive tumors); 42 cases with LN metastases (23 with BRAF in the metastasis)",
+   "estimate": "88 BRAF-mutated tumors of 214; 23 of 42 metastases BRAF-mutated with larger metastatic area, more involved LNs, more ECE-LN; numeric contrasts not given",
+   "uncertainty": "None given numerically (described as significant)",
+   "adjustment": "not reported"
+  },
+  "structured": {
+   "direction": "supports",
+   "significance": "significant",
+   "condition_departure": true,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "24787545",
+  "claim_id": "C015",
+  "conditions": {
+   "population": "103 classical variant PTC patients who underwent total thyroidectomy in 2005-2008 at a single institution (subset of 42 microcarcinomas)",
+   "intervention": "BRAF(V600E) mutation (55.3% positive)",
+   "comparator": "BRAF(V600E)-positive vs negative; univariate then multivariate analysis",
+   "timing": "Average follow-up 55 +/- 13 months"
+  },
+  "measurement": {
+   "outcome": "Lymph node metastasis, TNM stage III-IV, persistent disease",
+   "effect": "BRAF(V600E)-positive cancers had more lymph node metastasis and advanced TNM stage, also in the 42 microcarcinomas; higher risk of persistent disease in univariate but not multivariate analysis; lymph node involvement was an independent predictor of persistent disease.",
+   "uncertainty": "Lymph node metastasis p=0.01; TNM III-IV p=0.03; persistent disease OR 3.5 (95% CI 1.2-10.3), p=0.03 univariate; multivariate OR 2.8 (CI 0.7-11.8), p=0.2; lymph node involvement OR 30.9 (CI 6.0-159.0)"
+  },
+  "estimand": {
+   "quantity": "Association of BRAF(V600E) with lymph node metastasis, advanced stage and persistent disease (univariate), and independent association with persistent disease (multivariate)",
+   "denominator": "103 classical variant PTC patients",
+   "estimate": "Univariate OR for persistent disease 3.5; multivariate OR 2.8; BRAF positive in 55.3%",
+   "uncertainty": "Univariate 95% CI 1.2-10.3, p=0.03; multivariate CI 0.7-11.8, p=0.2",
+   "adjustment": "Univariate (unadjusted) then multivariate; covariates in the multivariate model not fully listed in the abstract (lymph node involvement was an independent predictor)"
+  },
+  "structured": {
+   "direction": "supports",
+   "significance": "significant",
+   "condition_departure": false,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "26214416",
+  "claim_id": "C015",
+  "conditions": {
+   "population": "126 patients with papillary thyroid carcinoma who underwent surgery (2-year retrospective records)",
+   "intervention": "BRAF V600E mutation (69.0%, 87/126)",
+   "comparator": "BRAF mutation-positive vs mutation-negative patients; univariate then multivariate analysis",
+   "timing": "Retrospective review of 2-year medical records; follow-up not reported"
+  },
+  "measurement": {
+   "outcome": "Tumor size, lymph node metastasis (including central lymph node metastasis)",
+   "effect": "BRAF mutation status correlated significantly with tumor size and lymph node metastasis on univariate analysis; with tumor diameter above 10 mm, lymph node metastasis was significantly higher in BRAF-positive patients; BRAF mutation independently predicted central lymph node metastasis. Recurrence not assessed.",
+   "uncertainty": "P < 0.05 for the associations (some P values garbled in the abstract text); no odds ratios or intervals given"
+  },
+  "estimand": {
+   "quantity": "Association of BRAF V600E with tumor size and central lymph node metastasis in PTC (univariate and independent multivariate)",
+   "denominator": "126 PTC patients (87 BRAF-positive)",
+   "estimate": "BRAF incidence 69.0% (87/126); significant correlation with tumor size and lymph node metastasis; independent predictor of central LN metastasis (no effect size given)",
+   "uncertainty": "P < 0.05; no CI reported",
+   "adjustment": "Univariate, then multivariate (independent predictor); covariates not listed"
+  },
+  "structured": {
+   "direction": "supports",
+   "significance": "significant",
+   "condition_departure": false,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "26258321",
+  "claim_id": "C015",
+  "conditions": {
+   "population": "1510 consecutive patients with initial thyroidectomy for thyroid cancer (PTC 97%, poorly differentiated/anaplastic 1.1%); genetic alteration in 1039 (70%)",
+   "intervention": "BRAFV600E (644/1039, 62%) and other alterations (RAS 323/1039, 31%, RET/PTC, PAX8/PPARG)",
+   "comparator": "BRAFV600E or RET/PTC-positive vs RAS or PAX8/PPARG-positive thyroid cancers (not BRAF vs wild type)",
+   "timing": "Metastatic or recurrent disease tracked for 6 or more months after thyroidectomy"
+  },
+  "measurement": {
+   "outcome": "Histology, extrathyroidal extension, lymph node metastasis, stage III/IV disease, distant metastasis, early recurrence",
+   "effect": "BRAFV600E-positive PTC was often conventional or tall cell (58%), with frequent extrathyroidal extension and lymph node metastasis, versus RAS-positive PTC (mostly follicular variant, infrequent extrathyroidal extension and lymph node metastasis); BRAFV600E or RET/PTC-positive TCs were more often stage III/IV; molecular signature associated with higher risks of distant metastasis and early recurrence.",
+   "uncertainty": "Stage III/IV 40% vs 15%, P value truncated in the abstract text; no other P values or intervals given"
+  },
+  "estimand": {
+   "quantity": "Association of tumor genotype (BRAFV600E/RET-PTC vs RAS/PAX8-PPARG) with phenotype, stage, distant metastasis and early recurrence",
+   "denominator": "1510 thyroid cancer patients; 1039 with an alteration (644 BRAFV600E)",
+   "estimate": "BRAFV600E PTC: extrathyroidal extension 51%, lymph node metastasis 46%; RAS-positive PTC: extrathyroidal extension 4.6%, lymph node metastasis 5.6%; stage III/IV 40% vs 15% (BRAF or RET/PTC vs RAS or PAX8/PPARG)",
+   "uncertainty": "P value truncated in the abstract; none otherwise given",
+   "adjustment": "not reported"
+  },
+  "structured": {
+   "direction": "supports",
+   "significance": "significant",
+   "condition_departure": false,
+   "quantity_matches_claim": false
+  }
+ },
+ {
+  "pmid": "25468810",
+  "claim_id": "C015",
+  "conditions": {
+   "population": "467 patients with papillary thyroid carcinoma who underwent surgical resection (tissue microarray)",
+   "intervention": "BRAF(V600E) mutation by real-time PCR, BRAF V600E IHC, and BRAF RNA ISH",
+   "comparator": "BRAF-positive vs negative (or high vs low RNA ISH) tumors",
+   "timing": "not reported"
+  },
+  "measurement": {
+   "outcome": "Lymph node metastasis; agreement between mutation, IHC and RNA ISH; aggressive behavior",
+   "effect": "BRAF(V600E) mutation, BRAF V600E IHC, low delta-Ct and high BRAF RNA ISH were significantly associated with lymph node metastasis; conventional PTC had higher positive rates than other histologic types; high BRAF RNA ISH score may mark aggressive behavior in BRAF(V600E)-positive cases. Recurrence not assessed.",
+   "uncertainty": "Reported as significant but no P values or effect sizes given in the abstract"
+  },
+  "estimand": {
+   "quantity": "Association of BRAF(V600E) mutation (and IHC/RNA ISH) with lymph node metastasis in PTC",
+   "denominator": "467 PTC patients",
+   "estimate": "Positive rates: mutation 84%, IHC 86%, high RNA ISH 70%; significant association with lymph node metastasis (no effect size)",
+   "uncertainty": "None given numerically",
+   "adjustment": "not reported"
+  },
+  "structured": {
+   "direction": "supports",
+   "significance": "significant",
+   "condition_departure": false,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "23132792",
+  "claim_id": "C015",
+  "conditions": {
+   "population": "379 consecutive patients with PTC who underwent thyroidectomy with (n=243) or without (n=136) central neck dissection at a tertiary academic hospital, 2001-2010",
+   "intervention": "BRAF mutation status and cervical lymph node metastasis",
+   "comparator": "Non-CND vs limited CND vs formal CND groups; BRAF mutation positive vs negative on Kaplan-Meier analysis",
+   "timing": "Period 2001-2010; follow-up duration not reported"
+  },
+  "measurement": {
+   "outcome": "Disease recurrence/persistence; cervical lymph node (CLN) metastasis",
+   "effect": "Recurrence/persistence rose across CND settings; CLN metastasis and BRAF mutation were strongly associated with recurrence/persistence on Kaplan-Meier analysis, and BRAF mutation strongly predicted CLN metastasis; BRAF mutation rate increased with CND extent.",
+   "uncertainty": "Recurrence/persistence 4.7% to 15.7% to 40.5% across CND settings, P<0.0001; CLN metastasis 18.0% to 77.3%, P<0.0001; no P value or hazard ratio given for BRAF itself"
+  },
+  "estimand": {
+   "quantity": "Association of BRAF mutation with disease recurrence/persistence (Kaplan-Meier) and with cervical lymph node metastasis in PTC",
+   "denominator": "379 PTC patients (243 with CND, 136 without)",
+   "estimate": "Recurrence/persistence 4.7%, 15.7%, 40.5% (non-CND, limited CND, formal CND); CLN metastasis 18.0% (limited CND) vs 77.3% (formal CND); BRAF association described as strong (no numeric BRAF effect size)",
+   "uncertainty": "P<0.0001 for the trends across CND groups; none given numerically for BRAF",
+   "adjustment": "unadjusted (Kaplan-Meier)"
+  },
+  "structured": {
+   "direction": "supports",
+   "significance": "significant",
+   "condition_departure": false,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "26271724",
+  "claim_id": "C015",
+  "conditions": {
+   "population": "298 papillary microcarcinomas from 264 patients at six Italian medical institutions, with central pathology review",
+   "intervention": "BRAF V600E mutation (145/298, 49%)",
+   "comparator": "BRAF V600E-mutated vs wild-type microcarcinomas; multivariate analysis",
+   "timing": "Retrospective; follow-up not reported"
+  },
+  "measurement": {
+   "outcome": "Microscopic features, aggressive growth pattern, American Thyroid Association recurrence risk group, mode of tumor discovery",
+   "effect": "BRAF V600E-mutated microcarcinomas showed infiltrative contours and intraglandular spread; on multivariate analysis BRAF V600E correlated with aggressive growth pattern (infiltrative border, extrathyroidal extension, intraglandular spread), higher ATA recurrence risk group, and non-incidental discovery; mutation regarded as a surrogate marker for adverse prognostic features.",
+   "uncertainty": "P<0.0001 for subtype distribution, infiltrative contours and intraglandular spread; no odds ratios or intervals given"
+  },
+  "estimand": {
+   "quantity": "Association of BRAF V600E with pathological aggressiveness features and ATA recurrence risk group in papillary microcarcinoma (multivariate)",
+   "denominator": "298 microcarcinomas from 264 patients",
+   "estimate": "BRAF V600E in 145/298 (49%); tall cell 35/37 (95%); classic 72/114 (64%); follicular variant 94/129 (73%) wild type; strongest links: tall cell subtype, nuclear grooves/optically clear nuclei, infiltrative growth, intraglandular spread, non-incidental discovery",
+   "uncertainty": "P<0.0001 (subtype, contours, intraglandular spread); other multivariate estimates not given",
+   "adjustment": "Multivariate analysis (covariates not listed in the abstract)"
+  },
+  "structured": {
+   "direction": "supports",
+   "significance": "significant",
+   "condition_departure": true,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "27101676",
+  "claim_id": "C015",
+  "conditions": {
+   "population": "72 patients with small (2 cm or less) clinically node-negative (cN0) PTC who underwent prophylactic central neck dissection",
+   "intervention": "BRAF(V600E) mutation in primary tumor tissue (nested PCR)",
+   "comparator": "BRAF-mutated vs non-mutated tumors as predictors of central nodal metastasis (univariate then logistic regression)",
+   "timing": "not reported"
+  },
+  "measurement": {
+   "outcome": "Occult central nodal metastasis (CNM)",
+   "effect": "BRAF mutation was correlated with lymph node metastasis and was a risk predictor of central nodal metastasis, along with tumor size, multifocality and extrathyroidal invasion. Recurrence not assessed.",
+   "uncertainty": "BRAF P = 0.041 (univariate); BRAF OR = 1.647, 95% CI = 1.101-2.463"
+  },
+  "estimand": {
+   "quantity": "Association of BRAF mutation with occult central lymph node metastasis in cN0 small PTC",
+   "denominator": "72 cN0 PTC patients (26 with CNM)",
+   "estimate": "BRAF prevalence 47.22% (34/72); CNM rate 36.11% (26/72); BRAF OR = 1.647",
+   "uncertainty": "P = 0.041; OR 95% CI 1.101-2.463",
+   "adjustment": "Univariate; logistic regression prediction models (covariates included tumor size, multifocality, extrathyroidal invasion); adjustment set not fully specified"
+  },
+  "structured": {
+   "direction": "supports",
+   "significance": "significant",
+   "condition_departure": true,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "26338373",
+  "claim_id": "C015",
+  "conditions": {
+   "population": "Patients with small papillary thyroid carcinoma (tumors 20 mm or less, including microPTC 10 mm or less); sample size not reported",
+   "intervention": "BRAF V600E mutation (also NRAS Q61 and RET/PTC), with expression of iodine metabolism genes NIS, TPO, TG, TSHR, PDS",
+   "comparator": "BRAF V600E-positive vs negative tumors, by tumor size stratum (20 mm or less; microPTC; 7-10 mm)",
+   "timing": "not reported"
+  },
+  "measurement": {
+   "outcome": "Aggressive histopathological parameters, predictors of recurrence, expression of NIS and TPO",
+   "effect": "In tumors of 20 mm or less, BRAF V600E correlated with aggressive histopathological parameters, higher risk of recurrence and lower NIS and TPO expression; this correlation was not found when microPTC were evaluated overall; BRAF-positive tumors of 7-10 mm had more aggressive features and lower NIS/TPO.",
+   "uncertainty": "None given in the abstract (no numbers, intervals or P values)"
+  },
+  "estimand": {
+   "quantity": "Association of BRAF V600E with aggressive histopathology, recurrence risk and NIS/TPO expression in small PTC, stratified by tumor size",
+   "denominator": "not reported (small PTC of 20 mm or less)",
+   "estimate": "Qualitative: positive correlation in tumors of 20 mm or less; absent in microPTC overall; present in 7-10 mm BRAF-positive tumors",
+   "uncertainty": "None given",
+   "adjustment": "not reported"
+  },
+  "structured": {
+   "direction": "supports",
+   "significance": "significant",
+   "condition_departure": true,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "23062653",
+  "claim_id": "C015",
+  "conditions": {
+   "population": "63 patients with PTC diagnosed on fine-needle aspiration who underwent total thyroidectomy and routine central lymph node dissection (CLND)",
+   "intervention": "V600E BRAF mutation (colorimetric assay on fresh frozen or intraoperative FNA samples)",
+   "comparator": "BRAF mutation-positive vs negative; Chi-square then multivariate logistic regression",
+   "timing": "not reported"
+  },
+  "measurement": {
+   "outcome": "Association of BRAF mutation with clinicopathologic features including lymph node metastases (LNM)",
+   "effect": "BRAF mutation was significantly associated only with race (Chi-square); not significantly associated with LNM; on multivariate analysis only tumor size and venous/lymphatic invasion were associated with LNM.",
+   "uncertainty": "BRAF and LNM P = .167; no other P values given"
+  },
+  "estimand": {
+   "quantity": "Association of BRAF mutation with lymph node metastasis and other aggressive clinicopathologic features in PTC",
+   "denominator": "63 PTC patients",
+   "estimate": "No significant association of BRAF with LNM (P = .167); significant only with race",
+   "uncertainty": "P = .167",
+   "adjustment": "Chi-square (unadjusted) and multivariate logistic regression; covariates not listed"
+  },
+  "structured": {
+   "direction": "null",
+   "significance": "not_significant",
+   "condition_departure": false,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "25482468",
+  "claim_id": "C015",
+  "conditions": {
+   "population": "Consecutive single-institution cohort of 116 patients with PTC larger than 1 cm",
+   "intervention": "BRAF V600E mutation (exon 15 PCR and Sanger sequencing); 75/116 (65%) positive",
+   "comparator": "BRAF V600E-positive vs negative; also clinical risk scores (MACIS, EORTC, TNM)",
+   "timing": "5- and 10-year survival; retrospective"
+  },
+  "measurement": {
+   "outcome": "Extrathyroidal extension, lymph node metastases, T-category, sex, age; clinical risk scores; overall, disease-specific and recurrence-free survival",
+   "effect": "BRAF V600E mutation status was not associated with aggressive clinicopathologic characteristics or with clinical risk scores or decreased survival; no negative prognostic impact of BRAF V600E; MACIS, EORTC and TNM were associated with prognosis.",
+   "uncertainty": "No P values or intervals given for the BRAF null associations (MACIS low vs high: OS 10 y 95% vs 75%, P = .008; DSS 100% vs 89%, P = .02; RFS 100% vs 85%, P = .006)"
+  },
+  "estimand": {
+   "quantity": "Association of BRAF V600E with aggressive clinicopathologic features and with survival (overall, disease-specific, recurrence-free) in PTC over 1 cm",
+   "denominator": "116 PTC patients (75 BRAF-positive)",
+   "estimate": "No association with extrathyroidal extension, lymph node metastases, T-category, male sex, age, risk scores or decreased survival; 5- and 10-year OS 92% and 87%, DSS 98% and 96%, RFS 96% and 94% (whole cohort)",
+   "uncertainty": "None given for BRAF associations",
+   "adjustment": "not reported"
+  },
+  "structured": {
+   "direction": "null",
+   "significance": "not_significant",
+   "condition_departure": false,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "24354346",
+  "claim_id": "C015",
+  "conditions": {
+   "population": "113 patients with low-risk papillary thyroid microcarcinoma (pT1aN0-x; one PTC focus, small diameter)",
+   "intervention": "BRAF(V600E) mutation (78/113, 69.0%)",
+   "comparator": "BRAF-positive vs negative for clinical outcome (retrospective analysis)",
+   "timing": "12-year study period (January 2001 to December 2012)"
+  },
+  "measurement": {
+   "outcome": "Persistence, locoregional recurrence, lymph node or distant metastases, death",
+   "effect": "No persistence, locoregional recurrence, lymph node or distant metastases or deaths were observed in the study group; no correlation between BRAF-positive primary focus and more aggressive or recurrent disease.",
+   "uncertainty": "None given (no events observed; no P values or intervals)"
+  },
+  "estimand": {
+   "quantity": "Association of BRAF(V600E) with recurrence, persistence, metastasis and death in low-risk pT1aN0-x microcarcinoma",
+   "denominator": "113 patients (78 BRAF-positive)",
+   "estimate": "BRAF(V600E) in 78/113 (69.0%); 0 events (persistence, recurrence, metastases, deaths) over 12 years",
+   "uncertainty": "None given",
+   "adjustment": "unadjusted"
+  },
+  "structured": {
+   "direction": "null",
+   "significance": "not_tested",
+   "condition_departure": true,
+   "quantity_matches_claim": true
+  }
+ },
+ {
+  "pmid": "24604709",
+  "claim_id": "C015",
+  "conditions": {
+   "population": "19 pediatric patients (0 to 18 years; of 27 eligible, archived tumor available) who underwent surgery for PTC, 1999-2012",
+   "intervention": "BRAF V600E mutation (pyrosequencing of microdissected archived tumor); present in 7 (36.8%)",
+   "comparator": "BRAF V600E-positive vs wild-type patients",
+   "timing": "Surgery 1999 to 2012 (retrospective chart review)"
+  },
+  "measurement": {
+   "outcome": "Aggressive disease characteristics: central/lateral neck and pulmonary metastases, tumor size, age, lymphovascular invasion, extrathyroidal extension, MACIS score",
+   "effect": "BRAF V600E was not associated with lymphatic or pulmonary metastases, tumor size, age, lymphovascular invasion, or extrathyroidal extension; MACIS score was lower with BRAF but only trended toward significance; PTC histology correlated with BRAF mutation.",
+   "uncertainty": "MACIS P = .087 (trend); histology P = .013; no P values given for the non-significant associations"
+  },
+  "estimand": {
+   "quantity": "Association of BRAF V600E with aggressive tumor features in pediatric PTC",
+   "denominator": "19 pediatric PTC patients with archived tissue (7 BRAF-positive)",
+   "estimate": "BRAF present in 7/19 (36.8%); 7/11 (63.6%) classic PTC positive, all other variants wild type; central neck metastases 13 (68.4%), lateral neck 8 (42.1%), pulmonary 5 (26.3%) in the cohort; combined incidence with existing studies 28.4%",
+   "uncertainty": "MACIS P = .087; histology P = .013",
+   "adjustment": "unadjusted"
+  },
+  "structured": {
+   "direction": "null",
+   "significance": "not_significant",
+   "condition_departure": true,
+   "quantity_matches_claim": true
+  }
+ }
+]

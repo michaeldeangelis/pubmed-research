@@ -1,0 +1,974 @@
+[
+ {
+  "pair_id": "P047",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "379 consecutive patients with PTC who underwent thyroidectomy with (n=243) or without (n=136) central neck dissection at a tertiary academic hospital, 2001-2010",
+    "379 consecutive papillary thyroid cancers, 243 with central neck dissection and 136 without"
+   ],
+   "comparator": [
+    "Non-CND vs limited CND vs formal CND groups; BRAF mutation positive vs negative on Kaplan-Meier analysis",
+    "No dissection, limited dissection, and formal dissection"
+   ],
+   "quantity": [
+    "Association of BRAF mutation with disease recurrence/persistence (Kaplan-Meier) and with cervical lymph node metastasis in PTC",
+    "Node metastasis and recurrence or persistence across extents of central neck dissection, and the association of those outcomes with BRAF"
+   ]
+  }
+ },
+ {
+  "pair_id": "P040",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "190 patients with papillary thyroid cancer, preoperative fine-needle aspiration",
+    "190 patients with papillary thyroid cancer (PTC; all variants, including conventional PTC) with preoperative FNAB specimens before thyroidectomy"
+   ],
+   "comparator": [
+    "BRAF-mutant versus wild-type tumors in the same surgical series",
+    "BRAF mutation positive vs BRAF wild-type or mutation-negative patients"
+   ],
+   "quantity": [
+    "Unadjusted association of preoperative BRAF mutation with extrathyroidal extension, capsular invasion, node metastasis, and persistence or recurrence",
+    "Association of preoperative BRAF mutation with aggressive clinicopathologic features and with PTC persistence/recurrence (unadjusted comparison)"
+   ]
+  }
+ },
+ {
+  "pair_id": "P054",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "19 pediatric patients (0 to 18 years; of 27 eligible, archived tumor available) who underwent surgery for PTC, 1999-2012",
+    "19 of 27 children aged 0 to 18 with papillary thyroid cancer, surgery 1999–2012"
+   ],
+   "comparator": [
+    "BRAF V600E-positive vs wild-type patients",
+    "Mutant versus wild-type children"
+   ],
+   "quantity": [
+    "Association of BRAF V600E with aggressive tumor features in pediatric PTC",
+    "Association of BRAF with metastases and invasion in pediatric papillary thyroid cancer"
+   ]
+  }
+ },
+ {
+  "pair_id": "P001",
+  "proposition": "Kras(G12D) activated in adult pancreatic acinar cells induces pancreatic intraepithelial neoplasia of all grades and does not produce invasive carcinoma.",
+  "fields": {
+   "population": [
+    "Mature mouse pancreatic acinar cells",
+    "Mouse pancreas; conditional expression in the mature/adult pancreas, including mature acinar cells; no sample sizes given"
+   ],
+   "comparator": [
+    "Kras alone versus Notch plus Kras",
+    "Kras activation in mature acinar cells vs ubiquitous Kras activation; Notch/Kras coactivation vs Kras alone"
+   ],
+   "quantity": [
+    "Occurrence of PanIN and of invasive adenocarcinoma after acinar Kras activation",
+    "Whether Kras activation restricted to mature acinar cells produces PanIN lesions and whether those lesions progress to invasive adenocarcinoma"
+   ]
+  }
+ },
+ {
+  "pair_id": "P018",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "1,510 consecutive thyroid cancers with routine genotyping at initial thyroidectomy",
+    "1,510 consecutive patients who had initial thyroidectomy for thyroid cancer; papillary thyroid cancer in 97%, poorly differentiated/anaplastic in 1.1%"
+   ],
+   "comparator": [
+    "BRAF or RET/PTC versus RAS or PAX8/PPARG",
+    "BRAF V600E or RET/PTC-positive versus RAS or PAX8/PPARG-positive tumors, for histology and stage"
+   ],
+   "quantity": [
+    "Phenotype of BRAF-positive papillary cancer compared with RAS-positive papillary cancer",
+    "Association of tumor genotype (BRAF V600E) with aggressive histology, stage and disease-related outcomes"
+   ]
+  }
+ },
+ {
+  "pair_id": "P015",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "214 consecutive papillary carcinomas of 1 cm or smaller, with paired node metastases in 42",
+    "214 consecutive patients who underwent total or near-total thyroidectomy with histological diagnosis of papillary thyroid carcinoma 1 cm or smaller; 42 cases with lymph node metastases and their paired nodal tissue"
+   ],
+   "comparator": [
+    "Tumors with and without node metastases",
+    "Tumors with vs without lymph node metastases; metastatic nodes with vs without BRAF V600E; nodes with vs without extracapsular extension"
+   ],
+   "quantity": [
+    "Association of BRAF with node metastasis in papillary carcinoma of at most 1 cm, and with nodal burden among node-positive cases",
+    "Association of BRAF V600E with nodal metastatic burden and aggressiveness in papillary thyroid carcinoma 1 cm or smaller"
+   ]
+  }
+ },
+ {
+  "pair_id": "P053",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "113 patients with low-risk papillary thyroid microcarcinoma (pT1aN0-x; one PTC focus, small diameter)",
+    "113 low-risk papillary microcarcinomas staged pT1a N0-x at diagnosis, one focus"
+   ],
+   "comparator": [
+    "BRAF-positive vs negative for clinical outcome (retrospective analysis)",
+    "No recurring subgroup emerged, so mutant and wild-type outcomes were not contrasted"
+   ],
+   "quantity": [
+    "Association of BRAF(V600E) with recurrence, persistence, metastasis and death in low-risk pT1aN0-x microcarcinoma",
+    "Association of BRAF with later recurrence or metastasis in low-risk microcarcinoma staged pT1a N0-x"
+   ]
+  }
+ },
+ {
+  "pair_id": "P030",
+  "proposition": "Kras(G12D) activated in adult pancreatic acinar cells induces pancreatic intraepithelial neoplasia of all grades and does not produce invasive carcinoma.",
+  "fields": {
+   "population": [
+    "Mouse acinar cells, in vivo and in explant culture",
+    "Mouse model (in vivo) and in vitro pancreatic explant cultures; acinar cells; sample sizes not reported"
+   ],
+   "comparator": [
+    "Kras-driven acinar-to-ductal metaplasia with and without Notch1",
+    "Notch1-deleted vs Notch1-intact acinar cells with activated K-ras, in vivo and in explant culture"
+   ],
+   "quantity": [
+    "PanIN number and severity when Notch1 is deleted in acinar cells expressing oncogenic Kras",
+    "Effect of Notch1 deletion on K-ras-driven ADM and PanIN severity/number in acinar cells"
+   ]
+  }
+ },
+ {
+  "pair_id": "P031",
+  "proposition": "In resected non-small-cell lung cancer, EML4-ALK fusions are mutually exclusive with EGFR, KRAS, and ERBB2 mutations.",
+  "fields": {
+   "population": [
+    "1,683 patients with NSCLC with clinical genotyping data (resection status not reported); plus biopsy specimens from 34 patients with ALK-positive NSCLC after crizotinib resistance",
+    "1,683 patients with non-small-cell lung cancer, plus 34 biopsies after crizotinib resistance"
+   ],
+   "comparator": [
+    "Co-occurrence of ALK rearrangement with EGFR mutation (301) and KRAS mutation (465) across the cohort",
+    "ALK-positive versus EGFR-mutant or KRAS-mutant tumors in the same screened population"
+   ],
+   "quantity": [
+    "Co-occurrence (mutual exclusivity) of ALK rearrangement with EGFR and KRAS mutations",
+    "Co-occurrence of a functional ALK rearrangement with an EGFR or KRAS mutation"
+   ]
+  }
+ },
+ {
+  "pair_id": "P010",
+  "proposition": "In resected non-small-cell lung cancer, EML4-ALK fusions are mutually exclusive with EGFR, KRAS, and ERBB2 mutations.",
+  "fields": {
+   "population": [
+    "1,000 consecutive EGFR-wild-type non-small-cell lung cancers",
+    "One thousand consecutive NSCLC patients with EGFR wild-type tumors diagnosed by routine molecular analysis (Wide Catchment Area of Romagna); all markers determined in 657 of them"
+   ],
+   "comparator": [
+    "Single alterations versus the eight overlapping genotypes",
+    "Alteration frequencies across genes; patients with overlapping alterations vs single alterations"
+   ],
+   "quantity": [
+    "KRAS mutation together with an EML4-ALK translocation among EGFR-wild-type tumors",
+    "Frequency of co-occurring KRAS mutation and EML4-ALK translocation among EGFR wild-type NSCLC"
+   ]
+  }
+ },
+ {
+  "pair_id": "P011",
+  "proposition": "In resected non-small-cell lung cancer, EML4-ALK fusions are mutually exclusive with EGFR, KRAS, and ERBB2 mutations.",
+  "fields": {
+   "population": [
+    "12 patients selected from 6,637 because a tumor carried two of EGFR, KRAS, and ALK alterations",
+    "12 patients with concomitant mutations selected from 6,637 patients with non-small cell lung cancer; all 12 diagnosed with adenocarcinoma"
+   ],
+   "comparator": [
+    "No unselected ALK-positive control arm inside the abstract",
+    "EGFR-KRAS double-mutant vs EGFR-ALK double-mutant cases; morphologic features and treatment response compared"
+   ],
+   "quantity": [
+    "Clinicopathologic features of tumors already found to carry two alterations",
+    "Frequency and features of concomitant EGFR, KRAS and ALK alterations in NSCLC"
+   ]
+  }
+ },
+ {
+  "pair_id": "P043",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "103 classical papillary thyroid cancers from one institution, thyroidectomy 2005–2008, including 42 microcarcinomas",
+    "103 classical variant PTC patients who underwent total thyroidectomy in 2005-2008 at a single institution (subset of 42 microcarcinomas)"
+   ],
+   "comparator": [
+    "Mutant versus wild-type, univariate and then multivariate",
+    "BRAF(V600E)-positive vs negative; univariate then multivariate analysis"
+   ],
+   "quantity": [
+    "Association of BRAF with node metastasis, stage, and persistent disease, unadjusted and then adjusted",
+    "Association of BRAF(V600E) with lymph node metastasis, advanced stage and persistent disease (univariate), and independent association with persistent disease (multivariate)"
+   ]
+  }
+ },
+ {
+  "pair_id": "P004",
+  "proposition": "In resected non-small-cell lung cancer, EML4-ALK fusions are mutually exclusive with EGFR, KRAS, and ERBB2 mutations.",
+  "fields": {
+   "population": [
+    "1,683 patients with non-small cell lung cancer undergoing clinical genotyping (large Western patient population); plus 34 ALK-positive patients biopsied after crizotinib resistance",
+    "1,683 patients with non-small-cell lung cancer, plus 34 biopsies after crizotinib resistance"
+   ],
+   "comparator": [
+    "Co-occurrence of EGFR or KRAS mutations among ALK-positive vs the overall genotyped cohort; crizotinib-naive vs crizotinib-resistant specimens",
+    "ALK-positive versus EGFR-mutant or KRAS-mutant tumors in the same screened population"
+   ],
+   "quantity": [
+    "Prevalence of concomitant EGFR or KRAS mutations among ALK-positive NSCLC (mutual exclusivity)",
+    "Co-occurrence of a functional ALK rearrangement with an EGFR or KRAS mutation"
+   ]
+  }
+ },
+ {
+  "pair_id": "P017",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "126 surgical papillary thyroid carcinomas",
+    "126 patients who underwent surgery for papillary thyroid carcinoma, selected from a 2-year retrospective medical record review"
+   ],
+   "comparator": [
+    "Mutant versus wild-type, split at a diameter of 10 mm",
+    "BRAF mutation-positive vs mutation-negative patients; univariate analysis then assessment as an independent predictor; stratified by tumor diameter (greater than 10 mm, 5 mm or less)"
+   ],
+   "quantity": [
+    "Association of BRAF with tumor size and central node metastasis, including an independent-prediction claim",
+    "Association of BRAF V600E with central lymph node metastasis and clinicopathologic features in PTC"
+   ]
+  }
+ },
+ {
+  "pair_id": "P024",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "63 papillary thyroid cancers diagnosed on cytology, each undergoing total thyroidectomy and routine central neck dissection",
+    "63 patients diagnosed with papillary thyroid cancer on fine-needle aspiration who underwent total thyroidectomy and routine central lymph node dissection, single institution, IRB approved"
+   ],
+   "comparator": [
+    "Mutant versus wild-type, with multivariate logistic regression for node metastasis",
+    "BRAF-mutated vs wild type; chi-square and multivariate logistic regression for associations with clinicopathologic features including lymph node metastases"
+   ],
+   "quantity": [
+    "Association of BRAF mutation with lymph-node metastasis when every patient has a central neck dissection",
+    "Association of BRAF V600E with lymph node metastases in PTC, univariate and multivariate"
+   ]
+  }
+ },
+ {
+  "pair_id": "P041",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "54 PTCs (40 primary and 14 recurrent PTCs)",
+    "54 papillary thyroid carcinomas, 40 primary and 14 recurrent"
+   ],
+   "comparator": [
+    "BRAF-positive vs BRAF-negative (wild-type) patients",
+    "BRAF-positive versus BRAF-negative primary tumors"
+   ],
+   "quantity": [
+    "Association of BRAF V600E with clinicopathologic aggressiveness features (unadjusted comparison of BRAF-positive vs BRAF-negative PTC)",
+    "Unadjusted association of BRAF with age, extension, and node metastasis in a 40-patient primary series"
+   ]
+  }
+ },
+ {
+  "pair_id": "P013",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "190 patients with papillary thyroid cancer who had preoperative fine-needle aspiration biopsy before thyroidectomy; results also reported for the conventional PTC subgroup",
+    "190 patients with papillary thyroid cancer, preoperative fine-needle aspiration"
+   ],
+   "comparator": [
+    "BRAF mutation-positive vs wild-type allele, against postoperatively revealed clinicopathologic characteristics and disease outcome",
+    "BRAF-mutant versus wild-type tumors in the same surgical series"
+   ],
+   "quantity": [
+    "Association of preoperative FNAB-detected BRAF V600E with aggressive clinicopathologic features and with PTC persistence/recurrence",
+    "Unadjusted association of preoperative BRAF mutation with extrathyroidal extension, capsular invasion, node metastasis, and persistence or recurrence"
+   ]
+  }
+ },
+ {
+  "pair_id": "P026",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "113 papillary thyroid carcinoma patients diagnosed with low-risk papillary thyroid microcarcinoma (pT1aN0-x at diagnosis, one PTC focus)",
+    "113 low-risk papillary microcarcinomas staged pT1a N0-x at diagnosis, one focus"
+   ],
+   "comparator": [
+    "BRAF-positive vs BRAF-negative microcarcinoma, for clinical outcome; retrospective analysis",
+    "No recurring subgroup emerged, so mutant and wild-type outcomes were not contrasted"
+   ],
+   "quantity": [
+    "Association of BRAF V600E with recurrence or aggressive outcome in low-risk papillary thyroid microcarcinoma",
+    "Association of BRAF with later recurrence or metastasis in low-risk microcarcinoma staged pT1a N0-x"
+   ]
+  }
+ },
+ {
+  "pair_id": "P028",
+  "proposition": "Kras(G12D) activated in adult pancreatic acinar cells induces pancreatic intraepithelial neoplasia of all grades and does not produce invasive carcinoma.",
+  "fields": {
+   "population": [
+    "Mature mouse pancreatic acinar cells",
+    "Mice; conditional expression in the mouse pancreas, including mature (adult) acinar cells; sample sizes not reported"
+   ],
+   "comparator": [
+    "Kras alone versus Notch plus Kras",
+    "Kras activation in mature acinar cells vs ubiquitous Kras activation (lesions identical); Notch plus Kras vs Kras alone (dramatic synergy)"
+   ],
+   "quantity": [
+    "Occurrence of PanIN and of invasive adenocarcinoma after acinar Kras activation",
+    "Presence of PanIN lesions and absence of invasive adenocarcinoma after Kras activation in mature acinar cells"
+   ]
+  }
+ },
+ {
+  "pair_id": "P044",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "126 patients with papillary thyroid carcinoma who underwent surgery (2-year retrospective records)",
+    "126 surgical papillary thyroid carcinomas"
+   ],
+   "comparator": [
+    "BRAF mutation-positive vs mutation-negative patients; univariate then multivariate analysis",
+    "Mutant versus wild-type, split at a diameter of 10 mm"
+   ],
+   "quantity": [
+    "Association of BRAF V600E with tumor size and central lymph node metastasis in PTC (univariate and independent multivariate)",
+    "Association of BRAF with tumor size and central node metastasis, including an independent-prediction claim"
+   ]
+  }
+ },
+ {
+  "pair_id": "P005",
+  "proposition": "In resected non-small-cell lung cancer, EML4-ALK fusions are mutually exclusive with EGFR, KRAS, and ERBB2 mutations.",
+  "fields": {
+   "population": [
+    "208 Chinese patients with non-small-cell lung cancer",
+    "208 Chinese patients with non-small cell lung cancer; plus a meta-analysis of 2,580 unselected NSCLC patients"
+   ],
+   "comparator": [
+    "The 7 ALK-positive tumors versus the rest of the series",
+    "EGFR and KRAS mutation status in EML4-ALK-positive vs EML4-ALK-negative patients; subgroup comparisons by sex, smoking and histology"
+   ],
+   "quantity": [
+    "EGFR or KRAS mutation among EML4-ALK-positive tumors",
+    "Fraction of EML4-ALK-positive NSCLC patients carrying EGFR or KRAS mutations"
+   ]
+  }
+ },
+ {
+  "pair_id": "P023",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "Papillary cancers of at most 20 mm, with a separate look at microcarcinoma and at tumors of 7–10 mm",
+    "Patients with small papillary thyroid carcinoma (20 mm or smaller), including microPTC (10 mm or smaller) and a subgroup measuring 7-10 mm; exact sample size not stated in the abstract"
+   ],
+   "comparator": [
+    "Size bands within small papillary cancer",
+    "BRAF-mutation-positive vs negative tumors, by size stratum, against histopathological aggressiveness, recurrence risk and iodine-metabolism gene expression (NIS, TPO, TG, TSHR, PDS)"
+   ],
+   "quantity": [
+    "Association of BRAF with aggressive histology and NIS/TPO expression inside stated size bands",
+    "Association of BRAF V600E with aggressive features and recurrence risk in small papillary thyroid carcinoma and microcarcinoma"
+   ]
+  }
+ },
+ {
+  "pair_id": "P003",
+  "proposition": "Kras(G12D) activated in adult pancreatic acinar cells induces pancreatic intraepithelial neoplasia of all grades and does not produce invasive carcinoma.",
+  "fields": {
+   "population": [
+    "Mouse pancreatic acinar cells in vivo and in explant culture; numbers not reported",
+    "Mouse acinar cells, in vivo and in explant culture"
+   ],
+   "comparator": [
+    "K-ras activation with Notch1 deletion vs K-ras activation with intact Notch1",
+    "Kras-driven acinar-to-ductal metaplasia with and without Notch1"
+   ],
+   "quantity": [
+    "Effect of Notch1 deletion on K-ras-driven ADM and PanIN formation in acinar cells; whether K-ras alone drives ADM",
+    "PanIN number and severity when Notch1 is deleted in acinar cells expressing oncogenic Kras"
+   ]
+  }
+ },
+ {
+  "pair_id": "P034",
+  "proposition": "In resected non-small-cell lung cancer, EML4-ALK fusions are mutually exclusive with EGFR, KRAS, and ERBB2 mutations.",
+  "fields": {
+   "population": [
+    "131 Chinese lung adenocarcinomas",
+    "131 Chinese patients with lung adenocarcinoma (resection status not reported)"
+   ],
+   "comparator": [
+    "Four genotype groups inside one series",
+    "Four genotype groups: EGFR mutant, ALK rearranged, KRAS mutant, wild type for all three; co-occurrence assessed"
+   ],
+   "quantity": [
+    "Proportion of lung adenocarcinomas in this series with both an ALK rearrangement and an EGFR mutation",
+    "Frequency of coexisting ALK rearrangement and EGFR mutation among patients with lung adenocarcinoma"
+   ]
+  }
+ },
+ {
+  "pair_id": "P009",
+  "proposition": "In resected non-small-cell lung cancer, EML4-ALK fusions are mutually exclusive with EGFR, KRAS, and ERBB2 mutations.",
+  "fields": {
+   "population": [
+    "380 non-small-cell lung cancer patients (nonsquamous) tested nonsequentially for EGFR and EML4-ALK; KRAS analysis in 282 of them",
+    "380 non-small-cell lung cancers tested for EGFR and EML4-ALK, 282 of them also for KRAS"
+   ],
+   "comparator": [
+    "Patients with a single alteration vs those with concomitant alterations, in response to targeted therapy and survival",
+    "Single-alteration tumors versus double-alteration tumors"
+   ],
+   "quantity": [
+    "Prevalence of concomitant EGFR, EML4-ALK and KRAS alterations in NSCLC",
+    "Prevalence of specified double alterations, and response in the treated subsets"
+   ]
+  }
+ },
+ {
+  "pair_id": "P045",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "1510 consecutive patients with initial thyroidectomy for thyroid cancer (PTC 97%, poorly differentiated/anaplastic 1.1%); genetic alteration in 1039 (70%)",
+    "1,510 consecutive thyroid cancers with routine genotyping at initial thyroidectomy"
+   ],
+   "comparator": [
+    "BRAFV600E or RET/PTC-positive vs RAS or PAX8/PPARG-positive thyroid cancers (not BRAF vs wild type)",
+    "BRAF or RET/PTC versus RAS or PAX8/PPARG"
+   ],
+   "quantity": [
+    "Association of tumor genotype (BRAFV600E/RET-PTC vs RAS/PAX8-PPARG) with phenotype, stage, distant metastasis and early recurrence",
+    "Phenotype of BRAF-positive papillary cancer compared with RAS-positive papillary cancer"
+   ]
+  }
+ },
+ {
+  "pair_id": "P051",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "63 papillary thyroid cancers diagnosed on cytology, each undergoing total thyroidectomy and routine central neck dissection",
+    "63 patients with PTC diagnosed on fine-needle aspiration who underwent total thyroidectomy and routine central lymph node dissection (CLND)"
+   ],
+   "comparator": [
+    "Mutant versus wild-type, with multivariate logistic regression for node metastasis",
+    "BRAF mutation-positive vs negative; Chi-square then multivariate logistic regression"
+   ],
+   "quantity": [
+    "Association of BRAF mutation with lymph-node metastasis when every patient has a central neck dissection",
+    "Association of BRAF mutation with lymph node metastasis and other aggressive clinicopathologic features in PTC"
+   ]
+  }
+ },
+ {
+  "pair_id": "P002",
+  "proposition": "Kras(G12D) activated in adult pancreatic acinar cells induces pancreatic intraepithelial neoplasia of all grades and does not produce invasive carcinoma.",
+  "fields": {
+   "population": [
+    "Differentiated mouse pancreatic acinar cells, with Ras activity compared to mouse and human PDAC cells",
+    "Mouse differentiated pancreatic acinar cells; mouse and human PDAC cells for Ras activity measurement; numbers not reported"
+   ],
+   "comparator": [
+    "Endogenous versus elevated Ras activity, measured by a Raf pull-down",
+    "Endogenous-level mutant K-Ras vs elevated-level mutant K-Ras; nontransformed cells vs PDAC cells; with and without simultaneous p53 deletion"
+   ],
+   "quantity": [
+    "Histologic progression at measured Ras activity, and separately after p53 deletion at endogenous Ras",
+    "Whether mutant K-Ras expressed at endogenous levels in differentiated acinar cells produces mPanINs that progress to invasive PDAC"
+   ]
+  }
+ },
+ {
+  "pair_id": "P037",
+  "proposition": "In resected non-small-cell lung cancer, EML4-ALK fusions are mutually exclusive with EGFR, KRAS, and ERBB2 mutations.",
+  "fields": {
+   "population": [
+    "1,000 consecutive EGFR-wild-type non-small-cell lung cancers",
+    "1,000 consecutive NSCLC patients with EGFR wild-type tumors (Romagna, Italy); 657 with all markers determined"
+   ],
+   "comparator": [
+    "Single alterations versus the eight overlapping genotypes",
+    "Descriptive frequency of alterations and overlaps among EGFR wild-type patients"
+   ],
+   "quantity": [
+    "KRAS mutation together with an EML4-ALK translocation among EGFR-wild-type tumors",
+    "Frequency of alterations and overlapping alterations in EGFR wild-type NSCLC"
+   ]
+  }
+ },
+ {
+  "pair_id": "P027",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "Pediatric patients aged 0 to 18 years who had surgery for papillary thyroid carcinoma 1999-2012; archived tumor specimens available for 19 of 27 eligible patients; ages 2.8 to 18 years (median 13.7); 11 classic PTC, 7 follicular variant, 1 oncocytic variant",
+    "19 of 27 children aged 0 to 18 with papillary thyroid cancer, surgery 1999–2012"
+   ],
+   "comparator": [
+    "BRAF V600E-positive vs wild type, against aggressive disease characteristics; results also pooled with existing studies",
+    "Mutant versus wild-type children"
+   ],
+   "quantity": [
+    "Association of BRAF V600E with aggressive disease characteristics in pediatric papillary thyroid carcinoma",
+    "Association of BRAF with metastases and invasion in pediatric papillary thyroid cancer"
+   ]
+  }
+ },
+ {
+  "pair_id": "P052",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "Consecutive single-institution cohort of 116 patients with PTC larger than 1 cm",
+    "116 consecutive papillary thyroid cancers larger than 1 cm at one institution"
+   ],
+   "comparator": [
+    "BRAF V600E-positive vs negative; also clinical risk scores (MACIS, EORTC, TNM)",
+    "Mutant versus wild-type, and low versus high MACIS, EORTC, and TNM scores"
+   ],
+   "quantity": [
+    "Association of BRAF V600E with aggressive clinicopathologic features and with survival (overall, disease-specific, recurrence-free) in PTC over 1 cm",
+    "Association of BRAF with aggressive clinicopathologic features and with survival, in papillary cancers larger than 1 cm"
+   ]
+  }
+ },
+ {
+  "pair_id": "P012",
+  "proposition": "In resected non-small-cell lung cancer, EML4-ALK fusions are mutually exclusive with EGFR, KRAS, and ERBB2 mutations.",
+  "fields": {
+   "population": [
+    "Pooled patients from 27 retrospective studies, 6,950 non-small-cell lung cancers",
+    "Meta-analysis of 27 retrospective studies including 6,950 NSCLC patients (English and Chinese databases)"
+   ],
+   "comparator": [
+    "EML4-ALK positive versus negative across published series",
+    "EML4-ALK-positive vs EML4-ALK-negative patients across clinicopathological characteristics, including EGFR and KRAS mutation status; fixed or random effects models"
+   ],
+   "quantity": [
+    "Pooled clinicopathologic associations, including a summary statement of mutual exclusivity",
+    "Pooled association (mutual exclusivity) between EML4-ALK fusion and EGFR or KRAS mutations in NSCLC"
+   ]
+  }
+ },
+ {
+  "pair_id": "P042",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "214 consecutive patients with papillary thyroid carcinoma of 1 cm or less who underwent total or near-total thyroidectomy (per title), and 42 paired lymph node metastases",
+    "214 consecutive papillary carcinomas of 1 cm or smaller, with paired node metastases in 42"
+   ],
+   "comparator": [
+    "BRAF(V600E) mutation positive vs negative; groups with vs without lymph node metastases; low vs high p27",
+    "Tumors with and without node metastases"
+   ],
+   "quantity": [
+    "Association of BRAF(V600E) with lymph node metastasis and nodal disease burden in PTC of 1 cm or less",
+    "Association of BRAF with node metastasis in papillary carcinoma of at most 1 cm, and with nodal burden among node-positive cases"
+   ]
+  }
+ },
+ {
+  "pair_id": "P016",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "103 classical variant papillary thyroid cancer patients who underwent total thyroidectomy in 2005-2008 at a single institution, retrospectively selected; includes a subset of 42 microcarcinomas",
+    "103 classical papillary thyroid cancers from one institution, thyroidectomy 2005–2008, including 42 microcarcinomas"
+   ],
+   "comparator": [
+    "BRAF V600E-positive vs negative tumors; univariate versus multivariate analysis for persistent disease",
+    "Mutant versus wild-type, univariate and then multivariate"
+   ],
+   "quantity": [
+    "Association of BRAF V600E with persistent disease and aggressive features in classical variant PTC, unadjusted and adjusted",
+    "Association of BRAF with node metastasis, stage, and persistent disease, unadjusted and then adjusted"
+   ]
+  }
+ },
+ {
+  "pair_id": "P021",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "365 papillary microcarcinoma samples from 300 patients treated at six Italian medical institutions, with central review; statistical analysis on 298 microcarcinomas from 264 patients after exclusions",
+    "298 papillary microcarcinomas from 264 patients at six Italian centers, after exclusions"
+   ],
+   "comparator": [
+    "BRAF V600E-mutated vs wild-type microcarcinomas across microscopic, pathological and clinical features; subtypes compared (tall cell, classic, follicular variant)",
+    "Mutant versus wild-type microcarcinomas, multivariate"
+   ],
+   "quantity": [
+    "Association of BRAF V600E with aggressive pathological features and higher recurrence risk group in papillary thyroid microcarcinoma, adjusted",
+    "Association of BRAF with microscopic growth pattern in microcarcinoma"
+   ]
+  }
+ },
+ {
+  "pair_id": "P025",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "Consecutive single-institution cohort of 116 patients with papillary thyroid carcinoma larger than 1 cm, retrospective analysis",
+    "116 consecutive papillary thyroid cancers larger than 1 cm at one institution"
+   ],
+   "comparator": [
+    "BRAF V600E-positive vs negative; also compared with established clinical risk scores (MACIS, EORTC, TNM)",
+    "Mutant versus wild-type, and low versus high MACIS, EORTC, and TNM scores"
+   ],
+   "quantity": [
+    "Association of BRAF V600E with aggressive clinicopathologic features, risk scores and survival in PTC larger than 1 cm",
+    "Association of BRAF with aggressive clinicopathologic features and with survival, in papillary cancers larger than 1 cm"
+   ]
+  }
+ },
+ {
+  "pair_id": "P006",
+  "proposition": "In resected non-small-cell lung cancer, EML4-ALK fusions are mutually exclusive with EGFR, KRAS, and ERBB2 mutations.",
+  "fields": {
+   "population": [
+    "49 samples from lung adenocarcinoma patients aged 50 or younger (of 85 such patients treated between December 1998 and May 2009) who underwent surgical resection, chemotherapy and/or radiotherapy at a single Japanese hospital",
+    "49 of 85 lung adenocarcinomas from patients aged 50 or younger, treated 1998–2009"
+   ],
+   "comparator": [
+    "EGFR and KRAS mutation status in EML4-ALK-positive vs EML4-ALK-negative tumors; survival with vs without fusion",
+    "Five ALK-positive tumors versus ALK-negative tumors in the same young series"
+   ],
+   "quantity": [
+    "Fraction of EML4-ALK-positive young lung adenocarcinoma patients with concurrent EGFR or KRAS mutations",
+    "EGFR or KRAS mutation among EML4-ALK-positive adenocarcinomas in patients aged 50 or younger"
+   ]
+  }
+ },
+ {
+  "pair_id": "P029",
+  "proposition": "Kras(G12D) activated in adult pancreatic acinar cells induces pancreatic intraepithelial neoplasia of all grades and does not produce invasive carcinoma.",
+  "fields": {
+   "population": [
+    "Differentiated mouse pancreatic acinar cells, with Ras activity compared to mouse and human PDAC cells",
+    "Mice with differentiated pancreatic acinar cells expressing mutant K-Ras; Ras activity also measured in PDAC cells from mice and humans; sample sizes not reported"
+   ],
+   "comparator": [
+    "Endogenous versus elevated Ras activity, measured by a Raf pull-down",
+    "Endogenous-level vs higher-level mutant K-Ras expression; PDAC cells vs nontransformed cells expressing endogenous mutant K-Ras (Ras activity by Raf pull-down assay)"
+   ],
+   "quantity": [
+    "Histologic progression at measured Ras activity, and separately after p53 deletion at endogenous Ras",
+    "Development of mPanINs and progression to PDAC/carcinoma in acinar cells expressing mutant K-Ras at endogenous vs higher levels"
+   ]
+  }
+ },
+ {
+  "pair_id": "P049",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "72 patients with small (2 cm or less) clinically node-negative (cN0) PTC who underwent prophylactic central neck dissection",
+    "72 clinically node-negative papillary cancers of 2 cm or smaller, all given prophylactic central dissection"
+   ],
+   "comparator": [
+    "BRAF-mutated vs non-mutated tumors as predictors of central nodal metastasis (univariate then logistic regression)",
+    "Occult central metastasis versus none"
+   ],
+   "quantity": [
+    "Association of BRAF mutation with occult central lymph node metastasis in cN0 small PTC",
+    "Occult central node metastasis in clinically node-negative papillary cancer of at most 2 cm"
+   ]
+  }
+ },
+ {
+  "pair_id": "P038",
+  "proposition": "In resected non-small-cell lung cancer, EML4-ALK fusions are mutually exclusive with EGFR, KRAS, and ERBB2 mutations.",
+  "fields": {
+   "population": [
+    "12 selected NSCLC patients (all adenocarcinoma, all with EGFR mutation) with concomitant mutations, identified among 6,637 NSCLC patients",
+    "12 patients selected from 6,637 because a tumor carried two of EGFR, KRAS, and ALK alterations"
+   ],
+   "comparator": [
+    "Descriptive case series (EGFR-KRAS vs EGFR-ALK subgroups); no formal comparator",
+    "No unselected ALK-positive control arm inside the abstract"
+   ],
+   "quantity": [
+    "Clinicopathologic features and treatment response of NSCLC with concomitant EGFR, KRAS, ALK mutations (selected case series)",
+    "Clinicopathologic features of tumors already found to carry two alterations"
+   ]
+  }
+ },
+ {
+  "pair_id": "P048",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "298 papillary microcarcinomas from 264 patients at six Italian centers, after exclusions",
+    "298 papillary microcarcinomas from 264 patients at six Italian medical institutions, with central pathology review"
+   ],
+   "comparator": [
+    "Mutant versus wild-type microcarcinomas, multivariate",
+    "BRAF V600E-mutated vs wild-type microcarcinomas; multivariate analysis"
+   ],
+   "quantity": [
+    "Association of BRAF with microscopic growth pattern in microcarcinoma",
+    "Association of BRAF V600E with pathological aggressiveness features and ATA recurrence risk group in papillary microcarcinoma (multivariate)"
+   ]
+  }
+ },
+ {
+  "pair_id": "P039",
+  "proposition": "In resected non-small-cell lung cancer, EML4-ALK fusions are mutually exclusive with EGFR, KRAS, and ERBB2 mutations.",
+  "fields": {
+   "population": [
+    "Pooled patients from 27 retrospective studies, 6,950 non-small-cell lung cancers",
+    "Meta-analysis of 27 retrospective studies including 6950 NSCLC patients (English and Chinese databases; resection status not reported)"
+   ],
+   "comparator": [
+    "EML4-ALK positive versus negative across published series",
+    "EML4-ALK positive vs negative NSCLC for clinicopathologic characteristics and EGFR/KRAS mutations; pooled relative risk (RR) with fixed or random effects"
+   ],
+   "quantity": [
+    "Pooled clinicopathologic associations, including a summary statement of mutual exclusivity",
+    "Pooled mutual exclusivity of EML4-ALK fusion with EGFR and KRAS mutations across studies"
+   ]
+  }
+ },
+ {
+  "pair_id": "P014",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "54 papillary thyroid carcinomas, 40 primary and 14 recurrent",
+    "54 papillary thyroid carcinomas: 40 primary and 14 recurrent PTCs"
+   ],
+   "comparator": [
+    "BRAF-positive versus BRAF-negative primary tumors",
+    "BRAF-mutation-positive vs BRAF-negative tumors, compared on age, gender, tumor size, extrathyroid extension, lymph node metastasis, distant metastasis, Ki-67 labeling index and TNM stage"
+   ],
+   "quantity": [
+    "Unadjusted association of BRAF with age, extension, and node metastasis in a 40-patient primary series",
+    "Association of BRAF V600E with aggressive clinicopathologic features and proliferative activity in PTC"
+   ]
+  }
+ },
+ {
+  "pair_id": "P035",
+  "proposition": "In resected non-small-cell lung cancer, EML4-ALK fusions are mutually exclusive with EGFR, KRAS, and ERBB2 mutations.",
+  "fields": {
+   "population": [
+    "110 resected lesions from 55 patients with synchronous double primary lung cancer",
+    "55 patients with synchronous double primary lung cancer who underwent surgical resection (110 tumor lesions)"
+   ],
+   "comparator": [
+    "Paired lesions in the same patient",
+    "Not a comparison for this claim; descriptive co-occurrence across 110 lesions"
+   ],
+   "quantity": [
+    "Lesions carrying both an EGFR L858R mutation and an EML4-ALK fusion",
+    "Coexistence of EGFR mutation and EML4-ALK fusion (and KRAS mutation) among tumor lesions in synchronous double primary lung cancer"
+   ]
+  }
+ },
+ {
+  "pair_id": "P022",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "72 clinically node-negative papillary cancers of 2 cm or smaller, all given prophylactic central dissection",
+    "72 patients with small (2 cm or smaller) clinically node-negative (cN0) papillary thyroid carcinoma who underwent prophylactic central neck dissection; paraffin-embedded primary tumor tissue"
+   ],
+   "comparator": [
+    "Occult central metastasis versus none",
+    "Univariate analysis and logistic regression of BRAF status and clinicopathologic factors (tumor size, multifocality, bilaterality, extrathyroidal invasion) against occult central nodal metastasis"
+   ],
+   "quantity": [
+    "Occult central node metastasis in clinically node-negative papillary cancer of at most 2 cm",
+    "Association of BRAF V600E with occult central nodal metastasis in small cN0 PTC"
+   ]
+  }
+ },
+ {
+  "pair_id": "P050",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "Papillary cancers of at most 20 mm, with a separate look at microcarcinoma and at tumors of 7–10 mm",
+    "Patients with small papillary thyroid carcinoma (tumors 20 mm or less, including microPTC 10 mm or less); sample size not reported"
+   ],
+   "comparator": [
+    "Size bands within small papillary cancer",
+    "BRAF V600E-positive vs negative tumors, by tumor size stratum (20 mm or less; microPTC; 7-10 mm)"
+   ],
+   "quantity": [
+    "Association of BRAF with aggressive histology and NIS/TPO expression inside stated size bands",
+    "Association of BRAF V600E with aggressive histopathology, recurrence risk and NIS/TPO expression in small PTC, stratified by tumor size"
+   ]
+  }
+ },
+ {
+  "pair_id": "P008",
+  "proposition": "In resected non-small-cell lung cancer, EML4-ALK fusions are mutually exclusive with EGFR, KRAS, and ERBB2 mutations.",
+  "fields": {
+   "population": [
+    "110 lesions from 55 patients with synchronous double primary lung cancer who underwent surgical resection, various histologic types",
+    "110 resected lesions from 55 patients with synchronous double primary lung cancer"
+   ],
+   "comparator": [
+    "Co-occurrence of alterations within tumors; clonality comparison between paired lesions; subgroups by sex, histology, size, age",
+    "Paired lesions in the same patient"
+   ],
+   "quantity": [
+    "Fraction of resected tumors with coexisting EML4-ALK fusion and EGFR mutation",
+    "Lesions carrying both an EGFR L858R mutation and an EML4-ALK fusion"
+   ]
+  }
+ },
+ {
+  "pair_id": "P046",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "467 resected papillary thyroid carcinomas",
+    "467 patients with papillary thyroid carcinoma who underwent surgical resection (tissue microarray)"
+   ],
+   "comparator": [
+    "Mutation-positive versus negative, and high versus low RNA signal",
+    "BRAF-positive vs negative (or high vs low RNA ISH) tumors"
+   ],
+   "quantity": [
+    "Association of a BRAF-positive assay with lymph-node metastasis, and agreement among three BRAF assays",
+    "Association of BRAF(V600E) mutation (and IHC/RNA ISH) with lymph node metastasis in PTC"
+   ]
+  }
+ },
+ {
+  "pair_id": "P019",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "467 resected papillary thyroid carcinomas",
+    "467 patients with papillary thyroid carcinoma who underwent surgical resection; conventional PTC compared with other histologic types"
+   ],
+   "comparator": [
+    "Mutation-positive versus negative, and high versus low RNA signal",
+    "BRAF-positive vs negative tumors across clinicopathologic features; conventional PTC vs other histologic types; concordance between assays"
+   ],
+   "quantity": [
+    "Association of a BRAF-positive assay with lymph-node metastasis, and agreement among three BRAF assays",
+    "Association of BRAF V600E status (by mutation testing, immunohistochemistry and RNA in situ hybridization) with lymph node metastasis in PTC"
+   ]
+  }
+ },
+ {
+  "pair_id": "P036",
+  "proposition": "In resected non-small-cell lung cancer, EML4-ALK fusions are mutually exclusive with EGFR, KRAS, and ERBB2 mutations.",
+  "fields": {
+   "population": [
+    "380 nonsquamous NSCLC patients tested for EGFR and EML4-ALK (nonsequential testing); KRAS analysis in 282 patients",
+    "380 non-small-cell lung cancers tested for EGFR and EML4-ALK, 282 of them also for KRAS"
+   ],
+   "comparator": [
+    "Patients with single vs double alterations (clinical benefit, crizotinib response, survival)",
+    "Single-alteration tumors versus double-alteration tumors"
+   ],
+   "quantity": [
+    "Proportion of patients with double mutations involving EGFR, EML4-ALK and KRAS",
+    "Prevalence of specified double alterations, and response in the treated subsets"
+   ]
+  }
+ },
+ {
+  "pair_id": "P020",
+  "proposition": "In conventional papillary thyroid cancer, BRAF V600E is associated with an aggressive phenotype and a higher risk of recurrent or persistent disease.",
+  "fields": {
+   "population": [
+    "379 consecutive papillary thyroid cancers, 243 with central neck dissection and 136 without",
+    "379 consecutive patients with papillary thyroid cancer who underwent thyroidectomy with (n=243) or without (n=136) central neck dissection at a tertiary-care academic hospital, 2001-2010"
+   ],
+   "comparator": [
+    "No dissection, limited dissection, and formal dissection",
+    "Non-CND vs limited CND vs formal CND settings; BRAF-mutated vs wild type for nodal metastasis and recurrence/persistence"
+   ],
+   "quantity": [
+    "Node metastasis and recurrence or persistence across extents of central neck dissection, and the association of those outcomes with BRAF",
+    "Association of BRAF V600E with cervical lymph node metastasis and with disease recurrence/persistence in PTC"
+   ]
+  }
+ },
+ {
+  "pair_id": "P007",
+  "proposition": "In resected non-small-cell lung cancer, EML4-ALK fusions are mutually exclusive with EGFR, KRAS, and ERBB2 mutations.",
+  "fields": {
+   "population": [
+    "131 Chinese lung adenocarcinomas",
+    "131 Chinese patients with lung adenocarcinoma"
+   ],
+   "comparator": [
+    "Four genotype groups inside one series",
+    "Four genotype groups compared: EGFR mutations, ALK rearrangements, KRAS mutations, and triple wild type; EGFR (exons 19-21) and KRAS (codons 12, 13) by real-time PCR"
+   ],
+   "quantity": [
+    "Proportion of lung adenocarcinomas in this series with both an ALK rearrangement and an EGFR mutation",
+    "Frequency of coexisting ALK rearrangement and EGFR mutation in lung adenocarcinoma"
+   ]
+  }
+ },
+ {
+  "pair_id": "P032",
+  "proposition": "In resected non-small-cell lung cancer, EML4-ALK fusions are mutually exclusive with EGFR, KRAS, and ERBB2 mutations.",
+  "fields": {
+   "population": [
+    "208 Chinese patients with non-small-cell lung cancer",
+    "208 Chinese patients with NSCLC (resection status not reported); plus a meta-analysis of unselected NSCLC patients"
+   ],
+   "comparator": [
+    "The 7 ALK-positive tumors versus the rest of the series",
+    "Co-occurrence of EML4-ALK with EGFR/KRAS mutations among ALK-positive patients"
+   ],
+   "quantity": [
+    "EGFR or KRAS mutation among EML4-ALK-positive tumors",
+    "Co-occurrence of EML4-ALK with EGFR and KRAS mutations"
+   ]
+  }
+ },
+ {
+  "pair_id": "P033",
+  "proposition": "In resected non-small-cell lung cancer, EML4-ALK fusions are mutually exclusive with EGFR, KRAS, and ERBB2 mutations.",
+  "fields": {
+   "population": [
+    "49 samples from younger (aged 50 years or less) lung adenocarcinoma patients treated 1998-2009 with surgical resection, chemotherapy, and/or radiotherapy (of 85 patients aged 50 or less); no ALK inhibitors given",
+    "49 of 85 lung adenocarcinomas from patients aged 50 or younger, treated 1998–2009"
+   ],
+   "comparator": [
+    "EML4-ALK positive vs negative tumors for EGFR and KRAS mutations; survival with vs without EML4-ALK",
+    "Five ALK-positive tumors versus ALK-negative tumors in the same young series"
+   ],
+   "quantity": [
+    "Co-occurrence (mutual exclusivity) of EML4-ALK with EGFR and KRAS mutations in young lung adenocarcinoma",
+    "EGFR or KRAS mutation among EML4-ALK-positive adenocarcinomas in patients aged 50 or younger"
+   ]
+  }
+ }
+]

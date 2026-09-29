@@ -30,6 +30,21 @@ A post hoc check asked whether that lift only reflects seeing earlier papers. Re
 
 That comparison was then tested once on 2026 papers, under a rule committed before they were fetched. Record: `results/probe_v2_confirm_2026.json`. The fetch added 80 abstracts and 206 test positions, 108 of them with prior genetic evidence. The year is the publication year. First online dates run from 2024-10-14 to 2026-08-05, and the PMIDs are in `results/confirm_2026_pmids.json`. No model was retrained. Attention again exceeded the mean mixer, by 0.044, but the interval ran from −0.007 to 0.098. It was not confirmed. On the same papers, an untrained probe on the mean text of earlier papers scored 0.671, above attention at 0.601. v2 is closed.
 
+## Result-record extraction spike
+
+After v2 closed, a spike asked whether the 27 result records of the evidence map can be rebuilt blind from the claim and the abstract. A second question was whether a fixed rule then names the map's disagreement type for each claim. The bars were committed before extraction. Spec: `docs/specs/2026-09-29-result-records-spike.md`. Record: `results/result_records_spike.json`.
+
+It is not feasible in this setup. Neither extractor cleared the bars. The bar was 0.80 for each score.
+
+| Extractor | Numbers recovered | Population | Comparator | Quantity estimated | Rule: C024, C033, C015 |
+|---|---|---|---|---|---|
+| Sonnet | 0.92 | 0.93 | 0.59 | 0.48 | conditions, conditions, tie |
+| Opus | 0.86 | 0.85 | 0.41 | 0.48 | consistent, conditions, tie |
+
+The reference labels are conditions, estimand, and certainty. Most missed numbers were rates the reference had computed. The two extractors agreed on direction in 26 of 27 records and on significance in all 27. They agreed on whether conditions departed from the claim in 0.70 of records, and on whether the quantity matched the claim in 0.48.
+
+The extractors copied the facts. They did not pin down the exact comparison and denominator, which are what the map's judgments depend on. In C033 a special population and a different denominator are the same fact, so one yes-or-no field cannot separate them. The reference, the extractors, and the judge are all Claude models. The three claims were chosen because they disagree.
+
 The first v2 run is kept in `results/probe_v2_run1_year_bug.json` and is not used. Year embeddings after 2018 were never trained, so every test paper carried a random vector. v1 has the same fault. The v1 probe also starts from a random point. On the same frozen vectors its AUROC ranged from 0.485 to 0.567 across ten starts. The v1 lift of 0.011 is inside that range.
 
 ## Corpus and split

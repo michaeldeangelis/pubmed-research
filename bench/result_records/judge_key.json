@@ -1,0 +1,218 @@
+{
+ "P001": {
+  "extractor": "opus",
+  "pmid": "19028876"
+ },
+ "P002": {
+  "extractor": "opus",
+  "pmid": "19501586"
+ },
+ "P003": {
+  "extractor": "opus",
+  "pmid": "23284900"
+ },
+ "P004": {
+  "extractor": "opus",
+  "pmid": "23729361"
+ },
+ "P005": {
+  "extractor": "opus",
+  "pmid": "23341890"
+ },
+ "P006": {
+  "extractor": "opus",
+  "pmid": "29517858"
+ },
+ "P007": {
+  "extractor": "opus",
+  "pmid": "26767032"
+ },
+ "P008": {
+  "extractor": "opus",
+  "pmid": "27438512"
+ },
+ "P009": {
+  "extractor": "opus",
+  "pmid": "26712101"
+ },
+ "P010": {
+  "extractor": "opus",
+  "pmid": "30233859"
+ },
+ "P011": {
+  "extractor": "opus",
+  "pmid": "27086595"
+ },
+ "P012": {
+  "extractor": "opus",
+  "pmid": "25706305"
+ },
+ "P013": {
+  "extractor": "opus",
+  "pmid": "19414674"
+ },
+ "P014": {
+  "extractor": "opus",
+  "pmid": "17972530"
+ },
+ "P015": {
+  "extractor": "opus",
+  "pmid": "17685465"
+ },
+ "P016": {
+  "extractor": "opus",
+  "pmid": "24787545"
+ },
+ "P017": {
+  "extractor": "opus",
+  "pmid": "26214416"
+ },
+ "P018": {
+  "extractor": "opus",
+  "pmid": "26258321"
+ },
+ "P019": {
+  "extractor": "opus",
+  "pmid": "25468810"
+ },
+ "P020": {
+  "extractor": "opus",
+  "pmid": "23132792"
+ },
+ "P021": {
+  "extractor": "opus",
+  "pmid": "26271724"
+ },
+ "P022": {
+  "extractor": "opus",
+  "pmid": "27101676"
+ },
+ "P023": {
+  "extractor": "opus",
+  "pmid": "26338373"
+ },
+ "P024": {
+  "extractor": "opus",
+  "pmid": "23062653"
+ },
+ "P025": {
+  "extractor": "opus",
+  "pmid": "25482468"
+ },
+ "P026": {
+  "extractor": "opus",
+  "pmid": "24354346"
+ },
+ "P027": {
+  "extractor": "opus",
+  "pmid": "24604709"
+ },
+ "P028": {
+  "extractor": "sonnet",
+  "pmid": "19028876"
+ },
+ "P029": {
+  "extractor": "sonnet",
+  "pmid": "19501586"
+ },
+ "P030": {
+  "extractor": "sonnet",
+  "pmid": "23284900"
+ },
+ "P031": {
+  "extractor": "sonnet",
+  "pmid": "23729361"
+ },
+ "P032": {
+  "extractor": "sonnet",
+  "pmid": "23341890"
+ },
+ "P033": {
+  "extractor": "sonnet",
+  "pmid": "29517858"
+ },
+ "P034": {
+  "extractor": "sonnet",
+  "pmid": "26767032"
+ },
+ "P035": {
+  "extractor": "sonnet",
+  "pmid": "27438512"
+ },
+ "P036": {
+  "extractor": "sonnet",
+  "pmid": "26712101"
+ },
+ "P037": {
+  "extractor": "sonnet",
+  "pmid": "30233859"
+ },
+ "P038": {
+  "extractor": "sonnet",
+  "pmid": "27086595"
+ },
+ "P039": {
+  "extractor": "sonnet",
+  "pmid": "25706305"
+ },
+ "P040": {
+  "extractor": "sonnet",
+  "pmid": "19414674"
+ },
+ "P041": {
+  "extractor": "sonnet",
+  "pmid": "17972530"
+ },
+ "P042": {
+  "extractor": "sonnet",
+  "pmid": "17685465"
+ },
+ "P043": {
+  "extractor": "sonnet",
+  "pmid": "24787545"
+ },
+ "P044": {
+  "extractor": "sonnet",
+  "pmid": "26214416"
+ },
+ "P045": {
+  "extractor": "sonnet",
+  "pmid": "26258321"
+ },
+ "P046": {
+  "extractor": "sonnet",
+  "pmid": "25468810"
+ },
+ "P047": {
+  "extractor": "sonnet",
+  "pmid": "23132792"
+ },
+ "P048": {
+  "extractor": "sonnet",
+  "pmid": "26271724"
+ },
+ "P049": {
+  "extractor": "sonnet",
+  "pmid": "27101676"
+ },
+ "P050": {
+  "extractor": "sonnet",
+  "pmid": "26338373"
+ },
+ "P051": {
+  "extractor": "sonnet",
+  "pmid": "23062653"
+ },
+ "P052": {
+  "extractor": "sonnet",
+  "pmid": "25482468"
+ },
+ "P053": {
+  "extractor": "sonnet",
+  "pmid": "24354346"
+ },
+ "P054": {
+  "extractor": "sonnet",
+  "pmid": "24604709"
+ }
+}

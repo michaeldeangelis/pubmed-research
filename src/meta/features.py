@@ -7,13 +7,15 @@ Commands
 --------
 ``python -m src.meta.features``
     Reads ``data/meta/papers.jsonl`` and ``data/meta/icite.jsonl``, writes
-    ``data/meta/features.jsonl`` (one row per iCite research article), writes
-    the blind validation packets to ``bench/meta_validation/``, and prints
-    marginal counts only.
-``python -m src.meta.features score <extracted.json>``
-    Compares the rules with a blind model extraction of the packets and writes
-    ``results/meta_measurement_gate.json`` (Cohen's kappa per feature,
-    confusion matrices, gate pass at kappa >= 0.60).
+    ``data/meta/features.jsonl`` (one row per iCite research article, with
+    eligibility), writes the v2 blind validation packets
+    (``bench/meta_validation/packets_v2.json``; the v1 ``packets.json`` is
+    frozen and never rewritten), and prints marginal counts only.
+``python -m src.meta.features score <extracted.json> [--packets P] [--out O]``
+    Compares the rules with a blind model extraction of the packets (default
+    ``bench/meta_validation/packets.json``) and writes the gate record (default
+    ``results/meta_measurement_gate.json``): Cohen's kappa per feature,
+    confusion matrices, invalid-label counts, gate pass at kappa >= 0.60.
 
 Blinding: this module never reads outcome files (``outcome_b.jsonl``,
 ``impact.jsonl``) and never relates a feature to an outcome.
@@ -26,10 +28,12 @@ collapsed, and comparison is case-insensitive.
 
 Presence of each system (used by F3, and by F1 through precedence):
 
-* human samples: MeSH ``Humans`` AND at least one term in
-  ``HUMAN_SAMPLE_TERMS`` (patient tissue, mutation analysis of specimens,
-  patient age groups, patient study designs, patient outcome analyses), or a
-  term in ``HUMAN_SEX_TERMS`` when no animal is present.
+* human samples: MeSH ``Humans`` AND one of: a term in
+  ``HUMAN_SPECIFIC_TERMS`` (patient material, staging, cohort designs); a term
+  in ``HUMAN_AGE_TERMS`` when no animal is present; a term in
+  ``HUMAN_GENERIC_TERMS`` (outcome analyses, IHC, mutation analysis) or
+  ``HUMAN_SEX_TERMS`` when no animal AND no cell term is present. The last
+  two can therefore make F1 ``human_samples`` but never add a system to F3.
 * animal: any term in ``ANIMAL_STRONG_TERMS`` or with a prefix in
   ``ANIMAL_STRONG_PREFIXES`` (in vivo designs, named strains, whole-organism
   models); OR a term in ``ANIMAL_WEAK_TERMS`` (a bare species such as
@@ -57,8 +61,17 @@ abstract matches ``HUMAN_GENETICS_TEXT``.
 
 F3 multi_system: at least two of {human samples, animal, cell} present.
 
-gene_group: first match in the order KRAS, BRAF, NRAS/HRAS over the title and
-abstract (``GENE_GROUP_PATTERNS``); ``other`` if none matches.
+gene_group: first case-sensitive match in the order KRAS, BRAF, NRAS/HRAS
+over the title and abstract (``GENE_GROUP_PATTERNS``); ``other`` if none.
+
+Eligibility (``eligible``, ``exclusion``; first matching reason wins):
+
+a. ``no_mesh``: no MeSH headings (not MEDLINE-indexed).
+b. ``off_topic``: no case-sensitive gene mention (KRAS, BRAF, NRAS/HRAS,
+   MAP2K1/2, MEK1/2) and no drug name (trametinib, sotorasib, vemurafenib,
+   dabrafenib; any case) in the title or abstract.
+c. ``non_primary``: any publication type in ``NON_PRIMARY_PUB_TYPES``, even if
+   the paper is also a "Journal Article".
 """
 
 from __future__ import annotations
@@ -78,7 +91,8 @@ PAPERS_PATH = META_DIR / "papers.jsonl"
 ICITE_PATH = META_DIR / "icite.jsonl"
 FEATURES_PATH = META_DIR / "features.jsonl"
 VALIDATION_DIR = ROOT / "bench" / "meta_validation"
-PACKETS_PATH = VALIDATION_DIR / "packets.json"
+PACKETS_PATH = VALIDATION_DIR / "packets.json"  # v1: frozen, never rewritten
+PACKETS_V2_PATH = VALIDATION_DIR / "packets_v2.json"
 EXTRACT_SCHEMA_PATH = VALIDATION_DIR / "schema.json"
 GATE_PATH = ROOT / "results" / "meta_measurement_gate.json"
 
@@ -94,28 +108,28 @@ FEATURE_KEYS = (
     "gene_group",
     "n_authors",
     "n_refs",
+    "eligible",
+    "exclusion",
 )
+EXCLUSION_REASONS = ("no_mesh", "off_topic", "non_primary")
 N_VALIDATION = 300
 VALIDATION_SEED = 0
+VALIDATION_SEED_V2 = 1
 KAPPA_GATE = 0.60
 MAX_DISAGREEMENTS = 40
 
 # --- term lists (frozen by the commit that precedes the analysis run) --------
 
 HUMAN_TERM = "Humans"
-# Sex check tags mark human subjects only when no animal is present (MeSH also
-# assigns them to animals, so a xenograft paper tagged Humans + Female would
-# otherwise gain a spurious human-samples system).
-HUMAN_SEX_TERMS = ("Female", "Male")
-
-# Terms that, with Humans, indicate material or data from patients.
-HUMAN_SAMPLE_TERMS = (
-    # mutation analysis of specimens
-    "DNA Mutational Analysis",
-    "Genotyping Techniques",
-    "Sequence Analysis, DNA",
-    "Microsatellite Instability",
-    "Loss of Heterozygosity",
+# Human-sample evidence comes in four tiers (all require MeSH "Humans"):
+#   HUMAN_SPECIFIC_TERMS - patient material, cohorts, staging: always count.
+#   HUMAN_AGE_TERMS      - patient age groups: count when no animal is present.
+#   HUMAN_GENERIC_TERMS  - outcome analyses and generic assays that are also
+#                          indexed on animal and cell work: count only when no
+#                          animal AND no cell term is present (so they can make
+#                          F1 human_samples but never add a system to F3).
+#   HUMAN_SEX_TERMS      - Female/Male: count only when no animal AND no cell.
+HUMAN_SPECIFIC_TERMS = (
     # patient tissue, blood and specimens
     "Biopsy",
     "Biopsy, Fine-Needle",
@@ -130,14 +144,25 @@ HUMAN_SAMPLE_TERMS = (
     "Specimen Handling",
     "Microdissection",
     "Laser Capture Microdissection",
-    "Immunohistochemistry",
-    "Neoplasm Staging",
-    "Neoplasm Grading",
     "Tissue Fixation",
     "Tissue Embedding",
+    "Neoplasm Staging",
+    "Neoplasm Grading",
+    # patient study designs
+    "Retrospective Studies",
+    "Prospective Studies",
+    "Cohort Studies",
+    "Case-Control Studies",
+    "Cross-Sectional Studies",
+    "Follow-Up Studies",
+    "Longitudinal Studies",
     "Patient Selection",
-    "Patient Outcome Assessment",
-    # patient age groups (MeSH assigns these to human subjects)
+    "Pedigree",
+    "Inpatients",
+    "Outpatients",
+)
+# MeSH assigns age-group check tags to human subjects only.
+HUMAN_AGE_TERMS = (
     "Infant",
     "Infant, Newborn",
     "Child",
@@ -148,14 +173,17 @@ HUMAN_SAMPLE_TERMS = (
     "Middle Aged",
     "Aged",
     "Aged, 80 and over",
-    # patient study designs and outcome analyses
-    "Retrospective Studies",
-    "Prospective Studies",
-    "Cohort Studies",
-    "Case-Control Studies",
-    "Cross-Sectional Studies",
-    "Follow-Up Studies",
-    "Longitudinal Studies",
+)
+# Mutation analysis is listed here, not as specific: MeSH cannot say whether
+# the sequenced material was a patient specimen or a cell line, and cell-line
+# papers routinely carry these terms.
+HUMAN_GENERIC_TERMS = (
+    "DNA Mutational Analysis",
+    "Genotyping Techniques",
+    "Sequence Analysis, DNA",
+    "Microsatellite Instability",
+    "Loss of Heterozygosity",
+    "Immunohistochemistry",
     "Prognosis",
     "Survival Analysis",
     "Survival Rate",
@@ -165,10 +193,10 @@ HUMAN_SAMPLE_TERMS = (
     "Progression-Free Survival",
     "Treatment Outcome",
     "Neoplasm Recurrence, Local",
-    "Pedigree",
-    "Inpatients",
-    "Outpatients",
+    "Patient Outcome Assessment",
 )
+HUMAN_SEX_TERMS = ("Female", "Male")
+HUMAN_SAMPLE_TERMS = HUMAN_SPECIFIC_TERMS + HUMAN_AGE_TERMS + HUMAN_GENERIC_TERMS
 
 # In vivo designs, named strains and whole-organism models: always animal.
 ANIMAL_STRONG_TERMS = (
@@ -339,11 +367,56 @@ HUMAN_SAMPLE_TEXT = re.compile(
     re.I,
 )
 
-# First match wins, in this order.
+# Gene mentions are CASE-SENSITIVE so that capitalized plural acronyms never
+# match: "HRAs"/"NRAs" (health risk appraisals, high-risk adenomas, nanorod
+# arrays, native reactive astrocytes), "KRAs" (kidney retrieval areas, key
+# result areas), "nRAs" (non-remote areas), "HRaS" (heart rate above sleep).
+# The "ras"/"raf" part must be all lowercase, capitalized, or all uppercase
+# (ras, Ras, RAS; raf, Raf, RAF); the gene letter may be upper or lower case.
+# This accepts HGNC symbols (KRAS), hyphenated forms (K-RAS, K-ras, Ki-ras,
+# c-Ha-ras, B-Raf), camel case (KRas, BRaf, hRas), mouse symbols (Kras, Braf,
+# Map2k1, Mek1) and zebrafish/lower-case symbols (kras, braf, nras, hras).
+# An upper-case-initial symbol may follow a lower-case letter, because Europe
+# PMC abstracts run section labels into the text ("ResultsKRAS mutations",
+# "MethodsKras(G12D)"). A trailing lower-case letter blocks a match
+# ("Krasavin"), except BRAFi/BRAFis (BRAF inhibitor).
+_RAS = r"-?(?:ras|Ras|RAS)"
+_RAF = r"-?(?:raf|Raf|RAF)"
+_GE = r"(?![a-z])"
+KRAS_PATTERN = re.compile(
+    r"(?:(?<![A-Z0-9])(?:Ki|K)|(?<![A-Za-z0-9])(?:ki|k))" + _RAS + r"2?" + _GE
+)
+BRAF_PATTERN = re.compile(r"(?:(?<![A-Z0-9])B|(?<![A-Za-z0-9])b)" + _RAF + r"(?:is?)?" + _GE)
+NRAS_HRAS_PATTERN = re.compile(
+    r"(?:(?<![A-Z0-9])(?:Ha|N|H)|(?<![A-Za-z0-9])(?:ha|n|h))" + _RAS + _GE
+)
+MEK_PATTERN = re.compile(r"(?<![A-Z0-9])(?:MAP2K[12]|Map2k[12]|MEK[12]|Mek[12])(?![A-Za-z0-9])")
+DRUG_PATTERN = re.compile(r"\b(trametinib|sotorasib|vemurafenib|dabrafenib)\b", re.I)
+
+# gene_group: first match wins, in this order (MEK genes and drugs alone -> other).
 GENE_GROUP_PATTERNS = (
-    ("KRAS", re.compile(r"\bK-?i?-?ras\d?(?=\b|[A-Z]\d)|\bKi-ras", re.I)),
-    ("BRAF", re.compile(r"\bB-?raf(?=\b|[A-Z]\d)", re.I)),
-    ("NRAS/HRAS", re.compile(r"\b(N-?ras|H-?ras|Ha-?ras|c-Ha-ras|c-H-ras)(?=\b|[A-Z]\d)", re.I)),
+    ("KRAS", KRAS_PATTERN),
+    ("BRAF", BRAF_PATTERN),
+    ("NRAS/HRAS", NRAS_HRAS_PATTERN),
+)
+# on-topic (eligibility): any gene or drug pattern matches the title+abstract.
+ON_TOPIC_PATTERNS = (KRAS_PATTERN, BRAF_PATTERN, NRAS_HRAS_PATTERN, MEK_PATTERN, DRUG_PATTERN)
+
+# Non-primary publication types (normalized: lowercase, "-"/"_" -> space).
+# JATS variants from Europe PMC ("review-article", "article-commentary",
+# "product-review") are included with their MEDLINE equivalents.
+NON_PRIMARY_PUB_TYPES = (
+    "Review",
+    "review-article",
+    "product-review",
+    "Letter",
+    "Editorial",
+    "Comment",
+    "article-commentary",
+    "Meta-Analysis",
+    "Systematic Review",
+    "Practice Guideline",
+    "News",
 )
 
 _MARKUP = re.compile(r"<[^>]+>")
@@ -364,7 +437,9 @@ def _norm_set(terms: Iterable[str]) -> frozenset[str]:
 
 
 _HUMAN = norm_term(HUMAN_TERM)
-_HUMAN_SAMPLE = _norm_set(HUMAN_SAMPLE_TERMS)
+_HUMAN_SPECIFIC = _norm_set(HUMAN_SPECIFIC_TERMS)
+_HUMAN_AGE = _norm_set(HUMAN_AGE_TERMS)
+_HUMAN_GENERIC = _norm_set(HUMAN_GENERIC_TERMS)
 _HUMAN_SEX = _norm_set(HUMAN_SEX_TERMS)
 _ANIMAL_STRONG = _norm_set(ANIMAL_STRONG_TERMS)
 _ANIMAL_PREFIXES = tuple(p.casefold() for p in ANIMAL_STRONG_PREFIXES)
@@ -406,7 +481,9 @@ def systems_present(paper: dict) -> dict[str, bool]:
     weak = bool(mesh & _ANIMAL_WEAK)
     animal = strong or (weak and (not cell or bool(IN_VIVO_TEXT.search(text))))
     human = _HUMAN in mesh and (
-        bool(mesh & _HUMAN_SAMPLE) or (not animal and bool(mesh & _HUMAN_SEX))
+        bool(mesh & _HUMAN_SPECIFIC)
+        or (not animal and bool(mesh & _HUMAN_AGE))
+        or (not animal and not cell and bool(mesh & (_HUMAN_GENERIC | _HUMAN_SEX)))
     )
     return {"human_samples": human, "animal": animal, "cell": cell}
 
@@ -440,6 +517,29 @@ def gene_group(paper: dict) -> str:
     return "other"
 
 
+_NON_PRIMARY = frozenset(re.sub(r"[-_\s]+", " ", t).strip().casefold() for t in NON_PRIMARY_PUB_TYPES)
+
+
+def _norm_pub_type(t: str) -> str:
+    return re.sub(r"[-_\s]+", " ", str(t or "")).strip().casefold()
+
+
+def on_topic(paper: dict) -> bool:
+    text = paper_text(paper)
+    return any(p.search(text) for p in ON_TOPIC_PATTERNS)
+
+
+def exclusion(paper: dict) -> str | None:
+    """First matching exclusion reason (no_mesh, off_topic, non_primary) or None."""
+    if not mesh_set(paper.get("mesh")):
+        return "no_mesh"
+    if not on_topic(paper):
+        return "off_topic"
+    if any(_norm_pub_type(t) in _NON_PRIMARY for t in paper.get("pub_types") or []):
+        return "non_primary"
+    return None
+
+
 def rule_labels(paper: dict) -> dict:
     """Rule outputs for one paper, in the extractor's label space."""
     present = systems_present(paper)
@@ -453,6 +553,7 @@ def rule_labels(paper: dict) -> dict:
 
 def feature_row(paper: dict, icite: dict) -> dict:
     labels = rule_labels(paper)
+    reason = exclusion(paper)
     n_authors = paper.get("n_authors")
     return {
         "pmid": str(paper["pmid"]),
@@ -463,6 +564,8 @@ def feature_row(paper: dict, icite: dict) -> dict:
         "gene_group": gene_group(paper),
         "n_authors": int(n_authors) if n_authors is not None else None,
         "n_refs": None,  # supplied by the impact builder (OpenAlex)
+        "eligible": reason is None,
+        "exclusion": reason,
     }
 
 
@@ -490,6 +593,20 @@ def marginals(rows: list[dict]) -> dict:
             out[group][key] = dict(
                 sorted(Counter(r[key] for r in sub).items(), key=lambda kv: str(kv[0]))
             )
+    if rows and "exclusion" in rows[0]:
+        for group in ("preclinical", "clinical"):
+            sub = [r for r in rows if r["group"] == group]
+            out[group]["exclusion"] = {
+                reason: sum(1 for r in sub if r["exclusion"] == reason)
+                for reason in (*EXCLUSION_REASONS, None)
+            }
+            out[group]["exclusion"]["eligible"] = out[group]["exclusion"].pop(None)
+        elig = [r for r in rows if r["group"] == "preclinical" and r["eligible"]]
+        out["eligible_preclinical"] = {"n": len(elig)}
+        for key in ("model_system", "human_genetics", "multi_system", "gene_group"):
+            out["eligible_preclinical"][key] = dict(
+                sorted(Counter(r[key] for r in elig).items(), key=lambda kv: str(kv[0]))
+            )
     return out
 
 
@@ -504,6 +621,18 @@ def sample_validation(
     k = min(n, len(pmids))
     idx = rng.choice(len(pmids), size=k, replace=False)
     return [pmids[i] for i in sorted(idx)]
+
+
+def sample_validation_v2(
+    rows: list[dict],
+    exclude: Iterable[str],
+    n: int = N_VALIDATION,
+    seed: int = VALIDATION_SEED_V2,
+) -> list[str]:
+    """Eligible preclinical papers not in ``exclude`` (the v1 packets)."""
+    skip = {str(p) for p in exclude}
+    pool = [r for r in rows if r.get("eligible") and str(r["pmid"]) not in skip]
+    return sample_validation(pool, n=n, seed=seed)
 
 
 def _pmid_key(pmid: str):
@@ -619,34 +748,104 @@ def _load_extracted(obj) -> dict[str, dict]:
     return {str(item["pmid"]): item for item in obj}
 
 
-def _norm_model_item(item: dict) -> dict:
-    ms = str(item.get("model_system", "")).strip().lower()
-    hg = int(truthy(item.get("human_genetics")))
-    present = item.get("systems_present") or []
-    if isinstance(present, str):
-        present = [p for p in re.split(r"[,\s]+", present) if p]
-    present = sorted({str(p).strip().lower() for p in present} & set(SYSTEMS))
+INVALID = "invalid"
+_MODEL_SYSTEM_ALIASES = {
+    "human": "human_samples",
+    "humans": "human_samples",
+    "human_sample": "human_samples",
+    "animals": "animal",
+    "animal_model": "animal",
+    "in_vivo": "animal",
+    "cell": "cell_only",
+    "cells": "cell_only",
+    "cellonly": "cell_only",
+    "cell_line": "cell_only",
+    "cell_lines": "cell_only",
+}
+_SYSTEM_ALIASES = {
+    "human": "human_samples",
+    "humans": "human_samples",
+    "human_sample": "human_samples",
+    "animals": "animal",
+    "animal_model": "animal",
+    "in_vivo": "animal",
+    "cells": "cell",
+    "cell_only": "cell",
+    "cell_line": "cell",
+    "cell_lines": "cell",
+}
+
+
+def _label_token(value) -> str:
+    return re.sub(r"[-\s]+", "_", str(value).strip().casefold())
+
+
+def norm_model_system(value) -> str:
+    if value is None:
+        return INVALID
+    tok = _label_token(value)
+    tok = _MODEL_SYSTEM_ALIASES.get(tok, tok)
+    return tok if tok in MODEL_SYSTEMS else INVALID
+
+
+def norm_binary(value):
+    if isinstance(value, bool):
+        return int(value)
+    if isinstance(value, (int, float)) and value in (0, 1):
+        return int(value)
+    if isinstance(value, str):
+        tok = value.strip().casefold()
+        if tok in {"1", "yes", "true", "y"}:
+            return 1
+        if tok in {"0", "no", "false", "n"}:
+            return 0
+    return INVALID
+
+
+def norm_systems(value) -> tuple[list[str] | None, int]:
+    """(normalized systems or None if the field is unusable, n unknown entries)."""
+    if isinstance(value, str):
+        value = [p for p in re.split(r"[,;|]+", value) if p.strip()]
+    if not isinstance(value, (list, tuple, set)):
+        return None, 0
+    out, unknown = set(), 0
+    for entry in value:
+        tok = _label_token(entry)
+        tok = _SYSTEM_ALIASES.get(tok, tok)
+        if tok in SYSTEMS:
+            out.add(tok)
+        else:
+            unknown += 1
+    return sorted(out), unknown
+
+
+def _norm_model_item(item: dict | None) -> dict:
+    """Normalize one extracted item. Unknown or missing labels become 'invalid'."""
+    item = item or {}
+    present, unknown = norm_systems(item.get("systems_present"))
     return {
-        "model_system": ms,
-        "human_genetics": hg,
-        "multi_system": int(len(present) >= 2),
-        "systems_present": present,
+        "model_system": norm_model_system(item.get("model_system")),
+        "human_genetics": norm_binary(item.get("human_genetics")),
+        "multi_system": INVALID if present is None else int(len(present) >= 2),
+        "systems_present": present or [],
+        "systems_invalid": present is None,
+        "systems_unknown_entries": unknown,
     }
 
 
 def score(packets: list[dict], extracted, seed: int = VALIDATION_SEED) -> dict:
+    """Rule vs model agreement. Missing items and bad labels count as 'invalid'
+    (a disagreement), so every packet is scored and nothing crashes."""
     items = _load_extracted(extracted)
-    rule, model, pmids = [], [], []
-    missing = []
+    rule, model, pmids, missing = [], [], [], []
     for packet in packets:
         pmid = str(packet["pmid"])
         if pmid not in items:
             missing.append(pmid)
-            continue
         rule.append(rule_labels(packet))
-        model.append(_norm_model_item(items[pmid]))
+        model.append(_norm_model_item(items.get(pmid)))
         pmids.append(pmid)
-    if not pmids:
+    if len(missing) == len(packets):
         raise ValueError("no extracted items match the packets")
 
     specs = {
@@ -658,19 +857,22 @@ def score(packets: list[dict], extracted, seed: int = VALIDATION_SEED) -> dict:
     for name, cats in specs.items():
         r = [x[name] for x in rule]
         m = [x[name] for x in model]
-        k = kappa(r, m, cats)
+        k = kappa(r, m, [*cats, INVALID])
         features[name] = {
             "kappa": round(k, 4),
             "agreement": round(sum(x == y for x, y in zip(r, m)) / len(r), 4),
-            "confusion_rule_rows_model_cols": confusion(r, m, cats),
+            "n_invalid": sum(1 for y in m if y == INVALID),
+            "confusion_rule_rows_model_cols": confusion(r, m, [*cats, INVALID]),
             "gate_pass": bool(k >= KAPPA_GATE),
         }
     diagnostics = {}
+    usable = [i for i, x in enumerate(model) if not x["systems_invalid"]]
     for system in SYSTEMS:
-        r = [int(system in x["systems_present"]) for x in rule]
-        m = [int(system in x["systems_present"]) for x in model]
+        r = [int(system in rule[i]["systems_present"]) for i in usable]
+        m = [int(system in model[i]["systems_present"]) for i in usable]
         diagnostics[f"present_{system}"] = {
-            "kappa": round(kappa(r, m, [0, 1]), 4),
+            "n": len(usable),
+            "kappa": round(kappa(r, m, [0, 1]), 4) if usable else None,
             "confusion_rule_rows_model_cols": confusion(r, m, [0, 1]),
         }
 
@@ -697,6 +899,12 @@ def score(packets: list[dict], extracted, seed: int = VALIDATION_SEED) -> dict:
         "n_packets": len(packets),
         "n_scored": len(pmids),
         "missing_pmids": missing,
+        "invalid": {
+            "model_system": features["model_system"]["n_invalid"],
+            "human_genetics": features["human_genetics"]["n_invalid"],
+            "systems_present_unusable": sum(1 for x in model if x["systems_invalid"]),
+            "systems_present_unknown_entries": sum(x["systems_unknown_entries"] for x in model),
+        },
         "gate_threshold": KAPPA_GATE,
         "features": features,
         "dropped_features": [k for k, v in features.items() if not v["gate_pass"]],
@@ -736,44 +944,67 @@ def main_build() -> dict:
     icite = read_jsonl(ICITE_PATH)
     rows = build_features(papers, icite)
     write_jsonl(FEATURES_PATH, rows)
-    pmids = sample_validation(rows)
-    write_json(PACKETS_PATH, make_packets(papers, pmids))
-    write_json(EXTRACT_SCHEMA_PATH, EXTRACTION_SCHEMA)
+    # v1 packets (PACKETS_PATH) are frozen and never rewritten; v2 draws eligible
+    # preclinical papers that were not in v1.
+    old = []
+    if PACKETS_PATH.exists():
+        with open(PACKETS_PATH) as fh:
+            old = [str(p["pmid"]) for p in json.load(fh)]
+    pmids = sample_validation_v2(rows, exclude=old)
+    write_json(PACKETS_V2_PATH, make_packets(papers, pmids))
+    if not EXTRACT_SCHEMA_PATH.exists():
+        write_json(EXTRACT_SCHEMA_PATH, EXTRACTION_SCHEMA)
     counts = marginals(rows)
     counts["n_papers_in"] = len(papers)
-    counts["n_no_mesh"] = sum(1 for p in papers if not p.get("mesh"))
-    counts["n_validation_packets"] = len(pmids)
+    counts["n_no_mesh_all_papers"] = sum(1 for p in papers if not p.get("mesh"))
+    counts["n_validation_packets_v2"] = len(pmids)
+    counts["n_v1_packets_excluded"] = len(old)
     print(json.dumps(counts, indent=2))
     return counts
 
 
-def main_score(extracted_path: str) -> dict:
-    with open(PACKETS_PATH) as fh:
+def main_score(extracted_path: str, packets_path: Path | None = None, out_path: Path | None = None) -> dict:
+    packets_path = Path(packets_path) if packets_path else PACKETS_PATH
+    out_path = Path(out_path) if out_path else GATE_PATH
+    with open(packets_path) as fh:
         packets = json.load(fh)
     with open(extracted_path) as fh:
         extracted = json.load(fh)
     result = score(packets, extracted)
     result["extracted_file"] = str(extracted_path)
-    write_json(GATE_PATH, result)
+    result["packets_file"] = str(packets_path)
+    write_json(out_path, result)
     print(
         json.dumps(
-            {k: {"kappa": v["kappa"], "gate_pass": v["gate_pass"]} for k, v in result["features"].items()},
+            {k: {"kappa": v["kappa"], "n_invalid": v["n_invalid"], "gate_pass": v["gate_pass"]}
+             for k, v in result["features"].items()},
             indent=2,
         )
     )
     return result
 
 
+USAGE = (
+    "usage: python -m src.meta.features\n"
+    "       python -m src.meta.features score <extracted.json> [--packets PATH] [--out PATH]"
+)
+
+
 def main(argv: list[str] | None = None) -> None:
-    argv = sys.argv[1:] if argv is None else argv
-    if argv and argv[0] == "score":
-        if len(argv) != 2:
-            raise SystemExit("usage: python -m src.meta.features score <extracted.json>")
-        main_score(argv[1])
-    elif not argv:
+    argv = sys.argv[1:] if argv is None else list(argv)
+    if not argv:
         main_build()
-    else:
-        raise SystemExit("usage: python -m src.meta.features [score <extracted.json>]")
+        return
+    if argv[0] != "score":
+        raise SystemExit(USAGE)
+    import argparse
+
+    parser = argparse.ArgumentParser(prog="python -m src.meta.features score", usage=USAGE)
+    parser.add_argument("extracted")
+    parser.add_argument("--packets", default=None)
+    parser.add_argument("--out", default=None)
+    args = parser.parse_args(argv[1:])
+    main_score(args.extracted, args.packets, args.out)
 
 
 if __name__ == "__main__":

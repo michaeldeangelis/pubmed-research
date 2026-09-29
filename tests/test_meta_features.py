@@ -46,11 +46,14 @@ def test_human_plus_cells_is_cell_only_and_multi():
 
 
 def test_animal_takes_precedence_over_cells_and_humans():
-    p = paper(mesh=["Humans", "Aged", "Cell Line, Tumor", "Mice, Nude", "Animals"])
+    p = paper(mesh=["Humans", "Paraffin Embedding", "Cell Line, Tumor", "Mice, Nude", "Animals"])
     lab = F.rule_labels(p)
     assert lab["model_system"] == "animal"
     assert lab["multi_system"] == 1
     assert lab["systems_present"] == ["animal", "cell", "human_samples"]
+    # age groups do not add human samples when animals are present
+    p = paper(mesh=["Humans", "Aged", "Cell Line, Tumor", "Mice, Nude", "Animals"])
+    assert F.rule_labels(p)["systems_present"] == ["animal", "cell"]
 
 
 def test_strong_animal_terms_and_prefixes():
@@ -136,6 +139,18 @@ def test_human_genetics_negatives():
         ("H-Ras signaling", "NRAS/HRAS"),
         ("Ras signaling and MEK", "other"),
         ("Krasavin et al.", "other"),
+        ("Kras(G12D) mice and Braf(V600E) alleles", "KRAS"),
+        ("Hras and Nras knockout", "NRAS/HRAS"),
+        ("BRAFi resistance", "BRAF"),
+        ("HRAs and NRAs in adenoma follow-up", "other"),
+        ("an inducible kras(V12) transgenic zebrafish", "KRAS"),
+        ("ResultsKRAS mutations were identified", "KRAS"),
+        ("MethodsKras(G12D/+) mice", "KRAS"),
+        ("KRAs (key result areas) and nRAs (non-remote areas)", "other"),
+        ("heart rate above sleep (HRaS)", "other"),
+        ("activated kRas and hRas", "KRAS"),
+        ("RAS and RAF", "other"),
+        ("MEK1 and trametinib", "other"),
         ("BRAF and KRAS mutations are exclusive", "KRAS"),  # order KRAS > BRAF
         ("NRAS and BRAF in melanoma", "BRAF"),  # order BRAF > NRAS/HRAS
     ],
@@ -284,17 +299,24 @@ def test_score_cli_writes_gate(tmp_path, monkeypatch):
 
 def test_build_cli_on_synthetic_data(tmp_path, monkeypatch, capsys):
     papers = [paper(str(i), mesh=["Cell Line"], title="KRAS") for i in range(1, 21)]
+    papers[1]["mesh"] = []  # pmid 2 ineligible (no_mesh)
     icite = [{"pmid": str(i), "is_research_article": True, "is_clinical": i > 15} for i in range(1, 21)]
     (tmp_path / "papers.jsonl").write_text("\n".join(json.dumps(p) for p in papers))
     (tmp_path / "icite.jsonl").write_text("\n".join(json.dumps(r) for r in icite))
     for name, target in [("PAPERS_PATH", "papers.jsonl"), ("ICITE_PATH", "icite.jsonl"),
                          ("FEATURES_PATH", "features.jsonl"), ("PACKETS_PATH", "v/packets.json"),
+                         ("PACKETS_V2_PATH", "v/packets_v2.json"),
                          ("EXTRACT_SCHEMA_PATH", "v/schema.json")]:
         monkeypatch.setattr(F, name, tmp_path / target)
+    (tmp_path / "v").mkdir()
+    v1 = [{"pmid": "1", "title": "", "abstract": "", "mesh": []}]
+    (tmp_path / "v/packets.json").write_text(json.dumps(v1))
     counts = F.main_build()
     assert counts["group"] == {"clinical": 5, "preclinical": 15}
-    packets = json.loads((tmp_path / "v/packets.json").read_text())
-    assert len(packets) == 15
+    assert counts["preclinical"]["exclusion"]["no_mesh"] == 1
+    assert json.loads((tmp_path / "v/packets.json").read_text()) == v1  # v1 untouched
+    packets = json.loads((tmp_path / "v/packets_v2.json").read_text())
+    assert sorted(int(p["pmid"]) for p in packets) == list(range(3, 16))
     assert all(set(p) == {"pmid", "title", "abstract", "mesh"} for p in packets)
     assert len(F.read_jsonl(tmp_path / "features.jsonl")) == 20
 
@@ -310,3 +332,118 @@ def test_text_fallback_human_samples_is_specific():
     assert F.rule_labels(background)["systems_present"] == []
     cohort = paper(abstract="We sequenced 120 tumors from patients; biopsy material was paraffin-embedded.")
     assert F.rule_labels(cohort)["model_system"] == "human_samples"
+
+
+# --- eligibility -------------------------------------------------------------------------------
+
+
+def test_exclusion_order_and_reasons():
+    ok = paper(mesh=["Humans"], title="KRAS in colon cancer")
+    assert F.exclusion(ok) is None
+    assert F.exclusion(paper(mesh=[], title="KRAS", )) == "no_mesh"
+    assert F.exclusion(paper(mesh=["Humans"], title="HRAs in primary care")) == "off_topic"
+    rev = dict(ok, pub_types=["Journal Article", "Review"])
+    assert F.exclusion(rev) == "non_primary"
+    assert F.exclusion(dict(ok, pub_types=["review-article"])) == "non_primary"
+    assert F.exclusion(dict(ok, pub_types=["Journal Article", "Case Reports"])) is None
+    # first reason wins
+    assert F.exclusion(paper(mesh=[], title="nothing", abstract="")) == "no_mesh"
+    both = dict(paper(mesh=["Humans"], title="NRAs"), pub_types=["Letter"])
+    assert F.exclusion(both) == "off_topic"
+
+
+@pytest.mark.parametrize(
+    "text,on",
+    [
+        ("K-RAS", True), ("KRAS2", True), ("N-ras", True), ("c-Ha-ras", True), ("B-RAF", True),
+        ("MAP2K1 fusion", True), ("MEK2 mutations", True), ("Vemurafenib", True),
+        ("DABRAFENIB", True), ("HRAs", False), ("NRAs in astrocytes", False),
+        ("ras signaling", False), ("KRAs of the framework", False),
+        ("Mek1 and Map2k2", True), ("zebrafish braf", True),
+    ],
+)
+def test_on_topic_case_sensitive(text, on):
+    assert F.on_topic(paper(abstract=text)) is on
+
+
+def test_rows_carry_eligibility():
+    papers = [paper("1", mesh=["Cell Line"], title="BRAF"), paper("2", mesh=["Cell Line"], title="HRAs")]
+    icite = [{"pmid": p["pmid"], "is_research_article": True, "is_clinical": False} for p in papers]
+    rows = F.build_features(papers, icite)
+    assert (rows[0]["eligible"], rows[0]["exclusion"]) == (True, None)
+    assert (rows[1]["eligible"], rows[1]["exclusion"]) == (False, "off_topic")
+    m = F.marginals(rows)
+    assert m["preclinical"]["exclusion"] == {"no_mesh": 0, "off_topic": 1, "non_primary": 0, "eligible": 1}
+    assert m["eligible_preclinical"]["n"] == 1
+
+
+def test_v2_sample_excludes_v1_and_ineligible():
+    rows = [{"pmid": str(i), "group": "preclinical", "eligible": i % 3 != 0} for i in range(1, 1001)]
+    v1 = [str(i) for i in range(1, 301)]
+    got = F.sample_validation_v2(rows, exclude=v1)
+    assert len(got) == 300 and len(set(got)) == 300
+    assert not set(got) & set(v1)
+    assert all(int(p) % 3 != 0 for p in got)
+    assert got == F.sample_validation_v2(list(reversed(rows)), exclude=v1)
+
+
+# --- presence tiers ------------------------------------------------------------------------------
+
+
+def test_generic_terms_do_not_add_human_presence_with_cells_or_animals():
+    cells = paper(mesh=["Humans", "Cell Line, Tumor", "Survival Analysis", "Immunohistochemistry",
+                        "DNA Mutational Analysis", "Female"])
+    assert F.rule_labels(cells)["systems_present"] == ["cell"]
+    assert F.rule_labels(cells)["multi_system"] == 0
+    only = paper(mesh=["Humans", "Kaplan-Meier Estimate"])
+    assert F.rule_labels(only)["model_system"] == "human_samples"
+    cohort = paper(mesh=["Humans", "Cell Line, Tumor", "Retrospective Studies"])
+    assert F.rule_labels(cohort)["systems_present"] == ["cell", "human_samples"]
+    aged = paper(mesh=["Humans", "Cell Line, Tumor", "Middle Aged"])
+    assert F.rule_labels(aged)["multi_system"] == 1
+
+
+def test_sex_tags_guarded_against_cell_lines():
+    lab = F.rule_labels(paper(mesh=["Humans", "Male", "Cell Line, Tumor"]))
+    assert lab["systems_present"] == ["cell"]
+
+
+# --- scorer normalization --------------------------------------------------------------------------
+
+
+def test_scorer_normalizes_and_counts_invalid():
+    packets = [
+        {"pmid": "1", "title": "", "abstract": "", "mesh": ["Cell Line"]},
+        {"pmid": "2", "title": "", "abstract": "", "mesh": ["Mice, Nude"]},
+        {"pmid": "3", "title": "", "abstract": "", "mesh": ["Humans", "Biopsy"]},
+        {"pmid": "4", "title": "", "abstract": "", "mesh": ["Protein Conformation"]},
+    ]
+    extracted = [
+        {"pmid": "1", "model_system": " Cell-Only ", "human_genetics": "0", "systems_present": ["Cells"]},
+        {"pmid": "2", "model_system": "Animal", "human_genetics": False, "systems_present": "animal"},
+        {"pmid": "3", "model_system": "organoid", "human_genetics": "maybe", "systems_present": None},
+    ]  # pmid 4 missing
+    res = F.score(packets, extracted)
+    assert res["n_scored"] == 4 and res["missing_pmids"] == ["4"]
+    ms = res["features"]["model_system"]
+    assert ms["confusion_rule_rows_model_cols"]["cell_only"]["cell_only"] == 1
+    assert ms["confusion_rule_rows_model_cols"]["animal"]["animal"] == 1
+    assert ms["n_invalid"] == 2
+    assert res["features"]["human_genetics"]["n_invalid"] == 2
+    assert res["features"]["multi_system"]["n_invalid"] == 2
+    assert res["invalid"]["systems_present_unusable"] == 2
+    assert F.norm_model_system("Human samples") == "human_samples"
+    assert F.norm_binary(1.0) == 1 and F.norm_binary(2) == F.INVALID
+
+
+def test_score_cli_packets_and_out_flags(tmp_path):
+    packets = [{"pmid": str(i), "title": "", "abstract": "", "mesh": ["Cell Line"]} for i in range(1, 5)]
+    pk = tmp_path / "packets_v2.json"
+    pk.write_text(json.dumps(packets))
+    ex = tmp_path / "ex.json"
+    ex.write_text(json.dumps([{"pmid": p["pmid"], "model_system": "cell_only", "human_genetics": 0,
+                               "systems_present": ["cell"]} for p in packets]))
+    out = tmp_path / "gate_v2.json"
+    F.main(["score", str(ex), "--packets", str(pk), "--out", str(out)])
+    res = json.loads(out.read_text())
+    assert res["packets_file"] == str(pk) and res["n_scored"] == 4

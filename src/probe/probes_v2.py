@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import numpy as np
 import torch
+import torch.nn.functional as F
 
 from src.probe.probes import (
     _ablation_deltas,
@@ -18,7 +19,6 @@ from src.probe.probes import (
     _tag_list,
     _torch_load,
     auroc,
-    fit_direction,
 )
 
 _CHUNK = 16
@@ -285,10 +285,43 @@ def _weighted_auroc(scores: np.ndarray, labels: np.ndarray, counts: np.ndarray) 
     return out
 
 
+def fit_direction_v2(hidden: torch.Tensor, labels: torch.Tensor, l2: float = 1e-2) -> torch.Tensor:
+    """Deterministic L2 logistic probe: standardized features, zero init, LBFGS.
+
+    v1 fit_direction starts from a random init and stops after 400 SGD steps;
+    on frozen text its test AUROC moves by ~0.08 across inits. Returns the
+    direction in the raw feature space.
+    """
+    x = hidden.detach().to(dtype=torch.float64, device="cpu")
+    y = labels.detach().reshape(-1).to(dtype=torch.float64, device="cpu")
+    width = int(x.shape[-1])
+    if y.numel() == 0 or bool(torch.all(y == y[0])):
+        return torch.zeros(width, dtype=hidden.dtype)
+    mean = x.mean(dim=0)
+    std = x.std(dim=0).clamp(min=1e-8)
+    z = (x - mean) / std
+    weight = torch.zeros(width, dtype=torch.float64, requires_grad=True)
+    bias = torch.zeros(1, dtype=torch.float64, requires_grad=True)
+    optimizer = torch.optim.LBFGS(
+        [weight, bias], max_iter=500, tolerance_grad=1e-9, line_search_fn="strong_wolfe"
+    )
+
+    def closure():
+        optimizer.zero_grad()
+        loss = F.binary_cross_entropy_with_logits(z @ weight + bias, y)
+        loss = loss + 0.5 * l2 * weight.pow(2).sum()
+        loss.backward()
+        return loss
+
+    with torch.enable_grad():
+        optimizer.step(closure)
+    return (weight.detach() / std).to(dtype=hidden.dtype)
+
+
 def _fit_and_scores(features, labels, train, test) -> tuple[torch.Tensor, torch.Tensor]:
     if int(train.sum()) == 0:
         direction = torch.zeros(features.shape[-1], dtype=features.dtype)
     else:
-        direction = fit_direction(features[train], labels[train])
+        direction = fit_direction_v2(features[train], labels[train])
     scores = features[test] @ direction.to(dtype=features.dtype)
     return direction, scores

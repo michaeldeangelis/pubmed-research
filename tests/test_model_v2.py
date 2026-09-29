@@ -267,3 +267,28 @@ def test_train_one_smoke(tmp_path, monkeypatch):
     model = PaperTransformerV2("mean")
     model.load_state_dict(saved["state_dict"])
     json.dumps(result)
+
+
+def test_split_follows_date_year_that_orders_the_window():
+    window = _window(3, start_year=2017)
+    # Published 2019 by year, but dated 2018 and ordered by that date.
+    window[1]["year"] = 2019
+    window[1]["date"] = "2018-12-20"
+    window[2]["date"] = "2019-02-01"
+    split = collate_windows_v2([window])["split"][0]
+    assert int(split[0]) == SPLIT_TRAIN
+    assert int(split[1]) == SPLIT_VAL
+
+
+def test_years_after_training_share_the_last_trained_embedding():
+    torch.manual_seed(0)
+    model = PaperTransformerV2("attention").eval()
+    base = collate_windows_v2([_window(4, start_year=2015)])
+    outputs = []
+    for year in (2018, 2019, 2023):
+        batch = {key: value.clone() for key, value in base.items()}
+        batch["year"][0, -1] = year
+        with torch.no_grad():
+            outputs.append(model(batch)["hidden"])
+    assert torch.equal(outputs[0], outputs[1])
+    assert torch.equal(outputs[0], outputs[2])

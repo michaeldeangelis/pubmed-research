@@ -233,3 +233,17 @@ def test_v2_main_fails_clearly_without_inputs(tmp_path, monkeypatch):
     (tmp_path / "outputs" / "training.json").write_text('{"runs": []}')
     with pytest.raises(SystemExit, match="attention_s0.pt"):
         v2.main()
+
+
+def test_probe_fit_is_deterministic_and_converges():
+    from src.probe.probes_v2 import fit_direction_v2
+
+    generator = torch.Generator().manual_seed(0)
+    x = torch.randn(400, 16, generator=generator) * torch.linspace(0.1, 10.0, 16)
+    labels = (x[:, 3] > 0).float()
+    torch.manual_seed(1)
+    first = fit_direction_v2(x, labels)
+    torch.manual_seed(2)
+    second = fit_direction_v2(x, labels)
+    assert torch.equal(first, second)
+    assert auroc(x @ first, labels) > 0.99

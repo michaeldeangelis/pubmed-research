@@ -17,6 +17,7 @@ from src.config_v2 import (
     N_LAYERS,
     TEXT_DIM,
     TOP_K,
+    TRAIN_YEAR_MAX,
     YEAR_MAX,
     YEAR_MIN,
 )
@@ -159,7 +160,8 @@ class PaperTransformerV2(nn.Module):
         self.clinical_head = nn.Linear(D_MODEL, 1)
 
     def _year_index(self, year: torch.Tensor, pad_mask: torch.Tensor) -> torch.Tensor:
-        clamped = (year - YEAR_MIN).clamp(0, self.n_years - 1)
+        # Rows after TRAIN_YEAR_MAX never get gradient, so later years reuse its row.
+        clamped = (year - YEAR_MIN).clamp(0, TRAIN_YEAR_MAX - YEAR_MIN)
         pad_row = torch.full_like(clamped, self.n_years)
         return torch.where(pad_mask > 0.5, clamped, pad_row)
 

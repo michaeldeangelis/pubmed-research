@@ -18,6 +18,18 @@ A small transformer over RAS/MAPK papers did not learn a readable trace of earli
 
 Tokens are papers, not words. Each head may attend to at most 8 earlier papers. The loss predicts the next paper's genes, drugs, and clinical flag. Human genetics and resistance tags are withheld from the inputs and from the loss. The probe asks whether the hidden state still carries them.
 
+## Transformer v2
+
+v2 asked whether the transformer beats a model without attention and whether it carries prior genetic evidence. The decision rule was fixed before the first run. `docs/specs/2026-09-29-model-v2-design.md` has the rule, the changes from v1, and the fixes below. Record: `results/probe_v2.json`.
+
+The next-paper targets leave out the timeline's own gene and add genes and drugs not yet seen in the window. Training positions are those whose next paper is from 2018 or earlier. 2019–2020 picks the epoch. Three mixers share the same data and seeds: top-k attention, a uniform mean over the last 8 papers, and each paper alone.
+
+v2 is not fruitful under its rule. Attention did not predict the next paper better than the mean. Mean test loss was 0.9547 for attention, 0.9474 for the mean, and 0.9541 for each paper alone. The gap of −0.0072 is larger than the seed spread of 0.0033, in the wrong direction. The genetics probe did pass its bar. It rose from 0.516 on the frozen text vector to 0.634 from attention, a lift of 0.119 with a bootstrap interval of 0.069 to 0.166. Both criteria were required.
+
+A post hoc check asked whether that lift only reflects seeing earlier papers. Record: `results/probe_v2_context_check.json`. Attention scored 0.634, the mean mixer 0.586, and an untrained probe on the mean text of all earlier papers 0.563. Attention exceeded the mean mixer by 0.048, with an interval of 0.025 to 0.069. The check was added after the decision and reuses the same test years, so it is exploratory.
+
+The first v2 run is kept in `results/probe_v2_run1_year_bug.json` and is not used. Year embeddings after 2018 were never trained, so every test paper carried a random vector. v1 has the same fault. The v1 probe also starts from a random point. On the same frozen vectors its AUROC ranged from 0.485 to 0.567 across ten starts. The v1 lift of 0.011 is inside that range.
+
 ## Corpus and split
 
 Europe PMC, 1998–2025, at most 80 cited PubMed abstracts per year. The fetch returned 1,958 abstracts. 1,882 mentioned a gene in the vocabulary and entered a timeline. Text vectors are from `pritamdeka/S-PubMedBert-MS-MARCO`. The probe is fit on years through 2018 and scored on years after 2020.
@@ -38,6 +50,9 @@ python -m src.claims.extract
 python -m src.encode.encoder
 python -m src.model.train
 python -m src.probe
+python -m src.model.train_v2
+python -m src.probe.v2
+python -m src.probe.context_check_v2
 ```
 
 The numbers above used PyTorch 2.14.0 on Apple MPS. Abstracts, embeddings, and the checkpoint stay in `data/` and `checkpoints/`, which are gitignored. `python -m src.probe` writes `outputs/probe_report.json`.
@@ -51,7 +66,9 @@ The numbers above used PyTorch 2.14.0 on Apple MPS. Abstracts, embeddings, and t
 | `src/encode/encoder.py` | Frozen PubMedBERT vectors, hash fallback |
 | `src/model/transformer.py` | Causal top-k paper transformer |
 | `src/probe/probes.py` | Held-out probe and ablation |
-| `results/probe.json` | The run recorded above |
+| `results/probe.json` | The v1 run recorded above |
+| `src/model/*_v2.py`, `src/probe/*v2.py` | Transformer v2, mixers, probe, decision rule |
+| `results/probe_v2*.json` | v2 decision, the discarded first run, the post hoc check |
 | `team/` | Task board and teammate notes |
 
 ## Cite

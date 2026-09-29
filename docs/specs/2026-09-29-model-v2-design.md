@@ -112,6 +112,27 @@ All mixers return index/weight tensors in the v1 format
   each criterion's numbers and pass/fail.
 - `python -m src.probe.v2` writes `RESULTS_V2_PATH`.
 
+## Amendments after run 1
+
+Run 1 (`results/probe_v2_run1_year_bug.json`) is kept but not used. A code
+review and a probe-noise check found three measurement faults. All three
+were fixed after run 1 results had been seen. The decision rule did not change.
+
+1. Year embedding rows after 2018 never received gradient, so every val and
+   test paper carried an untrained random vector. Years after
+   `TRAIN_YEAR_MAX` now share its row. On run-1 checkpoints this alone moved
+   attention test loss from 1.036 to 0.951 and its seed std from 0.040 to 0.006.
+2. The split used the `year` field, while windows are ordered by `date`, and
+   203 papers disagree. 42 training positions saw a post-2018 input. The split
+   now uses the year of the ordering date.
+3. The v1 probe starts from a random init and stops after 400 SGD steps. On
+   identical frozen text its test AUROC ranged 0.485-0.567 over ten inits.
+   `fit_direction_v2` standardizes features and fits from zero with LBFGS,
+   so it is deterministic.
+
+`src/probe/context_check_v2.py` is a post hoc comparison added after the
+run-2 decision. It is not part of the rule.
+
 ## Tests
 
 Anchor masking, novel-entity targets, next-year split, forbidden keys,

@@ -28,6 +28,14 @@ def _split_for_year(year: int) -> int:
     return SPLIT_TEST
 
 
+def _order_year(paper: dict) -> int:
+    """Year of the date that orders the window; falls back to the year field."""
+    date = str(paper.get("date") or "")
+    if len(date) >= 4 and date[:4].isdigit():
+        return int(date[:4])
+    return int(paper["year"])
+
+
 def build_windows_v2(enriched_path, embeddings_path) -> list[list[dict]]:
     """v1 windows, each item with "anchor": the gene whose timeline it is from.
 
@@ -75,7 +83,7 @@ def collate_windows_v2(windows: list[list[dict]]) -> dict[str, torch.Tensor]:
             y_novel_drugs[batch_index, position] = batch["y_drugs"][batch_index, position] * (
                 1.0 - seen_drugs
             )
-            split[batch_index, position] = _split_for_year(int(window[position + 1]["year"]))
+            split[batch_index, position] = _split_for_year(_order_year(window[position + 1]))
 
     batch["gene_target_mask"] = gene_target_mask
     batch["y_novel_genes"] = y_novel_genes

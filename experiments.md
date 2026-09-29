@@ -137,3 +137,52 @@ tolerance (391 citer links dated Y-1 are dropped). The RPCB check pools
 internal replications and does not implement the prediction-interval
 criterion, so its counts will not match Errington 2021's headline numbers
 exactly.
+
+### Result, 2026-09-29 (one run at commit 8f63b08, `--drop human_genetics multi_system`)
+
+Eligible preclinical papers: 8,186 (development 2,813; confirmation 5,373).
+The clin_cited_8y rate was 0.423 in development and 0.386 in confirmation.
+ORs are against cell_only, with 1000-resample bootstrap 95% CIs.
+
+| Term | Development OR [CI] | Confirmation OR [CI] | Permutation 95% | Pass |
+|---|---|---|---|---|
+| model_system=human_samples | 1.70 [1.39, 2.07] | 1.76 [1.50, 2.07] | [0.82, 1.23] | yes |
+| model_system=animal | 0.85 [0.67, 1.10] | 0.71 [0.59, 0.85] | [0.78, 1.27] | no |
+| model_system=other | 1.12 [0.76, 1.61] | 1.24 [0.91, 1.67] | [0.72, 1.44] | no |
+| placebo (PMID even) | 1.04 [0.87, 1.22] | 1.11 [0.99, 1.25] | | CI includes 1 in both; placebo ok |
+
+Ladder, AUROC on confirmation with models fit on development: trivial 0.500,
+simplest 0.662, candidate 0.688. No CI was computed for the AUROC delta.
+
+Verdict by the rule: pass, for model_system=human_samples only.
+
+Secondary, full 2000-2015 period, estimate [95% CI], no pass/fail:
+- n_clin_8y, NB rate ratio: human_samples 1.70 [1.46, 1.97]; animal 0.77
+  [0.62, 0.92]; other 1.86 [1.20, 2.99].
+- log(RCR + 0.1), linear: human_samples -0.095 [-0.151, -0.035]; animal
+  0.056 [-0.004, 0.123]; other -0.033 [-0.138, 0.079].
+- Disruption (icite_nok), linear, n=7,892: human_samples -0.128 [-0.152,
+  -0.104]; animal -0.047 [-0.075, -0.021]; other -0.002 [-0.051, 0.049].
+- With 50 journal indicators, logit OR: human_samples 1.97 [1.73, 2.30];
+  animal 0.65 [0.55, 0.76]; other 1.30 [1.00, 1.69].
+- Clinical papers, descriptive: 86% of the 552 human-sample papers were
+  clinically cited, and 80% in each of the other small groups (n = 10 to 20).
+- RPCB (outcome A): same direction and p<0.05 in 5/31 animal effects (16%)
+  and 57/101 cell-based effects (56%) (results/meta_rpcb.json).
+
+What this does and does not show. The population is MEDLINE-indexed primary
+research on RAS/MAPK genes, 2000-2015, excluding trials and guidelines
+flagged clinical by iCite. Among these papers, patient-sample studies are
+about 1.7 times as likely as cell-line-only studies to be cited by a
+clinical article within 8 years. The association held in both periods and
+after journal adjustment. It is an association, not an effect of study
+design. A patient-sample study reports facts about patients, such as
+mutation prevalence or biomarker associations, which clinical articles cite
+as background. So "cited clinically" partly measures topic, not the quality
+or translational success of the research. The same papers score lower on
+field-normalized citation and on disruption, so B and C diverge. Animal
+studies had fewer clinical citations and, in RPCB, replicated worse, but the
+animal term did not pass the preregistered rule. Human genetic evidence and
+multiple model systems were not tested, because their rules failed the
+measurement gate. Not shown: causation, approval-level translation, fields
+beyond RAS/MAPK, or conduct (as opposed to reporting) of any design feature.

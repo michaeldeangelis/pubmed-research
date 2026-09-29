@@ -30,6 +30,18 @@ A post hoc check asked whether that lift only reflects seeing earlier papers. Re
 
 That comparison was then tested once on 2026 papers, under a rule committed before they were fetched. Record: `results/probe_v2_confirm_2026.json`. The fetch added 80 abstracts and 206 test positions, 108 of them with prior genetic evidence. The year is the publication year. First online dates run from 2024-10-14 to 2026-08-05, and the PMIDs are in `results/confirm_2026_pmids.json`. No model was retrained. Attention again exceeded the mean mixer, by 0.044, but the interval ran from −0.007 to 0.098. It was not confirmed. On the same papers, an untrained probe on the mean text of earlier papers scored 0.671, above attention at 0.601. v2 is closed.
 
+## Which research designs reach the clinic?
+
+This phase asked which research designs go on to be used clinically, and which change their field. The corpus is 12,211 RAS/MAPK papers from 2000 to 2015. 8,186 of them are MEDLINE-indexed primary research that iCite does not flag as a clinical study. The plan, both measurement gates, and every amendment were recorded before any design feature was joined to any outcome. Plan and record: `experiments.md`. Spec: `docs/specs/2026-09-29-metascience-design.md`. Result: `results/meta_analysis.json`.
+
+The design feature is the model system, read from MeSH headings: patient samples, animals, cell lines only, or other. A blind model reading of 300 fresh papers agreed with the rules at kappa 0.82. Two other features, human genetic evidence and use of more than one model system, fell below the 0.60 agreement bar and were not tested.
+
+The primary outcome is a citation from a clinical article within 8 years. Patient-sample studies were more likely to get one than cell-line-only studies: odds ratio 1.70 (1.39 to 2.07) for 2000–2011, and 1.76 (1.50 to 2.07) on the held-out 2012–2015 papers. That is the only design that passed the preregistered rule. Animal studies were lower in 2012–2015, at 0.71 (0.59 to 0.85), but not in 2000–2011, so they did not pass. A placebo feature showed no association. Adjusting for journal did not remove the patient-sample association.
+
+The outcomes disagree. The same patient-sample papers scored lower on field-normalized citation and on disruption. They get used by clinicians more, and they change their field less. In the Reproducibility Project: Cancer Biology data, 5 of 31 animal effects replicated with the same direction and significance, against 57 of 101 cell-based effects (`results/meta_rpcb.json`).
+
+This is an association, not an effect of the design. Patient studies report facts about patients, which clinical articles cite as background, so a clinical citation partly measures the topic rather than the quality of the work. It does not show approval-level translation, and it does not reach beyond RAS/MAPK.
+
 ## Result-record extraction spike
 
 After v2 closed, a spike asked whether the 27 result records of the evidence map can be rebuilt blind from the claim and the abstract. A second question was whether a fixed rule then names the map's disagreement type for each claim. The bars were committed before extraction. Spec: `docs/specs/2026-09-29-result-records-spike.md`. Record: `results/result_records_spike.json`.

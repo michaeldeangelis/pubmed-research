@@ -96,3 +96,11 @@ joined. The review found measurement faults in the rules. The first gate
 - The outcome B window is publication year minus 1 through publication year
   plus 8, inclusive. It spans 10 calendar years to tolerate epub skew. This
   was in the corpus code and is now recorded here; it affects 12 citers.
+
+Amendment 2, 2026-09-29, before any outcome was joined: the disruption score
+(outcome C, secondary) uses cd_source "icite_nok". This is the same
+n_k-free 5-year formula, computed on the iCite citation graph. SciSciNet
+CD5 is gated behind a login. OpenAlex without a key allows 1,000 requests a
+day, which is too slow for this corpus. On 291 papers scored from both
+sources, Spearman between iCite and OpenAlex is 0.94. RPCB paper 5 is PMID
+21102434, not 21102433 (corrected; see results/meta_rpcb.json).

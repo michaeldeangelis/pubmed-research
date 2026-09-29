@@ -1,0 +1,31 @@
+{
+  "instructions": "One record per packet. Use only the claim and the abstract. Write what the abstract states; write 'not reported' when it does not state something. Copy numbers exactly as the abstract gives them.",
+  "record": {
+    "pmid": "PMID of the packet",
+    "claim_id": "claim ID of the packet",
+    "conditions": {
+      "population": "Who or what was studied: species, tissue or cell type, patient group, size, setting",
+      "intervention": "The exposure, genotype, perturbation, or treatment",
+      "comparator": "What it was compared with, and how (e.g. mutant vs wild type, univariate then multivariate)",
+      "timing": "Follow-up, duration, or timing of the experiment"
+    },
+    "measurement": {
+      "outcome": "What was measured",
+      "effect": "What was found, in words",
+      "uncertainty": "Intervals, P values, or other uncertainty as reported; say if none is given"
+    },
+    "estimand": {
+      "quantity": "The exact quantity estimated (e.g. association of X with Y, adjusted; fraction of A among B)",
+      "denominator": "The group the quantity is computed over, with its size",
+      "estimate": "The reported estimate(s), with numbers",
+      "uncertainty": "Uncertainty of those estimates",
+      "adjustment": "Adjustment variables, or 'unadjusted' or 'not reported'"
+    },
+    "structured": {
+      "direction": "One of: supports, opposes, null, unclear. Relative to the claim's proposition. 'null' means no significant association or no effect found, not an opposite effect.",
+      "significance": "One of: significant, not_significant, not_tested",
+      "condition_departure": "true if the population, intervention, or experimental conditions materially depart from those stated in the claim (e.g. an added mutation, a different cell type, a different dose, a different patient population); else false",
+      "quantity_matches_claim": "true if the quantity estimated, including its population definition and denominator, is the same quantity the claim asserts about; else false"
+    }
+  }
+}

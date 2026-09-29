@@ -47,6 +47,8 @@ def load_rows(meta_dir: Path = META) -> list[dict]:
         pmid = str(feature["pmid"])
         if feature.get("group") != "preclinical" or pmid not in outcome or pmid not in papers:
             continue
+        if not feature.get("eligible", True):
+            continue
         extra = impact.get(pmid, {})
         rows.append(
             {

@@ -73,3 +73,26 @@ The record is results/meta_measurement_gate.json.
   model 20; they agreed on 14. Dropped from the primary analysis as the gate
   requires. It is not re-tuned on these 300 papers.
 The primary analysis runs with `--drop human_genetics`.
+
+Amendment 1, 2026-09-29, after a code review and before any outcome was
+joined. The review found measurement faults in the rules. The first gate
+(above) stays on record. The changes:
+- Eligibility. Research articles are excluded if they have no MeSH (not
+  MEDLINE-indexed; the text fallback put 69% of them in `other`), no
+  case-sensitive gene mention (acronym clashes such as "HRAs" for health risk
+  appraisals and "NRAs" for nanorod arrays; about 113 papers), or a
+  non-primary publication type (review, letter, editorial, comment,
+  meta-analysis, systematic review, guideline, news). Only eligible papers
+  enter the analysis.
+- Human-sample presence for F3 counts only specific patient-material and
+  cohort terms. Generic outcome terms and sex tags no longer count when
+  animal or cell work is present.
+- gene_group is case-sensitive.
+- The gate is re-run on a fresh sample of 300 eligible preclinical papers
+  (rng seed 1, disjoint from the first 300), with the same 0.60 bar. It
+  decides which features enter the primary model. human_genetics stays
+  dropped whatever the second gate shows, because its first-gate failure
+  and the review's estimate of about 45% precision both stand.
+- The outcome B window is publication year minus 1 through publication year
+  plus 8, inclusive. It spans 10 calendar years to tolerate epub skew. This
+  was in the corpus code and is now recorded here; it affects 12 citers.

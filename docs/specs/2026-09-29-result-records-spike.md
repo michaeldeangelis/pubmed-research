@@ -49,6 +49,17 @@ this order: `conditions` if `condition_departure`, else `estimand` if not
 A tie returns `tie`, which counts as a miss. A claim with no such record is
 `consistent`.
 
+## Deviations
+
+- The Opus extractor reported that a safety classifier had stopped it and
+  that it wrote nothing. Its file appeared later and was complete and valid,
+  so it is scored. It was never rerun.
+- A first judge pass covered only the Sonnet records. It was discarded, and
+  one fresh Opus judge rated all 54 pairs for both extractors. The Opus judge
+  therefore also judged the Opus extractor's output, blind to the source.
+- The scorer skips missing extractor files. The rule, bars, and fields are
+  unchanged.
+
 ## Caveats
 
 The reference records, the extractors, and the judge are all Claude models,

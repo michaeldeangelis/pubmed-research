@@ -157,6 +157,10 @@ def write_packets() -> None:
     print(f"wrote {len(packets)} packets to {PACKETS_PATH}")
 
 
+def _available() -> list[str]:
+    return [name for name in EXTRACTORS if (DIR / f"extracted_{name}.json").is_file()]
+
+
 def _extraction(name: str) -> dict[str, dict]:
     rows = json.loads((DIR / f"extracted_{name}.json").read_text(encoding="utf-8"))
     return {str(row["pmid"]): row for row in rows}
@@ -167,7 +171,7 @@ def write_judge_pairs() -> None:
     reference = _reference()
     rng = random.Random(0)
     pairs, key = [], {}
-    for name in EXTRACTORS:
+    for name in _available():
         extracted = _extraction(name)
         for record in reference:
             other = extracted.get(record["pmid"], {})
@@ -208,7 +212,8 @@ def score() -> None:
     key = json.loads(JUDGE_KEY_PATH.read_text(encoding="utf-8")) if judgments else {}
     report: dict = {"spec": "docs/specs/2026-09-29-result-records-spike.md", "bar": BAR, "extractors": {}}
     structured_by_name = {}
-    for name in EXTRACTORS:
+    report["missing_extractors"] = [name for name in EXTRACTORS if name not in _available()]
+    for name in _available():
         extracted = _extraction(name)
         structured_by_name[name] = {pmid: row.get("structured") or {} for pmid, row in extracted.items()}
         labels = {
@@ -232,12 +237,13 @@ def score() -> None:
             entry["semantic_pass"] = all(v["same"] >= BAR for v in entry["semantic"].values())
             entry["all_bars"] = recall["recall"] >= BAR and entry["semantic_pass"] and entry["rule_pass"]
         report["extractors"][name] = entry
-    first, second = (structured_by_name[name] for name in EXTRACTORS)
-    shared = sorted(set(first) & set(second))
-    report["extractor_agreement"] = {
-        field: sum(first[p].get(field) == second[p].get(field) for p in shared) / len(shared)
-        for field in ("direction", "significance", "condition_departure", "quantity_matches_claim")
-    }
+    if len(structured_by_name) == 2:
+        first, second = structured_by_name.values()
+        shared = sorted(set(first) & set(second))
+        report["extractor_agreement"] = {
+            field: sum(first[p].get(field) == second[p].get(field) for p in shared) / len(shared)
+            for field in ("direction", "significance", "condition_departure", "quantity_matches_claim")
+        }
     report["reference_labels"] = REFERENCE_LABELS
     RESULT_PATH.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, indent=2))

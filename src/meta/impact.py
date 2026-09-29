@@ -285,6 +285,8 @@ def compute_icite_cd(papers: list[dict], icite: dict[str, dict],
                          "n_refs_icite": None, "n_citers_5y": None}
             continue
         focal_refs = {str(x) for x in rec.get("references") or []}
+        # iCite lists some papers among their own references; that would force cd to -1.
+        focal_refs.discard(pmid)
         year = p.get("year") or rec.get("year")
         citers, _ = window_citers(rec.get("citedByPmidsByYear"), year)
         citer_refs = {}

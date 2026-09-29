@@ -36,12 +36,27 @@ def _read_jsonl(path: Path) -> list[dict]:
         return [json.loads(line) for line in handle if line.strip()]
 
 
+def _reference_count(extra: dict) -> int | None:
+    """OpenAlex count; iCite when OpenAlex reports 0 or nothing; else missing.
+
+    OpenAlex writes an empty reference list for works whose references it never
+    loaded, so a 0 there is not evidence of no references.
+    """
+    for key in ("n_refs_openalex", "n_refs_icite"):
+        value = extra.get(key)
+        if value:
+            return int(value)
+    return None
+
+
 def load_rows(meta_dir: Path = META) -> list[dict]:
     """Preclinical research articles with features, year, outcome B and C joined."""
     papers = {str(r["pmid"]): r for r in _read_jsonl(meta_dir / "papers.jsonl")}
     outcome = {str(r["pmid"]): r for r in _read_jsonl(meta_dir / "outcome_b.jsonl")}
     impact_path = meta_dir / "impact.jsonl"
-    impact = {str(r["pmid"]): r for r in _read_jsonl(impact_path)} if impact_path.is_file() else {}
+    if not impact_path.is_file():
+        raise SystemExit(f"{impact_path} is missing; the reference-count covariate needs it")
+    impact = {str(r["pmid"]): r for r in _read_jsonl(impact_path)}
     rows = []
     for feature in _read_jsonl(meta_dir / "features.jsonl"):
         pmid = str(feature["pmid"])
@@ -59,7 +74,7 @@ def load_rows(meta_dir: Path = META) -> list[dict]:
                 "n_clin_8y": int(outcome[pmid]["n_clin_8y"]),
                 "rcr": extra.get("rcr"),
                 "cd": extra.get("cd"),
-                "n_refs": extra.get("n_refs_openalex"),
+                "n_refs": _reference_count(extra),
             }
         )
     return rows
@@ -250,8 +265,8 @@ def secondary(rows: list[dict], drop: tuple[str, ...], rng: np.random.Generator,
         ),
     }
     with_rcr = [i for i, r in enumerate(rows) if r.get("rcr") is not None]
-    specs["log_rcr_linear"] = (
-        np.log(np.array([max(float(rows[i]["rcr"]), 1e-3) for i in with_rcr])),
+    specs["log_rcr_plus_0_1_linear"] = (
+        np.log(np.array([float(rows[i]["rcr"]) + 0.1 for i in with_rcr])),
         _fit_linear, lambda v: v, [rows[i] for i in with_rcr], x[with_rcr], names,
     )
     with_cd = [i for i, r in enumerate(rows) if r.get("cd") is not None]

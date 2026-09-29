@@ -118,3 +118,22 @@ results/meta_measurement_gate_v2.json.
 The primary analysis runs with `--drop human_genetics multi_system`. The only
 tested feature is model_system (human_samples, animal, and other, each
 against cell_only).
+
+Amendment 3, 2026-09-29, after a review of impact.py and before any outcome
+was joined:
+- The reference-count covariate is the OpenAlex count. When OpenAlex reports
+  0 or nothing, the iCite count is used; if that is also 0 or absent, the
+  value is missing (indicator). OpenAlex writes empty reference lists for
+  works it never loaded. In eligible preclinical papers that was 141 false
+  zeros, clustered by journal.
+- The disruption score drops the focal paper from its own reference list.
+  33 papers were self-listed, which forced cd = -1.
+- The secondary RCR model uses log(RCR + 0.1), where it had used
+  log(max(RCR, 0.001)). 108 eligible papers with RCR 0 had been extreme
+  outliers.
+- analysis.py now stops with an error if impact.jsonl is missing.
+Known and not changed: the disruption window is Y..Y+5, with no Y-1
+tolerance (391 citer links dated Y-1 are dropped). The RPCB check pools
+internal replications and does not implement the prediction-interval
+criterion, so its counts will not match Errington 2021's headline numbers
+exactly.

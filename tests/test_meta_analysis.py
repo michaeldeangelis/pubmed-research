@@ -73,7 +73,7 @@ def test_real_effect_passes_and_null_features_do_not(tmp_path):
     assert report["verdict"] == "pass"
     assert report["ladder_auroc_confirmation"]["candidate"] > report["ladder_auroc_confirmation"]["simplest"]
     sec = report["secondary"]
-    assert set(sec) == {"n_clin_8y_negbin_rate_ratio", "log_rcr_linear", "disruption_linear",
+    assert set(sec) == {"n_clin_8y_negbin_rate_ratio", "log_rcr_plus_0_1_linear", "disruption_linear",
                         "journal_sensitivity_logit_or"}
     assert sec["journal_sensitivity_logit_or"]["terms"]["model_system=animal"]["estimate"] > 1.5
 

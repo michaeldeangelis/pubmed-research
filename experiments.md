@@ -186,3 +186,41 @@ animal term did not pass the preregistered rule. Human genetic evidence and
 multiple model systems were not tested, because their rules failed the
 measurement gate. Not shown: causation, approval-level translation, fields
 beyond RAS/MAPK, or conduct (as opposed to reporting) of any design feature.
+
+## 2026-09-29 breakthrough case histories   (method fixed before the run; descriptive)
+
+Question: On the citation paths to two approvals, vemurafenib (BRAF V600E)
+and sotorasib (KRAS G12C), which model systems carried the evidence, and how
+does that mix compare with the field's base rate?
+Decision it drives: whether the patient-sample signal from metascience v1
+also holds on the path to approval, or whether cell and animal work
+dominate there. The answer shapes the next wider-field study.
+Cases and anchors (PMIDs verified against Europe PMC before the run):
+- vemurafenib: BRIM-3, Chapman et al. 2011 NEJM.
+- sotorasib: CodeBreaK 100 phase 1, Hong et al. 2020 NEJM; phase 2,
+  Skoulidis et al. 2021 NEJM.
+Lineage: depth 1 is the iCite references of the anchors; depth 2 is the
+references of depth 1. Only research articles are kept, restricted to the
+papers published before the anchor. The named milestone papers (discovery
+of the mutation, the first selective inhibitor, preclinical proof) are
+listed by hand, before the run, with the reason for each.
+Classification: the model_system rules from src/meta/features.py, unchanged
+(gate kappa 0.82). Papers without MeSH are reported as unclassified.
+Comparison: the lineage's model_system shares at each depth against the
+metascience v1 eligible corpus, restricted to the same publication years.
+Report the share with a Wilson 95% CI. With two cases there is no pass/fail.
+Record: results/case_histories.json
+Milestones, listed before the run. PMIDs are from memory and are checked
+against titles by the builder; corrections are recorded in the result.
+- vemurafenib: Davies 2002 Nature, BRAF mutations in cancer (12068308),
+  discovery; Tsai 2008 PNAS, PLX4720 selective BRAF V600E inhibitor
+  (18287029), first selective tool compound; Bollag 2010 Nature, PLX4032
+  clinical efficacy (20823850), preclinical plus clinical proof; Flaherty
+  2010 NEJM, phase 1 (20818844), first human efficacy; Chapman 2011 NEJM,
+  BRIM-3 (21639808), approval trial.
+- sotorasib: Ostrem 2013 Nature, K-Ras(G12C) allosteric inhibitors
+  (24256730), discovery of the druggable pocket; Patricelli 2016 Cancer
+  Discov, ARS-853 (26739882), cellular proof; Janes 2018 Cell, ARS-1620
+  (29373830), in vivo proof; Canon 2019 Nature, AMG 510 (31666701),
+  preclinical candidate; Hong 2020 NEJM, phase 1 (32955176); Skoulidis 2021
+  NEJM, phase 2 (34096690), approval trial.

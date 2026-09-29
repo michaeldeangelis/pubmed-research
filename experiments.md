@@ -224,3 +224,45 @@ against titles by the builder; corrections are recorded in the result.
   (29373830), in vivo proof; Canon 2019 Nature, AMG 510 (31666701),
   preclinical candidate; Hong 2020 NEJM, phase 1 (32955176); Skoulidis 2021
   NEJM, phase 2 (34096690), approval trial.
+
+### Result, 2026-09-29 (descriptive)
+
+Record: results/case_histories.json. All 11 anchor and milestone PMIDs
+matched Europe PMC; none needed correction. The lineages hold 1,578 research
+articles (79 at depth 1, 1,499 at depth 2). Janes 2018 appears only at
+depth 2; every other milestone is at depth 1.
+
+Deviations from the method as written:
+- Lineage papers from the same year as the anchor are included. The entry
+  said "before the anchor"; the run used publication year <= anchor year.
+- The sotorasib cutoff is the later anchor's year, 2021.
+- The comparison window is clipped to the corpus years: 2000-2011 for
+  vemurafenib, 2000-2015 for sotorasib. That leaves out 33 of 55 sotorasib
+  depth-1 papers, including Patricelli 2016, Janes 2018 and Canon 2019.
+- Lineage papers are not restricted to RAS/MAPK topics, while the base is.
+  An on-topic-only sensitivity check was added and is labelled as extra.
+
+Preclinical shares, lineage against base, difference with Newcombe 95% CI:
+- vemurafenib, n=255 against 2,813: human_samples 0.38 against 0.52, -0.14
+  [-0.20, -0.08]; cell_only 0.36 against 0.21, +0.15 [+0.09, +0.22].
+- sotorasib, n=523 against 8,186: human_samples 0.41 against 0.54, -0.13
+  [-0.18, -0.09]; animal +0.04 [+0.01, +0.08]; other +0.06 [+0.04, +0.09].
+- combined: human_samples -0.14 [-0.18, -0.11]; cell_only +0.07
+  [+0.04, +0.11].
+- On-topic only: vemurafenib human_samples -0.26 [-0.33, -0.17] and
+  cell_only +0.21 [+0.13, +0.30]; sotorasib differences near 0.
+With trials included, only vemurafenib differs: human_samples -0.08
+[-0.14, -0.02]. Sotorasib's depth-1 papers are mostly patient and trial
+papers: human_samples 0.81 against 0.57, n=21.
+Timelines: vemurafenib ran from discovery in 2002 to the approval trial in
+2011; sotorasib from the pocket and first compound in 2013 to the approval
+trial in 2021.
+
+What this does and does not show: in two cases, the preclinical evidence
+under an approval drew less on patient-sample studies and more on cell
+work than the field did in the same years. The pattern is clear for
+vemurafenib and weaker, and sensitive to topic restriction, for sotorasib.
+Set beside metascience v1, the designs that clinical articles cite most
+(patient samples) differ from the designs these approvals were built on.
+Two cases establish no general rule. The model_system labels are coarse:
+Davies 2002 comes out cell_only although it screened tumors.

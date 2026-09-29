@@ -1,0 +1,4049 @@
+{
+  "run_date": "2026-09-29",
+  "contract": "experiments.md, 2026-09-29 breakthrough case histories",
+  "method": {
+    "lineage": "depth 1 = iCite references of anchors; depth 2 = iCite references of kept depth-1 papers; kept = iCite research article with iCite year <= case anchor year (latest anchor); anchors excluded; a depth-1 paper is not counted again at depth 2",
+    "classification": "src.meta.features systems_present/model_system, unchanged; status order unclassified (no Europe PMC record or no MeSH) > non_primary (features.NON_PRIMARY_PUB_TYPES) > model_system",
+    "shares": "over classified primary papers; Wilson 95% CI; diff = lineage - base, Newcombe hybrid 95% CI",
+    "base_rate": "features.jsonl eligible rows (metascience v1 corpus, on-topic RAS/MAPK, MeSH, primary), year from papers.jsonl, restricted to the lineage years intersected with the corpus years; lineage side restricted to the same years and iCite group. 'all_on_topic_lineage' additionally keeps only lineage papers passing features.on_topic (sensitivity, not in the contract)"
+  },
+  "pmid_verification": [
+    {
+      "pmid": "12068308",
+      "label": "Davies 2002 Nature, BRAF mutations in human cancer",
+      "verified": true,
+      "problems": [],
+      "epmc": {
+        "year": 2002,
+        "first_author": "Davies",
+        "title": "Mutations of the BRAF gene in human cancer.",
+        "journal": "Nature"
+      }
+    },
+    {
+      "pmid": "18287029",
+      "label": "Tsai 2008 PNAS, PLX4720",
+      "verified": true,
+      "problems": [],
+      "epmc": {
+        "year": 2008,
+        "first_author": "Tsai",
+        "title": "Discovery of a selective inhibitor of oncogenic B-Raf kinase with potent antimelanoma activity.",
+        "journal": "Proceedings of the National Academy of Sciences of the United States of America"
+      }
+    },
+    {
+      "pmid": "20823850",
+      "label": "Bollag 2010 Nature, PLX4032",
+      "verified": true,
+      "problems": [],
+      "epmc": {
+        "year": 2010,
+        "first_author": "Bollag",
+        "title": "Clinical efficacy of a RAF inhibitor needs broad target blockade in BRAF-mutant melanoma.",
+        "journal": "Nature"
+      }
+    },
+    {
+      "pmid": "20818844",
+      "label": "Flaherty 2010 NEJM, phase 1",
+      "verified": true,
+      "problems": [],
+      "epmc": {
+        "year": 2010,
+        "first_author": "Flaherty",
+        "title": "Inhibition of mutated, activated BRAF in metastatic melanoma.",
+        "journal": "The New England journal of medicine"
+      }
+    },
+    {
+      "pmid": "21639808",
+      "label": "Chapman 2011 NEJM, BRIM-3",
+      "verified": true,
+      "problems": [],
+      "epmc": {
+        "year": 2011,
+        "first_author": "Chapman",
+        "title": "Improved survival with vemurafenib in melanoma with BRAF V600E mutation.",
+        "journal": "The New England journal of medicine"
+      }
+    },
+    {
+      "pmid": "24256730",
+      "label": "Ostrem 2013 Nature, switch-II pocket",
+      "verified": true,
+      "problems": [],
+      "epmc": {
+        "year": 2013,
+        "first_author": "Ostrem",
+        "title": "K-Ras(G12C) inhibitors allosterically control GTP affinity and effector interactions.",
+        "journal": "Nature"
+      }
+    },
+    {
+      "pmid": "26739882",
+      "label": "Patricelli 2016 Cancer Discov, ARS-853",
+      "verified": true,
+      "problems": [],
+      "epmc": {
+        "year": 2016,
+        "first_author": "Patricelli",
+        "title": "Selective Inhibition of Oncogenic KRAS Output with Small Molecules Targeting the Inactive State.",
+        "journal": "Cancer discovery"
+      }
+    },
+    {
+      "pmid": "29373830",
+      "label": "Janes 2018 Cell, ARS-1620",
+      "verified": true,
+      "problems": [],
+      "epmc": {
+        "year": 2018,
+        "first_author": "Janes",
+        "title": "Targeting KRAS Mutant Cancers with a Covalent G12C-Specific Inhibitor.",
+        "journal": "Cell"
+      }
+    },
+    {
+      "pmid": "31666701",
+      "label": "Canon 2019 Nature, AMG 510",
+      "verified": true,
+      "problems": [],
+      "epmc": {
+        "year": 2019,
+        "first_author": "Canon",
+        "title": "The clinical KRAS(G12C) inhibitor AMG 510 drives anti-tumour immunity.",
+        "journal": "Nature"
+      }
+    },
+    {
+      "pmid": "32955176",
+      "label": "Hong 2020 NEJM, CodeBreaK 100 phase 1",
+      "verified": true,
+      "problems": [],
+      "epmc": {
+        "year": 2020,
+        "first_author": "Hong",
+        "title": "KRASG12C Inhibition with Sotorasib in Advanced Solid Tumors.",
+        "journal": "The New England journal of medicine"
+      }
+    },
+    {
+      "pmid": "34096690",
+      "label": "Skoulidis 2021 NEJM, CodeBreaK 100 phase 2",
+      "verified": true,
+      "problems": [],
+      "epmc": {
+        "year": 2021,
+        "first_author": "Skoulidis",
+        "title": "Sotorasib for Lung Cancers with KRAS p.G12C Mutation.",
+        "journal": "The New England journal of medicine"
+      }
+    }
+  ],
+  "pmid_corrections": [],
+  "cases": {
+    "vemurafenib": {
+      "target": "BRAF V600E",
+      "anchors": [
+        {
+          "pmid": "21639808",
+          "year": 2011,
+          "title": "Improved survival with vemurafenib in melanoma with BRAF V600E mutation.",
+          "n_icite_references": 25
+        }
+      ],
+      "anchor_year": 2011,
+      "lineage_candidates": {
+        "1": 25,
+        "2": 507
+      },
+      "lineage_dropped": {
+        "1": {
+          "not_research_article": 1
+        },
+        "2": {
+          "not_research_article": 95,
+          "after_anchor_year": 1
+        }
+      },
+      "n_not_in_epmc": 0,
+      "milestones": [
+        {
+          "pmid": "12068308",
+          "label": "Davies 2002 Nature, BRAF mutations in human cancer",
+          "role": "discovery",
+          "year": 2002,
+          "title": "Mutations of the BRAF gene in human cancer.",
+          "model_system": "cell_only",
+          "depth": 1,
+          "design": "cell_only; systems: cell; design MeSH: 3T3 Cells, Tumor Cells, Cultured, Mice, DNA Mutational Analysis; abstract cues: cell lines, nih3t3"
+        },
+        {
+          "pmid": "18287029",
+          "label": "Tsai 2008 PNAS, PLX4720",
+          "role": "first_selective_compound",
+          "year": 2008,
+          "title": "Discovery of a selective inhibitor of oncogenic B-Raf kinase with potent antimelanoma activity.",
+          "model_system": "animal",
+          "depth": 1,
+          "design": "animal; systems: animal+cell; design MeSH: Cell Line, Tumor, Mice, Mice, SCID; abstract cues: animal models, xenograft, cell lines"
+        },
+        {
+          "pmid": "20823850",
+          "label": "Bollag 2010 Nature, PLX4032",
+          "role": "preclinical_plus_clinical_proof",
+          "year": 2010,
+          "title": "Clinical efficacy of a RAF inhibitor needs broad target blockade in BRAF-mutant melanoma.",
+          "model_system": "animal",
+          "depth": 1,
+          "design": "animal; systems: animal; design MeSH: Dogs, Macaca fascicularis, Rats, Xenograft Model Antitumor Assays; pub types: Clinical Trial, Phase I; abstract cues: biopsy, tumours of patients, xenografts"
+        },
+        {
+          "pmid": "20818844",
+          "label": "Flaherty 2010 NEJM, phase 1",
+          "role": "first_in_human",
+          "year": 2010,
+          "title": "Inhibition of mutated, activated BRAF in metastatic melanoma.",
+          "model_system": "human_samples",
+          "depth": 1,
+          "design": "human_samples; systems: human_samples; design MeSH: Treatment Outcome; pub types: Multicenter Study, Clinical Trial, Phase I; abstract cues: biopsy"
+        },
+        {
+          "pmid": "21639808",
+          "label": "Chapman 2011 NEJM, BRIM-3",
+          "role": "approval_trial",
+          "year": 2011,
+          "title": "Improved survival with vemurafenib in melanoma with BRAF V600E mutation.",
+          "model_system": "human_samples",
+          "depth": "anchor",
+          "design": "human_samples; systems: human_samples; design MeSH: Disease-Free Survival, Survival Analysis; pub types: Clinical Trial, Phase III, Multicenter Study, Randomized Controlled Trial"
+        }
+      ],
+      "timeline": {
+        "discovery": {
+          "pmid": "12068308",
+          "year": 2002
+        },
+        "first_selective_compound": {
+          "pmid": "18287029",
+          "year": 2008
+        },
+        "first_in_human": {
+          "pmid": "20818844",
+          "year": 2010
+        },
+        "approval_trial": {
+          "pmid": "21639808",
+          "year": 2011
+        },
+        "years_discovery_to_approval_trial": 9,
+        "note": "Publication years. Discovery = the BRAF V600E mutation."
+      },
+      "lineage_year_range": [
+        1963,
+        2011
+      ],
+      "counts": {
+        "1": {
+          "n": 24,
+          "human_samples": 13,
+          "animal": 5,
+          "cell_only": 6,
+          "other": 0,
+          "non_primary": 0,
+          "unclassified": 0
+        },
+        "2": {
+          "n": 411,
+          "human_samples": 189,
+          "animal": 59,
+          "cell_only": 113,
+          "other": 33,
+          "non_primary": 11,
+          "unclassified": 6
+        },
+        "all": {
+          "n": 435,
+          "human_samples": 202,
+          "animal": 64,
+          "cell_only": 119,
+          "other": 33,
+          "non_primary": 11,
+          "unclassified": 6
+        }
+      },
+      "shares_all_years": {
+        "1": {
+          "n_classified": 24,
+          "n_non_primary": 0,
+          "n_unclassified": 0,
+          "shares": {
+            "human_samples": {
+              "k": 13,
+              "n": 24,
+              "share": 0.5417,
+              "ci95": [
+                0.3507,
+                0.7211
+              ]
+            },
+            "animal": {
+              "k": 5,
+              "n": 24,
+              "share": 0.2083,
+              "ci95": [
+                0.0924,
+                0.4047
+              ]
+            },
+            "cell_only": {
+              "k": 6,
+              "n": 24,
+              "share": 0.25,
+              "ci95": [
+                0.12,
+                0.449
+              ]
+            },
+            "other": {
+              "k": 0,
+              "n": 24,
+              "share": 0.0,
+              "ci95": [
+                0.0,
+                0.138
+              ]
+            }
+          }
+        },
+        "2": {
+          "n_classified": 394,
+          "n_non_primary": 11,
+          "n_unclassified": 6,
+          "shares": {
+            "human_samples": {
+              "k": 189,
+              "n": 394,
+              "share": 0.4797,
+              "ci95": [
+                0.4308,
+                0.529
+              ]
+            },
+            "animal": {
+              "k": 59,
+              "n": 394,
+              "share": 0.1497,
+              "ci95": [
+                0.1179,
+                0.1884
+              ]
+            },
+            "cell_only": {
+              "k": 113,
+              "n": 394,
+              "share": 0.2868,
+              "ci95": [
+                0.2444,
+                0.3333
+              ]
+            },
+            "other": {
+              "k": 33,
+              "n": 394,
+              "share": 0.0838,
+              "ci95": [
+                0.0603,
+                0.1153
+              ]
+            }
+          }
+        },
+        "all": {
+          "n_classified": 418,
+          "n_non_primary": 11,
+          "n_unclassified": 6,
+          "shares": {
+            "human_samples": {
+              "k": 202,
+              "n": 418,
+              "share": 0.4833,
+              "ci95": [
+                0.4357,
+                0.5311
+              ]
+            },
+            "animal": {
+              "k": 64,
+              "n": 418,
+              "share": 0.1531,
+              "ci95": [
+                0.1218,
+                0.1908
+              ]
+            },
+            "cell_only": {
+              "k": 119,
+              "n": 418,
+              "share": 0.2847,
+              "ci95": [
+                0.2435,
+                0.3298
+              ]
+            },
+            "other": {
+              "k": 33,
+              "n": 418,
+              "share": 0.0789,
+              "ci95": [
+                0.0568,
+                0.1088
+              ]
+            }
+          }
+        }
+      },
+      "comparison": {
+        "year_range": [
+          2000,
+          2011
+        ],
+        "corpus_years": [
+          2000,
+          2015
+        ],
+        "by_depth": {
+          "1": {
+            "all": {
+              "lineage": {
+                "n_classified": 23,
+                "n_non_primary": 0,
+                "n_unclassified": 0,
+                "shares": {
+                  "human_samples": {
+                    "k": 12,
+                    "n": 23,
+                    "share": 0.5217,
+                    "ci95": [
+                      0.3296,
+                      0.7076
+                    ]
+                  },
+                  "animal": {
+                    "k": 5,
+                    "n": 23,
+                    "share": 0.2174,
+                    "ci95": [
+                      0.0966,
+                      0.419
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 6,
+                    "n": 23,
+                    "share": 0.2609,
+                    "ci95": [
+                      0.1255,
+                      0.4647
+                    ]
+                  },
+                  "other": {
+                    "k": 0,
+                    "n": 23,
+                    "share": 0.0,
+                    "ci95": [
+                      0.0,
+                      0.1431
+                    ]
+                  }
+                }
+              },
+              "base": {
+                "n": 2938,
+                "shares": {
+                  "human_samples": {
+                    "k": 1577,
+                    "n": 2938,
+                    "share": 0.5368,
+                    "ci95": [
+                      0.5187,
+                      0.5547
+                    ]
+                  },
+                  "animal": {
+                    "k": 560,
+                    "n": 2938,
+                    "share": 0.1906,
+                    "ci95": [
+                      0.1768,
+                      0.2052
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 588,
+                    "n": 2938,
+                    "share": 0.2001,
+                    "ci95": [
+                      0.1861,
+                      0.215
+                    ]
+                  },
+                  "other": {
+                    "k": 213,
+                    "n": 2938,
+                    "share": 0.0725,
+                    "ci95": [
+                      0.0637,
+                      0.0824
+                    ]
+                  }
+                }
+              },
+              "diff_lineage_minus_base": {
+                "human_samples": {
+                  "diff": -0.015,
+                  "ci95": [
+                    -0.208,
+                    0.1717
+                  ]
+                },
+                "animal": {
+                  "diff": 0.0268,
+                  "ci95": [
+                    -0.0949,
+                    0.2289
+                  ]
+                },
+                "cell_only": {
+                  "diff": 0.0607,
+                  "ci95": [
+                    -0.0754,
+                    0.265
+                  ]
+                },
+                "other": {
+                  "diff": -0.0725,
+                  "ci95": [
+                    -0.0824,
+                    0.0709
+                  ]
+                }
+              }
+            },
+            "preclinical": {
+              "lineage": {
+                "n_classified": 17,
+                "n_non_primary": 0,
+                "n_unclassified": 0,
+                "shares": {
+                  "human_samples": {
+                    "k": 7,
+                    "n": 17,
+                    "share": 0.4118,
+                    "ci95": [
+                      0.2161,
+                      0.6399
+                    ]
+                  },
+                  "animal": {
+                    "k": 4,
+                    "n": 17,
+                    "share": 0.2353,
+                    "ci95": [
+                      0.0956,
+                      0.4726
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 6,
+                    "n": 17,
+                    "share": 0.3529,
+                    "ci95": [
+                      0.1731,
+                      0.587
+                    ]
+                  },
+                  "other": {
+                    "k": 0,
+                    "n": 17,
+                    "share": 0.0,
+                    "ci95": [
+                      0.0,
+                      0.1843
+                    ]
+                  }
+                }
+              },
+              "base": {
+                "n": 2813,
+                "shares": {
+                  "human_samples": {
+                    "k": 1461,
+                    "n": 2813,
+                    "share": 0.5194,
+                    "ci95": [
+                      0.5009,
+                      0.5378
+                    ]
+                  },
+                  "animal": {
+                    "k": 558,
+                    "n": 2813,
+                    "share": 0.1984,
+                    "ci95": [
+                      0.184,
+                      0.2135
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 584,
+                    "n": 2813,
+                    "share": 0.2076,
+                    "ci95": [
+                      0.193,
+                      0.223
+                    ]
+                  },
+                  "other": {
+                    "k": 210,
+                    "n": 2813,
+                    "share": 0.0747,
+                    "ci95": [
+                      0.0655,
+                      0.085
+                    ]
+                  }
+                }
+              },
+              "diff_lineage_minus_base": {
+                "human_samples": {
+                  "diff": -0.1076,
+                  "ci95": [
+                    -0.3041,
+                    0.1213
+                  ]
+                },
+                "animal": {
+                  "diff": 0.0369,
+                  "ci95": [
+                    -0.1036,
+                    0.2747
+                  ]
+                },
+                "cell_only": {
+                  "diff": 0.1453,
+                  "ci95": [
+                    -0.0352,
+                    0.3798
+                  ]
+                },
+                "other": {
+                  "diff": -0.0747,
+                  "ci95": [
+                    -0.085,
+                    0.1099
+                  ]
+                }
+              }
+            },
+            "all_on_topic_lineage": {
+              "lineage": {
+                "n_classified": 15,
+                "n_non_primary": 0,
+                "n_unclassified": 0,
+                "shares": {
+                  "human_samples": {
+                    "k": 4,
+                    "n": 15,
+                    "share": 0.2667,
+                    "ci95": [
+                      0.109,
+                      0.5195
+                    ]
+                  },
+                  "animal": {
+                    "k": 5,
+                    "n": 15,
+                    "share": 0.3333,
+                    "ci95": [
+                      0.1518,
+                      0.5829
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 6,
+                    "n": 15,
+                    "share": 0.4,
+                    "ci95": [
+                      0.1982,
+                      0.6425
+                    ]
+                  },
+                  "other": {
+                    "k": 0,
+                    "n": 15,
+                    "share": 0.0,
+                    "ci95": [
+                      0.0,
+                      0.2039
+                    ]
+                  }
+                }
+              },
+              "base": {
+                "n": 2938,
+                "shares": {
+                  "human_samples": {
+                    "k": 1577,
+                    "n": 2938,
+                    "share": 0.5368,
+                    "ci95": [
+                      0.5187,
+                      0.5547
+                    ]
+                  },
+                  "animal": {
+                    "k": 560,
+                    "n": 2938,
+                    "share": 0.1906,
+                    "ci95": [
+                      0.1768,
+                      0.2052
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 588,
+                    "n": 2938,
+                    "share": 0.2001,
+                    "ci95": [
+                      0.1861,
+                      0.215
+                    ]
+                  },
+                  "other": {
+                    "k": 213,
+                    "n": 2938,
+                    "share": 0.0725,
+                    "ci95": [
+                      0.0637,
+                      0.0824
+                    ]
+                  }
+                }
+              },
+              "diff_lineage_minus_base": {
+                "human_samples": {
+                  "diff": -0.2701,
+                  "ci95": [
+                    -0.4288,
+                    -0.0166
+                  ]
+                },
+                "animal": {
+                  "diff": 0.1427,
+                  "ci95": [
+                    -0.0394,
+                    0.3927
+                  ]
+                },
+                "cell_only": {
+                  "diff": 0.1999,
+                  "ci95": [
+                    -0.0025,
+                    0.4428
+                  ]
+                },
+                "other": {
+                  "diff": -0.0725,
+                  "ci95": [
+                    -0.0824,
+                    0.1316
+                  ]
+                }
+              }
+            },
+            "n_lineage_outside_years": 1
+          },
+          "2": {
+            "all": {
+              "lineage": {
+                "n_classified": 273,
+                "n_non_primary": 7,
+                "n_unclassified": 5,
+                "shares": {
+                  "human_samples": {
+                    "k": 124,
+                    "n": 273,
+                    "share": 0.4542,
+                    "ci95": [
+                      0.3962,
+                      0.5135
+                    ]
+                  },
+                  "animal": {
+                    "k": 46,
+                    "n": 273,
+                    "share": 0.1685,
+                    "ci95": [
+                      0.1288,
+                      0.2174
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 86,
+                    "n": 273,
+                    "share": 0.315,
+                    "ci95": [
+                      0.2628,
+                      0.3724
+                    ]
+                  },
+                  "other": {
+                    "k": 17,
+                    "n": 273,
+                    "share": 0.0623,
+                    "ci95": [
+                      0.0392,
+                      0.0975
+                    ]
+                  }
+                }
+              },
+              "base": {
+                "n": 2938,
+                "shares": {
+                  "human_samples": {
+                    "k": 1577,
+                    "n": 2938,
+                    "share": 0.5368,
+                    "ci95": [
+                      0.5187,
+                      0.5547
+                    ]
+                  },
+                  "animal": {
+                    "k": 560,
+                    "n": 2938,
+                    "share": 0.1906,
+                    "ci95": [
+                      0.1768,
+                      0.2052
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 588,
+                    "n": 2938,
+                    "share": 0.2001,
+                    "ci95": [
+                      0.1861,
+                      0.215
+                    ]
+                  },
+                  "other": {
+                    "k": 213,
+                    "n": 2938,
+                    "share": 0.0725,
+                    "ci95": [
+                      0.0637,
+                      0.0824
+                    ]
+                  }
+                }
+              },
+              "diff_lineage_minus_base": {
+                "human_samples": {
+                  "diff": -0.0825,
+                  "ci95": [
+                    -0.1433,
+                    -0.0206
+                  ]
+                },
+                "animal": {
+                  "diff": -0.0221,
+                  "ci95": [
+                    -0.0644,
+                    0.0287
+                  ]
+                },
+                "cell_only": {
+                  "diff": 0.1149,
+                  "ci95": [
+                    0.0606,
+                    0.174
+                  ]
+                },
+                "other": {
+                  "diff": -0.0102,
+                  "ci95": [
+                    -0.0353,
+                    0.0261
+                  ]
+                }
+              }
+            },
+            "preclinical": {
+              "lineage": {
+                "n_classified": 238,
+                "n_non_primary": 7,
+                "n_unclassified": 5,
+                "shares": {
+                  "human_samples": {
+                    "k": 89,
+                    "n": 238,
+                    "share": 0.3739,
+                    "ci95": [
+                      0.3149,
+                      0.437
+                    ]
+                  },
+                  "animal": {
+                    "k": 46,
+                    "n": 238,
+                    "share": 0.1933,
+                    "ci95": [
+                      0.1481,
+                      0.2482
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 86,
+                    "n": 238,
+                    "share": 0.3613,
+                    "ci95": [
+                      0.303,
+                      0.4241
+                    ]
+                  },
+                  "other": {
+                    "k": 17,
+                    "n": 238,
+                    "share": 0.0714,
+                    "ci95": [
+                      0.0451,
+                      0.1114
+                    ]
+                  }
+                }
+              },
+              "base": {
+                "n": 2813,
+                "shares": {
+                  "human_samples": {
+                    "k": 1461,
+                    "n": 2813,
+                    "share": 0.5194,
+                    "ci95": [
+                      0.5009,
+                      0.5378
+                    ]
+                  },
+                  "animal": {
+                    "k": 558,
+                    "n": 2813,
+                    "share": 0.1984,
+                    "ci95": [
+                      0.184,
+                      0.2135
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 584,
+                    "n": 2813,
+                    "share": 0.2076,
+                    "ci95": [
+                      0.193,
+                      0.223
+                    ]
+                  },
+                  "other": {
+                    "k": 210,
+                    "n": 2813,
+                    "share": 0.0747,
+                    "ci95": [
+                      0.0655,
+                      0.085
+                    ]
+                  }
+                }
+              },
+              "diff_lineage_minus_base": {
+                "human_samples": {
+                  "diff": -0.1454,
+                  "ci95": [
+                    -0.2073,
+                    -0.0797
+                  ]
+                },
+                "animal": {
+                  "diff": -0.0051,
+                  "ci95": [
+                    -0.0527,
+                    0.0517
+                  ]
+                },
+                "cell_only": {
+                  "diff": 0.1537,
+                  "ci95": [
+                    0.0934,
+                    0.2182
+                  ]
+                },
+                "other": {
+                  "diff": -0.0032,
+                  "ci95": [
+                    -0.0315,
+                    0.0378
+                  ]
+                }
+              }
+            },
+            "all_on_topic_lineage": {
+              "lineage": {
+                "n_classified": 108,
+                "n_non_primary": 0,
+                "n_unclassified": 3,
+                "shares": {
+                  "human_samples": {
+                    "k": 30,
+                    "n": 108,
+                    "share": 0.2778,
+                    "ci95": [
+                      0.2021,
+                      0.3688
+                    ]
+                  },
+                  "animal": {
+                    "k": 27,
+                    "n": 108,
+                    "share": 0.25,
+                    "ci95": [
+                      0.1779,
+                      0.3393
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 45,
+                    "n": 108,
+                    "share": 0.4167,
+                    "ci95": [
+                      0.3281,
+                      0.5109
+                    ]
+                  },
+                  "other": {
+                    "k": 6,
+                    "n": 108,
+                    "share": 0.0556,
+                    "ci95": [
+                      0.0257,
+                      0.1159
+                    ]
+                  }
+                }
+              },
+              "base": {
+                "n": 2938,
+                "shares": {
+                  "human_samples": {
+                    "k": 1577,
+                    "n": 2938,
+                    "share": 0.5368,
+                    "ci95": [
+                      0.5187,
+                      0.5547
+                    ]
+                  },
+                  "animal": {
+                    "k": 560,
+                    "n": 2938,
+                    "share": 0.1906,
+                    "ci95": [
+                      0.1768,
+                      0.2052
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 588,
+                    "n": 2938,
+                    "share": 0.2001,
+                    "ci95": [
+                      0.1861,
+                      0.215
+                    ]
+                  },
+                  "other": {
+                    "k": 213,
+                    "n": 2938,
+                    "share": 0.0725,
+                    "ci95": [
+                      0.0637,
+                      0.0824
+                    ]
+                  }
+                }
+              },
+              "diff_lineage_minus_base": {
+                "human_samples": {
+                  "diff": -0.259,
+                  "ci95": [
+                    -0.3368,
+                    -0.1662
+                  ]
+                },
+                "animal": {
+                  "diff": 0.0594,
+                  "ci95": [
+                    -0.0142,
+                    0.1498
+                  ]
+                },
+                "cell_only": {
+                  "diff": 0.2165,
+                  "ci95": [
+                    0.1267,
+                    0.3118
+                  ]
+                },
+                "other": {
+                  "diff": -0.0169,
+                  "ci95": [
+                    -0.0484,
+                    0.044
+                  ]
+                }
+              }
+            },
+            "n_lineage_outside_years": 126
+          },
+          "all": {
+            "all": {
+              "lineage": {
+                "n_classified": 296,
+                "n_non_primary": 7,
+                "n_unclassified": 5,
+                "shares": {
+                  "human_samples": {
+                    "k": 136,
+                    "n": 296,
+                    "share": 0.4595,
+                    "ci95": [
+                      0.4036,
+                      0.5164
+                    ]
+                  },
+                  "animal": {
+                    "k": 51,
+                    "n": 296,
+                    "share": 0.1723,
+                    "ci95": [
+                      0.1335,
+                      0.2194
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 92,
+                    "n": 296,
+                    "share": 0.3108,
+                    "ci95": [
+                      0.2608,
+                      0.3657
+                    ]
+                  },
+                  "other": {
+                    "k": 17,
+                    "n": 296,
+                    "share": 0.0574,
+                    "ci95": [
+                      0.0362,
+                      0.09
+                    ]
+                  }
+                }
+              },
+              "base": {
+                "n": 2938,
+                "shares": {
+                  "human_samples": {
+                    "k": 1577,
+                    "n": 2938,
+                    "share": 0.5368,
+                    "ci95": [
+                      0.5187,
+                      0.5547
+                    ]
+                  },
+                  "animal": {
+                    "k": 560,
+                    "n": 2938,
+                    "share": 0.1906,
+                    "ci95": [
+                      0.1768,
+                      0.2052
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 588,
+                    "n": 2938,
+                    "share": 0.2001,
+                    "ci95": [
+                      0.1861,
+                      0.215
+                    ]
+                  },
+                  "other": {
+                    "k": 213,
+                    "n": 2938,
+                    "share": 0.0725,
+                    "ci95": [
+                      0.0637,
+                      0.0824
+                    ]
+                  }
+                }
+              },
+              "diff_lineage_minus_base": {
+                "human_samples": {
+                  "diff": -0.0773,
+                  "ci95": [
+                    -0.136,
+                    -0.0176
+                  ]
+                },
+                "animal": {
+                  "diff": -0.0183,
+                  "ci95": [
+                    -0.0598,
+                    0.0308
+                  ]
+                },
+                "cell_only": {
+                  "diff": 0.1107,
+                  "ci95": [
+                    0.0585,
+                    0.1673
+                  ]
+                },
+                "other": {
+                  "diff": -0.0151,
+                  "ci95": [
+                    -0.0385,
+                    0.0187
+                  ]
+                }
+              }
+            },
+            "preclinical": {
+              "lineage": {
+                "n_classified": 255,
+                "n_non_primary": 7,
+                "n_unclassified": 5,
+                "shares": {
+                  "human_samples": {
+                    "k": 96,
+                    "n": 255,
+                    "share": 0.3765,
+                    "ci95": [
+                      0.3193,
+                      0.4374
+                    ]
+                  },
+                  "animal": {
+                    "k": 50,
+                    "n": 255,
+                    "share": 0.1961,
+                    "ci95": [
+                      0.152,
+                      0.2492
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 92,
+                    "n": 255,
+                    "share": 0.3608,
+                    "ci95": [
+                      0.3043,
+                      0.4214
+                    ]
+                  },
+                  "other": {
+                    "k": 17,
+                    "n": 255,
+                    "share": 0.0667,
+                    "ci95": [
+                      0.042,
+                      0.1042
+                    ]
+                  }
+                }
+              },
+              "base": {
+                "n": 2813,
+                "shares": {
+                  "human_samples": {
+                    "k": 1461,
+                    "n": 2813,
+                    "share": 0.5194,
+                    "ci95": [
+                      0.5009,
+                      0.5378
+                    ]
+                  },
+                  "animal": {
+                    "k": 558,
+                    "n": 2813,
+                    "share": 0.1984,
+                    "ci95": [
+                      0.184,
+                      0.2135
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 584,
+                    "n": 2813,
+                    "share": 0.2076,
+                    "ci95": [
+                      0.193,
+                      0.223
+                    ]
+                  },
+                  "other": {
+                    "k": 210,
+                    "n": 2813,
+                    "share": 0.0747,
+                    "ci95": [
+                      0.0655,
+                      0.085
+                    ]
+                  }
+                }
+              },
+              "diff_lineage_minus_base": {
+                "human_samples": {
+                  "diff": -0.1429,
+                  "ci95": [
+                    -0.203,
+                    -0.0792
+                  ]
+                },
+                "animal": {
+                  "diff": -0.0023,
+                  "ci95": [
+                    -0.0489,
+                    0.0527
+                  ]
+                },
+                "cell_only": {
+                  "diff": 0.1532,
+                  "ci95": [
+                    0.0946,
+                    0.2155
+                  ]
+                },
+                "other": {
+                  "diff": -0.008,
+                  "ci95": [
+                    -0.0347,
+                    0.0306
+                  ]
+                }
+              }
+            },
+            "all_on_topic_lineage": {
+              "lineage": {
+                "n_classified": 123,
+                "n_non_primary": 0,
+                "n_unclassified": 3,
+                "shares": {
+                  "human_samples": {
+                    "k": 34,
+                    "n": 123,
+                    "share": 0.2764,
+                    "ci95": [
+                      0.2051,
+                      0.3613
+                    ]
+                  },
+                  "animal": {
+                    "k": 32,
+                    "n": 123,
+                    "share": 0.2602,
+                    "ci95": [
+                      0.1907,
+                      0.3441
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 51,
+                    "n": 123,
+                    "share": 0.4146,
+                    "ci95": [
+                      0.3314,
+                      0.503
+                    ]
+                  },
+                  "other": {
+                    "k": 6,
+                    "n": 123,
+                    "share": 0.0488,
+                    "ci95": [
+                      0.0225,
+                      0.1023
+                    ]
+                  }
+                }
+              },
+              "base": {
+                "n": 2938,
+                "shares": {
+                  "human_samples": {
+                    "k": 1577,
+                    "n": 2938,
+                    "share": 0.5368,
+                    "ci95": [
+                      0.5187,
+                      0.5547
+                    ]
+                  },
+                  "animal": {
+                    "k": 560,
+                    "n": 2938,
+                    "share": 0.1906,
+                    "ci95": [
+                      0.1768,
+                      0.2052
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 588,
+                    "n": 2938,
+                    "share": 0.2001,
+                    "ci95": [
+                      0.1861,
+                      0.215
+                    ]
+                  },
+                  "other": {
+                    "k": 213,
+                    "n": 2938,
+                    "share": 0.0725,
+                    "ci95": [
+                      0.0637,
+                      0.0824
+                    ]
+                  }
+                }
+              },
+              "diff_lineage_minus_base": {
+                "human_samples": {
+                  "diff": -0.2603,
+                  "ci95": [
+                    -0.3339,
+                    -0.1736
+                  ]
+                },
+                "animal": {
+                  "diff": 0.0696,
+                  "ci95": [
+                    -0.0014,
+                    0.1546
+                  ]
+                },
+                "cell_only": {
+                  "diff": 0.2145,
+                  "ci95": [
+                    0.1299,
+                    0.304
+                  ]
+                },
+                "other": {
+                  "diff": -0.0237,
+                  "ci95": [
+                    -0.0518,
+                    0.0305
+                  ]
+                }
+              }
+            },
+            "n_lineage_outside_years": 127
+          }
+        }
+      }
+    },
+    "sotorasib": {
+      "target": "KRAS G12C",
+      "anchors": [
+        {
+          "pmid": "32955176",
+          "year": 2020,
+          "title": "KRAS<sup>G12C</sup> Inhibition with Sotorasib in Advanced Solid Tumors.",
+          "n_icite_references": 36
+        },
+        {
+          "pmid": "34096690",
+          "year": 2021,
+          "title": "Sotorasib for Lung Cancers with <i>KRAS</i> p.G12C Mutation.",
+          "n_icite_references": 37
+        }
+      ],
+      "anchor_year": 2021,
+      "lineage_candidates": {
+        "1": 63,
+        "2": 1325
+      },
+      "lineage_dropped": {
+        "1": {
+          "not_research_article": 8
+        },
+        "2": {
+          "not_research_article": 213,
+          "not_in_icite": 1
+        }
+      },
+      "n_not_in_epmc": 0,
+      "milestones": [
+        {
+          "pmid": "24256730",
+          "label": "Ostrem 2013 Nature, switch-II pocket",
+          "role": "discovery_of_pocket",
+          "year": 2013,
+          "title": "K-Ras(G12C) inhibitors allosterically control GTP affinity and effector interactions.",
+          "model_system": "cell_only",
+          "depth": 1,
+          "design": "cell_only; systems: cell; design MeSH: Cell Line, Tumor"
+        },
+        {
+          "pmid": "26739882",
+          "label": "Patricelli 2016 Cancer Discov, ARS-853",
+          "role": "cellular_proof",
+          "year": 2016,
+          "title": "Selective Inhibition of Oncogenic KRAS Output with Small Molecules Targeting the Inactive State.",
+          "model_system": "cell_only",
+          "depth": 1,
+          "design": "cell_only; systems: cell; design MeSH: Cell Line, Tumor"
+        },
+        {
+          "pmid": "29373830",
+          "label": "Janes 2018 Cell, ARS-1620",
+          "role": "in_vivo_proof",
+          "year": 2018,
+          "title": "Targeting KRAS Mutant Cancers with a Covalent G12C-Specific Inhibitor.",
+          "model_system": "animal",
+          "depth": 2,
+          "design": "animal; systems: animal+cell; design MeSH: Cells, Cultured, HCT116 Cells, Mice, Inbred BALB C, Mice, Mice, Nude, HEK293 Cells"
+        },
+        {
+          "pmid": "31666701",
+          "label": "Canon 2019 Nature, AMG 510",
+          "role": "preclinical_candidate",
+          "year": 2019,
+          "title": "The clinical KRAS(G12C) inhibitor AMG 510 drives anti-tumour immunity.",
+          "model_system": "animal",
+          "depth": 1,
+          "design": "animal; systems: animal; design MeSH: Mice, Treatment Outcome; pub types: Clinical Trial; abstract cues: mice"
+        },
+        {
+          "pmid": "32955176",
+          "label": "Hong 2020 NEJM, CodeBreaK 100 phase 1",
+          "role": "first_in_human",
+          "year": 2020,
+          "title": "KRASG12C Inhibition with Sotorasib in Advanced Solid Tumors.",
+          "model_system": "human_samples",
+          "depth": "anchor",
+          "design": "human_samples; systems: human_samples; pub types: Multicenter Study, Clinical Trial, Phase I"
+        },
+        {
+          "pmid": "34096690",
+          "label": "Skoulidis 2021 NEJM, CodeBreaK 100 phase 2",
+          "role": "approval_trial",
+          "year": 2021,
+          "title": "Sotorasib for Lung Cancers with KRAS p.G12C Mutation.",
+          "model_system": "human_samples",
+          "depth": "anchor",
+          "design": "human_samples; systems: human_samples; design MeSH: Progression-Free Survival; pub types: Clinical Trial, Phase II, Multicenter Study"
+        }
+      ],
+      "timeline": {
+        "discovery": {
+          "pmid": "24256730",
+          "year": 2013
+        },
+        "first_selective_compound": {
+          "pmid": "24256730",
+          "year": 2013
+        },
+        "first_in_human": {
+          "pmid": "32955176",
+          "year": 2020
+        },
+        "approval_trial": {
+          "pmid": "34096690",
+          "year": 2021
+        },
+        "years_discovery_to_approval_trial": 8,
+        "note": "Publication years. Discovery = the druggable switch-II pocket (the KRAS mutation itself was known from the 1980s). Ostrem 2013 is also the first G12C-selective covalent compound series."
+      },
+      "lineage_year_range": [
+        1959,
+        2021
+      ],
+      "counts": {
+        "1": {
+          "n": 55,
+          "human_samples": 34,
+          "animal": 8,
+          "cell_only": 8,
+          "other": 2,
+          "non_primary": 1,
+          "unclassified": 2
+        },
+        "2": {
+          "n": 1111,
+          "human_samples": 579,
+          "animal": 201,
+          "cell_only": 149,
+          "other": 120,
+          "non_primary": 39,
+          "unclassified": 23
+        },
+        "all": {
+          "n": 1166,
+          "human_samples": 613,
+          "animal": 209,
+          "cell_only": 157,
+          "other": 122,
+          "non_primary": 40,
+          "unclassified": 25
+        }
+      },
+      "shares_all_years": {
+        "1": {
+          "n_classified": 52,
+          "n_non_primary": 1,
+          "n_unclassified": 2,
+          "shares": {
+            "human_samples": {
+              "k": 34,
+              "n": 52,
+              "share": 0.6538,
+              "ci95": [
+                0.518,
+                0.7685
+              ]
+            },
+            "animal": {
+              "k": 8,
+              "n": 52,
+              "share": 0.1538,
+              "ci95": [
+                0.0801,
+                0.2752
+              ]
+            },
+            "cell_only": {
+              "k": 8,
+              "n": 52,
+              "share": 0.1538,
+              "ci95": [
+                0.0801,
+                0.2752
+              ]
+            },
+            "other": {
+              "k": 2,
+              "n": 52,
+              "share": 0.0385,
+              "ci95": [
+                0.0106,
+                0.1298
+              ]
+            }
+          }
+        },
+        "2": {
+          "n_classified": 1049,
+          "n_non_primary": 39,
+          "n_unclassified": 23,
+          "shares": {
+            "human_samples": {
+              "k": 579,
+              "n": 1049,
+              "share": 0.552,
+              "ci95": [
+                0.5217,
+                0.5818
+              ]
+            },
+            "animal": {
+              "k": 201,
+              "n": 1049,
+              "share": 0.1916,
+              "ci95": [
+                0.1689,
+                0.2165
+              ]
+            },
+            "cell_only": {
+              "k": 149,
+              "n": 1049,
+              "share": 0.142,
+              "ci95": [
+                0.1222,
+                0.1645
+              ]
+            },
+            "other": {
+              "k": 120,
+              "n": 1049,
+              "share": 0.1144,
+              "ci95": [
+                0.0965,
+                0.1351
+              ]
+            }
+          }
+        },
+        "all": {
+          "n_classified": 1101,
+          "n_non_primary": 40,
+          "n_unclassified": 25,
+          "shares": {
+            "human_samples": {
+              "k": 613,
+              "n": 1101,
+              "share": 0.5568,
+              "ci95": [
+                0.5273,
+                0.5859
+              ]
+            },
+            "animal": {
+              "k": 209,
+              "n": 1101,
+              "share": 0.1898,
+              "ci95": [
+                0.1678,
+                0.2141
+              ]
+            },
+            "cell_only": {
+              "k": 157,
+              "n": 1101,
+              "share": 0.1426,
+              "ci95": [
+                0.1232,
+                0.1645
+              ]
+            },
+            "other": {
+              "k": 122,
+              "n": 1101,
+              "share": 0.1108,
+              "ci95": [
+                0.0936,
+                0.1307
+              ]
+            }
+          }
+        }
+      },
+      "comparison": {
+        "year_range": [
+          2000,
+          2015
+        ],
+        "corpus_years": [
+          2000,
+          2015
+        ],
+        "by_depth": {
+          "1": {
+            "all": {
+              "lineage": {
+                "n_classified": 21,
+                "n_non_primary": 0,
+                "n_unclassified": 1,
+                "shares": {
+                  "human_samples": {
+                    "k": 17,
+                    "n": 21,
+                    "share": 0.8095,
+                    "ci95": [
+                      0.6,
+                      0.9233
+                    ]
+                  },
+                  "animal": {
+                    "k": 0,
+                    "n": 21,
+                    "share": 0.0,
+                    "ci95": [
+                      0.0,
+                      0.1546
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 4,
+                    "n": 21,
+                    "share": 0.1905,
+                    "ci95": [
+                      0.0767,
+                      0.4
+                    ]
+                  },
+                  "other": {
+                    "k": 0,
+                    "n": 21,
+                    "share": 0.0,
+                    "ci95": [
+                      0.0,
+                      0.1546
+                    ]
+                  }
+                }
+              },
+              "base": {
+                "n": 8768,
+                "shares": {
+                  "human_samples": {
+                    "k": 4989,
+                    "n": 8768,
+                    "share": 0.569,
+                    "ci95": [
+                      0.5586,
+                      0.5793
+                    ]
+                  },
+                  "animal": {
+                    "k": 1734,
+                    "n": 8768,
+                    "share": 0.1978,
+                    "ci95": [
+                      0.1896,
+                      0.2062
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 1536,
+                    "n": 8768,
+                    "share": 0.1752,
+                    "ci95": [
+                      0.1674,
+                      0.1833
+                    ]
+                  },
+                  "other": {
+                    "k": 509,
+                    "n": 8768,
+                    "share": 0.0581,
+                    "ci95": [
+                      0.0533,
+                      0.0631
+                    ]
+                  }
+                }
+              },
+              "diff_lineage_minus_base": {
+                "human_samples": {
+                  "diff": 0.2405,
+                  "ci95": [
+                    0.0307,
+                    0.3548
+                  ]
+                },
+                "animal": {
+                  "diff": -0.1978,
+                  "ci95": [
+                    -0.2062,
+                    -0.0429
+                  ]
+                },
+                "cell_only": {
+                  "diff": 0.0153,
+                  "ci95": [
+                    -0.0988,
+                    0.225
+                  ]
+                },
+                "other": {
+                  "diff": -0.0581,
+                  "ci95": [
+                    -0.0631,
+                    0.0966
+                  ]
+                }
+              }
+            },
+            "preclinical": {
+              "lineage": {
+                "n_classified": 12,
+                "n_non_primary": 0,
+                "n_unclassified": 1,
+                "shares": {
+                  "human_samples": {
+                    "k": 8,
+                    "n": 12,
+                    "share": 0.6667,
+                    "ci95": [
+                      0.3906,
+                      0.8619
+                    ]
+                  },
+                  "animal": {
+                    "k": 0,
+                    "n": 12,
+                    "share": 0.0,
+                    "ci95": [
+                      0.0,
+                      0.2425
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 4,
+                    "n": 12,
+                    "share": 0.3333,
+                    "ci95": [
+                      0.1381,
+                      0.6094
+                    ]
+                  },
+                  "other": {
+                    "k": 0,
+                    "n": 12,
+                    "share": 0.0,
+                    "ci95": [
+                      0.0,
+                      0.2425
+                    ]
+                  }
+                }
+              },
+              "base": {
+                "n": 8186,
+                "shares": {
+                  "human_samples": {
+                    "k": 4450,
+                    "n": 8186,
+                    "share": 0.5436,
+                    "ci95": [
+                      0.5328,
+                      0.5544
+                    ]
+                  },
+                  "animal": {
+                    "k": 1719,
+                    "n": 8186,
+                    "share": 0.21,
+                    "ci95": [
+                      0.2013,
+                      0.219
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 1516,
+                    "n": 8186,
+                    "share": 0.1852,
+                    "ci95": [
+                      0.1769,
+                      0.1938
+                    ]
+                  },
+                  "other": {
+                    "k": 501,
+                    "n": 8186,
+                    "share": 0.0612,
+                    "ci95": [
+                      0.0562,
+                      0.0666
+                    ]
+                  }
+                }
+              },
+              "diff_lineage_minus_base": {
+                "human_samples": {
+                  "diff": 0.1231,
+                  "ci95": [
+                    -0.1532,
+                    0.3186
+                  ]
+                },
+                "animal": {
+                  "diff": -0.21,
+                  "ci95": [
+                    -0.219,
+                    0.0327
+                  ]
+                },
+                "cell_only": {
+                  "diff": 0.1481,
+                  "ci95": [
+                    -0.0473,
+                    0.4243
+                  ]
+                },
+                "other": {
+                  "diff": -0.0612,
+                  "ci95": [
+                    -0.0666,
+                    0.1813
+                  ]
+                }
+              }
+            },
+            "all_on_topic_lineage": {
+              "lineage": {
+                "n_classified": 11,
+                "n_non_primary": 0,
+                "n_unclassified": 1,
+                "shares": {
+                  "human_samples": {
+                    "k": 8,
+                    "n": 11,
+                    "share": 0.7273,
+                    "ci95": [
+                      0.4344,
+                      0.9025
+                    ]
+                  },
+                  "animal": {
+                    "k": 0,
+                    "n": 11,
+                    "share": 0.0,
+                    "ci95": [
+                      0.0,
+                      0.2588
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 3,
+                    "n": 11,
+                    "share": 0.2727,
+                    "ci95": [
+                      0.0975,
+                      0.5656
+                    ]
+                  },
+                  "other": {
+                    "k": 0,
+                    "n": 11,
+                    "share": 0.0,
+                    "ci95": [
+                      0.0,
+                      0.2588
+                    ]
+                  }
+                }
+              },
+              "base": {
+                "n": 8768,
+                "shares": {
+                  "human_samples": {
+                    "k": 4989,
+                    "n": 8768,
+                    "share": 0.569,
+                    "ci95": [
+                      0.5586,
+                      0.5793
+                    ]
+                  },
+                  "animal": {
+                    "k": 1734,
+                    "n": 8768,
+                    "share": 0.1978,
+                    "ci95": [
+                      0.1896,
+                      0.2062
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 1536,
+                    "n": 8768,
+                    "share": 0.1752,
+                    "ci95": [
+                      0.1674,
+                      0.1833
+                    ]
+                  },
+                  "other": {
+                    "k": 509,
+                    "n": 8768,
+                    "share": 0.0581,
+                    "ci95": [
+                      0.0533,
+                      0.0631
+                    ]
+                  }
+                }
+              },
+              "diff_lineage_minus_base": {
+                "human_samples": {
+                  "diff": 0.1583,
+                  "ci95": [
+                    -0.1348,
+                    0.3338
+                  ]
+                },
+                "animal": {
+                  "diff": -0.1978,
+                  "ci95": [
+                    -0.2062,
+                    0.0612
+                  ]
+                },
+                "cell_only": {
+                  "diff": 0.0975,
+                  "ci95": [
+                    -0.0779,
+                    0.3905
+                  ]
+                },
+                "other": {
+                  "diff": -0.0581,
+                  "ci95": [
+                    -0.0631,
+                    0.2008
+                  ]
+                }
+              }
+            },
+            "n_lineage_outside_years": 33
+          },
+          "2": {
+            "all": {
+              "lineage": {
+                "n_classified": 702,
+                "n_non_primary": 30,
+                "n_unclassified": 12,
+                "shares": {
+                  "human_samples": {
+                    "k": 394,
+                    "n": 702,
+                    "share": 0.5613,
+                    "ci95": [
+                      0.5243,
+                      0.5975
+                    ]
+                  },
+                  "animal": {
+                    "k": 135,
+                    "n": 702,
+                    "share": 0.1923,
+                    "ci95": [
+                      0.1649,
+                      0.2231
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 109,
+                    "n": 702,
+                    "share": 0.1553,
+                    "ci95": [
+                      0.1304,
+                      0.1839
+                    ]
+                  },
+                  "other": {
+                    "k": 64,
+                    "n": 702,
+                    "share": 0.0912,
+                    "ci95": [
+                      0.072,
+                      0.1147
+                    ]
+                  }
+                }
+              },
+              "base": {
+                "n": 8768,
+                "shares": {
+                  "human_samples": {
+                    "k": 4989,
+                    "n": 8768,
+                    "share": 0.569,
+                    "ci95": [
+                      0.5586,
+                      0.5793
+                    ]
+                  },
+                  "animal": {
+                    "k": 1734,
+                    "n": 8768,
+                    "share": 0.1978,
+                    "ci95": [
+                      0.1896,
+                      0.2062
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 1536,
+                    "n": 8768,
+                    "share": 0.1752,
+                    "ci95": [
+                      0.1674,
+                      0.1833
+                    ]
+                  },
+                  "other": {
+                    "k": 509,
+                    "n": 8768,
+                    "share": 0.0581,
+                    "ci95": [
+                      0.0533,
+                      0.0631
+                    ]
+                  }
+                }
+              },
+              "diff_lineage_minus_base": {
+                "human_samples": {
+                  "diff": -0.0077,
+                  "ci95": [
+                    -0.0461,
+                    0.03
+                  ]
+                },
+                "animal": {
+                  "diff": -0.0055,
+                  "ci95": [
+                    -0.0341,
+                    0.0264
+                  ]
+                },
+                "cell_only": {
+                  "diff": -0.0199,
+                  "ci95": [
+                    -0.0461,
+                    0.0098
+                  ]
+                },
+                "other": {
+                  "diff": 0.0331,
+                  "ci95": [
+                    0.0133,
+                    0.0571
+                  ]
+                }
+              }
+            },
+            "preclinical": {
+              "lineage": {
+                "n_classified": 511,
+                "n_non_primary": 29,
+                "n_unclassified": 12,
+                "shares": {
+                  "human_samples": {
+                    "k": 206,
+                    "n": 511,
+                    "share": 0.4031,
+                    "ci95": [
+                      0.3615,
+                      0.4462
+                    ]
+                  },
+                  "animal": {
+                    "k": 133,
+                    "n": 511,
+                    "share": 0.2603,
+                    "ci95": [
+                      0.2241,
+                      0.3
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 108,
+                    "n": 511,
+                    "share": 0.2114,
+                    "ci95": [
+                      0.1782,
+                      0.2488
+                    ]
+                  },
+                  "other": {
+                    "k": 64,
+                    "n": 511,
+                    "share": 0.1252,
+                    "ci95": [
+                      0.0993,
+                      0.1568
+                    ]
+                  }
+                }
+              },
+              "base": {
+                "n": 8186,
+                "shares": {
+                  "human_samples": {
+                    "k": 4450,
+                    "n": 8186,
+                    "share": 0.5436,
+                    "ci95": [
+                      0.5328,
+                      0.5544
+                    ]
+                  },
+                  "animal": {
+                    "k": 1719,
+                    "n": 8186,
+                    "share": 0.21,
+                    "ci95": [
+                      0.2013,
+                      0.219
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 1516,
+                    "n": 8186,
+                    "share": 0.1852,
+                    "ci95": [
+                      0.1769,
+                      0.1938
+                    ]
+                  },
+                  "other": {
+                    "k": 501,
+                    "n": 8186,
+                    "share": 0.0612,
+                    "ci95": [
+                      0.0562,
+                      0.0666
+                    ]
+                  }
+                }
+              },
+              "diff_lineage_minus_base": {
+                "human_samples": {
+                  "diff": -0.1405,
+                  "ci95": [
+                    -0.1835,
+                    -0.0961
+                  ]
+                },
+                "animal": {
+                  "diff": 0.0503,
+                  "ci95": [
+                    0.013,
+                    0.0909
+                  ]
+                },
+                "cell_only": {
+                  "diff": 0.0262,
+                  "ci95": [
+                    -0.0081,
+                    0.0645
+                  ]
+                },
+                "other": {
+                  "diff": 0.064,
+                  "ci95": [
+                    0.0375,
+                    0.096
+                  ]
+                }
+              }
+            },
+            "all_on_topic_lineage": {
+              "lineage": {
+                "n_classified": 257,
+                "n_non_primary": 10,
+                "n_unclassified": 3,
+                "shares": {
+                  "human_samples": {
+                    "k": 146,
+                    "n": 257,
+                    "share": 0.5681,
+                    "ci95": [
+                      0.507,
+                      0.6272
+                    ]
+                  },
+                  "animal": {
+                    "k": 59,
+                    "n": 257,
+                    "share": 0.2296,
+                    "ci95": [
+                      0.1824,
+                      0.2847
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 38,
+                    "n": 257,
+                    "share": 0.1479,
+                    "ci95": [
+                      0.1097,
+                      0.1964
+                    ]
+                  },
+                  "other": {
+                    "k": 14,
+                    "n": 257,
+                    "share": 0.0545,
+                    "ci95": [
+                      0.0327,
+                      0.0893
+                    ]
+                  }
+                }
+              },
+              "base": {
+                "n": 8768,
+                "shares": {
+                  "human_samples": {
+                    "k": 4989,
+                    "n": 8768,
+                    "share": 0.569,
+                    "ci95": [
+                      0.5586,
+                      0.5793
+                    ]
+                  },
+                  "animal": {
+                    "k": 1734,
+                    "n": 8768,
+                    "share": 0.1978,
+                    "ci95": [
+                      0.1896,
+                      0.2062
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 1536,
+                    "n": 8768,
+                    "share": 0.1752,
+                    "ci95": [
+                      0.1674,
+                      0.1833
+                    ]
+                  },
+                  "other": {
+                    "k": 509,
+                    "n": 8768,
+                    "share": 0.0581,
+                    "ci95": [
+                      0.0533,
+                      0.0631
+                    ]
+                  }
+                }
+              },
+              "diff_lineage_minus_base": {
+                "human_samples": {
+                  "diff": -0.0009,
+                  "ci95": [
+                    -0.0629,
+                    0.0591
+                  ]
+                },
+                "animal": {
+                  "diff": 0.0318,
+                  "ci95": [
+                    -0.0161,
+                    0.0875
+                  ]
+                },
+                "cell_only": {
+                  "diff": -0.0273,
+                  "ci95": [
+                    -0.0663,
+                    0.0218
+                  ]
+                },
+                "other": {
+                  "diff": -0.0036,
+                  "ci95": [
+                    -0.0259,
+                    0.0316
+                  ]
+                }
+              }
+            },
+            "n_lineage_outside_years": 367
+          },
+          "all": {
+            "all": {
+              "lineage": {
+                "n_classified": 723,
+                "n_non_primary": 30,
+                "n_unclassified": 13,
+                "shares": {
+                  "human_samples": {
+                    "k": 411,
+                    "n": 723,
+                    "share": 0.5685,
+                    "ci95": [
+                      0.5321,
+                      0.6041
+                    ]
+                  },
+                  "animal": {
+                    "k": 135,
+                    "n": 723,
+                    "share": 0.1867,
+                    "ci95": [
+                      0.16,
+                      0.2168
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 113,
+                    "n": 723,
+                    "share": 0.1563,
+                    "ci95": [
+                      0.1316,
+                      0.1846
+                    ]
+                  },
+                  "other": {
+                    "k": 64,
+                    "n": 723,
+                    "share": 0.0885,
+                    "ci95": [
+                      0.0699,
+                      0.1115
+                    ]
+                  }
+                }
+              },
+              "base": {
+                "n": 8768,
+                "shares": {
+                  "human_samples": {
+                    "k": 4989,
+                    "n": 8768,
+                    "share": 0.569,
+                    "ci95": [
+                      0.5586,
+                      0.5793
+                    ]
+                  },
+                  "animal": {
+                    "k": 1734,
+                    "n": 8768,
+                    "share": 0.1978,
+                    "ci95": [
+                      0.1896,
+                      0.2062
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 1536,
+                    "n": 8768,
+                    "share": 0.1752,
+                    "ci95": [
+                      0.1674,
+                      0.1833
+                    ]
+                  },
+                  "other": {
+                    "k": 509,
+                    "n": 8768,
+                    "share": 0.0581,
+                    "ci95": [
+                      0.0533,
+                      0.0631
+                    ]
+                  }
+                }
+              },
+              "diff_lineage_minus_base": {
+                "human_samples": {
+                  "diff": -0.0005,
+                  "ci95": [
+                    -0.0383,
+                    0.0366
+                  ]
+                },
+                "animal": {
+                  "diff": -0.011,
+                  "ci95": [
+                    -0.0391,
+                    0.0201
+                  ]
+                },
+                "cell_only": {
+                  "diff": -0.0189,
+                  "ci95": [
+                    -0.0449,
+                    0.0105
+                  ]
+                },
+                "other": {
+                  "diff": 0.0305,
+                  "ci95": [
+                    0.0112,
+                    0.0539
+                  ]
+                }
+              }
+            },
+            "preclinical": {
+              "lineage": {
+                "n_classified": 523,
+                "n_non_primary": 29,
+                "n_unclassified": 13,
+                "shares": {
+                  "human_samples": {
+                    "k": 214,
+                    "n": 523,
+                    "share": 0.4092,
+                    "ci95": [
+                      0.3678,
+                      0.4518
+                    ]
+                  },
+                  "animal": {
+                    "k": 133,
+                    "n": 523,
+                    "share": 0.2543,
+                    "ci95": [
+                      0.2189,
+                      0.2933
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 112,
+                    "n": 523,
+                    "share": 0.2141,
+                    "ci95": [
+                      0.1811,
+                      0.2513
+                    ]
+                  },
+                  "other": {
+                    "k": 64,
+                    "n": 523,
+                    "share": 0.1224,
+                    "ci95": [
+                      0.097,
+                      0.1532
+                    ]
+                  }
+                }
+              },
+              "base": {
+                "n": 8186,
+                "shares": {
+                  "human_samples": {
+                    "k": 4450,
+                    "n": 8186,
+                    "share": 0.5436,
+                    "ci95": [
+                      0.5328,
+                      0.5544
+                    ]
+                  },
+                  "animal": {
+                    "k": 1719,
+                    "n": 8186,
+                    "share": 0.21,
+                    "ci95": [
+                      0.2013,
+                      0.219
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 1516,
+                    "n": 8186,
+                    "share": 0.1852,
+                    "ci95": [
+                      0.1769,
+                      0.1938
+                    ]
+                  },
+                  "other": {
+                    "k": 501,
+                    "n": 8186,
+                    "share": 0.0612,
+                    "ci95": [
+                      0.0562,
+                      0.0666
+                    ]
+                  }
+                }
+              },
+              "diff_lineage_minus_base": {
+                "human_samples": {
+                  "diff": -0.1344,
+                  "ci95": [
+                    -0.1772,
+                    -0.0905
+                  ]
+                },
+                "animal": {
+                  "diff": 0.0443,
+                  "ci95": [
+                    0.0078,
+                    0.0843
+                  ]
+                },
+                "cell_only": {
+                  "diff": 0.029,
+                  "ci95": [
+                    -0.0052,
+                    0.067
+                  ]
+                },
+                "other": {
+                  "diff": 0.0612,
+                  "ci95": [
+                    0.0352,
+                    0.0924
+                  ]
+                }
+              }
+            },
+            "all_on_topic_lineage": {
+              "lineage": {
+                "n_classified": 268,
+                "n_non_primary": 10,
+                "n_unclassified": 4,
+                "shares": {
+                  "human_samples": {
+                    "k": 154,
+                    "n": 268,
+                    "share": 0.5746,
+                    "ci95": [
+                      0.5148,
+                      0.6324
+                    ]
+                  },
+                  "animal": {
+                    "k": 59,
+                    "n": 268,
+                    "share": 0.2201,
+                    "ci95": [
+                      0.1747,
+                      0.2735
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 41,
+                    "n": 268,
+                    "share": 0.153,
+                    "ci95": [
+                      0.1148,
+                      0.201
+                    ]
+                  },
+                  "other": {
+                    "k": 14,
+                    "n": 268,
+                    "share": 0.0522,
+                    "ci95": [
+                      0.0314,
+                      0.0858
+                    ]
+                  }
+                }
+              },
+              "base": {
+                "n": 8768,
+                "shares": {
+                  "human_samples": {
+                    "k": 4989,
+                    "n": 8768,
+                    "share": 0.569,
+                    "ci95": [
+                      0.5586,
+                      0.5793
+                    ]
+                  },
+                  "animal": {
+                    "k": 1734,
+                    "n": 8768,
+                    "share": 0.1978,
+                    "ci95": [
+                      0.1896,
+                      0.2062
+                    ]
+                  },
+                  "cell_only": {
+                    "k": 1536,
+                    "n": 8768,
+                    "share": 0.1752,
+                    "ci95": [
+                      0.1674,
+                      0.1833
+                    ]
+                  },
+                  "other": {
+                    "k": 509,
+                    "n": 8768,
+                    "share": 0.0581,
+                    "ci95": [
+                      0.0533,
+                      0.0631
+                    ]
+                  }
+                }
+              },
+              "diff_lineage_minus_base": {
+                "human_samples": {
+                  "diff": 0.0056,
+                  "ci95": [
+                    -0.0551,
+                    0.0643
+                  ]
+                },
+                "animal": {
+                  "diff": 0.0224,
+                  "ci95": [
+                    -0.0238,
+                    0.0764
+                  ]
+                },
+                "cell_only": {
+                  "diff": -0.0222,
+                  "ci95": [
+                    -0.0612,
+                    0.0264
+                  ]
+                },
+                "other": {
+                  "diff": -0.0058,
+                  "ci95": [
+                    -0.0273,
+                    0.0281
+                  ]
+                }
+              }
+            },
+            "n_lineage_outside_years": 400
+          }
+        }
+      }
+    }
+  },
+  "combined": {
+    "n_shared_between_cases": 23,
+    "lineage_year_range": [
+      1959,
+      2021
+    ],
+    "counts": {
+      "1": {
+        "n": 79,
+        "human_samples": 47,
+        "animal": 13,
+        "cell_only": 14,
+        "other": 2,
+        "non_primary": 1,
+        "unclassified": 2
+      },
+      "2": {
+        "n": 1499,
+        "human_samples": 760,
+        "animal": 256,
+        "cell_only": 255,
+        "other": 150,
+        "non_primary": 49,
+        "unclassified": 29
+      },
+      "all": {
+        "n": 1578,
+        "human_samples": 807,
+        "animal": 269,
+        "cell_only": 269,
+        "other": 152,
+        "non_primary": 50,
+        "unclassified": 31
+      }
+    },
+    "shares_all_years": {
+      "1": {
+        "n_classified": 76,
+        "n_non_primary": 1,
+        "n_unclassified": 2,
+        "shares": {
+          "human_samples": {
+            "k": 47,
+            "n": 76,
+            "share": 0.6184,
+            "ci95": [
+              0.506,
+              0.7194
+            ]
+          },
+          "animal": {
+            "k": 13,
+            "n": 76,
+            "share": 0.1711,
+            "ci95": [
+              0.1028,
+              0.271
+            ]
+          },
+          "cell_only": {
+            "k": 14,
+            "n": 76,
+            "share": 0.1842,
+            "ci95": [
+              0.113,
+              0.2858
+            ]
+          },
+          "other": {
+            "k": 2,
+            "n": 76,
+            "share": 0.0263,
+            "ci95": [
+              0.0072,
+              0.091
+            ]
+          }
+        }
+      },
+      "2": {
+        "n_classified": 1421,
+        "n_non_primary": 49,
+        "n_unclassified": 29,
+        "shares": {
+          "human_samples": {
+            "k": 760,
+            "n": 1421,
+            "share": 0.5348,
+            "ci95": [
+              0.5088,
+              0.5606
+            ]
+          },
+          "animal": {
+            "k": 256,
+            "n": 1421,
+            "share": 0.1802,
+            "ci95": [
+              0.161,
+              0.201
+            ]
+          },
+          "cell_only": {
+            "k": 255,
+            "n": 1421,
+            "share": 0.1795,
+            "ci95": [
+              0.1604,
+              0.2003
+            ]
+          },
+          "other": {
+            "k": 150,
+            "n": 1421,
+            "share": 0.1056,
+            "ci95": [
+              0.0906,
+              0.1226
+            ]
+          }
+        }
+      },
+      "all": {
+        "n_classified": 1497,
+        "n_non_primary": 50,
+        "n_unclassified": 31,
+        "shares": {
+          "human_samples": {
+            "k": 807,
+            "n": 1497,
+            "share": 0.5391,
+            "ci95": [
+              0.5138,
+              0.5642
+            ]
+          },
+          "animal": {
+            "k": 269,
+            "n": 1497,
+            "share": 0.1797,
+            "ci95": [
+              0.1611,
+              0.2
+            ]
+          },
+          "cell_only": {
+            "k": 269,
+            "n": 1497,
+            "share": 0.1797,
+            "ci95": [
+              0.1611,
+              0.2
+            ]
+          },
+          "other": {
+            "k": 152,
+            "n": 1497,
+            "share": 0.1015,
+            "ci95": [
+              0.0872,
+              0.1179
+            ]
+          }
+        }
+      }
+    },
+    "comparison": {
+      "year_range": [
+        2000,
+        2015
+      ],
+      "corpus_years": [
+        2000,
+        2015
+      ],
+      "by_depth": {
+        "1": {
+          "all": {
+            "lineage": {
+              "n_classified": 44,
+              "n_non_primary": 0,
+              "n_unclassified": 1,
+              "shares": {
+                "human_samples": {
+                  "k": 29,
+                  "n": 44,
+                  "share": 0.6591,
+                  "ci95": [
+                    0.5114,
+                    0.7812
+                  ]
+                },
+                "animal": {
+                  "k": 5,
+                  "n": 44,
+                  "share": 0.1136,
+                  "ci95": [
+                    0.0495,
+                    0.2398
+                  ]
+                },
+                "cell_only": {
+                  "k": 10,
+                  "n": 44,
+                  "share": 0.2273,
+                  "ci95": [
+                    0.1284,
+                    0.3699
+                  ]
+                },
+                "other": {
+                  "k": 0,
+                  "n": 44,
+                  "share": 0.0,
+                  "ci95": [
+                    0.0,
+                    0.0803
+                  ]
+                }
+              }
+            },
+            "base": {
+              "n": 8768,
+              "shares": {
+                "human_samples": {
+                  "k": 4989,
+                  "n": 8768,
+                  "share": 0.569,
+                  "ci95": [
+                    0.5586,
+                    0.5793
+                  ]
+                },
+                "animal": {
+                  "k": 1734,
+                  "n": 8768,
+                  "share": 0.1978,
+                  "ci95": [
+                    0.1896,
+                    0.2062
+                  ]
+                },
+                "cell_only": {
+                  "k": 1536,
+                  "n": 8768,
+                  "share": 0.1752,
+                  "ci95": [
+                    0.1674,
+                    0.1833
+                  ]
+                },
+                "other": {
+                  "k": 509,
+                  "n": 8768,
+                  "share": 0.0581,
+                  "ci95": [
+                    0.0533,
+                    0.0631
+                  ]
+                }
+              }
+            },
+            "diff_lineage_minus_base": {
+              "human_samples": {
+                "diff": 0.0901,
+                "ci95": [
+                  -0.058,
+                  0.2126
+                ]
+              },
+              "animal": {
+                "diff": -0.0841,
+                "ci95": [
+                  -0.1488,
+                  0.0423
+                ]
+              },
+              "cell_only": {
+                "diff": 0.0521,
+                "ci95": [
+                  -0.0471,
+                  0.1949
+                ]
+              },
+              "other": {
+                "diff": -0.0581,
+                "ci95": [
+                  -0.0631,
+                  0.0224
+                ]
+              }
+            }
+          },
+          "preclinical": {
+            "lineage": {
+              "n_classified": 29,
+              "n_non_primary": 0,
+              "n_unclassified": 1,
+              "shares": {
+                "human_samples": {
+                  "k": 15,
+                  "n": 29,
+                  "share": 0.5172,
+                  "ci95": [
+                    0.3443,
+                    0.6861
+                  ]
+                },
+                "animal": {
+                  "k": 4,
+                  "n": 29,
+                  "share": 0.1379,
+                  "ci95": [
+                    0.055,
+                    0.3056
+                  ]
+                },
+                "cell_only": {
+                  "k": 10,
+                  "n": 29,
+                  "share": 0.3448,
+                  "ci95": [
+                    0.1994,
+                    0.5265
+                  ]
+                },
+                "other": {
+                  "k": 0,
+                  "n": 29,
+                  "share": 0.0,
+                  "ci95": [
+                    0.0,
+                    0.117
+                  ]
+                }
+              }
+            },
+            "base": {
+              "n": 8186,
+              "shares": {
+                "human_samples": {
+                  "k": 4450,
+                  "n": 8186,
+                  "share": 0.5436,
+                  "ci95": [
+                    0.5328,
+                    0.5544
+                  ]
+                },
+                "animal": {
+                  "k": 1719,
+                  "n": 8186,
+                  "share": 0.21,
+                  "ci95": [
+                    0.2013,
+                    0.219
+                  ]
+                },
+                "cell_only": {
+                  "k": 1516,
+                  "n": 8186,
+                  "share": 0.1852,
+                  "ci95": [
+                    0.1769,
+                    0.1938
+                  ]
+                },
+                "other": {
+                  "k": 501,
+                  "n": 8186,
+                  "share": 0.0612,
+                  "ci95": [
+                    0.0562,
+                    0.0666
+                  ]
+                }
+              }
+            },
+            "diff_lineage_minus_base": {
+              "human_samples": {
+                "diff": -0.0264,
+                "ci95": [
+                  -0.1996,
+                  0.1428
+                ]
+              },
+              "animal": {
+                "diff": -0.0721,
+                "ci95": [
+                  -0.1555,
+                  0.0958
+                ]
+              },
+              "cell_only": {
+                "diff": 0.1596,
+                "ci95": [
+                  0.014,
+                  0.3415
+                ]
+              },
+              "other": {
+                "diff": -0.0612,
+                "ci95": [
+                  -0.0666,
+                  0.0559
+                ]
+              }
+            }
+          },
+          "all_on_topic_lineage": {
+            "lineage": {
+              "n_classified": 26,
+              "n_non_primary": 0,
+              "n_unclassified": 1,
+              "shares": {
+                "human_samples": {
+                  "k": 12,
+                  "n": 26,
+                  "share": 0.4615,
+                  "ci95": [
+                    0.2876,
+                    0.6454
+                  ]
+                },
+                "animal": {
+                  "k": 5,
+                  "n": 26,
+                  "share": 0.1923,
+                  "ci95": [
+                    0.0851,
+                    0.3788
+                  ]
+                },
+                "cell_only": {
+                  "k": 9,
+                  "n": 26,
+                  "share": 0.3462,
+                  "ci95": [
+                    0.1941,
+                    0.5378
+                  ]
+                },
+                "other": {
+                  "k": 0,
+                  "n": 26,
+                  "share": 0.0,
+                  "ci95": [
+                    0.0,
+                    0.1287
+                  ]
+                }
+              }
+            },
+            "base": {
+              "n": 8768,
+              "shares": {
+                "human_samples": {
+                  "k": 4989,
+                  "n": 8768,
+                  "share": 0.569,
+                  "ci95": [
+                    0.5586,
+                    0.5793
+                  ]
+                },
+                "animal": {
+                  "k": 1734,
+                  "n": 8768,
+                  "share": 0.1978,
+                  "ci95": [
+                    0.1896,
+                    0.2062
+                  ]
+                },
+                "cell_only": {
+                  "k": 1536,
+                  "n": 8768,
+                  "share": 0.1752,
+                  "ci95": [
+                    0.1674,
+                    0.1833
+                  ]
+                },
+                "other": {
+                  "k": 509,
+                  "n": 8768,
+                  "share": 0.0581,
+                  "ci95": [
+                    0.0533,
+                    0.0631
+                  ]
+                }
+              }
+            },
+            "diff_lineage_minus_base": {
+              "human_samples": {
+                "diff": -0.1075,
+                "ci95": [
+                  -0.2817,
+                  0.0767
+                ]
+              },
+              "animal": {
+                "diff": -0.0055,
+                "ci95": [
+                  -0.113,
+                  0.1812
+                ]
+              },
+              "cell_only": {
+                "diff": 0.171,
+                "ci95": [
+                  0.0187,
+                  0.3628
+                ]
+              },
+              "other": {
+                "diff": -0.0581,
+                "ci95": [
+                  -0.0631,
+                  0.0707
+                ]
+              }
+            }
+          },
+          "n_lineage_outside_years": 34
+        },
+        "2": {
+          "all": {
+            "lineage": {
+              "n_classified": 957,
+              "n_non_primary": 36,
+              "n_unclassified": 17,
+              "shares": {
+                "human_samples": {
+                  "k": 511,
+                  "n": 957,
+                  "share": 0.534,
+                  "ci95": [
+                    0.5023,
+                    0.5654
+                  ]
+                },
+                "animal": {
+                  "k": 177,
+                  "n": 957,
+                  "share": 0.185,
+                  "ci95": [
+                    0.1616,
+                    0.2108
+                  ]
+                },
+                "cell_only": {
+                  "k": 189,
+                  "n": 957,
+                  "share": 0.1975,
+                  "ci95": [
+                    0.1735,
+                    0.2239
+                  ]
+                },
+                "other": {
+                  "k": 80,
+                  "n": 957,
+                  "share": 0.0836,
+                  "ci95": [
+                    0.0677,
+                    0.1028
+                  ]
+                }
+              }
+            },
+            "base": {
+              "n": 8768,
+              "shares": {
+                "human_samples": {
+                  "k": 4989,
+                  "n": 8768,
+                  "share": 0.569,
+                  "ci95": [
+                    0.5586,
+                    0.5793
+                  ]
+                },
+                "animal": {
+                  "k": 1734,
+                  "n": 8768,
+                  "share": 0.1978,
+                  "ci95": [
+                    0.1896,
+                    0.2062
+                  ]
+                },
+                "cell_only": {
+                  "k": 1536,
+                  "n": 8768,
+                  "share": 0.1752,
+                  "ci95": [
+                    0.1674,
+                    0.1833
+                  ]
+                },
+                "other": {
+                  "k": 509,
+                  "n": 8768,
+                  "share": 0.0581,
+                  "ci95": [
+                    0.0533,
+                    0.0631
+                  ]
+                }
+              }
+            },
+            "diff_lineage_minus_base": {
+              "human_samples": {
+                "diff": -0.035,
+                "ci95": [
+                  -0.0683,
+                  -0.0019
+                ]
+              },
+              "animal": {
+                "diff": -0.0128,
+                "ci95": [
+                  -0.0376,
+                  0.0143
+                ]
+              },
+              "cell_only": {
+                "diff": 0.0223,
+                "ci95": [
+                  -0.003,
+                  0.0498
+                ]
+              },
+              "other": {
+                "diff": 0.0255,
+                "ci95": [
+                  0.0089,
+                  0.0453
+                ]
+              }
+            }
+          },
+          "preclinical": {
+            "lineage": {
+              "n_classified": 736,
+              "n_non_primary": 35,
+              "n_unclassified": 17,
+              "shares": {
+                "human_samples": {
+                  "k": 292,
+                  "n": 736,
+                  "share": 0.3967,
+                  "ci95": [
+                    0.362,
+                    0.4325
+                  ]
+                },
+                "animal": {
+                  "k": 176,
+                  "n": 736,
+                  "share": 0.2391,
+                  "ci95": [
+                    0.2097,
+                    0.2713
+                  ]
+                },
+                "cell_only": {
+                  "k": 188,
+                  "n": 736,
+                  "share": 0.2554,
+                  "ci95": [
+                    0.2253,
+                    0.2882
+                  ]
+                },
+                "other": {
+                  "k": 80,
+                  "n": 736,
+                  "share": 0.1087,
+                  "ci95": [
+                    0.0882,
+                    0.1332
+                  ]
+                }
+              }
+            },
+            "base": {
+              "n": 8186,
+              "shares": {
+                "human_samples": {
+                  "k": 4450,
+                  "n": 8186,
+                  "share": 0.5436,
+                  "ci95": [
+                    0.5328,
+                    0.5544
+                  ]
+                },
+                "animal": {
+                  "k": 1719,
+                  "n": 8186,
+                  "share": 0.21,
+                  "ci95": [
+                    0.2013,
+                    0.219
+                  ]
+                },
+                "cell_only": {
+                  "k": 1516,
+                  "n": 8186,
+                  "share": 0.1852,
+                  "ci95": [
+                    0.1769,
+                    0.1938
+                  ]
+                },
+                "other": {
+                  "k": 501,
+                  "n": 8186,
+                  "share": 0.0612,
+                  "ci95": [
+                    0.0562,
+                    0.0666
+                  ]
+                }
+              }
+            },
+            "diff_lineage_minus_base": {
+              "human_samples": {
+                "diff": -0.1469,
+                "ci95": [
+                  -0.1832,
+                  -0.1095
+                ]
+              },
+              "animal": {
+                "diff": 0.0291,
+                "ci95": [
+                  -0.0016,
+                  0.0625
+                ]
+              },
+              "cell_only": {
+                "diff": 0.0702,
+                "ci95": [
+                  0.0389,
+                  0.104
+                ]
+              },
+              "other": {
+                "diff": 0.0475,
+                "ci95": [
+                  0.0263,
+                  0.0725
+                ]
+              }
+            }
+          },
+          "all_on_topic_lineage": {
+            "lineage": {
+              "n_classified": 354,
+              "n_non_primary": 10,
+              "n_unclassified": 6,
+              "shares": {
+                "human_samples": {
+                  "k": 174,
+                  "n": 354,
+                  "share": 0.4915,
+                  "ci95": [
+                    0.4398,
+                    0.5434
+                  ]
+                },
+                "animal": {
+                  "k": 82,
+                  "n": 354,
+                  "share": 0.2316,
+                  "ci95": [
+                    0.1907,
+                    0.2783
+                  ]
+                },
+                "cell_only": {
+                  "k": 79,
+                  "n": 354,
+                  "share": 0.2232,
+                  "ci95": [
+                    0.1829,
+                    0.2694
+                  ]
+                },
+                "other": {
+                  "k": 19,
+                  "n": 354,
+                  "share": 0.0537,
+                  "ci95": [
+                    0.0346,
+                    0.0823
+                  ]
+                }
+              }
+            },
+            "base": {
+              "n": 8768,
+              "shares": {
+                "human_samples": {
+                  "k": 4989,
+                  "n": 8768,
+                  "share": 0.569,
+                  "ci95": [
+                    0.5586,
+                    0.5793
+                  ]
+                },
+                "animal": {
+                  "k": 1734,
+                  "n": 8768,
+                  "share": 0.1978,
+                  "ci95": [
+                    0.1896,
+                    0.2062
+                  ]
+                },
+                "cell_only": {
+                  "k": 1536,
+                  "n": 8768,
+                  "share": 0.1752,
+                  "ci95": [
+                    0.1674,
+                    0.1833
+                  ]
+                },
+                "other": {
+                  "k": 509,
+                  "n": 8768,
+                  "share": 0.0581,
+                  "ci95": [
+                    0.0533,
+                    0.0631
+                  ]
+                }
+              }
+            },
+            "diff_lineage_minus_base": {
+              "human_samples": {
+                "diff": -0.0775,
+                "ci95": [
+                  -0.1302,
+                  -0.0246
+                ]
+              },
+              "animal": {
+                "diff": 0.0339,
+                "ci95": [
+                  -0.0079,
+                  0.0812
+                ]
+              },
+              "cell_only": {
+                "diff": 0.048,
+                "ci95": [
+                  0.0069,
+                  0.0949
+                ]
+              },
+              "other": {
+                "diff": -0.0044,
+                "ci95": [
+                  -0.0241,
+                  0.0246
+                ]
+              }
+            }
+          },
+          "n_lineage_outside_years": 489
+        },
+        "all": {
+          "all": {
+            "lineage": {
+              "n_classified": 1001,
+              "n_non_primary": 36,
+              "n_unclassified": 18,
+              "shares": {
+                "human_samples": {
+                  "k": 540,
+                  "n": 1001,
+                  "share": 0.5395,
+                  "ci95": [
+                    0.5085,
+                    0.5701
+                  ]
+                },
+                "animal": {
+                  "k": 182,
+                  "n": 1001,
+                  "share": 0.1818,
+                  "ci95": [
+                    0.1592,
+                    0.2069
+                  ]
+                },
+                "cell_only": {
+                  "k": 199,
+                  "n": 1001,
+                  "share": 0.1988,
+                  "ci95": [
+                    0.1752,
+                    0.2247
+                  ]
+                },
+                "other": {
+                  "k": 80,
+                  "n": 1001,
+                  "share": 0.0799,
+                  "ci95": [
+                    0.0647,
+                    0.0984
+                  ]
+                }
+              }
+            },
+            "base": {
+              "n": 8768,
+              "shares": {
+                "human_samples": {
+                  "k": 4989,
+                  "n": 8768,
+                  "share": 0.569,
+                  "ci95": [
+                    0.5586,
+                    0.5793
+                  ]
+                },
+                "animal": {
+                  "k": 1734,
+                  "n": 8768,
+                  "share": 0.1978,
+                  "ci95": [
+                    0.1896,
+                    0.2062
+                  ]
+                },
+                "cell_only": {
+                  "k": 1536,
+                  "n": 8768,
+                  "share": 0.1752,
+                  "ci95": [
+                    0.1674,
+                    0.1833
+                  ]
+                },
+                "other": {
+                  "k": 509,
+                  "n": 8768,
+                  "share": 0.0581,
+                  "ci95": [
+                    0.0533,
+                    0.0631
+                  ]
+                }
+              }
+            },
+            "diff_lineage_minus_base": {
+              "human_samples": {
+                "diff": -0.0295,
+                "ci95": [
+                  -0.0622,
+                  0.0028
+                ]
+              },
+              "animal": {
+                "diff": -0.0159,
+                "ci95": [
+                  -0.0401,
+                  0.0104
+                ]
+              },
+              "cell_only": {
+                "diff": 0.0236,
+                "ci95": [
+                  -0.0013,
+                  0.0507
+                ]
+              },
+              "other": {
+                "diff": 0.0219,
+                "ci95": [
+                  0.0058,
+                  0.0409
+                ]
+              }
+            }
+          },
+          "preclinical": {
+            "lineage": {
+              "n_classified": 765,
+              "n_non_primary": 35,
+              "n_unclassified": 18,
+              "shares": {
+                "human_samples": {
+                  "k": 307,
+                  "n": 765,
+                  "share": 0.4013,
+                  "ci95": [
+                    0.3671,
+                    0.4365
+                  ]
+                },
+                "animal": {
+                  "k": 180,
+                  "n": 765,
+                  "share": 0.2353,
+                  "ci95": [
+                    0.2066,
+                    0.2666
+                  ]
+                },
+                "cell_only": {
+                  "k": 198,
+                  "n": 765,
+                  "share": 0.2588,
+                  "ci95": [
+                    0.229,
+                    0.291
+                  ]
+                },
+                "other": {
+                  "k": 80,
+                  "n": 765,
+                  "share": 0.1046,
+                  "ci95": [
+                    0.0848,
+                    0.1283
+                  ]
+                }
+              }
+            },
+            "base": {
+              "n": 8186,
+              "shares": {
+                "human_samples": {
+                  "k": 4450,
+                  "n": 8186,
+                  "share": 0.5436,
+                  "ci95": [
+                    0.5328,
+                    0.5544
+                  ]
+                },
+                "animal": {
+                  "k": 1719,
+                  "n": 8186,
+                  "share": 0.21,
+                  "ci95": [
+                    0.2013,
+                    0.219
+                  ]
+                },
+                "cell_only": {
+                  "k": 1516,
+                  "n": 8186,
+                  "share": 0.1852,
+                  "ci95": [
+                    0.1769,
+                    0.1938
+                  ]
+                },
+                "other": {
+                  "k": 501,
+                  "n": 8186,
+                  "share": 0.0612,
+                  "ci95": [
+                    0.0562,
+                    0.0666
+                  ]
+                }
+              }
+            },
+            "diff_lineage_minus_base": {
+              "human_samples": {
+                "diff": -0.1423,
+                "ci95": [
+                  -0.1782,
+                  -0.1055
+                ]
+              },
+              "animal": {
+                "diff": 0.0253,
+                "ci95": [
+                  -0.0048,
+                  0.0578
+                ]
+              },
+              "cell_only": {
+                "diff": 0.0736,
+                "ci95": [
+                  0.0426,
+                  0.1069
+                ]
+              },
+              "other": {
+                "diff": 0.0434,
+                "ci95": [
+                  0.0229,
+                  0.0676
+                ]
+              }
+            }
+          },
+          "all_on_topic_lineage": {
+            "lineage": {
+              "n_classified": 380,
+              "n_non_primary": 10,
+              "n_unclassified": 7,
+              "shares": {
+                "human_samples": {
+                  "k": 186,
+                  "n": 380,
+                  "share": 0.4895,
+                  "ci95": [
+                    0.4396,
+                    0.5396
+                  ]
+                },
+                "animal": {
+                  "k": 87,
+                  "n": 380,
+                  "share": 0.2289,
+                  "ci95": [
+                    0.1895,
+                    0.2738
+                  ]
+                },
+                "cell_only": {
+                  "k": 88,
+                  "n": 380,
+                  "share": 0.2316,
+                  "ci95": [
+                    0.192,
+                    0.2766
+                  ]
+                },
+                "other": {
+                  "k": 19,
+                  "n": 380,
+                  "share": 0.05,
+                  "ci95": [
+                    0.0322,
+                    0.0768
+                  ]
+                }
+              }
+            },
+            "base": {
+              "n": 8768,
+              "shares": {
+                "human_samples": {
+                  "k": 4989,
+                  "n": 8768,
+                  "share": 0.569,
+                  "ci95": [
+                    0.5586,
+                    0.5793
+                  ]
+                },
+                "animal": {
+                  "k": 1734,
+                  "n": 8768,
+                  "share": 0.1978,
+                  "ci95": [
+                    0.1896,
+                    0.2062
+                  ]
+                },
+                "cell_only": {
+                  "k": 1536,
+                  "n": 8768,
+                  "share": 0.1752,
+                  "ci95": [
+                    0.1674,
+                    0.1833
+                  ]
+                },
+                "other": {
+                  "k": 509,
+                  "n": 8768,
+                  "share": 0.0581,
+                  "ci95": [
+                    0.0533,
+                    0.0631
+                  ]
+                }
+              }
+            },
+            "diff_lineage_minus_base": {
+              "human_samples": {
+                "diff": -0.0795,
+                "ci95": [
+                  -0.1305,
+                  -0.0283
+                ]
+              },
+              "animal": {
+                "diff": 0.0312,
+                "ci95": [
+                  -0.0092,
+                  0.0768
+                ]
+              },
+              "cell_only": {
+                "diff": 0.0564,
+                "ci95": [
+                  0.016,
+                  0.1021
+                ]
+              },
+              "other": {
+                "diff": -0.0081,
+                "ci95": [
+                  -0.0266,
+                  0.0192
+                ]
+              }
+            }
+          },
+          "n_lineage_outside_years": 523
+        }
+      }
+    }
+  }
+}

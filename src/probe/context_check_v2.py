@@ -23,8 +23,12 @@ from src.schema import prior_genetic_evidence
 RESULT_PATH = cfg.ROOT / "results" / "probe_v2_context_check.json"
 
 
-def _untrained_context_scores(windows, labels: np.ndarray, k: int | None) -> np.ndarray:
+def _untrained_context_scores(
+    windows, labels: np.ndarray, k: int | None, test_year_min: int | None = None
+) -> np.ndarray:
     """Probe scores on [text, mean text of previous k (or all) papers, has_context]."""
+    if test_year_min is None:
+        test_year_min = cfg.VAL_YEAR_MAX + 1
     rows, targets, years = [], [], []
     for window in windows:
         tags = [list(paper.get("evidence_tags") or []) for paper in window]
@@ -42,7 +46,7 @@ def _untrained_context_scores(windows, labels: np.ndarray, k: int | None) -> np.
     y = torch.tensor(targets)
     year = torch.tensor(years)
     train = year <= cfg.TRAIN_YEAR_MAX
-    test = year > cfg.VAL_YEAR_MAX
+    test = year >= test_year_min
     if not np.array_equal(y[test].numpy(), labels):
         raise RuntimeError("untrained context rows do not align with probe test positions")
     direction = fit_direction_v2(x[train], y[train])

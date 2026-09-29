@@ -28,6 +28,8 @@ v2 is not fruitful under its rule. Attention did not predict the next paper bett
 
 A post hoc check asked whether that lift only reflects seeing earlier papers. Record: `results/probe_v2_context_check.json`. Attention scored 0.634, the mean mixer 0.586, and an untrained probe on the mean text of all earlier papers 0.563. Attention exceeded the mean mixer by 0.048, with an interval of 0.025 to 0.069. The check was added after the decision and reuses the same test years, so it is exploratory.
 
+That comparison was then tested once on 2026 papers, under a rule committed before they were fetched. Record: `results/probe_v2_confirm_2026.json`. The fetch added 80 abstracts and 206 test positions, 108 of them with prior genetic evidence. The year is the publication year. First online dates run from 2024-10-14 to 2026-08-05, and the PMIDs are in `results/confirm_2026_pmids.json`. No model was retrained. Attention again exceeded the mean mixer, by 0.044, but the interval ran from −0.007 to 0.098. It was not confirmed. On the same papers, an untrained probe on the mean text of earlier papers scored 0.671, above attention at 0.601. v2 is closed.
+
 The first v2 run is kept in `results/probe_v2_run1_year_bug.json` and is not used. Year embeddings after 2018 were never trained, so every test paper carried a random vector. v1 has the same fault. The v1 probe also starts from a random point. On the same frozen vectors its AUROC ranged from 0.485 to 0.567 across ten starts. The v1 lift of 0.011 is inside that range.
 
 ## Corpus and split
@@ -53,7 +55,10 @@ python -m src.probe
 python -m src.model.train_v2
 python -m src.probe.v2
 python -m src.probe.context_check_v2
+python -m src.probe.confirm_2026
 ```
+
+`confirm_2026` fetches from Europe PMC once and caches the papers in `outputs/v2/confirm_2026/`. The 2026 fetch recorded above ran on 2026-09-29.
 
 The numbers above used PyTorch 2.14.0 on Apple MPS. Abstracts, embeddings, and the checkpoint stay in `data/` and `checkpoints/`, which are gitignored. `python -m src.probe` writes `outputs/probe_report.json`.
 
@@ -68,7 +73,7 @@ The numbers above used PyTorch 2.14.0 on Apple MPS. Abstracts, embeddings, and t
 | `src/probe/probes.py` | Held-out probe and ablation |
 | `results/probe.json` | The v1 run recorded above |
 | `src/model/*_v2.py`, `src/probe/*v2.py` | Transformer v2, mixers, probe, decision rule |
-| `results/probe_v2*.json` | v2 decision, the discarded first run, the post hoc check |
+| `results/probe_v2*.json` | v2 decision, the discarded first run, the post hoc check, the 2026 confirmation |
 | `team/` | Task board and teammate notes |
 
 ## Cite

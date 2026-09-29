@@ -42,6 +42,14 @@ The outcomes disagree. The same patient-sample papers scored lower on field-norm
 
 This is an association, not an effect of the design. Patient studies report facts about patients, which clinical articles cite as background, so a clinical citation partly measures the topic rather than the quality of the work. It does not show approval-level translation, and it does not reach beyond RAS/MAPK.
 
+## What the approvals were built on
+
+Two approvals were traced back through their citations: vemurafenib, whose approval trial was in 2011, and sotorasib, in 2021. The lineage is the papers each approval trial cites, and the papers those cite. The same model-system rules were applied to it, then compared with the field in the same years. The method and the milestone papers were fixed before the run. Record: `results/case_histories.json`.
+
+The preclinical work under both approvals used fewer patient-sample studies than the field did. The share was 0.38 against 0.52 for vemurafenib and 0.41 against 0.54 for sotorasib; combined, the difference is −0.14 (−0.18 to −0.11). It used more cell-line work: 0.36 against 0.21 for vemurafenib. The milestones were cell or animal work: the BRAF mutation screen, the selective tool compounds, and the preclinical candidates. Taken with the result above, clinical articles cite patient-sample studies most, while these two approvals rest more on cell work.
+
+Two cases set no rule. The corpus ends in 2015, which leaves sotorasib's 2016–2019 preclinical papers out of its comparison. The sotorasib gap disappears when the lineage is limited to RAS/MAPK papers. The model-system labels are coarse.
+
 ## Result-record extraction spike
 
 After v2 closed, a spike asked whether the 27 result records of the evidence map can be rebuilt blind from the claim and the abstract. A second question was whether a fixed rule then names the map's disagreement type for each claim. The bars were committed before extraction. Spec: `docs/specs/2026-09-29-result-records-spike.md`. Record: `results/result_records_spike.json`.

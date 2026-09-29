@@ -50,3 +50,16 @@ the sensitivity model with 50 journal indicators; descriptive rates for
 clinical papers; the RPCB reference check for outcome A.
 Budget: public APIs only (Europe PMC, iCite, OpenAlex, OSF); no model API key.
 Record: results/meta_analysis.json
+
+Implementation notes, added 2026-09-29 before any feature was joined to an outcome:
+- `src/meta/analysis.py` fits the logit by IRLS with a 1e-6 ridge. It was
+  tested on synthetic data only.
+- Missing reference counts are set to 0, with a `refs_missing` indicator.
+- In the AUROC ladder, year fixed effects are fit on development and set to
+  0 when scoring confirmation, because the year ranges do not overlap.
+- Secondary models are fit on the full 2000-2015 period: NB2 by maximum
+  likelihood for n_clin_8y (200 bootstrap resamples, because the NB fit is
+  slow), linear models for log RCR and the disruption score, and the logit
+  with the 50 most frequent journals as indicators. Estimates and CIs only.
+- The permutation control shuffles F1-F3 jointly, keeping each paper's
+  three features together, within publication year.

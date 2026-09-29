@@ -1,0 +1,27 @@
+{
+  "status": "post hoc, added after the v2 run-2 decision; not part of the pre-registered rule",
+  "n_test": 1158,
+  "n_test_positive": 532,
+  "auroc": {
+    "frozen_current_text": 0.5155255350837157,
+    "untrained_context_prev_top_k_mean_text": 0.5196122294554277,
+    "untrained_context_all_earlier_mean_text": 0.5633632804054866,
+    "mean_mixer_seed_avg": 0.5861493790386509,
+    "attention_seed_avg": 0.634117742439165
+  },
+  "attention_minus_mean": {
+    "point": 0.047968363400514025,
+    "lo": 0.024994797556149886,
+    "hi": 0.0686314920831436
+  },
+  "attention_minus_untrained_prev_top_k": {
+    "point": 0.11450551298373723,
+    "lo": 0.07214929535737923,
+    "hi": 0.15791195142234257
+  },
+  "attention_minus_untrained_all_earlier": {
+    "point": 0.07075446203367841,
+    "lo": 0.029780783081442053,
+    "hi": 0.1130513878692543
+  }
+}

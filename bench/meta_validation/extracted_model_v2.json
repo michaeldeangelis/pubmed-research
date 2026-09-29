@@ -1,0 +1,2451 @@
+[
+ {
+  "pmid": "12017282",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal"
+  ]
+ },
+ {
+  "pmid": "12198537",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "14996715",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "15199148",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "15208655",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "15340260",
+  "model_system": "human_samples",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "15598350",
+  "model_system": "other",
+  "human_genetics": 0,
+  "systems_present": []
+ },
+ {
+  "pmid": "15694309",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal"
+  ]
+ },
+ {
+  "pmid": "15897885",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "16000550",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "16060660",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "16372351",
+  "model_system": "human_samples",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "16598499",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "16619251",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "16691193",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "16880792",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "16891355",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "17011185",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "17030180",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "17128271",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "17143282",
+  "model_system": "cell_only",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "17199737",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "17299132",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal"
+  ]
+ },
+ {
+  "pmid": "17306351",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "17431628",
+  "model_system": "other",
+  "human_genetics": 0,
+  "systems_present": []
+ },
+ {
+  "pmid": "17453004",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "17901071",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "18025929",
+  "model_system": "other",
+  "human_genetics": 1,
+  "systems_present": []
+ },
+ {
+  "pmid": "18089783",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "18096441",
+  "model_system": "human_samples",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "18339877",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "18355852",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "18507860",
+  "model_system": "animal",
+  "human_genetics": 1,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "18519684",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "18554553",
+  "model_system": "other",
+  "human_genetics": 1,
+  "systems_present": []
+ },
+ {
+  "pmid": "18628967",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "18753707",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "18776048",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "18927287",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal"
+  ]
+ },
+ {
+  "pmid": "18936790",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "18974108",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "18980800",
+  "model_system": "human_samples",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "19010660",
+  "model_system": "other",
+  "human_genetics": 0,
+  "systems_present": []
+ },
+ {
+  "pmid": "19033568",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "19151559",
+  "model_system": "other",
+  "human_genetics": 0,
+  "systems_present": []
+ },
+ {
+  "pmid": "19169486",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "19179424",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "19264228",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "19398955",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "19473026",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "19474002",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "19671674",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "19671679",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "19788533",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal"
+  ]
+ },
+ {
+  "pmid": "19825961",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "19912113",
+  "model_system": "other",
+  "human_genetics": 0,
+  "systems_present": []
+ },
+ {
+  "pmid": "20007841",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "20009909",
+  "model_system": "other",
+  "human_genetics": 0,
+  "systems_present": []
+ },
+ {
+  "pmid": "20028768",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "20044755",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "20080688",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal"
+  ]
+ },
+ {
+  "pmid": "20145159",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "20562921",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "20565817",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "20571495",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "20672370",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "20673328",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "20813562",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "20824703",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "20837233",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "20848094",
+  "model_system": "cell_only",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "20923857",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "20972333",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "20975376",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "21037799",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "21079152",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "21084825",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "21134562",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "21169357",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "21179501",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal"
+  ]
+ },
+ {
+  "pmid": "21234763",
+  "model_system": "human_samples",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "21266788",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "21289082",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "21294243",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "21423156",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "21431280",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "21495173",
+  "model_system": "human_samples",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "21521301",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "21592614",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "21610142",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "21636552",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "21638088",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "animal"
+  ]
+ },
+ {
+  "pmid": "21651651",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "21652203",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "21716161",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "21899214",
+  "model_system": "other",
+  "human_genetics": 0,
+  "systems_present": []
+ },
+ {
+  "pmid": "21924824",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "21926912",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "21947301",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "22070922",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "22090271",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "22136270",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "22139083",
+  "model_system": "cell_only",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "22150560",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "22172720",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "22189819",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "22223807",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "22228631",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "22245671",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "22262331",
+  "model_system": "other",
+  "human_genetics": 0,
+  "systems_present": []
+ },
+ {
+  "pmid": "22399013",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "22409860",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "22448886",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "22531170",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "22537109",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "22558339",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "22561347",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "22587896",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "22613863",
+  "model_system": "other",
+  "human_genetics": 0,
+  "systems_present": []
+ },
+ {
+  "pmid": "22614973",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "22617000",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "22646766",
+  "model_system": "other",
+  "human_genetics": 0,
+  "systems_present": []
+ },
+ {
+  "pmid": "22723336",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "22821383",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "22826436",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "22868929",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "22887466",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "22887574",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "22892241",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "22899400",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "22954004",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "22962324",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "22965799",
+  "model_system": "cell_only",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "22984796",
+  "model_system": "other",
+  "human_genetics": 0,
+  "systems_present": []
+ },
+ {
+  "pmid": "22991414",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "23025996",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "23030493",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "23090042",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "23098991",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "23132792",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "23157823",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "23182985",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "23199169",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "23219067",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "23237571",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "23280631",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "23292961",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "23307237",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "23321925",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "23326492",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "23334329",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "23343222",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "23373092",
+  "model_system": "other",
+  "human_genetics": 0,
+  "systems_present": []
+ },
+ {
+  "pmid": "23435375",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "23475955",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "23509688",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "23515407",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "23538180",
+  "model_system": "other",
+  "human_genetics": 0,
+  "systems_present": []
+ },
+ {
+  "pmid": "23547069",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "23590467",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal"
+  ]
+ },
+ {
+  "pmid": "23619365",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "23665275",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "23707634",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "23752636",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "23764003",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "23792190",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "23805382",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "23813656",
+  "model_system": "human_samples",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "23814056",
+  "model_system": "other",
+  "human_genetics": 0,
+  "systems_present": []
+ },
+ {
+  "pmid": "23817572",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "23860494",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "23887057",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "23890105",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "23918324",
+  "model_system": "human_samples",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "23989613",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal"
+  ]
+ },
+ {
+  "pmid": "23992303",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24039098",
+  "model_system": "human_samples",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24050852",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24061513",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24192487",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24213573",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal"
+  ]
+ },
+ {
+  "pmid": "24220097",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24221342",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24224811",
+  "model_system": "cell_only",
+  "human_genetics": 1,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "24229709",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal"
+  ]
+ },
+ {
+  "pmid": "24267957",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24382626",
+  "model_system": "other",
+  "human_genetics": 0,
+  "systems_present": []
+ },
+ {
+  "pmid": "24402942",
+  "model_system": "other",
+  "human_genetics": 0,
+  "systems_present": []
+ },
+ {
+  "pmid": "24429876",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24448821",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "24469055",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "24471909",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24504548",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24516257",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24586741",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24602192",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24642668",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24664475",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24676216",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24703243",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "24706189",
+  "model_system": "human_samples",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24725411",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "24733413",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "24737664",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24771647",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24777450",
+  "model_system": "animal",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples",
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "24812410",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "24848561",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "24865425",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "24866436",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24875464",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "24875853",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24908142",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24909177",
+  "model_system": "human_samples",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24942556",
+  "model_system": "human_samples",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24967941",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24993163",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "24997557",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "24998492",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25018048",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "25029414",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "25031736",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25034704",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25039399",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25050737",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "25063807",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "25109331",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "25117978",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal"
+  ]
+ },
+ {
+  "pmid": "25119929",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25139339",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25205360",
+  "model_system": "other",
+  "human_genetics": 0,
+  "systems_present": []
+ },
+ {
+  "pmid": "25219500",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "25222473",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25229773",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25250477",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25253779",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "25257244",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25274248",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25280751",
+  "model_system": "human_samples",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25316678",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "25324142",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "25337238",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25375092",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "25395067",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25397907",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "25431423",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "25444907",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "animal"
+  ]
+ },
+ {
+  "pmid": "25452273",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "25492085",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25502816",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25537974",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25545608",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25546673",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25569434",
+  "model_system": "other",
+  "human_genetics": 1,
+  "systems_present": []
+ },
+ {
+  "pmid": "25595904",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "25624485",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "25641840",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "25680569",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25684228",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "25686115",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25724524",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25753158",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "25774734",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25780010",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25784457",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "25784655",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25803323",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25806780",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25808193",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25882744",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25890285",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25920435",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25926090",
+  "model_system": "other",
+  "human_genetics": 0,
+  "systems_present": []
+ },
+ {
+  "pmid": "25933211",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "25948589",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "25994739",
+  "model_system": "human_samples",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "26009992",
+  "model_system": "human_samples",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "26019172",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "26023796",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "26027934",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "26027995",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "26028667",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "26125673",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "26143373",
+  "model_system": "other",
+  "human_genetics": 0,
+  "systems_present": []
+ },
+ {
+  "pmid": "26189409",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "26210887",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "26214416",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "26258321",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "26299074",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "26301689",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "26316738",
+  "model_system": "cell_only",
+  "human_genetics": 1,
+  "systems_present": [
+   "human_samples",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "26323931",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "26381028",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "26472072",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal"
+  ]
+ },
+ {
+  "pmid": "26481107",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "26484710",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "26522388",
+  "model_system": "cell_only",
+  "human_genetics": 0,
+  "systems_present": [
+   "cell"
+  ]
+ },
+ {
+  "pmid": "26542681",
+  "model_system": "animal",
+  "human_genetics": 0,
+  "systems_present": [
+   "animal",
+   "cell"
+  ]
+ },
+ {
+  "pmid": "26670561",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ },
+ {
+  "pmid": "26823846",
+  "model_system": "human_samples",
+  "human_genetics": 0,
+  "systems_present": [
+   "human_samples"
+  ]
+ }
+]

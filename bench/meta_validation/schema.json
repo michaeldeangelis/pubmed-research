@@ -1,0 +1,24 @@
+{
+  "task": "For each paper (title, abstract, MeSH headings), record which research systems the reported work used. Judge from what the paper did, not from what it cites or proposes. Return a JSON list with one object per paper.",
+  "output_item": {
+    "pmid": "string, copied from the packet",
+    "model_system": "one of: human_samples, animal, cell_only, other",
+    "human_genetics": "0 or 1",
+    "systems_present": "list, any subset of: human_samples, animal, cell"
+  },
+  "definitions": {
+    "systems_present": {
+      "human_samples": "The work analyzed material or data taken from human patients or people: tumor tissue, biopsies, blood, surgical specimens, mutation testing of patient samples, or patient cohorts. Human cell lines do not count here.",
+      "animal": "The work used living animals: mice, rats, xenografts or transplanted tumors in animals, transgenic or knockout animals, zebrafish, flies, worms, or other whole organisms. Cells taken from an animal species and grown in a dish do not count here.",
+      "cell": "The work used cell lines or cells grown in culture (including organoids and transfected cells), human or animal."
+    },
+    "model_system": {
+      "rule": "Pick the first that applies, in this order.",
+      "human_samples": "Human samples present, and no animal and no cell work.",
+      "animal": "Animal work present, with or without cells or human samples.",
+      "cell_only": "Cell work present and no animal work (human samples may also be present).",
+      "other": "None of the above, for example purely computational, structural, biochemical, or cell-free work."
+    },
+    "human_genetics": "1 if the paper reports or relies on inherited human genetic evidence: germline mutations, inherited predisposition or susceptibility, polymorphisms or SNPs, genome-wide association, familial or pedigree studies. Somatic tumor mutations alone are 0."
+  }
+}

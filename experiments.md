@@ -565,3 +565,39 @@ Amendment v4-2, 2026-09-30, before any outcome was joined:
 Confirmation of caliper 0.6, before any outcome was joined: on the fresh
 sample, 43 of 50 pairs were judged same topic (86%), above the 70% bar
 (bench/meta_validation/match_judge2_judgments.json). The 0.6 verdict stands.
+
+### Result, 2026-09-30 (one run at commit 7157292)
+
+Primary: caliper 0.6, 677 pairs, confirmed 86% same topic, none dropped
+for missing outcomes. The matched OR is b/c with an exact 95% CI.
+
+| Outcome | Matched OR [CI] (b vs c) | Crude OR | Attenuation | Verdict |
+|---|---|---|---|---|
+| clin_cited_8y | 1.41 [1.11, 1.79] (169 vs 120) | 2.56 | 0.64 | persists |
+| trial_bg_8y | 0.79 [0.32, 1.86] (11 vs 14) | 2.01 | n/a | attenuated to null |
+| trial_bg_8y_drug | 0.85 [0.34, 2.05] (11 vs 13) | 1.69 | n/a | attenuated to null |
+| placebo (parity) | 1.03 [0.83, 1.29] | 0.98 | | placebo ok |
+
+Exploratory:
+- Refs-balanced pairs (360): clin_cited_8y 1.85 [1.31, 2.63]; trial_bg_8y
+  1.40 [0.38, 5.59] (7 vs 5).
+- Per pathway, discordant b vs c. clin_cited_8y: RAS 47 vs 30, EGFR 108 vs
+  82, PI3K 14 vs 8. trial_bg_8y: RAS 1 vs 8, EGFR 10 vs 4, PI3K 0 vs 2.
+- Weak-matching sensitivity (caliper 0.3, 4,839 pairs, 42% same topic):
+  clin_cited_8y 1.78 [1.63, 1.95]; trial_bg_8y 1.42 [1.01, 2.00]; drug
+  1.26 [0.88, 1.82]; placebo 1.03 [0.95, 1.12].
+
+What this does and does not show. Comparing papers on the same gene,
+alteration and disease, patient-sample papers are still more likely than
+cell-line-only papers to be cited by a clinical article within 8 years
+(OR 1.41). About two-thirds of the crude log-OR is explained by topic
+matching, and the rest remains. Balancing reference counts leaves it at
+1.85. So design carries part of the clinical-citation association, and
+topic carries most of it. For trial background citation the tight
+matching has only 25 discordant pairs; the CI (0.32 to 1.86) cannot
+separate a real effect from none. "Attenuated to null" here means
+underpowered, not shown to be absent. The looser matching gives 1.42, but
+fewer than half of those pairs share a topic. Within RAS, trials cited the
+cell-line paper of a matched pair more often (8 against 1), consistent with
+the RAS drug case histories. Not shown: causation, and the balance of
+unmeasured design traits within pairs, such as journal and lab.

@@ -86,9 +86,13 @@ def _pair_counts(pairs: list[dict], outcomes: dict[str, dict], key: str) -> tupl
     return b, c
 
 
+PRIMARY_MIN_SIMILARITY = 0.6  # amendment v4-2
+SENSITIVITY_MIN_SIMILARITY = 0.3
+
+
 def run(match_dir: Path = MATCH_DIR, pathway_dirs: dict[str, Path] = analysis_trials.PATHWAY_DIRS,
-        trials_dir: Path = analysis_trials.TRIALS_DIR) -> dict:
-    pairs = analysis._read_jsonl(match_dir / "pairs.jsonl")
+        trials_dir: Path = analysis_trials.TRIALS_DIR, min_similarity: float = 0.0) -> dict:
+    pairs = [p for p in analysis._read_jsonl(match_dir / "pairs.jsonl") if p["similarity"] >= min_similarity]
     for p in pairs:
         p["treated_pmid"], p["control_pmid"] = str(p["treated_pmid"]), str(p["control_pmid"])
     outcomes = _load_outcomes(pathway_dirs, trials_dir)
@@ -127,11 +131,15 @@ def run(match_dir: Path = MATCH_DIR, pathway_dirs: dict[str, Path] = analysis_tr
 
 
 def main() -> None:
-    report = run()
+    report = {"primary_min_similarity": PRIMARY_MIN_SIMILARITY,
+              "primary": run(min_similarity=PRIMARY_MIN_SIMILARITY),
+              "sensitivity_weak_matching": run(min_similarity=SENSITIVITY_MIN_SIMILARITY)}
     RESULT_PATH.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"n_pairs": report["n_pairs"], **{k: {"verdict": v["verdict"], "matched": v["matched"],
-                                                         "crude": v["crude_all"]["or"]}
-                                                     for k, v in report["outcomes"].items()}}, indent=2))
+    for label in ("primary", "sensitivity_weak_matching"):
+        r = report[label]
+        print(label, json.dumps({"n_pairs": r["n_pairs"], **{k: {"verdict": v["verdict"], "matched": v["matched"],
+                                                                 "crude": v["crude_all"]["or"]}
+                                                             for k, v in r["outcomes"].items()}}, indent=1))
 
 
 if __name__ == "__main__":

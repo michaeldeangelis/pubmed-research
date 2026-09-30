@@ -24,8 +24,21 @@ DROP = ("human_genetics", "multi_system")
 TERM = "model_system=human_samples"
 
 
+def _icite_reference_counts(rows: list[dict], meta_dir: Path) -> None:
+    """Use the iCite reference count for every row (amendment, 2026-09-30).
+
+    OpenAlex credits ran out partway through EGFR 2015, so its counts mix two
+    sources inside one year. iCite covers every paper in both pathways.
+    """
+    icite = {str(r["pmid"]): r.get("n_refs_icite") for r in analysis._read_jsonl(meta_dir / "impact.jsonl")}
+    for row in rows:
+        value = icite.get(row["pmid"])
+        row["n_refs"] = int(value) if value else None
+
+
 def run_pathway(name: str, meta_dir: Path) -> dict:
     rows = analysis.load_rows(meta_dir)
+    _icite_reference_counts(rows, meta_dir)
     levels = sorted({r["gene_group"] for r in rows} - {GENE_REFERENCE[name]})
     saved = analysis.GENE_LEVELS
     analysis.GENE_LEVELS = tuple(levels)

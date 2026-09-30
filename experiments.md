@@ -315,3 +315,22 @@ Before any outcome was joined, 2026-09-30:
 - Reference count. The OpenAlex daily credit ran out during the EGFR run,
   so 964 eligible EGFR papers use the iCite count, as the amended fallback
   rule allows. It is recorded in each pathway's manifest_impact.json.
+
+Amendment v2-1, 2026-09-30, after a code review and before any outcome was
+joined:
+- Reference count. The 964 EGFR papers without an OpenAlex count are
+  concentrated in 2015 (930 of 3,439 eligible), so the covariate would mix
+  two sources within one year. For both pathways the covariate is now the
+  iCite reference count for every paper, with missing if absent. v1 is
+  unchanged.
+- Eligibility fixes. Case variants (EGFr, EgfR, mTor, mTorC1, mTORc1, pTEN)
+  now count as on-topic. PI3K papers whose only match is AKT and that are
+  plant K+ channel papers are excluded as off_topic_plant. EGFR papers whose
+  only match is EGFR used as estimated glomerular filtration rate are
+  excluded as off_topic_kidney. The gate sample and its score are not
+  regenerated; model_system rules are unchanged.
+- Known limitation, kept for comparability with v1: the ingest markup
+  stripper deletes text between "<" and ">", which removes about 280
+  on-topic papers as off_topic. The PI3K on-topic rule accepts any AKT
+  isoform, mTORC2 and p110alpha, which is wider than the query list; this is
+  documented in src/meta/pathways.py.

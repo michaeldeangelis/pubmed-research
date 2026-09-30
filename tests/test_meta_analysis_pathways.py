@@ -36,7 +36,7 @@ def _write(meta, n, human_log_or, genes, seed):
                                 "gene_group": r["gene_group"], "n_authors": r["n_authors"]}) + "\n")
     with (meta / "impact.jsonl").open("w") as f:
         for r in rows:
-            f.write(json.dumps({"pmid": r["pmid"], "rcr": 1.0, "cd": 0.0, "n_refs_openalex": 30}) + "\n")
+            f.write(json.dumps({"pmid": r["pmid"], "rcr": 1.0, "cd": 0.0, "n_refs_openalex": 30, "n_refs_icite": 28}) + "\n")
 
 
 def test_confirms_where_effect_exists_and_restores_gene_levels(tmp_path):

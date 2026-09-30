@@ -103,7 +103,7 @@ def design(rows: list[dict], years: list[int], drop: tuple[str, ...] = (), with_
     for year in years[1:]:
         names.append(f"year={year}")
         cols.append(np.array([r["year"] == year for r in rows], float))
-    for level in GENE_LEVELS:
+    for level in GENE_LEVELS:  # module-level so a pathway run can rebind it
         names.append(f"gene={level}")
         cols.append(np.array([r["gene_group"] == level for r in rows], float))
     names.append("log_authors")

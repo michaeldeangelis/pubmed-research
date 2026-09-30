@@ -42,6 +42,9 @@ Everything fetched is cached under ``data/meta/cache/`` (``icite/``,
 ``openalex/``, ``sciscinet/``), so reruns are cheap and interrupted runs
 resume.
 
+``--pathway {egfr,pi3k}`` (metascience v2) runs on
+``data/meta/pathways/<name>/`` instead; see ``main_pathway``.
+
 Blinding: this module never reads ``outcome_b.jsonl`` or
 ``features.jsonl`` and relates nothing to anything; the manifest holds only
 marginal counts of this table.
@@ -203,6 +206,31 @@ class JsonlCache:
                 for rec in recs:
                     self.data[str(rec[self.key])] = rec
                     fh.write(json.dumps(rec) + "\n")
+
+
+class LayeredJsonlCache(JsonlCache):
+    """A JsonlCache that also answers from read-only ``base`` caches.
+
+    Used by the v2 pathways to reuse the v1 citer-reference cache without
+    ever appending to it; new records go to ``path`` only.
+    """
+
+    def __init__(self, path: Path, base: Iterable[JsonlCache] = (), key: str = "pmid"):
+        super().__init__(path, key=key)
+        self.base = list(base)
+
+    def __contains__(self, k) -> bool:
+        return super().__contains__(k) or any(k in b for b in self.base)
+
+    def get(self, k):
+        rec = super().get(k)
+        if rec is not None:
+            return rec
+        for b in self.base:
+            rec = b.get(k)
+            if rec is not None:
+                return rec
+        return None
 
 
 def http_get(url: str, params: dict, tries: int = 4, sleep: float = 0.15,
@@ -545,14 +573,36 @@ def build_rows(papers, icite, icite_cd, focal, oa_cd, ssn) -> list[dict]:
     return rows
 
 
+def pathway_openalex_scope(papers: list[dict], icite: dict[str, dict], pathway: str) -> list[str]:
+    """PMIDs whose OpenAlex reference count the v2 analysis needs: iCite
+    preclinical research articles that pass the pathway's eligibility rules,
+    in PMID order. (Eligibility only; no outcome is read.)"""
+    from src.meta import features
+
+    out = []
+    for p in papers:
+        rec = icite.get(str(p["pmid"])) or {}
+        if not features.truthy(rec.get("is_research_article")) or features.truthy(rec.get("is_clinical")):
+            continue
+        if features.pathway_exclusion(p, pathway) is None:
+            out.append(str(p["pmid"]))
+    return sorted(out, key=int)
+
+
 def main(argv: list[str] | None = None) -> dict:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    from src.meta import pathways as _pathways
+
+    ap.add_argument("--pathway", choices=_pathways.NAMES, default=None,
+                    help="v2 pathway corpus under data/meta/pathways/<name>/ (default: v1)")
     ap.add_argument("--sciscinet", action="store_true",
                     help="also stream SciSciNet v1 (~18 GB) for the auxiliary sciscinet_d column")
     ap.add_argument("--no-openalex", action="store_true")
     ap.add_argument("--validation-n", type=int, default=VALIDATION_MAX)
     ap.add_argument("--workers", type=int, default=4)
     args = ap.parse_args(argv)
+    if args.pathway is not None:
+        return main_pathway(args)
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
     papers = read_jsonl(PAPERS_PATH)
@@ -651,6 +701,106 @@ def main(argv: list[str] | None = None) -> dict:
     }
     MANIFEST_PATH.write_text(json.dumps(manifest, indent=2))
     logger.info("wrote %s (%d rows, cd computed for %d)", OUT_PATH, len(rows), len(cds))
+    return manifest
+
+
+def main_pathway(args) -> dict:
+    """v2 pathway run: RCR, icite_nok disruption for every paper, and
+    n_refs_openalex for the eligible preclinical research articles only.
+
+    Caches: citer reference lists go to ``data/meta/pathways/_cache/icite/``
+    (shared by the pathways), with the v1 cache consulted read-only first;
+    OpenAlex focal lookups go to ``data/meta/pathways/_cache/openalex/``. No
+    OpenAlex citer paging (validation subsample) is run. If the anonymous
+    OpenAlex budget runs out, the remaining papers keep n_refs_openalex null
+    (the analysis then uses n_refs_icite) and a rerun resumes from the cache.
+    """
+    from src.meta import pathways
+
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+    base = pathways.pathway_dir(args.pathway)
+    shared = pathways.PATHWAYS_DIR / "_cache"
+    papers = read_jsonl(base / "papers.jsonl")
+    icite = {str(r["pmid"]): r for r in read_jsonl(base / "icite.jsonl")}
+    logger.info("[%s] papers %d, iCite records %d", args.pathway, len(papers), len(icite))
+
+    citers_all: list[str] = []
+    for p in papers:
+        rec = icite.get(str(p["pmid"]))
+        if rec and rec.get("references"):
+            c, _ = window_citers(rec.get("citedByPmidsByYear"), p.get("year") or rec.get("year"))
+            citers_all.extend(c)
+    v1_cache = CACHE_DIR / "icite" / "citer_refs.jsonl"
+    bases = [JsonlCache(v1_cache)] if v1_cache.exists() else []
+    cache = LayeredJsonlCache(shared / "icite" / "citer_refs.jsonl", base=bases)
+    n_from_v1 = sum(1 for c in set(citers_all) if bases and c in bases[0])
+    fetch_citer_refs(sorted(set(citers_all)), cache, workers=args.workers)
+    icite_cd = compute_icite_cd(papers, icite, cache)
+    del bases, cache
+
+    scope = pathway_openalex_scope(papers, icite, args.pathway)
+    focal = None
+    oa_info: dict = {"skipped": True}
+    if not args.no_openalex:
+        oa = OpenAlex(shared / "openalex")
+        try:
+            focal = oa.focal(scope)
+            oa_info = {"stopped_early": None}
+        except Budget as exc:
+            logger.warning("OpenAlex budget exhausted during focal lookup: %s", exc)
+            focal = JsonlCache(shared / "openalex" / "focal_by_pmid.jsonl")
+            oa_info = {"stopped_early": str(exc)}
+        oa_info.update({"requests_this_run": oa.requests, "credits_remaining": oa.remaining})
+    elif (shared / "openalex" / "focal_by_pmid.jsonl").exists():
+        focal = JsonlCache(shared / "openalex" / "focal_by_pmid.jsonl")
+    if focal is not None:
+        # only the scoped PMIDs get an OpenAlex count, even if the shared
+        # cache holds others (e.g. from the other pathway).
+        focal = {p: focal.get(p) for p in scope if focal.get(p) is not None}
+
+    rows = build_rows(papers, icite, icite_cd, focal, {}, None)
+    write_jsonl(base / "impact.jsonl", rows)
+
+    research = {pm for pm, r in icite.items() if r.get("is_research_article")}
+    cds = [r["cd"] for r in rows if r["cd"] is not None]
+    by = {r["pmid"]: r for r in rows}
+    scope_rows = [by[p] for p in scope if p in by]
+    n_oa = sum(1 for r in scope_rows if r["n_refs_openalex"])
+    n_ic_only = sum(1 for r in scope_rows if not r["n_refs_openalex"] and r["n_refs_icite"])
+    manifest = {
+        "run": _dt.datetime.now().isoformat(timespec="seconds"),
+        "pathway": args.pathway,
+        "n_rows": len(rows),
+        "n_research_articles": len(research),
+        "rcr_non_null": sum(1 for r in rows if r["rcr"] is not None),
+        "cd": {
+            "source": "icite_nok",
+            "definition": "(n_i - n_j) / (n_i + n_j) over PubMed citers dated Y..Y+5 (Y = papers.jsonl year); n_j = citers citing >=1 focal reference; references and citer reference lists from iCite (NIH Open Citation Collection)",
+            "n_computed": len(cds),
+            "n_computed_research_articles": sum(1 for r in rows if r["cd"] is not None and r["pmid"] in research),
+            "n_computed_eligible_preclinical": sum(1 for r in scope_rows if r["cd"] is not None),
+            "null_no_icite_record": sum(1 for p in papers if str(p["pmid"]) not in icite),
+            "null_zero_references": sum(1 for v in icite_cd.values() if v.get("n_refs_icite") == 0),
+            "null_no_5y_citers": sum(1 for v in icite_cd.values() if v.get("n_refs_icite") and v.get("n_citers_5y") == 0),
+            "n_unique_citers": len(set(citers_all)),
+            "n_unique_citers_from_v1_cache": n_from_v1,
+            "citer_links_without_icite_refs": sum(v.get("n_citers_unfetched") or 0 for v in icite_cd.values()),
+            "distribution": _summary(cds),
+        },
+        "reference_count": {
+            "rule": "analysis uses n_refs_openalex when > 0, else n_refs_icite when > 0, else missing (src.meta.analysis._reference_count)",
+            "openalex_scope": "iCite preclinical research articles passing the pathway eligibility rules (no_mesh/off_topic/non_primary); other rows keep n_refs_openalex null",
+            "n_scope": len(scope),
+            "n_refs_openalex_non_null": sum(1 for r in rows if r["n_refs_openalex"] is not None),
+            "scope_n_refs_openalex_positive": n_oa,
+            "scope_fallback_n_refs_icite": n_ic_only,
+            "scope_missing": len(scope_rows) - n_oa - n_ic_only,
+        },
+        "openalex": {**oa_info, "citer_validation": "not run for the v2 pathways"},
+        "blinding": "reads papers.jsonl and icite.jsonl of the pathway only; no outcome_b/features; no associations",
+    }
+    (base / "manifest_impact.json").write_text(json.dumps(manifest, indent=2))
+    logger.info("wrote %s (%d rows, cd computed for %d)", base / "impact.jsonl", len(rows), len(cds))
     return manifest
 
 

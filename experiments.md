@@ -266,3 +266,116 @@ Set beside metascience v1, the designs that clinical articles cite most
 (patient samples) differ from the designs these approvals were built on.
 Two cases establish no general rule. The model_system labels are coarse:
 Davies 2002 comes out cell_only although it screened tumors.
+
+## 2026-09-30 metascience v2: other pathways   (rules fixed before the run)
+
+Question: Does the v1 finding, that patient-sample studies are more likely
+than cell-line-only studies to be cited by a clinical article within 8
+years, hold in pathways not used to form it?
+Decision it drives: confirmed in both pathways means the finding
+generalizes beyond RAS/MAPK and is worth a translation-outcome study. Not
+confirmed means it is field-specific or topic-driven, and is recorded as
+such.
+Pathways, each a separate corpus, 2000-2015, Europe PMC SRC:MED:
+- EGFR/ERBB: TITLE_ABS terms EGFR, ERBB2, HER2, ERBB3, erlotinib,
+  gefitinib, osimertinib, afatinib, lapatinib, cetuximab, panitumumab,
+  trastuzumab.
+- PI3K/AKT/mTOR: TITLE_ABS terms PIK3CA, PTEN, AKT1, MTOR, mTORC1,
+  everolimus, temsirolimus, alpelisib, idelalisib.
+Papers already in the v1 RAS/MAPK corpus are excluded from both. A paper in
+both new corpora is kept in each, and the overlap is reported.
+Held fixed from v1: iCite research articles, the clinical/preclinical
+split, the eligibility rules (MeSH present, primary publication type, and
+a case-sensitive mention of a pathway gene or drug from that pathway's
+list), the unchanged model_system rules, outcome B (clinical citation from
+publication year minus 1 through plus 8), the covariates (year FE, gene
+group with a pathway-specific list, log authors, the reference count as
+amended), and the logit with 1000-resample bootstrap CIs (seed 0).
+Measurement gate: 300 eligible preclinical papers, 150 per pathway (rng
+seed 2), blind Opus extraction with the same schema, kappa >= 0.60 for
+model_system. If it fails, the pathway results are reported as unreliable.
+Primary test, per pathway, full 2000-2015 period with no split: confirmed
+if the OR for model_system=human_samples against cell_only is > 1 with a
+95% CI excluding 1, AND the placebo (PMID even) CI includes 1.
+Exploratory: model_system=animal and =other; the permutation control
+(1000, within year); log(RCR + 0.1); the disruption score; the journal
+sensitivity model.
+Kill: not confirmed in either pathway.
+Record: results/meta_pathways.json
+
+Before any outcome was joined, 2026-09-30:
+- Corpora. EGFR has 52,035 papers (2,772 RAS papers excluded) and 30,144
+  eligible preclinical. PI3K has 29,572 (1,514 excluded) and 21,046. The two
+  corpora share 1,314 eligible preclinical papers. Most of the 5,490 EGFR
+  off_topic exclusions are kidney "eGFR" papers, which a case-insensitive
+  search pulls in.
+- Measurement gate (results/meta_measurement_gate_pathways.json):
+  model_system kappa 0.843 (agreement 0.89), a pass. For reference only,
+  since neither is tested in v2: human_genetics 0.712, multi_system 0.525.
+- Reference count. The OpenAlex daily credit ran out during the EGFR run,
+  so 964 eligible EGFR papers use the iCite count, as the amended fallback
+  rule allows. It is recorded in each pathway's manifest_impact.json.
+
+Amendment v2-1, 2026-09-30, after a code review and before any outcome was
+joined:
+- Reference count. The 964 EGFR papers without an OpenAlex count are
+  concentrated in 2015 (930 of 3,439 eligible), so the covariate would mix
+  two sources within one year. For both pathways the covariate is now the
+  iCite reference count for every paper, with missing if absent. v1 is
+  unchanged.
+- Eligibility fixes. Case variants (EGFr, EgfR, mTor, mTorC1, mTORc1, pTEN)
+  now count as on-topic. PI3K papers whose only match is AKT and that are
+  plant K+ channel papers are excluded as off_topic_plant. EGFR papers whose
+  only match is EGFR used as estimated glomerular filtration rate are
+  excluded as off_topic_kidney. The gate sample and its score are not
+  regenerated; model_system rules are unchanged.
+- Known limitation, kept for comparability with v1: the ingest markup
+  stripper deletes text between "<" and ">", which removes about 280
+  on-topic papers as off_topic. The PI3K on-topic rule accepts any AKT
+  isoform, mTORC2 and p110alpha, which is wider than the query list; this is
+  documented in src/meta/pathways.py.
+- Applied (builder report): the case-variant fix made 115 EGFR and 58 PI3K
+  papers eligible; 57 PI3K papers were excluded as off_topic_plant and 15
+  EGFR preclinical papers as off_topic_kidney. The plant rule was split into
+  strong and weak signals, because MEDLINE tags ordinary mammalian Akt1
+  papers with "Arabidopsis Proteins". None of the 300 gate packets changed
+  eligibility.
+
+### Result, 2026-09-30 (one run at commit 8db3e16)
+
+Full 2000-2015 period per pathway. ORs are against cell_only, with
+1000-resample bootstrap 95% CIs. The permutation range is the central 95%
+of 1000 within-year shuffles.
+
+| Pathway | n | clin_cited_8y | human_samples OR [CI] | Permutation 95% | Placebo OR [CI] | Confirmed |
+|---|---|---|---|---|---|---|
+| EGFR/ERBB | 30,239 | 0.294 | 3.02 [2.84, 3.25] | [0.94, 1.06] | 1.00 [0.95, 1.04] | yes |
+| PI3K/AKT/mTOR | 21,046 | 0.284 | 2.22 [2.03, 2.44] | [0.91, 1.09] | 1.03 [0.97, 1.09] | yes |
+
+Verdict by the rule: confirmed in both pathways.
+
+Exploratory, estimate [95% CI]:
+- animal OR: EGFR 1.07 [0.98, 1.14]; PI3K 1.23 [1.14, 1.32]. In v1
+  RAS/MAPK it was 0.85 and 0.71, so the animal association changes sign
+  across fields and does not generalize.
+- other OR: EGFR 1.08 [0.94, 1.24]; PI3K 1.09 [0.93, 1.27].
+- n_clin_8y NB rate ratio, human_samples: EGFR 3.25 [2.82, 3.69]; PI3K
+  2.96 [2.54, 3.34].
+- log(RCR + 0.1), human_samples: EGFR -0.139 [-0.165, -0.114]; PI3K -0.195
+  [-0.233, -0.158].
+- Disruption, human_samples: EGFR -0.104 [-0.118, -0.091]; PI3K -0.100
+  [-0.120, -0.082].
+- With journal adjustment, human_samples OR: EGFR 2.82 [2.61, 3.02]; PI3K
+  2.22 [2.01, 2.48].
+
+What this does and does not show. In three cancer-signaling fields
+(RAS/MAPK, EGFR/ERBB, PI3K/AKT/mTOR, 2000-2015), primary research on
+patient samples is 1.7 to 3.0 times as likely as cell-line-only research to
+be cited by a clinical article within 8 years. In every field, the same
+papers score lower on field-normalized citation and on disruption. The
+direction is stable, and the size varies by field. It remains an
+association: clinical articles cite patient studies partly as background
+facts about patients, so a clinical citation partly measures topic. The
+animal association is field-specific. Not shown: causation, approval-level
+translation, fields outside cancer signaling, or anything about how well
+the studies were conducted.

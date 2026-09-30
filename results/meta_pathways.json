@@ -1,0 +1,278 @@
+{
+  "ledger": "experiments.md, 2026-09-30 metascience v2",
+  "pathways": {
+    "egfr": {
+      "n": 30239,
+      "prevalence": 0.2938589239062138,
+      "gene_reference": "EGFR",
+      "gene_levels": [
+        "ERBB2",
+        "other"
+      ],
+      "terms": {
+        "model_system=human_samples": {
+          "or": 3.024500473646855,
+          "lo": 2.837476518602065,
+          "hi": 3.2526816017187903
+        },
+        "model_system=animal": {
+          "or": 1.0663996950023085,
+          "lo": 0.9797563232832868,
+          "hi": 1.1443304012043776
+        },
+        "model_system=other": {
+          "or": 1.08128708935702,
+          "lo": 0.9408895705927163,
+          "hi": 1.236456571343286
+        },
+        "placebo_pmid_even": {
+          "or": 0.9950774158613656,
+          "lo": 0.9457713750793746,
+          "hi": 1.044237043422693
+        }
+      },
+      "permutation_95": {
+        "model_system=human_samples": [
+          0.9375720150032989,
+          1.0649420937371707
+        ],
+        "model_system=animal": [
+          0.9356138178219788,
+          1.0679668720101583
+        ],
+        "model_system=other": [
+          0.8912513174910335,
+          1.1162009458684357
+        ]
+      },
+      "placebo_ok": true,
+      "confirmed": true,
+      "secondary": {
+        "n_clin_8y_negbin_rate_ratio": {
+          "n": 30239,
+          "n_boot": 200,
+          "terms": {
+            "model_system=human_samples": {
+              "estimate": 3.248970679147332,
+              "lo": 2.820183296206779,
+              "hi": 3.6891082301587943
+            },
+            "model_system=animal": {
+              "estimate": 1.167069942745619,
+              "lo": 1.018582259765765,
+              "hi": 1.2904939927393186
+            },
+            "model_system=other": {
+              "estimate": 1.7522973648592517,
+              "lo": 1.3745416133186776,
+              "hi": 2.4270922544267397
+            }
+          }
+        },
+        "log_rcr_plus_0_1_linear": {
+          "n": 30238,
+          "n_boot": 1000,
+          "terms": {
+            "model_system=human_samples": {
+              "estimate": -0.13935577306242258,
+              "lo": -0.16513943069802225,
+              "hi": -0.11426229412063689
+            },
+            "model_system=animal": {
+              "estimate": 0.015540645456145013,
+              "lo": -0.010318542749567875,
+              "hi": 0.04151567332841035
+            },
+            "model_system=other": {
+              "estimate": -0.05493068730763126,
+              "lo": -0.10369741091799307,
+              "hi": -0.00894999818673858
+            }
+          }
+        },
+        "disruption_linear": {
+          "n": 28011,
+          "n_boot": 1000,
+          "terms": {
+            "model_system=human_samples": {
+              "estimate": -0.10438609582431235,
+              "lo": -0.11772671430621776,
+              "hi": -0.09134552240695883
+            },
+            "model_system=animal": {
+              "estimate": -0.055386854541328516,
+              "lo": -0.06892142426026075,
+              "hi": -0.04244771546722704
+            },
+            "model_system=other": {
+              "estimate": -0.04024819264218869,
+              "lo": -0.06353074537296767,
+              "hi": -0.01310194144081394
+            }
+          }
+        },
+        "journal_sensitivity_logit_or": {
+          "n": 30239,
+          "n_boot": 1000,
+          "terms": {
+            "model_system=human_samples": {
+              "estimate": 2.815040182294311,
+              "lo": 2.614383350109958,
+              "hi": 3.018002248723386
+            },
+            "model_system=animal": {
+              "estimate": 0.979497816955604,
+              "lo": 0.9027225937189369,
+              "hi": 1.0560037974946914
+            },
+            "model_system=other": {
+              "estimate": 1.1496489342514893,
+              "lo": 0.993527438857108,
+              "hi": 1.3120978484270756
+            }
+          }
+        }
+      }
+    },
+    "pi3k": {
+      "n": 21046,
+      "prevalence": 0.2838068991732396,
+      "gene_reference": "PIK3CA",
+      "gene_levels": [
+        "AKT",
+        "MTOR",
+        "PTEN",
+        "other"
+      ],
+      "terms": {
+        "model_system=human_samples": {
+          "or": 2.220582630067107,
+          "lo": 2.028526503024598,
+          "hi": 2.4423796674185154
+        },
+        "model_system=animal": {
+          "or": 1.2272304798201958,
+          "lo": 1.1354823847531046,
+          "hi": 1.3186794069591943
+        },
+        "model_system=other": {
+          "or": 1.0882309460645314,
+          "lo": 0.9313775613472883,
+          "hi": 1.2714748058202272
+        },
+        "placebo_pmid_even": {
+          "or": 1.0267964696987641,
+          "lo": 0.96748024774648,
+          "hi": 1.0944359786068674
+        }
+      },
+      "permutation_95": {
+        "model_system=human_samples": [
+          0.9136487018046249,
+          1.0932425661551368
+        ],
+        "model_system=animal": [
+          0.9286680767910874,
+          1.0729689357963212
+        ],
+        "model_system=other": [
+          0.869394931650777,
+          1.1368453985594855
+        ]
+      },
+      "placebo_ok": true,
+      "confirmed": true,
+      "secondary": {
+        "n_clin_8y_negbin_rate_ratio": {
+          "n": 21046,
+          "n_boot": 200,
+          "terms": {
+            "model_system=human_samples": {
+              "estimate": 2.956441572313856,
+              "lo": 2.5364627716595045,
+              "hi": 3.338115844806984
+            },
+            "model_system=animal": {
+              "estimate": 1.3021217773631375,
+              "lo": 1.1856736711126084,
+              "hi": 1.4098893542474162
+            },
+            "model_system=other": {
+              "estimate": 1.481000303110055,
+              "lo": 1.0716860215178001,
+              "hi": 2.0793471474344507
+            }
+          }
+        },
+        "log_rcr_plus_0_1_linear": {
+          "n": 21046,
+          "n_boot": 1000,
+          "terms": {
+            "model_system=human_samples": {
+              "estimate": -0.19478559905469708,
+              "lo": -0.2332769076217385,
+              "hi": -0.15775569701574782
+            },
+            "model_system=animal": {
+              "estimate": 0.11785020599547384,
+              "lo": 0.09040449673176962,
+              "hi": 0.14452514173440145
+            },
+            "model_system=other": {
+              "estimate": -0.05764530487348772,
+              "lo": -0.11605634070805437,
+              "hi": -0.00013550326787470197
+            }
+          }
+        },
+        "disruption_linear": {
+          "n": 20253,
+          "n_boot": 1000,
+          "terms": {
+            "model_system=human_samples": {
+              "estimate": -0.10041277964025479,
+              "lo": -0.12006949283129989,
+              "hi": -0.08161472407855677
+            },
+            "model_system=animal": {
+              "estimate": -0.07449761600966587,
+              "lo": -0.08658802394107859,
+              "hi": -0.0625915391930895
+            },
+            "model_system=other": {
+              "estimate": -0.05843191348400013,
+              "lo": -0.08892466822238372,
+              "hi": -0.028895381137993396
+            }
+          }
+        },
+        "journal_sensitivity_logit_or": {
+          "n": 21046,
+          "n_boot": 1000,
+          "terms": {
+            "model_system=human_samples": {
+              "estimate": 2.2237837628742194,
+              "lo": 2.0112160493433087,
+              "hi": 2.479201326963064
+            },
+            "model_system=animal": {
+              "estimate": 1.1203784599876183,
+              "lo": 1.0311508553541144,
+              "hi": 1.207612565139357
+            },
+            "model_system=other": {
+              "estimate": 1.0752911321157472,
+              "lo": 0.9065293444412809,
+              "hi": 1.249686496483195
+            }
+          }
+        }
+      }
+    }
+  },
+  "confirmed": [
+    "egfr",
+    "pi3k"
+  ],
+  "verdict": "confirmed in both"
+}

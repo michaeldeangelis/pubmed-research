@@ -334,3 +334,48 @@ joined:
   on-topic papers as off_topic. The PI3K on-topic rule accepts any AKT
   isoform, mTORC2 and p110alpha, which is wider than the query list; this is
   documented in src/meta/pathways.py.
+- Applied (builder report): the case-variant fix made 115 EGFR and 58 PI3K
+  papers eligible; 57 PI3K papers were excluded as off_topic_plant and 15
+  EGFR preclinical papers as off_topic_kidney. The plant rule was split into
+  strong and weak signals, because MEDLINE tags ordinary mammalian Akt1
+  papers with "Arabidopsis Proteins". None of the 300 gate packets changed
+  eligibility.
+
+### Result, 2026-09-30 (one run at commit 8db3e16)
+
+Full 2000-2015 period per pathway. ORs are against cell_only, with
+1000-resample bootstrap 95% CIs. The permutation range is the central 95%
+of 1000 within-year shuffles.
+
+| Pathway | n | clin_cited_8y | human_samples OR [CI] | Permutation 95% | Placebo OR [CI] | Confirmed |
+|---|---|---|---|---|---|---|
+| EGFR/ERBB | 30,239 | 0.294 | 3.02 [2.84, 3.25] | [0.94, 1.06] | 1.00 [0.95, 1.04] | yes |
+| PI3K/AKT/mTOR | 21,046 | 0.284 | 2.22 [2.03, 2.44] | [0.91, 1.09] | 1.03 [0.97, 1.09] | yes |
+
+Verdict by the rule: confirmed in both pathways.
+
+Exploratory, estimate [95% CI]:
+- animal OR: EGFR 1.07 [0.98, 1.14]; PI3K 1.23 [1.14, 1.32]. In v1
+  RAS/MAPK it was 0.85 and 0.71, so the animal association changes sign
+  across fields and does not generalize.
+- other OR: EGFR 1.08 [0.94, 1.24]; PI3K 1.09 [0.93, 1.27].
+- n_clin_8y NB rate ratio, human_samples: EGFR 3.25 [2.82, 3.69]; PI3K
+  2.96 [2.54, 3.34].
+- log(RCR + 0.1), human_samples: EGFR -0.139 [-0.165, -0.114]; PI3K -0.195
+  [-0.233, -0.158].
+- Disruption, human_samples: EGFR -0.104 [-0.118, -0.091]; PI3K -0.100
+  [-0.120, -0.082].
+- With journal adjustment, human_samples OR: EGFR 2.82 [2.61, 3.02]; PI3K
+  2.22 [2.01, 2.48].
+
+What this does and does not show. In three cancer-signaling fields
+(RAS/MAPK, EGFR/ERBB, PI3K/AKT/mTOR, 2000-2015), primary research on
+patient samples is 1.7 to 3.0 times as likely as cell-line-only research to
+be cited by a clinical article within 8 years. In every field, the same
+papers score lower on field-normalized citation and on disruption. The
+direction is stable, and the size varies by field. It remains an
+association: clinical articles cite patient studies partly as background
+facts about patients, so a clinical citation partly measures topic. The
+animal association is field-specific. Not shown: causation, approval-level
+translation, fields outside cancer signaling, or anything about how well
+the studies were conducted.

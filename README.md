@@ -42,6 +42,14 @@ The outcomes disagree. The same patient-sample papers scored lower on field-norm
 
 This is an association, not an effect of the design. Patient studies report facts about patients, which clinical articles cite as background, so a clinical citation partly measures the topic rather than the quality of the work. It does not show approval-level translation, and it does not reach beyond RAS/MAPK.
 
+## The finding in two more pathways
+
+The patient-sample result was then tested in two pathways that played no part in forming it: EGFR/ERBB, with 30,239 eligible papers, and PI3K/AKT/mTOR, with 21,046. Papers from the RAS/MAPK corpus were left out. The rule was committed before the data was built. Record: `results/meta_pathways.json`.
+
+It held in both. Against cell-line-only studies, the odds ratio for a clinical citation within 8 years was 3.02 (2.84 to 3.25) for EGFR and 2.22 (2.03 to 2.44) for PI3K. Placebos were null, and the within-year shuffles stayed between 0.91 and 1.09. In every pathway, the same patient-sample papers scored lower on field-normalized citation and on disruption. The animal association did not carry over: it was below 1 in RAS/MAPK, near 1 in EGFR, and 1.23 in PI3K.
+
+Across three cancer-signaling fields, patient-sample research is 1.7 to 3 times as likely to be cited clinically, and less likely to change its field. It is still an association, and a clinical citation still partly measures topic.
+
 ## What the approvals were built on
 
 Two approvals were traced back through their citations: vemurafenib, whose approval trial was in 2011, and sotorasib, in 2021. The lineage is the papers each approval trial cites, and the papers those cite. The same model-system rules were applied to it, then compared with the field in the same years. The method and the milestone papers were fixed before the run. Record: `results/case_histories.json`.

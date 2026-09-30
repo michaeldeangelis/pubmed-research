@@ -379,3 +379,104 @@ facts about patients, so a clinical citation partly measures topic. The
 animal association is field-specific. Not shown: causation, approval-level
 translation, fields outside cancer signaling, or anything about how well
 the studies were conducted.
+
+## 2026-09-30 metascience v3: trial background citations   (rules fixed before the run)
+
+Question: Is patient-sample research more or less likely than
+cell-line-only research to be cited as BACKGROUND in the registration of an
+interventional clinical trial? This is a direct link from a paper to a
+trial, not a citation by a clinical article.
+Decision it drives: the same direction as v1 and v2 means clinical uptake
+of patient-sample work reaches trial design, not only clinical articles.
+The opposite direction means trials build on cell or animal work, as the
+case histories suggested, and that "cited clinically" and "led to a trial"
+come apart. Null or underpowered means the registry link cannot answer it.
+Data: ClinicalTrials.gov API v2, all registered studies, fetched once and
+cached. For each study: NCT ID, study type, start date, phases,
+intervention types, and references with PMID and type. Only references of
+type BACKGROUND from INTERVENTIONAL studies count. RESULT and DERIVED
+references are excluded, because they are the trial's own reports.
+Outcome: trial_bg_8y = 1 if the paper is a BACKGROUND reference of an
+interventional study whose start year is within publication year minus 1
+through plus 8. Secondary: the count of such trials; restriction to trials
+with a DRUG or BIOLOGICAL intervention; restriction to phase 2 or later.
+Papers: the eligible preclinical papers of v1 RAS/MAPK, v2 EGFR and v2 PI3K,
+with the features, eligibility and covariates each version already uses
+(v1 reference count as amended; iCite reference count for EGFR and PI3K).
+A paper in more than one corpus is kept once, in the first of RAS, EGFR,
+PI3K.
+Model: logit, trial_bg_8y ~ model_system + year FE + pathway FE +
+gene_group within pathway + log authors + log(1 + refs) + refs_missing,
+pooled over the three pathways, full 2000-2015. CIs are 1000-resample
+bootstrap (seed 0).
+Primary: the human_samples OR against cell_only. Verdict "same direction"
+if the CI lies entirely above 1, "opposite" if entirely below 1, "null"
+otherwise. The placebo (PMID even) CI must include 1, or the result is
+flagged unreliable. If there are fewer than 100 outcome events among
+cell_only plus human_samples papers, the verdict is "underpowered",
+whatever the CI.
+Linkage check before the join: 30 random linked pairs (paper, trial) are
+verified by reading the trial record's reference entry. Report the count
+of correct links.
+Exploratory: the animal and other ORs; per-pathway ORs; the drug and
+phase-2+ restrictions; the permutation control (1000, within year and
+pathway).
+Record: results/meta_trials.json
+
+Before any outcome was joined, 2026-09-30:
+- Fetch. ClinicalTrials.gov API v2 on 2026-09-29: 604,950 studies (461,679
+  interventional). Interventional studies list 592,485 BACKGROUND
+  references. The PMID index has 409,613 PMIDs and 550,691 (PMID, trial)
+  pairs.
+- Outcome marginals. RAS: 116 of 8,186 papers (1.42%). EGFR: 333 of 30,239
+  (1.10%). PI3K: 241 of 21,046 (1.15%). Pooled with first-kept
+  deduplication: 672 events in 58,146 papers.
+- Linkage check. In 30 of 30 sampled pairs the trial's citation string
+  contains the paper's full title. An independent recomputation of the RAS
+  window matched the builder's output exactly (116 events, 0 mismatches).
+- Definitions fixed by the builder, accepted before the run. Phase 2 or
+  later means every listed phase is 2, 3 or 4; phase 1/2 is excluded. Drug
+  means a DRUG or BIOLOGICAL intervention. A trial citing the same PMID
+  twice counts once. Start year is the year of the start date, which may be
+  anticipated. Trials with no start date are left out of the window (0, 1
+  and 3 linked papers in RAS, EGFR and PI3K).
+
+### Result, 2026-09-30 (one run at commit 31757a9)
+
+Pooled eligible preclinical papers: 58,146, with 672 trial_bg_8y events
+(1.16%). cell_only plus human_samples papers have 447 events, above the
+100 minimum. ORs are against cell_only, with 1000-resample bootstrap 95%
+CIs.
+
+| Model | human_samples | animal | other | placebo |
+|---|---|---|---|---|
+| Primary, trial_bg_8y | 1.92 [1.54, 2.43] | 1.31 [1.06, 1.65] | 0.99 [0.60, 1.51] | 0.98 [0.84, 1.15] |
+| Drug or biological trials | 1.60 [1.24, 2.07] | 1.17 [0.93, 1.49] | 0.95 [0.52, 1.49] | 1.01 [0.85, 1.19] |
+| Phase 2 or later | 1.95 [1.50, 2.63] | 1.16 [0.89, 1.58] | 0.82 [0.36, 1.46] | 1.01 [0.83, 1.20] |
+
+The permutation 95% range (within year and pathway) is [0.83, 1.20] for
+human_samples and [0.81, 1.23] for animal.
+
+Verdict by the rule: same direction.
+
+Per pathway, exploratory, human_samples OR:
+- RAS, 116 events: 0.93 [0.58, 1.52]
+- EGFR, 333 events: 2.55 [1.88, 3.64]
+- PI3K, 223 events after deduplication: 1.78 [1.14, 2.71]
+The animal OR is 0.62 [0.31, 1.15] in RAS, 1.49 [1.06, 2.08] in EGFR and
+1.41 [1.02, 1.99] in PI3K.
+
+What this does and does not show. A direct paper-to-trial link, a BACKGROUND
+reference in a trial registration, shows the same direction as clinical
+citation. Patient-sample research is about twice as likely as cell-line-only
+research to be cited as background by an interventional trial within 8
+years. That holds for drug trials and for phase 2 or later. So the v1 and v2
+association is not only a matter of what clinical articles cite; it reaches
+trial design too. Two qualifications. First, the RAS pathway, where the
+finding was formed and whose drug case histories rested on cell work, shows
+no association on this outcome (116 events, wide CI). Second, animal work is
+also above cell-only on this outcome, which it was not for clinical
+citation in RAS. Being cited as background is still not the same as the
+trial depending on the paper, and approval is not measured. The ORs are
+associations, and a trial's background section may cite patient data for
+context, much as clinical articles do.

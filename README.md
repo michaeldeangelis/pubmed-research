@@ -50,6 +50,14 @@ It held in both. Against cell-line-only studies, the odds ratio for a clinical c
 
 Across three cancer-signaling fields, patient-sample research is 1.7 to 3 times as likely to be cited clinically, and less likely to change its field. It is still an association, and a clinical citation still partly measures topic.
 
+## From papers to registered trials
+
+Clinical citation was then swapped for a direct link. The outcome is whether a paper is listed as a BACKGROUND reference in the registration of an interventional trial on ClinicalTrials.gov, within 8 years. The registry was fetched in full: 604,950 studies. The rule was fixed before the fetch. Record: `results/meta_trials.json`.
+
+Over the three pathways, 58,146 papers were pooled and 672 were cited as trial background. Patient-sample papers were more likely to be cited than cell-line-only papers, with an odds ratio of 1.92 (1.54 to 2.43). That held for drug trials, at 1.60, and for phase 2 or later, at 1.95. The placebo was null, and within-year shuffles stayed between 0.83 and 1.20. Animal work was also above cell-only, at 1.31 (1.06 to 1.65). By pathway, the association was strong for EGFR (2.55) and PI3K (1.78) but absent for RAS/MAPK (0.93, 0.58 to 1.52, from 116 events). RAS/MAPK is where the finding was formed and where the two drug histories rested on cell work.
+
+So the patient-sample association reaches trial design, not only what clinical articles cite. Being listed as background is still not the same as a trial depending on the paper.
+
 ## What the approvals were built on
 
 Two approvals were traced back through their citations: vemurafenib, whose approval trial was in 2011, and sotorasib, in 2021. The lineage is the papers each approval trial cites, and the papers those cite. The same model-system rules were applied to it, then compared with the field in the same years. The method and the milestone papers were fixed before the run. Record: `results/case_histories.json`.

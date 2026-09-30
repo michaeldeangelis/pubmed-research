@@ -211,6 +211,72 @@ def test_layered_cache_reads_base_but_writes_own(tmp_path):
     assert "2" in cache and "1" not in impact.JsonlCache(tmp_path / "own.jsonl")
 
 
+@pytest.mark.parametrize("pattern,text", [
+    (P.EGFR_PATTERN, "EGFr expression"),
+    (P.EGFR_PATTERN, "EgfR"),
+    (P.EGFR_PATTERN, "anti-EGFr antibody"),
+    (P.EGFR_PATTERN, "EGFr-TK inhibitors"),
+    (P.MTOR_PATTERN, "mTor"),
+    (P.MTOR_PATTERN, "mToR"),
+    (P.MTOR_PATTERN, "mTorC1"),
+    (P.MTOR_PATTERN, "mTORc1"),
+    (P.MTOR_PATTERN, "mTORc2 complex"),
+    (P.PTEN_PATTERN, "pTEN loss"),
+])
+def test_review_case_variants_accepted(pattern, text):
+    assert hits(pattern, text)
+
+
+@pytest.mark.parametrize("pattern,text", [
+    (P.EGFR_PATTERN, "eGFR"),
+    (P.EGFR_PATTERN, "egfr"),
+    (P.ERBB2_PATTERN, "her2"),
+    (P.ERBB2_PATTERN, "erbb2"),
+    (P.AKT_PATTERN, "akt1"),
+])
+def test_lowercase_still_rejected(pattern, text):
+    assert not hits(pattern, text)
+
+
+def test_plant_akt_excluded_only_when_akt_is_the_only_match():
+    icite = {"pmid": "1", "is_research_article": True, "is_clinical": False}
+    plant = paper(mesh=["Arabidopsis", "Potassium Channels"], abstract="The AKT1 channel in roots")
+    assert F.feature_row(plant, icite, "pi3k")["exclusion"] == "off_topic_plant"
+    rice = paper(mesh=["Plant Roots"], abstract="OsAKT1 in rice")
+    assert F.feature_row(rice, icite, "pi3k")["exclusion"] == "off_topic_plant"
+    # weak plant signal on a mammalian paper (MEDLINE maps AKT1 to Arabidopsis Proteins)
+    mammal = paper(mesh=["Humans", "Arabidopsis Proteins"], abstract="Akt1 in plant-derived compound treated cells")
+    assert F.feature_row(mammal, icite, "pi3k")["eligible"]
+    # another PI3K gene match keeps it on topic
+    both = paper(mesh=["Arabidopsis"], abstract="AKT1 and mTOR in Arabidopsis")
+    assert F.feature_row(both, icite, "pi3k")["eligible"]
+    # the extra rule is PI3K-only
+    assert F.feature_row(paper(mesh=["Arabidopsis"], abstract="EGFR and plants"), icite, "egfr")["eligible"]
+
+
+def test_kidney_egfr_excluded_without_receptor_signal():
+    icite = {"pmid": "1", "is_research_article": True, "is_clinical": False}
+    kidney = paper(abstract="Estimated glomerular filtration rate (EGFR) fell to an EGFR of 45 mL/min/1.73 m2.")
+    assert F.feature_row(kidney, icite, "egfr")["exclusion"] == "off_topic_kidney"
+    kinase = paper(abstract="EGFR tyrosine kinase inhibition preserved glomerular filtration rate.")
+    assert F.feature_row(kinase, icite, "egfr")["eligible"]
+    her2 = paper(abstract="EGFR of 60 mL/min in HER2 patients")
+    assert F.feature_row(her2, icite, "egfr")["eligible"]
+    plain = paper(abstract="EGFR signalling in keratinocytes")
+    assert F.feature_row(plain, icite, "egfr")["eligible"]
+
+
+def test_marginals_count_pathway_reasons():
+    rows = [
+        {"pmid": "1", "group": "preclinical", "model_system": "other", "human_genetics": 0,
+         "multi_system": 0, "gene_group": "other", "eligible": False, "exclusion": "off_topic_plant"},
+        {"pmid": "2", "group": "preclinical", "model_system": "other", "human_genetics": 0,
+         "multi_system": 0, "gene_group": "AKT", "eligible": True, "exclusion": None},
+    ]
+    ex = F.marginals(rows)["preclinical"]["exclusion"]
+    assert ex["off_topic_plant"] == 1 and ex["eligible"] == 1
+
+
 def test_openalex_scope_is_eligible_preclinical_research_articles():
     papers = [
         paper("1", abstract="PTEN loss"),

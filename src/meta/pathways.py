@@ -58,6 +58,21 @@ Ambiguities resolved:
 * ``p110alpha``/``p110-alpha``/``p110α`` count as PIK3CA; bare ``p110`` does
   not (it is also p110beta/delta/gamma and other proteins).
 * ``mTOR``, ``MTOR``, ``Mtor``, ``mtor`` and ``mTORC1``/``mTORC2`` match.
+* Mixed-case variants seen in abstracts are accepted: ``EGFr``, ``EgfR``
+  (any E + g/G f/F r/R, upper-case E), ``mTor``/``mToR``/``mTorC1``/
+  ``mTORc1`` (any casing of m-TOR-C), ``pTEN``. Still rejected: ``eGFR``,
+  all-lower-case ``egfr``/``her2``/``erbb2``/``akt1``.
+* Two pathway-specific exclusions run after the on-topic check (review
+  2026-09-29; before ``non_primary``):
+  ``off_topic_plant`` (PI3K): the only on-topic match is the AKT pattern and
+  the paper has a strong plant signal (plant-organism MeSH, or text
+  Arabidopsis/OsAKT/AtAKT/Populus), or a weak one (MeSH Arabidopsis
+  Proteins/Plant Proteins/Plant Roots/Potassium Channels etc., text
+  rice/plant) with neither MeSH Humans nor Animals. Plant AKT1 is a potassium
+  channel, and MEDLINE mis-indexes mammalian Akt1 papers with "Arabidopsis
+  Proteins", so that heading alone is not enough. ``off_topic_kidney`` (EGFR): the only on-topic match is the EGFR
+  pattern, the text uses EGFR as a filtration rate (``GFR_TEXT``) and there is
+  no receptor signal (``RECEPTOR_TEXT``).
 * The drug lists are exactly the ledger lists (rapamycin/sirolimus and
   PI3K-generic mentions such as "PI3K" do not count).
 """
@@ -90,7 +105,7 @@ def _lower(symbols: str) -> str:
 
 EGFR_PATTERN = re.compile(
     "(?:"
-    + _upper(r"EGFR|Egfr") + r"(?:vIII|wt|mut|is|s|i)?" + _END
+    + _upper(r"E[Gg][Ff][Rr]") + r"(?:vIII|wt|mut|is|s|i)?" + _END
     + "|" + _upper(r"ERBB-?1|ErbB-?1|Erbb-?1|HER-?1|Her-?1") + _END
     + "|" + _lower(r"(?:c-)?erbB-?1") + _END
     + ")"
@@ -125,19 +140,99 @@ PIK3CA_PATTERN = re.compile(
 PTEN_PATTERN = re.compile(
     "(?:"
     + _upper(r"PTEN|Pten") + _END
-    + "|" + _lower(r"pten") + r"(?:[ab])?" + _END
+    + "|" + _lower(r"pten|pTEN") + r"(?:[ab])?" + _END
     + ")"
 )
 AKT_PATTERN = re.compile(_upper(r"AKT|Akt") + r"[1-3]?s?" + _END)
 MTOR_PATTERN = re.compile(
     "(?:"
-    + _upper(r"MTOR|Mtor") + r"(?:C[12]?)?(?:is|s|i)?" + _END
-    + "|" + _lower(r"mTOR|mtor") + r"(?:C[12]?)?(?:is|s|i)?" + _END
+    + _upper(r"M[Tt][Oo][Rr]") + r"(?:[Cc][12]?)?(?:is|s|i)?" + _END
+    + "|" + _lower(r"m[Tt][Oo][Rr]") + r"(?:[Cc][12]?)?(?:is|s|i)?" + _END
     + ")"
 )
 PI3K_DRUG_PATTERN = re.compile(
     r"\b(everolimus|temsirolimus|alpelisib|idelalisib)\b", re.I
 )
+
+
+# --- pathway-specific exclusions (applied after the on-topic check) -------------
+
+_MARKUP = re.compile(r"<[^>]+>")
+
+
+def _text(paper: dict) -> str:
+    return _MARKUP.sub("", f"{paper.get('title') or ''} {paper.get('abstract') or ''}")
+
+
+def _mesh(paper: dict) -> set[str]:
+    out = set()
+    for m in paper.get("mesh") or []:
+        t = re.sub(r"\s+", " ", str(m).split("/", 1)[0].replace("*", " ")).strip().casefold()
+        if t:
+            out.add(t)
+    return out
+
+
+# Plant AKT1 (Arabidopsis/rice potassium channel AKT1, "OsAKT1"): a PI3K paper
+# whose only on-topic match is the AKT pattern and that shows plant signals.
+# Strong signals exclude on their own: a plant-organism MeSH heading or the
+# text Arabidopsis / OsAKT / AtAKT / Populus. Weak signals exclude only when
+# the paper has neither MeSH "Humans" nor "Animals": MEDLINE's automatic
+# mapping indexes many mammalian Akt1 papers with "Arabidopsis Proteins" /
+# "Plant Proteins" (the AKT1 supplementary concept is the Arabidopsis
+# channel), and mammalian natural-product papers mention "plant" or "rice".
+PLANT_ORGANISM_MESH = frozenset(t.casefold() for t in (
+    "Plants", "Plants, Genetically Modified", "Arabidopsis", "Oryza", "Populus",
+    "Nicotiana", "Hordeum", "Triticum", "Seedlings",
+))
+# "Zea mays" is weak: MeSH also uses it for corn-derived food (corn syrup).
+PLANT_WEAK_MESH = frozenset(t.casefold() for t in (
+    "Arabidopsis Proteins", "Plant Proteins", "Plant Roots", "Plant Leaves",
+    "Plant Shoots", "Potassium Channels", "Zea mays",
+))
+PLANT_STRONG_TEXT = re.compile(r"\b(?:Arabidopsis|OsAKT\d?|AtAKT\d?|Populus)\b", re.I)
+PLANT_WEAK_TEXT = re.compile(r"\b(?:rice|plants?)\b", re.I)
+_HUMAN_OR_ANIMAL = frozenset({"humans", "animals"})
+
+
+def plant_akt_exclusion(paper: dict) -> str | None:
+    text = _text(paper)
+    others = (PIK3CA_PATTERN, PTEN_PATTERN, MTOR_PATTERN, PI3K_DRUG_PATTERN)
+    if not AKT_PATTERN.search(text) or any(p.search(text) for p in others):
+        return None
+    mesh = _mesh(paper)
+    if mesh & PLANT_ORGANISM_MESH or PLANT_STRONG_TEXT.search(text):
+        return "off_topic_plant"
+    weak = bool(mesh & PLANT_WEAK_MESH) or bool(PLANT_WEAK_TEXT.search(text))
+    if weak and not mesh & _HUMAN_OR_ANIMAL:
+        return "off_topic_plant"
+    return None
+
+
+# Kidney "EGFR" (estimated glomerular filtration rate written in capitals): an
+# EGFR paper whose only on-topic match is the EGFR pattern, whose text uses
+# EGFR as a filtration rate, and that has no EGFR-receptor signal.
+GFR_TEXT = re.compile(
+    r"glomerular filtration|filtration rate|m[lL]\s*/\s*min|"
+    r"E[Gg][Ff][Rr]\s*(?:of|<|>|=|\u2264|\u2265|<=|>=)\s*\d",
+    re.I,
+)
+RECEPTOR_TEXT = re.compile(
+    r"receptors?|tyrosine[- ]kinases?|\bTKIs?\b|mutat\w*|mutant|"
+    r"epidermal growth factor|\bEGF\b|\bHER\b|ErbB|erbB|ERBB|"
+    r"erlotinib|gefitinib|osimertinib|afatinib|lapatinib|cetuximab|panitumumab|trastuzumab",
+    re.I,
+)
+
+
+def kidney_egfr_exclusion(paper: dict) -> str | None:
+    text = _text(paper)
+    others = (ERBB2_PATTERN, ERBB3_PATTERN, EGFR_DRUG_PATTERN)
+    if not EGFR_PATTERN.search(text) or any(p.search(text) for p in others):
+        return None
+    if GFR_TEXT.search(text) and not RECEPTOR_TEXT.search(text):
+        return "off_topic_kidney"
+    return None
 
 
 def _query(terms: tuple[str, ...]) -> str:
@@ -162,6 +257,8 @@ PATHWAYS: dict[str, dict] = {
         "gene_groups": (("EGFR", EGFR_PATTERN), ("ERBB2", ERBB2_PATTERN)),
         "gene_group_levels": ("EGFR", "ERBB2", "other"),
         "on_topic": (EGFR_PATTERN, ERBB2_PATTERN, ERBB3_PATTERN, EGFR_DRUG_PATTERN),
+        "extra_exclusion": kidney_egfr_exclusion,
+        "extra_reasons": ("off_topic_kidney",),
     },
     "pi3k": {
         "label": "PI3K/AKT/mTOR",
@@ -175,6 +272,8 @@ PATHWAYS: dict[str, dict] = {
         ),
         "gene_group_levels": ("PIK3CA", "PTEN", "AKT", "MTOR", "other"),
         "on_topic": (PIK3CA_PATTERN, PTEN_PATTERN, AKT_PATTERN, MTOR_PATTERN, PI3K_DRUG_PATTERN),
+        "extra_exclusion": plant_akt_exclusion,
+        "extra_reasons": ("off_topic_plant",),
     },
 }
 NAMES = tuple(PATHWAYS)

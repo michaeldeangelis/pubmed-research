@@ -577,15 +577,14 @@ def pathway_openalex_scope(papers: list[dict], icite: dict[str, dict], pathway: 
     """PMIDs whose OpenAlex reference count the v2 analysis needs: iCite
     preclinical research articles that pass the pathway's eligibility rules,
     in PMID order. (Eligibility only; no outcome is read.)"""
-    from src.meta import features, pathways
+    from src.meta import features
 
-    topic = pathways.get(pathway)["on_topic"]
     out = []
     for p in papers:
         rec = icite.get(str(p["pmid"])) or {}
         if not features.truthy(rec.get("is_research_article")) or features.truthy(rec.get("is_clinical")):
             continue
-        if features.exclusion(p, topic) is None:
+        if features.pathway_exclusion(p, pathway) is None:
             out.append(str(p["pmid"]))
     return sorted(out, key=int)
 

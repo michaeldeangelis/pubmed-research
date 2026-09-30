@@ -545,15 +545,21 @@ def on_topic(paper: dict, patterns=None) -> bool:
     return any(p.search(text) for p in (ON_TOPIC_PATTERNS if patterns is None else patterns))
 
 
-def exclusion(paper: dict, on_topic_patterns=None) -> str | None:
-    """First matching exclusion reason (no_mesh, off_topic, non_primary) or None.
+def exclusion(paper: dict, on_topic_patterns=None, extra=None) -> str | None:
+    """First matching exclusion reason (no_mesh, off_topic, [extra], non_primary) or None.
 
     ``on_topic_patterns`` defaults to the v1 RAS/MAPK gene and drug patterns.
+    ``extra`` (v2 pathways only) is a callable paper -> reason or None, applied
+    after the on-topic check (e.g. ``off_topic_plant``, ``off_topic_kidney``).
     """
     if not mesh_set(paper.get("mesh")):
         return "no_mesh"
     if not on_topic(paper, on_topic_patterns):
         return "off_topic"
+    if extra is not None:
+        reason = extra(paper)
+        if reason:
+            return reason
     if any(_norm_pub_type(t) in _NON_PRIMARY for t in paper.get("pub_types") or []):
         return "non_primary"
     return None
@@ -571,19 +577,24 @@ def rule_labels(paper: dict) -> dict:
 
 
 def _pathway_patterns(pathway: str | None) -> tuple:
-    """(gene_group patterns, on_topic patterns); (None, None) means v1 RAS."""
+    """(gene_group patterns, on_topic patterns, extra exclusion); all None means v1 RAS."""
     if pathway is None:
-        return None, None
+        return None, None, None
     from src.meta import pathways
 
     cfg = pathways.get(pathway)
-    return cfg["gene_groups"], cfg["on_topic"]
+    return cfg["gene_groups"], cfg["on_topic"], cfg.get("extra_exclusion")
+
+
+def pathway_exclusion(paper: dict, pathway: str | None = None) -> str | None:
+    _, topic, extra = _pathway_patterns(pathway)
+    return exclusion(paper, topic, extra)
 
 
 def feature_row(paper: dict, icite: dict, pathway: str | None = None) -> dict:
-    groups, topic = _pathway_patterns(pathway)
+    groups, topic, extra = _pathway_patterns(pathway)
     labels = rule_labels(paper)
-    reason = exclusion(paper, topic)
+    reason = exclusion(paper, topic, extra)
     n_authors = paper.get("n_authors")
     return {
         "pmid": str(paper["pmid"]),
@@ -629,11 +640,13 @@ def marginals(rows: list[dict]) -> dict:
                 sorted(Counter(r[key] for r in sub).items(), key=lambda kv: str(kv[0]))
             )
     if rows and "exclusion" in rows[0]:
+        seen = {r["exclusion"] for r in rows} - {None}
+        extra_reasons = sorted(seen - set(EXCLUSION_REASONS))  # v2 pathway reasons
         for group in ("preclinical", "clinical"):
             sub = [r for r in rows if r["group"] == group]
             out[group]["exclusion"] = {
                 reason: sum(1 for r in sub if r["exclusion"] == reason)
-                for reason in (*EXCLUSION_REASONS, None)
+                for reason in (*EXCLUSION_REASONS, *extra_reasons, None)
             }
             out[group]["exclusion"]["eligible"] = out[group]["exclusion"].pop(None)
         elig = [r for r in rows if r["group"] == "preclinical" and r["eligible"]]
@@ -1006,6 +1019,33 @@ def pathway_layout(name: str) -> dict:
             "features": base / "features.jsonl", "manifest": base / "manifest_features.json"}
 
 
+def pathway_overlap(name: str, papers: list[dict], rows: list[dict]) -> dict:
+    """PMIDs shared with each other pathway corpus that has been built:
+    all papers, iCite research articles, eligible preclinical (in both)."""
+    from src.meta import pathways
+
+    mine = {
+        "all_pmids": {str(p["pmid"]) for p in papers},
+        "research_articles": {r["pmid"] for r in rows},
+        "eligible_preclinical": {r["pmid"] for r in rows if r["group"] == "preclinical" and r["eligible"]},
+    }
+    out = {}
+    for other in pathways.NAMES:
+        if other == name:
+            continue
+        lay = pathway_layout(other)
+        if not (lay["papers"].exists() and lay["features"].exists()):
+            continue
+        o_rows = read_jsonl(lay["features"])
+        theirs = {
+            "all_pmids": {str(p["pmid"]) for p in read_jsonl(lay["papers"])},
+            "research_articles": {r["pmid"] for r in o_rows},
+            "eligible_preclinical": {r["pmid"] for r in o_rows if r["group"] == "preclinical" and r["eligible"]},
+        }
+        out[other] = {k: len(mine[k] & theirs[k]) for k in mine}
+    return out
+
+
 def main_build_pathway(name: str) -> dict:
     """v2: features for one pathway corpus (no packets; see pathway-packets)."""
     lay = pathway_layout(name)
@@ -1017,6 +1057,7 @@ def main_build_pathway(name: str) -> dict:
     counts["pathway"] = name
     counts["n_papers_in"] = len(papers)
     counts["n_no_mesh_all_papers"] = sum(1 for p in papers if not p.get("mesh"))
+    counts["overlap_with_other_pathways"] = pathway_overlap(name, papers, rows)
     write_json(lay["manifest"], counts)
     print(json.dumps(counts, indent=2))
     return counts

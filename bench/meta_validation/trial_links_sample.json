@@ -1,0 +1,489 @@
+{
+  "description": "Random linked (paper, trial) pairs with trial_bg_8y=1, pooled over ras, egfr, pi3k (paper kept in its first pathway), numpy default_rng(0); for manual verification",
+  "n_pairs_population": 821,
+  "auto_match_rule": "share of title content tokens found in the citation >= 0.6",
+  "n_auto_match": 30,
+  "n_sample": 30,
+  "pairs": [
+    {
+      "pathway": "pi3k",
+      "pmid": "16195324",
+      "nct": "NCT00770263",
+      "reference_entries": [
+        {
+          "pmid": "16195324",
+          "type": "BACKGROUND",
+          "citation": "Teachey DT, Obzut DA, Cooperman J, Fang J, Carroll M, Choi JK, Houghton PJ, Brown VI, Grupp SA. The mTOR inhibitor CCI-779 induces apoptosis and inhibits growth in preclinical models of primary adult human ALL. Blood. 2006 Feb 1;107(3):1149-55. doi: 10.1182/blood-2005-05-1935. Epub 2005 Sep 29."
+        }
+      ],
+      "citation": "Teachey DT, Obzut DA, Cooperman J, Fang J, Carroll M, Choi JK, Houghton PJ, Brown VI, Grupp SA. The mTOR inhibitor CCI-779 induces apoptosis and inhibits growth in preclinical models of primary adult human ALL. Blood. 2006 Feb 1;107(3):1149-55. doi: 10.1182/blood-2005-05-1935. Epub 2005 Sep 29.",
+      "paper_title": "The mTOR inhibitor CCI-779 induces apoptosis and inhibits growth in preclinical models of primary adult human ALL.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "pi3k",
+      "pmid": "19587680",
+      "nct": "NCT02575235",
+      "reference_entries": [
+        {
+          "pmid": "19587680",
+          "type": "BACKGROUND",
+          "citation": "Harrison DE, Strong R, Sharp ZD, Nelson JF, Astle CM, Flurkey K, Nadon NL, Wilkinson JE, Frenkel K, Carter CS, Pahor M, Javors MA, Fernandez E, Miller RA. Rapamycin fed late in life extends lifespan in genetically heterogeneous mice. Nature. 2009 Jul 16;460(7253):392-5. doi: 10.1038/nature08221. Epub 2009 Jul 8."
+        }
+      ],
+      "citation": "Harrison DE, Strong R, Sharp ZD, Nelson JF, Astle CM, Flurkey K, Nadon NL, Wilkinson JE, Frenkel K, Carter CS, Pahor M, Javors MA, Fernandez E, Miller RA. Rapamycin fed late in life extends lifespan in genetically heterogeneous mice. Nature. 2009 Jul 16;460(7253):392-5. doi: 10.1038/nature08221. Epub 2009 Jul 8.",
+      "paper_title": "Rapamycin fed late in life extends lifespan in genetically heterogeneous mice.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "egfr",
+      "pmid": "25422485",
+      "nct": "NCT03917082",
+      "reference_entries": [
+        {
+          "pmid": "25422485",
+          "type": "BACKGROUND",
+          "citation": "Cossetti RJ, Tyldesley SK, Speers CH, Zheng Y, Gelmon KA. Comparison of breast cancer recurrence and outcome patterns between patients treated from 1986 to 1992 and from 2004 to 2008. J Clin Oncol. 2015 Jan 1;33(1):65-73. doi: 10.1200/JCO.2014.57.2461. Epub 2014 Nov 24."
+        }
+      ],
+      "citation": "Cossetti RJ, Tyldesley SK, Speers CH, Zheng Y, Gelmon KA. Comparison of breast cancer recurrence and outcome patterns between patients treated from 1986 to 1992 and from 2004 to 2008. J Clin Oncol. 2015 Jan 1;33(1):65-73. doi: 10.1200/JCO.2014.57.2461. Epub 2014 Nov 24.",
+      "paper_title": "Comparison of breast cancer recurrence and outcome patterns between patients treated from 1986 to 1992 and from 2004 to 2008.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "pi3k",
+      "pmid": "26441307",
+      "nct": "NCT04057833",
+      "reference_entries": [
+        {
+          "pmid": "26441307",
+          "type": "BACKGROUND",
+          "citation": "Poulos MG, Crowley MJP, Gutkin MC, Ramalingam P, Schachterle W, Thomas JL, Elemento O, Butler JM. Vascular Platform to Define Hematopoietic Stem Cell Factors and Enhance Regenerative Hematopoiesis. Stem Cell Reports. 2015 Nov 10;5(5):881-894. doi: 10.1016/j.stemcr.2015.08.018. Epub 2015 Oct 1."
+        }
+      ],
+      "citation": "Poulos MG, Crowley MJP, Gutkin MC, Ramalingam P, Schachterle W, Thomas JL, Elemento O, Butler JM. Vascular Platform to Define Hematopoietic Stem Cell Factors and Enhance Regenerative Hematopoiesis. Stem Cell Reports. 2015 Nov 10;5(5):881-894. doi: 10.1016/j.stemcr.2015.08.018. Epub 2015 Oct 1.",
+      "paper_title": "Vascular Platform to Define Hematopoietic Stem Cell Factors and Enhance Regenerative Hematopoiesis.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "pi3k",
+      "pmid": "18387000",
+      "nct": "NCT01589367",
+      "reference_entries": [
+        {
+          "pmid": "18387000",
+          "type": "BACKGROUND",
+          "citation": "Huang X, Wullschleger S, Shpiro N, McGuire VA, Sakamoto K, Woods YL, McBurnie W, Fleming S, Alessi DR. Important role of the LKB1-AMPK pathway in suppressing tumorigenesis in PTEN-deficient mice. Biochem J. 2008 Jun 1;412(2):211-21. doi: 10.1042/BJ20080557."
+        }
+      ],
+      "citation": "Huang X, Wullschleger S, Shpiro N, McGuire VA, Sakamoto K, Woods YL, McBurnie W, Fleming S, Alessi DR. Important role of the LKB1-AMPK pathway in suppressing tumorigenesis in PTEN-deficient mice. Biochem J. 2008 Jun 1;412(2):211-21. doi: 10.1042/BJ20080557.",
+      "paper_title": "Important role of the LKB1-AMPK pathway in suppressing tumorigenesis in PTEN-deficient mice.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "egfr",
+      "pmid": "16818686",
+      "nct": "NCT01024413",
+      "reference_entries": [
+        {
+          "pmid": "16818686",
+          "type": "BACKGROUND",
+          "citation": "Jackman DM, Yeap BY, Sequist LV, Lindeman N, Holmes AJ, Joshi VA, Bell DW, Huberman MS, Halmos B, Rabin MS, Haber DA, Lynch TJ, Meyerson M, Johnson BE, Janne PA. Exon 19 deletion mutations of epidermal growth factor receptor are associated with prolonged survival in non-small cell lung cancer patients treated with gefitinib or erlotinib. Clin Cancer Res. 2006 Jul 1;12(13):3908-14. doi: 10.1158/1078-0432.CCR-06-0462."
+        }
+      ],
+      "citation": "Jackman DM, Yeap BY, Sequist LV, Lindeman N, Holmes AJ, Joshi VA, Bell DW, Huberman MS, Halmos B, Rabin MS, Haber DA, Lynch TJ, Meyerson M, Johnson BE, Janne PA. Exon 19 deletion mutations of epidermal growth factor receptor are associated with prolonged survival in non-small cell lung cancer patients treated with gefitinib or erlotinib. Clin Cancer Res. 2006 Jul 1;12(13):3908-14. doi: 10.1158/1078-0432.CCR-06-0462.",
+      "paper_title": "Exon 19 deletion mutations of epidermal growth factor receptor are associated with prolonged survival in non-small cell lung cancer patients treated with gefitinib or erlotinib.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "pi3k",
+      "pmid": "25155956",
+      "nct": "NCT02649959",
+      "reference_entries": [
+        {
+          "pmid": "25155956",
+          "type": "BACKGROUND",
+          "citation": "Tang G, Gudsnuk K, Kuo SH, Cotrina ML, Rosoklija G, Sosunov A, Sonders MS, Kanter E, Castagna C, Yamamoto A, Yue Z, Arancio O, Peterson BS, Champagne F, Dwork AJ, Goldman J, Sulzer D. Loss of mTOR-dependent macroautophagy causes autistic-like synaptic pruning deficits. Neuron. 2014 Sep 3;83(5):1131-43. doi: 10.1016/j.neuron.2014.07.040. Epub 2014 Aug 21."
+        }
+      ],
+      "citation": "Tang G, Gudsnuk K, Kuo SH, Cotrina ML, Rosoklija G, Sosunov A, Sonders MS, Kanter E, Castagna C, Yamamoto A, Yue Z, Arancio O, Peterson BS, Champagne F, Dwork AJ, Goldman J, Sulzer D. Loss of mTOR-dependent macroautophagy causes autistic-like synaptic pruning deficits. Neuron. 2014 Sep 3;83(5):1131-43. doi: 10.1016/j.neuron.2014.07.040. Epub 2014 Aug 21.",
+      "paper_title": "Loss of mTOR-dependent macroautophagy causes autistic-like synaptic pruning deficits.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "egfr",
+      "pmid": "22614988",
+      "nct": "NCT03935282",
+      "reference_entries": [
+        {
+          "pmid": "22614988",
+          "type": "BACKGROUND",
+          "citation": "Giordano SH, Lin YL, Kuo YF, Hortobagyi GN, Goodwin JS. Decline in the use of anthracyclines for breast cancer. J Clin Oncol. 2012 Jun 20;30(18):2232-9. doi: 10.1200/JCO.2011.40.1273. Epub 2012 May 21."
+        }
+      ],
+      "citation": "Giordano SH, Lin YL, Kuo YF, Hortobagyi GN, Goodwin JS. Decline in the use of anthracyclines for breast cancer. J Clin Oncol. 2012 Jun 20;30(18):2232-9. doi: 10.1200/JCO.2011.40.1273. Epub 2012 May 21.",
+      "paper_title": "Decline in the use of anthracyclines for breast cancer.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "pi3k",
+      "pmid": "22941188",
+      "nct": "NCT02963090",
+      "reference_entries": [
+        {
+          "pmid": "22941188",
+          "type": "BACKGROUND",
+          "citation": "Peifer M, Fernandez-Cuesta L, Sos ML, George J, Seidel D, Kasper LH, Plenker D, Leenders F, Sun R, Zander T, Menon R, Koker M, Dahmen I, Muller C, Di Cerbo V, Schildhaus HU, Altmuller J, Baessmann I, Becker C, de Wilde B, Vandesompele J, Bohm D, Ansen S, Gabler F, Wilkening I, Heynck S, Heuckmann JM, Lu X, Carter SL, Cibulskis K, Banerji S, Getz G, Park KS, Rauh D, Grutter C, Fischer M, Pasqualucci L, Wright G, Wainer Z, Russell P, Petersen I, Chen Y, Stoelben E, Ludwig C, Schnabel P, Hoffmann H, Muley T, Brockmann M, Engel-Riedel W, Muscarella LA, Fazio VM, Groen H, Timens W, Sietsma H, Thunnissen E, Smit E, Heideman DA, Snijders PJ, Cappuzzo F, Ligorio C, Damiani S, Field J, Solberg S, Brustugun OT, Lund-Iversen M, Sanger J, Clement JH, Soltermann A, Moch H, Weder W, Solomon B, Soria JC, Validire P, Besse B, Brambilla E, Brambilla C, Lantuejoul S, Lorimier P, Schneider PM, Hallek M, Pao W, Meyerson M, Sage J, Shendure J, Schneider R, Buttner R, Wolf J, Nurnberg P, Perner S, Heukamp LC, Brindle PK, Haas S, Thomas RK. Integrative genome analyses identify key somatic driver mutations of small-cell lung cancer. Nat Genet. 2012 Oct;44(10):1104-10. doi: 10.1038/ng.2396. Epub 2012 Sep 2."
+        }
+      ],
+      "citation": "Peifer M, Fernandez-Cuesta L, Sos ML, George J, Seidel D, Kasper LH, Plenker D, Leenders F, Sun R, Zander T, Menon R, Koker M, Dahmen I, Muller C, Di Cerbo V, Schildhaus HU, Altmuller J, Baessmann I, Becker C, de Wilde B, Vandesompele J, Bohm D, Ansen S, Gabler F, Wilkening I, Heynck S, Heuckmann JM, Lu X, Carter SL, Cibulskis K, Banerji S, Getz G, Park KS, Rauh D, Grutter C, Fischer M, Pasqualucci L, Wright G, Wainer Z, Russell P, Petersen I, Chen Y, Stoelben E, Ludwig C, Schnabel P, Hoffmann H, Muley T, Brockmann M, Engel-Riedel W, Muscarella LA, Fazio VM, Groen H, Timens W, Sietsma H, Thunnissen E, Smit E, Heideman DA, Snijders PJ, Cappuzzo F, Ligorio C, Damiani S, Field J, Solberg S, Brustugun OT, Lund-Iversen M, Sanger J, Clement JH, Soltermann A, Moch H, Weder W, Solomon B, Soria JC, Validire P, Besse B, Brambilla E, Brambilla C, Lantuejoul S, Lorimier P, Schneider PM, Hallek M, Pao W, Meyerson M, Sage J, Shendure J, Schneider R, Buttner R, Wolf J, Nurnberg P, Perner S, Heukamp LC, Brindle PK, Haas S, Thomas RK. Integrative genome analyses identify key somatic driver mutations of small-cell lung cancer. Nat Genet. 2012 Oct;44(10):1104-10. doi: 10.1038/ng.2396. Epub 2012 Sep 2.",
+      "paper_title": "Integrative genome analyses identify key somatic driver mutations of small-cell lung cancer.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "egfr",
+      "pmid": "19718025",
+      "nct": "NCT01264081",
+      "reference_entries": [
+        {
+          "pmid": "19718025",
+          "type": "BACKGROUND",
+          "citation": "Prickett TD, Agrawal NS, Wei X, Yates KE, Lin JC, Wunderlich JR, Cronin JC, Cruz P, Rosenberg SA, Samuels Y. Analysis of the tyrosine kinome in melanoma reveals recurrent mutations in ERBB4. Nat Genet. 2009 Oct;41(10):1127-32. doi: 10.1038/ng.438. Epub 2009 Aug 30."
+        }
+      ],
+      "citation": "Prickett TD, Agrawal NS, Wei X, Yates KE, Lin JC, Wunderlich JR, Cronin JC, Cruz P, Rosenberg SA, Samuels Y. Analysis of the tyrosine kinome in melanoma reveals recurrent mutations in ERBB4. Nat Genet. 2009 Oct;41(10):1127-32. doi: 10.1038/ng.438. Epub 2009 Aug 30.",
+      "paper_title": "Analysis of the tyrosine kinome in melanoma reveals recurrent mutations in ERBB4.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "egfr",
+      "pmid": "26487496",
+      "nct": "NCT02910050",
+      "reference_entries": [
+        {
+          "pmid": "26487496",
+          "type": "BACKGROUND",
+          "citation": "Ciupek A, Rechoum Y, Gu G, Gelsomino L, Beyer AR, Brusco L, Covington KR, Tsimelzon A, Fuqua SA. Androgen receptor promotes tamoxifen agonist activity by activation of EGFR in ERalpha-positive breast cancer. Breast Cancer Res Treat. 2015 Nov;154(2):225-37. doi: 10.1007/s10549-015-3609-7. Epub 2015 Oct 20."
+        }
+      ],
+      "citation": "Ciupek A, Rechoum Y, Gu G, Gelsomino L, Beyer AR, Brusco L, Covington KR, Tsimelzon A, Fuqua SA. Androgen receptor promotes tamoxifen agonist activity by activation of EGFR in ERalpha-positive breast cancer. Breast Cancer Res Treat. 2015 Nov;154(2):225-37. doi: 10.1007/s10549-015-3609-7. Epub 2015 Oct 20.",
+      "paper_title": "Androgen receptor promotes tamoxifen agonist activity by activation of EGFR in ERα-positive breast cancer.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "egfr",
+      "pmid": "15770521",
+      "nct": "NCT01818063",
+      "reference_entries": [
+        {
+          "pmid": "15770521",
+          "type": "BACKGROUND",
+          "citation": "Palacios J, Honrado E, Osorio A, Cazorla A, Sarrio D, Barroso A, Rodriguez S, Cigudosa JC, Diez O, Alonso C, Lerma E, Dopazo J, Rivas C, Benitez J. Phenotypic characterization of BRCA1 and BRCA2 tumors based in a tissue microarray study with 37 immunohistochemical markers. Breast Cancer Res Treat. 2005 Mar;90(1):5-14. doi: 10.1007/s10549-004-1536-0."
+        }
+      ],
+      "citation": "Palacios J, Honrado E, Osorio A, Cazorla A, Sarrio D, Barroso A, Rodriguez S, Cigudosa JC, Diez O, Alonso C, Lerma E, Dopazo J, Rivas C, Benitez J. Phenotypic characterization of BRCA1 and BRCA2 tumors based in a tissue microarray study with 37 immunohistochemical markers. Breast Cancer Res Treat. 2005 Mar;90(1):5-14. doi: 10.1007/s10549-004-1536-0.",
+      "paper_title": "Phenotypic characterization of BRCA1 and BRCA2 tumors based in a tissue microarray study with 37 immunohistochemical markers.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "pi3k",
+      "pmid": "24014241",
+      "nct": "NCT04953780",
+      "reference_entries": [
+        {
+          "pmid": "24014241",
+          "type": "BACKGROUND",
+          "citation": "Willems L, Jacque N, Jacquel A, Neveux N, Maciel TT, Lambert M, Schmitt A, Poulain L, Green AS, Uzunov M, Kosmider O, Radford-Weiss I, Moura IC, Auberger P, Ifrah N, Bardet V, Chapuis N, Lacombe C, Mayeux P, Tamburini J, Bouscary D. Inhibiting glutamine uptake represents an attractive new strategy for treating acute myeloid leukemia. Blood. 2013 Nov 14;122(20):3521-32. doi: 10.1182/blood-2013-03-493163. Epub 2013 Sep 6."
+        }
+      ],
+      "citation": "Willems L, Jacque N, Jacquel A, Neveux N, Maciel TT, Lambert M, Schmitt A, Poulain L, Green AS, Uzunov M, Kosmider O, Radford-Weiss I, Moura IC, Auberger P, Ifrah N, Bardet V, Chapuis N, Lacombe C, Mayeux P, Tamburini J, Bouscary D. Inhibiting glutamine uptake represents an attractive new strategy for treating acute myeloid leukemia. Blood. 2013 Nov 14;122(20):3521-32. doi: 10.1182/blood-2013-03-493163. Epub 2013 Sep 6.",
+      "paper_title": "Inhibiting glutamine uptake represents an attractive new strategy for treating acute myeloid leukemia.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "ras",
+      "pmid": "17060486",
+      "nct": "NCT00637910",
+      "reference_entries": [
+        {
+          "pmid": "17060486",
+          "type": "BACKGROUND",
+          "citation": "van Zandwijk N, Mathy A, Boerrigter L, Ruijter H, Tielen I, de Jong D, Baas P, Burgers S, Nederlof P. EGFR and KRAS mutations as criteria for treatment with tyrosine kinase inhibitors: retro- and prospective observations in non-small-cell lung cancer. Ann Oncol. 2007 Jan;18(1):99-103. doi: 10.1093/annonc/mdl323. Epub 2006 Oct 23."
+        }
+      ],
+      "citation": "van Zandwijk N, Mathy A, Boerrigter L, Ruijter H, Tielen I, de Jong D, Baas P, Burgers S, Nederlof P. EGFR and KRAS mutations as criteria for treatment with tyrosine kinase inhibitors: retro- and prospective observations in non-small-cell lung cancer. Ann Oncol. 2007 Jan;18(1):99-103. doi: 10.1093/annonc/mdl323. Epub 2006 Oct 23.",
+      "paper_title": "EGFR and KRAS mutations as criteria for treatment with tyrosine kinase inhibitors: retro- and prospective observations in non-small-cell lung cancer.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "pi3k",
+      "pmid": "19903340",
+      "nct": "NCT02404480",
+      "reference_entries": [
+        {
+          "pmid": "19903340",
+          "type": "BACKGROUND",
+          "citation": "Fan C, He L, Kapoor A, Rybak AP, De Melo J, Cutz JC, Tang D. PTEN inhibits BMI1 function independently of its phosphatase activity. Mol Cancer. 2009 Nov 10;8:98. doi: 10.1186/1476-4598-8-98."
+        }
+      ],
+      "citation": "Fan C, He L, Kapoor A, Rybak AP, De Melo J, Cutz JC, Tang D. PTEN inhibits BMI1 function independently of its phosphatase activity. Mol Cancer. 2009 Nov 10;8:98. doi: 10.1186/1476-4598-8-98.",
+      "paper_title": "PTEN inhibits BMI1 function independently of its phosphatase activity.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "egfr",
+      "pmid": "23451083",
+      "nct": "NCT02338232",
+      "reference_entries": [
+        {
+          "pmid": "23451083",
+          "type": "BACKGROUND",
+          "citation": "Ozeki K, Tanida S, Morimoto C, Inoue Y, Mizoshita T, Tsukamoto H, Shimura T, Kataoka H, Kamiya T, Nishiwaki E, Ishiguro H, Higashiyama S, Joh T. Telmisartan inhibits cell proliferation by blocking nuclear translocation of ProHB-EGF C-terminal fragment in colon cancer cells. PLoS One. 2013;8(2):e56770. doi: 10.1371/journal.pone.0056770. Epub 2013 Feb 22."
+        }
+      ],
+      "citation": "Ozeki K, Tanida S, Morimoto C, Inoue Y, Mizoshita T, Tsukamoto H, Shimura T, Kataoka H, Kamiya T, Nishiwaki E, Ishiguro H, Higashiyama S, Joh T. Telmisartan inhibits cell proliferation by blocking nuclear translocation of ProHB-EGF C-terminal fragment in colon cancer cells. PLoS One. 2013;8(2):e56770. doi: 10.1371/journal.pone.0056770. Epub 2013 Feb 22.",
+      "paper_title": "Telmisartan inhibits cell proliferation by blocking nuclear translocation of ProHB-EGF C-terminal fragment in colon cancer cells.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "ras",
+      "pmid": "19487299",
+      "nct": "NCT01813136",
+      "reference_entries": [
+        {
+          "pmid": "19487299",
+          "type": "BACKGROUND",
+          "citation": "Ricarte-Filho JC, Ryder M, Chitale DA, Rivera M, Heguy A, Ladanyi M, Janakiraman M, Solit D, Knauf JA, Tuttle RM, Ghossein RA, Fagin JA. Mutational profile of advanced primary and metastatic radioactive iodine-refractory thyroid cancers reveals distinct pathogenetic roles for BRAF, PIK3CA, and AKT1. Cancer Res. 2009 Jun 1;69(11):4885-93. doi: 10.1158/0008-5472.CAN-09-0727."
+        }
+      ],
+      "citation": "Ricarte-Filho JC, Ryder M, Chitale DA, Rivera M, Heguy A, Ladanyi M, Janakiraman M, Solit D, Knauf JA, Tuttle RM, Ghossein RA, Fagin JA. Mutational profile of advanced primary and metastatic radioactive iodine-refractory thyroid cancers reveals distinct pathogenetic roles for BRAF, PIK3CA, and AKT1. Cancer Res. 2009 Jun 1;69(11):4885-93. doi: 10.1158/0008-5472.CAN-09-0727.",
+      "paper_title": "Mutational profile of advanced primary and metastatic radioactive iodine-refractory thyroid cancers reveals distinct pathogenetic roles for BRAF, PIK3CA, and AKT1.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "egfr",
+      "pmid": "24015299",
+      "nct": "NCT02662348",
+      "reference_entries": [
+        {
+          "pmid": "24015299",
+          "type": "BACKGROUND",
+          "citation": "Ma J, Han H, Liu D, Li W, Feng H, Xue X, Wu X, Niu G, Zhang G, Zhao Y, Liu C, Tao H, Gao B. HER2 as a promising target for cytotoxicity T cells in human melanoma therapy. PLoS One. 2013 Aug 27;8(8):e73261. doi: 10.1371/journal.pone.0073261. eCollection 2013."
+        }
+      ],
+      "citation": "Ma J, Han H, Liu D, Li W, Feng H, Xue X, Wu X, Niu G, Zhang G, Zhao Y, Liu C, Tao H, Gao B. HER2 as a promising target for cytotoxicity T cells in human melanoma therapy. PLoS One. 2013 Aug 27;8(8):e73261. doi: 10.1371/journal.pone.0073261. eCollection 2013.",
+      "paper_title": "HER2 as a promising target for cytotoxicity T cells in human melanoma therapy.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "pi3k",
+      "pmid": "16873412",
+      "nct": "NCT00760383",
+      "reference_entries": [
+        {
+          "pmid": "16873412",
+          "type": "BACKGROUND",
+          "citation": "Dreyer HC, Fujita S, Cadenas JG, Chinkes DL, Volpi E, Rasmussen BB. Resistance exercise increases AMPK activity and reduces 4E-BP1 phosphorylation and protein synthesis in human skeletal muscle. J Physiol. 2006 Oct 15;576(Pt 2):613-24. doi: 10.1113/jphysiol.2006.113175. Epub 2006 Jul 27."
+        }
+      ],
+      "citation": "Dreyer HC, Fujita S, Cadenas JG, Chinkes DL, Volpi E, Rasmussen BB. Resistance exercise increases AMPK activity and reduces 4E-BP1 phosphorylation and protein synthesis in human skeletal muscle. J Physiol. 2006 Oct 15;576(Pt 2):613-24. doi: 10.1113/jphysiol.2006.113175. Epub 2006 Jul 27.",
+      "paper_title": "Resistance exercise increases AMPK activity and reduces 4E-BP1 phosphorylation and protein synthesis in human skeletal muscle.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "egfr",
+      "pmid": "15906359",
+      "nct": "NCT01065246",
+      "reference_entries": [
+        {
+          "pmid": "15906359",
+          "type": "BACKGROUND",
+          "citation": "Heiss MM, Strohlein MA, Jager M, Kimmig R, Burges A, Schoberth A, Jauch KW, Schildberg FW, Lindhofer H. Immunotherapy of malignant ascites with trifunctional antibodies. Int J Cancer. 2005 Nov 10;117(3):435-43. doi: 10.1002/ijc.21165."
+        }
+      ],
+      "citation": "Heiss MM, Strohlein MA, Jager M, Kimmig R, Burges A, Schoberth A, Jauch KW, Schildberg FW, Lindhofer H. Immunotherapy of malignant ascites with trifunctional antibodies. Int J Cancer. 2005 Nov 10;117(3):435-43. doi: 10.1002/ijc.21165.",
+      "paper_title": "Immunotherapy of malignant ascites with trifunctional antibodies.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "ras",
+      "pmid": "26540293",
+      "nct": "NCT05660083",
+      "reference_entries": [
+        {
+          "pmid": "26540293",
+          "type": "BACKGROUND",
+          "citation": "Cossu-Rocca P, Orru S, Muroni MR, Sanges F, Sotgiu G, Ena S, Pira G, Murgia L, Manca A, Uras MG, Sarobba MG, Urru S, De Miglio MR. Analysis of PIK3CA Mutations and Activation Pathways in Triple Negative Breast Cancer. PLoS One. 2015 Nov 5;10(11):e0141763. doi: 10.1371/journal.pone.0141763. eCollection 2015."
+        }
+      ],
+      "citation": "Cossu-Rocca P, Orru S, Muroni MR, Sanges F, Sotgiu G, Ena S, Pira G, Murgia L, Manca A, Uras MG, Sarobba MG, Urru S, De Miglio MR. Analysis of PIK3CA Mutations and Activation Pathways in Triple Negative Breast Cancer. PLoS One. 2015 Nov 5;10(11):e0141763. doi: 10.1371/journal.pone.0141763. eCollection 2015.",
+      "paper_title": "Analysis of PIK3CA Mutations and Activation Pathways in Triple Negative Breast Cancer.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "egfr",
+      "pmid": "25704957",
+      "nct": "NCT05204758",
+      "reference_entries": [
+        {
+          "pmid": "25704957",
+          "type": "BACKGROUND",
+          "citation": "Takeda M, Okamoto I, Nakagawa K. Pooled safety analysis of EGFR-TKI treatment for EGFR mutation-positive non-small cell lung cancer. Lung Cancer. 2015 Apr;88(1):74-9. doi: 10.1016/j.lungcan.2015.01.026. Epub 2015 Feb 7."
+        }
+      ],
+      "citation": "Takeda M, Okamoto I, Nakagawa K. Pooled safety analysis of EGFR-TKI treatment for EGFR mutation-positive non-small cell lung cancer. Lung Cancer. 2015 Apr;88(1):74-9. doi: 10.1016/j.lungcan.2015.01.026. Epub 2015 Feb 7.",
+      "paper_title": "Pooled safety analysis of EGFR-TKI treatment for EGFR mutation-positive non-small cell lung cancer.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "ras",
+      "pmid": "22235099",
+      "nct": "NCT03779191",
+      "reference_entries": [
+        {
+          "pmid": "22235099",
+          "type": "BACKGROUND",
+          "citation": "Doebele RC, Pilling AB, Aisner DL, Kutateladze TG, Le AT, Weickhardt AJ, Kondo KL, Linderman DJ, Heasley LE, Franklin WA, Varella-Garcia M, Camidge DR. Mechanisms of resistance to crizotinib in patients with ALK gene rearranged non-small cell lung cancer. Clin Cancer Res. 2012 Mar 1;18(5):1472-82. doi: 10.1158/1078-0432.CCR-11-2906. Epub 2012 Jan 10."
+        }
+      ],
+      "citation": "Doebele RC, Pilling AB, Aisner DL, Kutateladze TG, Le AT, Weickhardt AJ, Kondo KL, Linderman DJ, Heasley LE, Franklin WA, Varella-Garcia M, Camidge DR. Mechanisms of resistance to crizotinib in patients with ALK gene rearranged non-small cell lung cancer. Clin Cancer Res. 2012 Mar 1;18(5):1472-82. doi: 10.1158/1078-0432.CCR-11-2906. Epub 2012 Jan 10.",
+      "paper_title": "Mechanisms of resistance to crizotinib in patients with ALK gene rearranged non-small cell lung cancer.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "egfr",
+      "pmid": "25341559",
+      "nct": "NCT05833815",
+      "reference_entries": [
+        {
+          "pmid": "25341559",
+          "type": "BACKGROUND",
+          "citation": "Eckel F, Schmid RM. Chemotherapy and targeted therapy in advanced biliary tract carcinoma: a pooled analysis of clinical trials. Chemotherapy. 2014;60(1):13-23. doi: 10.1159/000365781. Epub 2014 Oct 21."
+        }
+      ],
+      "citation": "Eckel F, Schmid RM. Chemotherapy and targeted therapy in advanced biliary tract carcinoma: a pooled analysis of clinical trials. Chemotherapy. 2014;60(1):13-23. doi: 10.1159/000365781. Epub 2014 Oct 21.",
+      "paper_title": "Chemotherapy and targeted therapy in advanced biliary tract carcinoma: a pooled analysis of clinical trials.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "egfr",
+      "pmid": "24893891",
+      "nct": "NCT03257124",
+      "reference_entries": [
+        {
+          "pmid": "24893891",
+          "type": "BACKGROUND",
+          "citation": "Cross DA, Ashton SE, Ghiorghiu S, Eberlein C, Nebhan CA, Spitzler PJ, Orme JP, Finlay MR, Ward RA, Mellor MJ, Hughes G, Rahi A, Jacobs VN, Red Brewer M, Ichihara E, Sun J, Jin H, Ballard P, Al-Kadhimi K, Rowlinson R, Klinowska T, Richmond GH, Cantarini M, Kim DW, Ranson MR, Pao W. AZD9291, an irreversible EGFR TKI, overcomes T790M-mediated resistance to EGFR inhibitors in lung cancer. Cancer Discov. 2014 Sep;4(9):1046-61. doi: 10.1158/2159-8290.CD-14-0337. Epub 2014 Jun 3."
+        }
+      ],
+      "citation": "Cross DA, Ashton SE, Ghiorghiu S, Eberlein C, Nebhan CA, Spitzler PJ, Orme JP, Finlay MR, Ward RA, Mellor MJ, Hughes G, Rahi A, Jacobs VN, Red Brewer M, Ichihara E, Sun J, Jin H, Ballard P, Al-Kadhimi K, Rowlinson R, Klinowska T, Richmond GH, Cantarini M, Kim DW, Ranson MR, Pao W. AZD9291, an irreversible EGFR TKI, overcomes T790M-mediated resistance to EGFR inhibitors in lung cancer. Cancer Discov. 2014 Sep;4(9):1046-61. doi: 10.1158/2159-8290.CD-14-0337. Epub 2014 Jun 3.",
+      "paper_title": "AZD9291, an irreversible EGFR TKI, overcomes T790M-mediated resistance to EGFR inhibitors in lung cancer.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "pi3k",
+      "pmid": "20512579",
+      "nct": "NCT01334073",
+      "reference_entries": [
+        {
+          "pmid": "20512579",
+          "type": "BACKGROUND",
+          "citation": "O'Reilly T, Lane HA, Wood JM, Schnell C, Littlewood-Evans A, Brueggen J, McSheehy PM. Everolimus and PTK/ZK show synergistic growth inhibition in the orthotopic BL16/BL6 murine melanoma model. Cancer Chemother Pharmacol. 2011 Jan;67(1):193-200. doi: 10.1007/s00280-010-1307-z. Epub 2010 May 30."
+        }
+      ],
+      "citation": "O'Reilly T, Lane HA, Wood JM, Schnell C, Littlewood-Evans A, Brueggen J, McSheehy PM. Everolimus and PTK/ZK show synergistic growth inhibition in the orthotopic BL16/BL6 murine melanoma model. Cancer Chemother Pharmacol. 2011 Jan;67(1):193-200. doi: 10.1007/s00280-010-1307-z. Epub 2010 May 30.",
+      "paper_title": "Everolimus and PTK/ZK show synergistic growth inhibition in the orthotopic BL16/BL6 murine melanoma model.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "ras",
+      "pmid": "12697856",
+      "nct": "NCT00095459",
+      "reference_entries": [
+        {
+          "pmid": "12697856",
+          "type": "BACKGROUND",
+          "citation": "Cohen Y, Xing M, Mambo E, Guo Z, Wu G, Trink B, Beller U, Westra WH, Ladenson PW, Sidransky D. BRAF mutation in papillary thyroid carcinoma. J Natl Cancer Inst. 2003 Apr 16;95(8):625-7. doi: 10.1093/jnci/95.8.625."
+        }
+      ],
+      "citation": "Cohen Y, Xing M, Mambo E, Guo Z, Wu G, Trink B, Beller U, Westra WH, Ladenson PW, Sidransky D. BRAF mutation in papillary thyroid carcinoma. J Natl Cancer Inst. 2003 Apr 16;95(8):625-7. doi: 10.1093/jnci/95.8.625.",
+      "paper_title": "BRAF mutation in papillary thyroid carcinoma.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "egfr",
+      "pmid": "22672969",
+      "nct": "NCT02480634",
+      "reference_entries": [
+        {
+          "pmid": "22672969",
+          "type": "BACKGROUND",
+          "citation": "Bae HM, Lee SH, Kim TM, Kim DW, Yang SC, Wu HG, Kim YW, Heo DS. Prognostic factors for non-small cell lung cancer with bone metastasis at the time of diagnosis. Lung Cancer. 2012 Sep;77(3):572-7. doi: 10.1016/j.lungcan.2012.05.094. Epub 2012 Jun 4."
+        }
+      ],
+      "citation": "Bae HM, Lee SH, Kim TM, Kim DW, Yang SC, Wu HG, Kim YW, Heo DS. Prognostic factors for non-small cell lung cancer with bone metastasis at the time of diagnosis. Lung Cancer. 2012 Sep;77(3):572-7. doi: 10.1016/j.lungcan.2012.05.094. Epub 2012 Jun 4.",
+      "paper_title": "Prognostic factors for non-small cell lung cancer with bone metastasis at the time of diagnosis.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "ras",
+      "pmid": "20008300",
+      "nct": "NCT03558607",
+      "reference_entries": [
+        {
+          "pmid": "20008300",
+          "type": "BACKGROUND",
+          "citation": "Beer PA, Delhommeau F, LeCouedic JP, Dawson MA, Chen E, Bareford D, Kusec R, McMullin MF, Harrison CN, Vannucchi AM, Vainchenker W, Green AR. Two routes to leukemic transformation after a JAK2 mutation-positive myeloproliferative neoplasm. Blood. 2010 Apr 8;115(14):2891-900. doi: 10.1182/blood-2009-08-236596. Epub 2009 Dec 11."
+        }
+      ],
+      "citation": "Beer PA, Delhommeau F, LeCouedic JP, Dawson MA, Chen E, Bareford D, Kusec R, McMullin MF, Harrison CN, Vannucchi AM, Vainchenker W, Green AR. Two routes to leukemic transformation after a JAK2 mutation-positive myeloproliferative neoplasm. Blood. 2010 Apr 8;115(14):2891-900. doi: 10.1182/blood-2009-08-236596. Epub 2009 Dec 11.",
+      "paper_title": "Two routes to leukemic transformation after a JAK2 mutation-positive myeloproliferative neoplasm.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    },
+    {
+      "pathway": "pi3k",
+      "pmid": "21633166",
+      "nct": "NCT01818063",
+      "reference_entries": [
+        {
+          "pmid": "21633166",
+          "type": "BACKGROUND",
+          "citation": "Lehmann BD, Bauer JA, Chen X, Sanders ME, Chakravarthy AB, Shyr Y, Pietenpol JA. Identification of human triple-negative breast cancer subtypes and preclinical models for selection of targeted therapies. J Clin Invest. 2011 Jul;121(7):2750-67. doi: 10.1172/JCI45014."
+        }
+      ],
+      "citation": "Lehmann BD, Bauer JA, Chen X, Sanders ME, Chakravarthy AB, Shyr Y, Pietenpol JA. Identification of human triple-negative breast cancer subtypes and preclinical models for selection of targeted therapies. J Clin Invest. 2011 Jul;121(7):2750-67. doi: 10.1172/JCI45014.",
+      "paper_title": "Identification of human triple-negative breast cancer subtypes and preclinical models for selection of targeted therapies.",
+      "title_token_overlap": 1.0,
+      "auto_match": true
+    }
+  ]
+}

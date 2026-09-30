@@ -422,3 +422,21 @@ Exploratory: the animal and other ORs; per-pathway ORs; the drug and
 phase-2+ restrictions; the permutation control (1000, within year and
 pathway).
 Record: results/meta_trials.json
+
+Before any outcome was joined, 2026-09-30:
+- Fetch. ClinicalTrials.gov API v2 on 2026-09-29: 604,950 studies (461,679
+  interventional). Interventional studies list 592,485 BACKGROUND
+  references. The PMID index has 409,613 PMIDs and 550,691 (PMID, trial)
+  pairs.
+- Outcome marginals. RAS: 116 of 8,186 papers (1.42%). EGFR: 333 of 30,239
+  (1.10%). PI3K: 241 of 21,046 (1.15%). Pooled with first-kept
+  deduplication: 672 events in 58,146 papers.
+- Linkage check. In 30 of 30 sampled pairs the trial's citation string
+  contains the paper's full title. An independent recomputation of the RAS
+  window matched the builder's output exactly (116 events, 0 mismatches).
+- Definitions fixed by the builder, accepted before the run. Phase 2 or
+  later means every listed phase is 2, 3 or 4; phase 1/2 is excluded. Drug
+  means a DRUG or BIOLOGICAL intervention. A trial citing the same PMID
+  twice counts once. Start year is the year of the start date, which may be
+  anticipated. Trials with no start date are left out of the window (0, 1
+  and 3 linked papers in RAS, EGFR and PI3K).

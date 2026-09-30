@@ -480,3 +480,53 @@ citation in RAS. Being cited as background is still not the same as the
 trial depending on the paper, and approval is not measured. The ORs are
 associations, and a trial's background section may cite patient data for
 context, much as clinical articles do.
+
+## 2026-09-30 metascience v4: design against topic   (rules fixed before the run)
+
+Question: Among papers on the same topic, are patient-sample papers still
+more likely than cell-line-only papers to be cited clinically, or cited as
+trial background? The alternative is that the v1-v3 associations reflect
+topic rather than design.
+Decision it drives: if the effect persists within matched topic, design
+itself carries it and the next step is rigor features. If it is
+attenuated, the effect is mostly topic and later work should model topic
+explicitly.
+Papers: eligible preclinical papers of RAS, EGFR and PI3K, deduplicated
+keeping the first of RAS, EGFR, PI3K, as in v3. Only model_system
+human_samples (treated) and cell_only (controls) are used.
+Topic representation: TF-IDF over each paper's MeSH descriptors, with
+qualifiers dropped. Every design-revealing descriptor is removed first:
+every term in the model_system rule lists of src/meta/features.py, check
+tags (Humans, Animals, Female, Male, age groups), organism and cell-line
+descriptors, study-design and statistics descriptors (e.g. Retrospective
+Studies, Cohort Studies, Survival Analysis, Kaplan-Meier Estimate,
+Prognosis, Immunohistochemistry), and laboratory-technique descriptors.
+The builder writes the removed list to a file before matching. Topic
+similarity is cosine similarity.
+Matching: 1:1 greedy nearest neighbour without replacement, exact on
+pathway and gene_group, with publication year within +/-1. Treated papers
+are processed in descending order of their best available similarity,
+ties broken by PMID. The caliper is the largest of {0.6, 0.5, 0.4, 0.3}
+that matches at least 50% of treated papers. It is chosen from similarity
+distributions only, before any outcome is read.
+Outcomes: clin_cited_8y (v1/v2 outcome B) and trial_bg_8y (v3).
+Primary estimate, per outcome, pooled: matched-pair (McNemar) OR = b/c,
+where b = pairs in which only the treated paper has the outcome and c =
+pairs in which only the control does. The 95% CI is exact (Clopper-Pearson
+on b/(b+c), transformed). Comparator: the crude OR over all treated and
+all controls, and the crude OR over matched papers treated as unpaired.
+Verdict per outcome: "persists" if the matched CI lies entirely above 1;
+"reversed" if entirely below 1; otherwise "attenuated to null". Also
+report attenuation = 1 - log(matched OR) / log(crude OR).
+Placebo: the same matched-pair OR for PMID parity; its CI must include 1.
+Balance, reported: the topic similarity of matched pairs, standardized
+differences of log authors and log(1 + refs) between arms, and the match
+rate per pathway.
+Matching-quality check: 50 random matched pairs (rng seed 0). A blind Opus
+judge sees only the two titles and abstracts, with design words not
+masked, and rates "same research topic (same gene/alteration and
+disease/question)" as yes or no. If fewer than 70% are yes, topic matching
+is flagged weak and the verdict is reported as provisional.
+Exploratory: per-pathway matched ORs; the trial outcome restricted to drug
+or biological trials.
+Record: results/meta_matched.json

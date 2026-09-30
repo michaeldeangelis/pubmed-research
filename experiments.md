@@ -379,3 +379,46 @@ facts about patients, so a clinical citation partly measures topic. The
 animal association is field-specific. Not shown: causation, approval-level
 translation, fields outside cancer signaling, or anything about how well
 the studies were conducted.
+
+## 2026-09-30 metascience v3: trial background citations   (rules fixed before the run)
+
+Question: Is patient-sample research more or less likely than
+cell-line-only research to be cited as BACKGROUND in the registration of an
+interventional clinical trial? This is a direct link from a paper to a
+trial, not a citation by a clinical article.
+Decision it drives: the same direction as v1 and v2 means clinical uptake
+of patient-sample work reaches trial design, not only clinical articles.
+The opposite direction means trials build on cell or animal work, as the
+case histories suggested, and that "cited clinically" and "led to a trial"
+come apart. Null or underpowered means the registry link cannot answer it.
+Data: ClinicalTrials.gov API v2, all registered studies, fetched once and
+cached. For each study: NCT ID, study type, start date, phases,
+intervention types, and references with PMID and type. Only references of
+type BACKGROUND from INTERVENTIONAL studies count. RESULT and DERIVED
+references are excluded, because they are the trial's own reports.
+Outcome: trial_bg_8y = 1 if the paper is a BACKGROUND reference of an
+interventional study whose start year is within publication year minus 1
+through plus 8. Secondary: the count of such trials; restriction to trials
+with a DRUG or BIOLOGICAL intervention; restriction to phase 2 or later.
+Papers: the eligible preclinical papers of v1 RAS/MAPK, v2 EGFR and v2 PI3K,
+with the features, eligibility and covariates each version already uses
+(v1 reference count as amended; iCite reference count for EGFR and PI3K).
+A paper in more than one corpus is kept once, in the first of RAS, EGFR,
+PI3K.
+Model: logit, trial_bg_8y ~ model_system + year FE + pathway FE +
+gene_group within pathway + log authors + log(1 + refs) + refs_missing,
+pooled over the three pathways, full 2000-2015. CIs are 1000-resample
+bootstrap (seed 0).
+Primary: the human_samples OR against cell_only. Verdict "same direction"
+if the CI lies entirely above 1, "opposite" if entirely below 1, "null"
+otherwise. The placebo (PMID even) CI must include 1, or the result is
+flagged unreliable. If there are fewer than 100 outcome events among
+cell_only plus human_samples papers, the verdict is "underpowered",
+whatever the CI.
+Linkage check before the join: 30 random linked pairs (paper, trial) are
+verified by reading the trial record's reference entry. Report the count
+of correct links.
+Exploratory: the animal and other ORs; per-pathway ORs; the drug and
+phase-2+ restrictions; the permutation control (1000, within year and
+pathway).
+Record: results/meta_trials.json

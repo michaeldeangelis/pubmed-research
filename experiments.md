@@ -547,3 +547,17 @@ Amendment v4-1, 2026-09-30, before any outcome was joined:
   excluding pairs where either count is missing.
 - Removed-descriptor list: 662 descriptors (bench/meta_validation/removed_mesh.json).
   10,094 topic descriptors remain.
+
+Amendment v4-2, 2026-09-30, before any outcome was joined:
+- Matching-quality check at caliper 0.3: 21 of 50 pairs judged same topic
+  (42%), below the 70% bar, so caliper-0.3 matching is weak. By similarity
+  band: 0.3-0.4 5/20, 0.4-0.5 4/13, 0.5-0.6 2/5, >=0.6 10/12
+  (bench/meta_validation/match_judgments.json).
+- The primary analysis now uses pairs with similarity >= 0.6: 677 pairs,
+  the top of the same nested greedy matching. Because 0.6 was chosen from
+  those 50 pairs, it is confirmed on a fresh blind sample of 50 unjudged
+  pairs at >= 0.6 (rng seed 1; bench/meta_validation/match_judge2_*.json).
+  If that sample is at least 70% same topic, the 0.6 verdict stands.
+  Otherwise it is provisional.
+- The caliper-0.3 analysis is still run and reported as a weak-matching
+  sensitivity check, never as the verdict.

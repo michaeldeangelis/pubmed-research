@@ -92,11 +92,15 @@ def run(match_dir: Path = MATCH_DIR, pathway_dirs: dict[str, Path] = analysis_tr
     for p in pairs:
         p["treated_pmid"], p["control_pmid"] = str(p["treated_pmid"]), str(p["control_pmid"])
     outcomes = _load_outcomes(pathway_dirs, trials_dir)
+    n_listed = len(pairs)
+    pairs = [p for p in pairs if p["treated_pmid"] in outcomes and p["control_pmid"] in outcomes]
     pool = [r for r in analysis_trials.load_pooled(pathway_dirs, trials_dir)
             if r["model_system"] in ("human_samples", "cell_only") and r["pmid"] in outcomes]
+    refs = {r["pmid"]: r["n_refs"] for r in pool}
     matched_treated = [p["treated_pmid"] for p in pairs]
     matched_control = [p["control_pmid"] for p in pairs]
-    report: dict = {"ledger": "experiments.md, 2026-09-30 metascience v4", "n_pairs": len(pairs), "outcomes": {}}
+    report: dict = {"ledger": "experiments.md, 2026-09-30 metascience v4", "n_pairs": len(pairs),
+                    "n_pairs_dropped_no_outcome": n_listed - len(pairs), "outcomes": {}}
     for key in OUTCOMES + ("parity",):
         b, c = _pair_counts(pairs, outcomes, key)
         m = matched_or(b, c)
@@ -108,6 +112,10 @@ def run(match_dir: Path = MATCH_DIR, pathway_dirs: dict[str, Path] = analysis_tr
             "attenuation_vs_crude": _attenuation(m["or"], crude["or"]),
             "verdict": verdict(m) if key != "parity" else ("placebo ok" if m["lo"] is not None and m["lo"] <= 1 <= m["hi"] else "placebo FAILED"),
         }
+    close = [p for p in pairs if refs.get(p["treated_pmid"]) is not None and refs.get(p["control_pmid"]) is not None
+             and abs(math.log1p(refs[p["treated_pmid"]]) - math.log1p(refs[p["control_pmid"]])) <= 0.5]
+    report["refs_balanced_pairs"] = {"n_pairs": len(close),
+                                     **{key: matched_or(*_pair_counts(close, outcomes, key)) for key in OUTCOMES}}
     report["per_pathway"] = {}
     for name in pathway_dirs:
         sub = [p for p in pairs if p.get("pathway") == name]

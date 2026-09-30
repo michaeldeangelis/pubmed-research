@@ -530,3 +530,20 @@ is flagged weak and the verdict is reported as provisional.
 Exploratory: per-pathway matched ORs; the trial outcome restricted to drug
 or biological trials.
 Record: results/meta_matched.json
+
+Amendment v4-1, 2026-09-30, before any outcome was joined:
+- Caliper. No caliper in {0.6, 0.5, 0.4, 0.3} matches 50% of treated
+  papers. The rates were 3.4%, 7.2%, 13.8% and 24.4%. Reaching 50% would
+  need a similarity near 0.1, which is close to no topic match, and the
+  exact pathway, gene and year constraints alone allow only 59.9%. Caliper
+  0.3 is kept (4,839 pairs: RAS 863, EGFR 3,071, PI3K 905), because topic
+  closeness is the point of v4. The 50% target was set before the
+  similarity distribution was known. The decision uses similarity
+  distributions only (bench/meta_validation/matching_summary.json).
+- Pairs where either paper lacks an outcome are dropped.
+- Balance after matching: log authors std diff 0.057, and log(1 + refs)
+  -0.493 (it was -0.680 before). Refs stay imbalanced, so an exploratory
+  analysis restricts to pairs with |log(1 + refs) difference| <= 0.5,
+  excluding pairs where either count is missing.
+- Removed-descriptor list: 662 descriptors (bench/meta_validation/removed_mesh.json).
+  10,094 topic descriptors remain.

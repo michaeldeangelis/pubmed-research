@@ -302,3 +302,16 @@ Exploratory: model_system=animal and =other; the permutation control
 sensitivity model.
 Kill: not confirmed in either pathway.
 Record: results/meta_pathways.json
+
+Before any outcome was joined, 2026-09-30:
+- Corpora. EGFR has 52,035 papers (2,772 RAS papers excluded) and 30,144
+  eligible preclinical. PI3K has 29,572 (1,514 excluded) and 21,046. The two
+  corpora share 1,314 eligible preclinical papers. Most of the 5,490 EGFR
+  off_topic exclusions are kidney "eGFR" papers, which a case-insensitive
+  search pulls in.
+- Measurement gate (results/meta_measurement_gate_pathways.json):
+  model_system kappa 0.843 (agreement 0.89), a pass. For reference only,
+  since neither is tested in v2: human_genetics 0.712, multi_system 0.525.
+- Reference count. The OpenAlex daily credit ran out during the EGFR run,
+  so 964 eligible EGFR papers use the iCite count, as the amended fallback
+  rule allows. It is recorded in each pathway's manifest_impact.json.

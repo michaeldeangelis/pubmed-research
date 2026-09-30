@@ -561,3 +561,7 @@ Amendment v4-2, 2026-09-30, before any outcome was joined:
   Otherwise it is provisional.
 - The caliper-0.3 analysis is still run and reported as a weak-matching
   sensitivity check, never as the verdict.
+
+Confirmation of caliper 0.6, before any outcome was joined: on the fresh
+sample, 43 of 50 pairs were judged same topic (86%), above the 70% bar
+(bench/meta_validation/match_judge2_judgments.json). The 0.6 verdict stands.

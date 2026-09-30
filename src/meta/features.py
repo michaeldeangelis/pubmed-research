@@ -11,6 +11,17 @@ Commands
     eligibility), writes the v2 blind validation packets
     (``bench/meta_validation/packets_v2.json``; the v1 ``packets.json`` is
     frozen and never rewritten), and prints marginal counts only.
+``python -m src.meta.features --pathway {egfr,pi3k}``
+    Metascience v2: the same rules on a pathway corpus under
+    ``data/meta/pathways/<name>/`` (``features.jsonl``,
+    ``manifest_features.json``), with that pathway's eligibility and
+    gene-group patterns (``src.meta.pathways``). Writes no packets.
+``python -m src.meta.features pathway-packets``
+    Metascience v2 gate packets: 150 eligible preclinical papers per pathway
+    (``default_rng(2)`` over sorted PMIDs; egfr drawn first, a PMID drawn for
+    egfr is removed from the pi3k pool) in
+    ``bench/meta_validation/packets_pathways.json`` (pmid/title/abstract/mesh
+    only) and the pmid -> pathway map in ``packets_pathways_index.json``.
 ``python -m src.meta.features score <extracted.json> [--packets P] [--out O]``
     Compares the rules with a blind model extraction of the packets (default
     ``bench/meta_validation/packets.json``) and writes the gate record (default
@@ -93,6 +104,8 @@ FEATURES_PATH = META_DIR / "features.jsonl"
 VALIDATION_DIR = ROOT / "bench" / "meta_validation"
 PACKETS_PATH = VALIDATION_DIR / "packets.json"  # v1: frozen, never rewritten
 PACKETS_V2_PATH = VALIDATION_DIR / "packets_v2.json"
+PACKETS_PATHWAYS_PATH = VALIDATION_DIR / "packets_pathways.json"  # metascience v2 pathways
+PACKETS_PATHWAYS_INDEX_PATH = VALIDATION_DIR / "packets_pathways_index.json"
 EXTRACT_SCHEMA_PATH = VALIDATION_DIR / "schema.json"
 GATE_PATH = ROOT / "results" / "meta_measurement_gate.json"
 
@@ -115,6 +128,8 @@ EXCLUSION_REASONS = ("no_mesh", "off_topic", "non_primary")
 N_VALIDATION = 300
 VALIDATION_SEED = 0
 VALIDATION_SEED_V2 = 1
+VALIDATION_SEED_PATHWAYS = 2
+N_VALIDATION_PER_PATHWAY = 150
 KAPPA_GATE = 0.60
 MAX_DISAGREEMENTS = 40
 
@@ -509,9 +524,10 @@ def multi_system(present: dict[str, bool]) -> int:
     return int(sum(bool(present[s]) for s in SYSTEMS) >= 2)
 
 
-def gene_group(paper: dict) -> str:
+def gene_group(paper: dict, patterns=None) -> str:
+    """First matching gene group (v1 RAS groups unless ``patterns`` is given)."""
     text = paper_text(paper)
-    for name, pattern in GENE_GROUP_PATTERNS:
+    for name, pattern in GENE_GROUP_PATTERNS if patterns is None else patterns:
         if pattern.search(text):
             return name
     return "other"
@@ -524,16 +540,19 @@ def _norm_pub_type(t: str) -> str:
     return re.sub(r"[-_\s]+", " ", str(t or "")).strip().casefold()
 
 
-def on_topic(paper: dict) -> bool:
+def on_topic(paper: dict, patterns=None) -> bool:
     text = paper_text(paper)
-    return any(p.search(text) for p in ON_TOPIC_PATTERNS)
+    return any(p.search(text) for p in (ON_TOPIC_PATTERNS if patterns is None else patterns))
 
 
-def exclusion(paper: dict) -> str | None:
-    """First matching exclusion reason (no_mesh, off_topic, non_primary) or None."""
+def exclusion(paper: dict, on_topic_patterns=None) -> str | None:
+    """First matching exclusion reason (no_mesh, off_topic, non_primary) or None.
+
+    ``on_topic_patterns`` defaults to the v1 RAS/MAPK gene and drug patterns.
+    """
     if not mesh_set(paper.get("mesh")):
         return "no_mesh"
-    if not on_topic(paper):
+    if not on_topic(paper, on_topic_patterns):
         return "off_topic"
     if any(_norm_pub_type(t) in _NON_PRIMARY for t in paper.get("pub_types") or []):
         return "non_primary"
@@ -551,9 +570,20 @@ def rule_labels(paper: dict) -> dict:
     }
 
 
-def feature_row(paper: dict, icite: dict) -> dict:
+def _pathway_patterns(pathway: str | None) -> tuple:
+    """(gene_group patterns, on_topic patterns); (None, None) means v1 RAS."""
+    if pathway is None:
+        return None, None
+    from src.meta import pathways
+
+    cfg = pathways.get(pathway)
+    return cfg["gene_groups"], cfg["on_topic"]
+
+
+def feature_row(paper: dict, icite: dict, pathway: str | None = None) -> dict:
+    groups, topic = _pathway_patterns(pathway)
     labels = rule_labels(paper)
-    reason = exclusion(paper)
+    reason = exclusion(paper, topic)
     n_authors = paper.get("n_authors")
     return {
         "pmid": str(paper["pmid"]),
@@ -561,7 +591,7 @@ def feature_row(paper: dict, icite: dict) -> dict:
         "model_system": labels["model_system"],
         "human_genetics": labels["human_genetics"],
         "multi_system": labels["multi_system"],
-        "gene_group": gene_group(paper),
+        "gene_group": gene_group(paper, groups),
         "n_authors": int(n_authors) if n_authors is not None else None,
         "n_refs": None,  # supplied by the impact builder (OpenAlex)
         "eligible": reason is None,
@@ -569,15 +599,20 @@ def feature_row(paper: dict, icite: dict) -> dict:
     }
 
 
-def build_features(papers: list[dict], icite: list[dict]) -> list[dict]:
-    """One row per paper that iCite marks as a research article."""
+def build_features(papers: list[dict], icite: list[dict], pathway: str | None = None) -> list[dict]:
+    """One row per paper that iCite marks as a research article.
+
+    ``pathway`` (v2) swaps in that pathway's eligibility and gene-group
+    patterns from ``src.meta.pathways``; the model_system, human_genetics and
+    multi_system rules are unchanged.
+    """
     by_pmid = {str(r.get("pmid")): r for r in icite}
     rows = []
     for paper in papers:
         rec = by_pmid.get(str(paper.get("pmid")))
         if rec is None or not truthy(rec.get("is_research_article")):
             continue
-        rows.append(feature_row(paper, rec))
+        rows.append(feature_row(paper, rec, pathway))
     rows.sort(key=lambda r: int(r["pmid"]) if r["pmid"].isdigit() else r["pmid"])
     return rows
 
@@ -963,6 +998,77 @@ def main_build() -> dict:
     return counts
 
 
+def pathway_layout(name: str) -> dict:
+    from src.meta import pathways
+
+    base = pathways.pathway_dir(name)
+    return {"papers": base / "papers.jsonl", "icite": base / "icite.jsonl",
+            "features": base / "features.jsonl", "manifest": base / "manifest_features.json"}
+
+
+def main_build_pathway(name: str) -> dict:
+    """v2: features for one pathway corpus (no packets; see pathway-packets)."""
+    lay = pathway_layout(name)
+    papers = read_jsonl(lay["papers"])
+    icite = read_jsonl(lay["icite"])
+    rows = build_features(papers, icite, pathway=name)
+    write_jsonl(lay["features"], rows)
+    counts = marginals(rows)
+    counts["pathway"] = name
+    counts["n_papers_in"] = len(papers)
+    counts["n_no_mesh_all_papers"] = sum(1 for p in papers if not p.get("mesh"))
+    write_json(lay["manifest"], counts)
+    print(json.dumps(counts, indent=2))
+    return counts
+
+
+def sample_pathway_packets(
+    rows_by_pathway: dict[str, list[dict]],
+    n: int = N_VALIDATION_PER_PATHWAY,
+    seed: int = VALIDATION_SEED_PATHWAYS,
+) -> dict[str, list[str]]:
+    """Per pathway (in the given order): ``n`` eligible preclinical PMIDs drawn
+    with ``np.random.default_rng(seed)`` over the sorted PMIDs. A PMID already
+    drawn for an earlier pathway is removed from later pools, so the combined
+    packet file has no duplicates."""
+    taken: set[str] = set()
+    out: dict[str, list[str]] = {}
+    for name, rows in rows_by_pathway.items():
+        pool = [r for r in rows if r.get("eligible") and str(r["pmid"]) not in taken]
+        out[name] = sample_validation(pool, n=n, seed=seed)
+        taken.update(out[name])
+    return out
+
+
+def main_pathway_packets(names: Iterable[str] | None = None) -> dict:
+    """v2 gate packets: 150 eligible preclinical papers per pathway, blind
+    (pmid/title/abstract/mesh), plus a separate pmid -> pathway index."""
+    from src.meta import pathways
+
+    names = list(names or pathways.NAMES)
+    rows_by = {}
+    papers_all: list[dict] = []
+    for name in names:
+        lay = pathway_layout(name)
+        rows_by[name] = read_jsonl(lay["features"])
+        papers_all.extend(read_jsonl(lay["papers"]))
+    drawn = sample_pathway_packets(rows_by)
+    packets, index = [], {}
+    for name in names:
+        packets.extend(make_packets(papers_all, drawn[name]))
+        index.update({pmid: name for pmid in drawn[name]})
+    write_json(PACKETS_PATHWAYS_PATH, packets)
+    write_json(PACKETS_PATHWAYS_INDEX_PATH, index)
+    counts = {
+        "n_packets": len(packets),
+        "per_pathway": {name: len(drawn[name]) for name in names},
+        "unique_pmids": len({p["pmid"] for p in packets}),
+        "seed": VALIDATION_SEED_PATHWAYS,
+    }
+    print(json.dumps(counts, indent=2))
+    return counts
+
+
 def main_score(extracted_path: str, packets_path: Path | None = None, out_path: Path | None = None) -> dict:
     packets_path = Path(packets_path) if packets_path else PACKETS_PATH
     out_path = Path(out_path) if out_path else GATE_PATH
@@ -986,6 +1092,8 @@ def main_score(extracted_path: str, packets_path: Path | None = None, out_path: 
 
 USAGE = (
     "usage: python -m src.meta.features\n"
+    "       python -m src.meta.features --pathway {egfr,pi3k}\n"
+    "       python -m src.meta.features pathway-packets\n"
     "       python -m src.meta.features score <extracted.json> [--packets PATH] [--out PATH]"
 )
 
@@ -994,6 +1102,17 @@ def main(argv: list[str] | None = None) -> None:
     argv = sys.argv[1:] if argv is None else list(argv)
     if not argv:
         main_build()
+        return
+    if argv[0] == "--pathway" or argv[0].startswith("--pathway="):
+        name = argv[1] if argv[0] == "--pathway" and len(argv) > 1 else argv[0].partition("=")[2]
+        from src.meta import pathways
+
+        if name not in pathways.NAMES:
+            raise SystemExit(USAGE)
+        main_build_pathway(name)
+        return
+    if argv[0] == "pathway-packets":
+        main_pathway_packets()
         return
     if argv[0] != "score":
         raise SystemExit(USAGE)

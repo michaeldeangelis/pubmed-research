@@ -26,6 +26,13 @@ Run as ``python -m src.meta.corpus``. Steps:
 Raw responses are cached under ``data/meta/cache/``, so reruns do not hit
 the network. Fetch date, queries and counts go to ``data/meta/manifest.json``.
 
+``--pathway {egfr,pi3k}`` (metascience v2) runs the same steps with that
+pathway's query from ``src.meta.pathways`` and reads/writes under
+``data/meta/pathways/<name>/`` (own cache and manifest). PMIDs present in the
+v1 corpus (``data/meta/papers.jsonl``) are dropped after the search and before
+iCite; the number dropped is recorded in the manifest. Without ``--pathway``
+the v1 behaviour is unchanged.
+
 Blinding: this module reports only marginal counts of its own tables. It
 never relates a design feature to an outcome.
 """
@@ -127,7 +134,9 @@ def parse_paper(item: dict) -> dict:
     }
 
 
-def fetch_papers(getter: Getter = http_get_json, cache_dir: Path = CACHE_DIR) -> tuple[list[dict], int | None]:
+def fetch_papers(
+    getter: Getter = http_get_json, cache_dir: Path = CACHE_DIR, query: str = QUERY
+) -> tuple[list[dict], int | None]:
     """All SRC:MED hits for the query, deduplicated by PMID, in PMID order."""
     cursor = "*"
     page = 0
@@ -135,7 +144,7 @@ def fetch_papers(getter: Getter = http_get_json, cache_dir: Path = CACHE_DIR) ->
     hit_count: int | None = None
     while True:
         params = {
-            "query": QUERY,
+            "query": query,
             "format": "json",
             "resultType": "core",
             "pageSize": PAGE_SIZE,
@@ -284,29 +293,83 @@ def read_jsonl(path: Path) -> list[dict]:
         return [json.loads(line) for line in handle if line.strip()]
 
 
-def _write_manifest(manifest: dict) -> None:
-    MANIFEST_PATH.parent.mkdir(parents=True, exist_ok=True)
-    MANIFEST_PATH.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+def _write_manifest(manifest: dict, path: Path = MANIFEST_PATH) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
 
 
-def main() -> None:
+def layout(pathway: str | None = None) -> dict:
+    """Query and file locations: v1 RAS/MAPK (default) or a v2 pathway."""
+    if pathway is None:
+        return {
+            "query": QUERY,
+            "meta_dir": META_DIR,
+            "cache_dir": CACHE_DIR,
+            "papers": PAPERS_PATH,
+            "icite": ICITE_PATH,
+            "citing_years": CITING_YEARS_PATH,
+            "outcome_b": OUTCOME_B_PATH,
+            "manifest": MANIFEST_PATH,
+        }
+    from src.meta import pathways
+
+    base = pathways.pathway_dir(pathway)
+    return {
+        "query": pathways.get(pathway)["query"],
+        "meta_dir": base,
+        "cache_dir": base / "cache",
+        "papers": base / "papers.jsonl",
+        "icite": base / "icite.jsonl",
+        "citing_years": base / "citing_years.json",
+        "outcome_b": base / "outcome_b.jsonl",
+        "manifest": base / "manifest.json",
+    }
+
+
+def exclude_pmids(papers: list[dict], exclude: set[str]) -> tuple[list[dict], int]:
+    """Drop papers whose PMID is in ``exclude``; returns (kept, n_dropped)."""
+    kept = [p for p in papers if str(p["pmid"]) not in exclude]
+    return kept, len(papers) - len(kept)
+
+
+def main(argv: list[str] | None = None) -> None:
+    import argparse
+
+    from src.meta import pathways as _pathways
+
+    parser = argparse.ArgumentParser(prog="python -m src.meta.corpus")
+    parser.add_argument("--pathway", choices=_pathways.NAMES, default=None,
+                        help="v2 pathway corpus (default: the v1 RAS/MAPK corpus)")
+    args = parser.parse_args(argv)
+    lay = layout(args.pathway)
+    manifest_path = lay["manifest"]
+
     logging.basicConfig(level=logging.INFO, format="%(message)s")
-    META_DIR.mkdir(parents=True, exist_ok=True)
+    lay["meta_dir"].mkdir(parents=True, exist_ok=True)
     manifest: dict = {}
-    if MANIFEST_PATH.exists():
-        manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+    if manifest_path.exists():
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     manifest.setdefault("fetch_date", _dt.date.today().isoformat())
     manifest["last_run"] = _dt.datetime.now().isoformat(timespec="seconds")
-    manifest["europepmc"] = {"url": config.EUROPEPMC, "query": QUERY, "resultType": "core", "pageSize": PAGE_SIZE}
+    if args.pathway is not None:
+        manifest["pathway"] = args.pathway
+    manifest["europepmc"] = {"url": config.EUROPEPMC, "query": lay["query"], "resultType": "core", "pageSize": PAGE_SIZE}
 
-    papers, hit_count = fetch_papers()
-    n_papers = write_jsonl(PAPERS_PATH, papers)
+    papers, hit_count = fetch_papers(query=lay["query"], cache_dir=lay["cache_dir"])
+    if args.pathway is not None:
+        # v2: papers already in the v1 RAS/MAPK corpus are excluded.
+        v1 = {str(p["pmid"]) for p in read_jsonl(PAPERS_PATH)}
+        n_fetched = len(papers)
+        papers, n_excluded = exclude_pmids(papers, v1)
+        manifest["europepmc"].update({"n_fetched": n_fetched, "n_excluded_in_v1_corpus": n_excluded,
+                                      "v1_corpus": str(PAPERS_PATH.relative_to(config.DATA.parent))})
+    n_papers = write_jsonl(lay["papers"], papers)
     manifest["europepmc"].update({"hitCount": hit_count, "n_papers": n_papers})
-    _write_manifest(manifest)
+    _write_manifest(manifest, manifest_path)
     logger.info("papers.jsonl: %d rows (hitCount %s)", n_papers, hit_count)
 
-    icite = fetch_icite([p["pmid"] for p in papers])
-    n_icite = write_jsonl(ICITE_PATH, icite)
+    icite = fetch_icite([p["pmid"] for p in papers], cache_dir=lay["cache_dir"])
+    n_icite = write_jsonl(lay["icite"], icite)
     n_research = sum(1 for r in icite if r.get("is_research_article"))
     n_clinical = sum(1 for r in icite if r.get("is_research_article") and r.get("is_clinical"))
     manifest["icite"] = {
@@ -318,14 +381,14 @@ def main() -> None:
         "n_research_clinical": n_clinical,
         "n_research_preclinical": n_research - n_clinical,
     }
-    _write_manifest(manifest)
+    _write_manifest(manifest, manifest_path)
     logger.info("icite.jsonl: %d rows, %d research articles", n_icite, n_research)
 
     research = [r for r in icite if r.get("is_research_article")]
     citers = {str(c) for r in research for c in r.get("cited_by_clin") or []}
-    years = citing_years(citers)
+    years = citing_years(citers, cache_path=lay["citing_years"], cache_dir=lay["cache_dir"])
     rows, stats = compute_outcome_b(papers, icite, years)
-    n_b = write_jsonl(OUTCOME_B_PATH, rows)
+    n_b = write_jsonl(lay["outcome_b"], rows)
     positive = sum(r["clin_cited_8y"] for r in rows)
     manifest["outcome_b"] = {
         "definition": "clin_cited_8y = any iCite cited_by_clin citer with year in [Y-1, Y+8], "
@@ -338,7 +401,7 @@ def main() -> None:
         "rate_clin_cited_8y": positive / n_b if n_b else None,
         **stats,
     }
-    _write_manifest(manifest)
+    _write_manifest(manifest, manifest_path)
     logger.info("outcome_b.jsonl: %d rows, clin_cited_8y rate %.4f", n_b, positive / n_b if n_b else float("nan"))
 
 

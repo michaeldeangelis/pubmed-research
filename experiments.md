@@ -266,3 +266,39 @@ Set beside metascience v1, the designs that clinical articles cite most
 (patient samples) differ from the designs these approvals were built on.
 Two cases establish no general rule. The model_system labels are coarse:
 Davies 2002 comes out cell_only although it screened tumors.
+
+## 2026-09-30 metascience v2: other pathways   (rules fixed before the run)
+
+Question: Does the v1 finding, that patient-sample studies are more likely
+than cell-line-only studies to be cited by a clinical article within 8
+years, hold in pathways not used to form it?
+Decision it drives: confirmed in both pathways means the finding
+generalizes beyond RAS/MAPK and is worth a translation-outcome study. Not
+confirmed means it is field-specific or topic-driven, and is recorded as
+such.
+Pathways, each a separate corpus, 2000-2015, Europe PMC SRC:MED:
+- EGFR/ERBB: TITLE_ABS terms EGFR, ERBB2, HER2, ERBB3, erlotinib,
+  gefitinib, osimertinib, afatinib, lapatinib, cetuximab, panitumumab,
+  trastuzumab.
+- PI3K/AKT/mTOR: TITLE_ABS terms PIK3CA, PTEN, AKT1, MTOR, mTORC1,
+  everolimus, temsirolimus, alpelisib, idelalisib.
+Papers already in the v1 RAS/MAPK corpus are excluded from both. A paper in
+both new corpora is kept in each, and the overlap is reported.
+Held fixed from v1: iCite research articles, the clinical/preclinical
+split, the eligibility rules (MeSH present, primary publication type, and
+a case-sensitive mention of a pathway gene or drug from that pathway's
+list), the unchanged model_system rules, outcome B (clinical citation from
+publication year minus 1 through plus 8), the covariates (year FE, gene
+group with a pathway-specific list, log authors, the reference count as
+amended), and the logit with 1000-resample bootstrap CIs (seed 0).
+Measurement gate: 300 eligible preclinical papers, 150 per pathway (rng
+seed 2), blind Opus extraction with the same schema, kappa >= 0.60 for
+model_system. If it fails, the pathway results are reported as unreliable.
+Primary test, per pathway, full 2000-2015 period with no split: confirmed
+if the OR for model_system=human_samples against cell_only is > 1 with a
+95% CI excluding 1, AND the placebo (PMID even) CI includes 1.
+Exploratory: model_system=animal and =other; the permutation control
+(1000, within year); log(RCR + 0.1); the disruption score; the journal
+sensitivity model.
+Kill: not confirmed in either pathway.
+Record: results/meta_pathways.json

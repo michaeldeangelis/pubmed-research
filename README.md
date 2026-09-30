@@ -58,6 +58,12 @@ Over the three pathways, 58,146 papers were pooled and 672 were cited as trial b
 
 So the patient-sample association reaches trial design, not only what clinical articles cite. Being listed as background is still not the same as a trial depending on the paper.
 
+## Design or topic?
+
+Every result above can be read two ways: patient-sample papers may be cited clinically because of their design, or because of their topic. To separate the two, each patient-sample paper was matched to a cell-line-only paper on the same pathway, gene group and year (within one year) and the closest topic. Topic was measured with MeSH descriptors after 662 design-revealing terms were removed. A blind judge found 42% of pairs matched at similarity 0.3 to be on the same topic, so the primary analysis used pairs at 0.6 or above: 677 pairs. A fresh sample of those pairs was 86% same topic. Plan and amendments: `experiments.md`. Result: `results/meta_matched.json`.
+
+Within topic, patient-sample papers were still more likely to be cited clinically. The matched odds ratio was 1.41 (1.11 to 1.79), down from 2.56 unmatched. Topic accounts for about two-thirds of the association, and design for the rest. Among pairs balanced on reference count, the ratio was 1.85. For trial background citation, the tight matching left too few discordant pairs (11 against 14) to decide either way. Within RAS/MAPK, trials cited the cell-line paper of a pair more often, 8 pairs against 1.
+
 ## What the approvals were built on
 
 Two approvals were traced back through their citations: vemurafenib, whose approval trial was in 2011, and sotorasib, in 2021. The lineage is the papers each approval trial cites, and the papers those cite. The same model-system rules were applied to it, then compared with the field in the same years. The method and the milestone papers were fixed before the run. Record: `results/case_histories.json`.

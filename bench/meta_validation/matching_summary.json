@@ -1,0 +1,135 @@
+{
+  "ledger": "experiments.md, 2026-09-30 metascience v4",
+  "blinding": "no outcome file read; caliper chosen from similarity only",
+  "pool": {
+    "ras": {
+      "treated": {
+        "n": 4450,
+        "unmatchable_no_descriptors": 0
+      },
+      "control": {
+        "n": 1516,
+        "unmatchable_no_descriptors": 0
+      }
+    },
+    "egfr": {
+      "treated": {
+        "n": 11870,
+        "unmatchable_no_descriptors": 1
+      },
+      "control": {
+        "n": 9404,
+        "unmatchable_no_descriptors": 2
+      }
+    },
+    "pi3k": {
+      "treated": {
+        "n": 3552,
+        "unmatchable_no_descriptors": 0
+      },
+      "control": {
+        "n": 6810,
+        "unmatchable_no_descriptors": 0
+      }
+    }
+  },
+  "n_treated": 19872,
+  "n_control": 17730,
+  "n_topic_descriptors": 10094,
+  "n_removed_descriptors": 662,
+  "n_candidate_edges_at_min_caliper": 126718,
+  "caliper_table": {
+    "0.6": {
+      "n_pairs": 677,
+      "match_rate": 0.0341
+    },
+    "0.5": {
+      "n_pairs": 1432,
+      "match_rate": 0.0721
+    },
+    "0.4": {
+      "n_pairs": 2745,
+      "match_rate": 0.1381
+    },
+    "0.3": {
+      "n_pairs": 4839,
+      "match_rate": 0.2435
+    }
+  },
+  "match_rate_denominator": "all treated papers, including unmatchable",
+  "caliper": 0.3,
+  "caliper_reached_target": false,
+  "diagnostic_match_rate_below_grid": {
+    "0.2": 0.3807,
+    "0.1": 0.524
+  },
+  "diagnostic_note": "not ledger calipers. Upper bound on the match rate is set by control supply per pathway x gene_group x year window.",
+  "max_feasible_pairs_ignoring_similarity": 11908,
+  "n_pairs": 4839,
+  "per_pathway": {
+    "ras": {
+      "n_treated": 4450,
+      "n_pairs": 863,
+      "match_rate": 0.1939
+    },
+    "egfr": {
+      "n_treated": 11870,
+      "n_pairs": 3071,
+      "match_rate": 0.2587
+    },
+    "pi3k": {
+      "n_treated": 3552,
+      "n_pairs": 905,
+      "match_rate": 0.2548
+    }
+  },
+  "similarity_quantiles": {
+    "q00": 0.3,
+    "q05": 0.3095,
+    "q25": 0.3516,
+    "q50": 0.4196,
+    "q75": 0.5224,
+    "q95": 0.7156,
+    "q100": 1.0
+  },
+  "balance_before": {
+    "log_authors": {
+      "smd": 0.2712,
+      "mean_treated": 1.9798,
+      "mean_control": 1.8291,
+      "n_treated": 19835,
+      "n_control": 17727,
+      "missing_treated": 37,
+      "missing_control": 3
+    },
+    "log1p_refs": {
+      "smd": -0.6795,
+      "mean_treated": 3.344,
+      "mean_control": 3.6699,
+      "n_treated": 18328,
+      "n_control": 17306,
+      "missing_treated": 1544,
+      "missing_control": 424
+    }
+  },
+  "balance_after": {
+    "log_authors": {
+      "smd": 0.0572,
+      "mean_treated": 1.9764,
+      "mean_control": 1.9442,
+      "n_treated": 4832,
+      "n_control": 4838,
+      "missing_treated": 7,
+      "missing_control": 1
+    },
+    "log1p_refs": {
+      "smd": -0.4934,
+      "mean_treated": 3.3759,
+      "mean_control": 3.6053,
+      "n_treated": 4496,
+      "n_control": 4689,
+      "missing_treated": 343,
+      "missing_control": 150
+    }
+  }
+}

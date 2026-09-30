@@ -1,0 +1,352 @@
+{
+  "p01": {
+    "treated": "b",
+    "pmid_a": "24724101",
+    "pmid_b": "23002281",
+    "treated_pmid": "23002281",
+    "control_pmid": "24724101"
+  },
+  "p02": {
+    "treated": "a",
+    "pmid_a": "26103892",
+    "pmid_b": "26484710",
+    "treated_pmid": "26103892",
+    "control_pmid": "26484710"
+  },
+  "p03": {
+    "treated": "b",
+    "pmid_a": "23935912",
+    "pmid_b": "23293113",
+    "treated_pmid": "23293113",
+    "control_pmid": "23935912"
+  },
+  "p04": {
+    "treated": "a",
+    "pmid_a": "22520598",
+    "pmid_b": "21742770",
+    "treated_pmid": "22520598",
+    "control_pmid": "21742770"
+  },
+  "p05": {
+    "treated": "a",
+    "pmid_a": "21922590",
+    "pmid_b": "22641662",
+    "treated_pmid": "21922590",
+    "control_pmid": "22641662"
+  },
+  "p06": {
+    "treated": "a",
+    "pmid_a": "19477897",
+    "pmid_b": "19920100",
+    "treated_pmid": "19477897",
+    "control_pmid": "19920100"
+  },
+  "p07": {
+    "treated": "a",
+    "pmid_a": "24025416",
+    "pmid_b": "22847744",
+    "treated_pmid": "24025416",
+    "control_pmid": "22847744"
+  },
+  "p08": {
+    "treated": "b",
+    "pmid_a": "25915533",
+    "pmid_b": "25016871",
+    "treated_pmid": "25016871",
+    "control_pmid": "25915533"
+  },
+  "p09": {
+    "treated": "a",
+    "pmid_a": "24852820",
+    "pmid_b": "25890004",
+    "treated_pmid": "24852820",
+    "control_pmid": "25890004"
+  },
+  "p10": {
+    "treated": "a",
+    "pmid_a": "23259780",
+    "pmid_b": "24095095",
+    "treated_pmid": "23259780",
+    "control_pmid": "24095095"
+  },
+  "p11": {
+    "treated": "a",
+    "pmid_a": "24258979",
+    "pmid_b": "25339196",
+    "treated_pmid": "24258979",
+    "control_pmid": "25339196"
+  },
+  "p12": {
+    "treated": "a",
+    "pmid_a": "26335629",
+    "pmid_b": "25704955",
+    "treated_pmid": "26335629",
+    "control_pmid": "25704955"
+  },
+  "p13": {
+    "treated": "a",
+    "pmid_a": "17590872",
+    "pmid_b": "18193083",
+    "treated_pmid": "17590872",
+    "control_pmid": "18193083"
+  },
+  "p14": {
+    "treated": "b",
+    "pmid_a": "22843788",
+    "pmid_b": "21777762",
+    "treated_pmid": "21777762",
+    "control_pmid": "22843788"
+  },
+  "p15": {
+    "treated": "a",
+    "pmid_a": "21111508",
+    "pmid_b": "21970874",
+    "treated_pmid": "21111508",
+    "control_pmid": "21970874"
+  },
+  "p16": {
+    "treated": "b",
+    "pmid_a": "24947179",
+    "pmid_b": "26553291",
+    "treated_pmid": "26553291",
+    "control_pmid": "24947179"
+  },
+  "p17": {
+    "treated": "a",
+    "pmid_a": "20607744",
+    "pmid_b": "21903858",
+    "treated_pmid": "20607744",
+    "control_pmid": "21903858"
+  },
+  "p18": {
+    "treated": "b",
+    "pmid_a": "15878852",
+    "pmid_b": "16575396",
+    "treated_pmid": "16575396",
+    "control_pmid": "15878852"
+  },
+  "p19": {
+    "treated": "a",
+    "pmid_a": "16336755",
+    "pmid_b": "15634648",
+    "treated_pmid": "16336755",
+    "control_pmid": "15634648"
+  },
+  "p20": {
+    "treated": "a",
+    "pmid_a": "21457162",
+    "pmid_b": "21873159",
+    "treated_pmid": "21457162",
+    "control_pmid": "21873159"
+  },
+  "p21": {
+    "treated": "b",
+    "pmid_a": "11992543",
+    "pmid_b": "12829126",
+    "treated_pmid": "12829126",
+    "control_pmid": "11992543"
+  },
+  "p22": {
+    "treated": "b",
+    "pmid_a": "22974187",
+    "pmid_b": "23637902",
+    "treated_pmid": "23637902",
+    "control_pmid": "22974187"
+  },
+  "p23": {
+    "treated": "a",
+    "pmid_a": "20037354",
+    "pmid_b": "19028276",
+    "treated_pmid": "20037354",
+    "control_pmid": "19028276"
+  },
+  "p24": {
+    "treated": "b",
+    "pmid_a": "22556379",
+    "pmid_b": "23728071",
+    "treated_pmid": "23728071",
+    "control_pmid": "22556379"
+  },
+  "p25": {
+    "treated": "a",
+    "pmid_a": "20485156",
+    "pmid_b": "19878579",
+    "treated_pmid": "20485156",
+    "control_pmid": "19878579"
+  },
+  "p26": {
+    "treated": "a",
+    "pmid_a": "16707605",
+    "pmid_b": "17311025",
+    "treated_pmid": "16707605",
+    "control_pmid": "17311025"
+  },
+  "p27": {
+    "treated": "b",
+    "pmid_a": "15623531",
+    "pmid_b": "15191666",
+    "treated_pmid": "15191666",
+    "control_pmid": "15623531"
+  },
+  "p28": {
+    "treated": "b",
+    "pmid_a": "23599172",
+    "pmid_b": "24335388",
+    "treated_pmid": "24335388",
+    "control_pmid": "23599172"
+  },
+  "p29": {
+    "treated": "b",
+    "pmid_a": "22300322",
+    "pmid_b": "23806066",
+    "treated_pmid": "23806066",
+    "control_pmid": "22300322"
+  },
+  "p30": {
+    "treated": "a",
+    "pmid_a": "16452550",
+    "pmid_b": "17210745",
+    "treated_pmid": "16452550",
+    "control_pmid": "17210745"
+  },
+  "p31": {
+    "treated": "b",
+    "pmid_a": "26577921",
+    "pmid_b": "25286393",
+    "treated_pmid": "25286393",
+    "control_pmid": "26577921"
+  },
+  "p32": {
+    "treated": "a",
+    "pmid_a": "21956414",
+    "pmid_b": "22829200",
+    "treated_pmid": "21956414",
+    "control_pmid": "22829200"
+  },
+  "p33": {
+    "treated": "b",
+    "pmid_a": "25082736",
+    "pmid_b": "26328941",
+    "treated_pmid": "26328941",
+    "control_pmid": "25082736"
+  },
+  "p34": {
+    "treated": "b",
+    "pmid_a": "19849847",
+    "pmid_b": "19960299",
+    "treated_pmid": "19960299",
+    "control_pmid": "19849847"
+  },
+  "p35": {
+    "treated": "a",
+    "pmid_a": "18686628",
+    "pmid_b": "19764572",
+    "treated_pmid": "18686628",
+    "control_pmid": "19764572"
+  },
+  "p36": {
+    "treated": "b",
+    "pmid_a": "26230405",
+    "pmid_b": "24832083",
+    "treated_pmid": "24832083",
+    "control_pmid": "26230405"
+  },
+  "p37": {
+    "treated": "b",
+    "pmid_a": "19022565",
+    "pmid_b": "19965795",
+    "treated_pmid": "19965795",
+    "control_pmid": "19022565"
+  },
+  "p38": {
+    "treated": "b",
+    "pmid_a": "22560634",
+    "pmid_b": "21150674",
+    "treated_pmid": "21150674",
+    "control_pmid": "22560634"
+  },
+  "p39": {
+    "treated": "a",
+    "pmid_a": "16020953",
+    "pmid_b": "15868945",
+    "treated_pmid": "16020953",
+    "control_pmid": "15868945"
+  },
+  "p40": {
+    "treated": "b",
+    "pmid_a": "25014136",
+    "pmid_b": "26485755",
+    "treated_pmid": "26485755",
+    "control_pmid": "25014136"
+  },
+  "p41": {
+    "treated": "b",
+    "pmid_a": "18253741",
+    "pmid_b": "17097880",
+    "treated_pmid": "17097880",
+    "control_pmid": "18253741"
+  },
+  "p42": {
+    "treated": "b",
+    "pmid_a": "23301758",
+    "pmid_b": "23437196",
+    "treated_pmid": "23437196",
+    "control_pmid": "23301758"
+  },
+  "p43": {
+    "treated": "a",
+    "pmid_a": "15913841",
+    "pmid_b": "15604279",
+    "treated_pmid": "15913841",
+    "control_pmid": "15604279"
+  },
+  "p44": {
+    "treated": "b",
+    "pmid_a": "23734178",
+    "pmid_b": "23085752",
+    "treated_pmid": "23085752",
+    "control_pmid": "23734178"
+  },
+  "p45": {
+    "treated": "b",
+    "pmid_a": "26823699",
+    "pmid_b": "25849721",
+    "treated_pmid": "25849721",
+    "control_pmid": "26823699"
+  },
+  "p46": {
+    "treated": "b",
+    "pmid_a": "19735675",
+    "pmid_b": "19404918",
+    "treated_pmid": "19404918",
+    "control_pmid": "19735675"
+  },
+  "p47": {
+    "treated": "a",
+    "pmid_a": "25601188",
+    "pmid_b": "22454224",
+    "treated_pmid": "25601188",
+    "control_pmid": "22454224"
+  },
+  "p48": {
+    "treated": "b",
+    "pmid_a": "12734182",
+    "pmid_b": "12217898",
+    "treated_pmid": "12217898",
+    "control_pmid": "12734182"
+  },
+  "p49": {
+    "treated": "b",
+    "pmid_a": "18400375",
+    "pmid_b": "18519753",
+    "treated_pmid": "18519753",
+    "control_pmid": "18400375"
+  },
+  "p50": {
+    "treated": "b",
+    "pmid_a": "23891983",
+    "pmid_b": "23360712",
+    "treated_pmid": "23360712",
+    "control_pmid": "23891983"
+  }
+}

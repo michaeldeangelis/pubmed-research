@@ -480,3 +480,124 @@ citation in RAS. Being cited as background is still not the same as the
 trial depending on the paper, and approval is not measured. The ORs are
 associations, and a trial's background section may cite patient data for
 context, much as clinical articles do.
+
+## 2026-09-30 metascience v4: design against topic   (rules fixed before the run)
+
+Question: Among papers on the same topic, are patient-sample papers still
+more likely than cell-line-only papers to be cited clinically, or cited as
+trial background? The alternative is that the v1-v3 associations reflect
+topic rather than design.
+Decision it drives: if the effect persists within matched topic, design
+itself carries it and the next step is rigor features. If it is
+attenuated, the effect is mostly topic and later work should model topic
+explicitly.
+Papers: eligible preclinical papers of RAS, EGFR and PI3K, deduplicated
+keeping the first of RAS, EGFR, PI3K, as in v3. Only model_system
+human_samples (treated) and cell_only (controls) are used.
+Topic representation: TF-IDF over each paper's MeSH descriptors, with
+qualifiers dropped. Every design-revealing descriptor is removed first:
+every term in the model_system rule lists of src/meta/features.py, check
+tags (Humans, Animals, Female, Male, age groups), organism and cell-line
+descriptors, study-design and statistics descriptors (e.g. Retrospective
+Studies, Cohort Studies, Survival Analysis, Kaplan-Meier Estimate,
+Prognosis, Immunohistochemistry), and laboratory-technique descriptors.
+The builder writes the removed list to a file before matching. Topic
+similarity is cosine similarity.
+Matching: 1:1 greedy nearest neighbour without replacement, exact on
+pathway and gene_group, with publication year within +/-1. Treated papers
+are processed in descending order of their best available similarity,
+ties broken by PMID. The caliper is the largest of {0.6, 0.5, 0.4, 0.3}
+that matches at least 50% of treated papers. It is chosen from similarity
+distributions only, before any outcome is read.
+Outcomes: clin_cited_8y (v1/v2 outcome B) and trial_bg_8y (v3).
+Primary estimate, per outcome, pooled: matched-pair (McNemar) OR = b/c,
+where b = pairs in which only the treated paper has the outcome and c =
+pairs in which only the control does. The 95% CI is exact (Clopper-Pearson
+on b/(b+c), transformed). Comparator: the crude OR over all treated and
+all controls, and the crude OR over matched papers treated as unpaired.
+Verdict per outcome: "persists" if the matched CI lies entirely above 1;
+"reversed" if entirely below 1; otherwise "attenuated to null". Also
+report attenuation = 1 - log(matched OR) / log(crude OR).
+Placebo: the same matched-pair OR for PMID parity; its CI must include 1.
+Balance, reported: the topic similarity of matched pairs, standardized
+differences of log authors and log(1 + refs) between arms, and the match
+rate per pathway.
+Matching-quality check: 50 random matched pairs (rng seed 0). A blind Opus
+judge sees only the two titles and abstracts, with design words not
+masked, and rates "same research topic (same gene/alteration and
+disease/question)" as yes or no. If fewer than 70% are yes, topic matching
+is flagged weak and the verdict is reported as provisional.
+Exploratory: per-pathway matched ORs; the trial outcome restricted to drug
+or biological trials.
+Record: results/meta_matched.json
+
+Amendment v4-1, 2026-09-30, before any outcome was joined:
+- Caliper. No caliper in {0.6, 0.5, 0.4, 0.3} matches 50% of treated
+  papers. The rates were 3.4%, 7.2%, 13.8% and 24.4%. Reaching 50% would
+  need a similarity near 0.1, which is close to no topic match, and the
+  exact pathway, gene and year constraints alone allow only 59.9%. Caliper
+  0.3 is kept (4,839 pairs: RAS 863, EGFR 3,071, PI3K 905), because topic
+  closeness is the point of v4. The 50% target was set before the
+  similarity distribution was known. The decision uses similarity
+  distributions only (bench/meta_validation/matching_summary.json).
+- Pairs where either paper lacks an outcome are dropped.
+- Balance after matching: log authors std diff 0.057, and log(1 + refs)
+  -0.493 (it was -0.680 before). Refs stay imbalanced, so an exploratory
+  analysis restricts to pairs with |log(1 + refs) difference| <= 0.5,
+  excluding pairs where either count is missing.
+- Removed-descriptor list: 662 descriptors (bench/meta_validation/removed_mesh.json).
+  10,094 topic descriptors remain.
+
+Amendment v4-2, 2026-09-30, before any outcome was joined:
+- Matching-quality check at caliper 0.3: 21 of 50 pairs judged same topic
+  (42%), below the 70% bar, so caliper-0.3 matching is weak. By similarity
+  band: 0.3-0.4 5/20, 0.4-0.5 4/13, 0.5-0.6 2/5, >=0.6 10/12
+  (bench/meta_validation/match_judgments.json).
+- The primary analysis now uses pairs with similarity >= 0.6: 677 pairs,
+  the top of the same nested greedy matching. Because 0.6 was chosen from
+  those 50 pairs, it is confirmed on a fresh blind sample of 50 unjudged
+  pairs at >= 0.6 (rng seed 1; bench/meta_validation/match_judge2_*.json).
+  If that sample is at least 70% same topic, the 0.6 verdict stands.
+  Otherwise it is provisional.
+- The caliper-0.3 analysis is still run and reported as a weak-matching
+  sensitivity check, never as the verdict.
+
+Confirmation of caliper 0.6, before any outcome was joined: on the fresh
+sample, 43 of 50 pairs were judged same topic (86%), above the 70% bar
+(bench/meta_validation/match_judge2_judgments.json). The 0.6 verdict stands.
+
+### Result, 2026-09-30 (one run at commit 7157292)
+
+Primary: caliper 0.6, 677 pairs, confirmed 86% same topic, none dropped
+for missing outcomes. The matched OR is b/c with an exact 95% CI.
+
+| Outcome | Matched OR [CI] (b vs c) | Crude OR | Attenuation | Verdict |
+|---|---|---|---|---|
+| clin_cited_8y | 1.41 [1.11, 1.79] (169 vs 120) | 2.56 | 0.64 | persists |
+| trial_bg_8y | 0.79 [0.32, 1.86] (11 vs 14) | 2.01 | n/a | attenuated to null |
+| trial_bg_8y_drug | 0.85 [0.34, 2.05] (11 vs 13) | 1.69 | n/a | attenuated to null |
+| placebo (parity) | 1.03 [0.83, 1.29] | 0.98 | | placebo ok |
+
+Exploratory:
+- Refs-balanced pairs (360): clin_cited_8y 1.85 [1.31, 2.63]; trial_bg_8y
+  1.40 [0.38, 5.59] (7 vs 5).
+- Per pathway, discordant b vs c. clin_cited_8y: RAS 47 vs 30, EGFR 108 vs
+  82, PI3K 14 vs 8. trial_bg_8y: RAS 1 vs 8, EGFR 10 vs 4, PI3K 0 vs 2.
+- Weak-matching sensitivity (caliper 0.3, 4,839 pairs, 42% same topic):
+  clin_cited_8y 1.78 [1.63, 1.95]; trial_bg_8y 1.42 [1.01, 2.00]; drug
+  1.26 [0.88, 1.82]; placebo 1.03 [0.95, 1.12].
+
+What this does and does not show. Comparing papers on the same gene,
+alteration and disease, patient-sample papers are still more likely than
+cell-line-only papers to be cited by a clinical article within 8 years
+(OR 1.41). About two-thirds of the crude log-OR is explained by topic
+matching, and the rest remains. Balancing reference counts leaves it at
+1.85. So design carries part of the clinical-citation association, and
+topic carries most of it. For trial background citation the tight
+matching has only 25 discordant pairs; the CI (0.32 to 1.86) cannot
+separate a real effect from none. "Attenuated to null" here means
+underpowered, not shown to be absent. The looser matching gives 1.42, but
+fewer than half of those pairs share a topic. Within RAS, trials cited the
+cell-line paper of a matched pair more often (8 against 1), consistent with
+the RAS drug case histories. Not shown: causation, and the balance of
+unmeasured design traits within pairs, such as journal and lab.
